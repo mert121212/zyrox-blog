@@ -31,12 +31,7 @@ export function SearchAndFilter({ posts }: { posts: Post[] }) {
     const [sort, setSort] = useState<SortOption>('newest');
     const [visibleCount, setVisibleCount] = useState(12);
     const [showAllTags, setShowAllTags] = useState(false);
-    const [mounted, setMounted] = useState(false);
     const inputRef = useRef<HTMLInputElement>(null);
-
-    useEffect(() => {
-        setMounted(true);
-    }, []);
 
     useEffect(() => {
         setVisibleCount(12);
@@ -65,15 +60,6 @@ export function SearchAndFilter({ posts }: { posts: Post[] }) {
         else if (sort === 'az') result = [...result].sort((a, b) => a.title.localeCompare(b.title));
         return result;
     }, [activeCategory, activeTag, posts, query, sort]);
-
-    // ── Early return AFTER all hooks ──────────────────────────
-    if (!mounted) {
-        return (
-            <p className="results-meta">
-                Loading {posts.length} articles…
-            </p>
-        );
-    }
 
     // ── Derived values (not hooks) ────────────────────────────
     const visibleTags = showAllTags ? allTags : allTags.slice(0, TAG_VISIBLE_INITIAL);

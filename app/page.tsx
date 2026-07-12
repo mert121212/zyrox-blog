@@ -1,6 +1,11 @@
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { getAllPosts } from '../lib/posts';
-import { SearchAndFilter } from '../components/search-and-filter';
+
+const SearchAndFilter = dynamic(
+    () => import('../components/search-and-filter').then((m) => ({ default: m.SearchAndFilter })),
+    { ssr: false },
+);
 
 export default function HomePage() {
     const posts = getAllPosts();
