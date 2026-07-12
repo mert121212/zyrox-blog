@@ -15,7 +15,16 @@ const SORT_LABELS: Record<SortOption, string> = {
 
 const TAG_VISIBLE_INITIAL = 12;
 
+// Static lookup maps — built once at module level, never change
+const AUTHOR_NAME: Record<string, string> = Object.fromEntries(
+    authors.map((a) => [a.slug, a.name]),
+);
+const AUTHOR_AVATAR: Record<string, string> = Object.fromEntries(
+    authors.map((a) => [a.slug, a.avatar]),
+);
+
 export function SearchAndFilter({ posts }: { posts: Post[] }) {
+    // ── ALL hooks must be called unconditionally at the top ───
     const [query, setQuery] = useState('');
     const [activeCategory, setActiveCategory] = useState('All');
     const [activeTag, setActiveTag] = useState('All');
@@ -25,33 +34,14 @@ export function SearchAndFilter({ posts }: { posts: Post[] }) {
     const [mounted, setMounted] = useState(false);
     const inputRef = useRef<HTMLInputElement>(null);
 
-    // Build lookup maps inside useMemo so they are stable and client-only
-    const authorNameMap = useMemo(
-        () => Object.fromEntries(authors.map((a) => [a.slug, a.name])),
-        [],
-    );
-    const authorAvatarMap = useMemo(
-        () => Object.fromEntries(authors.map((a) => [a.slug, a.avatar])),
-        [],
-    );
-
-    // Prevent hydration mismatch for interactive parts
     useEffect(() => {
         setMounted(true);
     }, []);
 
-    // Don't render interactive UI until hydration complete
-    if (!mounted) {
-        return (
-            <div suppressHydrationWarning>
-                <p className="results-meta" style={{ color: 'var(--muted)', marginBottom: '1rem' }}>
-                    Loading {posts.length} articles…
-                </p>
-            </div>
-        );
-    }
+    useEffect(() => {
+        setVisibleCount(12);
+    }, [activeCategory, activeTag, query, sort]);
 
-    // ── Derived data ──────────────────────────────────────────
     const categories = useMemo(
         () => ['All', ...Array.from(new Set(posts.map((p) => p.category))).sort()],
         [posts],
@@ -62,42 +52,40 @@ export function SearchAndFilter({ posts }: { posts: Post[] }) {
         [posts],
     );
 
-    const visibleTags = showAllTags ? allTags : allTags.slice(0, TAG_VISIBLE_INITIAL);
-    const hasHiddenTags = allTags.length > TAG_VISIBLE_INITIAL;
-
-    // ── Filtering + sorting ───────────────────────────────────
     const filteredPosts = useMemo(() => {
         const q = query.trim().toLowerCase();
-
         let result = posts.filter((post) => {
-            const haystack = `${post.title} ${post.meta_description} ${post.tags.join(' ')} ${authorNameMap[post.author] ?? ''}`.toLowerCase();
+            const haystack = `${post.title} ${post.meta_description} ${post.tags.join(' ')} ${AUTHOR_NAME[post.author] ?? ''}`.toLowerCase();
             const matchesQuery = !q || haystack.includes(q);
             const matchesCategory = activeCategory === 'All' || post.category === activeCategory;
             const matchesTag = activeTag === 'All' || post.tags.includes(activeTag);
             return matchesQuery && matchesCategory && matchesTag;
         });
-
         if (sort === 'oldest') result = [...result].reverse();
         else if (sort === 'az') result = [...result].sort((a, b) => a.title.localeCompare(b.title));
-
         return result;
     }, [activeCategory, activeTag, posts, query, sort]);
 
+    // ── Early return AFTER all hooks ──────────────────────────
+    if (!mounted) {
+        return (
+            <p className="results-meta">
+                Loading {posts.length} articles…
+            </p>
+        );
+    }
+
+    // ── Derived values (not hooks) ────────────────────────────
+    const visibleTags = showAllTags ? allTags : allTags.slice(0, TAG_VISIBLE_INITIAL);
+    const hasHiddenTags = allTags.length > TAG_VISIBLE_INITIAL;
     const visiblePosts = filteredPosts.slice(0, visibleCount);
     const hasMorePosts = filteredPosts.length > visiblePosts.length;
-
-    // Determine active filter count for the badge
     const activeFilterCount = [
         activeCategory !== 'All',
         activeTag !== 'All',
         query.trim() !== '',
         sort !== 'newest',
     ].filter(Boolean).length;
-
-    // Reset visible count when filters change
-    useEffect(() => {
-        setVisibleCount(12);
-    }, [activeCategory, activeTag, query, sort]);
 
     function clearAll() {
         setQuery('');
@@ -115,7 +103,6 @@ export function SearchAndFilter({ posts }: { posts: Post[] }) {
                 {/* Search row */}
                 <div className="search-row">
                     <div className="search-input-wrap">
-                        {/* Search icon */}
                         <svg className="search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                             <circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" strokeWidth="1.6" />
                             <path d="M13 13l3.5 3.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
@@ -143,7 +130,6 @@ export function SearchAndFilter({ posts }: { posts: Post[] }) {
                         )}
                     </div>
 
-                    {/* Sort selector */}
                     <div className="sort-wrap">
                         <label htmlFor="sort-select" className="sr-only">Sort by</label>
                         <select
@@ -212,7 +198,7 @@ export function SearchAndFilter({ posts }: { posts: Post[] }) {
                     </div>
                 </div>
 
-                {/* Active filters summary + clear */}
+                {/* Active filters bar */}
                 {activeFilterCount > 0 && (
                     <div className="active-filters-bar">
                         <span className="active-filters-label">
@@ -242,35 +228,31 @@ export function SearchAndFilter({ posts }: { posts: Post[] }) {
             {filteredPosts.length > 0 ? (
                 <>
                     <div className="grid">
-                        {visiblePosts.map((post) => {
-                            const authorName = authorNameMap[post.author];
-                            const authorAvatar = authorAvatarMap[post.author];
-                            return (
-                                <article key={post.slug} className="post-card">
-                                    <div className="post-meta">{post.category} • {post.date}</div>
-                                    <h3>{post.title}</h3>
-                                    <p>{post.excerpt}</p>
-                                    <div className="post-card-footer">
-                                        {authorName && (
-                                            <Link
-                                                href={`/authors/${post.author}`}
-                                                className="post-card-author"
-                                                onClick={(e) => e.stopPropagation()}
-                                                aria-label={`Articles by ${authorName}`}
-                                            >
-                                                <span className="post-card-avatar" aria-hidden="true">
-                                                    {authorAvatar}
-                                                </span>
-                                                <span>{authorName}</span>
-                                            </Link>
-                                        )}
-                                        <Link href={`/posts/${post.slug}`} className="post-link">
-                                            Read →
+                        {visiblePosts.map((post) => (
+                            <article key={post.slug} className="post-card">
+                                <div className="post-meta">{post.category} • {post.date}</div>
+                                <h3>{post.title}</h3>
+                                <p>{post.excerpt}</p>
+                                <div className="post-card-footer">
+                                    {AUTHOR_NAME[post.author] && (
+                                        <Link
+                                            href={`/authors/${post.author}`}
+                                            className="post-card-author"
+                                            onClick={(e) => e.stopPropagation()}
+                                            aria-label={`Articles by ${AUTHOR_NAME[post.author]}`}
+                                        >
+                                            <span className="post-card-avatar" aria-hidden="true">
+                                                {AUTHOR_AVATAR[post.author]}
+                                            </span>
+                                            <span>{AUTHOR_NAME[post.author]}</span>
                                         </Link>
-                                    </div>
-                                </article>
-                            );
-                        })}
+                                    )}
+                                    <Link href={`/posts/${post.slug}`} className="post-link">
+                                        Read →
+                                    </Link>
+                                </div>
+                            </article>
+                        ))}
                     </div>
 
                     {hasMorePosts && (
@@ -292,7 +274,7 @@ export function SearchAndFilter({ posts }: { posts: Post[] }) {
                 <div className="post-card empty-state">
                     <h3>No articles match.</h3>
                     <p>
-                        Try a broader search term{activeCategory !== 'All' ? `, or clear the "${activeCategory}" category filter` : ''}.
+                        Try a broader search term{activeCategory !== 'All' ? `, or clear the "${activeCategory}" filter` : ''}.
                         {' '}<button type="button" className="inline-reset-btn" onClick={clearAll}>Reset all filters</button>
                     </p>
                 </div>
