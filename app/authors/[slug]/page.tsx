@@ -8,14 +8,13 @@ export function generateStaticParams() {
     return getAllAuthors().map((author) => ({ slug: author.slug }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-    const { slug } = await params;
-    const author = getAuthorBySlug(slug);
+export function generateMetadata({ params }: { params: { slug: string } }) {
+    const author = getAuthorBySlug(params.slug);
     if (!author) return {};
     return {
         title: `${author.name} — ${author.role}`,
         description: author.bio,
-        alternates: { canonical: `/authors/${slug}` },
+        alternates: { canonical: `/authors/${params.slug}` },
         openGraph: {
             title: `${author.name} | Zyrox`,
             description: author.bio,
@@ -24,9 +23,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     };
 }
 
-export default async function AuthorPage({ params }: { params: Promise<{ slug: string }> }) {
-    const { slug } = await params;
-    const author = getAuthorBySlug(slug);
+export default function AuthorPage({ params }: { params: { slug: string } }) {
+    const author = getAuthorBySlug(params.slug);
     if (!author) notFound();
 
     const posts = getPostsByAuthor(author.slug);

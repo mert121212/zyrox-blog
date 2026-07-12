@@ -13,9 +13,8 @@ export async function generateStaticParams() {
     return getAllPosts().map((post) => ({ slug: post.slug }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-    const { slug } = await params;
-    const post = getPostBySlug(slug);
+export function generateMetadata({ params }: { params: { slug: string } }) {
+    const post = getPostBySlug(params.slug);
     if (!post) return {};
 
     const author = getAuthorBySlug(post.author);
@@ -25,13 +24,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         description: post.meta_description,
         keywords: post.keywords,
         alternates: {
-            canonical: `/posts/${slug}`,
+            canonical: `/posts/${params.slug}`,
         },
         openGraph: {
             title: post.title,
             description: post.meta_description,
             type: 'article',
-            url: `/posts/${slug}`,
+            url: `/posts/${params.slug}`,
             siteName: 'Zyrox',
             publishedTime: post.date,
             modifiedTime: post.date,
@@ -50,9 +49,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     };
 }
 
-export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
-    const { slug } = await params;
-    const post = getPostBySlug(slug);
+export default function PostPage({ params }: { params: { slug: string } }) {
+    const post = getPostBySlug(params.slug);
     if (!post) notFound();
 
     const author = getAuthorBySlug(post.author);
@@ -89,7 +87,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         articleSection: post.category,
         mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': `https://zyroxnet.netlify.app/posts/${slug}`,
+            '@id': `https://zyroxnet.netlify.app/posts/${params.slug}`,
         },
     };
 
@@ -113,7 +111,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                 '@type': 'ListItem',
                 position: 3,
                 name: post.title,
-                item: `https://zyroxnet.netlify.app/posts/${slug}`,
+                item: `https://zyroxnet.netlify.app/posts/${params.slug}`,
             },
         ],
     };
@@ -128,7 +126,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                             items={[
                                 { name: 'Home', href: '/' },
                                 { name: post.category, href: `/category/${post.category}` },
-                                { name: post.title, href: `/posts/${slug}` }
+                                { name: post.title, href: `/posts/${params.slug}` }
                             ]}
                         />
                         <article className="article-card">

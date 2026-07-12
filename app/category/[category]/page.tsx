@@ -6,24 +6,22 @@ export function generateStaticParams() {
     return getCategories().map((category) => ({ category }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ category: string }> }) {
-    const { category } = await params;
+export function generateMetadata({ params }: { params: { category: string } }) {
     return {
-        title: `${category} Articles`,
-        description: `Browse ${category} articles on Zyrox.`,
+        title: `${params.category} Articles`,
+        description: `Browse ${params.category} articles on Zyrox.`,
     };
 }
 
-export default async function CategoryPage({ params }: { params: Promise<{ category: string }> }) {
-    const { category } = await params;
-    const posts = getPostsByCategory(category);
+export default function CategoryPage({ params }: { params: { category: string } }) {
+    const posts = getPostsByCategory(params.category);
     if (!posts.length) notFound();
 
     return (
         <main className="page-shell">
             <div className="container">
-                <h1>{category}</h1>
-                <p>Practical articles focused on {category.toLowerCase()}.</p>
+                <h1>{params.category}</h1>
+                <p>Practical articles focused on {params.category.toLowerCase()}.</p>
                 <div className="grid" style={{ marginTop: '1.4rem' }}>
                     {posts.map((post) => (
                         <article key={post.slug} className="post-card">
