@@ -1,10 +1,10 @@
 import Link from 'next/link';
 
-const navItems = [
+// Internal Next.js pages
+const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/authors', label: 'Authors' },
     { href: '/about', label: 'About' },
-    { href: '/rss.xml', label: 'RSS' },
 ];
 
 export function SiteHeader() {
@@ -15,11 +15,15 @@ export function SiteHeader() {
                     Zyrox
                 </Link>
                 <nav aria-label="Primary navigation">
-                    {navItems.map((item) => (
+                    {navLinks.map((item) => (
                         <Link key={item.href} href={item.href}>
                             {item.label}
                         </Link>
                     ))}
+                    {/* RSS is a static file — use plain <a> to avoid Next.js router */}
+                    <a href="/rss.xml" rel="alternate" type="application/rss+xml">
+                        RSS
+                    </a>
                 </nav>
             </div>
         </header>

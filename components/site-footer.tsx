@@ -12,11 +12,13 @@ const footerLinks = {
         { href: '/privacy-policy', label: 'Privacy Policy' },
         { href: '/terms', label: 'Terms of Use' },
     ],
-    feeds: [
-        { href: '/rss.xml', label: 'RSS Feed' },
-        { href: '/sitemap.xml', label: 'Sitemap' },
-    ],
 };
+
+// Static files served from public/ — use plain <a> not Next.js <Link>
+const staticFileLinks = [
+    { href: '/rss.xml', label: 'RSS Feed' },
+    { href: '/sitemap.xml', label: 'Sitemap' },
+];
 
 export function SiteFooter() {
     return (
@@ -55,9 +57,9 @@ export function SiteFooter() {
                     <div className="site-footer__col">
                         <p className="site-footer__col-heading">Feeds</p>
                         <ul>
-                            {footerLinks.feeds.map((link) => (
+                            {staticFileLinks.map((link) => (
                                 <li key={link.href}>
-                                    <Link href={link.href}>{link.label}</Link>
+                                    <a href={link.href}>{link.label}</a>
                                 </li>
                             ))}
                         </ul>

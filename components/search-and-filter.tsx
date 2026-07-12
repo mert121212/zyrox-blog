@@ -1,125 +1,300 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import type { Post } from '@/lib/posts';
+import { authors } from '@/lib/authors';
+
+type SortOption = 'newest' | 'oldest' | 'az';
+
+const SORT_LABELS: Record<SortOption, string> = {
+    newest: 'Newest first',
+    oldest: 'Oldest first',
+    az: 'A – Z',
+};
+
+const TAG_VISIBLE_INITIAL = 12;
 
 export function SearchAndFilter({ posts }: { posts: Post[] }) {
     const [query, setQuery] = useState('');
     const [activeCategory, setActiveCategory] = useState('All');
     const [activeTag, setActiveTag] = useState('All');
-    const [visibleCount, setVisibleCount] = useState(10);
+    const [sort, setSort] = useState<SortOption>('newest');
+    const [visibleCount, setVisibleCount] = useState(12);
+    const [showAllTags, setShowAllTags] = useState(false);
+    const [mounted, setMounted] = useState(false);
+    const inputRef = useRef<HTMLInputElement>(null);
 
+    // Build lookup maps inside useMemo so they are stable and client-only
+    const authorNameMap = useMemo(
+        () => Object.fromEntries(authors.map((a) => [a.slug, a.name])),
+        [],
+    );
+    const authorAvatarMap = useMemo(
+        () => Object.fromEntries(authors.map((a) => [a.slug, a.avatar])),
+        [],
+    );
+
+    // Prevent hydration mismatch for interactive parts
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    // Don't render interactive UI until hydration complete
+    if (!mounted) {
+        return (
+            <div suppressHydrationWarning>
+                <p className="results-meta" style={{ color: 'var(--muted)', marginBottom: '1rem' }}>
+                    Loading {posts.length} articles…
+                </p>
+            </div>
+        );
+    }
+
+    // ── Derived data ──────────────────────────────────────────
     const categories = useMemo(
-        () => ['All', ...Array.from(new Set(posts.map((post) => post.category)))],
+        () => ['All', ...Array.from(new Set(posts.map((p) => p.category))).sort()],
         [posts],
     );
 
-    const tags = useMemo(
-        () => ['All', ...Array.from(new Set(posts.flatMap((post) => post.tags)))],
+    const allTags = useMemo(
+        () => Array.from(new Set(posts.flatMap((p) => p.tags))).sort(),
         [posts],
     );
 
+    const visibleTags = showAllTags ? allTags : allTags.slice(0, TAG_VISIBLE_INITIAL);
+    const hasHiddenTags = allTags.length > TAG_VISIBLE_INITIAL;
+
+    // ── Filtering + sorting ───────────────────────────────────
     const filteredPosts = useMemo(() => {
-        const normalizedQuery = query.trim().toLowerCase();
+        const q = query.trim().toLowerCase();
 
-        return posts.filter((post) => {
-            const haystack = `${post.title} ${post.meta_description} ${post.content} ${post.tags.join(' ')}`.toLowerCase();
-            const matchesQuery = !normalizedQuery || haystack.includes(normalizedQuery);
+        let result = posts.filter((post) => {
+            const haystack = `${post.title} ${post.meta_description} ${post.tags.join(' ')} ${authorNameMap[post.author] ?? ''}`.toLowerCase();
+            const matchesQuery = !q || haystack.includes(q);
             const matchesCategory = activeCategory === 'All' || post.category === activeCategory;
             const matchesTag = activeTag === 'All' || post.tags.includes(activeTag);
-
             return matchesQuery && matchesCategory && matchesTag;
         });
-    }, [activeCategory, activeTag, posts, query]);
+
+        if (sort === 'oldest') result = [...result].reverse();
+        else if (sort === 'az') result = [...result].sort((a, b) => a.title.localeCompare(b.title));
+
+        return result;
+    }, [activeCategory, activeTag, posts, query, sort]);
 
     const visiblePosts = filteredPosts.slice(0, visibleCount);
     const hasMorePosts = filteredPosts.length > visiblePosts.length;
 
+    // Determine active filter count for the badge
+    const activeFilterCount = [
+        activeCategory !== 'All',
+        activeTag !== 'All',
+        query.trim() !== '',
+        sort !== 'newest',
+    ].filter(Boolean).length;
+
+    // Reset visible count when filters change
     useEffect(() => {
-        setVisibleCount(10);
-    }, [activeCategory, activeTag, query]);
+        setVisibleCount(12);
+    }, [activeCategory, activeTag, query, sort]);
+
+    function clearAll() {
+        setQuery('');
+        setActiveCategory('All');
+        setActiveTag('All');
+        setSort('newest');
+        inputRef.current?.focus();
+    }
 
     return (
         <>
+            {/* ── Search panel ───────────────────────────────── */}
             <div className="search-panel">
-                <label className="search-box" htmlFor="site-search">
-                    <span>Search articles</span>
-                    <input
-                        id="site-search"
-                        type="text"
-                        value={query}
-                        onChange={(event) => setQuery(event.target.value)}
-                        placeholder="Try NVMe, cooling, PSU, BIOS..."
-                    />
-                </label>
 
-                <div className="filter-group">
-                    <p className="filter-label">Categories</p>
-                    <div className="pill-row">
-                        {categories.map((category) => (
+                {/* Search row */}
+                <div className="search-row">
+                    <div className="search-input-wrap">
+                        {/* Search icon */}
+                        <svg className="search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                            <circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" strokeWidth="1.6" />
+                            <path d="M13 13l3.5 3.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+                        </svg>
+                        <input
+                            ref={inputRef}
+                            id="site-search"
+                            type="search"
+                            value={query}
+                            onChange={(e) => setQuery(e.target.value)}
+                            placeholder="Search articles — try NVMe, cooling, PSU…"
+                            aria-label="Search articles"
+                            autoComplete="off"
+                            spellCheck={false}
+                        />
+                        {query && (
                             <button
-                                key={category}
                                 type="button"
-                                className={`pill ${activeCategory === category ? 'pill--active' : ''}`}
-                                onClick={() => setActiveCategory(category)}
+                                className="search-clear"
+                                onClick={() => { setQuery(''); inputRef.current?.focus(); }}
+                                aria-label="Clear search"
                             >
-                                {category}
+                                ✕
+                            </button>
+                        )}
+                    </div>
+
+                    {/* Sort selector */}
+                    <div className="sort-wrap">
+                        <label htmlFor="sort-select" className="sr-only">Sort by</label>
+                        <select
+                            id="sort-select"
+                            className="sort-select"
+                            value={sort}
+                            onChange={(e) => setSort(e.target.value as SortOption)}
+                        >
+                            {(Object.keys(SORT_LABELS) as SortOption[]).map((k) => (
+                                <option key={k} value={k}>{SORT_LABELS[k]}</option>
+                            ))}
+                        </select>
+                    </div>
+                </div>
+
+                {/* Category filter */}
+                <div className="filter-group">
+                    <p className="filter-label">Category</p>
+                    <div className="pill-row">
+                        {categories.map((cat) => (
+                            <button
+                                key={cat}
+                                type="button"
+                                className={`pill${activeCategory === cat ? ' pill--active' : ''}`}
+                                onClick={() => setActiveCategory(cat)}
+                                aria-pressed={activeCategory === cat}
+                            >
+                                {cat}
                             </button>
                         ))}
                     </div>
                 </div>
 
+                {/* Tag filter */}
                 <div className="filter-group">
                     <p className="filter-label">Tags</p>
                     <div className="pill-row">
-                        {tags.map((tag) => (
+                        <button
+                            type="button"
+                            className={`pill${activeTag === 'All' ? ' pill--active' : ''}`}
+                            onClick={() => setActiveTag('All')}
+                            aria-pressed={activeTag === 'All'}
+                        >
+                            All
+                        </button>
+                        {visibleTags.map((tag) => (
                             <button
                                 key={tag}
                                 type="button"
-                                className={`pill ${activeTag === tag ? 'pill--active' : ''}`}
-                                onClick={() => setActiveTag(tag)}
+                                className={`pill${activeTag === tag ? ' pill--active' : ''}`}
+                                onClick={() => setActiveTag(tag === activeTag ? 'All' : tag)}
+                                aria-pressed={activeTag === tag}
                             >
                                 {tag}
                             </button>
                         ))}
+                        {hasHiddenTags && (
+                            <button
+                                type="button"
+                                className="pill pill--ghost"
+                                onClick={() => setShowAllTags((v) => !v)}
+                            >
+                                {showAllTags ? '← Show less' : `+${allTags.length - TAG_VISIBLE_INITIAL} more`}
+                            </button>
+                        )}
                     </div>
                 </div>
+
+                {/* Active filters summary + clear */}
+                {activeFilterCount > 0 && (
+                    <div className="active-filters-bar">
+                        <span className="active-filters-label">
+                            {activeFilterCount} filter{activeFilterCount > 1 ? 's' : ''} active
+                            {activeCategory !== 'All' && <span className="active-filter-chip">{activeCategory}</span>}
+                            {activeTag !== 'All' && <span className="active-filter-chip">#{activeTag}</span>}
+                            {query && <span className="active-filter-chip">"{query}"</span>}
+                            {sort !== 'newest' && <span className="active-filter-chip">{SORT_LABELS[sort]}</span>}
+                        </span>
+                        <button type="button" className="clear-filters-btn" onClick={clearAll}>
+                            Clear all
+                        </button>
+                    </div>
+                )}
             </div>
 
-            <p className="results-meta">Showing {visiblePosts.length} of {filteredPosts.length} article{filteredPosts.length === 1 ? '' : 's'}.</p>
+            {/* ── Results meta ───────────────────────────────── */}
+            <p className="results-meta">
+                {filteredPosts.length === 0
+                    ? 'No articles match.'
+                    : `${filteredPosts.length} article${filteredPosts.length === 1 ? '' : 's'} found`}
+                {filteredPosts.length > 0 && visiblePosts.length < filteredPosts.length &&
+                    ` — showing ${visiblePosts.length}`}
+            </p>
 
+            {/* ── Article grid ───────────────────────────────── */}
             {filteredPosts.length > 0 ? (
                 <>
                     <div className="grid">
-                        {visiblePosts.map((post) => (
-                            <article key={post.slug} className="post-card">
-                                <div className="post-meta">{post.category} • {post.date}</div>
-                                <h3>{post.title}</h3>
-                                <p>{post.excerpt}</p>
-                                <Link href={`/posts/${post.slug}`} className="post-link">
-                                    Read article →
-                                </Link>
-                            </article>
-                        ))}
+                        {visiblePosts.map((post) => {
+                            const authorName = authorNameMap[post.author];
+                            const authorAvatar = authorAvatarMap[post.author];
+                            return (
+                                <article key={post.slug} className="post-card">
+                                    <div className="post-meta">{post.category} • {post.date}</div>
+                                    <h3>{post.title}</h3>
+                                    <p>{post.excerpt}</p>
+                                    <div className="post-card-footer">
+                                        {authorName && (
+                                            <Link
+                                                href={`/authors/${post.author}`}
+                                                className="post-card-author"
+                                                onClick={(e) => e.stopPropagation()}
+                                                aria-label={`Articles by ${authorName}`}
+                                            >
+                                                <span className="post-card-avatar" aria-hidden="true">
+                                                    {authorAvatar}
+                                                </span>
+                                                <span>{authorName}</span>
+                                            </Link>
+                                        )}
+                                        <Link href={`/posts/${post.slug}`} className="post-link">
+                                            Read →
+                                        </Link>
+                                    </div>
+                                </article>
+                            );
+                        })}
                     </div>
 
                     {hasMorePosts && (
-                        <div style={{ marginTop: '1.25rem', textAlign: 'center' }}>
+                        <div className="load-more-wrap">
                             <button
                                 type="button"
                                 className="btn btn--secondary"
-                                onClick={() => setVisibleCount((count) => count + 10)}
+                                onClick={() => setVisibleCount((c) => c + 12)}
                             >
-                                Show 10 more
+                                Show 12 more
+                                <span className="load-more-count">
+                                    ({filteredPosts.length - visibleCount} remaining)
+                                </span>
                             </button>
                         </div>
                     )}
                 </>
             ) : (
                 <div className="post-card empty-state">
-                    <h3>No articles match that filter.</h3>
-                    <p>Try a broader search term or clear one of the active filters.</p>
+                    <h3>No articles match.</h3>
+                    <p>
+                        Try a broader search term{activeCategory !== 'All' ? `, or clear the "${activeCategory}" category filter` : ''}.
+                        {' '}<button type="button" className="inline-reset-btn" onClick={clearAll}>Reset all filters</button>
+                    </p>
                 </div>
             )}
         </>
