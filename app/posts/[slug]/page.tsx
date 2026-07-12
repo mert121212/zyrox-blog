@@ -4,13 +4,18 @@ import { marked } from 'marked';
 import { getAllPosts, getPostBySlug } from '@/lib/posts';
 import { getAuthorBySlug } from '@/lib/authors';
 import { AuthorCard } from '@/components/author-card';
+import { ReadingProgress } from '@/components/reading-progress';
+import { RelatedPosts } from '@/components/related-posts';
+import { Breadcrumb } from '@/components/breadcrumb';
+import { TableOfContents } from '@/components/table-of-contents';
 
 export async function generateStaticParams() {
     return getAllPosts().map((post) => ({ slug: post.slug }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-    const post = getPostBySlug(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
+    const post = getPostBySlug(slug);
     if (!post) return {};
 
     const author = getAuthorBySlug(post.author);
@@ -20,29 +25,39 @@ export async function generateMetadata({ params }: { params: { slug: string } })
         description: post.meta_description,
         keywords: post.keywords,
         alternates: {
-            canonical: `/posts/${params.slug}`,
+            canonical: `/posts/${slug}`,
         },
         openGraph: {
             title: post.title,
             description: post.meta_description,
             type: 'article',
-            url: `/posts/${params.slug}`,
+            url: `/posts/${slug}`,
+            siteName: 'Zyrox',
+            publishedTime: post.date,
+            modifiedTime: post.date,
+            authors: author ? [author.name] : ['Zyrox'],
+            section: post.category,
+            tags: post.tags,
         },
         twitter: {
             card: 'summary_large_image',
             title: post.title,
             description: post.meta_description,
+            site: '@zyrox',
+            creator: author ? '@zyrox' : '@zyrox',
         },
         authors: author ? [{ name: author.name }] : undefined,
     };
 }
 
-export default async function PostPage({ params }: { params: { slug: string } }) {
-    const post = getPostBySlug(params.slug);
+export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
+    const post = getPostBySlug(slug);
     if (!post) notFound();
 
     const author = getAuthorBySlug(post.author);
     const contentHtml = marked.parse(post.content);
+    const allPosts = getAllPosts();
 
     const jsonLd = {
         '@context': 'https://schema.org',
@@ -53,7 +68,7 @@ export default async function PostPage({ params }: { params: { slug: string } })
             ? {
                 '@type': 'Person',
                 name: author.name,
-                url: `https://zyrox.com/authors/${author.slug}`,
+                url: `https://zyroxnet.netlify.app/authors/${author.slug}`,
             }
             : {
                 '@type': 'Organization',
@@ -62,16 +77,61 @@ export default async function PostPage({ params }: { params: { slug: string } })
         publisher: {
             '@type': 'Organization',
             name: 'Zyrox',
+            url: 'https://zyroxnet.netlify.app',
+            logo: {
+                '@type': 'ImageObject',
+                url: 'https://zyroxnet.netlify.app/logo.png',
+            },
         },
         datePublished: post.date,
+        dateModified: post.date,
         keywords: post.tags.join(', '),
         articleSection: post.category,
+        mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id': `https://zyroxnet.netlify.app/posts/${slug}`,
+        },
+    };
+
+    const breadcrumbJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://zyroxnet.netlify.app',
+            },
+            {
+                '@type': 'ListItem',
+                position: 2,
+                name: post.category,
+                item: `https://zyroxnet.netlify.app/category/${post.category}`,
+            },
+            {
+                '@type': 'ListItem',
+                position: 3,
+                name: post.title,
+                item: `https://zyroxnet.netlify.app/posts/${slug}`,
+            },
+        ],
     };
 
     return (
         <main className="article-content">
+            <ReadingProgress />
             <div className="container">
-                <article className="article-card">
+                <div className="article-layout">
+                    <div className="article-main">
+                        <Breadcrumb 
+                            items={[
+                                { name: 'Home', href: '/' },
+                                { name: post.category, href: `/category/${post.category}` },
+                                { name: post.title, href: `/posts/${slug}` }
+                            ]}
+                        />
+                        <article className="article-card">
                     <div className="post-meta">{post.category} • {post.date}</div>
                     <h1>{post.title}</h1>
                     <p className="article-excerpt">{post.meta_description}</p>
@@ -103,6 +163,10 @@ export default async function PostPage({ params }: { params: { slug: string } })
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
                     />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+                    />
 
                     <div className="article-body" dangerouslySetInnerHTML={{ __html: contentHtml }} />
 
@@ -118,6 +182,13 @@ export default async function PostPage({ params }: { params: { slug: string } })
                         ← Back to home
                     </Link>
                 </article>
+
+                <RelatedPosts currentPost={post} allPosts={allPosts} />
+                    </div>
+                    <aside className="article-sidebar">
+                        <TableOfContents content={post.content} />
+                    </aside>
+                </div>
             </div>
         </main>
     );
