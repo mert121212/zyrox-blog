@@ -3,15 +3,16 @@ import { notFound } from 'next/navigation';
 import { getPostsByTag, getTags } from '@/lib/posts';
 
 export function generateStaticParams() {
-    return getTags().map((tag) => ({ tag: encodeURIComponent(tag) }));
+    // Pass raw strings — Next.js handles URL encoding automatically.
+    return getTags().map((tag) => ({ tag }));
 }
 
 export function generateMetadata({ params }: { params: { tag: string } }) {
-    const decoded = decodeURIComponent(params.tag);
+    const tag = decodeURIComponent(params.tag);
     return {
-        title: `#${decoded} Articles`,
-        description: `Browse articles tagged ${decoded} on Zyrox.`,
-        alternates: { canonical: `/tag/${encodeURIComponent(decoded)}` },
+        title: `#${tag} Articles`,
+        description: `Browse articles tagged ${tag} on Zyrox.`,
+        alternates: { canonical: `/tag/${encodeURIComponent(tag)}` },
     };
 }
 
