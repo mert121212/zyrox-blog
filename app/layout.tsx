@@ -1,9 +1,15 @@
 import type { Metadata } from 'next';
 import { Inter, Space_Grotesk } from 'next/font/google';
+import dynamic from 'next/dynamic';
 import './globals.css';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
-import { BackToTop } from '@/components/back-to-top';
+
+// Client-only — uses scroll event listener, must not SSR
+const BackToTop = dynamic(
+    () => import('@/components/back-to-top').then((m) => ({ default: m.BackToTop })),
+    { ssr: false },
+);
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space', display: 'swap' });
