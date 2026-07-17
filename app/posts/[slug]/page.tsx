@@ -8,6 +8,8 @@ import { ReadingProgress } from '@/components/reading-progress';
 import { RelatedPosts } from '@/components/related-posts';
 import { Breadcrumb } from '@/components/breadcrumb';
 import { TableOfContents } from '@/components/table-of-contents';
+import { HelpfulVote } from '@/components/helpful-vote';
+import { ReadingListToggle } from '@/components/reading-list-toggle';
 
 export async function generateStaticParams() {
     return getAllPosts().map((post) => ({ slug: post.slug }));
@@ -33,8 +35,8 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
             url: `/posts/${params.slug}`,
             siteName: 'Zyrox',
             publishedTime: post.date,
-            modifiedTime: post.date,
-            authors: author ? [author.name] : ['Zyrox'],
+            modifiedTime: post.updated,
+            authors: author ? [author.name] : ['Zyrox Editorial Team'],
             section: post.category,
             tags: post.tags,
         },
@@ -43,7 +45,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
             title: post.title,
             description: post.meta_description,
             site: '@zyrox',
-            creator: author ? '@zyrox' : '@zyrox',
+            creator: '@zyrox',
         },
         authors: author ? [{ name: author.name }] : undefined,
     };
@@ -82,7 +84,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             },
         },
         datePublished: post.date,
-        dateModified: post.date,
+        dateModified: post.updated,
         keywords: post.tags.join(', '),
         articleSection: post.category,
         mainEntityOfPage: {
@@ -122,15 +124,21 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             <div className="container">
                 <div className="article-layout">
                     <div className="article-main">
-                        <Breadcrumb 
+                        <Breadcrumb
                             items={[
                                 { name: 'Home', href: '/' },
-                                { name: post.category, href: `/category/${post.category}` },
+                                { name: post.category, href: `/category/${encodeURIComponent(post.category)}` },
                                 { name: post.title, href: `/posts/${params.slug}` }
                             ]}
                         />
                         <article className="article-card">
-                    <div className="post-meta">{post.category} • {post.date}</div>
+                    <div className="post-meta post-meta-row">
+                        <span>
+                            {post.category} • Published {post.date}
+                            {post.updated !== post.date && ` • Updated ${post.updated}`}
+                        </span>
+                        <ReadingListToggle slug={params.slug} title={post.title} category={post.category} />
+                    </div>
                     <h1>{post.title}</h1>
                     <p className="article-excerpt">{post.meta_description}</p>
 
@@ -167,6 +175,8 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                     />
 
                     <div className="article-body" dangerouslySetInnerHTML={{ __html: contentHtml }} />
+
+                    <HelpfulVote slug={params.slug} />
 
                     <hr className="article-divider" />
 

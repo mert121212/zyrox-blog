@@ -17,6 +17,9 @@ export function AuthorCard({ author, articleCount, variant = 'compact' }: Author
                 <div className="author-info">
                     <p className="author-role">{author.role}</p>
                     <h1 className="author-name-lg">{author.name}</h1>
+                    <p className="author-department" style={{ color: 'var(--accent)', fontWeight: 600, marginTop: '-0.4rem', marginBottom: '0.8rem', fontSize: '0.95rem' }}>
+                        {author.department}
+                    </p>
                     <p className="author-bio">{author.longBio}</p>
                     <div className="author-expertise">
                         {author.expertise.map((item) => (
@@ -41,12 +44,11 @@ export function AuthorCard({ author, articleCount, variant = 'compact' }: Author
                 {author.avatar}
             </Link>
             <div className="author-info">
-                <p className="author-label">Written by</p>
+                <p className="author-label">Written by the {author.department} team</p>
                 <Link href={`/authors/${author.slug}`} className="author-name">
                     {author.name}
                 </Link>
                 <p className="author-role">{author.role}</p>
-                <p className="author-bio-short">{author.bio}</p>
             </div>
         </div>
     );

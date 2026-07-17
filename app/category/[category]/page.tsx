@@ -3,18 +3,27 @@ import { notFound } from 'next/navigation';
 import { getCategories, getPostsByCategory } from '@/lib/posts';
 
 export function generateStaticParams() {
-    return getCategories().map((category) => ({ category }));
+    // Encode category names that contain spaces or special characters
+    // so the dynamic segment matches the URL the browser navigates to.
+    return getCategories().map((category) => ({
+        category: encodeURIComponent(category),
+    }));
 }
 
 export function generateMetadata({ params }: { params: { category: string } }) {
+    const decoded = decodeURIComponent(params.category);
     return {
-        title: `${params.category} Articles`,
-        description: `Browse ${params.category} articles on Zyrox.`,
+        title: `${decoded} Articles`,
+        description: `Browse ${decoded} articles on Zyrox.`,
+        alternates: { canonical: `/category/${encodeURIComponent(decoded)}` },
     };
 }
 
 export default function CategoryPage({ params }: { params: { category: string } }) {
-    const posts = getPostsByCategory(params.category);
+    // URL segments are URL-encoded by Next.js — decode so we can match
+    // the raw category string stored in frontmatter (e.g. "Hardware Troubleshooting").
+    const category = decodeURIComponent(params.category);
+    const posts = getPostsByCategory(category);
     if (!posts.length) notFound();
 
     return (

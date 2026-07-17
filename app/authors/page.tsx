@@ -3,8 +3,8 @@ import { getAllAuthors } from '@/lib/authors';
 import { getPostsByAuthor } from '@/lib/posts';
 
 export const metadata = {
-    title: 'Our Authors',
-    description: 'Meet the writers behind Zyrox — hardware specialists focused on practical, experience-driven PC guides.',
+    title: 'Editorial Team',
+    description: 'The editorial team behind Zyrox — hardware specialists producing independent, experience-driven PC guides.',
     alternates: { canonical: '/authors' },
 };
 
@@ -14,10 +14,10 @@ export default function AuthorsPage() {
     return (
         <main className="page-shell">
             <div className="container">
-                <p className="hero__eyebrow">The team</p>
-                <h1>Our Authors</h1>
+                <p className="hero__eyebrow">The editorial team</p>
+                <h1>Editorial Team</h1>
                 <p style={{ color: 'var(--muted)', marginBottom: '2rem', maxWidth: '640px' }}>
-                    Every article on Zyrox is written by a specialist with hands-on experience. No filler, no AI slop — just honest, practical hardware knowledge from people who actually use this stuff.
+                    Every article on Zyrox is written by an editor who specializes in the topic they cover. Our team focuses on hands-on testing and independent analysis, and our editorial decisions are not influenced by manufacturer relationships. See our <Link href="/editorial-policy" className="post-link" style={{ display: 'inline', marginTop: 0 }}>Editorial Policy</Link> for details.
                 </p>
 
                 <div className="authors-grid">
@@ -36,7 +36,7 @@ export default function AuthorsPage() {
                                 <div>
                                     <p className="author-role">{author.role}</p>
                                     <h2 className="author-name">{author.name}</h2>
-                                    <p className="author-bio-short">{author.bio}</p>
+                                    <p className="author-bio-short">{author.department}</p>
                                     <div className="author-expertise" style={{ marginTop: '0.75rem' }}>
                                         {author.expertise.slice(0, 3).map((item) => (
                                             <span key={item} className="pill">

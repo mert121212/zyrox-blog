@@ -12,11 +12,11 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
     const author = getAuthorBySlug(params.slug);
     if (!author) return {};
     return {
-        title: `${author.name} — ${author.role}`,
+        title: `${author.role} — ${author.department}`,
         description: author.bio,
         alternates: { canonical: `/authors/${params.slug}` },
         openGraph: {
-            title: `${author.name} | Zyrox`,
+            title: `${author.role} | Zyrox Editorial Team`,
             description: author.bio,
             type: 'profile',
         },
@@ -33,13 +33,14 @@ export default function AuthorPage({ params }: { params: { slug: string } }) {
         <main className="page-shell">
             <div className="container">
                 <div className="author-page-header card" style={{ marginBottom: '2rem' }}>
+                    <p className="hero__eyebrow" style={{ marginBottom: '1.25rem' }}>Editorial Team</p>
                     <AuthorCard author={author} articleCount={posts.length} variant="full" />
                 </div>
 
                 {posts.length > 0 && (
                     <section>
                         <h2 className="author-articles-heading">
-                            Articles by {author.name}
+                            Articles by the {author.department} team
                         </h2>
                         <div className="grid" style={{ marginTop: '1.2rem' }}>
                             {posts.map((post) => (
@@ -57,7 +58,7 @@ export default function AuthorPage({ params }: { params: { slug: string } }) {
                 )}
 
                 <div style={{ marginTop: '2rem' }}>
-                    <Link href="/authors" className="post-link">← All authors</Link>
+                    <Link href="/authors" className="post-link">← All editorial team</Link>
                 </div>
             </div>
         </main>

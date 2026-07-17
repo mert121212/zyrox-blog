@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ReadingListBadge } from './reading-list-badge';
 
 // Internal Next.js pages
 const navLinks = [
@@ -20,6 +21,7 @@ export function SiteHeader() {
                             {item.label}
                         </Link>
                     ))}
+                    <ReadingListBadge />
                     {/* RSS is a static file — use plain <a> to avoid Next.js router */}
                     <a href="/rss.xml" rel="alternate" type="application/rss+xml">
                         RSS

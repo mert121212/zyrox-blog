@@ -15,6 +15,7 @@ export type Post = {
     title: string;
     meta_description: string;
     date: string;
+    updated: string;
     category: string;
     tags: string[];
     keywords: string[];
@@ -38,6 +39,7 @@ export function getAllPosts(): Post[] {
                 title: data.title,
                 meta_description: data.meta_description,
                 date: normalizeDate(data.date),
+                updated: normalizeDate(data.updated ?? data.date),
                 category: data.category,
                 tags: data.tags || [],
                 keywords: data.keywords || data.tags || [],
@@ -61,6 +63,7 @@ export function getPostBySlug(slug: string): Post | null {
         title: data.title,
         meta_description: data.meta_description,
         date: normalizeDate(data.date),
+        updated: normalizeDate(data.updated ?? data.date),
         category: data.category,
         tags: data.tags || [],
         keywords: data.keywords || data.tags || [],
