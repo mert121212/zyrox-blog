@@ -1,5 +1,11 @@
 import Link from 'next/link';
-import { ReadingListBadge } from './reading-list-badge';
+import dynamic from 'next/dynamic';
+
+// ReadingListBadge reads localStorage — must be client-only, no SSR
+const ReadingListBadge = dynamic(
+    () => import('./reading-list-badge').then((m) => ({ default: m.ReadingListBadge })),
+    { ssr: false },
+);
 
 // Internal Next.js pages
 const navLinks = [
