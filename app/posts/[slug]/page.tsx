@@ -124,12 +124,6 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             {
                 '@type': 'ListItem',
                 position: 2,
-                name: post.category,
-                item: `https://zyroxnet.netlify.app/category/${post.category}`,
-            },
-            {
-                '@type': 'ListItem',
-                position: 3,
                 name: post.title,
                 item: `https://zyroxnet.netlify.app/posts/${params.slug}`,
             },
@@ -145,17 +139,16 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                         <Breadcrumb
                             items={[
                                 { name: 'Home', href: '/' },
-                                { name: post.category, href: `/category/${encodeURIComponent(post.category)}` },
                                 { name: post.title, href: `/posts/${params.slug}` }
                             ]}
                         />
                         <article className="article-card">
                             <div className="post-meta post-meta-row">
                                 <span>
-                                    {post.category} • Published {post.date}
+                                    Published {post.date}
                                     {post.updated !== post.date && ` • Updated ${post.updated}`}
                                 </span>
-                                <ReadingListToggle slug={params.slug} title={post.title} category={post.category} />
+                                <ReadingListToggle slug={params.slug} title={post.title} />
                             </div>
                             <h1>{post.title}</h1>
                             <p className="article-excerpt">{post.meta_description}</p>

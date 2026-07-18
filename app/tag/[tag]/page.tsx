@@ -29,7 +29,7 @@ export default function TagPage({ params }: { params: { tag: string } }) {
                 <div className="grid" style={{ marginTop: '1.4rem' }}>
                     {posts.map((post) => (
                         <article key={post.slug} className="post-card">
-                            <div className="post-meta">{post.category} • {post.date}</div>
+                            <div className="post-meta">{post.date}</div>
                             <h3>{post.title}</h3>
                             <p>{post.excerpt}</p>
                             <Link href={`/posts/${post.slug}`} className="post-link">

@@ -26,7 +26,6 @@ const AUTHOR_AVATAR: Record<string, string> = Object.fromEntries(
 export function SearchAndFilter({ posts }: { posts: Post[] }) {
     // ── ALL hooks must be called unconditionally at the top ───
     const [query, setQuery] = useState('');
-    const [activeCategory, setActiveCategory] = useState('All');
     const [activeTag, setActiveTag] = useState('All');
     const [sort, setSort] = useState<SortOption>('newest');
     const [visibleCount, setVisibleCount] = useState(12);
@@ -35,12 +34,7 @@ export function SearchAndFilter({ posts }: { posts: Post[] }) {
 
     useEffect(() => {
         setVisibleCount(12);
-    }, [activeCategory, activeTag, query, sort]);
-
-    const categories = useMemo(
-        () => ['All', ...Array.from(new Set(posts.map((p) => p.category))).sort()],
-        [posts],
-    );
+    }, [activeTag, query, sort]);
 
     const allTags = useMemo(
         () => Array.from(new Set(posts.flatMap((p) => p.tags))).sort(),
@@ -52,14 +46,13 @@ export function SearchAndFilter({ posts }: { posts: Post[] }) {
         let result = posts.filter((post) => {
             const haystack = `${post.title} ${post.meta_description} ${post.tags.join(' ')} ${AUTHOR_NAME[post.author] ?? ''}`.toLowerCase();
             const matchesQuery = !q || haystack.includes(q);
-            const matchesCategory = activeCategory === 'All' || post.category === activeCategory;
             const matchesTag = activeTag === 'All' || post.tags.includes(activeTag);
-            return matchesQuery && matchesCategory && matchesTag;
+            return matchesQuery && matchesTag;
         });
         if (sort === 'oldest') result = [...result].reverse();
         else if (sort === 'az') result = [...result].sort((a, b) => a.title.localeCompare(b.title));
         return result;
-    }, [activeCategory, activeTag, posts, query, sort]);
+    }, [activeTag, posts, query, sort]);
 
     // ── Derived values (not hooks) ────────────────────────────
     const visibleTags = showAllTags ? allTags : allTags.slice(0, TAG_VISIBLE_INITIAL);
@@ -67,7 +60,6 @@ export function SearchAndFilter({ posts }: { posts: Post[] }) {
     const visiblePosts = filteredPosts.slice(0, visibleCount);
     const hasMorePosts = filteredPosts.length > visiblePosts.length;
     const activeFilterCount = [
-        activeCategory !== 'All',
         activeTag !== 'All',
         query.trim() !== '',
         sort !== 'newest',
@@ -75,7 +67,6 @@ export function SearchAndFilter({ posts }: { posts: Post[] }) {
 
     function clearAll() {
         setQuery('');
-        setActiveCategory('All');
         setActiveTag('All');
         setSort('newest');
         inputRef.current?.focus();
@@ -131,24 +122,6 @@ export function SearchAndFilter({ posts }: { posts: Post[] }) {
                     </div>
                 </div>
 
-                {/* Category filter */}
-                <div className="filter-group">
-                    <p className="filter-label">Category</p>
-                    <div className="pill-row">
-                        {categories.map((cat) => (
-                            <button
-                                key={cat}
-                                type="button"
-                                className={`pill${activeCategory === cat ? ' pill--active' : ''}`}
-                                onClick={() => setActiveCategory(cat)}
-                                aria-pressed={activeCategory === cat}
-                            >
-                                {cat}
-                            </button>
-                        ))}
-                    </div>
-                </div>
-
                 {/* Tag filter */}
                 <div className="filter-group">
                     <p className="filter-label">Tags</p>
@@ -189,7 +162,6 @@ export function SearchAndFilter({ posts }: { posts: Post[] }) {
                     <div className="active-filters-bar">
                         <span className="active-filters-label">
                             {activeFilterCount} filter{activeFilterCount > 1 ? 's' : ''} active
-                            {activeCategory !== 'All' && <span className="active-filter-chip">{activeCategory}</span>}
                             {activeTag !== 'All' && <span className="active-filter-chip">#{activeTag}</span>}
                             {query && <span className="active-filter-chip">"{query}"</span>}
                             {sort !== 'newest' && <span className="active-filter-chip">{SORT_LABELS[sort]}</span>}
@@ -216,7 +188,7 @@ export function SearchAndFilter({ posts }: { posts: Post[] }) {
                     <div className="grid">
                         {visiblePosts.map((post) => (
                             <article key={post.slug} className="post-card">
-                                <div className="post-meta">{post.category} • {post.date}</div>
+                                <div className="post-meta">{post.date}</div>
                                 <h3>{post.title}</h3>
                                 <p>{post.excerpt}</p>
                                 <div className="post-card-footer">
@@ -260,7 +232,7 @@ export function SearchAndFilter({ posts }: { posts: Post[] }) {
                 <div className="post-card empty-state">
                     <h3>No articles match.</h3>
                     <p>
-                        Try a broader search term{activeCategory !== 'All' ? `, or clear the "${activeCategory}" filter` : ''}.
+                        Try a broader search term, or clear the active filter.
                         {' '}<button type="button" className="inline-reset-btn" onClick={clearAll}>Reset all filters</button>
                     </p>
                 </div>

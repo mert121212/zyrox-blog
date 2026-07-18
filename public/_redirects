@@ -1,0 +1,2 @@
+# Force-redirect legacy category URLs to home (category feature removed from UI)
+/category/*  /  301

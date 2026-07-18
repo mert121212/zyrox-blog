@@ -29,7 +29,7 @@ export function getAdapter(): EngagementAdapter {
 export function buildReadingListItem(args: {
     slug: string;
     title: string;
-    category: string;
+    category?: string;
 }): ReadingListItem {
     return { slug: args.slug, title: args.title, category: args.category, addedAt: Date.now() };
 }

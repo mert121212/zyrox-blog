@@ -40,8 +40,8 @@ export interface UseReadingList {
     items: ReadingListItem[];
     hydrated: boolean;
     has: (slug: string) => boolean;
-    toggle: (item: { slug: string; title: string; category: string }) => void;
-    add: (item: { slug: string; title: string; category: string }) => void;
+    toggle: (item: { slug: string; title: string; category?: string }) => void;
+    add: (item: { slug: string; title: string; category?: string }) => void;
     remove: (slug: string) => void;
     clear: () => void;
 }
@@ -59,7 +59,7 @@ export function useReadingList(): UseReadingList {
 
     const has = useCallback((slug: string) => items.some((it) => it.slug === slug), [items]);
 
-    const add = useCallback((item: { slug: string; title: string; category: string }) => {
+    const add = useCallback((item: { slug: string; title: string; category?: string }) => {
         getAdapter().addToReadingList(buildReadingListItem(item));
     }, []);
 
@@ -68,7 +68,7 @@ export function useReadingList(): UseReadingList {
     }, []);
 
     const toggle = useCallback(
-        (item: { slug: string; title: string; category: string }) => {
+        (item: { slug: string; title: string; category?: string }) => {
             const adapter = getAdapter();
             if (adapter.isInReadingList(item.slug)) {
                 adapter.removeFromReadingList(item.slug);

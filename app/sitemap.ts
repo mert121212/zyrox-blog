@@ -1,12 +1,11 @@
 import { MetadataRoute } from 'next';
-import { getAllPosts, getCategories, getTags } from '@/lib/posts';
+import { getAllPosts, getTags } from '@/lib/posts';
 import { getAllAuthors } from '@/lib/authors';
 
 const baseUrl = 'https://zyroxnet.netlify.app';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const posts = getAllPosts();
-    const categories = getCategories();
     const tags = getTags();
     const authors = getAllAuthors();
 
@@ -38,13 +37,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.9,
     }));
 
-    const categoryUrls: MetadataRoute.Sitemap = categories.map((category) => ({
-        url: `${baseUrl}/category/${category}`,
-        lastModified: new Date(),
-        changeFrequency: 'weekly' as const,
-        priority: 0.7,
-    }));
-
     const tagUrls: MetadataRoute.Sitemap = tags.map((tag) => ({
         url: `${baseUrl}/tag/${encodeURIComponent(tag)}`,
         lastModified: new Date(),
@@ -62,7 +54,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return [
         ...staticUrls,
         ...postUrls,
-        ...categoryUrls,
         ...tagUrls,
         ...authorUrls,
     ];

@@ -5,10 +5,9 @@ import { useReadingList } from '@/lib/engagement/use-engagement';
 interface Props {
     slug: string;
     title: string;
-    category: string;
 }
 
-export function ReadingListToggle({ slug, title, category }: Props) {
+export function ReadingListToggle({ slug, title }: Props) {
     const { hydrated, has, toggle } = useReadingList();
 
     if (!hydrated) {
@@ -23,7 +22,7 @@ export function ReadingListToggle({ slug, title, category }: Props) {
             type="button"
             className="rl-toggle"
             data-active={active}
-            onClick={() => toggle({ slug, title, category })}
+            onClick={() => toggle({ slug, title })}
             aria-pressed={active}
             aria-label={active ? 'Remove from reading list' : 'Save to reading list'}
         >

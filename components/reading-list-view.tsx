@@ -42,7 +42,6 @@ export function ReadingListView() {
             <div className="rl-grid">
                 {items.map((item) => (
                     <article key={item.slug} className="post-card">
-                        <div className="post-meta">{item.category}</div>
                         <h2 style={{ fontSize: '1.1rem', margin: '0.3rem 0 0.5rem' }}>
                             <Link href={`/posts/${item.slug}`} style={{ color: 'var(--text)' }}>
                                 {item.title}

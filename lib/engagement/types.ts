@@ -7,7 +7,7 @@ export type Vote = 'up' | 'down' | null;
 export interface ReadingListItem {
     slug: string;
     title: string;
-    category: string;
+    category?: string; // optional — kept for back-compat with items saved before category UI was removed
     addedAt: number; // epoch ms
 }
 
