@@ -1,6 +1,6 @@
 ﻿---
 title: "How to Spot a Bad Power Supply Before You Buy It"
-meta_description: "A practical checklist for evaluating power supplies by efficiency, protection features, and build quality rather than brand hype."
+meta_description: "A practical checklist for evaluating power supplies by efficiency, protection features, and build quality rather than brand hype. I've killed a GPU."
 date: 2026-06-30
 category: "Power"
 tags:
@@ -201,7 +201,7 @@ Brands that are consistently reliable: Seasonic (own platform), Corsair RM and H
 
 ---
 
-## FAQ
+## Q&A
 
 **Q: Does wattage headroom actually matter, or can I run a PSU at full load?**
 Running at 80–85% of continuous rated output is perfectly fine. Running at 95–100% continuously degrades capacitors faster, reduces efficiency, and increases internal heat. Add 15–20% headroom for longevity.
@@ -223,3 +223,5 @@ ATX 3.0 PSUs are engineered to handle PCIe 5.0 power delivery and include the na
 
 **Q: Is a $60 Gold unit from a known brand worth buying?**
 Absolutely. The Seasonic Focus GX-650 and Corsair RM650x both hit this price range on sale regularly and sit at the top of tier lists. Certified price drops from established brands are legitimate. Permanent below-market pricing from unknown brands is not.
+
+

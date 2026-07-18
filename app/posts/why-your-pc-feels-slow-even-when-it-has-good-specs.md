@@ -208,7 +208,7 @@ The last row is the point of this article. Hardware capability and real-world ex
 
 ---
 
-## FAQ
+## Common Questions
 
 **My PC has 16GB of RAM and a fast SSD. Why does it still lag sometimes?**
 Intermittent lag on otherwise well-spec'd hardware usually points to one of three things: thermal throttling (check HWiNFO64 under load), a driver causing DPC latency spikes (run LatencyMon), or a specific background process spiking CPU or disk at inopportune times (check Process Explorer when it happens).
@@ -227,3 +227,5 @@ Laptops have constrained thermal designs. If yours runs consistently hot (CPU ov
 
 **What is LatencyMon telling me when it says the system is not suitable for real-time audio?**
 LatencyMon detected DPC latency spikes — interrupts from a driver that are taking too long and could cause audio dropouts or stuttering. The "Drivers" tab shows which driver is responsible. Common culprits are network adapter drivers (especially with interrupt coalescing or power management enabled), USB drivers, and audio drivers themselves. Updating or reinstalling the identified driver usually resolves the issue.
+
+

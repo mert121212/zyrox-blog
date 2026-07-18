@@ -1,6 +1,6 @@
 ﻿---
 title: "The Best Way to Plan a PC Upgrade Cycle"
-meta_description: "A simple upgrade plan helps you improve your system steadily instead of overspending on parts that do not matter yet."
+meta_description: "A simple upgrade plan helps you improve your system steadily instead of overspending on parts that do not matter yet. Review the benchmark data to make an informed decision."
 date: 2026-07-10
 category: "Upgrades"
 tags:
@@ -182,7 +182,7 @@ When your real-world FPS in target games drops below your acceptable threshold (
 
 ---
 
-## FAQ
+## Technical Addendum
 
 **Q: How do I know if my GPU is actually bottlenecking my CPU?**
 Run GPU-Z Sensors and Task Manager side by side during gameplay. If GPU load is below 80% and CPU is above 85%, your CPU is limiting the GPU. If GPU is above 95% and CPU has headroom, the GPU is the bottleneck — which is normal and fine in a gaming context.
@@ -201,3 +201,5 @@ It matters most on AMD Ryzen platforms where the Infinity Fabric is tied to memo
 
 **Q: How do I decide between upgrading in-platform vs. going to a whole new platform?**
 Check whether your current socket has a meaningful CPU upgrade available. If the best CPU available for your socket is only 10–15% faster than what you have, it's often better value to wait and save toward a full platform change. If the jump is 25%+ and the chip is reasonably priced on the used market, upgrade in-platform.
+
+

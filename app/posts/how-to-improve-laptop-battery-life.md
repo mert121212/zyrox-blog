@@ -1,6 +1,6 @@
 ﻿---
 title: "How to Improve Laptop Battery Life Without Sacrificing Comfort"
-meta_description: "Small changes to settings and habits can extend laptop battery life without making the machine feel slower or harder to use."
+meta_description: "Small changes to settings and habits can extend laptop battery life without making the machine feel slower or harder to use. Here is exactly what you need to know to fix it."
 date: 2026-07-24
 category: "Battery"
 tags:
@@ -171,7 +171,7 @@ For most laptops, a genuine OEM battery costs $40–$90. Third-party options are
 
 ---
 
-## FAQ
+## Common Questions
 
 **Q: Does dark mode actually save battery?**
 Only on OLED or AMOLED screens. On IPS and TN displays, dark mode has no measurable effect on power consumption. If your laptop has an OLED panel (common on Dell XPS and newer LG Gram models), dark mode can save 10–20% display power.
@@ -187,3 +187,5 @@ Yes, but modestly. Each saves roughly 0.3–0.8W. Turning off Wi-Fi when you don
 
 **Q: My battery drains fast even in sleep. Why?**
 Your laptop is likely using Modern Standby (S0ix) rather than traditional S3 sleep. Some background apps can prevent deep sleep states. Check **Settings → System → Power & battery → Battery usage** to identify culprits, or run `powercfg /sleepstudy` in an admin command prompt for a detailed sleep diagnostic report.
+
+

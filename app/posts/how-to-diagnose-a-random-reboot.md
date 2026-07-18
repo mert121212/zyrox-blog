@@ -220,7 +220,7 @@ A local computer repair shop with good reviews can run a comprehensive hardware 
 
 ---
 
-## FAQ
+## Common Questions
 
 **My PC only reboots while gaming. What does that suggest?**
 High-load reboots most commonly point to two things: thermal shutdown (the GPU or CPU gets too hot under gaming load) or PSU failure (the power supply cannot sustain the wattage demand). Check temperatures with HWiNFO64 during gaming first, then investigate the PSU if thermals look fine.
@@ -239,3 +239,6 @@ Yes — sleep/wake reboots are often driver-related rather than hardware. The DR
 
 **How long should I run HWiNFO64 logging before a reboot occurs?**
 Leave it running indefinitely during normal use. The log file grows slowly (a few MB per day at 2-second intervals) and the data will be there whenever the reboot happens. Just make sure it is set to start automatically with Windows or remember to restart it after each reboot.
+
+
+

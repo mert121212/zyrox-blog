@@ -158,3 +158,6 @@ No, but add a reminder for three months in. New builds are clean, but manufactur
 
 **What if I'm afraid of static electricity damaging components?**
 Work on a hard floor, not carpet. Touch the metal case frame before touching any component. If you're especially cautious, wear an anti-static wrist strap — they're inexpensive and completely eliminate the risk.
+
+
+

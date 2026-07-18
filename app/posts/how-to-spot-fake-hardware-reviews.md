@@ -185,7 +185,7 @@ The most useful Amazon reviews are from buyers who describe a specific use case,
 
 ---
 
-## FAQ
+## Technical Addendum
 
 **Q: Are reviews with affiliate links automatically untrustworthy?**
 No. Affiliate links are a standard revenue model for most editorial tech sites. What matters is whether those links appear to influence conclusions — which you can partially detect by checking whether the reviewer ever recommends against purchasing or highlights a competing product as the better value.
@@ -207,3 +207,6 @@ Not always, and usually only marginally. The documented cases where this meaning
 
 **Q: How should I use Reddit for hardware research?**
 r/hardware is moderated and technically oriented. Long-form discussion threads there regularly surface issues — particularly reliability problems and use-case limitations — that formal reviews don't cover. Treat individual posts as anecdotal, but treat consistent complaints from many independent users as a meaningful reliability signal worth investigating.
+
+
+

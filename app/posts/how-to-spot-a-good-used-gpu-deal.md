@@ -181,3 +181,6 @@ Cross-reference the serial number sticker on the card against the GPU-Z subvendo
 
 **What's a fair price to negotiate from a listed price?**
 If the card is priced at or slightly above the eBay sold listing average and shows no red flags in testing, 10–15% off is reasonable to ask. If it shows minor issues (scratched shroud, one bent display port pin that can be straightened), 20–25% off is fair. Never feel obligated to buy on the spot — a card that's genuinely good value will still be there tomorrow, and a seller who pressures you for an immediate decision is not operating in good faith.
+
+
+

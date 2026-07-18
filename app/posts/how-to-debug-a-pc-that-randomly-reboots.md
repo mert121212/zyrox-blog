@@ -197,7 +197,7 @@ Work through each row systematically. Don't skip to hardware replacement before 
 
 ---
 
-## FAQ
+## Common Questions
 
 **Q: My PC reboots only during gaming. What should I check first?**
 Start with HWiNFO64 temperature logging — gaming is the highest combined CPU and GPU load scenario, which makes it the first point of failure for thermal and PSU problems. Also check WhoCrashed for a driver-related stop code, particularly `nvlddmkm.sys` or `amdkmdag.sys`. GPU driver reinstallation with DDU resolves this more often than you'd expect.
@@ -219,3 +219,6 @@ At-idle reboots are more likely software or driver issues than thermal ones, sin
 
 **Q: How long should I run MemTest86 before trusting the result?**
 At least one full pass, but two is better. A single pass through 32GB of DDR5 takes roughly 90 minutes to 2 hours. If you're chasing an intermittent RAM error, running two or three passes gives you much higher confidence in a clean result. If errors appear in the first pass, you don't need to run further — the fault is confirmed.
+
+
+

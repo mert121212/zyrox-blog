@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 
-const baseUrl = 'https://zyroxnet.netlify.app';
+const baseUrl = 'https://zyroxlab.com';
 
 export default function robots(): MetadataRoute.Robots {
     return {

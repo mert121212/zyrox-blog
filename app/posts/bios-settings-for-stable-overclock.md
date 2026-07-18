@@ -300,3 +300,6 @@ One hour of Prime95 Small FFTs is sufficient to catch most instability for daily
 
 **What happens if I set LLC too aggressively?**
 High LLC combined with high manual Vcore creates the risk of voltage overshoot — the VRM briefly delivers more voltage than requested at the moment a heavy load begins. This transient spike can exceed your target voltage by 50-100 mV in some configurations. At safe Vcore levels (within the table above), moderate overshoot is unlikely to cause immediate damage, but it adds to cumulative stress over time. Monitor Vcore peaks in HWiNFO64 logging and reduce LLC if you see sustained overshoot above your target voltage.
+
+
+

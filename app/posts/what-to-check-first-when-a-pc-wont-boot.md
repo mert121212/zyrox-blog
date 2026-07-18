@@ -249,7 +249,7 @@ This is a last resort for unresponsive systems where no other approach has worke
 
 ---
 
-## FAQ
+## Common Questions
 
 **Q: My PC powers on but the monitor says "No Signal." What's the most likely cause?**
 Check that the display cable is connected to the GPU, not the motherboard's video output (if your CPU has integrated graphics). If it is connected to the GPU, reseat the GPU in the PCIe slot and check its power connectors. If the problem persists, try a different cable and a different monitor input port.
@@ -271,3 +271,6 @@ Yes. A damaged SATA cable or a loose connection on either end can prevent the OS
 
 **Q: My PC was working fine, then I added a new component and now it won't boot. What happened?**
 Remove the new component and check if the system boots without it. Common issues: new RAM that isn't compatible or requires XMP to be enabled, a GPU that requires more PSU wattage than available, or a new NVMe SSD that changed the drive priority in BIOS. If the system boots without the new component, the issue is specific to that addition.
+
+
+

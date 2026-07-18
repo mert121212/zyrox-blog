@@ -213,3 +213,6 @@ Using a single SSID with band steering enabled is convenient and works well on m
 ---
 
 Getting home networking right is one of those investments that pays back every single day. A router you choose thoughtfully — matched to your square footage, your device count, and your actual usage — will quietly outperform a marketing-driven purchase for years. Start with your space and your use cases, and the right hardware becomes obvious.
+
+
+

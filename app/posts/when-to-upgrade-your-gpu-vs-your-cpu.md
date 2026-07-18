@@ -1,6 +1,6 @@
 ﻿---
 title: "When to Upgrade Your GPU Instead of Your CPU"
-meta_description: "A direct guide to deciding whether a gaming or productivity system would benefit more from a GPU upgrade or a CPU upgrade."
+meta_description: "A direct guide to deciding whether a gaming or productivity system would benefit more from a GPU upgrade or a CPU upgrade. Review the benchmark data to make an informed decision."
 date: 2026-07-08
 category: "Upgrades"
 tags:
@@ -129,7 +129,7 @@ If you are on a platform that cannot accept a meaningful CPU upgrade without a f
 
 ---
 
-## FAQ
+## Technical Addendum
 
 **Is there a simple percentage rule for identifying a bottleneck?**
 A rough guide: if your GPU is above 95% utilization and your CPU is below 70%, the GPU is the bottleneck. If the CPU is above 85% and the GPU is below 70%, the CPU is limiting you. Use these as starting points, not definitive rules — check individual core usage in Task Manager for a more accurate CPU picture.
@@ -148,3 +148,5 @@ Sometimes. Capping your frame rate at 144 FPS in a game where the CPU was strugg
 
 **How do I know if my CPU is bottlenecking my GPU at my specific resolution and settings?**
 Test the same scene in the same game at two different resolutions — your target resolution (e.g., 1440p) and a lower one (e.g., 1080p). If the frame rate barely changes between the two, the CPU is almost certainly the bottleneck, because lowering resolution reduces GPU workload without affecting the CPU. If the frame rate improves significantly at lower resolution, the GPU was the limit.
+
+

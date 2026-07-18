@@ -11,51 +11,66 @@ export default function HomePage() {
     const posts = getAllPosts();
 
     return (
-        <main>
-            <section className="hero">
-                <div className="container hero__inner">
-                    <div>
-                        <p className="hero__eyebrow">PC hardware • systems • performance</p>
-                        <h1>Practical PC hardware guides built for real search intent and real-world decisions.</h1>
-                        <p>
-                            Zyrox publishes clear, experience-driven articles on storage, cooling, GPUs, motherboards, Windows, and upgrade planning that help readers choose, build, troubleshoot, and maintain their systems with confidence.
+        <main className="home-main">
+            {/* Premium Hero Section */}
+            <section className="premium-hero">
+                <div className="premium-hero__bg">
+                    <div className="premium-hero__glow"></div>
+                </div>
+                <div className="container premium-hero__inner">
+                    <div className="premium-hero__content">
+                        <div className="premium-hero__badge">
+                            <span className="premium-hero__badge-dot"></span>
+                            <span>Next-Gen Hardware Insights</span>
+                        </div>
+                        <h1 className="premium-hero__title">
+                            Build, Tune, and <span className="text-gradient">Dominate</span>
+                        </h1>
+                        <p className="premium-hero__desc">
+                            Authoritative, data-driven guides for PC enthusiasts. From finding the perfect RTX 5080 power supply to mastering AM5 memory timings, we cut through the marketing noise to bring you the truth.
                         </p>
-                        <div className="hero__actions">
-                            <Link href="#latest" className="btn btn--primary">Explore articles</Link>
-                            <Link href="/about" className="btn btn--secondary">About the site</Link>
-                        </div>
-                    </div>
-                    <div className="hero__stats">
-                        <div className="stat-card">
-                            <strong>{posts.length}+</strong>
-                            <span>Articles</span>
-                        </div>
-                        <div className="stat-card">
-                            <strong>100%</strong>
-                            <span>Practical</span>
-                        </div>
-                        <div className="stat-card">
-                            <strong>SEO</strong>
-                            <span>Ready</span>
+                        <div className="premium-hero__actions">
+                            <Link href="#latest" className="btn btn--primary btn--glow">
+                                Explore Guides
+                            </Link>
+                            <Link href="/about" className="btn btn--secondary btn--glass">
+                                About Our Lab
+                            </Link>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="section">
+            {/* Featured Section */}
+            <section className="section featured-section">
                 <div className="container">
-                    <div className="card intro-card">
-                        <p className="hero__eyebrow">Editorial focus</p>
-                        <h2>Clear advice for builds, repairs, upgrades, and everyday PC decisions.</h2>
-                        <p>
-                            The archive is structured around practical topic clusters such as SSDs, cooling, power supplies, motherboards, gaming performance, and Windows troubleshooting so readers can find exactly what they need quickly and return for deeper guidance.
-                        </p>
+                    <div className="section-header">
+                        <h2>Editor's Picks</h2>
+                        <p>The hardware that defines 2026.</p>
+                    </div>
+                    
+                    <div className="featured-grid">
+                        {posts.filter(p => p.slug === 'best-gpu-for-1440p-gaming' || p.slug === 'best-cpu-cooler-for-ryzen-7-7800x3d').map(post => (
+                            <Link href={`/posts/${post.slug}`} key={post.slug} className="featured-card">
+                                <div className="featured-card__content">
+                                    <span className="featured-card__category">{post.category}</span>
+                                    <h3>{post.title}</h3>
+                                    <p>{post.meta_description}</p>
+                                    <span className="featured-card__read">Read Full Analysis →</span>
+                                </div>
+                            </Link>
+                        ))}
                     </div>
                 </div>
             </section>
 
-            <section id="latest" className="section">
+            {/* All Articles Section with Search */}
+            <section id="latest" className="section archive-section">
                 <div className="container">
+                    <div className="section-header">
+                        <h2>All Archives</h2>
+                        <p>Search our complete database of hardware deep-dives.</p>
+                    </div>
                     <SearchAndFilter posts={posts} />
                 </div>
             </section>

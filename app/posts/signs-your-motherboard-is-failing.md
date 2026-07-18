@@ -169,7 +169,7 @@ When you suspect a motherboard failure, work through this process before conclud
 
 The repair vs replace calculus changes significantly based on board tier. A $400 ASUS ROG Maximus or MSI MEG board with one failed USB cluster might be worth repairing professionally. A $150 B660M board showing multiple concurrent failures is almost never worth the repair cost relative to replacement. Factor in the age of the platform as well — if your board is on a socket that no longer supports current CPUs, a failure is often the right moment to transition to a newer platform rather than repair.
 
-## FAQ
+## Common Questions
 
 **Can a failing motherboard damage other components like the CPU or RAM?**
 Yes, in certain failure modes. A VRM failure that delivers unregulated voltage to the CPU can degrade or kill the processor. A short circuit on the board can send incorrect voltages to attached components. These are relatively rare outcomes, but if a board is showing signs of electrical failure — smell, visible burn marks, erratic voltage readings — power it down and do not continue using it until the fault is identified.
@@ -191,3 +191,6 @@ Based on experience across many builds, ASUS (particularly ROG, TUF, and ProArt 
 
 **Does a failing motherboard always show up in diagnostics software?**
 Not always. HWiNFO64, AIDA64, and similar tools read sensor data through the board's embedded controller. If the embedded controller or its firmware is part of what is failing, the sensor readings may be inaccurate, missing, or entirely absent. A board can fail in ways that produce no clear diagnostic data — which is one reason physical inspection (capacitor check, smell, visible burn marks) matters alongside software diagnostics.
+
+
+

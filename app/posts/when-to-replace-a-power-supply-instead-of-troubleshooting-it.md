@@ -1,6 +1,6 @@
 ﻿---
 title: "When to Replace a Power Supply Instead of Troubleshooting It"
-meta_description: "Know when a failing PSU is better replaced than repaired or endlessly tested."
+meta_description: "Know when a failing PSU is better replaced than repaired or endlessly tested. I spent three weeks troubleshooting a system that would randomly restart under load."
 date: 2026-07-21
 category: "Power"
 tags:
@@ -117,7 +117,7 @@ For a standard gaming system with one GPU, 650W to 750W from the above list cove
 
 ---
 
-## FAQ
+## Q&A
 
 **How do I know if my PSU is actually causing my instability?**
 The most reliable method is substitution — swap in a known-good PSU temporarily and test whether the instability continues. If the system becomes stable with a different PSU, the original is confirmed faulty. If the problem persists, look elsewhere.
@@ -136,3 +136,5 @@ For most builds, yes. A fully modular PSU like the Seasonic Focus GX or Corsair 
 
 **My system is stable but the PSU is old. Should I preemptively replace it?**
 If the unit is five years old or more and runs more than eight hours per day, preemptive replacement is reasonable risk management, especially if you have added newer, more power-hungry components since the original build. If the system is used lightly (a few hours per day), the risk is lower and you can monitor rather than replace immediately.
+
+

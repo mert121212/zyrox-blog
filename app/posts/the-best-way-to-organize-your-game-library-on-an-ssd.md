@@ -1,6 +1,6 @@
 ﻿---
 title: "The Best Way to Organize Your Game Library on an SSD"
-meta_description: "A practical approach to keeping a game library tidy, fast, and easy to manage across one or more drives."
+meta_description: "A practical approach to keeping a game library tidy, fast, and easy to manage across one or more drives. I have about 200 games in my Steam library."
 date: 2026-07-05
 category: "Storage"
 tags:
@@ -213,7 +213,7 @@ That combination has kept me organized for two years. The key isn't having the m
 
 ---
 
-## FAQ
+## Frequent Questions
 
 **Q: Can I have games from multiple launchers on the same drive folder?**
 Yes. You can put Steam, GOG, and Epic libraries all on the same drive, even in adjacent folders. The launchers don't conflict with each other at the file system level, though keeping them in separate named folders (`D:\Steam`, `D:\Epic`, `D:\GOG`) makes manual management easier.
@@ -232,3 +232,5 @@ Use cloud saves when available (Steam Cloud, GOG, Xbox Game Pass). For games wit
 
 **Q: Is it worth buying a dedicated SSD just for games?**
 Yes, especially if your OS drive is 1TB or smaller. A dedicated game drive removes competition for space and makes it easy to run a clean backup of just the game library. A 2TB NVMe SSD in the $80–100 range is excellent value for this purpose.
+
+

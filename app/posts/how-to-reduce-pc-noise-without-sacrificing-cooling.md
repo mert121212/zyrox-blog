@@ -1,6 +1,6 @@
 ﻿---
 title: "How to Reduce PC Noise Without Sacrificing Cooling"
-meta_description: "A practical look at fan tuning, airflow planning, and component selection for quieter builds that still stay cool."
+meta_description: "A practical look at fan tuning, airflow planning, and component selection for quieter builds that still stay cool. My desk sits about two feet from my PC tower."
 date: 2026-07-09
 category: "Cooling"
 tags:
@@ -153,7 +153,7 @@ That 37 dBA gaming load figure is around the same volume as a quiet conversation
 
 ---
 
-## FAQ
+## Q&A
 
 **Will lower fan speeds damage my components?**
 No, as long as temperatures stay within spec. CPUs should stay under 90°C and GPUs under 85°C (junction/hotspot temps vary — check your card's spec sheet). Tighter curves that ramp up earlier are the safe approach.
@@ -172,3 +172,5 @@ Not practically. Passively cooled systems exist but are limited to low-power bui
 
 **Does the case size affect noise?**
 Yes — larger cases generally allow bigger fans running at lower RPM, which is quieter. A full tower with 140mm fans at 600 RPM is usually quieter than a mini-ITX case with 80mm fans at 2500 RPM, even if the airflow volume is similar.
+
+

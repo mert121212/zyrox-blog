@@ -1,6 +1,6 @@
 ﻿---
 title: "How to Test a Power Supply Without Expensive Tools"
-meta_description: "A practical guide to evaluating a PSU using basic checks, visual inspection, and a careful test approach."
+meta_description: "A practical guide to evaluating a PSU using basic checks, visual inspection, and a careful test approach. See the test results to understand the real-world impact."
 date: 2026-07-07
 category: "Power"
 tags:
@@ -155,7 +155,7 @@ These are all signs of catastrophic or impending failure. No further testing is 
 
 ---
 
-## FAQ
+## Q&A
 
 **Can a PSU fail suddenly or does it always give warning signs?**
 Both happen. Some PSUs fail gradually — coil whine gets louder, voltages drift slowly — giving you time to catch it. Others fail abruptly with no warning. A PSU that was running fine yesterday can short internally overnight. This is why having a second known-good PSU available is valuable for diagnosis.
@@ -177,3 +177,5 @@ Yes. An over-voltage event — which can happen when protective circuitry fails 
 
 **Should I keep the old PSU after replacing it?**
 If it passed all tests and the swap was just exploratory, yes — keep it as a spare for future diagnostics. If it showed clear signs of failure, don't reuse it. A failing PSU reintroduced into another system will eventually cause the same problems.
+
+

@@ -179,7 +179,7 @@ The practical advice: buy a board that fits your CPU's needs today without overp
 
 ---
 
-## FAQ
+## Technical Addendum
 
 **Do I need a Z-series chipset if I'm not overclocking?**
 No. B660 or B760 for Intel and B650 for AMD cover virtually every feature a non-overclocking build needs, at significantly lower cost.
@@ -201,3 +201,5 @@ Only if you specifically use Thunderbolt devices — high-speed external storage
 
 **How long will my AM5 board stay relevant?**
 AMD's public commitment to AM5 through 2027+ means you can likely upgrade through two or three CPU generations on the same board. That's unusual in the PC space and a genuine long-term value argument for the platform right now.
+
+

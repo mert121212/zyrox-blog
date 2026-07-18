@@ -145,7 +145,7 @@ If all five criteria are met after the full overnight test, that overclock is st
 
 ---
 
-## FAQ
+## Technical Addendum
 
 **Q: Can I trust XMP/EXPO as a stable starting point?**
 XMP and EXPO are tested profiles, but they aren't always stable on every board. Treat them as a starting point. If you experience crashes after enabling XMP, try reducing memory frequency one step or loosening primary timings slightly.
@@ -164,3 +164,6 @@ Yes, especially on AMD Ryzen 7000. The Infinity Fabric runs synchronously with m
 
 **Q: BIOS updated and now my OC is unstable — what happened?**
 BIOS updates often include microcode updates, power management revisions, or memory training algorithm changes that can shift the stability window. After any BIOS update, clear CMOS, reload your profile, and run your full stability protocol from scratch. Don't assume the same settings will hold.
+
+
+

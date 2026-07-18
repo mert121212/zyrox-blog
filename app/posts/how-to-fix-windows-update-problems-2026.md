@@ -206,7 +206,7 @@ If you want to avoid this problem proactively, defer feature updates: **Settings
 
 ---
 
-## FAQ
+## Common Questions
 
 **Q: The Windows Update Troubleshooter says it fixed things, but the update still fails. What should I do next?**
 A: The troubleshooter handles surface-level issues but doesn't touch deep image corruption. Run `DISM /Online /Cleanup-Image /RestoreHealth` and then clear the SoftwareDistribution folder. Those two steps cover the cases the troubleshooter misses.
@@ -228,3 +228,5 @@ A: Go to **Settings → Windows Update → Update history**, note the install da
 
 **Q: Can I use the Microsoft Update Catalog on a machine that's completely offline?**
 A: Yes — download the `.msu` file on another device, transfer it via USB drive, and install it with `wusa.exe` as described in Step 7. This is exactly how IT administrators patch air-gapped machines.
+
+

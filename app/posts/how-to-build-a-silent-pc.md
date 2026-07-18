@@ -73,7 +73,7 @@ These are the two premium 140mm fan options that dominate the silent PC space. H
 | **Price (each)** | ~$22–$25 | ~$18–$22 |
 | **Included Accessories** | Low-noise adapter, mounting screws, fan splitter | Standard screws |
 
-**My take:** At low RPMs (which is where your fans will spend 90% of their time in a properly tuned silent build), both fans are essentially identical in noise output. The be quiet! Silent Wings 4 moves more air at equivalent noise levels when you need it. The Noctua NF-A14 has a slight edge in raw reliability ratings and comes with better accessories out of the box.
+**Verdict:** At low RPMs (which is where your fans will spend 90% of their time in a properly tuned silent build), both fans are essentially identical in noise output. The be quiet! Silent Wings 4 moves more air at equivalent noise levels when you need it. The Noctua NF-A14 has a slight edge in raw reliability ratings and comes with better accessories out of the box.
 
 For pure silence builds where the fans rarely exceed 800 RPM, I prefer the Noctua. For builds where temperatures get challenging and fans occasionally ramp higher, the Silent Wings 4's superior airflow-per-noise ratio wins.
 
@@ -204,7 +204,7 @@ The only time this machine is genuinely audible from across the room is during a
 11. **Measure with an SPL meter** or phone app (NIOSH SLM app is free and reasonably accurate) after tuning
 12. **Iterate** — adjust curves based on measured temps and noise until satisfied
 
-## FAQ
+## Q&A
 
 **Q: Can I build a silent PC for gaming, or is it only for workstations?**
 Absolutely for gaming. My gaming rig runs under 31 dBA during most gaming sessions. The key is the GPU power limit trick — at 75–80% power limit you lose a few frames but gain significant quiet.
@@ -229,3 +229,5 @@ No — this is a common concern. The Define 7 with the ModuVent top panels close
 
 **Q: What thermal paste should I use?**
 **Thermal Grizzly Kryonaut** is my everyday recommendation — excellent performance, easy to apply, long lifespan. For a budget option, **Arctic MX-6** is nearly as good at a lower price. Avoid the cheap paste that ships with most stock coolers; it's consistently the weakest performer in every comparison I've run.
+
+

@@ -199,7 +199,7 @@ After cleanup, restart and monitor CPU in Task Manager for 10 minutes before dec
 
 ---
 
-## FAQ
+## Common Questions
 
 **Q: My CPU is at 100% but Task Manager shows nothing above 5%. What's happening?**
 A: This usually means the usage is in kernel mode (drivers or system processes). Use Process Explorer with the "System" process expanded, or run LatencyMon to identify the responsible driver.
@@ -218,3 +218,5 @@ A: Not directly. Modern CPUs have thermal and power throttling built in. However
 
 **Q: SysInternals Process Explorer flagged a process as "unverified." Should I delete it?**
 A: Not immediately. Unverified just means the executable isn't digitally signed by a recognized publisher. Check the full path first — if it's in a legitimate program's folder (like an older game or small utility), it's likely fine. If it's in a temp folder or has a random name, investigate further with VirusTotal.
+
+

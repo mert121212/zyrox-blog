@@ -1,6 +1,6 @@
 ﻿---
 title: "How to Build a Quiet Gaming Rig Without Giving Up Performance"
-meta_description: "A practical guide to reducing noise in a gaming PC while keeping frame rates and cooling performance strong."
+meta_description: "A practical guide to reducing noise in a gaming PC while keeping frame rates and cooling performance strong. My last gaming PC sounded like a kitchen appliance."
 date: 2026-07-31
 category: "Gaming"
 tags:
@@ -163,3 +163,5 @@ For most people, below 30 dBA in a room that already has ambient noise (A/C, tra
 Yes. Mid-range GPUs like the RTX 4070 or RX 7700 XT have smaller coolers that spin faster, but a custom fan curve and a good case still result in a quieter system than an unoptimized high-end build.
 
 Quiet builds are not about compromise. They're about intention. When you treat acoustics as a design goal from the start, the result is a system that's better to live with every single day.
+
+

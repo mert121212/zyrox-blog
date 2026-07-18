@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { getAllPosts, getTags } from '@/lib/posts';
 import { getAllAuthors } from '@/lib/authors';
 
-const baseUrl = 'https://zyroxnet.netlify.app';
+const baseUrl = 'https://zyroxlab.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const posts = getAllPosts();

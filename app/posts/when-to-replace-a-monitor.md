@@ -1,6 +1,6 @@
 ﻿---
 title: "When It Is Time to Replace a Monitor"
-meta_description: "A monitor can become the limiting factor in your setup long before the rest of the hardware does."
+meta_description: "A monitor can become the limiting factor in your setup long before the rest of the hardware does. My previous monitor did not break."
 date: 2026-07-25
 category: "Displays"
 tags:
@@ -121,7 +121,7 @@ Use this checklist to assess whether your monitor should be replaced:
 
 ---
 
-## FAQ
+## Frequent Questions
 
 **My monitor is seven years old but shows no visible defects. Should I replace it?**
 Not necessarily. Age alone is not a reason to replace a monitor that is still performing well for your use case. If it supports your workflow, the resolution feels right, and the screen is comfortable, there is no urgent reason to change. Reassess if a specific limitation starts affecting you.
@@ -140,3 +140,5 @@ Keep brightness below 100% (70–80% is ideal for longevity), use a screen saver
 
 **How do I tell if my monitor has PWM flicker?**
 Most consumer monitors do not publish PWM information clearly. Check **RTings.com** for measured data, or use the pencil test: wave a pencil rapidly in front of the screen in a dark room. If you see multiple distinct shadow images of the pencil rather than one smooth blur, the display is PWM flickering.
+
+

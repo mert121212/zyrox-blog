@@ -139,7 +139,7 @@ Before blaming your router, run these checks:
 
 ---
 
-## FAQ
+## Common Questions
 
 **How much difference does router placement really make?**
 In my testing, moving a router from a corner to a central position improved speeds in distant rooms by 3–6x. It's the highest-impact zero-cost change you can make.
@@ -158,3 +158,5 @@ Buffering is usually caused by latency spikes or packet loss, not average throug
 
 **When does it actually make sense to buy a whole new mesh system?**
 When you have a large home (2,500+ sq ft), multiple floors, thick walls, and no practical way to run Ethernet. In those cases, a well-designed mesh system like Eero Pro 6E or TP-Link Deco XE75 with wired backhaul is genuinely the cleanest solution.
+
+

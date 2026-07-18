@@ -1,6 +1,6 @@
 ﻿---
 title: "How to Upgrade Your Laptop Without Buying a New One"
-meta_description: "Learn which laptop upgrades are worth it and where the limits are when trying to extend the life of a portable machine."
+meta_description: "Learn which laptop upgrades are worth it and where the limits are when trying to extend the life of a portable machine. Here is exactly what you need to know to fix it."
 date: 2026-07-08
 category: "Upgrades"
 tags:
@@ -190,7 +190,7 @@ This setup costs $250–400 for the enclosure plus the GPU itself. It only makes
 
 ---
 
-## FAQ
+## Common Questions
 
 **Q: I ran Crucial System Scanner and it says no upgrades are available. Does that mean the RAM is soldered?**
 A: Not always. It can also mean all slots are filled to maximum capacity, or that your specific laptop model isn't in their database. Cross-reference with CPU-Z's SPD tab and your service manual to confirm.
@@ -209,3 +209,5 @@ A: First, verify the upgrade registered: press `Win + R`, type `msinfo32`, and c
 
 **Q: My laptop has a 2230 SSD slot but I can only find 2280 drives. Is there an adapter?**
 A: 2280-to-2230 adapters do exist, but they're unreliable and make reassembly difficult. Better to buy a native 2230 drive — the WD SN740 and Samsung PM991a are solid options. Check [amazon.com](https://www.amazon.com) filtering by "M.2 2230 NVMe" for current availability.
+
+

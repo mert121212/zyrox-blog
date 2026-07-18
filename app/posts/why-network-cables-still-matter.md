@@ -158,3 +158,6 @@ No. Ethernet is simply a connection method — connecting devices to your router
 Yes, and it's strongly recommended. PlayStation 5 and Xbox Series X both have Gigabit Ethernet ports. The improvement in online gaming stability is immediate and significant.
 
 The cable in the back of your desk is not a step backward. It's the most reliable thing in your network stack.
+
+
+

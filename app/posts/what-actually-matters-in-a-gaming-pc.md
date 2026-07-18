@@ -1,6 +1,6 @@
 ﻿---
 title: "What Actually Matters in a Gaming PC Build"
-meta_description: "Cut through the marketing and learn which gaming PC components actually affect frame rates, smoothness, and upgrade value."
+meta_description: "Cut through the marketing and learn which gaming PC components actually affect frame rates, smoothness, and upgrade value. Review the benchmark data to make an informed decision."
 date: 2026-07-01
 category: "Gaming"
 tags:
@@ -195,7 +195,7 @@ Handles 1440p at maximum settings with 100+ FPS in virtually all titles. Capable
 
 ---
 
-## FAQ
+## Technical Addendum
 
 **Q: Should I prioritize the CPU or GPU for gaming?**
 GPU, almost always. A $400 GPU with a $200 CPU will outperform a $200 GPU with a $400 CPU in virtually every game. The exception is competitive titles running at very high frame rates (300+ FPS at 1080p) where CPU single-core performance becomes the limiter.
@@ -214,3 +214,5 @@ It's workable but tight if you play large titles. Call of Duty: Modern Warfare I
 
 **Q: Does RGB affect performance?**
 No. RGB draws negligible power (milliwatts) and adds no performance. Buy it if you want it; skip it if you want to save money for components that matter.
+
+

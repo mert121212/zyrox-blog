@@ -1,6 +1,6 @@
 ﻿---
 title: "How to Build a Budget Gaming PC That Still Feels Fast"
-meta_description: "Learn how to target the right parts for a budget gaming build that delivers strong value instead of weak compromises."
+meta_description: "Learn how to target the right parts for a budget gaming build that delivers strong value instead of weak compromises. Review the benchmark data to make an informed decision."
 date: 2026-07-17
 category: "Gaming"
 tags:
@@ -149,7 +149,7 @@ Neither build is a dead end. Here's how to grow each one:
 
 ---
 
-## FAQ
+## Technical Addendum
 
 **Q: Can I game without a dedicated GPU using just CPU integrated graphics?**
 The i5-12400F has no integrated GPU — it requires a discrete card. The Ryzen 5 5600 does have integrated Radeon graphics, but they're not suitable for modern 3D gaming. Always include a dedicated GPU in a gaming build.
@@ -168,3 +168,5 @@ If your current PC has a digital Windows license tied to your Microsoft account,
 
 **Q: Is it worth building now or buying a prebuilt?**
 Building yourself saves 15–25% at these price points and gives you control over every component quality decision — especially the PSU, which prebuilt manufacturers often cut corners on. It also teaches you how your system works, which makes troubleshooting and upgrading much easier down the road.
+
+

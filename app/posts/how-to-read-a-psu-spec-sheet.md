@@ -216,7 +216,7 @@ The Tier D unit is cheaper by roughly 40–60% at retail. But it delivers less u
 
 ---
 
-## FAQ
+## Q&A
 
 **Is 80 Plus Gold enough, or should I go for Platinum?**
 Gold is sufficient for most builds. Platinum and Titanium add 2–4% efficiency at load, which translates to roughly 5–15W less heat and slightly lower electricity costs over time. The cost difference is rarely justified unless you are running a server or a workstation that is on 24/7 under sustained load.
@@ -238,3 +238,6 @@ Without over-temperature protection, the PSU will continue to operate even when 
 
 **Why does coil whine come from some PSUs and not others?**
 Coil whine in a PSU is caused by magnetic coils vibrating at frequencies in the audible range due to ripple current passing through them. Better filtering capacitors and higher quality inductors reduce this. High ripple levels — common in Tier D units — directly produce more coil whine. If a PSU whines audibly under load, it is also performing poorly on ripple, which is worth investigating.
+
+
+

@@ -165,7 +165,7 @@ The differences I noticed within the first week: no neck pain in the afternoon, 
 
 ---
 
-## FAQ
+## Frequent Questions
 
 **Do I need a 4K monitor for home office work?**
 Not necessarily. 1440p at 27 inches gives excellent sharpness for text and documents. 4K becomes more valuable if you work with high-resolution images, detailed video editing, or prefer scaling Windows to 150% for larger UI elements.
@@ -187,3 +187,6 @@ A surge protector handles voltage spikes but does nothing during a power outage.
 
 **What is the best way to reduce desktop clutter?**
 Start by routing every cable under or behind the desk. Use a monitor arm to lift the display off the desk surface. Move the PC tower to the floor. These three changes alone clear the majority of visible clutter without any additional purchases.
+
+
+

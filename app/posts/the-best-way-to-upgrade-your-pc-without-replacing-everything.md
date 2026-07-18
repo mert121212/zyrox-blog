@@ -1,6 +1,6 @@
 ﻿---
 title: "The Best Way to Upgrade a PC Without Replacing Everything"
-meta_description: "Learn how to upgrade a PC intelligently by targeting the components that actually improve speed, stability, and value."
+meta_description: "Learn how to upgrade a PC intelligently by targeting the components that actually improve speed, stability, and value. The best upgrade I ever made to a PC cost $65."
 date: 2026-06-29
 category: "Upgrades"
 tags:
@@ -194,7 +194,7 @@ When the platform is genuinely exhausted, the correct answer is a full platform 
 
 ---
 
-## FAQ
+## Technical Addendum
 
 **Q: I have an RX 580 from 2017. Should I upgrade the GPU or add more RAM first?**
 If you have 8GB of system RAM, add RAM first — it's cheaper and will remove memory pressure that's likely making everything worse. If you already have 16GB, the RX 580 is genuinely the bottleneck for modern gaming and a GPU upgrade is the right call.
@@ -216,3 +216,5 @@ Download HWiNFO64. Run it during a benchmark or demanding workload. Watch "CPU P
 
 **Q: Is it worth upgrading from a GTX 1080 to an RTX 4060?**
 At 1080p, the RTX 4060 is faster and adds DLSS 3 Frame Generation — a genuine feature advantage. At 1440p, the 4060's 8GB VRAM starts to feel tight with modern titles. For 1440p gaming, the RTX 4070 or RX 7700 XT are more appropriate targets from a GTX 1080.
+
+

@@ -194,7 +194,7 @@ Not every situation calls for buying a new SSD. There are scenarios where the mo
 
 **When the laptop SATA port is the limit:** Upgrading a 2.5-inch SATA drive in a laptop from 500 MB/s to a slightly faster SATA drive will not be noticeable in daily use. If the laptop has an M.2 slot, upgrading to NVMe is the meaningful move.
 
-## FAQ
+## Frequent Questions
 
 **Is NVMe always better than SATA?**
 For primary drives on modern platforms, yes — the speed difference is meaningful in boot times and application launches. For secondary storage with mostly sequential workloads, SATA is fine and often cheaper per terabyte at the 2TB+ range.
@@ -219,3 +219,5 @@ CrystalDiskInfo is the best cross-brand option for S.M.A.R.T. monitoring. Samsun
 
 **Should I buy a 1TB or 2TB primary drive?**
 If your budget allows, 2TB is the better choice for a gaming or creative PC in 2025. Games routinely exceed 100GB each, and filling a 1TB primary drive above 80% capacity can slightly degrade write performance on some drives due to reduced SLC cache allocation. A 2TB drive gives you comfortable headroom.
+
+

@@ -1,6 +1,6 @@
 ﻿---
 title: "What to Do When Your PC Overheats"
-meta_description: "A practical checklist for identifying overheating causes and reducing heat before it leads to instability or damage."
+meta_description: "A practical checklist for identifying overheating causes and reducing heat before it leads to instability or damage. See the test results to understand the real-world impact."
 date: 2026-07-28
 category: "Cooling"
 tags:
@@ -144,7 +144,7 @@ For GPU cooling, replacing thermal pads and paste on the card itself is a valid 
 
 ---
 
-## FAQ
+## Q&A
 
 **What temperature is too hot for a CPU?**
 For most desktop processors, anything above 90°C under sustained load is worth addressing. Occasional spikes to 95°C during brief bursts are less concerning than sitting at 90°C continuously.
@@ -166,3 +166,5 @@ Not automatically. A large case with poor fan placement and no mesh intake can p
 
 **Will undervolting my CPU or GPU help with temperatures?**
 Yes, meaningfully. Undervolting reduces power consumption without reducing performance in most cases. Tools like **ThrottleStop** for Intel CPUs and AMD's built-in Precision Boost Overdrive settings allow this. A 10–15% reduction in power can translate to 8–12°C lower temperatures.
+
+

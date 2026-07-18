@@ -1,6 +1,6 @@
 ﻿---
 title: "How to Spot a Failing Hard Drive Before It Fails"
-meta_description: "A straightforward guide to warning signs, diagnostics, and backup habits that help you catch hard drive issues early."
+meta_description: "A straightforward guide to warning signs, diagnostics, and backup habits that help you catch hard drive issues early. Here is my honest experience and what you actually need."
 date: 2026-07-06
 category: "Storage"
 tags:
@@ -220,7 +220,7 @@ If the drive has already partially failed, you have a few options before going t
 
 ---
 
-## FAQ
+## Frequent Questions
 
 **How often should I check my drive's S.M.A.R.T. data?**
 Once a month is a good minimum if you are not running CrystalDiskInfo in resident mode. For any drive that has already shown warning signs, weekly checks are reasonable until the drive is replaced.
@@ -242,3 +242,5 @@ CHKDSK with `/r` does perform read operations on every sector, which means it wi
 
 **How long do SSDs typically last?**
 Most consumer SSDs are rated for 1–5 years of typical use based on their TBW (Terabytes Written) endurance rating. A Samsung 870 EVO 1TB has a 600 TBW rating, which translates to writing roughly 165 GB per day for ten years — far beyond what most users do. Time-based failure (capacitor and controller aging) is often the real limiter, typically around 5–8 years.
+
+

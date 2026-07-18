@@ -228,7 +228,7 @@ When you notice any of these, do not ignore them. Back up your data immediately 
 
 ---
 
-## FAQ
+## Common Questions
 
 **How long should a well-maintained PC last?**
 A desktop PC that is regularly cleaned, kept cool, and has its SSD health monitored can realistically last 8–12 years before components reach end of life. The GPU typically becomes the first performance bottleneck that drives an upgrade rather than any component actually failing.
@@ -250,3 +250,6 @@ Not usually. Thermal throttling is a protection mechanism that reduces clock spe
 
 **My PC is 5 years old. Should I upgrade or buy new?**
 Depends on the specs. If it has an SSD, 16GB of RAM, and a relatively modern GPU, strategic component upgrades (new GPU, more RAM) are usually more cost-effective than replacing the whole machine. If it is still running a spinning hard drive with 8GB of RAM on an older platform, a fresh build might make more sense economically.
+
+
+

@@ -1,6 +1,6 @@
 ﻿---
 title: "Should You Buy an SSD or HDD for Game Storage"
-meta_description: "A direct comparison of SSD and HDD storage for gamers who want faster load times without overspending on capacity."
+meta_description: "A direct comparison of SSD and HDD storage for gamers who want faster load times without overspending on capacity. Here is my honest experience and what you actually need."
 date: 2026-07-09
 category: "Gaming"
 tags:
@@ -13,7 +13,7 @@ author: sara-vance
 
 I have been gaming on PC for over a decade, and storage decisions used to feel pretty simple. Buy the biggest hard drive you can afford, install everything on it, and call it done. Then SSDs started dropping in price and that whole calculus changed. Now every time I help someone build or upgrade a rig, the same question comes up: should I just put everything on an SSD, or does an HDD still earn a spot in a gaming setup in 2026?
 
-The honest answer is: both, if your budget allows. But the reasoning behind that matters a lot, and there are real situations where one clearly beats the other. Let me walk through what I have actually learned from setting up and testing several different configurations over the years.
+both, if your budget allows. But the reasoning behind that matters a lot, and there are real situations where one clearly beats the other. Let me walk through what I have actually learned from setting up and testing several different configurations over the years.
 
 ## Why Drive Type Matters More Than Ever in 2026
 
@@ -127,7 +127,7 @@ Here is exactly how I configure a dual-drive gaming setup on a fresh build.
 
 **Step 8 (optional) — Handle saves for games that store saves in the install directory.** A small number of older titles store save files inside their install folder rather than in AppData. If you archive such a game to HDD, you can create a symbolic link (mklink /D) to keep the save data on the SSD while the game files live on the HDD.
 
-## FAQ
+## Frequent Questions
 
 **Does it matter which M.2 slot I use for my gaming SSD?**
 Yes, significantly. The primary M.2 slot on most motherboards is wired directly to the CPU and runs at full PCIe bandwidth. Secondary slots often share bandwidth with the chipset, SATA controller, or USB connections, which can cut available bandwidth in half. Always check your motherboard's manual and put your main SSD in the highest-priority slot.
@@ -149,3 +149,5 @@ Yes, noticeably. Games using Oodle Kraken compression (Death Stranding: Director
 
 **What about portable SSDs for gaming at LAN parties?**
 USB 3.2 Gen 2 portable SSDs (like the Samsung T9 or WD My Passport SSD) can run games acceptably — sequential reads around 1,000–2,000 MB/s — though they lag behind internal NVMe. For a LAN event where you want to bring your game installs without transporting a whole PC, a high-quality portable SSD is a reasonable solution. USB 4 / Thunderbolt portables now approach 3,000 MB/s and are getting close to practical for this use case.
+
+

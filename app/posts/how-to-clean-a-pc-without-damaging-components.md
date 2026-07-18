@@ -160,7 +160,7 @@ Pet hair and tobacco smoke are the two fastest filter-cloggers I've encountered.
 
 **Not reassembling filters before running** — it sounds obvious but easy to forget in a rush. Running without filters exponentially increases how fast the interior gets dirty.
 
-## FAQ
+## Common Questions
 
 **How do I know if my PC needs cleaning?**
 Rising idle and load temperatures compared to when the build was new is the most reliable signal. You can also look at the front filter — if you can't see light through it easily, it's overdue. Increased fan noise is another indicator, since fans ramp up to compensate for reduced airflow.
@@ -182,3 +182,6 @@ Often yes, if throttling is caused by dust buildup reducing airflow. If temperat
 
 **What if I can't find the source of the dust smell?**
 Burning dust smell usually comes from the PSU fan or GPU heatsink area. Blow compressed air into the PSU vent and check the GPU heatsink — these are the hottest areas and burn off dust most noticeably. If the smell persists after cleaning, the PSU may need professional inspection.
+
+
+

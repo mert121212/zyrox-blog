@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description:
         'A sharp, technical blog about PC hardware, builds, troubleshooting, and performance tuning.',
     keywords: ['PC hardware', 'PC building', 'NVMe SSD', 'BIOS tuning', 'overclocking'],
-    metadataBase: new URL('https://zyroxnet.netlify.app'),
+    metadataBase: new URL('https://zyroxlab.com'),
     alternates: {
         canonical: '/',
     },
@@ -42,11 +42,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         '@context': 'https://schema.org',
         '@type': 'WebSite',
         name: 'Zyrox',
-        url: 'https://zyroxnet.netlify.app',
+        url: 'https://zyroxlab.com',
         description: 'A sharp, technical blog about PC hardware, builds, troubleshooting, and performance tuning.',
         potentialAction: {
             '@type': 'SearchAction',
-            target: 'https://zyroxnet.netlify.app/?search={search_term_string}',
+            target: 'https://zyroxlab.com/?search={search_term_string}',
             'query-input': 'required name=search_term_string',
         },
     };
@@ -55,9 +55,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         '@context': 'https://schema.org',
         '@type': 'Organization',
         name: 'Zyrox',
-        url: 'https://zyroxnet.netlify.app',
+        url: 'https://zyroxlab.com',
         description: 'Authoritative hardware guides and practical build advice.',
-        logo: 'https://zyroxnet.netlify.app/logo.png',
+        logo: 'https://zyroxlab.com/logo.png',
         sameAs: [
             'https://twitter.com/zyrox',
         ],
@@ -65,6 +65,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
     return (
         <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
+            <head>
+                {/* Google tag (gtag.js) */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3Q3BBMSERB"></script>
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+                            gtag('config', 'G-3Q3BBMSERB');
+                        `,
+                    }}
+                />
+            </head>
             <body>
                 <script
                     type="application/ld+json"

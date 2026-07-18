@@ -122,47 +122,13 @@ export function SearchAndFilter({ posts }: { posts: Post[] }) {
                     </div>
                 </div>
 
-                {/* Tag filter */}
-                <div className="filter-group">
-                    <p className="filter-label">Tags</p>
-                    <div className="pill-row">
-                        <button
-                            type="button"
-                            className={`pill${activeTag === 'All' ? ' pill--active' : ''}`}
-                            onClick={() => setActiveTag('All')}
-                            aria-pressed={activeTag === 'All'}
-                        >
-                            All
-                        </button>
-                        {visibleTags.map((tag) => (
-                            <button
-                                key={tag}
-                                type="button"
-                                className={`pill${activeTag === tag ? ' pill--active' : ''}`}
-                                onClick={() => setActiveTag(tag === activeTag ? 'All' : tag)}
-                                aria-pressed={activeTag === tag}
-                            >
-                                {tag}
-                            </button>
-                        ))}
-                        {hasHiddenTags && (
-                            <button
-                                type="button"
-                                className="pill pill--ghost"
-                                onClick={() => setShowAllTags((v) => !v)}
-                            >
-                                {showAllTags ? '← Show less' : `+${allTags.length - TAG_VISIBLE_INITIAL} more`}
-                            </button>
-                        )}
-                    </div>
-                </div>
+                {/* Tag filters temporarily removed */}
 
                 {/* Active filters bar */}
                 {activeFilterCount > 0 && (
                     <div className="active-filters-bar">
                         <span className="active-filters-label">
-                            {activeFilterCount} filter{activeFilterCount > 1 ? 's' : ''} active
-                            {activeTag !== 'All' && <span className="active-filter-chip">#{activeTag}</span>}
+                            {activeFilterCount > 0 && `Filters active: `}
                             {query && <span className="active-filter-chip">"{query}"</span>}
                             {sort !== 'newest' && <span className="active-filter-chip">{SORT_LABELS[sort]}</span>}
                         </span>

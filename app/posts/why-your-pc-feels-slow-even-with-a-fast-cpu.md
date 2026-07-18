@@ -188,7 +188,7 @@ A clean DDU reinstall removes all remnants of the previous driver installation, 
 
 ---
 
-## FAQ
+## Common Questions
 
 **My CPU usage is only 10–20% but the PC still feels slow. What is happening?**
 Low CPU usage with sluggish performance is the classic symptom of a storage or memory bottleneck. Check Task Manager → Disk (for 100% disk usage) and Memory (for page file pressure). The CPU is waiting on data rather than actively processing — so it looks idle even though the system feels busy.
@@ -207,3 +207,5 @@ Absolutely. Malware that uses CPU cycles for cryptomining or network activity ca
 
 **How do I know if my thermal paste needs replacing?**
 Compare your CPU temperatures today against benchmarks or records from when the system was new. A 10–15°C increase under the same workload with the same cooler is a strong indicator that thermal paste has degraded. On systems older than 4–5 years with original thermal paste, replacing it preemptively is a reasonable maintenance step.
+
+
