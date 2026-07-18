@@ -7,12 +7,7 @@ const ReadingListBadge = dynamic(
     { ssr: false },
 );
 
-// Internal Next.js pages
-const navLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/authors', label: 'Authors' },
-    { href: '/about', label: 'About' },
-];
+// Navbar cleaned for minimal UI
 
 export function SiteHeader() {
     return (
@@ -22,16 +17,7 @@ export function SiteHeader() {
                     Zyrox
                 </Link>
                 <nav aria-label="Primary navigation">
-                    {navLinks.map((item) => (
-                        <Link key={item.href} href={item.href}>
-                            {item.label}
-                        </Link>
-                    ))}
                     <ReadingListBadge />
-                    {/* RSS is a static file — use plain <a> to avoid Next.js router */}
-                    <a href="/rss.xml" rel="alternate" type="application/rss+xml">
-                        RSS
-                    </a>
                 </nav>
             </div>
         </header>
