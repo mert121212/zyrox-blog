@@ -72,8 +72,15 @@ export function SearchAndFilter({ posts }: { posts: Post[] }) {
         inputRef.current?.focus();
     }
 
+    // Build a single results string to avoid React text-node splitting issues
+    const resultText = filteredPosts.length === 0
+        ? 'No articles match.'
+        : filteredPosts.length > 0 && visiblePosts.length < filteredPosts.length
+            ? `${filteredPosts.length} article${filteredPosts.length === 1 ? '' : 's'} found — showing ${visiblePosts.length}`
+            : `${filteredPosts.length} article${filteredPosts.length === 1 ? '' : 's'} found`;
+
     return (
-        <>
+        <div className="search-and-filter-root">
             {/* ── Search panel ───────────────────────────────── */}
             <div className="search-panel">
 
@@ -122,14 +129,12 @@ export function SearchAndFilter({ posts }: { posts: Post[] }) {
                     </div>
                 </div>
 
-                {/* Tag filters temporarily removed */}
-
                 {/* Active filters bar */}
                 {activeFilterCount > 0 && (
                     <div className="active-filters-bar">
                         <span className="active-filters-label">
-                            {activeFilterCount > 0 && `Filters active: `}
-                            {query && <span className="active-filter-chip">"{query}"</span>}
+                            <span>Filters active: </span>
+                            {query && <span className="active-filter-chip">&quot;{query}&quot;</span>}
                             {sort !== 'newest' && <span className="active-filter-chip">{SORT_LABELS[sort]}</span>}
                         </span>
                         <button type="button" className="clear-filters-btn" onClick={clearAll}>
@@ -140,69 +145,65 @@ export function SearchAndFilter({ posts }: { posts: Post[] }) {
             </div>
 
             {/* ── Results meta ───────────────────────────────── */}
-            <p className="results-meta">
-                {filteredPosts.length === 0
-                    ? 'No articles match.'
-                    : `${filteredPosts.length} article${filteredPosts.length === 1 ? '' : 's'} found`}
-                {filteredPosts.length > 0 && visiblePosts.length < filteredPosts.length &&
-                    ` — showing ${visiblePosts.length}`}
-            </p>
+            <p className="results-meta" suppressHydrationWarning>{resultText}</p>
 
             {/* ── Article grid ───────────────────────────────── */}
-            {filteredPosts.length > 0 ? (
-                <>
-                    <div className="grid">
-                        {visiblePosts.map((post) => (
-                            <article key={post.slug} className="post-card">
-                                <div className="post-meta">{post.date}</div>
-                                <h3>{post.title}</h3>
-                                <p>{post.excerpt}</p>
-                                <div className="post-card-footer">
-                                    {AUTHOR_NAME[post.author] && (
-                                        <Link
-                                            href={`/authors/${post.author}`}
-                                            className="post-card-author"
-                                            onClick={(e) => e.stopPropagation()}
-                                            aria-label={`Articles by ${AUTHOR_NAME[post.author]}`}
-                                        >
-                                            <span className="post-card-avatar" aria-hidden="true">
-                                                {AUTHOR_AVATAR[post.author]}
-                                            </span>
-                                            <span>{AUTHOR_NAME[post.author]}</span>
+            <div className="search-results-container">
+                {filteredPosts.length > 0 ? (
+                    <div key="results">
+                        <div className="grid">
+                            {visiblePosts.map((post) => (
+                                <article key={post.slug} className="post-card">
+                                    <div className="post-meta">{post.date}</div>
+                                    <h3>{post.title}</h3>
+                                    <p>{post.excerpt}</p>
+                                    <div className="post-card-footer">
+                                        {AUTHOR_NAME[post.author] && (
+                                            <Link
+                                                href={`/authors/${post.author}`}
+                                                className="post-card-author"
+                                                onClick={(e) => e.stopPropagation()}
+                                                aria-label={`Articles by ${AUTHOR_NAME[post.author]}`}
+                                            >
+                                                <span className="post-card-avatar" aria-hidden="true">
+                                                    {AUTHOR_AVATAR[post.author]}
+                                                </span>
+                                                <span>{AUTHOR_NAME[post.author]}</span>
+                                            </Link>
+                                        )}
+                                        <Link href={`/posts/${post.slug}`} className="post-link">
+                                            Read →
                                         </Link>
-                                    )}
-                                    <Link href={`/posts/${post.slug}`} className="post-link">
-                                        Read →
-                                    </Link>
-                                </div>
-                            </article>
-                        ))}
-                    </div>
-
-                    {hasMorePosts && (
-                        <div className="load-more-wrap">
-                            <button
-                                type="button"
-                                className="btn btn--secondary"
-                                onClick={() => setVisibleCount((c) => c + 12)}
-                            >
-                                Show 12 more
-                                <span className="load-more-count">
-                                    ({filteredPosts.length - visibleCount} remaining)
-                                </span>
-                            </button>
+                                    </div>
+                                </article>
+                            ))}
                         </div>
-                    )}
-                </>
-            ) : (
-                <div className="post-card empty-state">
-                    <h3>No articles match.</h3>
-                    <p>
-                        Try a broader search term, or clear the active filter.
-                        {' '}<button type="button" className="inline-reset-btn" onClick={clearAll}>Reset all filters</button>
-                    </p>
-                </div>
-            )}
-        </>
+
+                        {hasMorePosts && (
+                            <div className="load-more-wrap">
+                                <button
+                                    type="button"
+                                    className="btn btn--secondary"
+                                    onClick={() => setVisibleCount((c) => c + 12)}
+                                >
+                                    Show 12 more
+                                    <span className="load-more-count">
+                                        ({filteredPosts.length - visibleCount} remaining)
+                                    </span>
+                                </button>
+                            </div>
+                        )}
+                    </div>
+                ) : (
+                    <div key="empty" className="post-card empty-state">
+                        <h3>No articles match.</h3>
+                        <p>
+                            Try a broader search term, or clear the active filter.
+                            {' '}<button type="button" className="inline-reset-btn" onClick={clearAll}>Reset all filters</button>
+                        </p>
+                    </div>
+                )}
+            </div>
+        </div>
     );
 }
