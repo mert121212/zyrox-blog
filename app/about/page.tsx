@@ -91,9 +91,12 @@ export default function AboutPage() {
                 </section>
 
                 <section className="about-section">
-                    <h2>Site information</h2>
+                    <h2>Site information & Contact</h2>
                     <p>
                         Zyrox publishes original content focused on PC hardware for a global English-speaking audience. The site is updated regularly as hardware evolves and new guides are completed.
+                    </p>
+                    <p>
+                        <strong>Contact us:</strong> For general inquiries, business, or support, please reach out to us at <a href="mailto:zyroxlabcom@gmail.com" className="post-link" style={{ display: 'inline', marginTop: 0 }}>zyroxlabcom@gmail.com</a>.
                     </p>
                     <p>
                         For site-related legal information, see our{' '}
