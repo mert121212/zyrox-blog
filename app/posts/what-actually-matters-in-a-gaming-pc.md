@@ -1,14 +1,23 @@
-﻿---
-title: "What Actually Matters in a Gaming PC Build"
-meta_description: "Cut through the marketing and learn which gaming PC components actually affect frame rates, smoothness, and upgrade value. Review the benchmark data to make an informed decision."
-date: 2026-07-01
-category: "Gaming"
+---
+title: What Actually Matters in a Gaming PC Build
+meta_description: >-
+  Cut through the marketing and learn which gaming PC components actually affect
+  frame rates, smoothness, and upgrade value. Review the benchmark data to make
+  an informed decision.
+date: 2026-07-01T00:00:00.000Z
+category: Gaming
 tags:
-  - "Gaming PC"
-  - "GPU"
-  - "FPS"
-  - "Build Advice"
+  - Gaming PC
+  - GPU
+  - FPS
+  - Build Advice
 author: marcus-holt
+keywords:
+  - gaming pc
+  - gpu
+  - fps
+  - build advice
+  - gaming
 ---
 
 Every year I watch people spend their entire PC budget on the wrong thing. They buy a $400 processor for a gaming rig that needs a $400 GPU upgrade. They run 16GB of RAM at half its rated speed and wonder why the system stutters. They debate NVMe vs. SATA SSD for game loading when the real problem is that the graphics card is three generations old.

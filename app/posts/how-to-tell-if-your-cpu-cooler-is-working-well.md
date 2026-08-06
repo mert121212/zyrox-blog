@@ -1,14 +1,23 @@
-﻿---
-title: "How to Tell If Your CPU Cooler Is Working Well"
-meta_description: "Learn how to spot thermal issues, fan problems, and poor mounting that can affect your CPU's long-term stability. See the test results to understand the real-world impact."
-date: 2026-07-13
-category: "Cooling"
+---
+title: How to Tell If Your CPU Cooler Is Working Well
+meta_description: >-
+  Learn how to spot thermal issues, fan problems, and poor mounting that can
+  affect your CPU's long-term stability. See the test results to understand the
+  real-world impact.
+date: 2026-07-13T00:00:00.000Z
+category: Cooling
 tags:
-  - "CPU Cooler"
-  - "Thermals"
-  - "Cooling"
-  - "Benchmarking"
+  - CPU Cooler
+  - Thermals
+  - Cooling
+  - Benchmarking
 author: daniel-osei
+keywords:
+  - cpu cooler
+  - thermals
+  - cooling
+  - benchmarking
+  - tell
 ---
 
 Most people assume their CPU cooler is fine until the system crashes, throttles hard under a benchmark, or starts sounding like a jet engine. By that point, you've already lost stability and potentially degraded your thermal paste faster than necessary. The truth is, a badly mounted or aging cooler shows signs well before any of that — you just need to know where to look.

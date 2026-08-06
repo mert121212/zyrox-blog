@@ -1,14 +1,22 @@
-﻿---
-title: "How to Choose a Motherboard for a New PC Build Without Overpaying"
-meta_description: "Learn what matters most when selecting a motherboard for a new build, from chipset and VRM quality to expansion and future-proofing."
-date: 2026-07-04
-category: "Motherboards"
+---
+title: How to Choose a Motherboard for a New PC Build Without Overpaying
+meta_description: >-
+  Learn what matters most when selecting a motherboard for a new build, from
+  chipset and VRM quality to expansion and future-proofing.
+date: 2026-07-04T00:00:00.000Z
+category: Motherboards
 tags:
-  - "Motherboard"
-  - "Chipset"
-  - "VRM"
-  - "Build Advice"
+  - Motherboard
+  - Chipset
+  - VRM
+  - Build Advice
 author: marcus-holt
+keywords:
+  - motherboard
+  - chipset
+  - vrm
+  - build advice
+  - motherboards
 ---
 
 The motherboard is the part most people spend the least time thinking about, and the one they most often regret getting wrong. When you're building a PC, the GPU and CPU get all the attention. The motherboard sits quietly in the background — but it determines what CPU you can run, how fast your RAM can go, how many drives you can attach, and whether you can update your BIOS without owning a separate CPU first. I've built systems at every price tier, and I've made motherboard mistakes at most of them. Here's what I've learned.

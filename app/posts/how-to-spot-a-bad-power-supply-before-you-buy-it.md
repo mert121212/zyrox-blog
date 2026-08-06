@@ -1,14 +1,22 @@
-﻿---
-title: "How to Spot a Bad Power Supply Before You Buy It"
-meta_description: "A practical checklist for evaluating power supplies by efficiency, protection features, and build quality rather than brand hype. I've killed a GPU."
-date: 2026-06-30
-category: "Power"
+---
+title: How to Spot a Bad Power Supply Before You Buy It
+meta_description: >-
+  A practical checklist for evaluating power supplies by efficiency, protection
+  features, and build quality rather than brand hype. I've killed a GPU.
+date: 2026-06-30T00:00:00.000Z
+category: Power
 tags:
-  - "Power Supply"
-  - "PSU"
-  - "Hardware"
-  - "Buying Guide"
+  - Power Supply
+  - PSU
+  - Hardware
+  - Buying Guide
 author: daniel-osei
+keywords:
+  - power supply
+  - psu
+  - hardware
+  - buying guide
+  - power
 ---
 
 I've killed a GPU. Not through overclocking, not through a bad driver — through a cheap power supply that had no business being inside a PC. It was a white-label 650W unit I grabbed from an Amazon storefront that no longer exists, and it took a mid-range graphics card with it when it finally gave out. That experience changed how I approach every single PSU purchase. I now read spec sheets the way lawyers read contracts, and I want to walk you through that process in full detail.

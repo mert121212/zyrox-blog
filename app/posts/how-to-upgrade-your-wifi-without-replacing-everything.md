@@ -1,14 +1,22 @@
-﻿---
-title: "How to Upgrade Your Wi-Fi Setup Without Replacing Everything"
-meta_description: "Improve your home network with targeted upgrades such as placement, channels, and a better access point instead of replacing your whole setup."
-date: 2026-07-27
-category: "Networking"
+---
+title: How to Upgrade Your Wi-Fi Setup Without Replacing Everything
+meta_description: >-
+  Improve your home network with targeted upgrades such as placement, channels,
+  and a better access point instead of replacing your whole setup.
+date: 2026-07-27T00:00:00.000Z
+category: Networking
 tags:
-  - "Wi-Fi"
-  - "Networking"
-  - "Access Point"
-  - "Home Setup"
+  - Wi-Fi
+  - Networking
+  - Access Point
+  - Home Setup
 author: rachel-kim
+keywords:
+  - wi-fi
+  - networking
+  - access point
+  - home setup
+  - upgrade
 ---
 
 A few months ago I was ready to spend $300 on a new mesh Wi-Fi system. Speeds in my home office — two rooms and about 40 feet from the router — had dropped to something embarrassing: 18 Mbps down on a 600 Mbps fiber line. Before I pulled the trigger, I decided to spend a weekend actually diagnosing the problem instead of throwing hardware at it. Turns out I needed a $0 fix for half the problem and a $45 fix for the rest. This guide covers everything I tested and learned.

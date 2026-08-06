@@ -1,14 +1,23 @@
-﻿---
-title: "How to Choose the Right PC Case"
-meta_description: "A practical guide to case size, airflow, expansion options, and build quality when choosing a home for your components. See the test results to understand the real-world impact."
-date: 2026-07-15
-category: "Cases"
+---
+title: How to Choose the Right PC Case
+meta_description: >-
+  A practical guide to case size, airflow, expansion options, and build quality
+  when choosing a home for your components. See the test results to understand
+  the real-world impact.
+date: 2026-07-15T00:00:00.000Z
+category: Cases
 tags:
-  - "PC Case"
-  - "Airflow"
-  - "Build Quality"
-  - "Cable Management"
+  - PC Case
+  - Airflow
+  - Build Quality
+  - Cable Management
 author: daniel-osei
+keywords:
+  - pc case
+  - airflow
+  - build quality
+  - cable management
+  - cases
 ---
 
 I have built PCs in everything from a cramped $40 budget box to a full-tower behemoth that barely fit under my desk. After a while you stop caring about RGB strips and start caring about what actually makes the build process smoother and the final system easier to live with. The case is where all of your expensive hardware spends its entire life. Choosing the wrong one makes every upgrade after that slightly more painful. Choosing the right one means you open the side panel once a year to clean it and otherwise forget the case exists.

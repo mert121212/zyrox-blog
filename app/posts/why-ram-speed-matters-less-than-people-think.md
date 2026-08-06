@@ -1,14 +1,23 @@
-﻿---
-title: "Why RAM Speed Matters Less Than People Think"
-meta_description: "An honest look at RAM speed, capacity, and latency, with guidance on what actually affects everyday performance. Review the benchmark data to make an informed decision."
-date: 2026-07-03
-category: "Memory"
+---
+title: Why RAM Speed Matters Less Than People Think
+meta_description: >-
+  An honest look at RAM speed, capacity, and latency, with guidance on what
+  actually affects everyday performance. Review the benchmark data to make an
+  informed decision.
+date: 2026-07-03T00:00:00.000Z
+category: Memory
 tags:
-  - "RAM"
-  - "Memory"
-  - "Performance"
-  - "Hardware"
+  - RAM
+  - Memory
+  - Performance
+  - Hardware
 author: marcus-holt
+keywords:
+  - ram
+  - memory
+  - performance
+  - hardware
+  - speed
 ---
 
 Every few months I see someone in a PC building forum asking whether they should buy the 6000MHz DDR5 kit or the 8000MHz kit. They're worried about leaving performance on the table. They've seen the marketing, the benchmark slides, and the SKU names that imply faster is meaningfully better. The truth is more boring than the marketing department wants you to believe — and understanding it will save you money without costing you anything in real-world performance.

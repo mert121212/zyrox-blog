@@ -1,14 +1,22 @@
-﻿---
-title: "How to Clean a PC Without Damaging the Components"
-meta_description: "A careful guide to dust removal and maintenance that avoids damaging fans, heatsinks, or delicate connectors."
-date: 2026-07-08
-category: "Maintenance"
+---
+title: How to Clean a PC Without Damaging the Components
+meta_description: >-
+  A careful guide to dust removal and maintenance that avoids damaging fans,
+  heatsinks, or delicate connectors.
+date: 2026-07-08T00:00:00.000Z
+category: Maintenance
 tags:
-  - "Cleaning"
-  - "Maintenance"
-  - "Dust"
-  - "Cooling"
+  - Cleaning
+  - Maintenance
+  - Dust
+  - Cooling
 author: rachel-kim
+keywords:
+  - cleaning
+  - maintenance
+  - dust
+  - cooling
+  - clean
 ---
 
 I opened my PC case last spring after about eight months of not cleaning it and honestly felt a little embarrassed. The GPU heatsink looked like it was wearing a wool sweater. The case fans were caked in gray fuzz, and the front intake filter was so blocked I could barely see through it. Temperatures had been creeping up for weeks and I kept ignoring it, blaming the summer heat. The real culprit was sitting right there in plain sight.

@@ -1,14 +1,23 @@
-﻿---
-title: "Should You Buy an SSD or HDD for Game Storage"
-meta_description: "A direct comparison of SSD and HDD storage for gamers who want faster load times without overspending on capacity. Here is my honest experience and what you actually need."
-date: 2026-07-09
-category: "Gaming"
+---
+title: Should You Buy an SSD or HDD for Game Storage
+meta_description: >-
+  A direct comparison of SSD and HDD storage for gamers who want faster load
+  times without overspending on capacity. Here is my honest experience and what
+  you actually need.
+date: 2026-07-09T00:00:00.000Z
+category: Gaming
 tags:
-  - "Gaming"
-  - "SSD"
-  - "HDD"
-  - "Storage"
+  - Gaming
+  - SSD
+  - HDD
+  - Storage
 author: sara-vance
+keywords:
+  - gaming
+  - ssd
+  - hdd
+  - storage
+  - should
 ---
 
 I have been gaming on PC for over a decade, and storage decisions used to feel pretty simple. Buy the biggest hard drive you can afford, install everything on it, and call it done. Then SSDs started dropping in price and that whole calculus changed. Now every time I help someone build or upgrade a rig, the same question comes up: should I just put everything on an SSD, or does an HDD still earn a spot in a gaming setup in 2026?

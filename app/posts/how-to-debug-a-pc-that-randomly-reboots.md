@@ -1,14 +1,22 @@
-﻿---
-title: "How to Debug a PC That Randomly Reboots"
-meta_description: "A practical checklist for identifying whether random restarts come from overheating, unstable power, or software issues."
-date: 2026-07-18
-category: "Troubleshooting"
+---
+title: How to Debug a PC That Randomly Reboots
+meta_description: >-
+  A practical checklist for identifying whether random restarts come from
+  overheating, unstable power, or software issues.
+date: 2026-07-18T00:00:00.000Z
+category: Troubleshooting
 tags:
-  - "Random Reboots"
-  - "Debugging"
-  - "Overheating"
-  - "Power Issues"
+  - Random Reboots
+  - Debugging
+  - Overheating
+  - Power Issues
 author: rachel-kim
+keywords:
+  - random reboots
+  - debugging
+  - overheating
+  - power issues
+  - troubleshooting
 ---
 
 Random reboots are one of the most frustrating things a PC can do. The system doesn't warn you, doesn't leave an obvious error on screen, and the problem might not repeat for hours — or it might happen three times in a row. I've dealt with this on my own machines more than once, and the most important lesson I've learned is this: don't guess. Every reboot leaves evidence somewhere, and with the right tools you can find it methodically rather than swapping parts blindly.

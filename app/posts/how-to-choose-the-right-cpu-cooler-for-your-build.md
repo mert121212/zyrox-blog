@@ -1,14 +1,23 @@
-﻿---
-title: "How to Choose the Right CPU Cooler for Your Build"
-meta_description: "A practical guide to selecting a CPU cooler based on thermal demands, case compatibility, and noise tolerance. I have made nearly every cooler mistake possible over the years."
-date: 2026-07-02
-category: "Cooling"
+---
+title: How to Choose the Right CPU Cooler for Your Build
+meta_description: >-
+  A practical guide to selecting a CPU cooler based on thermal demands, case
+  compatibility, and noise tolerance. I have made nearly every cooler mistake
+  possible over the years.
+date: 2026-07-02T00:00:00.000Z
+category: Cooling
 tags:
-  - "CPU Cooler"
-  - "Cooling"
-  - "Thermals"
-  - "Build Guide"
+  - CPU Cooler
+  - Cooling
+  - Thermals
+  - Build Guide
 author: daniel-osei
+keywords:
+  - cpu cooler
+  - cooling
+  - thermals
+  - build guide
+  - choose
 ---
 
 I have made nearly every cooler mistake possible over the years. I once bought a massive dual-tower cooler and discovered it physically could not fit in the case I had already ordered. I ran a Ryzen 9 5900X on the stock Wraith cooler during a long compile job and watched temperatures hit 95°C before the system throttled itself down mid-task. I have also over-spent on a 360mm AIO for a processor that an $80 air cooler would have handled comfortably.

@@ -1,14 +1,23 @@
-﻿---
-title: "How to Choose the Right Case Fan Setup"
-meta_description: "Learn how to balance airflow, noise, and aesthetics when choosing intake and exhaust fans for your PC case. See the test results to understand the real-world impact."
-date: 2026-07-03
-category: "Cooling"
+---
+title: How to Choose the Right Case Fan Setup
+meta_description: >-
+  Learn how to balance airflow, noise, and aesthetics when choosing intake and
+  exhaust fans for your PC case. See the test results to understand the
+  real-world impact.
+date: 2026-07-03T00:00:00.000Z
+category: Cooling
 tags:
-  - "Case Fans"
-  - "Airflow"
-  - "Noise"
-  - "PC Build"
+  - Case Fans
+  - Airflow
+  - Noise
+  - PC Build
 author: daniel-osei
+keywords:
+  - case fans
+  - airflow
+  - noise
+  - pc build
+  - cooling
 ---
 
 The first time I built a PC I bought the shiniest fans I could find, crammed them into every available mount, and figured more fans meant better cooling. After boot-up I noticed my GPU was hitting 84°C under load and the system sounded like a turboprop. I had created turbulence, not airflow. Fans were fighting each other, pressure was wrong, and hot air had nowhere efficient to go.

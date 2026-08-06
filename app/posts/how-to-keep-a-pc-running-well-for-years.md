@@ -1,14 +1,22 @@
-﻿---
-title: "How to Keep a PC Running Well for Years"
-meta_description: "A simple maintenance routine can preserve performance, reduce failures, and extend the useful life of a desktop or laptop."
-date: 2026-07-06
-category: "Maintenance"
+---
+title: How to Keep a PC Running Well for Years
+meta_description: >-
+  A simple maintenance routine can preserve performance, reduce failures, and
+  extend the useful life of a desktop or laptop.
+date: 2026-07-06T00:00:00.000Z
+category: Maintenance
 tags:
-  - "PC Maintenance"
-  - "Longevity"
-  - "Dust"
-  - "Upgrades"
+  - PC Maintenance
+  - Longevity
+  - Dust
+  - Upgrades
 author: rachel-kim
+keywords:
+  - pc maintenance
+  - longevity
+  - dust
+  - upgrades
+  - maintenance
 ---
 
 I have a desktop that I built six years ago. It still runs fast, stays cool, and has never had an unexpected failure. That is not luck — it is the result of a pretty boring maintenance routine that takes maybe two hours per year total. The machine has had thermal paste replaced once, its fans cleaned four times, two driver updates reverted after they caused problems, and one SSD health check that caught an early warning before it became a real issue.

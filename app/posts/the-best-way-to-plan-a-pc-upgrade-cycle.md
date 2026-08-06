@@ -1,14 +1,23 @@
-﻿---
-title: "The Best Way to Plan a PC Upgrade Cycle"
-meta_description: "A simple upgrade plan helps you improve your system steadily instead of overspending on parts that do not matter yet. Review the benchmark data to make an informed decision."
-date: 2026-07-10
-category: "Upgrades"
+---
+title: The Best Way to Plan a PC Upgrade Cycle
+meta_description: >-
+  A simple upgrade plan helps you improve your system steadily instead of
+  overspending on parts that do not matter yet. Review the benchmark data to
+  make an informed decision.
+date: 2026-07-10T00:00:00.000Z
+category: Upgrades
 tags:
-  - "Upgrade Planning"
-  - "Budget"
-  - "PC Build"
-  - "Value"
+  - Upgrade Planning
+  - Budget
+  - PC Build
+  - Value
 author: marcus-holt
+keywords:
+  - upgrade planning
+  - budget
+  - pc build
+  - value
+  - upgrades
 ---
 
 I've built and upgraded more PCs than I can count at this point, and the single most common mistake I see is reactive upgrading. Someone gets frustrated with performance, panic-buys a new GPU, and then wonders why the system still feels slow. Or they spend $400 on a new CPU when the real bottleneck was 16GB of slow RAM. A planned upgrade cycle doesn't require predicting the future — it just requires a little discipline upfront.

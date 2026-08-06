@@ -1,14 +1,22 @@
-﻿---
-title: "How to Spot a Good Used GPU Deal"
-meta_description: "Use these practical checks to tell the difference between a smart used graphics card purchase and a risky one."
-date: 2026-07-04
-category: "Buying Guides"
+---
+title: How to Spot a Good Used GPU Deal
+meta_description: >-
+  Use these practical checks to tell the difference between a smart used
+  graphics card purchase and a risky one.
+date: 2026-07-04T00:00:00.000Z
+category: Buying Guides
 tags:
-  - "GPU"
-  - "Used Hardware"
-  - "Value"
-  - "Buying Advice"
+  - GPU
+  - Used Hardware
+  - Value
+  - Buying Advice
 author: marcus-holt
+keywords:
+  - gpu
+  - used hardware
+  - value
+  - buying advice
+  - buying guides
 ---
 
 I've bought and tested dozens of used graphics cards over the past several years — some genuinely excellent value, a few complete disasters, and a handful that required careful inspection before I felt comfortable putting them in a build. The used GPU market in 2026 is better than it's been in years from a price standpoint, but it's also full of cards coming off cryptocurrency mining rigs, poorly described listings, and sellers who honestly don't know (or don't care) about the card's history.

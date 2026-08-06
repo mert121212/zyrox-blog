@@ -1,14 +1,22 @@
-﻿---
-title: "How to Read a PSU Spec Sheet Without Getting Misled"
-meta_description: "Learn how to read PSU wattage, 80 Plus ratings, ripple, protections, and quality signs without falling for marketing noise."
-date: 2026-07-05
-category: "Power Supply"
+---
+title: How to Read a PSU Spec Sheet Without Getting Misled
+meta_description: >-
+  Learn how to read PSU wattage, 80 Plus ratings, ripple, protections, and
+  quality signs without falling for marketing noise.
+date: 2026-07-05T00:00:00.000Z
+category: Power Supply
 tags:
-  - "PSU"
-  - "Power Supply"
-  - "80 Plus"
-  - "Build Advice"
+  - PSU
+  - Power Supply
+  - 80 Plus
+  - Build Advice
 author: daniel-osei
+keywords:
+  - psu
+  - power supply
+  - 80 plus
+  - build advice
+  - read
 ---
 
 I once helped a friend debug a system that would crash under load with no error, no blue screen, and no obvious cause. We swapped the GPU, reseated the RAM, reinstalled Windows, and ran memtest for hours. The culprit turned out to be a 750W power supply that could not actually deliver 750W continuously. Under a sustained gaming load that pulled about 650W, the PSU's real output sagged, its 12V rail dropped below the tolerance margin, and the system reset itself.

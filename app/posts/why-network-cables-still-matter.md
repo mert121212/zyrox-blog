@@ -1,14 +1,22 @@
-﻿---
-title: "Why Network Cables Still Matter in a Wireless World"
-meta_description: "A wired connection can still be the best option for reliability, latency, and consistency in a modern home setup."
-date: 2026-07-23
-category: "Networking"
+---
+title: Why Network Cables Still Matter in a Wireless World
+meta_description: >-
+  A wired connection can still be the best option for reliability, latency, and
+  consistency in a modern home setup.
+date: 2026-07-23T00:00:00.000Z
+category: Networking
 tags:
-  - "Ethernet"
-  - "Wired Network"
-  - "Latency"
-  - "Home Setup"
+  - Ethernet
+  - Wired Network
+  - Latency
+  - Home Setup
 author: sara-vance
+keywords:
+  - ethernet
+  - wired network
+  - latency
+  - home setup
+  - networking
 ---
 
 I used to think Wi-Fi 6 had finally closed the gap. My router was positioned well, the signal was strong in every room, and speed tests were showing 400+ Mbps. Then I joined a competitive match in Valorant and dropped a round I should have won because my ping spiked to 180ms for three seconds. That was the day I ran a cable.

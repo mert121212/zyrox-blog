@@ -1,14 +1,22 @@
-﻿---
-title: "How to Choose a Monitor Arm and Stand"
-meta_description: "Learn how to pick the right monitor mount for ergonomics, desk space, and long-term flexibility. My desk used to be a mess of wasted space."
-date: 2026-07-20
-category: "Displays"
+---
+title: How to Choose a Monitor Arm and Stand
+meta_description: >-
+  Learn how to pick the right monitor mount for ergonomics, desk space, and
+  long-term flexibility. My desk used to be a mess of wasted space.
+date: 2026-07-20T00:00:00.000Z
+category: Displays
 tags:
-  - "Monitor Arm"
-  - "Ergonomics"
-  - "Desk Setup"
-  - "Accessories"
+  - Monitor Arm
+  - Ergonomics
+  - Desk Setup
+  - Accessories
 author: sara-vance
+keywords:
+  - monitor arm
+  - ergonomics
+  - desk setup
+  - accessories
+  - displays
 ---
 
 My desk used to be a mess of wasted space. The included monitor stand ate up about eight inches of depth, the cables draped awkwardly, and no matter how I positioned the screen, something about the height felt slightly wrong by the end of the day. A monitor arm fixed all three of those things in one afternoon. What I didn't expect was how much research goes into choosing the right one — especially once I understood VESA compatibility, weight limits, and desk mounting options.

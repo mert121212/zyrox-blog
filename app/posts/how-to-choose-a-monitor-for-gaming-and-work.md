@@ -1,14 +1,23 @@
-﻿---
-title: "How to Choose a Monitor for Gaming and Work Without Overpaying"
-meta_description: "A practical guide to monitor selection that balances refresh rate, resolution, panel quality, and ergonomics. Here is my honest experience and what you actually need."
-date: 2026-07-09
-category: "Hardware"
+---
+title: How to Choose a Monitor for Gaming and Work Without Overpaying
+meta_description: >-
+  A practical guide to monitor selection that balances refresh rate, resolution,
+  panel quality, and ergonomics. Here is my honest experience and what you
+  actually need.
+date: 2026-07-09T00:00:00.000Z
+category: Hardware
 tags:
-  - "Monitor"
-  - "Display"
-  - "Gaming"
-  - "Productivity"
+  - Monitor
+  - Display
+  - Gaming
+  - Productivity
 author: sara-vance
+keywords:
+  - monitor
+  - display
+  - gaming
+  - productivity
+  - hardware
 ---
 
 I spent three weeks researching monitors before I bought my last one, and I still almost made a mistake. The spec sheets are designed to confuse you. Manufacturers throw around numbers like "1ms response time" and "HDR" without explaining what those actually mean in daily use. After going through this process more times than I'd like to admit — for my own desk, for a friend's editing workstation, and for a home office setup that needed to double as a gaming display — I can tell you that most people overpay for features they don't need and underpay for features that would genuinely improve their experience.

@@ -1,14 +1,22 @@
-﻿---
-title: "Signs Your Motherboard May Be Failing"
-meta_description: "Recognize early warning signs of motherboard trouble before a small issue becomes a costly repair."
-date: 2026-07-16
-category: "Troubleshooting"
+---
+title: Signs Your Motherboard May Be Failing
+meta_description: >-
+  Recognize early warning signs of motherboard trouble before a small issue
+  becomes a costly repair.
+date: 2026-07-16T00:00:00.000Z
+category: Troubleshooting
 tags:
-  - "Motherboard"
-  - "Hardware Failure"
-  - "Diagnostics"
-  - "PC Repair"
+  - Motherboard
+  - Hardware Failure
+  - Diagnostics
+  - PC Repair
 author: rachel-kim
+keywords:
+  - motherboard
+  - hardware failure
+  - diagnostics
+  - pc repair
+  - troubleshooting
 ---
 
 A failing motherboard is one of the most frustrating hardware problems you can deal with. Unlike a dead GPU or a bad RAM stick, motherboard failures rarely announce themselves cleanly. Instead, they masquerade as other problems — a Windows crash that looks like a software issue, a USB device that stops working and seems like a driver problem, or random reboots that point suspiciously at the power supply. The board itself is easy to overlook because it is the foundation everything else sits on.

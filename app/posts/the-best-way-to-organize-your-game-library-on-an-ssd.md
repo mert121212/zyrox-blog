@@ -1,14 +1,22 @@
-﻿---
-title: "The Best Way to Organize Your Game Library on an SSD"
-meta_description: "A practical approach to keeping a game library tidy, fast, and easy to manage across one or more drives. I have about 200 games in my Steam library."
-date: 2026-07-05
-category: "Storage"
+---
+title: The Best Way to Organize Your Game Library on an SSD
+meta_description: >-
+  A practical approach to keeping a game library tidy, fast, and easy to manage
+  across one or more drives. I have about 200 games in my Steam library.
+date: 2026-07-05T00:00:00.000Z
+category: Storage
 tags:
-  - "Gaming"
-  - "SSD"
-  - "Storage"
-  - "Organization"
+  - Gaming
+  - SSD
+  - Storage
+  - Organization
 author: sara-vance
+keywords:
+  - gaming
+  - ssd
+  - storage
+  - organization
+  - best
 ---
 
 I have about 200 games in my Steam library. Add Epic, GOG, and EA App titles on top of that and the number climbs even higher. For years I let those games pile up wherever the launcher defaulted, and eventually my 1TB SSD was constantly in the red. Load times got worse. Windows updates started failing because there was no room. I finally sat down and built a real system, and the difference was immediate. This is what I learned.

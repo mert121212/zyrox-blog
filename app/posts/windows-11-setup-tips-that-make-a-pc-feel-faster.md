@@ -1,14 +1,23 @@
-﻿---
-title: "Windows 11 Setup Tips That Make a PC Feel Faster"
-meta_description: "A focused guide to system settings and habits that improve perceived speed on Windows 11 without invasive changes. Here is exactly what you need to know to fix it."
-date: 2026-07-01
-category: "Windows"
+---
+title: Windows 11 Setup Tips That Make a PC Feel Faster
+meta_description: >-
+  A focused guide to system settings and habits that improve perceived speed on
+  Windows 11 without invasive changes. Here is exactly what you need to know to
+  fix it.
+date: 2026-07-01T00:00:00.000Z
+category: Windows
 tags:
-  - "Windows 11"
-  - "Performance"
-  - "Setup"
-  - "Optimization"
+  - Windows 11
+  - Performance
+  - Setup
+  - Optimization
 author: rachel-kim
+keywords:
+  - windows 11
+  - performance
+  - setup
+  - optimization
+  - windows
 ---
 
 When I first set up a new Windows 11 machine, I always spend about 30 minutes going through a checklist before I do anything else. Not because I enjoy tweaking settings menus, but because the out-of-box Windows 11 experience is genuinely not optimized for speed. Microsoft ships the OS with a ton of visual polish, background services, and default behaviors that look great in marketing materials but quietly drag down responsiveness in everyday use.

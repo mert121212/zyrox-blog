@@ -1,14 +1,23 @@
-﻿---
-title: "Why Case Airflow Matters More Than People Think"
-meta_description: "A detailed explanation of why case airflow shapes thermals, noise levels, and long-term system stability. See the test results to understand the real-world impact."
-date: 2026-07-07
-category: "Cooling"
+---
+title: Why Case Airflow Matters More Than People Think
+meta_description: >-
+  A detailed explanation of why case airflow shapes thermals, noise levels, and
+  long-term system stability. See the test results to understand the real-world
+  impact.
+date: 2026-07-07T00:00:00.000Z
+category: Cooling
 tags:
-  - "Airflow"
-  - "Case"
-  - "Cooling"
-  - "Build Advice"
+  - Airflow
+  - Case
+  - Cooling
+  - Build Advice
 author: daniel-osei
+keywords:
+  - airflow
+  - case
+  - cooling
+  - build advice
+  - matters
 ---
 
 A few years ago I built two identical systems — same CPU, same GPU, same coolers, same RAM. One went into a Fractal Design Meshify C with a front mesh panel and three intake fans. The other went into a compact case with a solid steel front panel and a single rear exhaust fan. Same hardware, same ambient room temperature, same everything except the case and fan configuration.

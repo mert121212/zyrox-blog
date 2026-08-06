@@ -1,14 +1,22 @@
-﻿---
-title: "How to Clean Your PC Case Ventilation Properly"
-meta_description: "A simple cleaning routine can restore airflow, lower temperatures, and reduce noise in a system that has been running for months."
-date: 2026-07-26
-category: "Maintenance"
+---
+title: How to Clean Your PC Case Ventilation Properly
+meta_description: >-
+  A simple cleaning routine can restore airflow, lower temperatures, and reduce
+  noise in a system that has been running for months.
+date: 2026-07-26T00:00:00.000Z
+category: Maintenance
 tags:
-  - "Dust"
-  - "Airflow"
-  - "Cleaning"
-  - "PC Maintenance"
+  - Dust
+  - Airflow
+  - Cleaning
+  - PC Maintenance
 author: rachel-kim
+keywords:
+  - dust
+  - airflow
+  - cleaning
+  - pc maintenance
+  - maintenance
 ---
 
 I ignored my PC's ventilation for about eight months. I knew the fans were getting louder, and I noticed games weren't running quite as smoothly, but I kept putting off the cleaning. When I finally opened my Fractal Design Meshify C and pulled the front filter out, it was basically a solid grey mat of compressed dust. After a proper cleaning session, my GPU dropped from 83°C under load to 74°C — a 9°C improvement — and my CPU package temperature fell by about 6°C at idle. That's when I started taking case ventilation cleaning seriously.

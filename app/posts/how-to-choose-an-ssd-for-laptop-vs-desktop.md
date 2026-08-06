@@ -1,14 +1,23 @@
-﻿---
-title: "How to Choose an SSD for a Laptop or Desktop Without Overbuying"
-meta_description: "A practical comparison of SSD form factors, interface options, and capacity planning for laptops and desktops. Here is my honest experience and what you actually need."
-date: 2026-07-07
-category: "Storage"
+---
+title: How to Choose an SSD for a Laptop or Desktop Without Overbuying
+meta_description: >-
+  A practical comparison of SSD form factors, interface options, and capacity
+  planning for laptops and desktops. Here is my honest experience and what you
+  actually need.
+date: 2026-07-07T00:00:00.000Z
+category: Storage
 tags:
-  - "SSD"
-  - "Laptop"
-  - "Desktop"
-  - "Buyers Guide"
+  - SSD
+  - Laptop
+  - Desktop
+  - Buyers Guide
 author: sara-vance
+keywords:
+  - ssd
+  - laptop
+  - desktop
+  - buyers guide
+  - storage
 ---
 
 Buying an SSD for a laptop is genuinely harder than buying one for a desktop. Not because the technology is more complex, but because the constraints are invisible until you get it wrong. The wrong physical size won't fit. The wrong interface connector won't make contact. And even a technically correct drive can throttle itself down to SATA speeds inside a chassis that can't cool it properly. I've replaced storage in enough laptops — my own, friends', and machines at a local repair shop — to know that the research beforehand is worth every minute.

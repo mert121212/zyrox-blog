@@ -1,14 +1,22 @@
-﻿---
-title: "How to Build a Silent PC Without Sacrificing Performance"
-meta_description: "Learn how to cut noise in a modern PC build with airflow planning, fan tuning, and component choices that still keep performance high."
-date: 2026-07-02
-category: "Cooling"
+---
+title: How to Build a Silent PC Without Sacrificing Performance
+meta_description: >-
+  Learn how to cut noise in a modern PC build with airflow planning, fan tuning,
+  and component choices that still keep performance high.
+date: 2026-07-02T00:00:00.000Z
+category: Cooling
 tags:
-  - "Silent PC"
-  - "Airflow"
-  - "Fan Curves"
-  - "Noise"
+  - Silent PC
+  - Airflow
+  - Fan Curves
+  - Noise
 author: daniel-osei
+keywords:
+  - silent pc
+  - airflow
+  - fan curves
+  - noise
+  - cooling
 ---
 
 I've built a lot of PCs over the years, but nothing changed my approach more than the day I set up a workstation in my home office and realized I could hear it from across the room. It wasn't loud by gamer standards — no screaming fans, no industrial drone — but it was *there*, a constant background hiss that I couldn't tune out. That experience pushed me deep into silent PC building, and what I learned is that silence and performance aren't in conflict at all. You just have to build with intention.

@@ -1,14 +1,22 @@
-﻿---
-title: "What to Check First When a PC Won't Boot"
-meta_description: "A clear troubleshooting guide for boot failures that focuses on the most common causes before deeper diagnostics."
-date: 2026-07-04
-category: "Troubleshooting"
+---
+title: What to Check First When a PC Won't Boot
+meta_description: >-
+  A clear troubleshooting guide for boot failures that focuses on the most
+  common causes before deeper diagnostics.
+date: 2026-07-04T00:00:00.000Z
+category: Troubleshooting
 tags:
-  - "Boot"
-  - "Troubleshooting"
-  - "Hardware"
-  - "Diagnostics"
+  - Boot
+  - Troubleshooting
+  - Hardware
+  - Diagnostics
 author: rachel-kim
+keywords:
+  - boot
+  - troubleshooting
+  - hardware
+  - diagnostics
+  - what
 ---
 
 A PC that won't boot is one of those problems that can send you spiraling into worst-case scenarios. I've been there — staring at a black screen at midnight, assuming the motherboard is dead or the CPU is fried. Nine times out of ten, it's something far more mundane. A loose RAM stick. A PSU switch left in the off position. A BIOS setting from a failed overclock attempt.

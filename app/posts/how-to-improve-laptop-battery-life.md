@@ -1,14 +1,23 @@
-﻿---
-title: "How to Improve Laptop Battery Life Without Sacrificing Comfort"
-meta_description: "Small changes to settings and habits can extend laptop battery life without making the machine feel slower or harder to use. Here is exactly what you need to know to fix it."
-date: 2026-07-24
-category: "Battery"
+---
+title: How to Improve Laptop Battery Life Without Sacrificing Comfort
+meta_description: >-
+  Small changes to settings and habits can extend laptop battery life without
+  making the machine feel slower or harder to use. Here is exactly what you need
+  to know to fix it.
+date: 2026-07-24T00:00:00.000Z
+category: Battery
 tags:
-  - "Laptop"
-  - "Battery Life"
-  - "Power Saving"
-  - "Portable Computing"
+  - Laptop
+  - Battery Life
+  - Power Saving
+  - Portable Computing
 author: rachel-kim
+keywords:
+  - laptop
+  - battery life
+  - power saving
+  - portable computing
+  - battery
 ---
 
 I've been working from coffee shops and airport lounges for the better part of three years, and the one thing that changes the quality of a day more than any other is how long my laptop actually lasts. Not the spec-sheet number — the real-world number. The one where I've got a browser open, a couple of documents running, Spotify in the background, and no power outlet in sight.

@@ -1,14 +1,23 @@
-﻿---
-title: "How to Install Windows from a USB Drive Without Making a Mess of It"
-meta_description: "A practical guide to creating a Windows installer USB and installing the OS cleanly without the usual setup headaches. Here is exactly what you need to know to fix it."
-date: 2026-06-30
-category: "Windows"
+---
+title: How to Install Windows from a USB Drive Without Making a Mess of It
+meta_description: >-
+  A practical guide to creating a Windows installer USB and installing the OS
+  cleanly without the usual setup headaches. Here is exactly what you need to
+  know to fix it.
+date: 2026-06-30T00:00:00.000Z
+category: Windows
 tags:
-  - "Windows"
-  - "USB Installer"
-  - "Setup"
-  - "Installation"
+  - Windows
+  - USB Installer
+  - Setup
+  - Installation
 author: rachel-kim
+keywords:
+  - windows
+  - usb installer
+  - setup
+  - installation
+  - install
 ---
 
 Installing Windows from a USB drive is one of those tasks that should take thirty minutes and occasionally turns into a two-hour puzzle. The drive boots but the installer crashes. The installer loads but can't see the hard drive. The system ignores the USB entirely and boots straight to the old OS. I've been through all of it, and the root cause almost always comes down to one of three things: the USB wasn't prepared correctly, the BIOS boot mode doesn't match the installer format, or the partition table on the target drive is incompatible. This guide covers every step of the process from flash drive to working desktop, with enough detail to handle the edge cases that trip people up.

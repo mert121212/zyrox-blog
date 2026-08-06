@@ -1,14 +1,22 @@
-﻿---
-title: "How to Spot Fake or Misleading Hardware Reviews"
-meta_description: "Learn how to separate useful hardware testing from marketing language, cherry-picked benchmarks, and weak comparisons."
-date: 2026-07-30
-category: "Buying Guides"
+---
+title: How to Spot Fake or Misleading Hardware Reviews
+meta_description: >-
+  Learn how to separate useful hardware testing from marketing language,
+  cherry-picked benchmarks, and weak comparisons.
+date: 2026-07-30T00:00:00.000Z
+category: Buying Guides
 tags:
-  - "Hardware Reviews"
-  - "Buying Advice"
-  - "Benchmarks"
-  - "Research"
+  - Hardware Reviews
+  - Buying Advice
+  - Benchmarks
+  - Research
 author: marcus-holt
+keywords:
+  - hardware reviews
+  - buying advice
+  - benchmarks
+  - research
+  - buying guides
 ---
 
 I've been reading hardware reviews professionally for over a decade. In that time I've bought components based on reviews that turned out to be misleading — not because they lied outright, but because they omitted exactly the context that would have changed my decision. A CPU cooler that looked like a winner in one reviewer's setup turned out to be mediocre in my case configuration. A GPU that dominated gaming benchmarks on one publication's test bench underperformed in the workloads I actually cared about.

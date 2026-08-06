@@ -1,14 +1,22 @@
-﻿---
-title: "Why Your PC Feels Slow Even When the CPU Is Fast"
-meta_description: "A practical breakdown of why modern PCs feel laggy, including storage bottlenecks, thermal throttling, background services, and memory pressure."
-date: 2026-06-28
-category: "Performance"
+---
+title: Why Your PC Feels Slow Even When the CPU Is Fast
+meta_description: >-
+  A practical breakdown of why modern PCs feel laggy, including storage
+  bottlenecks, thermal throttling, background services, and memory pressure.
+date: 2026-06-28T00:00:00.000Z
+category: Performance
 tags:
-  - "Performance"
-  - "Windows"
-  - "System Optimization"
-  - "Troubleshooting"
+  - Performance
+  - Windows
+  - System Optimization
+  - Troubleshooting
 author: rachel-kim
+keywords:
+  - performance
+  - windows
+  - system optimization
+  - troubleshooting
+  - your
 ---
 
 I upgraded a friend's CPU a few years ago. We went from an aging Core i5 to a Core i7, same platform, straightforward swap. The performance gains were real in benchmarks — Cinebench scores jumped noticeably, compilation times dropped. But in everyday use? The machine still felt slow. Browsers still hesitated. Apps still took too long to open. The desktop still felt sluggish.

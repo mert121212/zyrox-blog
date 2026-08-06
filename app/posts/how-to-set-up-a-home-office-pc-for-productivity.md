@@ -1,14 +1,22 @@
-﻿---
-title: "How to Set Up a Home Office PC for Productivity"
-meta_description: "Create a workspace that supports focus, comfort, and reliable performance for work, study, and everyday computing."
-date: 2026-07-11
-category: "Productivity"
+---
+title: How to Set Up a Home Office PC for Productivity
+meta_description: >-
+  Create a workspace that supports focus, comfort, and reliable performance for
+  work, study, and everyday computing.
+date: 2026-07-11T00:00:00.000Z
+category: Productivity
 tags:
-  - "Home Office"
-  - "Workstation"
-  - "Ergonomics"
-  - "PC Setup"
+  - Home Office
+  - Workstation
+  - Ergonomics
+  - PC Setup
 author: sara-vance
+keywords:
+  - home office
+  - workstation
+  - ergonomics
+  - pc setup
+  - productivity
 ---
 
 I spent the better part of two years working from a setup that was genuinely embarrassing. A hand-me-down gaming chair shoved against the wall, a monitor sitting flat on a stack of textbooks, a mechanical keyboard I chose because it looked cool rather than because it felt good to type on for eight hours. I got things done, but I ended the day with neck tension, eye strain, and a mild sense of dread about sitting back down the next morning.

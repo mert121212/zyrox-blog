@@ -1,14 +1,22 @@
-﻿---
-title: "BIOS Tuning Basics for Stable Overnight Overclocking"
-meta_description: "A grounded guide to BIOS tuning that focuses on voltage, memory stability, and temperature monitoring instead of risky shortcuts."
-date: 2026-06-29
-category: "Overclocking"
+---
+title: BIOS Tuning Basics for Stable Overnight Overclocking
+meta_description: >-
+  A grounded guide to BIOS tuning that focuses on voltage, memory stability, and
+  temperature monitoring instead of risky shortcuts.
+date: 2026-06-29T00:00:00.000Z
+category: Overclocking
 tags:
-  - "BIOS"
-  - "Overclocking"
-  - "Hardware"
-  - "Stability"
+  - BIOS
+  - Overclocking
+  - Hardware
+  - Stability
 author: marcus-holt
+keywords:
+  - bios
+  - overclocking
+  - hardware
+  - stability
+  - tuning
 ---
 
 Passing a one-hour stress test and calling your overclock stable is probably the most common mistake I see in enthusiast forums. I've done it myself. You run Cinebench R23 in a loop for an hour, temperatures look fine, scores are consistent, and you reboot into Windows feeling confident. Then at 3 a.m., six hours into a render or a Prime95 Blend run, the system posts a BSOD or just silently resets. The CPU was never truly stable — you just hadn't stressed it long enough or broadly enough to expose the weakness.

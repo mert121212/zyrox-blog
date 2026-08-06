@@ -1,14 +1,23 @@
-﻿---
-title: "How to Test a Power Supply Without Expensive Tools"
-meta_description: "A practical guide to evaluating a PSU using basic checks, visual inspection, and a careful test approach. See the test results to understand the real-world impact."
-date: 2026-07-07
-category: "Power"
+---
+title: How to Test a Power Supply Without Expensive Tools
+meta_description: >-
+  A practical guide to evaluating a PSU using basic checks, visual inspection,
+  and a careful test approach. See the test results to understand the real-world
+  impact.
+date: 2026-07-07T00:00:00.000Z
+category: Power
 tags:
-  - "PSU"
-  - "Power Supply"
-  - "Testing"
-  - "Hardware"
+  - PSU
+  - Power Supply
+  - Testing
+  - Hardware
 author: daniel-osei
+keywords:
+  - psu
+  - power supply
+  - testing
+  - hardware
+  - power
 ---
 
 Last year I spent four days chasing a random reboot problem before I finally pointed the finger at the power supply. The system would run fine for hours, then cut out under load with no BSOD, no warning — just a hard reset. I tested the GPU, reseated RAM, checked thermals, and got nowhere. Swapping the PSU fixed it immediately. The thing that slowed me down was not knowing how to actually test a power supply with the tools I had on hand. This guide covers the full process from visual inspection to load testing, using nothing more expensive than a $15 multimeter.

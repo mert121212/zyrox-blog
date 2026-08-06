@@ -1,14 +1,23 @@
-﻿---
-title: "When to Upgrade Your GPU Instead of Your CPU"
-meta_description: "A direct guide to deciding whether a gaming or productivity system would benefit more from a GPU upgrade or a CPU upgrade. Review the benchmark data to make an informed decision."
-date: 2026-07-08
-category: "Upgrades"
+---
+title: When to Upgrade Your GPU Instead of Your CPU
+meta_description: >-
+  A direct guide to deciding whether a gaming or productivity system would
+  benefit more from a GPU upgrade or a CPU upgrade. Review the benchmark data to
+  make an informed decision.
+date: 2026-07-08T00:00:00.000Z
+category: Upgrades
 tags:
-  - "GPU"
-  - "CPU"
-  - "Upgrade"
-  - "Performance"
+  - GPU
+  - CPU
+  - Upgrade
+  - Performance
 author: marcus-holt
+keywords:
+  - gpu
+  - cpu
+  - upgrade
+  - performance
+  - upgrades
 ---
 
 I have watched people spend money on the wrong upgrade more times than I can count. Someone buys a new CPU hoping for better gaming performance and gets a 3% frame rate improvement. Someone else drops $300 on a new GPU for a system where the processor is genuinely the bottleneck, and gets similarly disappointing results. The frustration is real, and it is entirely avoidable.

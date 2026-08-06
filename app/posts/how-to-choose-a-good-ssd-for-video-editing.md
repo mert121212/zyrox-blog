@@ -1,14 +1,23 @@
-﻿---
-title: "How to Choose a Good SSD for Video Editing"
-meta_description: "Understand what matters most for video editing storage, including throughput, capacity, and endurance. Here is my honest experience and what you actually need."
-date: 2026-07-29
-category: "Storage"
+---
+title: How to Choose a Good SSD for Video Editing
+meta_description: >-
+  Understand what matters most for video editing storage, including throughput,
+  capacity, and endurance. Here is my honest experience and what you actually
+  need.
+date: 2026-07-29T00:00:00.000Z
+category: Storage
 tags:
-  - "SSD"
-  - "Video Editing"
-  - "Storage"
-  - "Performance"
+  - SSD
+  - Video Editing
+  - Storage
+  - Performance
 author: sara-vance
+keywords:
+  - ssd
+  - video editing
+  - storage
+  - performance
+  - choose
 ---
 
 I've built editing workstations for other people and for myself, and the storage question always takes longer to answer than people expect. Everyone wants to know which SSD is fastest. The more useful question is which SSD stays fast, handles the write patterns that video editing creates, and lasts long enough to be worth the investment.

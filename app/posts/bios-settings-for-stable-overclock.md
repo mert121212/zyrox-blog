@@ -1,14 +1,22 @@
-﻿---
-title: "The BIOS Settings That Matter Most for a Stable Overclock"
-meta_description: "Learn the BIOS settings that affect CPU voltage, memory stability, and safe overclock tuning without guesswork."
-date: 2026-07-07
-category: "Overclocking"
+---
+title: The BIOS Settings That Matter Most for a Stable Overclock
+meta_description: >-
+  Learn the BIOS settings that affect CPU voltage, memory stability, and safe
+  overclock tuning without guesswork.
+date: 2026-07-07T00:00:00.000Z
+category: Overclocking
 tags:
-  - "BIOS"
-  - "Overclocking"
-  - "CPU"
-  - "Memory"
+  - BIOS
+  - Overclocking
+  - CPU
+  - Memory
 author: marcus-holt
+keywords:
+  - bios
+  - overclocking
+  - cpu
+  - memory
+  - settings
 ---
 
 My first overclock attempt ended in a frustrating three-hour debugging session, and the mistake had nothing to do with voltages or frequencies. I changed six settings simultaneously — the CPU multiplier, LLC level, DRAM voltage, power limits, fan curve, and XMP profile — all in one BIOS session, then saved and rebooted. The system crashed under load within minutes. I had no idea which change caused the instability because I had changed everything at once. Rolling back one setting at a time was pointless when I did not know where the problem even started. I cleared CMOS, started over, and lost all the incremental progress I had made.

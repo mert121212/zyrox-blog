@@ -1,14 +1,23 @@
-﻿---
-title: "How to Reduce PC Noise Without Sacrificing Cooling"
-meta_description: "A practical look at fan tuning, airflow planning, and component selection for quieter builds that still stay cool. My desk sits about two feet from my PC tower."
-date: 2026-07-09
-category: "Cooling"
+---
+title: How to Reduce PC Noise Without Sacrificing Cooling
+meta_description: >-
+  A practical look at fan tuning, airflow planning, and component selection for
+  quieter builds that still stay cool. My desk sits about two feet from my PC
+  tower.
+date: 2026-07-09T00:00:00.000Z
+category: Cooling
 tags:
-  - "Noise"
-  - "Cooling"
-  - "Fan Curves"
-  - "Build Advice"
+  - Noise
+  - Cooling
+  - Fan Curves
+  - Build Advice
 author: daniel-osei
+keywords:
+  - noise
+  - cooling
+  - fan curves
+  - build advice
+  - reduce
 ---
 
 My desk sits about two feet from my PC tower. For a long time that was fine — until I swapped in an RTX 4080 and suddenly the machine sounded like a small wind tunnel. Temperatures were great, but the noise was genuinely distracting during video calls and late-night sessions. I spent the next few weeks going through every practical method I could find to bring the noise down without letting thermals go sideways. This guide covers everything that worked, what didn't, and the exact numbers I measured along the way.

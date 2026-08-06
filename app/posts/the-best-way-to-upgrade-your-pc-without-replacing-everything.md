@@ -1,14 +1,23 @@
-﻿---
-title: "The Best Way to Upgrade a PC Without Replacing Everything"
-meta_description: "Learn how to upgrade a PC intelligently by targeting the components that actually improve speed, stability, and value. The best upgrade I ever made to a PC cost $65."
-date: 2026-06-29
-category: "Upgrades"
+---
+title: The Best Way to Upgrade a PC Without Replacing Everything
+meta_description: >-
+  Learn how to upgrade a PC intelligently by targeting the components that
+  actually improve speed, stability, and value. The best upgrade I ever made to
+  a PC cost $65.
+date: 2026-06-29T00:00:00.000Z
+category: Upgrades
 tags:
-  - "PC Upgrade"
-  - "GPU"
-  - "SSD"
-  - "RAM"
+  - PC Upgrade
+  - GPU
+  - SSD
+  - RAM
 author: marcus-holt
+keywords:
+  - pc upgrade
+  - gpu
+  - ssd
+  - ram
+  - upgrades
 ---
 
 The best upgrade I ever made to a PC cost $65. It was a Samsung 870 EVO replacing a spinning hard drive in a five-year-old machine. The system went from feeling sluggish and painful to use to snappy and responsive overnight. I didn't touch the CPU, the RAM, or the GPU. I just eliminated the single biggest bottleneck in that machine's daily experience.

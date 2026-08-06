@@ -1,14 +1,23 @@
-﻿---
-title: "What to Do When Your PC Overheats"
-meta_description: "A practical checklist for identifying overheating causes and reducing heat before it leads to instability or damage. See the test results to understand the real-world impact."
-date: 2026-07-28
-category: "Cooling"
+---
+title: What to Do When Your PC Overheats
+meta_description: >-
+  A practical checklist for identifying overheating causes and reducing heat
+  before it leads to instability or damage. See the test results to understand
+  the real-world impact.
+date: 2026-07-28T00:00:00.000Z
+category: Cooling
 tags:
-  - "Overheating"
-  - "Thermals"
-  - "Cooling"
-  - "Troubleshooting"
+  - Overheating
+  - Thermals
+  - Cooling
+  - Troubleshooting
 author: daniel-osei
+keywords:
+  - overheating
+  - thermals
+  - cooling
+  - troubleshooting
+  - what
 ---
 
 There is a specific kind of dread that comes with watching your PC stutter mid-game, lock up during a render, or shut itself off without warning. I have been there more times than I would like to admit, and almost every time the root cause turned out to be heat. Overheating is one of the most common and most preventable hardware problems out there, and the good news is that with the right tools and a bit of patience, it is something you can usually fix yourself.

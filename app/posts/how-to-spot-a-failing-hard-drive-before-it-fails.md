@@ -1,14 +1,23 @@
-﻿---
-title: "How to Spot a Failing Hard Drive Before It Fails"
-meta_description: "A straightforward guide to warning signs, diagnostics, and backup habits that help you catch hard drive issues early. Here is my honest experience and what you actually need."
-date: 2026-07-06
-category: "Storage"
+---
+title: How to Spot a Failing Hard Drive Before It Fails
+meta_description: >-
+  A straightforward guide to warning signs, diagnostics, and backup habits that
+  help you catch hard drive issues early. Here is my honest experience and what
+  you actually need.
+date: 2026-07-06T00:00:00.000Z
+category: Storage
 tags:
-  - "Hard Drive"
-  - "Backup"
-  - "Diagnostics"
-  - "Storage"
+  - Hard Drive
+  - Backup
+  - Diagnostics
+  - Storage
 author: sara-vance
+keywords:
+  - hard drive
+  - backup
+  - diagnostics
+  - storage
+  - spot
 ---
 
 The first time I lost data to a failing hard drive, I had ignored four separate warning signs over the course of three weeks. The boot times had gotten longer. A folder occasionally took five seconds to open instead of one. I heard a faint clicking sound once or twice that I dismissed as case vibration. Then one morning the drive simply did not appear in Windows Explorer. Three years of photography projects, documents, and project files — gone.

@@ -1,14 +1,23 @@
-﻿---
-title: "How to Build a Budget Gaming PC That Still Feels Fast"
-meta_description: "Learn how to target the right parts for a budget gaming build that delivers strong value instead of weak compromises. Review the benchmark data to make an informed decision."
-date: 2026-07-17
-category: "Gaming"
+---
+title: How to Build a Budget Gaming PC That Still Feels Fast
+meta_description: >-
+  Learn how to target the right parts for a budget gaming build that delivers
+  strong value instead of weak compromises. Review the benchmark data to make an
+  informed decision.
+date: 2026-07-17T00:00:00.000Z
+category: Gaming
 tags:
-  - "Budget Gaming"
-  - "Gaming PC"
-  - "Value"
-  - "PC Build"
+  - Budget Gaming
+  - Gaming PC
+  - Value
+  - PC Build
 author: marcus-holt
+keywords:
+  - budget gaming
+  - gaming pc
+  - value
+  - pc build
+  - gaming
 ---
 
 Budget gaming PCs have a bad reputation that they mostly don't deserve. I've personally built systems in the $500–$700 range that outperformed rigs costing twice as much in the games that actually matter to most players. The trick isn't finding the cheapest parts — it's knowing exactly where to spend and where to hold back. Get those two things right and you end up with a machine that feels genuinely quick, not just adequate.

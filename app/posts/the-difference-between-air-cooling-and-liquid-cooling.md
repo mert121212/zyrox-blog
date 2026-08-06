@@ -1,14 +1,23 @@
-﻿---
-title: "The Difference Between Air Cooling and Liquid Cooling"
-meta_description: "Understand the practical tradeoffs between air coolers and liquid cooling systems before choosing one for your build. See the test results to understand the real-world impact."
-date: 2026-07-19
-category: "Cooling"
+---
+title: The Difference Between Air Cooling and Liquid Cooling
+meta_description: >-
+  Understand the practical tradeoffs between air coolers and liquid cooling
+  systems before choosing one for your build. See the test results to understand
+  the real-world impact.
+date: 2026-07-19T00:00:00.000Z
+category: Cooling
 tags:
-  - "Air Cooling"
-  - "Liquid Cooling"
-  - "CPU Cooler"
-  - "Thermals"
+  - Air Cooling
+  - Liquid Cooling
+  - CPU Cooler
+  - Thermals
 author: daniel-osei
+keywords:
+  - air cooling
+  - liquid cooling
+  - cpu cooler
+  - thermals
+  - cooling
 ---
 
 I've built systems with both and tested them against each other at the same price points. The short version: the marketing around liquid cooling overstates its thermal advantage in most real-world scenarios, and air cooling is underrated by everyone except the people who've actually measured both. there are legitimate situations where liquid cooling wins — and I'll be honest about those too.

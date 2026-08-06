@@ -1,14 +1,23 @@
-﻿---
-title: "How to Upgrade Your Laptop Without Buying a New One"
-meta_description: "Learn which laptop upgrades are worth it and where the limits are when trying to extend the life of a portable machine. Here is exactly what you need to know to fix it."
-date: 2026-07-08
-category: "Upgrades"
+---
+title: How to Upgrade Your Laptop Without Buying a New One
+meta_description: >-
+  Learn which laptop upgrades are worth it and where the limits are when trying
+  to extend the life of a portable machine. Here is exactly what you need to
+  know to fix it.
+date: 2026-07-08T00:00:00.000Z
+category: Upgrades
 tags:
-  - "Laptop"
-  - "Upgrade"
-  - "SSD"
-  - "RAM"
+  - Laptop
+  - Upgrade
+  - SSD
+  - RAM
 author: rachel-kim
+keywords:
+  - laptop
+  - upgrade
+  - ssd
+  - ram
+  - upgrades
 ---
 
 There's a point with every laptop where it starts to feel sluggish — apps take forever to load, multitasking becomes painful, and the fans sound like a small turbine at idle. The instinct is to buy a new machine. But in most cases, the laptop isn't worn out. It's just outpaced by software, choked by heat, or running on hardware that was barely adequate to begin with. Three targeted upgrades can change that entirely: a faster SSD, more RAM, and a fresh application of thermal paste. I've done these on everything from a five-year-old ThinkPad T490 to a two-year-old ASUS Zephyrus G14, and the difference is consistently dramatic. Here's how to do all three correctly.

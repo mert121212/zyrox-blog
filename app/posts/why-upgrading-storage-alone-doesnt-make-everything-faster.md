@@ -1,14 +1,23 @@
-﻿---
-title: "Why Upgrading Storage Alone Does Not Make Everything Faster"
-meta_description: "A realistic explanation of how storage upgrades improve some tasks while leaving CPU, memory, and GPU bottlenecks intact. A few years ago I helped a friend upgrade his PC."
-date: 2026-07-09
-category: "Storage"
+---
+title: Why Upgrading Storage Alone Does Not Make Everything Faster
+meta_description: >-
+  A realistic explanation of how storage upgrades improve some tasks while
+  leaving CPU, memory, and GPU bottlenecks intact. A few years ago I helped a
+  friend upgrade his PC.
+date: 2026-07-09T00:00:00.000Z
+category: Storage
 tags:
-  - "SSD"
-  - "Performance"
-  - "Bottlenecks"
-  - "Upgrades"
+  - SSD
+  - Performance
+  - Bottlenecks
+  - Upgrades
 author: sara-vance
+keywords:
+  - ssd
+  - performance
+  - bottlenecks
+  - upgrades
+  - storage
 ---
 
 A few years ago I helped a friend upgrade his PC. He had an older desktop â€” one of those machines where everything feels like wading through mud. Boot took two full minutes, Chrome took forever to actually show a page, and he'd started leaving the thing on 24/7 just to avoid the boot wait. I told him to grab an SSD. He bought a Samsung 870 EVO 1TB, I cloned his drive over a weekend afternoon, and suddenly it felt like a completely different computer. Boots in 12 seconds. Apps pop open. He was texting me screenshots of Task Manager like he'd discovered fire.

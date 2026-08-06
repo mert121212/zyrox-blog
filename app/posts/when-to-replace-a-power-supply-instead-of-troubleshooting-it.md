@@ -1,14 +1,23 @@
-﻿---
-title: "When to Replace a Power Supply Instead of Troubleshooting It"
-meta_description: "Know when a failing PSU is better replaced than repaired or endlessly tested. I spent three weeks troubleshooting a system that would randomly restart under load."
-date: 2026-07-21
-category: "Power"
+---
+title: When to Replace a Power Supply Instead of Troubleshooting It
+meta_description: >-
+  Know when a failing PSU is better replaced than repaired or endlessly tested.
+  I spent three weeks troubleshooting a system that would randomly restart under
+  load.
+date: 2026-07-21T00:00:00.000Z
+category: Power
 tags:
-  - "PSU"
-  - "Power Supply"
-  - "Hardware Failure"
-  - "Replacement"
+  - PSU
+  - Power Supply
+  - Hardware Failure
+  - Replacement
 author: daniel-osei
+keywords:
+  - psu
+  - power supply
+  - hardware failure
+  - replacement
+  - power
 ---
 
 I spent three weeks troubleshooting a system that would randomly restart under load. I swapped RAM, reinstalled Windows, reseated the GPU. Everything. Then I finally pulled out a multimeter, ran a few tests, and discovered the 12V rail on the power supply was sagging from 12.0V to 11.3V under full GPU load. The PSU was a five-year-old unit from a brand I should not have trusted in the first place. Three weeks of work, and the answer was a $90 Seasonic unit.

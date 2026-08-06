@@ -1,14 +1,22 @@
-﻿---
-title: "When It Is Time to Replace a Monitor"
-meta_description: "A monitor can become the limiting factor in your setup long before the rest of the hardware does. My previous monitor did not break."
-date: 2026-07-25
-category: "Displays"
+---
+title: When It Is Time to Replace a Monitor
+meta_description: >-
+  A monitor can become the limiting factor in your setup long before the rest of
+  the hardware does. My previous monitor did not break.
+date: 2026-07-25T00:00:00.000Z
+category: Displays
 tags:
-  - "Monitor"
-  - "Display Quality"
-  - "Upgrade"
-  - "Eye Comfort"
+  - Monitor
+  - Display Quality
+  - Upgrade
+  - Eye Comfort
 author: sara-vance
+keywords:
+  - monitor
+  - display quality
+  - upgrade
+  - eye comfort
+  - displays
 ---
 
 My previous monitor did not break. It did not go dark or start displaying strange patterns. It just slowly, quietly became the worst part of my setup while everything else improved around it. The CPU was fast. The GPU handled 1440p with ease. But I was still staring at a dim, washed-out 1080p 60Hz panel from 2016, and every game, every document, every video looked worse than it should have.

@@ -1,14 +1,23 @@
-﻿---
-title: "How to Choose the Right PSU for Your Build"
-meta_description: "Understand wattage, efficiency, connectors, and quality when selecting a power supply that will be reliable for years. See the test results to understand the real-world impact."
-date: 2026-07-07
-category: "Power"
+---
+title: How to Choose the Right PSU for Your Build
+meta_description: >-
+  Understand wattage, efficiency, connectors, and quality when selecting a power
+  supply that will be reliable for years. See the test results to understand the
+  real-world impact.
+date: 2026-07-07T00:00:00.000Z
+category: Power
 tags:
-  - "PSU"
-  - "Power Supply"
-  - "Wattage"
-  - "Efficiency"
+  - PSU
+  - Power Supply
+  - Wattage
+  - Efficiency
 author: daniel-osei
+keywords:
+  - psu
+  - power supply
+  - wattage
+  - efficiency
+  - power
 ---
 
 The power supply is the most overlooked component in most PC builds, and it is also one of the most consequential. A poorly chosen PSU can cause random reboots, gradual component degradation, and silent voltage instability that only shows up under peak load. A well-chosen unit delivers clean, stable power across its rated range, keeps running for a decade, and never needs to be thought about again.

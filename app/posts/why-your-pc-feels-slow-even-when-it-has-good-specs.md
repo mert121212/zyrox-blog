@@ -1,14 +1,22 @@
-﻿---
-title: "Why Your PC Feels Slow Even When It Has Good Specs"
-meta_description: "A fast CPU and plenty of RAM do not guarantee a smooth experience if storage, thermals, and background processes are working against you."
-date: 2026-07-05
-category: "Performance"
+---
+title: Why Your PC Feels Slow Even When It Has Good Specs
+meta_description: >-
+  A fast CPU and plenty of RAM do not guarantee a smooth experience if storage,
+  thermals, and background processes are working against you.
+date: 2026-07-05T00:00:00.000Z
+category: Performance
 tags:
-  - "PC Performance"
-  - "Storage"
-  - "Windows"
-  - "Bottlenecks"
+  - PC Performance
+  - Storage
+  - Windows
+  - Bottlenecks
 author: rachel-kim
+keywords:
+  - pc performance
+  - storage
+  - windows
+  - bottlenecks
+  - performance
 ---
 
 I once helped someone troubleshoot a machine that had a Ryzen 7 5800X, 32GB of DDR4, and an RTX 3070. On paper it was a capable system — well above the average for gaming and creative work. In practice, it felt sluggish. The desktop was choppy. Applications took longer to open than they should. Gaming sessions occasionally stuttered in ways that made no sense given the hardware.

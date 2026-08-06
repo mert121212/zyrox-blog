@@ -1,14 +1,23 @@
 ---
-title: "How to Check If Your PC Can Run a Game Before You Buy It"
-meta_description: "Learn how to quickly and accurately check if your PC can run a specific game without guessing, downloading third-party tools, or relying on confusing spec sheets."
-date: 2026-08-07
-category: "Gaming"
+title: How to Check If Your PC Can Run a Game Before You Buy It
+meta_description: >-
+  Learn how to quickly and accurately check if your PC can run a specific game
+  without guessing, downloading third-party tools, or relying on confusing spec
+  sheets.
+date: 2026-08-07T00:00:00.000Z
+category: Gaming
 tags:
-  - "PC Gaming"
-  - "System Requirements"
-  - "Hardware"
-  - "Troubleshooting"
+  - PC Gaming
+  - System Requirements
+  - Hardware
+  - Troubleshooting
 author: rachel-kim
+keywords:
+  - pc gaming
+  - system requirements
+  - hardware
+  - troubleshooting
+  - gaming
 ---
 
 We've all been there: a massive Steam sale drops, a game you've wanted for months is finally 50% off, but you hesitate. You're just not sure if your aging PC or daily-driver laptop can actually handle it. 

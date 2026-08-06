@@ -1,15 +1,23 @@
-﻿---
-title: "How to Fix 'No Bootable Device Found' After Installing a New NVMe SSD"
-meta_description: "Fix 'No Bootable Device Found' after adding an NVMe SSD with BIOS, boot order, UEFI, and drive detection steps."
-date: 2026-07-09
-category: "Hardware Troubleshooting"
+---
+title: How to Fix 'No Bootable Device Found' After Installing a New NVMe SSD
+meta_description: >-
+  Fix 'No Bootable Device Found' after adding an NVMe SSD with BIOS, boot order,
+  UEFI, and drive detection steps.
+date: 2026-07-09T00:00:00.000Z
+category: Hardware Troubleshooting
 tags:
-  - "NVMe SSD"
-  - "BIOS"
-  - "UEFI"
-  - "Boot Error"
-  - "Windows Troubleshooting"
+  - NVMe SSD
+  - BIOS
+  - UEFI
+  - Boot Error
+  - Windows Troubleshooting
 author: sara-vance
+keywords:
+  - nvme ssd
+  - bios
+  - uefi
+  - boot error
+  - windows troubleshooting
 ---
 
 I spent three hours last Tuesday chasing a dead boot sequence on a custom PC that had just gained a shiny new **NVMe SSD**. The system showed the exact message everyone dreads: **No Bootable Device Found**. The SSD was physically installed. The motherboard saw it. Windows still wouldn't boot. That kind of failure is maddening because the problem is rarely just one thing. It's usually a mix of **firmware settings**, **boot order confusion**, **missing boot files**, or a bad seat on the **M.2 slot**.
