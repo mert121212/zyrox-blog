@@ -7,7 +7,7 @@ const ReadingListBadge = dynamic(
     { ssr: false },
 );
 
-// Navbar cleaned for minimal UI
+// Navbar with primary navigation
 
 export function SiteHeader() {
     return (
@@ -17,10 +17,13 @@ export function SiteHeader() {
                     <img src="/logo.png" alt="Zyrox Logo" width="32" height="32" style={{ borderRadius: '6px' }} />
                     Zyrox
                 </Link>
-                <nav aria-label="Primary navigation">
+                <nav aria-label="Primary navigation" className="site-header__nav">
+                    <Link href="/about" className="site-header__link">About</Link>
+                    <Link href="/contact" className="site-header__link">Contact</Link>
                     <ReadingListBadge />
                 </nav>
             </div>
         </header>
     );
 }
+

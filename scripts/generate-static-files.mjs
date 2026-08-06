@@ -12,7 +12,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, '..');
 const postsDir = path.join(root, 'app', 'posts');
 const publicDir = path.join(root, 'public');
-const baseUrl = 'https://zyroxnet.netlify.app';
+const baseUrl = 'https://zyroxlab.com';
 
 // Ensure public/ exists
 if (!fs.existsSync(publicDir)) fs.mkdirSync(publicDir);
@@ -51,7 +51,7 @@ fs.writeFileSync(path.join(publicDir, 'robots.txt'), robots, 'utf8');
 console.log('✓ public/robots.txt');
 
 // ── sitemap.xml ───────────────────────────────────────────
-const staticRoutes = ['/', '/about', '/authors', '/privacy-policy', '/terms'];
+const staticRoutes = ['/', '/about', '/authors', '/privacy-policy', '/terms', '/contact', '/disclaimer'];
 const postRoutes = posts.map((p) => `/posts/${p.slug}/`);
 const authorRoutes = authorSlugs.map((s) => `/authors/${s}/`);
 const allUrls = [...staticRoutes, ...postRoutes, ...authorRoutes];

@@ -7,10 +7,12 @@ const footerLinks = {
         { href: '/', label: 'Home' },
         { href: '/about', label: 'About' },
         { href: '/authors', label: 'Authors' },
+        { href: '/contact', label: 'Contact' },
     ],
     legal: [
         { href: '/privacy-policy', label: 'Privacy Policy' },
         { href: '/terms', label: 'Terms of Use' },
+        { href: '/disclaimer', label: 'Disclaimer' },
     ],
 };
 

@@ -86,7 +86,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             ? {
                 '@type': 'Person',
                 name: author.name,
-                url: `https://zyroxnet.netlify.app/authors/${author.slug}`,
+                url: `https://zyroxlab.com/authors/${author.slug}`,
             }
             : {
                 '@type': 'Organization',
@@ -95,10 +95,10 @@ export default function PostPage({ params }: { params: { slug: string } }) {
         publisher: {
             '@type': 'Organization',
             name: 'Zyrox',
-            url: 'https://zyroxnet.netlify.app',
+            url: 'https://zyroxlab.com',
             logo: {
                 '@type': 'ImageObject',
-                url: 'https://zyroxnet.netlify.app/logo.png',
+                url: 'https://zyroxlab.com/logo.png',
             },
         },
         datePublished: post.date,
@@ -107,7 +107,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
         articleSection: post.category,
         mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': `https://zyroxnet.netlify.app/posts/${params.slug}`,
+            '@id': `https://zyroxlab.com/posts/${params.slug}`,
         },
     };
 
@@ -119,13 +119,13 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://zyroxnet.netlify.app',
+                item: 'https://zyroxlab.com',
             },
             {
                 '@type': 'ListItem',
                 position: 2,
                 name: post.title,
-                item: `https://zyroxnet.netlify.app/posts/${params.slug}`,
+                item: `https://zyroxlab.com/posts/${params.slug}`,
             },
         ],
     };
