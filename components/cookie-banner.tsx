@@ -19,6 +19,11 @@ export function CookieBanner() {
         setIsVisible(false);
     };
 
+    const declineCookies = () => {
+        localStorage.setItem('zyrox-cookie-consent', 'false');
+        setIsVisible(false);
+    };
+
     if (!isVisible) return null;
 
     return (
@@ -29,14 +34,15 @@ export function CookieBanner() {
                     bottom: 0;
                     left: 0;
                     right: 0;
-                    background-color: var(--card-bg, #ffffff);
-                    border-top: 1px solid var(--border, #eaeaea);
+                    background: linear-gradient(180deg, rgba(16, 22, 44, 0.97), rgba(12, 17, 33, 0.98));
+                    backdrop-filter: blur(16px);
+                    border-top: 1px solid var(--border);
                     padding: 1.5rem 2rem;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     z-index: 9999;
-                    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.1);
+                    box-shadow: var(--shadow);
                     gap: 1.5rem;
                 }
                 .cookie-banner-text {
@@ -44,7 +50,7 @@ export function CookieBanner() {
                     margin: 0;
                     font-size: 0.95rem;
                     line-height: 1.6;
-                    color: var(--foreground, #333);
+                    color: var(--muted);
                 }
                 .cookie-banner-actions {
                     display: flex;
@@ -52,30 +58,36 @@ export function CookieBanner() {
                     flex-shrink: 0;
                 }
                 .cookie-banner-btn {
-                    background-color: var(--accent, #0070f3);
-                    color: var(--background, #fff);
-                    border: none;
                     padding: 0.75rem 2rem;
-                    border-radius: 8px;
-                    font-weight: 600;
-                    font-size: 1rem;
+                    border-radius: 999px;
+                    font-weight: 700;
+                    font-size: 0.95rem;
                     cursor: pointer;
-                    transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
-                    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1);
+                    transition: transform 180ms ease, opacity 180ms ease;
                 }
                 .cookie-banner-btn:hover {
+                    transform: translateY(-1px);
                     opacity: 0.9;
-                    transform: translateY(-2px);
-                    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+                }
+                .cookie-banner-btn-primary {
+                    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+                    color: white;
+                    border: none;
+                }
+                .cookie-banner-btn-secondary {
+                    background: rgba(255, 255, 255, 0.04);
+                    color: var(--text);
+                    border: 1px solid var(--border);
                 }
                 .cookie-link {
-                    color: var(--accent, #0070f3);
-                    text-decoration: underline;
+                    color: var(--accent);
+                    text-decoration: none;
                     font-weight: 600;
-                    transition: opacity 0.2s ease;
+                    transition: opacity 180ms ease;
                 }
                 .cookie-link:hover {
                     opacity: 0.8;
+                    text-decoration: underline;
                 }
                 @media (max-width: 768px) {
                     .cookie-banner-container {
@@ -83,16 +95,16 @@ export function CookieBanner() {
                         align-items: stretch;
                         padding: 1.25rem;
                         gap: 1.25rem;
-                        border-top-left-radius: 12px;
-                        border-top-right-radius: 12px;
+                        border-top-left-radius: 20px;
+                        border-top-right-radius: 20px;
                     }
                     .cookie-banner-actions {
+                        flex-direction: column;
                         width: 100%;
                     }
                     .cookie-banner-btn {
                         width: 100%;
                         text-align: center;
-                        padding: 1rem;
                     }
                     .cookie-banner-text {
                         font-size: 0.9rem;
@@ -108,7 +120,10 @@ export function CookieBanner() {
                     </p>
                 </div>
                 <div className="cookie-banner-actions">
-                    <button onClick={acceptCookies} className="cookie-banner-btn">
+                    <button onClick={declineCookies} className="cookie-banner-btn cookie-banner-btn-secondary">
+                        Decline
+                    </button>
+                    <button onClick={acceptCookies} className="cookie-banner-btn cookie-banner-btn-primary">
                         Accept
                     </button>
                 </div>
