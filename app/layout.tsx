@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 import './globals.css';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
+import { CookieBanner } from '@/components/cookie-banner';
 
 // Client-only — uses scroll event listener, must not SSR
 const BackToTop = dynamic(
@@ -66,6 +67,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
             <head>
+                {/* Google AdSense */}
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-5194383766905175" crossOrigin="anonymous"></script>
+                
                 {/* Google tag (gtag.js) */}
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3Q3BBMSERB"></script>
                 <script
@@ -96,6 +100,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 {children}
                 <SiteFooter />
                 <BackToTop />
+                <CookieBanner />
             </body>
         </html>
     );
