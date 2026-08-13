@@ -1,7 +1,10 @@
 /**
- * Generates static public/robots.txt, public/sitemap.xml, and public/rss.xml
+ * Generates static public/sitemap.xml and public/rss.xml
  * Run with: node scripts/generate-static-files.mjs
  * Called automatically via prebuild in package.json
+ *
+ * NOTE: robots.txt is handled by app/robots.ts (Next.js route) — no longer
+ *       generated here to avoid conflicting with the route-based version.
  */
 import fs from 'fs';
 import path from 'path';
@@ -35,6 +38,8 @@ const posts = fs
             title: (data.title ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'),
             meta_description: (data.meta_description ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'),
             date: normalizeDate(data.date),
+            updated: normalizeDate(data.updated ?? data.date),
+            tags: data.tags || [],
         };
     })
     .sort((a, b) => (a.date < b.date ? 1 : -1));
@@ -42,23 +47,51 @@ const posts = fs
 // ── Author slugs ──────────────────────────────────────────
 const authorSlugs = ['marcus-holt', 'sara-vance', 'daniel-osei', 'rachel-kim'];
 
-// ── robots.txt ────────────────────────────────────────────
-const robots = `User-agent: *
-Allow: /
-Sitemap: ${baseUrl}/sitemap.xml
-`;
-fs.writeFileSync(path.join(publicDir, 'robots.txt'), robots, 'utf8');
-console.log('✓ public/robots.txt');
+// ── Collect unique tags ───────────────────────────────────
+const allTags = Array.from(new Set(posts.flatMap((p) => p.tags))).sort();
 
 // ── sitemap.xml ───────────────────────────────────────────
-const staticRoutes = ['/', '/about', '/authors', '/privacy-policy', '/terms', '/contact', '/disclaimer'];
-const postRoutes = posts.map((p) => `/posts/${p.slug}/`);
-const authorRoutes = authorSlugs.map((s) => `/authors/${s}/`);
-const allUrls = [...staticRoutes, ...postRoutes, ...authorRoutes];
+const staticRoutes = [
+    { path: '/', lastmod: posts.length > 0 ? posts[0].date : '2026-06-27', priority: '1.0', freq: 'daily' },
+    { path: '/about/', lastmod: '2026-06-27', priority: '0.8', freq: 'monthly' },
+    { path: '/authors/', lastmod: '2026-06-27', priority: '0.8', freq: 'weekly' },
+    { path: '/privacy-policy/', lastmod: '2026-06-27', priority: '0.3', freq: 'yearly' },
+    { path: '/terms/', lastmod: '2026-06-27', priority: '0.3', freq: 'yearly' },
+    { path: '/contact/', lastmod: '2026-06-27', priority: '0.5', freq: 'yearly' },
+    { path: '/disclaimer/', lastmod: '2026-06-27', priority: '0.3', freq: 'yearly' },
+];
+
+function urlEntry({ loc, lastmod, changefreq, priority }) {
+    return `  <url>
+    <loc>${loc}</loc>
+    <lastmod>${lastmod}</lastmod>
+    <changefreq>${changefreq}</changefreq>
+    <priority>${priority}</priority>
+  </url>`;
+}
+
+const sitemapEntries = [
+    // Static pages
+    ...staticRoutes.map((r) =>
+        urlEntry({ loc: `${baseUrl}${r.path}`, lastmod: r.lastmod, changefreq: r.freq, priority: r.priority }),
+    ),
+    // Posts (trailing slash!)
+    ...posts.map((p) =>
+        urlEntry({ loc: `${baseUrl}/posts/${p.slug}/`, lastmod: p.updated || p.date, changefreq: 'monthly', priority: '0.9' }),
+    ),
+    // Tags (trailing slash!)
+    ...allTags.map((tag) =>
+        urlEntry({ loc: `${baseUrl}/tag/${encodeURIComponent(tag)}/`, lastmod: '2026-06-27', changefreq: 'weekly', priority: '0.6' }),
+    ),
+    // Authors (trailing slash!)
+    ...authorSlugs.map((s) =>
+        urlEntry({ loc: `${baseUrl}/authors/${s}/`, lastmod: '2026-06-27', changefreq: 'monthly', priority: '0.7' }),
+    ),
+];
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${allUrls.map((url) => `  <url>\n    <loc>${baseUrl}${url}</loc>\n  </url>`).join('\n')}
+${sitemapEntries.join('\n')}
 </urlset>
 `;
 fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemap, 'utf8');
@@ -90,4 +123,4 @@ ${posts
 fs.writeFileSync(path.join(publicDir, 'rss.xml'), rss, 'utf8');
 console.log('✓ public/rss.xml');
 
-console.log(`\nGenerated ${posts.length} posts in sitemap/rss.`);
+console.log(`\nGenerated ${posts.length} posts, ${allTags.length} tags in sitemap/rss.`);
