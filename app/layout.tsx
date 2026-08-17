@@ -24,9 +24,6 @@ export const metadata: Metadata = {
         'A sharp, technical blog about PC hardware, builds, troubleshooting, and performance tuning.',
     keywords: ['PC hardware', 'PC building', 'NVMe SSD', 'BIOS tuning', 'overclocking'],
     metadataBase: new URL('https://zyroxlab.com'),
-    alternates: {
-        canonical: '/',
-    },
     robots: {
         index: true,
         follow: true,
@@ -67,11 +64,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
             <head>
-                {/* Google AdSense */}
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-5194383766905175" crossOrigin="anonymous"></script>
-                
-                {/* Google tag (gtag.js) */}
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3Q3BBMSERB"></script>
+                {/* Preconnect to third-party origins for faster resource loading */}
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+                <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
+                <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
+                {/* Google Analytics — deferred to avoid render-blocking */}
                 <script
                     dangerouslySetInnerHTML={{
                         __html: `
@@ -79,6 +78,29 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                             function gtag(){dataLayer.push(arguments);}
                             gtag('js', new Date());
                             gtag('config', 'G-3Q3BBMSERB');
+                            // Load gtag.js after page is interactive
+                            if (typeof window !== 'undefined') {
+                                var s = document.createElement('script');
+                                s.src = 'https://www.googletagmanager.com/gtag/js?id=G-3Q3BBMSERB';
+                                s.async = true;
+                                document.head.appendChild(s);
+                            }
+                        `,
+                    }}
+                />
+                {/* AdSense — deferred to avoid render-blocking */}
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                            if (typeof window !== 'undefined') {
+                                window.addEventListener('load', function() {
+                                    var a = document.createElement('script');
+                                    a.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-5194383766905175';
+                                    a.async = true;
+                                    a.crossOrigin = 'anonymous';
+                                    document.head.appendChild(a);
+                                });
+                            }
                         `,
                     }}
                 />

@@ -24,7 +24,7 @@ export function SiteFooter() {
             <div className="site-footer__inner">
                 <div className="site-footer__brand">
                     <Link href="/" className="site-footer__logo" aria-label="Zyrox home" style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-                        <img src="/logo.png" alt="Zyrox Logo" width="40" height="40" style={{ borderRadius: '8px' }} />
+                        <img src="/logo.png" alt="Zyrox Logo" width="40" height="40" loading="lazy" style={{ borderRadius: '8px' }} />
                         Zyrox
                     </Link>
                     <p className="site-footer__tagline">

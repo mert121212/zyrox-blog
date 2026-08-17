@@ -8,30 +8,18 @@ interface RelatedPostsProps {
 }
 
 export function RelatedPosts({ currentPost, allPosts, limit = 3 }: RelatedPostsProps) {
-    const currentTags = new Set(currentPost.tags);
+    const finalPosts = allPosts
+        .filter(post => post.slug !== currentPost.slug && post.category === currentPost.category)
+        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+        .slice(0, limit);
 
-    const relatedPosts = allPosts
-        .filter(post => post.slug !== currentPost.slug)
-        .map(post => ({
-            post,
-            overlap: post.tags.filter(tag => currentTags.has(tag)).length,
-        }))
-        .filter(({ overlap }) => overlap > 0)
-        .sort((a, b) => {
-            // Önce tag kesişim sayısına göre, eşitse en yeni kazanır
-            if (a.overlap !== b.overlap) return b.overlap - a.overlap;
-            return new Date(b.post.date).getTime() - new Date(a.post.date).getTime();
-        })
-        .slice(0, limit)
-        .map(({ post }) => post);
-
-    // Fallback: tag overlap yoksa en yeni yazıları öner
-    const finalPosts = relatedPosts.length > 0
-        ? relatedPosts
-        : allPosts
-            .filter(post => post.slug !== currentPost.slug)
+    if (finalPosts.length < limit) {
+        const fallbackPosts = allPosts
+            .filter(post => post.slug !== currentPost.slug && !finalPosts.some(fp => fp.slug === post.slug))
             .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-            .slice(0, limit);
+            .slice(0, limit - finalPosts.length);
+        finalPosts.push(...fallbackPosts);
+    }
 
     if (finalPosts.length === 0) return null;
 

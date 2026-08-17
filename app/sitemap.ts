@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { getAllPosts, getTags } from '@/lib/posts';
+import { getAllPosts } from '@/lib/posts';
 import { getAllAuthors } from '@/lib/authors';
 
 const baseUrl = 'https://zyroxlab.com';
@@ -9,7 +9,6 @@ const SITE_LAUNCH = '2026-06-27T00:00:00.000Z';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const posts = getAllPosts();
-    const tags = getTags();
     const authors = getAllAuthors();
 
     const staticUrls: MetadataRoute.Sitemap = [
@@ -64,13 +63,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.9,
     }));
 
-    const tagUrls: MetadataRoute.Sitemap = tags.map((tag) => ({
-        url: `${baseUrl}/tag/${encodeURIComponent(tag)}/`,
-        lastModified: new Date(SITE_LAUNCH),
-        changeFrequency: 'weekly' as const,
-        priority: 0.6,
-    }));
-
     const authorUrls: MetadataRoute.Sitemap = authors.map((author) => ({
         url: `${baseUrl}/authors/${author.slug}/`,
         lastModified: new Date(SITE_LAUNCH),
@@ -81,7 +73,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return [
         ...staticUrls,
         ...postUrls,
-        ...tagUrls,
         ...authorUrls,
     ];
 }

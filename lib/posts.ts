@@ -77,16 +77,8 @@ export function getPostsByCategory(category: string): Post[] {
     return getAllPosts().filter((post) => post.category === category);
 }
 
-export function getPostsByTag(tag: string): Post[] {
-    return getAllPosts().filter((post) => post.tags.includes(tag));
-}
-
 export function getCategories(): string[] {
     return Array.from(new Set(getAllPosts().map((post) => post.category))).sort();
-}
-
-export function getTags(): string[] {
-    return Array.from(new Set(getAllPosts().flatMap((post) => post.tags))).sort();
 }
 
 export function getPostsByAuthor(authorSlug: string): Post[] {

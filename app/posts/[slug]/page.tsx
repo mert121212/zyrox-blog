@@ -103,7 +103,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
         },
         datePublished: post.date,
         dateModified: post.updated,
-        keywords: post.tags.join(', '),
+        keywords: post.keywords.join(', '),
         articleSection: post.category,
         mainEntityOfPage: {
             '@type': 'WebPage',
@@ -168,13 +168,6 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                                 </div>
                             )}
 
-                            <div className="pill-row" style={{ marginBottom: '1.5rem' }}>
-                                {post.tags.map((tag) => (
-                                    <Link key={tag} href={`/tag/${encodeURIComponent(tag)}`} className="pill">
-                                        {tag}
-                                    </Link>
-                                ))}
-                            </div>
 
                             <script
                                 type="application/ld+json"

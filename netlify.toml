@@ -12,6 +12,12 @@
   to = "/"
   status = 301
 
+# Redirect old tag URLs to home (tag feature removed)
+[[redirects]]
+  from = "/tag/*"
+  to = "/"
+  status = 301
+
 [[redirects]]
   from = "/*"
   to = "/404/index.html"
@@ -33,3 +39,33 @@
   for = "/robots.txt"
   [headers.values]
     Content-Type = "text/plain; charset=utf-8"
+
+# Immutable cache for hashed Next.js chunks (never changes, safe to cache forever)
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Long cache for static images/fonts
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000, stale-while-revalidate=86400"
+
+[[headers]]
+  for = "/*.ico"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Security headers (all pages)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

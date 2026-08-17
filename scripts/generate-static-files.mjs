@@ -47,9 +47,6 @@ const posts = fs
 // ── Author slugs ──────────────────────────────────────────
 const authorSlugs = ['marcus-holt', 'sara-vance', 'daniel-osei', 'rachel-kim'];
 
-// ── Collect unique tags ───────────────────────────────────
-const allTags = Array.from(new Set(posts.flatMap((p) => p.tags))).sort();
-
 // ── sitemap.xml ───────────────────────────────────────────
 const staticRoutes = [
     { path: '/', lastmod: posts.length > 0 ? posts[0].date : '2026-06-27', priority: '1.0', freq: 'daily' },
@@ -78,10 +75,6 @@ const sitemapEntries = [
     // Posts (trailing slash!)
     ...posts.map((p) =>
         urlEntry({ loc: `${baseUrl}/posts/${p.slug}/`, lastmod: p.updated || p.date, changefreq: 'monthly', priority: '0.9' }),
-    ),
-    // Tags (trailing slash!)
-    ...allTags.map((tag) =>
-        urlEntry({ loc: `${baseUrl}/tag/${encodeURIComponent(tag)}/`, lastmod: '2026-06-27', changefreq: 'weekly', priority: '0.6' }),
     ),
     // Authors (trailing slash!)
     ...authorSlugs.map((s) =>
@@ -123,4 +116,4 @@ ${posts
 fs.writeFileSync(path.join(publicDir, 'rss.xml'), rss, 'utf8');
 console.log('✓ public/rss.xml');
 
-console.log(`\nGenerated ${posts.length} posts, ${allTags.length} tags in sitemap/rss.`);
+console.log(`\nGenerated ${posts.length} posts in sitemap/rss.`);
