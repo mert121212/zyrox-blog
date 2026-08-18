@@ -55,7 +55,7 @@ export default function AboutPage() {
                     </div>
                 </section>
 
-                <section className="about-section">
+                <section id="editorial-policy" className="about-section">
                     <h2>Our editorial approach</h2>
                     <p>
                         Every article on Zyrox is written by a named author with real expertise in the topic they cover. We do not publish content that exists only to fill a slot or tick an SEO box. If an article is here, it is because we believe it genuinely helps someone make a better decision.

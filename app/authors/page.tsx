@@ -17,7 +17,7 @@ export default function AuthorsPage() {
                 <p className="hero__eyebrow">The editorial team</p>
                 <h1>Editorial Team</h1>
                 <p style={{ color: 'var(--muted)', marginBottom: '2rem', maxWidth: '640px' }}>
-                    Every article on Zyrox is written by an editor who specializes in the topic they cover. Our team focuses on hands-on testing and independent analysis, and our editorial decisions are not influenced by manufacturer relationships. See our <Link href="/editorial-policy" className="post-link" style={{ display: 'inline', marginTop: 0 }}>Editorial Policy</Link> for details.
+                    Every article on Zyrox is written by an editor who specializes in the topic they cover. Our team focuses on hands-on testing and independent analysis, and our editorial decisions are not influenced by manufacturer relationships. See our <Link href="/about#editorial-policy" className="post-link" style={{ display: 'inline', marginTop: 0 }}>Editorial Policy</Link> for details.
                 </p>
 
                 <div className="authors-grid">
