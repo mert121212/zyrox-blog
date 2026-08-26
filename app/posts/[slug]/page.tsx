@@ -7,6 +7,28 @@ import { getAuthorBySlug } from '@/lib/authors';
 import { AuthorCard } from '@/components/author-card';
 import { Breadcrumb } from '@/components/breadcrumb';
 
+// Ensure all internal links rendered from markdown have trailing slashes,
+// matching the trailingSlash: true config. Prevents 301 redirects that
+// waste Googlebot's crawl budget on a new domain.
+const renderer = new marked.Renderer();
+renderer.link = function (href: string, title: string | null, text: string) {
+    // Internal links (starting with /) get a trailing slash if missing
+    if (typeof href === 'string' && href.startsWith('/') && !href.endsWith('/')) {
+        // Preserve any hash fragment (e.g. /about#editorial-policy → /about/#editorial-policy)
+        const hashIndex = href.indexOf('#');
+        if (hashIndex !== -1) {
+            const path = href.slice(0, hashIndex);
+            const hash = href.slice(hashIndex);
+            href = (path.endsWith('/') ? path : path + '/') + hash;
+        } else {
+            href = href + '/';
+        }
+    }
+    const titleAttr = title ? ` title="${title}"` : '';
+    return `<a href="${href}"${titleAttr}>${text}</a>`;
+};
+marked.use({ renderer });
+
 // Client-only components — must not SSR (they use localStorage or browser APIs)
 const ReadingProgress = dynamic(
     () => import('@/components/reading-progress').then((m) => ({ default: m.ReadingProgress })),
@@ -44,13 +66,13 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
         description: post.meta_description,
         keywords: post.keywords,
         alternates: {
-            canonical: `/posts/${params.slug}`,
+            canonical: `/posts/${params.slug}/`,
         },
         openGraph: {
             title: post.title,
             description: post.meta_description,
             type: 'article',
-            url: `/posts/${params.slug}`,
+            url: `/posts/${params.slug}/`,
             siteName: 'Zyrox',
             publishedTime: post.date,
             modifiedTime: post.updated,
@@ -86,7 +108,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             ? {
                 '@type': 'Person',
                 name: author.name,
-                url: `https://zyroxlab.com/authors/${author.slug}`,
+                url: `https://zyroxlab.com/authors/${author.slug}/`,
             }
             : {
                 '@type': 'Organization',
@@ -107,7 +129,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
         articleSection: post.category,
         mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': `https://zyroxlab.com/posts/${params.slug}`,
+            '@id': `https://zyroxlab.com/posts/${params.slug}/`,
         },
     };
 
@@ -125,7 +147,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                 '@type': 'ListItem',
                 position: 2,
                 name: post.title,
-                item: `https://zyroxlab.com/posts/${params.slug}`,
+                item: `https://zyroxlab.com/posts/${params.slug}/`,
             },
         ],
     };
@@ -139,7 +161,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                         <Breadcrumb
                             items={[
                                 { name: 'Home', href: '/' },
-                                { name: post.title, href: `/posts/${params.slug}` }
+                                { name: post.title, href: `/posts/${params.slug}/` }
                             ]}
                         />
                         <article className="article-card">
@@ -155,12 +177,12 @@ export default function PostPage({ params }: { params: { slug: string } }) {
 
                             {author && (
                                 <div className="article-author-byline">
-                                    <Link href={`/authors/${author.slug}`} className="byline-avatar" aria-label={`View ${author.name}'s profile`}>
+                                    <Link href={`/authors/${author.slug}/`} className="byline-avatar" aria-label={`View ${author.name}'s profile`}>
                                         {author.avatar}
                                     </Link>
                                     <div>
                                         <span className="byline-label">By </span>
-                                        <Link href={`/authors/${author.slug}`} className="byline-name">
+                                        <Link href={`/authors/${author.slug}/`} className="byline-name">
                                             {author.name}
                                         </Link>
                                         <span className="byline-role"> · {author.role}</span>

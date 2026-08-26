@@ -69,6 +69,6 @@ A clean reinstall of Windows 11 from a USB drive takes about twenty minutes on a
 
 ## Related Guides
 
-- [What Actually Matters in a Gaming PC Build](/posts/what-actually-matters-in-a-gaming-pc)
-- [Best GPU for 1440p Gaming: What to Buy in 2026](/posts/best-gpu-for-1440p-gaming)
-- [Why Your PC Feels Slow Even When the CPU Is Fast](/posts/why-your-pc-feels-slow-even-with-a-fast-cpu)
+- [What Actually Matters in a Gaming PC Build](/posts/what-actually-matters-in-a-gaming-pc/)
+- [Best GPU for 1440p Gaming: What to Buy in 2026](/posts/best-gpu-for-1440p-gaming/)
+- [Why Your PC Feels Slow Even When the CPU Is Fast](/posts/why-your-pc-feels-slow-even-with-a-fast-cpu/)

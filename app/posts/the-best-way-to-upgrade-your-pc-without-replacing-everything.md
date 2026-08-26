@@ -82,6 +82,6 @@ When the platform is truly exhausted, the correct move is a full platform change
 
 ## Related Guides
 
-- [How to Upgrade Your Laptop Without Buying a New One](/posts/how-to-upgrade-your-laptop-without-buying-a-new-one)
-- [When to Upgrade Your GPU Instead of Your CPU](/posts/when-to-upgrade-your-gpu-vs-your-cpu)
-- [The Best Way to Plan a PC Upgrade Cycle](/posts/the-best-way-to-plan-a-pc-upgrade-cycle)
+- [How to Upgrade Your Laptop Without Buying a New One](/posts/how-to-upgrade-your-laptop-without-buying-a-new-one/)
+- [When to Upgrade Your GPU Instead of Your CPU](/posts/when-to-upgrade-your-gpu-vs-your-cpu/)
+- [The Best Way to Plan a PC Upgrade Cycle](/posts/the-best-way-to-plan-a-pc-upgrade-cycle/)

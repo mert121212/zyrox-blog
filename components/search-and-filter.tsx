@@ -160,7 +160,7 @@ export function SearchAndFilter({ posts }: { posts: Post[] }) {
                                     <div className="post-card-footer">
                                         {AUTHOR_NAME[post.author] && (
                                             <Link
-                                                href={`/authors/${post.author}`}
+                                                href={`/authors/${post.author}/`}
                                                 className="post-card-author"
                                                 onClick={(e) => e.stopPropagation()}
                                                 aria-label={`Articles by ${AUTHOR_NAME[post.author]}`}
@@ -171,7 +171,7 @@ export function SearchAndFilter({ posts }: { posts: Post[] }) {
                                                 <span>{AUTHOR_NAME[post.author]}</span>
                                             </Link>
                                         )}
-                                        <Link href={`/posts/${post.slug}`} className="post-link">
+                                        <Link href={`/posts/${post.slug}/`} className="post-link">
                                             Read →
                                         </Link>
                                     </div>

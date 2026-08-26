@@ -85,6 +85,6 @@ A couple of practical tips: use right-angle cables where they exit the monitor t
 
 ## Related Guides
 
-- [The Best Way to Upgrade a PC Without Replacing Everything](/posts/the-best-way-to-upgrade-your-pc-without-replacing-everything)
-- [What to Look for in a Midrange Monitor](/posts/what-to-look-for-in-a-midrange-monitor)
-- [When It Is Time to Replace a Monitor](/posts/when-to-replace-a-monitor)
+- [The Best Way to Upgrade a PC Without Replacing Everything](/posts/the-best-way-to-upgrade-your-pc-without-replacing-everything/)
+- [What to Look for in a Midrange Monitor](/posts/what-to-look-for-in-a-midrange-monitor/)
+- [When It Is Time to Replace a Monitor](/posts/when-to-replace-a-monitor/)

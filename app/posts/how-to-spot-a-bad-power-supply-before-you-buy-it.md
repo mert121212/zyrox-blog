@@ -87,6 +87,6 @@ As a general rule, actively avoid brands like APEVIA, Diablotek, Raidmax, and Lo
 
 ## Related Guides
 
-- [How to Choose the Right PSU for Your Build](/posts/how-to-choose-the-right-psu-for-your-build)
-- [How to Test a Power Supply Without Expensive Tools](/posts/how-to-test-a-psu-without-expensive-tools)
-- [When to Replace a Power Supply Instead of Troubleshooting It](/posts/when-to-replace-a-power-supply-instead-of-troubleshooting-it)
+- [How to Choose the Right PSU for Your Build](/posts/how-to-choose-the-right-psu-for-your-build/)
+- [How to Test a Power Supply Without Expensive Tools](/posts/how-to-test-a-psu-without-expensive-tools/)
+- [When to Replace a Power Supply Instead of Troubleshooting It](/posts/when-to-replace-a-power-supply-instead-of-troubleshooting-it/)

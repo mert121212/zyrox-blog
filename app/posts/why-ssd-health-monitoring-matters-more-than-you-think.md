@@ -71,6 +71,6 @@ Track your health percentage, keep CrystalDiskInfo in your system tray, and auto
 
 ## Related Guides
 
-- [How to Choose a Good SSD for Video Editing](/posts/how-to-choose-a-good-ssd-for-video-editing)
-- [How to Spot a Failing Hard Drive Before It Fails](/posts/how-to-spot-a-failing-hard-drive-before-it-fails)
-- [How to Choose the Right SSD for Your PC Without Paying for the Wrong Specs](/posts/how-to-choose-the-right-ssd-for-your-system)
+- [How to Choose a Good SSD for Video Editing](/posts/how-to-choose-a-good-ssd-for-video-editing/)
+- [How to Spot a Failing Hard Drive Before It Fails](/posts/how-to-spot-a-failing-hard-drive-before-it-fails/)
+- [How to Choose the Right SSD for Your PC Without Paying for the Wrong Specs](/posts/how-to-choose-the-right-ssd-for-your-system/)

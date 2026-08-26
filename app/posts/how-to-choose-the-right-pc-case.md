@@ -93,6 +93,6 @@ Neglected filters are the sneakiest cause of gradual thermal degradation. Your t
 
 ## Related Guides
 
-- [The Best Way to Plan a PC Upgrade Cycle](/posts/the-best-way-to-plan-a-pc-upgrade-cycle)
-- [Why CPU Cooling Still Matters More Than People Pretend](/posts/why-cooling-still-matters-in-2026)
-- [How to Connect Two Monitors to a Laptop](/posts/how-to-connect-two-monitors-to-a-laptop)
+- [The Best Way to Plan a PC Upgrade Cycle](/posts/the-best-way-to-plan-a-pc-upgrade-cycle/)
+- [Why CPU Cooling Still Matters More Than People Pretend](/posts/why-cooling-still-matters-in-2026/)
+- [How to Connect Two Monitors to a Laptop](/posts/how-to-connect-two-monitors-to-a-laptop/)

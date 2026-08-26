@@ -63,6 +63,6 @@ And if you must run a cable along the wall, buy adhesive surface raceways. You c
 
 ## Related Guides
 
-- [Why Your PC Feels Slow Even When the CPU Is Fast](/posts/why-your-pc-feels-slow-even-with-a-fast-cpu)
-- [How to Choose the Best Wi-Fi Router for Your Home](/posts/how-to-choose-the-best-wifi-router)
-- [How to Upgrade Your Wi-Fi Setup Without Replacing Everything](/posts/how-to-upgrade-your-wifi-without-replacing-everything)
+- [Why Your PC Feels Slow Even When the CPU Is Fast](/posts/why-your-pc-feels-slow-even-with-a-fast-cpu/)
+- [How to Choose the Best Wi-Fi Router for Your Home](/posts/how-to-choose-the-best-wifi-router/)
+- [How to Upgrade Your Wi-Fi Setup Without Replacing Everything](/posts/how-to-upgrade-your-wifi-without-replacing-everything/)

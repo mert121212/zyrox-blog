@@ -94,6 +94,6 @@ For maximum stress, run Prime95 on the "Small FFTs" setting for 15 minutes. This
 
 ## Related Guides
 
-- [What to Do When Your PC Overheats](/posts/what-to-do-when-your-pc-overheats)
-- [How to Choose the Right Case Fan Setup](/posts/how-to-choose-the-right-case-fan-setup)
-- [The Difference Between Air Cooling and Liquid Cooling](/posts/the-difference-between-air-cooling-and-liquid-cooling)
+- [What to Do When Your PC Overheats](/posts/what-to-do-when-your-pc-overheats/)
+- [How to Choose the Right Case Fan Setup](/posts/how-to-choose-the-right-case-fan-setup/)
+- [The Difference Between Air Cooling and Liquid Cooling](/posts/the-difference-between-air-cooling-and-liquid-cooling/)

@@ -80,6 +80,6 @@ If you are on a tight budget, buy a SATA SSD for your OS drive and spend an afte
 
 ## Related Guides
 
-- [Why SSD Health Monitoring Matters More Than You Think](/posts/why-ssd-health-monitoring-matters-more-than-you-think)
-- [Why Upgrading Storage Alone Does Not Make Everything Faster](/posts/why-upgrading-storage-alone-doesnt-make-everything-faster)
-- [How to Choose the Right SSD for Your PC Without Paying for the Wrong Specs](/posts/how-to-choose-the-right-ssd-for-your-system)
+- [Why SSD Health Monitoring Matters More Than You Think](/posts/why-ssd-health-monitoring-matters-more-than-you-think/)
+- [Why Upgrading Storage Alone Does Not Make Everything Faster](/posts/why-upgrading-storage-alone-doesnt-make-everything-faster/)
+- [How to Choose the Right SSD for Your PC Without Paying for the Wrong Specs](/posts/how-to-choose-the-right-ssd-for-your-system/)

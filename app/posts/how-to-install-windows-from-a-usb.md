@@ -90,6 +90,6 @@ Take your time, follow the steps, and you'll have a perfectly clean, stable Wind
 
 ## Related Guides
 
-- [How to Diagnose a Random PC Reboot Without Losing Your Mind](/posts/how-to-diagnose-a-random-reboot)
-- [What Is the Best Motherboard for Ryzen 7 7800X3D?](/posts/what-is-the-best-motherboard-for-ryzen-7-7800x3d)
-- [Windows 11 Setup Tips That Make a PC Feel Faster](/posts/windows-11-setup-tips-that-make-a-pc-feel-faster)
+- [How to Diagnose a Random PC Reboot Without Losing Your Mind](/posts/how-to-diagnose-a-random-reboot/)
+- [What Is the Best Motherboard for Ryzen 7 7800X3D?](/posts/what-is-the-best-motherboard-for-ryzen-7-7800x3d/)
+- [Windows 11 Setup Tips That Make a PC Feel Faster](/posts/windows-11-setup-tips-that-make-a-pc-feel-faster/)

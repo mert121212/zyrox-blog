@@ -99,6 +99,6 @@ If the BIOS itself is corrupted from a failed update or power loss during an upd
 
 ## Related Guides
 
-- [Signs Your Motherboard May Be Failing](/posts/signs-your-motherboard-is-failing)
-- [How to Debug a PC That Randomly Reboots](/posts/how-to-debug-a-pc-that-randomly-reboots)
-- [How to Diagnose a Random PC Reboot Without Losing Your Mind](/posts/how-to-diagnose-a-random-reboot)
+- [Signs Your Motherboard May Be Failing](/posts/signs-your-motherboard-is-failing/)
+- [How to Debug a PC That Randomly Reboots](/posts/how-to-debug-a-pc-that-randomly-reboots/)
+- [How to Diagnose a Random PC Reboot Without Losing Your Mind](/posts/how-to-diagnose-a-random-reboot/)

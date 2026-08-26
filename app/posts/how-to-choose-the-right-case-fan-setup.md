@@ -87,6 +87,6 @@ Don't buy more fans than you need. Get the layout right first, then only add qua
 
 ## Related Guides
 
-- [How to Tell If Your CPU Cooler Is Working Well](/posts/how-to-tell-if-your-cpu-cooler-is-working-well)
-- [How to Choose the Right CPU Cooler for Your Build](/posts/how-to-choose-the-right-cpu-cooler-for-your-build)
-- [Why CPU Cooling Still Matters More Than People Pretend](/posts/why-cooling-still-matters-in-2026)
+- [How to Tell If Your CPU Cooler Is Working Well](/posts/how-to-tell-if-your-cpu-cooler-is-working-well/)
+- [How to Choose the Right CPU Cooler for Your Build](/posts/how-to-choose-the-right-cpu-cooler-for-your-build/)
+- [Why CPU Cooling Still Matters More Than People Pretend](/posts/why-cooling-still-matters-in-2026/)

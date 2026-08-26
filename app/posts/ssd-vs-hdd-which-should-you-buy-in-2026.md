@@ -85,6 +85,6 @@ Will an SSD make my games run at higher FPS? Nope, that's your GPU's job. An SSD
 
 ## Related Guides
 
-- [Best SSD for Gaming in 2026: What Actually Matters](/posts/best-ssd-for-gaming-2026)
-- [What to Check First When a PC Won't Boot](/posts/what-to-check-first-when-a-pc-wont-boot)
-- [Signs Your Motherboard May Be Failing](/posts/signs-your-motherboard-is-failing)
+- [Best SSD for Gaming in 2026: What Actually Matters](/posts/best-ssd-for-gaming-2026/)
+- [What to Check First When a PC Won't Boot](/posts/what-to-check-first-when-a-pc-wont-boot/)
+- [Signs Your Motherboard May Be Failing](/posts/signs-your-motherboard-is-failing/)

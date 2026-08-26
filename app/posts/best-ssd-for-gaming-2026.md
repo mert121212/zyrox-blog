@@ -69,6 +69,6 @@ Just buy a 2TB Gen 4 drive from a brand you trust and enjoy the lightning-fast l
 
 ## Related Guides
 
-- [What Does RAM Actually Do in a Computer?](/posts/what-does-ram-actually-do-in-a-computer)
-- [SSD vs HDD: Which Should You Buy in 2026?](/posts/ssd-vs-hdd-which-should-you-buy-in-2026)
-- [How to Build a Silent PC Without Sacrificing Performance](/posts/how-to-build-a-silent-pc)
+- [What Does RAM Actually Do in a Computer?](/posts/what-does-ram-actually-do-in-a-computer/)
+- [SSD vs HDD: Which Should You Buy in 2026?](/posts/ssd-vs-hdd-which-should-you-buy-in-2026/)
+- [How to Build a Silent PC Without Sacrificing Performance](/posts/how-to-build-a-silent-pc/)

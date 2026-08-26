@@ -77,6 +77,6 @@ You will upgrade your entire workstation three or four times before TBW becomes 
 
 ## Related Guides
 
-- [The Best Way to Organize Your Game Library on an SSD](/posts/the-best-way-to-organize-your-game-library-on-an-ssd)
-- [How to Spot a Failing Hard Drive Before It Fails](/posts/how-to-spot-a-failing-hard-drive-before-it-fails)
-- [How to Choose an SSD for a Laptop or Desktop Without Overbuying](/posts/how-to-choose-an-ssd-for-laptop-vs-desktop)
+- [The Best Way to Organize Your Game Library on an SSD](/posts/the-best-way-to-organize-your-game-library-on-an-ssd/)
+- [How to Spot a Failing Hard Drive Before It Fails](/posts/how-to-spot-a-failing-hard-drive-before-it-fails/)
+- [How to Choose an SSD for a Laptop or Desktop Without Overbuying](/posts/how-to-choose-an-ssd-for-laptop-vs-desktop/)

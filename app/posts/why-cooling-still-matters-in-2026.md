@@ -72,6 +72,6 @@ Don't skimp on cooling. It dictates the actual performance ceiling of the most e
 
 ## Related Guides
 
-- [How to Choose the Right Case Fan Setup](/posts/how-to-choose-the-right-case-fan-setup)
-- [How to Choose the Right CPU Cooler for Your Build](/posts/how-to-choose-the-right-cpu-cooler-for-your-build)
-- [How to Reduce PC Noise Without Sacrificing Cooling](/posts/how-to-reduce-pc-noise-without-sacrificing-cooling)
+- [How to Choose the Right Case Fan Setup](/posts/how-to-choose-the-right-case-fan-setup/)
+- [How to Choose the Right CPU Cooler for Your Build](/posts/how-to-choose-the-right-cpu-cooler-for-your-build/)
+- [How to Reduce PC Noise Without Sacrificing Cooling](/posts/how-to-reduce-pc-noise-without-sacrificing-cooling/)

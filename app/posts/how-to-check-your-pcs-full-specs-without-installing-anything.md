@@ -101,6 +101,6 @@ And seriously, stop downloading sketchy "system scanner" apps. Windows already k
 
 ## Related Guides
 
-- [How to Fix High CPU Usage on Windows](/posts/how-to-fix-high-cpu-usage)
-- [How to Free Up Disk Space on Windows Without Deleting Your Files](/posts/how-to-free-up-disk-space-on-windows-without-deleting-your-files)
-- [How to Speed Up a Slow Windows 11 PC in Under 30 Minutes](/posts/how-to-speed-up-a-slow-windows-11-pc-in-under-30-minutes)
+- [How to Fix High CPU Usage on Windows](/posts/how-to-fix-high-cpu-usage/)
+- [How to Free Up Disk Space on Windows Without Deleting Your Files](/posts/how-to-free-up-disk-space-on-windows-without-deleting-your-files/)
+- [How to Speed Up a Slow Windows 11 PC in Under 30 Minutes](/posts/how-to-speed-up-a-slow-windows-11-pc-in-under-30-minutes/)

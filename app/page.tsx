@@ -1,11 +1,10 @@
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
 import { getAllPosts } from '../lib/posts';
+import { SearchAndFilter } from '../components/search-and-filter';
 
-const SearchAndFilter = dynamic(
-    () => import('../components/search-and-filter').then((m) => ({ default: m.SearchAndFilter })),
-    { ssr: false },
-);
+export const metadata = {
+    alternates: { canonical: '/' },
+};
 
 export default function HomePage() {
     const posts = getAllPosts();
@@ -33,7 +32,7 @@ export default function HomePage() {
                             <Link href="#latest" className="btn btn--primary btn--glow">
                                 Explore Guides
                             </Link>
-                            <Link href="/about" className="btn btn--secondary btn--glass">
+                            <Link href="/about/" className="btn btn--secondary btn--glass">
                                 About Our Lab
                             </Link>
                         </div>
@@ -51,7 +50,7 @@ export default function HomePage() {
                     
                     <div className="featured-grid">
                         {posts.filter(p => p.slug === 'best-gpu-for-1440p-gaming' || p.slug === 'best-cpu-cooler-for-ryzen-7-7800x3d').map(post => (
-                            <Link href={`/posts/${post.slug}`} key={post.slug} className="featured-card">
+                            <Link href={`/posts/${post.slug}/`} key={post.slug} className="featured-card">
                                 <div className="featured-card__content">
                                     <span className="featured-card__category">{post.category}</span>
                                     <h3>{post.title}</h3>

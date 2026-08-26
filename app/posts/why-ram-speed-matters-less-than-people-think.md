@@ -68,6 +68,6 @@ The advice is simple. Buy 32GB of capacity so you never run out. Buy DDR4-3600 o
 
 ## Related Guides
 
-- [The BIOS Settings That Matter Most for a Stable Overclock](/posts/bios-settings-for-stable-overclock)
-- [How to Choose the Right PC Case](/posts/how-to-choose-the-right-pc-case)
-- [SSD vs HDD: Which Should You Buy in 2026?](/posts/ssd-vs-hdd-which-should-you-buy-in-2026)
+- [The BIOS Settings That Matter Most for a Stable Overclock](/posts/bios-settings-for-stable-overclock/)
+- [How to Choose the Right PC Case](/posts/how-to-choose-the-right-pc-case/)
+- [SSD vs HDD: Which Should You Buy in 2026?](/posts/ssd-vs-hdd-which-should-you-buy-in-2026/)

@@ -95,6 +95,6 @@ Always ask the seller for the original receipt. Even if the card is out of warra
 
 ## Related Guides
 
-- [How to Spot Fake or Misleading Hardware Reviews](/posts/how-to-spot-fake-hardware-reviews)
-- [How to Choose a Motherboard for a New PC Build Without Overpaying](/posts/how-to-choose-a-motherboard-for-a-new-build)
-- [How to Build a Silent PC Without Sacrificing Performance](/posts/how-to-build-a-silent-pc)
+- [How to Spot Fake or Misleading Hardware Reviews](/posts/how-to-spot-fake-hardware-reviews/)
+- [How to Choose a Motherboard for a New PC Build Without Overpaying](/posts/how-to-choose-a-motherboard-for-a-new-build/)
+- [How to Build a Silent PC Without Sacrificing Performance](/posts/how-to-build-a-silent-pc/)

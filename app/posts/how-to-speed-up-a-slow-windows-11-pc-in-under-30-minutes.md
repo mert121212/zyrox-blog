@@ -131,6 +131,6 @@ Classic memory leak. Some programs — and I won't name names but you'd recogniz
 
 ## Related Guides
 
-- [How to Free Up Disk Space on Windows Without Deleting Your Files](/posts/how-to-free-up-disk-space-on-windows-without-deleting-your-files)
-- [How to Check Your PC's Full Specs Without Installing Anything](/posts/how-to-check-your-pcs-full-specs-without-installing-anything)
-- [How to Fix Windows Update Problems in 2026](/posts/how-to-fix-windows-update-problems-2026)
+- [How to Free Up Disk Space on Windows Without Deleting Your Files](/posts/how-to-free-up-disk-space-on-windows-without-deleting-your-files/)
+- [How to Check Your PC's Full Specs Without Installing Anything](/posts/how-to-check-your-pcs-full-specs-without-installing-anything/)
+- [How to Fix Windows Update Problems in 2026](/posts/how-to-fix-windows-update-problems-2026/)

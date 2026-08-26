@@ -69,6 +69,6 @@ Age alone is not a reason to replace a monitor. If it's seven years old but stil
 
 ## Related Guides
 
-- [What to Look for in a Midrange Monitor](/posts/what-to-look-for-in-a-midrange-monitor)
-- [How to Choose a Monitor Arm and Stand](/posts/how-to-choose-a-monitor-arm-and-stand)
-- [The Best Way to Upgrade a PC Without Replacing Everything](/posts/the-best-way-to-upgrade-your-pc-without-replacing-everything)
+- [What to Look for in a Midrange Monitor](/posts/what-to-look-for-in-a-midrange-monitor/)
+- [How to Choose a Monitor Arm and Stand](/posts/how-to-choose-a-monitor-arm-and-stand/)
+- [The Best Way to Upgrade a PC Without Replacing Everything](/posts/the-best-way-to-upgrade-your-pc-without-replacing-everything/)

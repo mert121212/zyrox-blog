@@ -90,6 +90,6 @@ Don't overthink it. Pick 27-inch, 1440p, IPS, buy from a reputable brand, and mo
 
 ## Related Guides
 
-- [Why Your PC Feels Slow Even When It Has Good Specs](/posts/why-your-pc-feels-slow-even-when-it-has-good-specs)
-- [What Actually Matters in a Gaming PC Build](/posts/what-actually-matters-in-a-gaming-pc)
-- [How to Spot a Failing Hard Drive Before It Fails](/posts/how-to-spot-a-failing-hard-drive-before-it-fails)
+- [Why Your PC Feels Slow Even When It Has Good Specs](/posts/why-your-pc-feels-slow-even-when-it-has-good-specs/)
+- [What Actually Matters in a Gaming PC Build](/posts/what-actually-matters-in-a-gaming-pc/)
+- [How to Spot a Failing Hard Drive Before It Fails](/posts/how-to-spot-a-failing-hard-drive-before-it-fails/)

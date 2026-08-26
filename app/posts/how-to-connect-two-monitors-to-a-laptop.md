@@ -119,6 +119,6 @@ Only with a DisplayLink adapter. A plain USB-A port doesn't carry video signals 
 
 ## Related Guides
 
-- [How to Spot a Good Used GPU Deal](/posts/how-to-spot-a-good-used-gpu-deal)
-- [BIOS Tuning Basics for Stable Overnight Overclocking](/posts/biostuning-basics-for-stable-overnight-overclocking)
-- [Best Monitor for Work and Gaming: What to Choose](/posts/best-monitor-for-work-and-gaming)
+- [How to Spot a Good Used GPU Deal](/posts/how-to-spot-a-good-used-gpu-deal/)
+- [BIOS Tuning Basics for Stable Overnight Overclocking](/posts/biostuning-basics-for-stable-overnight-overclocking/)
+- [Best Monitor for Work and Gaming: What to Choose](/posts/best-monitor-for-work-and-gaming/)

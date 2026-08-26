@@ -87,6 +87,6 @@ Don't skip straight to buying a new motherboard. Most of the time, the fix is fi
 
 ## Related Guides
 
-- [What to Check First When a PC Won't Boot](/posts/what-to-check-first-when-a-pc-wont-boot)
-- [How to Debug a PC That Randomly Reboots](/posts/how-to-debug-a-pc-that-randomly-reboots)
-- [Signs Your Motherboard May Be Failing](/posts/signs-your-motherboard-is-failing)
+- [What to Check First When a PC Won't Boot](/posts/what-to-check-first-when-a-pc-wont-boot/)
+- [How to Debug a PC That Randomly Reboots](/posts/how-to-debug-a-pc-that-randomly-reboots/)
+- [Signs Your Motherboard May Be Failing](/posts/signs-your-motherboard-is-failing/)

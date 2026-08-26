@@ -91,6 +91,6 @@ Don't overpay for specs you won't feel. Match the drive to the job, and save you
 
 ## Related Guides
 
-- [How to Choose a Good SSD for Video Editing](/posts/how-to-choose-a-good-ssd-for-video-editing)
-- [How to Choose an SSD for a Laptop or Desktop Without Overbuying](/posts/how-to-choose-an-ssd-for-laptop-vs-desktop)
-- [How to Spot a Failing Hard Drive Before It Fails](/posts/how-to-spot-a-failing-hard-drive-before-it-fails)
+- [How to Choose a Good SSD for Video Editing](/posts/how-to-choose-a-good-ssd-for-video-editing/)
+- [How to Choose an SSD for a Laptop or Desktop Without Overbuying](/posts/how-to-choose-an-ssd-for-laptop-vs-desktop/)
+- [How to Spot a Failing Hard Drive Before It Fails](/posts/how-to-spot-a-failing-hard-drive-before-it-fails/)

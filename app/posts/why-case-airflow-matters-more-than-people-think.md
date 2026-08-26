@@ -68,6 +68,6 @@ If you want to improve your current build without buying a new case, start by cl
 
 ## Related Guides
 
-- [What to Do When Your PC Overheats](/posts/what-to-do-when-your-pc-overheats)
-- [How to Tell If Your CPU Cooler Is Working Well](/posts/how-to-tell-if-your-cpu-cooler-is-working-well)
-- [Why CPU Cooling Still Matters More Than People Pretend](/posts/why-cooling-still-matters-in-2026)
+- [What to Do When Your PC Overheats](/posts/what-to-do-when-your-pc-overheats/)
+- [How to Tell If Your CPU Cooler Is Working Well](/posts/how-to-tell-if-your-cpu-cooler-is-working-well/)
+- [Why CPU Cooling Still Matters More Than People Pretend](/posts/why-cooling-still-matters-in-2026/)

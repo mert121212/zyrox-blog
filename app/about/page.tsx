@@ -4,7 +4,7 @@ import { getAllAuthors } from '@/lib/authors';
 export const metadata = {
     title: 'About Zyrox',
     description: 'Zyrox is an independent PC hardware publication focused on practical build advice, honest reviews, and real-world troubleshooting guides.',
-    alternates: { canonical: '/about' },
+    alternates: { canonical: '/about/' },
 };
 
 export default function AboutPage() {
@@ -75,7 +75,7 @@ export default function AboutPage() {
                     </p>
                     <div className="about-authors-grid">
                         {authors.map((author) => (
-                            <Link key={author.slug} href={`/authors/${author.slug}`} className="about-author-card card">
+                            <Link key={author.slug} href={`/authors/${author.slug}/`} className="about-author-card card">
                                 <div className="author-avatar" aria-hidden="true">{author.avatar}</div>
                                 <div>
                                     <strong className="author-name">{author.name}</strong>
@@ -86,7 +86,7 @@ export default function AboutPage() {
                         ))}
                     </div>
                     <div style={{ marginTop: '1.25rem' }}>
-                        <Link href="/authors" className="post-link">View all authors →</Link>
+                        <Link href="/authors/" className="post-link">View all authors →</Link>
                     </div>
                 </section>
 
@@ -100,9 +100,9 @@ export default function AboutPage() {
                     </p>
                     <p>
                         For site-related legal information, see our{' '}
-                        <Link href="/privacy-policy" className="post-link" style={{ display: 'inline', marginTop: 0 }}>Privacy Policy</Link>{' '}
+                        <Link href="/privacy-policy/" className="post-link" style={{ display: 'inline', marginTop: 0 }}>Privacy Policy</Link>{' '}
                         and{' '}
-                        <Link href="/terms" className="post-link" style={{ display: 'inline', marginTop: 0 }}>Terms of Use</Link>.
+                        <Link href="/terms/" className="post-link" style={{ display: 'inline', marginTop: 0 }}>Terms of Use</Link>.
                     </p>
                 </section>
 

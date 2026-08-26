@@ -85,6 +85,6 @@ The perfect hybrid monitor doesn't exist, but we are finally at a point where a 
 
 ## Related Guides
 
-- [Why Your PC Feels Slow Even When the CPU Is Fast](/posts/why-your-pc-feels-slow-even-with-a-fast-cpu)
-- [How to Choose the Right Case Fan Setup](/posts/how-to-choose-the-right-case-fan-setup)
-- [How to Connect Two Monitors to a Laptop](/posts/how-to-connect-two-monitors-to-a-laptop)
+- [Why Your PC Feels Slow Even When the CPU Is Fast](/posts/why-your-pc-feels-slow-even-with-a-fast-cpu/)
+- [How to Choose the Right Case Fan Setup](/posts/how-to-choose-the-right-case-fan-setup/)
+- [How to Connect Two Monitors to a Laptop](/posts/how-to-connect-two-monitors-to-a-laptop/)

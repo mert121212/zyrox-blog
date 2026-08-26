@@ -82,6 +82,6 @@ And for the love of your hardware, do NOT twist the cooler once it makes contact
 
 ## Related Guides
 
-- [Why CPU Cooling Still Matters More Than People Pretend](/posts/why-cooling-still-matters-in-2026)
-- [Why Case Airflow Matters More Than People Think](/posts/why-case-airflow-matters-more-than-people-think)
-- [The Difference Between Air Cooling and Liquid Cooling](/posts/the-difference-between-air-cooling-and-liquid-cooling)
+- [Why CPU Cooling Still Matters More Than People Pretend](/posts/why-cooling-still-matters-in-2026/)
+- [Why Case Airflow Matters More Than People Think](/posts/why-case-airflow-matters-more-than-people-think/)
+- [The Difference Between Air Cooling and Liquid Cooling](/posts/the-difference-between-air-cooling-and-liquid-cooling/)

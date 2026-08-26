@@ -90,6 +90,6 @@ For desktops, start with a 1TB NVMe for the OS and apps, and add a 2TB drive for
 
 ## Related Guides
 
-- [SSD vs HDD Boot Speed: What Actually Changes in Real Use](/posts/ssd-vs-hdd-boot-speed)
-- [Why SSD Health Monitoring Matters More Than You Think](/posts/why-ssd-health-monitoring-matters-more-than-you-think)
-- [Why Upgrading Storage Alone Does Not Make Everything Faster](/posts/why-upgrading-storage-alone-doesnt-make-everything-faster)
+- [SSD vs HDD Boot Speed: What Actually Changes in Real Use](/posts/ssd-vs-hdd-boot-speed/)
+- [Why SSD Health Monitoring Matters More Than You Think](/posts/why-ssd-health-monitoring-matters-more-than-you-think/)
+- [Why Upgrading Storage Alone Does Not Make Everything Faster](/posts/why-upgrading-storage-alone-doesnt-make-everything-faster/)

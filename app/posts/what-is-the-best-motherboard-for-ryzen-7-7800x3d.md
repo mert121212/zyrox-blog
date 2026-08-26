@@ -80,6 +80,6 @@ For a gaming-focused, value-conscious build, go with the ASRock B650E Taichi. Fo
 
 ## Related Guides
 
-- [How to Fix High CPU Usage on Windows](/posts/how-to-fix-high-cpu-usage)
-- [Best Motherboard for RTX 4070: What Matters Most](/posts/best-motherboard-for-rtx-4070)
-- [Why Your PC Feels Slow Even When the CPU Is Fast](/posts/why-your-pc-feels-slow-even-with-a-fast-cpu)
+- [How to Fix High CPU Usage on Windows](/posts/how-to-fix-high-cpu-usage/)
+- [Best Motherboard for RTX 4070: What Matters Most](/posts/best-motherboard-for-rtx-4070/)
+- [Why Your PC Feels Slow Even When the CPU Is Fast](/posts/why-your-pc-feels-slow-even-with-a-fast-cpu/)

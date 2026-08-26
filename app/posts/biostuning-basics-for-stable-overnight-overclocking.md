@@ -76,6 +76,6 @@ And please, don't skimp on thermal paste. A fresh application of Thermal Grizzly
 
 ## Related Guides
 
-- [How to Choose a Good SSD for Video Editing](/posts/how-to-choose-a-good-ssd-for-video-editing)
-- [Best CPU Cooler for Ryzen 7 7800X3D: Quiet and Efficient Picks](/posts/best-cpu-cooler-for-ryzen-7-7800x3d)
-- [The BIOS Settings That Matter Most for a Stable Overclock](/posts/bios-settings-for-stable-overclock)
+- [How to Choose a Good SSD for Video Editing](/posts/how-to-choose-a-good-ssd-for-video-editing/)
+- [Best CPU Cooler for Ryzen 7 7800X3D: Quiet and Efficient Picks](/posts/best-cpu-cooler-for-ryzen-7-7800x3d/)
+- [The BIOS Settings That Matter Most for a Stable Overclock](/posts/bios-settings-for-stable-overclock/)

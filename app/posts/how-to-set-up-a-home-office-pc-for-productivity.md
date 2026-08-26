@@ -95,6 +95,6 @@ After upgrading to an Ergotron arm holding a 27" 1440p IPS display, a Keychron K
 
 ## Related Guides
 
-- [How to Free Up Disk Space on Windows Without Deleting Your Files](/posts/how-to-free-up-disk-space-on-windows-without-deleting-your-files)
-- [The Best Way to Upgrade a PC Without Replacing Everything](/posts/the-best-way-to-upgrade-your-pc-without-replacing-everything)
-- [What to Check First When a PC Won't Boot](/posts/what-to-check-first-when-a-pc-wont-boot)
+- [How to Free Up Disk Space on Windows Without Deleting Your Files](/posts/how-to-free-up-disk-space-on-windows-without-deleting-your-files/)
+- [The Best Way to Upgrade a PC Without Replacing Everything](/posts/the-best-way-to-upgrade-your-pc-without-replacing-everything/)
+- [What to Check First When a PC Won't Boot](/posts/what-to-check-first-when-a-pc-wont-boot/)

@@ -99,6 +99,6 @@ If your ISP allows it, put their gateway into bridge mode and run a separate aft
 
 ## Related Guides
 
-- [How to Spot a Failing Hard Drive Before It Fails](/posts/how-to-spot-a-failing-hard-drive-before-it-fails)
-- [Why Network Cables Still Matter in a Wireless World](/posts/why-network-cables-still-matter)
-- [How to Upgrade Your Wi-Fi Setup Without Replacing Everything](/posts/how-to-upgrade-your-wifi-without-replacing-everything)
+- [How to Spot a Failing Hard Drive Before It Fails](/posts/how-to-spot-a-failing-hard-drive-before-it-fails/)
+- [Why Network Cables Still Matter in a Wireless World](/posts/why-network-cables-still-matter/)
+- [How to Upgrade Your Wi-Fi Setup Without Replacing Everything](/posts/how-to-upgrade-your-wifi-without-replacing-everything/)

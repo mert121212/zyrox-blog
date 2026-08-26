@@ -93,6 +93,6 @@ If that's the case, it's time to just buy a second SSD. Prices are ridiculously 
 
 ## Related Guides
 
-- [How to Check Your PC's Full Specs Without Installing Anything](/posts/how-to-check-your-pcs-full-specs-without-installing-anything)
-- [How to Fix High CPU Usage on Windows](/posts/how-to-fix-high-cpu-usage)
-- [How to Fix Windows Update Problems in 2026](/posts/how-to-fix-windows-update-problems-2026)
+- [How to Check Your PC's Full Specs Without Installing Anything](/posts/how-to-check-your-pcs-full-specs-without-installing-anything/)
+- [How to Fix High CPU Usage on Windows](/posts/how-to-fix-high-cpu-usage/)
+- [How to Fix Windows Update Problems in 2026](/posts/how-to-fix-windows-update-problems-2026/)

@@ -61,6 +61,6 @@ The fix is straightforward. Download a tool called Display Driver Uninstaller (D
 
 ## Related Guides
 
-- [How to Choose a Monitor Arm and Stand](/posts/how-to-choose-a-monitor-arm-and-stand)
-- [Why Your PC Feels Slow Even When It Has Good Specs](/posts/why-your-pc-feels-slow-even-when-it-has-good-specs)
-- [How to Diagnose a Random PC Reboot Without Losing Your Mind](/posts/how-to-diagnose-a-random-reboot)
+- [How to Choose a Monitor Arm and Stand](/posts/how-to-choose-a-monitor-arm-and-stand/)
+- [Why Your PC Feels Slow Even When It Has Good Specs](/posts/why-your-pc-feels-slow-even-when-it-has-good-specs/)
+- [How to Diagnose a Random PC Reboot Without Losing Your Mind](/posts/how-to-diagnose-a-random-reboot/)

@@ -4,7 +4,7 @@ import { ReadingListView } from '@/components/reading-list-view';
 export const metadata: Metadata = {
     title: 'Reading List',
     description: 'Articles you saved for later.',
-    alternates: { canonical: '/reading-list' },
+    alternates: { canonical: '/reading-list/' },
     robots: { index: false, follow: false },
 };
 

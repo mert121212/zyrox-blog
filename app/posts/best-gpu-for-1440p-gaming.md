@@ -110,6 +110,6 @@ A 27-inch 1440p 165Hz IPS panel is the natural pairing. LG's 27GP850-B and the S
 
 ## Related Guides
 
-- [How to Set Up a Home Office PC for Productivity](/posts/how-to-set-up-a-home-office-pc-for-productivity)
-- [How to Fix Windows Update Problems in 2026](/posts/how-to-fix-windows-update-problems-2026)
-- [Best PSU for RTX 5080: How to Choose a Safe and Reliable Power Supply](/posts/best-psu-for-rtx-5080)
+- [How to Set Up a Home Office PC for Productivity](/posts/how-to-set-up-a-home-office-pc-for-productivity/)
+- [How to Fix Windows Update Problems in 2026](/posts/how-to-fix-windows-update-problems-2026/)
+- [Best PSU for RTX 5080: How to Choose a Safe and Reliable Power Supply](/posts/best-psu-for-rtx-5080/)

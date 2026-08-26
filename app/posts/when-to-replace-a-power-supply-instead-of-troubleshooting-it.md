@@ -70,6 +70,6 @@ If you are replacing a PSU, always consult a reputable tier list (like the Culti
 
 ## Related Guides
 
-- [How to Choose the Right PSU for Your Build](/posts/how-to-choose-the-right-psu-for-your-build)
-- [How to Test a Power Supply Without Expensive Tools](/posts/how-to-test-a-psu-without-expensive-tools)
-- [How to Spot a Bad Power Supply Before You Buy It](/posts/how-to-spot-a-bad-power-supply-before-you-buy-it)
+- [How to Choose the Right PSU for Your Build](/posts/how-to-choose-the-right-psu-for-your-build/)
+- [How to Test a Power Supply Without Expensive Tools](/posts/how-to-test-a-psu-without-expensive-tools/)
+- [How to Spot a Bad Power Supply Before You Buy It](/posts/how-to-spot-a-bad-power-supply-before-you-buy-it/)

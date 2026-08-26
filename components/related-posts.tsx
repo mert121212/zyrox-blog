@@ -30,7 +30,7 @@ export function RelatedPosts({ currentPost, allPosts, limit = 3 }: RelatedPostsP
                 {finalPosts.map((post) => (
                     <Link
                         key={post.slug}
-                        href={`/posts/${post.slug}`}
+                        href={`/posts/${post.slug}/`}
                         className="related-post-card"
                     >
                         <div className="related-post-meta">{post.date}</div>

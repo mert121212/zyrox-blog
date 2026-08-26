@@ -80,6 +80,6 @@ Windows lives on the fastest drive you own, period. Games tolerate secondary dri
 
 ## Related Guides
 
-- [How to Build a Budget Gaming PC That Still Feels Fast](/posts/how-to-build-a-budget-gaming-pc)
-- [How to Build a Quiet Gaming Rig Without Giving Up Performance](/posts/how-to-build-a-quiet-gaming-rig)
-- [How to Check If Your PC Can Run a Game Before You Buy It](/posts/how-to-check-if-your-pc-can-run-a-game-before-you-buy-it)
+- [How to Build a Budget Gaming PC That Still Feels Fast](/posts/how-to-build-a-budget-gaming-pc/)
+- [How to Build a Quiet Gaming Rig Without Giving Up Performance](/posts/how-to-build-a-quiet-gaming-rig/)
+- [How to Check If Your PC Can Run a Game Before You Buy It](/posts/how-to-check-if-your-pc-can-run-a-game-before-you-buy-it/)

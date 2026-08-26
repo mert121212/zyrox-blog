@@ -80,6 +80,6 @@ If you spend four or more hours a day at the screen, an ergonomic stand matters.
 
 ## Related Guides
 
-- [When It Is Time to Replace a Monitor](/posts/when-to-replace-a-monitor)
-- [The Best Way to Organize Your Game Library on an SSD](/posts/the-best-way-to-organize-your-game-library-on-an-ssd)
-- [How to Choose a Monitor Arm and Stand](/posts/how-to-choose-a-monitor-arm-and-stand)
+- [When It Is Time to Replace a Monitor](/posts/when-to-replace-a-monitor/)
+- [The Best Way to Organize Your Game Library on an SSD](/posts/the-best-way-to-organize-your-game-library-on-an-ssd/)
+- [How to Choose a Monitor Arm and Stand](/posts/how-to-choose-a-monitor-arm-and-stand/)

@@ -18,8 +18,8 @@ export function SiteHeader() {
                     Zyrox
                 </Link>
                 <nav aria-label="Primary navigation" className="site-header__nav">
-                    <Link href="/about" className="site-header__link">About</Link>
-                    <Link href="/contact" className="site-header__link">Contact</Link>
+                    <Link href="/about/" className="site-header__link">About</Link>
+                    <Link href="/contact/" className="site-header__link">Contact</Link>
                     <ReadingListBadge />
                 </nav>
             </div>

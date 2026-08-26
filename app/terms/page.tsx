@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
     title: 'Terms of Use',
     description: 'Terms of Use for Zyrox — the rules and conditions for using our website and content.',
-    alternates: { canonical: '/terms' },
+    alternates: { canonical: '/terms/' },
     robots: { index: true, follow: true },
 };
 

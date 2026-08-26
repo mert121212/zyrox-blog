@@ -93,6 +93,6 @@ Stop overthinking the motherboard. Pick the one that fits your RAM (DDR4 vs DDR5
 
 ## Related Guides
 
-- [What Is the Best Motherboard for Ryzen 7 7800X3D?](/posts/what-is-the-best-motherboard-for-ryzen-7-7800x3d)
-- [Best RAM for Ryzen 7000: Speed, Latency, and Capacity](/posts/best-ram-for-ryzen-7000)
-- [How to Spot Fake or Misleading Hardware Reviews](/posts/how-to-spot-fake-hardware-reviews)
+- [What Is the Best Motherboard for Ryzen 7 7800X3D?](/posts/what-is-the-best-motherboard-for-ryzen-7-7800x3d/)
+- [Best RAM for Ryzen 7000: Speed, Latency, and Capacity](/posts/best-ram-for-ryzen-7000/)
+- [How to Spot Fake or Misleading Hardware Reviews](/posts/how-to-spot-fake-hardware-reviews/)

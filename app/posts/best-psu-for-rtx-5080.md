@@ -70,6 +70,6 @@ If you are spending $1000 on a graphics card, do not try to save $40 by buying a
 
 ## Related Guides
 
-- [How to Spot a Good Used GPU Deal](/posts/how-to-spot-a-good-used-gpu-deal)
-- [How to Tell If Your CPU Cooler Is Working Well](/posts/how-to-tell-if-your-cpu-cooler-is-working-well)
-- [What Is the Best Motherboard for Ryzen 7 7800X3D?](/posts/what-is-the-best-motherboard-for-ryzen-7-7800x3d)
+- [How to Spot a Good Used GPU Deal](/posts/how-to-spot-a-good-used-gpu-deal/)
+- [How to Tell If Your CPU Cooler Is Working Well](/posts/how-to-tell-if-your-cpu-cooler-is-working-well/)
+- [What Is the Best Motherboard for Ryzen 7 7800X3D?](/posts/what-is-the-best-motherboard-for-ryzen-7-7800x3d/)

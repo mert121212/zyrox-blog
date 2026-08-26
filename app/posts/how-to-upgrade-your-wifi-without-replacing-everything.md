@@ -85,6 +85,6 @@ In these cases, upgrading to a modern Wi-Fi 6 or 6E router will make a genuine d
 
 ## Related Guides
 
-- [How to Choose the Right SSD for Your PC Without Paying for the Wrong Specs](/posts/how-to-choose-the-right-ssd-for-your-system)
-- [How to Choose the Best Wi-Fi Router for Your Home](/posts/how-to-choose-the-best-wifi-router)
-- [Why Network Cables Still Matter in a Wireless World](/posts/why-network-cables-still-matter)
+- [How to Choose the Right SSD for Your PC Without Paying for the Wrong Specs](/posts/how-to-choose-the-right-ssd-for-your-system/)
+- [How to Choose the Best Wi-Fi Router for Your Home](/posts/how-to-choose-the-best-wifi-router/)
+- [Why Network Cables Still Matter in a Wireless World](/posts/why-network-cables-still-matter/)

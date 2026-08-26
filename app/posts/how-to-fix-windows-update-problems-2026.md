@@ -105,6 +105,6 @@ The solution is simple: install all pending quality updates first. Reboot every 
 
 ## Related Guides
 
-- [How to Free Up Disk Space on Windows Without Deleting Your Files](/posts/how-to-free-up-disk-space-on-windows-without-deleting-your-files)
-- [How to Fix High CPU Usage on Windows](/posts/how-to-fix-high-cpu-usage)
-- [How to Check Your PC's Full Specs Without Installing Anything](/posts/how-to-check-your-pcs-full-specs-without-installing-anything)
+- [How to Free Up Disk Space on Windows Without Deleting Your Files](/posts/how-to-free-up-disk-space-on-windows-without-deleting-your-files/)
+- [How to Fix High CPU Usage on Windows](/posts/how-to-fix-high-cpu-usage/)
+- [How to Check Your PC's Full Specs Without Installing Anything](/posts/how-to-check-your-pcs-full-specs-without-installing-anything/)

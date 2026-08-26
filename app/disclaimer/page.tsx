@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
     title: 'Disclaimer',
     description: 'Important disclaimers about content accuracy, affiliate relationships, and technical advice on Zyrox.',
-    alternates: { canonical: '/disclaimer' },
+    alternates: { canonical: '/disclaimer/' },
     robots: { index: true, follow: true },
 };
 

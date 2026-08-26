@@ -72,6 +72,6 @@ At that point, dropping a $300 GPU into a decade-old platform is a waste of pote
 
 ## Related Guides
 
-- [The Best Way to Plan a PC Upgrade Cycle](/posts/the-best-way-to-plan-a-pc-upgrade-cycle)
-- [How to Upgrade Your Laptop Without Buying a New One](/posts/how-to-upgrade-your-laptop-without-buying-a-new-one)
-- [The Best Way to Upgrade a PC Without Replacing Everything](/posts/the-best-way-to-upgrade-your-pc-without-replacing-everything)
+- [The Best Way to Plan a PC Upgrade Cycle](/posts/the-best-way-to-plan-a-pc-upgrade-cycle/)
+- [How to Upgrade Your Laptop Without Buying a New One](/posts/how-to-upgrade-your-laptop-without-buying-a-new-one/)
+- [The Best Way to Upgrade a PC Without Replacing Everything](/posts/the-best-way-to-upgrade-your-pc-without-replacing-everything/)

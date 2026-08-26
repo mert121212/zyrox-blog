@@ -97,6 +97,6 @@ My practical advice: buy a board that fits your CPU's needs *today* without over
 
 ## Related Guides
 
-- [How to Choose a Monitor for Gaming and Work Without Overpaying](/posts/how-to-choose-a-monitor-for-gaming-and-work)
-- [How to Choose an SSD for a Laptop or Desktop Without Overbuying](/posts/how-to-choose-an-ssd-for-laptop-vs-desktop)
-- [Best GPU for 1440p Gaming: What to Buy in 2026](/posts/best-gpu-for-1440p-gaming)
+- [How to Choose a Monitor for Gaming and Work Without Overpaying](/posts/how-to-choose-a-monitor-for-gaming-and-work/)
+- [How to Choose an SSD for a Laptop or Desktop Without Overbuying](/posts/how-to-choose-an-ssd-for-laptop-vs-desktop/)
+- [Best GPU for 1440p Gaming: What to Buy in 2026](/posts/best-gpu-for-1440p-gaming/)

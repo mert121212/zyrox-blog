@@ -90,6 +90,6 @@ Finally, combining aftermarket fans, a semi-passive PSU, and a custom Afterburne
 
 ## Related Guides
 
-- [Why CPU Cooling Still Matters More Than People Pretend](/posts/why-cooling-still-matters-in-2026)
-- [How to Choose the Right CPU Cooler for Your Build](/posts/how-to-choose-the-right-cpu-cooler-for-your-build)
-- [How to Build a Silent PC Without Sacrificing Performance](/posts/how-to-build-a-silent-pc)
+- [Why CPU Cooling Still Matters More Than People Pretend](/posts/why-cooling-still-matters-in-2026/)
+- [How to Choose the Right CPU Cooler for Your Build](/posts/how-to-choose-the-right-cpu-cooler-for-your-build/)
+- [How to Build a Silent PC Without Sacrificing Performance](/posts/how-to-build-a-silent-pc/)

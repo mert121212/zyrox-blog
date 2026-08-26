@@ -93,6 +93,6 @@ No. If you don't have a gaming PC right now, waiting is stupid. There is always 
 
 ## Related Guides
 
-- [Should You Buy an SSD or HDD for Game Storage](/posts/should-you-buy-an-ssd-or-hdd-for-game-storage)
-- [How to Check If Your PC Can Run a Game Before You Buy It](/posts/how-to-check-if-your-pc-can-run-a-game-before-you-buy-it)
-- [What Actually Matters in a Gaming PC Build](/posts/what-actually-matters-in-a-gaming-pc)
+- [Should You Buy an SSD or HDD for Game Storage](/posts/should-you-buy-an-ssd-or-hdd-for-game-storage/)
+- [How to Check If Your PC Can Run a Game Before You Buy It](/posts/how-to-check-if-your-pc-can-run-a-game-before-you-buy-it/)
+- [What Actually Matters in a Gaming PC Build](/posts/what-actually-matters-in-a-gaming-pc/)

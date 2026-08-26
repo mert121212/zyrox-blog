@@ -89,6 +89,6 @@ Work through these steps methodically. Don't skip straight to buying new hardwar
 
 ## Related Guides
 
-- [How to Diagnose a Random PC Reboot Without Losing Your Mind](/posts/how-to-diagnose-a-random-reboot)
-- [What to Check First When a PC Won't Boot](/posts/what-to-check-first-when-a-pc-wont-boot)
-- [Signs Your Motherboard May Be Failing](/posts/signs-your-motherboard-is-failing)
+- [How to Diagnose a Random PC Reboot Without Losing Your Mind](/posts/how-to-diagnose-a-random-reboot/)
+- [What to Check First When a PC Won't Boot](/posts/what-to-check-first-when-a-pc-wont-boot/)
+- [Signs Your Motherboard May Be Failing](/posts/signs-your-motherboard-is-failing/)

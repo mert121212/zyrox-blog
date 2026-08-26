@@ -83,6 +83,6 @@ Windows says I have 16 GB but only 15.8 GB is "usable." Am I getting ripped off?
 
 ## Related Guides
 
-- [Best Motherboard for RTX 4070: What Matters Most](/posts/best-motherboard-for-rtx-4070)
-- [How to Choose the Right Case Fan Setup](/posts/how-to-choose-the-right-case-fan-setup)
-- [Best RAM for Ryzen 7000: Speed, Latency, and Capacity](/posts/best-ram-for-ryzen-7000)
+- [Best Motherboard for RTX 4070: What Matters Most](/posts/best-motherboard-for-rtx-4070/)
+- [How to Choose the Right Case Fan Setup](/posts/how-to-choose-the-right-case-fan-setup/)
+- [Best RAM for Ryzen 7000: Speed, Latency, and Capacity](/posts/best-ram-for-ryzen-7000/)

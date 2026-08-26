@@ -98,6 +98,6 @@ Software optimization has limits. If your battery health report shows you are be
 
 ## Related Guides
 
-- [How to Choose a Motherboard for a New PC Build Without Overpaying](/posts/how-to-choose-a-motherboard-for-a-new-build)
-- [How to Choose a Good SSD for Video Editing](/posts/how-to-choose-a-good-ssd-for-video-editing)
-- [How to Upgrade Your Wi-Fi Setup Without Replacing Everything](/posts/how-to-upgrade-your-wifi-without-replacing-everything)
+- [How to Choose a Motherboard for a New PC Build Without Overpaying](/posts/how-to-choose-a-motherboard-for-a-new-build/)
+- [How to Choose a Good SSD for Video Editing](/posts/how-to-choose-a-good-ssd-for-video-editing/)
+- [How to Upgrade Your Wi-Fi Setup Without Replacing Everything](/posts/how-to-upgrade-your-wifi-without-replacing-everything/)

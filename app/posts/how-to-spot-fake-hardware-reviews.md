@@ -113,6 +113,6 @@ The most useful Amazon reviews are from verified buyers who describe their speci
 
 ## Related Guides
 
-- [What Is the Best Motherboard for Ryzen 7 7800X3D?](/posts/what-is-the-best-motherboard-for-ryzen-7-7800x3d)
-- [Best SSD for Gaming in 2026: What Actually Matters](/posts/best-ssd-for-gaming-2026)
-- [How to Spot a Good Used GPU Deal](/posts/how-to-spot-a-good-used-gpu-deal)
+- [What Is the Best Motherboard for Ryzen 7 7800X3D?](/posts/what-is-the-best-motherboard-for-ryzen-7-7800x3d/)
+- [Best SSD for Gaming in 2026: What Actually Matters](/posts/best-ssd-for-gaming-2026/)
+- [How to Spot a Good Used GPU Deal](/posts/how-to-spot-a-good-used-gpu-deal/)

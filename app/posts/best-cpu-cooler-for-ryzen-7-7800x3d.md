@@ -80,6 +80,6 @@ No. AMD's processor warranty is not voided by using any aftermarket cooler. Just
 
 ## Related Guides
 
-- [BIOS Tuning Basics for Stable Overnight Overclocking](/posts/biostuning-basics-for-stable-overnight-overclocking)
-- [How to Choose the Right PC Case](/posts/how-to-choose-the-right-pc-case)
-- [SSD vs HDD: Which Should You Buy in 2026?](/posts/ssd-vs-hdd-which-should-you-buy-in-2026)
+- [BIOS Tuning Basics for Stable Overnight Overclocking](/posts/biostuning-basics-for-stable-overnight-overclocking/)
+- [How to Choose the Right PC Case](/posts/how-to-choose-the-right-pc-case/)
+- [SSD vs HDD: Which Should You Buy in 2026?](/posts/ssd-vs-hdd-which-should-you-buy-in-2026/)

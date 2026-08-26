@@ -86,6 +86,6 @@ For productivity and office work, an SSD is the single biggest upgrade if you ar
 
 ## Related Guides
 
-- [The Best Way to Upgrade a PC Without Replacing Everything](/posts/the-best-way-to-upgrade-your-pc-without-replacing-everything)
-- [How to Upgrade Your Laptop Without Buying a New One](/posts/how-to-upgrade-your-laptop-without-buying-a-new-one)
-- [When to Upgrade Your GPU Instead of Your CPU](/posts/when-to-upgrade-your-gpu-vs-your-cpu)
+- [The Best Way to Upgrade a PC Without Replacing Everything](/posts/the-best-way-to-upgrade-your-pc-without-replacing-everything/)
+- [How to Upgrade Your Laptop Without Buying a New One](/posts/how-to-upgrade-your-laptop-without-buying-a-new-one/)
+- [When to Upgrade Your GPU Instead of Your CPU](/posts/when-to-upgrade-your-gpu-vs-your-cpu/)

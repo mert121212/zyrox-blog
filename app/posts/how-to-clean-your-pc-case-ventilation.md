@@ -86,6 +86,6 @@ Pet owners have it the worst. If you have a cat or dog, you should be checking y
 
 ## Related Guides
 
-- [How to Keep a PC Running Well for Years](/posts/how-to-keep-a-pc-running-well-for-years)
-- [How to Clean a PC Without Damaging the Components](/posts/how-to-clean-a-pc-without-damaging-components)
-- [The Best Way to Upgrade a PC Without Replacing Everything](/posts/the-best-way-to-upgrade-your-pc-without-replacing-everything)
+- [How to Keep a PC Running Well for Years](/posts/how-to-keep-a-pc-running-well-for-years/)
+- [How to Clean a PC Without Damaging the Components](/posts/how-to-clean-a-pc-without-damaging-components/)
+- [The Best Way to Upgrade a PC Without Replacing Everything](/posts/the-best-way-to-upgrade-your-pc-without-replacing-everything/)

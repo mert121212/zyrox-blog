@@ -90,6 +90,6 @@ The performance hit is real — Thunderbolt 4 bandwidth limits mean you'll see r
 
 ## Related Guides
 
-- [When to Upgrade Your GPU Instead of Your CPU](/posts/when-to-upgrade-your-gpu-vs-your-cpu)
-- [The Best Way to Upgrade a PC Without Replacing Everything](/posts/the-best-way-to-upgrade-your-pc-without-replacing-everything)
-- [The Best Way to Plan a PC Upgrade Cycle](/posts/the-best-way-to-plan-a-pc-upgrade-cycle)
+- [When to Upgrade Your GPU Instead of Your CPU](/posts/when-to-upgrade-your-gpu-vs-your-cpu/)
+- [The Best Way to Upgrade a PC Without Replacing Everything](/posts/the-best-way-to-upgrade-your-pc-without-replacing-everything/)
+- [The Best Way to Plan a PC Upgrade Cycle](/posts/the-best-way-to-plan-a-pc-upgrade-cycle/)

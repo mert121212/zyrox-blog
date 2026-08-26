@@ -101,6 +101,6 @@ Walk away if wattage is listed without specifying continuous or peak, or if ther
 
 ## Related Guides
 
-- [The BIOS Settings That Matter Most for a Stable Overclock](/posts/bios-settings-for-stable-overclock)
-- [Signs Your Motherboard May Be Failing](/posts/signs-your-motherboard-is-failing)
-- [How to Choose a Motherboard for a New PC Build Without Overpaying](/posts/how-to-choose-a-motherboard-for-a-new-build)
+- [The BIOS Settings That Matter Most for a Stable Overclock](/posts/bios-settings-for-stable-overclock/)
+- [Signs Your Motherboard May Be Failing](/posts/signs-your-motherboard-is-failing/)
+- [How to Choose a Motherboard for a New PC Build Without Overpaying](/posts/how-to-choose-a-motherboard-for-a-new-build/)

@@ -91,6 +91,6 @@ Check your front filter. If you can't see light through it, it's time to clean. 
 
 ## Related Guides
 
-- [How to Clean Your PC Case Ventilation Properly](/posts/how-to-clean-your-pc-case-ventilation)
-- [How to Upgrade Your Laptop Without Buying a New One](/posts/how-to-upgrade-your-laptop-without-buying-a-new-one)
-- [How to Keep a PC Running Well for Years](/posts/how-to-keep-a-pc-running-well-for-years)
+- [How to Clean Your PC Case Ventilation Properly](/posts/how-to-clean-your-pc-case-ventilation/)
+- [How to Upgrade Your Laptop Without Buying a New One](/posts/how-to-upgrade-your-laptop-without-buying-a-new-one/)
+- [How to Keep a PC Running Well for Years](/posts/how-to-keep-a-pc-running-well-for-years/)

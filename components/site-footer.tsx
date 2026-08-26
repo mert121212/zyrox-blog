@@ -5,14 +5,14 @@ const currentYear = 2026;
 const footerLinks = {
     content: [
         { href: '/', label: 'Home' },
-        { href: '/about', label: 'About' },
-        { href: '/authors', label: 'Authors' },
-        { href: '/contact', label: 'Contact' },
+        { href: '/about/', label: 'About' },
+        { href: '/authors/', label: 'Authors' },
+        { href: '/contact/', label: 'Contact' },
     ],
     legal: [
-        { href: '/privacy-policy', label: 'Privacy Policy' },
-        { href: '/terms', label: 'Terms of Use' },
-        { href: '/disclaimer', label: 'Disclaimer' },
+        { href: '/privacy-policy/', label: 'Privacy Policy' },
+        { href: '/terms/', label: 'Terms of Use' },
+        { href: '/disclaimer/', label: 'Disclaimer' },
     ],
 };
 
@@ -61,8 +61,8 @@ export function SiteFooter() {
                 <p>© {currentYear} Zyrox. All rights reserved. Independent PC hardware publication.</p>
                 <p className="site-footer__disclaimer">
                     Content is provided for informational purposes. See our{' '}
-                    <Link href="/terms">Terms of Use</Link> and{' '}
-                    <Link href="/privacy-policy">Privacy Policy</Link>.
+                    <Link href="/terms/">Terms of Use</Link> and{' '}
+                    <Link href="/privacy-policy/">Privacy Policy</Link>.
                 </p>
             </div>
         </footer>

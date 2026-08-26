@@ -74,6 +74,6 @@ Stick to the built-in Windows tools, keep your startup list clean, and manage yo
 
 ## Related Guides
 
-- [How to Fix Windows Update Problems in 2026](/posts/how-to-fix-windows-update-problems-2026)
-- [How to Install Windows from a USB Drive Without Making a Mess of It](/posts/how-to-install-windows-from-a-usb)
-- [What to Check First When a PC Won't Boot](/posts/what-to-check-first-when-a-pc-wont-boot)
+- [How to Fix Windows Update Problems in 2026](/posts/how-to-fix-windows-update-problems-2026/)
+- [How to Install Windows from a USB Drive Without Making a Mess of It](/posts/how-to-install-windows-from-a-usb/)
+- [What to Check First When a PC Won't Boot](/posts/what-to-check-first-when-a-pc-wont-boot/)

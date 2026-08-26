@@ -14,7 +14,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
     return {
         title: `${author.role} — ${author.department}`,
         description: author.bio,
-        alternates: { canonical: `/authors/${params.slug}` },
+        alternates: { canonical: `/authors/${params.slug}/` },
         openGraph: {
             title: `${author.role} | Zyrox Editorial Team`,
             description: author.bio,
@@ -48,7 +48,7 @@ export default function AuthorPage({ params }: { params: { slug: string } }) {
                                     <div className="post-meta">{post.date}</div>
                                     <h3>{post.title}</h3>
                                     <p>{post.excerpt}</p>
-                                    <Link href={`/posts/${post.slug}`} className="post-link">
+                                    <Link href={`/posts/${post.slug}/`} className="post-link">
                                         Read article →
                                     </Link>
                                 </article>
@@ -58,7 +58,7 @@ export default function AuthorPage({ params }: { params: { slug: string } }) {
                 )}
 
                 <div style={{ marginTop: '2rem' }}>
-                    <Link href="/authors" className="post-link">← All editorial team</Link>
+                    <Link href="/authors/" className="post-link">← All editorial team</Link>
                 </div>
             </div>
         </main>

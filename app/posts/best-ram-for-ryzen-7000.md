@@ -78,6 +78,6 @@ Always buy a matched 2-stick kit. Don't overthink it, buy 6000MHz CL30, turn on 
 
 ## Related Guides
 
-- [What Does RAM Actually Do in a Computer?](/posts/what-does-ram-actually-do-in-a-computer)
-- [How to Clean a PC Without Damaging the Components](/posts/how-to-clean-a-pc-without-damaging-components)
-- [Signs Your Motherboard May Be Failing](/posts/signs-your-motherboard-is-failing)
+- [What Does RAM Actually Do in a Computer?](/posts/what-does-ram-actually-do-in-a-computer/)
+- [How to Clean a PC Without Damaging the Components](/posts/how-to-clean-a-pc-without-damaging-components/)
+- [Signs Your Motherboard May Be Failing](/posts/signs-your-motherboard-is-failing/)

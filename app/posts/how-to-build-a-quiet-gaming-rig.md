@@ -82,6 +82,6 @@ My peak gaming noise dropped from 51 dBA to 22 dBA. Because the decibel scale is
 
 ## Related Guides
 
-- [How to Build a Budget Gaming PC That Still Feels Fast](/posts/how-to-build-a-budget-gaming-pc)
-- [How to Check If Your PC Can Run a Game Before You Buy It](/posts/how-to-check-if-your-pc-can-run-a-game-before-you-buy-it)
-- [What Actually Matters in a Gaming PC Build](/posts/what-actually-matters-in-a-gaming-pc)
+- [How to Build a Budget Gaming PC That Still Feels Fast](/posts/how-to-build-a-budget-gaming-pc/)
+- [How to Check If Your PC Can Run a Game Before You Buy It](/posts/how-to-check-if-your-pc-can-run-a-game-before-you-buy-it/)
+- [What Actually Matters in a Gaming PC Build](/posts/what-actually-matters-in-a-gaming-pc/)

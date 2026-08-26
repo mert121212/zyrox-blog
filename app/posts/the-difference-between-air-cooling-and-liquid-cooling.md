@@ -78,6 +78,6 @@ For a Ryzen 7 7700X or Core i7-13700K at stock settings, the Noctua NH-D15 is th
 
 ## Related Guides
 
-- [How to Choose the Right Case Fan Setup](/posts/how-to-choose-the-right-case-fan-setup)
-- [Why CPU Cooling Still Matters More Than People Pretend](/posts/why-cooling-still-matters-in-2026)
-- [How to Reduce PC Noise Without Sacrificing Cooling](/posts/how-to-reduce-pc-noise-without-sacrificing-cooling)
+- [How to Choose the Right Case Fan Setup](/posts/how-to-choose-the-right-case-fan-setup/)
+- [Why CPU Cooling Still Matters More Than People Pretend](/posts/why-cooling-still-matters-in-2026/)
+- [How to Reduce PC Noise Without Sacrificing Cooling](/posts/how-to-reduce-pc-noise-without-sacrificing-cooling/)
