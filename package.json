@@ -9,6 +9,8 @@
         "start": "next start",
         "lint": "next lint",
         "indexnow": "node scripts/indexnow.mjs",
+        "index:google": "node scripts/google-indexing.mjs",
+        "ping": "node scripts/ping-search-engines.mjs",
         "export:blogger": "node scripts/generate-blogger-import.mjs"
     },
     "dependencies": {
