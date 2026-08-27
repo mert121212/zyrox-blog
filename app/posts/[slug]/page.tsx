@@ -6,6 +6,7 @@ import { getAllPosts, getPostBySlug } from '@/lib/posts';
 import { getAuthorBySlug } from '@/lib/authors';
 import { AuthorCard } from '@/components/author-card';
 import { Breadcrumb } from '@/components/breadcrumb';
+import { RelatedPosts } from '@/components/related-posts';
 
 // Ensure all internal links rendered from markdown have trailing slashes,
 // matching the trailingSlash: true config. Prevents 301 redirects that
@@ -44,10 +45,6 @@ const HelpfulVote = dynamic(
 );
 const ReadingListToggle = dynamic(
     () => import('@/components/reading-list-toggle').then((m) => ({ default: m.ReadingListToggle })),
-    { ssr: false },
-);
-const RelatedPosts = dynamic(
-    () => import('@/components/related-posts').then((m) => ({ default: m.RelatedPosts })),
     { ssr: false },
 );
 

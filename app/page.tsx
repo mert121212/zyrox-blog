@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { getAllPosts } from '../lib/posts';
 import { SearchAndFilter } from '../components/search-and-filter';
+import { TopicDirectory } from '../components/topic-directory';
 
 export const metadata = {
     alternates: { canonical: '/' },
@@ -31,6 +32,9 @@ export default function HomePage() {
                         <div className="premium-hero__actions">
                             <Link href="#latest" className="btn btn--primary btn--glow">
                                 Explore Guides
+                            </Link>
+                            <Link href="#topics" className="btn btn--secondary btn--glass">
+                                Browse Topics
                             </Link>
                             <Link href="/about/" className="btn btn--secondary btn--glass">
                                 About Our Lab
@@ -73,6 +77,10 @@ export default function HomePage() {
                     <SearchAndFilter posts={posts} />
                 </div>
             </section>
+
+            {/* Topic Directory - 100% Crawlable Pillar Clusters */}
+            <TopicDirectory posts={posts} />
         </main>
     );
 }
+

@@ -17,12 +17,6 @@
   from = "/tag/*"
   to = "/"
   status = 301
-
-[[redirects]]
-  from = "/*"
-  to = "/404/index.html"
-  status = 404
-
 # Ensure sitemap and RSS are served with correct content types
 [[headers]]
   for = "/sitemap.xml"
