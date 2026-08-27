@@ -116,4 +116,9 @@ ${posts
 fs.writeFileSync(path.join(publicDir, 'rss.xml'), rss, 'utf8');
 console.log('✓ public/rss.xml');
 
+// ── IndexNow Key ──────────────────────────────────────────
+const indexNowKey = '2B0eB64F21D54Fe8A6A9DD15C59FD067';
+fs.writeFileSync(path.join(publicDir, `${indexNowKey}.txt`), `${indexNowKey}\n`, 'utf8');
+console.log(`✓ public/${indexNowKey}.txt`);
+
 console.log(`\nGenerated ${posts.length} posts in sitemap/rss.`);
