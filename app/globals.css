@@ -1871,3 +1871,19 @@ main {
     padding-left: 4px;
 }
 
+/* ─── AdSense Fixes ───────────────────────────────────────── */
+
+/* 1. Prevent unfilled ads from defaulting to a white background on dark theme */
+ins.adsbygoogle {
+    background: transparent !important;
+}
+
+/* 2. Hide the unfilled ad ins tag entirely */
+ins.adsbygoogle[data-ad-status="unfilled"] {
+    display: none !important;
+}
+
+/* 3. Hide the wrapper div (which has margin) if it contains an unfilled ad */
+div:has(> ins.adsbygoogle[data-ad-status="unfilled"]) {
+    display: none !important;
+}
