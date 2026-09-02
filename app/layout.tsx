@@ -72,7 +72,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
                 <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
 
-                {/* Google Analytics — deferred to avoid render-blocking */}
+                {/* Google Analytics — deferred until browser idle or 2s */}
                 <script
                     dangerouslySetInnerHTML={{
                         __html: `
@@ -80,12 +80,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                             function gtag(){dataLayer.push(arguments);}
                             gtag('js', new Date());
                             gtag('config', 'G-3Q3BBMSERB');
-                            if (typeof window !== 'undefined') {
-                                var s = document.createElement('script');
-                                s.src = 'https://www.googletagmanager.com/gtag/js?id=G-3Q3BBMSERB';
-                                s.async = true;
-                                document.head.appendChild(s);
-                            }
+                            (function(){
+                                function loadGA(){
+                                    if(document.querySelector('script[src*="googletagmanager"]'))return;
+                                    var s=document.createElement('script');
+                                    s.src='https://www.googletagmanager.com/gtag/js?id=G-3Q3BBMSERB';
+                                    s.async=true;
+                                    document.head.appendChild(s);
+                                }
+                                if('requestIdleCallback' in window){
+                                    requestIdleCallback(loadGA,{timeout:2000});
+                                }else{
+                                    setTimeout(loadGA,2000);
+                                }
+                            })();
                         `,
                     }}
                 />

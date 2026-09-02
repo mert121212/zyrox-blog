@@ -15,74 +15,64 @@ export function AdBanner({
     dataFullWidthResponsive = true
 }: AdBannerProps) {
     const containerRef = useRef<HTMLDivElement>(null);
-    const [mounted, setMounted] = useState(false);
+    const [visible, setVisible] = useState(false);
     const pushed = useRef(false);
 
+    // Lazy load: only activate when ad is near the viewport
     useEffect(() => {
-        setMounted(true);
+        const el = containerRef.current;
+        if (!el) return;
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setVisible(true);
+                    observer.disconnect();
+                }
+            },
+            { rootMargin: '200px' } // Start loading 200px before it enters viewport
+        );
+
+        observer.observe(el);
+        return () => observer.disconnect();
     }, []);
 
     useEffect(() => {
-        if (!mounted || pushed.current) return;
+        if (!visible || pushed.current) return;
 
         const pushAd = () => {
             if (pushed.current) return;
             const el = containerRef.current;
-            if (!el) return;
+            if (!el || el.offsetWidth <= 0) return;
 
-            if (el.offsetWidth > 0) {
-                pushed.current = true;
-                try {
-                    // @ts-ignore
-                    (window.adsbygoogle = window.adsbygoogle || []).push({});
-                } catch (e) {
-                    // Silently ignore any benign push errors
-                }
+            pushed.current = true;
+            try {
+                // @ts-ignore
+                (window.adsbygoogle = window.adsbygoogle || []).push({});
+            } catch (e) {
+                // Silently ignore
             }
         };
 
-        const timer = setTimeout(pushAd, 200);
+        const timer = setTimeout(pushAd, 300);
         return () => clearTimeout(timer);
-    }, [mounted]);
-
-    if (!mounted) {
-        return (
-            <div
-                style={{
-                    margin: '2rem 0',
-                    textAlign: 'center',
-                    minHeight: '100px',
-                    width: '100%'
-                }}
-            />
-        );
-    }
+    }, [visible]);
 
     return (
         <div
             ref={containerRef}
-            style={{
-                margin: '2rem 0',
-                textAlign: 'center',
-                overflow: 'hidden',
-                minHeight: '100px',
-                width: '100%',
-                display: 'block'
-            }}
+            className="ad-container"
         >
-            <ins
-                className="adsbygoogle"
-                style={{
-                    display: 'block',
-                    width: '100%',
-                    minHeight: '100px',
-                    textAlign: 'center'
-                }}
-                data-ad-client="ca-pub-5194383766905175"
-                data-ad-slot={dataAdSlot}
-                data-ad-format={dataAdFormat}
-                data-full-width-responsive={dataFullWidthResponsive ? 'true' : 'false'}
-            />
+            {visible && (
+                <ins
+                    className="adsbygoogle"
+                    style={{ display: 'block' }}
+                    data-ad-client="ca-pub-5194383766905175"
+                    data-ad-slot={dataAdSlot}
+                    data-ad-format={dataAdFormat}
+                    data-full-width-responsive={dataFullWidthResponsive ? 'true' : 'false'}
+                />
+            )}
         </div>
     );
 }
@@ -102,7 +92,7 @@ export function MidArticleAdInjector() {
                 if (el) els.push(el);
             }
             if (els.length > 0) setPlaceholders(els);
-        }, 150);
+        }, 200);
         return () => clearTimeout(timer);
     }, []);
 

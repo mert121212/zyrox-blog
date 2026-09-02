@@ -1873,36 +1873,51 @@ main {
 
 /* ─── AdSense Fixes ───────────────────────────────────────── */
 
-/* 1. Prevent unfilled ads from defaulting to a white background on dark theme */
+/* Ad container: adapts to actual ad size, no fixed height = no white gaps */
+.ad-container {
+    margin: 1.5rem 0;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    background: transparent;
+    border-radius: 8px;
+}
+
+/* Force transparent background on all AdSense ins elements */
 ins.adsbygoogle {
     background: transparent !important;
 }
 
-/* 2. Collapse unfilled ads safely without display:none so availableWidth calculation stays valid */
-ins.adsbygoogle[data-ad-status="unfilled"],
-ins.adsbygoogle[data-ad-status="unfilled"] * {
-    height: 0 !important;
-    min-height: 0 !important;
-    max-height: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    border: none !important;
-    visibility: hidden !important;
-    overflow: hidden !important;
-    opacity: 0 !important;
-    pointer-events: none !important;
+/* Force transparent on AdSense iframes (the actual ad content wrapper) */
+ins.adsbygoogle > iframe,
+ins.adsbygoogle > div {
+    background: transparent !important;
 }
 
-/* 3. Collapse the wrapper div if it contains an unfilled ad */
-div:has(> ins.adsbygoogle[data-ad-status="unfilled"]) {
+/* Collapse unfilled ads: zero height + hidden, no white space left behind */
+ins.adsbygoogle[data-ad-status="unfilled"] {
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+/* Collapse the wrapper .ad-container if its child ad is unfilled */
+.ad-container:has(> ins.adsbygoogle[data-ad-status="unfilled"]) {
     height: 0 !important;
     min-height: 0 !important;
     max-height: 0 !important;
     margin: 0 !important;
     padding: 0 !important;
-    border: none !important;
-    visibility: hidden !important;
     overflow: hidden !important;
+    visibility: hidden !important;
     opacity: 0 !important;
-    pointer-events: none !important;
 }
+
+/* Mid-article placeholders should have no default size */
+[id^="mid-article-ad-placeholder"] {
+    background: transparent;
+}
+
