@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 interface AdBannerProps {
     dataAdSlot?: string;
@@ -9,26 +9,33 @@ interface AdBannerProps {
 }
 
 export function AdBanner({ dataAdSlot = '2799753806', dataAdFormat = 'auto', dataFullWidthResponsive = true }: AdBannerProps) {
-    const adRef = useRef<HTMLDivElement>(null);
+    const [mounted, setMounted] = useState(false);
     const pushed = useRef(false);
 
     useEffect(() => {
-        if (pushed.current) return;
-        pushed.current = true;
-
-        try {
-            const timer = setTimeout(() => {
-                // @ts-ignore
-                (window.adsbygoogle = window.adsbygoogle || []).push({});
-            }, 300);
-            return () => clearTimeout(timer);
-        } catch (error) {
-            console.error('AdSense error:', error);
-        }
+        setMounted(true);
     }, []);
 
+    useEffect(() => {
+        if (!mounted || pushed.current) return;
+        pushed.current = true;
+
+        const timer = setTimeout(() => {
+            try {
+                // @ts-ignore
+                (window.adsbygoogle = window.adsbygoogle || []).push({});
+            } catch (error) {
+                console.error('AdSense error:', error);
+            }
+        }, 300);
+
+        return () => clearTimeout(timer);
+    }, [mounted]);
+
+    if (!mounted) return null;
+
     return (
-        <div ref={adRef} style={{ margin: '2rem 0', textAlign: 'center', overflow: 'hidden', minHeight: '100px' }}>
+        <div style={{ margin: '2rem 0', textAlign: 'center', overflow: 'hidden', minHeight: '100px' }}>
             <ins className="adsbygoogle"
                 style={{ display: 'block' }}
                 data-ad-client="ca-pub-5194383766905175"

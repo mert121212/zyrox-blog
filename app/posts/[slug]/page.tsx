@@ -7,7 +7,6 @@ import { getAuthorBySlug } from '@/lib/authors';
 import { AuthorCard } from '@/components/author-card';
 import { Breadcrumb } from '@/components/breadcrumb';
 import { RelatedPosts } from '@/components/related-posts';
-import { AdBanner } from '@/components/ad-banner';
 
 // Ensure all internal links rendered from markdown have trailing slashes,
 // matching the trailingSlash: true config. Prevents 301 redirects that
@@ -46,6 +45,10 @@ const HelpfulVote = dynamic(
 );
 const ReadingListToggle = dynamic(
     () => import('@/components/reading-list-toggle').then((m) => ({ default: m.ReadingListToggle })),
+    { ssr: false },
+);
+const AdBanner = dynamic(
+    () => import('@/components/ad-banner').then((m) => ({ default: m.AdBanner })),
     { ssr: false },
 );
 
@@ -190,7 +193,6 @@ export default function PostPage({ params }: { params: { slug: string } }) {
 
                             {/* Ad: top of article */}
                             <AdBanner />
-
 
                             <script
                                 type="application/ld+json"
