@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Space_Grotesk } from 'next/font/google';
 import dynamic from 'next/dynamic';
+import Script from 'next/script';
 import './globals.css';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
@@ -78,7 +79,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                             function gtag(){dataLayer.push(arguments);}
                             gtag('js', new Date());
                             gtag('config', 'G-3Q3BBMSERB');
-                            // Load gtag.js after page is interactive
                             if (typeof window !== 'undefined') {
                                 var s = document.createElement('script');
                                 s.src = 'https://www.googletagmanager.com/gtag/js?id=G-3Q3BBMSERB';
@@ -88,18 +88,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                         `,
                     }}
                 />
-                {/* AdSense */}
-                <script
-                    async
-                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5194383766905175"
-                    crossOrigin="anonymous"
-                />
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
                 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
                 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
                 <link rel="manifest" href="/site.webmanifest" />
             </head>
-            <body>
+            <body suppressHydrationWarning>
+                {/* AdSense — loaded AFTER React hydration to prevent DOM mismatch errors */}
+                <Script
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5194383766905175"
+                    crossOrigin="anonymous"
+                    strategy="afterInteractive"
+                />
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
