@@ -7,6 +7,7 @@ import { getAuthorBySlug } from '@/lib/authors';
 import { AuthorCard } from '@/components/author-card';
 import { Breadcrumb } from '@/components/breadcrumb';
 import { RelatedPosts } from '@/components/related-posts';
+import { AdBanner } from '@/components/ad-banner';
 
 // Ensure all internal links rendered from markdown have trailing slashes,
 // matching the trailingSlash: true config. Prevents 301 redirects that
@@ -187,6 +188,9 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                                 </div>
                             )}
 
+                            {/* Ad placement: top of article */}
+                            <AdBanner dataAdSlot="auto" dataAdFormat="auto" />
+
 
                             <script
                                 type="application/ld+json"
@@ -198,6 +202,9 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                             />
 
                             <div className="article-body" dangerouslySetInnerHTML={{ __html: contentHtml }} />
+
+                            {/* Ad placement: bottom of article */}
+                            <AdBanner dataAdSlot="auto" dataAdFormat="auto" />
 
                             <HelpfulVote slug={params.slug} />
 

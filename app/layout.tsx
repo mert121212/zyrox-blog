@@ -88,21 +88,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                         `,
                     }}
                 />
-                {/* AdSense — deferred to avoid render-blocking */}
+                {/* AdSense */}
                 <script
-                    dangerouslySetInnerHTML={{
-                        __html: `
-                            if (typeof window !== 'undefined') {
-                                window.addEventListener('load', function() {
-                                    var a = document.createElement('script');
-                                    a.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-5194383766905175';
-                                    a.async = true;
-                                    a.crossOrigin = 'anonymous';
-                                    document.head.appendChild(a);
-                                });
-                            }
-                        `,
-                    }}
+                    async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5194383766905175"
+                    crossOrigin="anonymous"
                 />
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
                 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
