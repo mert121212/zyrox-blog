@@ -15,63 +15,48 @@ export function AdBanner({
     dataFullWidthResponsive = true
 }: AdBannerProps) {
     const containerRef = useRef<HTMLDivElement>(null);
-    const [shouldRenderAd, setShouldRenderAd] = useState(false);
+    const [mounted, setMounted] = useState(false);
     const pushed = useRef(false);
 
     useEffect(() => {
-        const el = containerRef.current;
-        if (!el) return;
-
-        const checkVisibility = () => {
-            if (pushed.current) return;
-            // Only allow rendering the <ins> tag if container is visible and has width > 0
-            if (el.offsetWidth > 0 && el.offsetHeight >= 0 && window.getComputedStyle(el).display !== 'none') {
-                setShouldRenderAd(true);
-            }
-        };
-
-        // Check on mount
-        checkVisibility();
-
-        // Check via ResizeObserver if initially hidden (e.g. mobile responsive sidebar)
-        let observer: ResizeObserver | null = null;
-        if (typeof ResizeObserver !== 'undefined') {
-            observer = new ResizeObserver((entries) => {
-                for (const entry of entries) {
-                    if (entry.contentRect.width > 0) {
-                        checkVisibility();
-                    }
-                }
-            });
-            observer.observe(el);
-        }
-
-        return () => {
-            if (observer) observer.disconnect();
-        };
+        setMounted(true);
     }, []);
 
     useEffect(() => {
-        if (!shouldRenderAd || pushed.current) return;
+        if (!mounted || pushed.current) return;
 
-        // Give the browser time to layout the newly rendered <ins> tag
-        const timer = setTimeout(() => {
+        const pushAd = () => {
             if (pushed.current) return;
             const el = containerRef.current;
-            if (el && el.offsetWidth > 0) {
+            if (!el) return;
+
+            if (el.offsetWidth > 0) {
                 pushed.current = true;
                 try {
                     // @ts-ignore
                     (window.adsbygoogle = window.adsbygoogle || []).push({});
-                } catch (err) {
-                    // Suppress any benign ad push errors
-                    console.warn('AdSense notice:', err);
+                } catch (e) {
+                    // Silently ignore any benign push errors
                 }
             }
-        }, 150);
+        };
 
+        const timer = setTimeout(pushAd, 200);
         return () => clearTimeout(timer);
-    }, [shouldRenderAd]);
+    }, [mounted]);
+
+    if (!mounted) {
+        return (
+            <div
+                style={{
+                    margin: '2rem 0',
+                    textAlign: 'center',
+                    minHeight: '100px',
+                    width: '100%'
+                }}
+            />
+        );
+    }
 
     return (
         <div
@@ -80,21 +65,24 @@ export function AdBanner({
                 margin: '2rem 0',
                 textAlign: 'center',
                 overflow: 'hidden',
-                minHeight: shouldRenderAd ? '100px' : '0px',
+                minHeight: '100px',
                 width: '100%',
                 display: 'block'
             }}
         >
-            {shouldRenderAd && (
-                <ins
-                    className="adsbygoogle"
-                    style={{ display: 'block', width: '100%' }}
-                    data-ad-client="ca-pub-5194383766905175"
-                    data-ad-slot={dataAdSlot}
-                    data-ad-format={dataAdFormat}
-                    data-full-width-responsive={dataFullWidthResponsive ? 'true' : 'false'}
-                />
-            )}
+            <ins
+                className="adsbygoogle"
+                style={{
+                    display: 'block',
+                    width: '100%',
+                    minHeight: '100px',
+                    textAlign: 'center'
+                }}
+                data-ad-client="ca-pub-5194383766905175"
+                data-ad-slot={dataAdSlot}
+                data-ad-format={dataAdFormat}
+                data-full-width-responsive={dataFullWidthResponsive ? 'true' : 'false'}
+            />
         </div>
     );
 }

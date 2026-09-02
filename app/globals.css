@@ -1878,12 +1878,31 @@ ins.adsbygoogle {
     background: transparent !important;
 }
 
-/* 2. Hide the unfilled ad ins tag entirely */
-ins.adsbygoogle[data-ad-status="unfilled"] {
-    display: none !important;
+/* 2. Collapse unfilled ads safely without display:none so availableWidth calculation stays valid */
+ins.adsbygoogle[data-ad-status="unfilled"],
+ins.adsbygoogle[data-ad-status="unfilled"] * {
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    visibility: hidden !important;
+    overflow: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
 }
 
-/* 3. Hide the wrapper div (which has margin) if it contains an unfilled ad */
+/* 3. Collapse the wrapper div if it contains an unfilled ad */
 div:has(> ins.adsbygoogle[data-ad-status="unfilled"]) {
-    display: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    visibility: hidden !important;
+    overflow: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
 }

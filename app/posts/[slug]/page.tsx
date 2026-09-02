@@ -239,10 +239,6 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                     </div>
                     <aside className="article-sidebar">
                         <TableOfContents content={post.content} />
-                        {/* Ad: sidebar */}
-                        <div style={{ marginTop: '2rem' }}>
-                            <AdBanner dataAdFormat="rectangle" />
-                        </div>
                     </aside>
                 </div>
             </div>
