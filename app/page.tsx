@@ -1,7 +1,13 @@
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { getAllPosts } from '../lib/posts';
 import { SearchAndFilter } from '../components/search-and-filter';
 import { TopicDirectory } from '../components/topic-directory';
+
+const AdBanner = dynamic(
+    () => import('../components/ad-banner').then((m) => ({ default: m.AdBanner })),
+    { ssr: false },
+);
 
 export const metadata = {
     alternates: { canonical: '/' },
@@ -44,6 +50,11 @@ export default function HomePage() {
                 </div>
             </section>
 
+            {/* Ad: after hero */}
+            <div className="container">
+                <AdBanner />
+            </div>
+
             {/* Featured Section */}
             <section className="section featured-section">
                 <div className="container">
@@ -67,6 +78,11 @@ export default function HomePage() {
                 </div>
             </section>
 
+            {/* Ad: between featured and archives */}
+            <div className="container">
+                <AdBanner />
+            </div>
+
             {/* All Articles Section with Search */}
             <section id="latest" className="section archive-section">
                 <div className="container">
@@ -78,9 +94,13 @@ export default function HomePage() {
                 </div>
             </section>
 
+            {/* Ad: between archives and topics */}
+            <div className="container">
+                <AdBanner />
+            </div>
+
             {/* Topic Directory - 100% Crawlable Pillar Clusters */}
             <TopicDirectory posts={posts} />
         </main>
     );
 }
-

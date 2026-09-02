@@ -7,6 +7,7 @@ import { getAuthorBySlug } from '@/lib/authors';
 import { AuthorCard } from '@/components/author-card';
 import { Breadcrumb } from '@/components/breadcrumb';
 import { RelatedPosts } from '@/components/related-posts';
+import { injectMidArticleAd } from '@/components/ad-banner';
 
 // Ensure all internal links rendered from markdown have trailing slashes,
 // matching the trailingSlash: true config. Prevents 301 redirects that
@@ -97,7 +98,9 @@ export default function PostPage({ params }: { params: { slug: string } }) {
     if (!post) notFound();
 
     const author = getAuthorBySlug(post.author);
-    const contentHtml = marked.parse(post.content);
+    const rawHtml = marked.parse(post.content);
+    // Inject a mid-article ad after the 4th paragraph
+    const contentHtml = injectMidArticleAd(rawHtml as string, 4);
     const allPosts = getAllPosts();
 
     const jsonLd = {
@@ -191,7 +194,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                                 </div>
                             )}
 
-                            {/* Ad: top of article */}
+                            {/* Ad 1: top of article */}
                             <AdBanner />
 
                             <script
@@ -203,9 +206,10 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
                             />
 
+                            {/* Article body with mid-article ad injected after 4th paragraph */}
                             <div className="article-body" dangerouslySetInnerHTML={{ __html: contentHtml }} />
 
-                            {/* Ad: bottom of article */}
+                            {/* Ad 3: bottom of article */}
                             <AdBanner />
 
                             <HelpfulVote slug={params.slug} />
@@ -218,6 +222,9 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                                 </div>
                             )}
 
+                            {/* Ad 4: after author box */}
+                            <AdBanner />
+
                             <Link href="/" className="post-link" style={{ display: 'inline-block', marginTop: '1.5rem' }}>
                                 ← Back to home
                             </Link>
@@ -227,6 +234,10 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                     </div>
                     <aside className="article-sidebar">
                         <TableOfContents content={post.content} />
+                        {/* Ad: sidebar */}
+                        <div style={{ marginTop: '2rem' }}>
+                            <AdBanner dataAdFormat="rectangle" />
+                        </div>
                     </aside>
                 </div>
             </div>
