@@ -1,21 +1,49 @@
 /**
- * Injects an ad unit into article HTML content after approximately the Nth paragraph.
- * This is used to insert mid-article ads without needing React components inside
- * dangerouslySetInnerHTML content.
+ * Safely injects an ad placeholder into article HTML after the Nth paragraph.
+ * Uses index search to avoid malformed HTML tag splitting.
  */
 export function injectMidArticleAd(html: string, afterParagraph: number = 4): string {
+    if (!html) return '';
     const adHtml = `<div id="mid-article-ad-placeholder"></div>`;
 
-    // Split by closing </p> tags and inject after the Nth one
-    const parts = html.split('</p>');
-    if (parts.length <= afterParagraph) {
-        // Not enough paragraphs, inject before the last one
-        const midPoint = Math.floor(parts.length / 2);
-        if (midPoint === 0) return html; // Too short
-        parts.splice(midPoint, 0, '</p>' + adHtml);
-        return parts.join('</p>');
+    let count = 0;
+    let index = 0;
+    let targetIndex = -1;
+
+    // Count total <p> closures and find the target paragraph
+    while (index !== -1) {
+        index = html.indexOf('</p>', index);
+        if (index !== -1) {
+            count++;
+            if (count === afterParagraph) {
+                targetIndex = index + 4; // right after '</p>'
+                break;
+            }
+            index += 4;
+        }
     }
 
-    parts.splice(afterParagraph, 0, '</p>' + adHtml);
-    return parts.join('</p>');
+    if (targetIndex !== -1) {
+        return html.slice(0, targetIndex) + adHtml + html.slice(targetIndex);
+    }
+
+    // If there are fewer paragraphs than afterParagraph, but at least 2, place at midpoint
+    if (count >= 2) {
+        const midTarget = Math.floor(count / 2);
+        let midCount = 0;
+        let midIdx = 0;
+        while (midIdx !== -1) {
+            midIdx = html.indexOf('</p>', midIdx);
+            if (midIdx !== -1) {
+                midCount++;
+                if (midCount === midTarget) {
+                    const insertAt = midIdx + 4;
+                    return html.slice(0, insertAt) + adHtml + html.slice(insertAt);
+                }
+                midIdx += 4;
+            }
+        }
+    }
+
+    return html;
 }
