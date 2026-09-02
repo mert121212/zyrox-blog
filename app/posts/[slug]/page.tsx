@@ -7,7 +7,7 @@ import { getAuthorBySlug } from '@/lib/authors';
 import { AuthorCard } from '@/components/author-card';
 import { Breadcrumb } from '@/components/breadcrumb';
 import { RelatedPosts } from '@/components/related-posts';
-import { injectMidArticleAd } from '@/lib/ads';
+import { injectMidArticleAds } from '@/lib/ads';
 
 // Ensure all internal links rendered from markdown have trailing slashes,
 // matching the trailingSlash: true config. Prevents 301 redirects that
@@ -104,7 +104,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
     const author = getAuthorBySlug(post.author);
     const rawHtml = marked.parse(post.content);
     // Inject a mid-article ad after the 4th paragraph
-    const contentHtml = injectMidArticleAd(rawHtml as string, 4);
+    const contentHtml = injectMidArticleAds(rawHtml as string);
     const allPosts = getAllPosts();
 
     const jsonLd = {

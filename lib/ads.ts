@@ -1,49 +1,61 @@
 /**
- * Safely injects an ad placeholder into article HTML after the Nth paragraph.
+ * Injects ad placeholders into article HTML after specific paragraphs.
+ * Places two mid-article ads: one after the 3rd paragraph and one after the 8th.
  * Uses index search to avoid malformed HTML tag splitting.
  */
-export function injectMidArticleAd(html: string, afterParagraph: number = 4): string {
+export function injectMidArticleAds(html: string): string {
     if (!html) return '';
-    const adHtml = `<div id="mid-article-ad-placeholder"></div>`;
 
-    let count = 0;
-    let index = 0;
-    let targetIndex = -1;
+    // Count total </p> tags first
+    let totalParagraphs = 0;
+    let searchIdx = 0;
+    while (true) {
+        const found = html.indexOf('</p>', searchIdx);
+        if (found === -1) break;
+        totalParagraphs++;
+        searchIdx = found + 4;
+    }
 
-    // Count total <p> closures and find the target paragraph
-    while (index !== -1) {
-        index = html.indexOf('</p>', index);
-        if (index !== -1) {
+    // Need at least 4 paragraphs to inject anything
+    if (totalParagraphs < 4) return html;
+
+    // Determine insertion points
+    const insertAfter: number[] = [];
+
+    if (totalParagraphs >= 8) {
+        // Long article: insert after 3rd and 8th paragraph
+        insertAfter.push(3, 8);
+    } else if (totalParagraphs >= 5) {
+        // Medium article: insert after 3rd paragraph only
+        insertAfter.push(3);
+    } else {
+        // Short article (4 paragraphs): insert after 2nd
+        insertAfter.push(2);
+    }
+
+    // Insert from last to first to preserve indices
+    const sortedDesc = [...insertAfter].sort((a, b) => b - a);
+
+    let result = html;
+    for (let i = 0; i < sortedDesc.length; i++) {
+        const afterP = sortedDesc[i];
+        const placeholderId = `mid-article-ad-placeholder-${i}`;
+        const adHtml = `<div id="${placeholderId}"></div>`;
+
+        let count = 0;
+        let idx = 0;
+        while (true) {
+            const found = result.indexOf('</p>', idx);
+            if (found === -1) break;
             count++;
-            if (count === afterParagraph) {
-                targetIndex = index + 4; // right after '</p>'
+            if (count === afterP) {
+                const insertAt = found + 4;
+                result = result.slice(0, insertAt) + adHtml + result.slice(insertAt);
                 break;
             }
-            index += 4;
+            idx = found + 4;
         }
     }
 
-    if (targetIndex !== -1) {
-        return html.slice(0, targetIndex) + adHtml + html.slice(targetIndex);
-    }
-
-    // If there are fewer paragraphs than afterParagraph, but at least 2, place at midpoint
-    if (count >= 2) {
-        const midTarget = Math.floor(count / 2);
-        let midCount = 0;
-        let midIdx = 0;
-        while (midIdx !== -1) {
-            midIdx = html.indexOf('</p>', midIdx);
-            if (midIdx !== -1) {
-                midCount++;
-                if (midCount === midTarget) {
-                    const insertAt = midIdx + 4;
-                    return html.slice(0, insertAt) + adHtml + html.slice(insertAt);
-                }
-                midIdx += 4;
-            }
-        }
-    }
-
-    return html;
+    return result;
 }

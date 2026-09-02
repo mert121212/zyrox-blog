@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
 import { Inter, Space_Grotesk } from 'next/font/google';
 import dynamic from 'next/dynamic';
-import Script from 'next/script';
+
 import './globals.css';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { CookieBanner } from '@/components/cookie-banner';
+import { AdSenseScript } from '@/components/adsense-script';
 
 // Client-only — uses scroll event listener, must not SSR
 const BackToTop = dynamic(
@@ -94,12 +95,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <link rel="manifest" href="/site.webmanifest" />
             </head>
             <body suppressHydrationWarning>
-                {/* AdSense — loaded AFTER React hydration to prevent DOM mismatch errors */}
-                <Script
-                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5194383766905175"
-                    crossOrigin="anonymous"
-                    strategy="afterInteractive"
-                />
+                {/* AdSense — loaded AFTER React hydration via vanilla JS to avoid data-nscript error */}
+                <AdSenseScript />
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
