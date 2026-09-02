@@ -72,7 +72,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
                 <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
 
-                {/* Google Analytics — deferred until browser idle or 2s */}
+                {/* Google Analytics — deferred until browser idle or 5s */}
                 <script
                     dangerouslySetInnerHTML={{
                         __html: `
@@ -89,9 +89,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                                     document.head.appendChild(s);
                                 }
                                 if('requestIdleCallback' in window){
-                                    requestIdleCallback(loadGA,{timeout:2000});
+                                    requestIdleCallback(loadGA,{timeout:5000});
                                 }else{
-                                    setTimeout(loadGA,2000);
+                                    setTimeout(loadGA,5000);
                                 }
                             })();
                         `,
