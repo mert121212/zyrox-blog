@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 
 interface AdBannerProps {
     dataAdSlot?: string;
@@ -47,3 +48,19 @@ export function AdBanner({ dataAdSlot = '2799753806', dataAdFormat = 'auto', dat
     );
 }
 
+export function MidArticleAdInjector() {
+    const [placeholder, setPlaceholder] = useState<HTMLElement | null>(null);
+
+    useEffect(() => {
+        // Wait a small tick for the DOM to be ready inside dangerouslySetInnerHTML
+        const timer = setTimeout(() => {
+            const el = document.getElementById('mid-article-ad-placeholder');
+            if (el) setPlaceholder(el);
+        }, 100);
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (!placeholder) return null;
+
+    return createPortal(<AdBanner />, placeholder);
+}

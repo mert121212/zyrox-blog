@@ -4,16 +4,7 @@
  * dangerouslySetInnerHTML content.
  */
 export function injectMidArticleAd(html: string, afterParagraph: number = 4): string {
-    const adHtml = `
-        <div style="margin:2rem 0;text-align:center;overflow:hidden;min-height:100px" class="mid-article-ad">
-            <ins class="adsbygoogle"
-                style="display:block"
-                data-ad-client="ca-pub-5194383766905175"
-                data-ad-slot="2799753806"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-        </div>
-    `;
+    const adHtml = `<div id="mid-article-ad-placeholder"></div>`;
 
     // Split by closing </p> tags and inject after the Nth one
     const parts = html.split('</p>');

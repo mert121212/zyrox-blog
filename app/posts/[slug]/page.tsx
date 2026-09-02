@@ -52,6 +52,10 @@ const AdBanner = dynamic(
     () => import('@/components/ad-banner').then((m) => ({ default: m.AdBanner })),
     { ssr: false },
 );
+const MidArticleAdInjector = dynamic(
+    () => import('@/components/ad-banner').then((m) => ({ default: m.MidArticleAdInjector })),
+    { ssr: false },
+);
 
 export async function generateStaticParams() {
     return getAllPosts().map((post) => ({ slug: post.slug }));
@@ -208,6 +212,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
 
                             {/* Article body with mid-article ad injected after 4th paragraph */}
                             <div className="article-body" dangerouslySetInnerHTML={{ __html: contentHtml }} />
+                            <MidArticleAdInjector />
 
                             {/* Ad 3: bottom of article */}
                             <AdBanner />
