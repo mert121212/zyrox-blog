@@ -14,73 +14,94 @@ export function AdBanner({
     dataAdFormat = 'auto',
     dataFullWidthResponsive = true
 }: AdBannerProps) {
-    const [mounted, setMounted] = useState(false);
     const containerRef = useRef<HTMLDivElement>(null);
+    const [shouldRenderAd, setShouldRenderAd] = useState(false);
     const pushed = useRef(false);
 
     useEffect(() => {
-        setMounted(true);
-    }, []);
+        const el = containerRef.current;
+        if (!el) return;
 
-    useEffect(() => {
-        if (!mounted || pushed.current) return;
-
-        const tryPush = () => {
+        const checkVisibility = () => {
             if (pushed.current) return;
-            const el = containerRef.current;
-            if (!el) return;
-
-            const rect = el.getBoundingClientRect();
-            if (rect.width <= 0 || el.offsetWidth <= 0) return;
-
-            pushed.current = true;
-            try {
-                // @ts-ignore
-                (window.adsbygoogle = window.adsbygoogle || []).push({});
-            } catch (err) {
-                console.warn('AdSense notice:', err);
+            // Only allow rendering the <ins> tag if container is visible and has width > 0
+            if (el.offsetWidth > 0 && el.offsetHeight >= 0 && window.getComputedStyle(el).display !== 'none') {
+                setShouldRenderAd(true);
             }
         };
 
-        const timer = setTimeout(tryPush, 300);
+        // Check on mount
+        checkVisibility();
 
-        let resizeObserver: ResizeObserver | null = null;
-        if (typeof ResizeObserver !== 'undefined' && containerRef.current) {
-            resizeObserver = new ResizeObserver((entries) => {
+        // Check via ResizeObserver if initially hidden (e.g. mobile responsive sidebar)
+        let observer: ResizeObserver | null = null;
+        if (typeof ResizeObserver !== 'undefined') {
+            observer = new ResizeObserver((entries) => {
                 for (const entry of entries) {
-                    if (!pushed.current && entry.contentRect.width > 0) {
-                        tryPush();
-                        if (pushed.current && resizeObserver) resizeObserver.disconnect();
+                    if (entry.contentRect.width > 0) {
+                        checkVisibility();
                     }
                 }
             });
-            resizeObserver.observe(containerRef.current);
+            observer.observe(el);
         }
 
         return () => {
-            clearTimeout(timer);
-            if (resizeObserver) resizeObserver.disconnect();
+            if (observer) observer.disconnect();
         };
-    }, [mounted]);
+    }, []);
 
-    if (!mounted) return null;
+    useEffect(() => {
+        if (!shouldRenderAd || pushed.current) return;
+
+        // Give the browser time to layout the newly rendered <ins> tag
+        const timer = setTimeout(() => {
+            if (pushed.current) return;
+            const el = containerRef.current;
+            if (el && el.offsetWidth > 0) {
+                pushed.current = true;
+                try {
+                    // @ts-ignore
+                    (window.adsbygoogle = window.adsbygoogle || []).push({});
+                } catch (err) {
+                    // Suppress any benign ad push errors
+                    console.warn('AdSense notice:', err);
+                }
+            }
+        }, 150);
+
+        return () => clearTimeout(timer);
+    }, [shouldRenderAd]);
 
     return (
-        <div ref={containerRef} style={{ margin: '2rem 0', textAlign: 'center', overflow: 'hidden', minHeight: '100px', width: '100%' }}>
-            <ins className="adsbygoogle"
-                style={{ display: 'block', width: '100%' }}
-                data-ad-client="ca-pub-5194383766905175"
-                data-ad-slot={dataAdSlot}
-                data-ad-format={dataAdFormat}
-                data-full-width-responsive={dataFullWidthResponsive ? 'true' : 'false'}
-            />
+        <div
+            ref={containerRef}
+            style={{
+                margin: '2rem 0',
+                textAlign: 'center',
+                overflow: 'hidden',
+                minHeight: shouldRenderAd ? '100px' : '0px',
+                width: '100%',
+                display: 'block'
+            }}
+        >
+            {shouldRenderAd && (
+                <ins
+                    className="adsbygoogle"
+                    style={{ display: 'block', width: '100%' }}
+                    data-ad-client="ca-pub-5194383766905175"
+                    data-ad-slot={dataAdSlot}
+                    data-ad-format={dataAdFormat}
+                    data-full-width-responsive={dataFullWidthResponsive ? 'true' : 'false'}
+                />
+            )}
         </div>
     );
 }
 
 /**
  * Finds all mid-article-ad-placeholder-* divs in the DOM
- * and portals an AdBanner into each one.
+ * and portals an AdBanner into each one after hydration.
  */
 export function MidArticleAdInjector() {
     const [placeholders, setPlaceholders] = useState<HTMLElement[]>([]);
@@ -88,13 +109,12 @@ export function MidArticleAdInjector() {
     useEffect(() => {
         const timer = setTimeout(() => {
             const els: HTMLElement[] = [];
-            // Find all placeholders (mid-article-ad-placeholder-0, mid-article-ad-placeholder-1, etc.)
             for (let i = 0; i < 5; i++) {
                 const el = document.getElementById(`mid-article-ad-placeholder-${i}`);
                 if (el) els.push(el);
             }
             if (els.length > 0) setPlaceholders(els);
-        }, 200);
+        }, 150);
         return () => clearTimeout(timer);
     }, []);
 
