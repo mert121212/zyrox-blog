@@ -1,9 +1,6 @@
 ---
 title: Why Upgrading Storage Alone Does Not Make Everything Faster
-meta_description: >-
-  A realistic explanation of how storage upgrades improve some tasks while
-  leaving CPU, memory, and GPU bottlenecks intact. A few years ago I helped a
-  friend upgrade his PC.
+meta_description: "Find out why an SSD upgrade won't fix every PC slowdown. Learn how CPU, RAM, and GPU bottlenecks limit performance and what actually needs upgrading."
 date: 2026-07-09T00:00:00.000Z
 category: Storage
 tags:
