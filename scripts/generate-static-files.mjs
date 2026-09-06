@@ -58,13 +58,21 @@ const staticRoutes = [
     { path: '/disclaimer/', lastmod: '2026-06-27', priority: '0.3', freq: 'yearly' },
 ];
 
-function urlEntry({ loc, lastmod, changefreq, priority }) {
-    return `  <url>
+function urlEntry({ loc, lastmod, changefreq, priority, image }) {
+    let entry = `  <url>
     <loc>${loc}</loc>
     <lastmod>${lastmod}</lastmod>
     <changefreq>${changefreq}</changefreq>
-    <priority>${priority}</priority>
-  </url>`;
+    <priority>${priority}</priority>`;
+    if (image) {
+        entry += `
+    <image:image>
+      <image:loc>${image.loc}</image:loc>
+      <image:title>${image.title}</image:title>
+    </image:image>`;
+    }
+    entry += `\n  </url>`;
+    return entry;
 }
 
 const sitemapEntries = [
@@ -72,9 +80,18 @@ const sitemapEntries = [
     ...staticRoutes.map((r) =>
         urlEntry({ loc: `${baseUrl}${r.path}`, lastmod: r.lastmod, changefreq: r.freq, priority: r.priority }),
     ),
-    // Posts (trailing slash!)
+    // Posts (trailing slash!) with Google Image Sitemap metadata
     ...posts.map((p) =>
-        urlEntry({ loc: `${baseUrl}/posts/${p.slug}/`, lastmod: p.updated || p.date, changefreq: 'monthly', priority: '0.9' }),
+        urlEntry({
+            loc: `${baseUrl}/posts/${p.slug}/`,
+            lastmod: p.updated || p.date,
+            changefreq: 'monthly',
+            priority: '0.9',
+            image: {
+                loc: `${baseUrl}/images/og-default.png`,
+                title: p.title,
+            },
+        }),
     ),
     // Authors (trailing slash!)
     ...authorSlugs.map((s) =>
@@ -83,7 +100,7 @@ const sitemapEntries = [
 ];
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${sitemapEntries.join('\n')}
 </urlset>
 `;

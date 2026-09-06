@@ -12,6 +12,15 @@ interface TableOfContentsProps {
     content: string;
 }
 
+function slugifyHeading(raw: string): string {
+    return (raw || '')
+        .toLowerCase()
+        .replace(/<[^>]+>/g, '')
+        .replace(/[^a-z0-9\s-]/g, '')
+        .trim()
+        .replace(/\s+/g, '-');
+}
+
 export function TableOfContents({ content }: TableOfContentsProps) {
     const [headings, setHeadings] = useState<TocItem[]>([]);
     const [activeId, setActiveId] = useState<string>('');
@@ -21,28 +30,14 @@ export function TableOfContents({ content }: TableOfContentsProps) {
         const headingRegex = /^(#{1,3})\s+(.+.+)$/gm;
         const matches = Array.from(content.matchAll(headingRegex));
         
-        const tocItems: TocItem[] = matches.map((match, index) => {
+        const tocItems: TocItem[] = matches.map((match) => {
             const level = match[1].length;
             const text = match[2].trim();
-            const id = `heading-${index}`;
+            const id = slugifyHeading(text);
             return { id, text, level };
         });
 
         setHeadings(tocItems);
-
-        // Add IDs to headings in the DOM
-        const addIdsToHeadings = () => {
-            const articleBody = document.querySelector('.article-body');
-            if (!articleBody) return;
-
-            const headingElements = articleBody.querySelectorAll('h1, h2, h3');
-            headingElements.forEach((heading, index) => {
-                heading.id = `heading-${index}`;
-            });
-        };
-
-        // Wait for content to be rendered
-        setTimeout(addIdsToHeadings, 100);
 
         // Intersection Observer for active heading
         const observer = new IntersectionObserver(

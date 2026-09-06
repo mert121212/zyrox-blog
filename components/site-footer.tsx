@@ -16,6 +16,20 @@ const footerLinks = {
     ],
 };
 
+/**
+ * Popular/evergreen posts hardcoded in the footer for SEO.
+ * This reduces crawl depth: Google can reach these high-value pages
+ * from every page on the site (footer = sitewide).
+ */
+const popularPosts = [
+    { href: '/posts/best-gpu-for-1440p-gaming/', label: 'Best GPU for 1440p Gaming' },
+    { href: '/posts/how-to-build-a-budget-gaming-pc/', label: 'Build a Budget Gaming PC' },
+    { href: '/posts/best-cpu-cooler-for-ryzen-7-7800x3d/', label: 'Best Cooler for 7800X3D' },
+    { href: '/posts/how-to-speed-up-a-slow-windows-11-pc-in-under-30-minutes/', label: 'Speed Up Windows 11' },
+    { href: '/posts/how-to-choose-the-right-psu-for-your-build/', label: 'Choose the Right PSU' },
+    { href: '/posts/what-to-check-first-when-a-pc-wont-boot/', label: 'PC Won\'t Boot? Check This' },
+];
+
 
 
 export function SiteFooter() {
@@ -37,6 +51,16 @@ export function SiteFooter() {
                         <p className="site-footer__col-heading">Site</p>
                         <ul>
                             {footerLinks.content.map((link) => (
+                                <li key={link.href}>
+                                    <Link href={link.href}>{link.label}</Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className="site-footer__col">
+                        <p className="site-footer__col-heading">Popular Guides</p>
+                        <ul>
+                            {popularPosts.map((link) => (
                                 <li key={link.href}>
                                     <Link href={link.href}>{link.label}</Link>
                                 </li>

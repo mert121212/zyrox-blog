@@ -30,10 +30,29 @@ export const metadata: Metadata = {
         index: true,
         follow: true,
     },
+    alternates: {
+        types: {
+            'application/rss+xml': '/rss.xml',
+        },
+    },
     openGraph: {
         title: 'Zyrox',
         description: 'Authoritative hardware guides and practical build advice.',
         type: 'website',
+        images: [
+            {
+                url: 'https://zyroxlab.com/images/og-default.png',
+                width: 1200,
+                height: 630,
+                alt: 'Zyrox — PC Hardware & Build Insights',
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Zyrox | PC Hardware & Build Insights',
+        description: 'Authoritative hardware guides and practical build advice.',
+        images: ['https://zyroxlab.com/images/og-default.png'],
     },
 };
 
@@ -71,6 +90,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
                 <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
                 <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+                <link rel="alternate" type="application/rss+xml" title="Zyrox RSS Feed" href="/rss.xml" />
 
                 {/* Google Analytics — deferred until browser idle or 5s */}
                 <script

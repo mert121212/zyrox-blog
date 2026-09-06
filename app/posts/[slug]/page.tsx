@@ -8,6 +8,24 @@ import { AuthorCard } from '@/components/author-card';
 import { Breadcrumb } from '@/components/breadcrumb';
 import { RelatedPosts } from '@/components/related-posts';
 import { injectMidArticleAds } from '@/lib/ads';
+import {
+    calculateReadingTime,
+    extractFAQItems,
+    buildFAQSchema,
+    extractHowToSteps,
+    buildHowToSchema,
+} from '@/lib/schema-helpers';
+import { PostTags } from '@/components/post-tags';
+import { injectContextualInternalLink } from '@/lib/internal-links';
+
+function slugifyHeading(raw: string): string {
+    return (raw || '')
+        .toLowerCase()
+        .replace(/<[^>]+>/g, '')
+        .replace(/[^a-z0-9\s-]/g, '')
+        .trim()
+        .replace(/\s+/g, '-');
+}
 
 // Ensure all internal links rendered from markdown have trailing slashes,
 // matching the trailingSlash: true config. Prevents 301 redirects that
@@ -29,6 +47,19 @@ renderer.link = function (href: string, title: string | null, text: string) {
     const titleAttr = title ? ` title="${title}"` : '';
     return `<a href="${href}"${titleAttr}>${text}</a>`;
 };
+
+// SEO: Generate semantic IDs for headings so Google generates "Jump to" sitelinks in SERPs
+renderer.heading = function (text: string, level: number, raw: string) {
+    const slug = slugifyHeading(raw || text);
+    return `<h${level} id="${slug}">${text}</h${level}>\n`;
+};
+
+// Image SEO: Automatic lazy loading, async decoding, and descriptive alt fallback
+renderer.image = function (href: string, title: string | null, text: string) {
+    const titleAttr = title ? ` title="${title}"` : '';
+    return `<img src="${href}" alt="${text || 'Zyrox Hardware Guide'}"${titleAttr} loading="lazy" decoding="async" />`;
+};
+
 marked.use({ renderer });
 
 // Client-only components — must not SSR (they use localStorage or browser APIs)
@@ -85,6 +116,14 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
             authors: author ? [author.name] : ['Zyrox Editorial Team'],
             section: post.category,
             tags: post.tags,
+            images: [
+                {
+                    url: 'https://zyroxlab.com/images/og-default.png',
+                    width: 1200,
+                    height: 630,
+                    alt: post.title,
+                },
+            ],
         },
         twitter: {
             card: 'summary_large_image',
@@ -92,6 +131,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
             description: post.meta_description,
             site: '@zyrox',
             creator: '@zyrox',
+            images: ['https://zyroxlab.com/images/og-default.png'],
         },
         authors: author ? [{ name: author.name }] : undefined,
     };
@@ -102,21 +142,46 @@ export default function PostPage({ params }: { params: { slug: string } }) {
     if (!post) notFound();
 
     const author = getAuthorBySlug(post.author);
-    const rawHtml = marked.parse(post.content);
-    // Inject a mid-article ad after the 4th paragraph
-    const contentHtml = injectMidArticleAds(rawHtml as string);
     const allPosts = getAllPosts();
+
+    // Image SEO: Dynamically replace generic "Hero Image" alt text with keyword-rich post title
+    const heroAlt = `${post.title} — Zyrox Hardware Guide`;
+    const processedMarkdown = post.content.replace(
+        /!\[(Hero Image|hero image|Hero)\]\(([^)]+)\)/g,
+        `![${heroAlt}]($2)`
+    );
+
+    const rawHtml = marked.parse(processedMarkdown);
+    // Inject contextual internal guide link (highest PageRank weight in Google)
+    const withInternalLink = injectContextualInternalLink(rawHtml as string, post, allPosts);
+    // Inject mid-article ads
+    const contentHtml = injectMidArticleAds(withInternalLink);
+
+    // SEO: Reading time calculation
+    const readingTime = calculateReadingTime(post.content);
+
+    // SEO: FAQ Schema — extract question-like headings from content
+    const faqItems = extractFAQItems(post.content);
+    const faqSchema = buildFAQSchema(faqItems);
+
+    // SEO: HowTo Schema — only for "How to" titled posts
+    const isHowTo = /^how\s+to\s/i.test(post.title);
+    const howToSteps = isHowTo ? extractHowToSteps(post.content) : [];
+    const howToSchema = isHowTo ? buildHowToSchema(post.title, post.meta_description, howToSteps, readingTime) : null;
 
     const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'Article',
         headline: post.title,
         description: post.meta_description,
+        image: 'https://zyroxlab.com/images/og-default.png',
         author: author
             ? {
                 '@type': 'Person',
                 name: author.name,
+                jobTitle: author.role,
                 url: `https://zyroxlab.com/authors/${author.slug}/`,
+                knowsAbout: author.expertise,
             }
             : {
                 '@type': 'Organization',
@@ -135,6 +200,8 @@ export default function PostPage({ params }: { params: { slug: string } }) {
         dateModified: post.updated,
         keywords: post.keywords.join(', '),
         articleSection: post.category,
+        wordCount: post.content.trim().split(/\s+/).length,
+        timeRequired: `PT${readingTime}M`,
         mainEntityOfPage: {
             '@type': 'WebPage',
             '@id': `https://zyroxlab.com/posts/${params.slug}/`,
@@ -177,6 +244,8 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                                 <span>
                                     Published {post.date}
                                     {post.updated !== post.date && ` • Updated ${post.updated}`}
+                                    {' • '}
+                                    <span className="reading-time-badge">{readingTime} min read</span>
                                 </span>
                                 <ReadingListToggle slug={params.slug} title={post.title} />
                             </div>
@@ -209,6 +278,18 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                                 type="application/ld+json"
                                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
                             />
+                            {faqSchema && (
+                                <script
+                                    type="application/ld+json"
+                                    dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+                                />
+                            )}
+                            {howToSchema && (
+                                <script
+                                    type="application/ld+json"
+                                    dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+                                />
+                            )}
 
                             {/* Article body with mid-article ad injected after 4th paragraph */}
                             <div className="article-body" dangerouslySetInnerHTML={{ __html: contentHtml }} />
@@ -216,6 +297,9 @@ export default function PostPage({ params }: { params: { slug: string } }) {
 
                             {/* Ad 3: bottom of article */}
                             <AdBanner />
+
+                            {/* SEO: Clickable tags for internal linking */}
+                            <PostTags post={post} />
 
                             <HelpfulVote slug={params.slug} />
 

@@ -11,8 +11,31 @@ export const metadata = {
 export default function AuthorsPage() {
     const authors = getAllAuthors();
 
+    const breadcrumbJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://zyroxlab.com',
+            },
+            {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Authors',
+                item: 'https://zyroxlab.com/authors/',
+            },
+        ],
+    };
+
     return (
         <main className="page-shell">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+            />
             <div className="container">
                 <p className="hero__eyebrow">The editorial team</p>
                 <h1>Editorial Team</h1>

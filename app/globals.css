@@ -1237,7 +1237,7 @@ main {
 .related-posts-grid {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .related-post-card {
@@ -1257,10 +1257,22 @@ main {
 }
 
 .related-post-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: var(--accent);
     font-size: 0.82rem;
     font-weight: 700;
     margin-bottom: 0.4rem;
+}
+
+.related-post-category {
+    background: rgba(96, 165, 250, 0.12);
+    padding: 0.1rem 0.5rem;
+    border-radius: 6px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
 }
 
 .related-post-title {
@@ -1283,7 +1295,13 @@ main {
     font-size: 0.85rem;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 900px) {
+    .related-posts-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
     .related-posts-grid {
         grid-template-columns: 1fr;
     }
@@ -1918,5 +1936,124 @@ ins.adsbygoogle[data-ad-status="unfilled"] {
 /* Mid-article placeholders should have no default size */
 [id^="mid-article-ad-placeholder"] {
     background: transparent;
+}
+
+/* ─── Post Tags (SEO internal linking) ─────────────────── */
+
+.post-tags {
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+    border-top: 1px solid var(--border);
+}
+
+.post-tags__label {
+    font-size: 0.82rem;
+    color: var(--muted);
+    font-weight: 600;
+    margin-right: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.post-tags__list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.4rem;
+}
+
+.post-tags__tag {
+    display: inline-block;
+    padding: 0.25rem 0.7rem;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--accent);
+    background: rgba(96, 165, 250, 0.08);
+    border: 1px solid rgba(96, 165, 250, 0.2);
+    text-decoration: none;
+    transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.post-tags__tag:hover {
+    background: rgba(96, 165, 250, 0.18);
+    border-color: rgba(96, 165, 250, 0.45);
+    transform: translateY(-1px);
+}
+
+.post-tags__tag--category {
+    color: var(--accent-2);
+    background: rgba(139, 92, 246, 0.08);
+    border-color: rgba(139, 92, 246, 0.2);
+}
+
+.post-tags__tag--category:hover {
+    background: rgba(139, 92, 246, 0.18);
+    border-color: rgba(139, 92, 246, 0.45);
+}
+
+/* ─── Reading Time Badge ──────────────────────────────── */
+
+.reading-time-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--accent);
+    background: rgba(96, 165, 250, 0.1);
+    white-space: nowrap;
+}
+
+/* ─── Inline Contextual Guide Callout ─────────────────── */
+
+.inline-guide-callout {
+    margin: 2.2rem 0;
+    padding: 1.25rem 1.5rem;
+    background: linear-gradient(135deg, rgba(96, 165, 250, 0.05), rgba(139, 92, 246, 0.03));
+    border: 1px solid rgba(96, 165, 250, 0.22);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px -8px rgba(0, 0, 0, 0.3);
+    transition: border-color 200ms ease, box-shadow 200ms ease;
+}
+
+.inline-guide-callout:hover {
+    border-color: rgba(96, 165, 250, 0.45);
+    box-shadow: 0 6px 24px -6px rgba(96, 165, 250, 0.15);
+}
+
+.inline-guide-callout__eyebrow {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin-bottom: 0.45rem;
+}
+
+.inline-guide-callout__title {
+    display: inline-block;
+    font-size: 1.08rem;
+    font-weight: 700;
+    color: var(--text);
+    text-decoration: none;
+    line-height: 1.4;
+    transition: color 150ms ease;
+}
+
+.inline-guide-callout__title:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.inline-guide-callout__desc {
+    margin: 0.4rem 0 0 0 !important;
+    font-size: 0.88rem !important;
+    color: var(--muted) !important;
+    line-height: 1.5 !important;
 }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://zyroxlab.com/</loc>
     <lastmod>2026-08-13</lastmod>
@@ -47,450 +47,750 @@
     <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Check Your PC's Full Specs Without Installing Anything</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/ssd-vs-hdd-which-should-you-buy-in-2026/</loc>
     <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>SSD vs HDD: Which Should You Buy in 2026?</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-free-up-disk-space-on-windows-without-deleting-your-files/</loc>
     <lastmod>2026-08-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Free Up Disk Space on Windows Without Deleting Your Files</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-connect-two-monitors-to-a-laptop/</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Connect Two Monitors to a Laptop</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/best-motherboard-for-rtx-4070/</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>Best Motherboard for RTX 4070: What Matters Most</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/what-does-ram-actually-do-in-a-computer/</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>What Does RAM Actually Do in a Computer?</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/best-monitor-for-work-and-gaming/</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>Best Monitor for Work and Gaming: What to Choose</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-speed-up-a-slow-windows-11-pc-in-under-30-minutes/</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Speed Up a Slow Windows 11 PC in Under 30 Minutes</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-fix-high-cpu-usage/</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Fix High CPU Usage on Windows</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-check-if-your-pc-can-run-a-game-before-you-buy-it/</loc>
     <lastmod>2026-08-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Check If Your PC Can Run a Game Before You Buy It</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/best-ram-for-ryzen-7000/</loc>
     <lastmod>2026-08-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>Best RAM for Ryzen 7000: Speed, Latency, and Capacity</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/best-gpu-for-1440p-gaming/</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>Best GPU for 1440p Gaming: What to Buy in 2026</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/what-is-the-best-motherboard-for-ryzen-7-7800x3d/</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>What Is the Best Motherboard for Ryzen 7 7800X3D?</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-fix-windows-update-problems-2026/</loc>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Fix Windows Update Problems in 2026</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/best-psu-for-rtx-5080/</loc>
     <lastmod>2026-08-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>Best PSU for RTX 5080: How to Choose a Safe and Reliable Power Supply</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/best-cpu-cooler-for-ryzen-7-7800x3d/</loc>
     <lastmod>2026-08-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>Best CPU Cooler for Ryzen 7 7800X3D: Quiet and Efficient Picks</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/best-ssd-for-gaming-2026/</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>Best SSD for Gaming in 2026: What Actually Matters</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-build-a-quiet-gaming-rig/</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Build a Quiet Gaming Rig Without Giving Up Performance</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-spot-fake-hardware-reviews/</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Spot Fake or Misleading Hardware Reviews</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-choose-a-good-ssd-for-video-editing/</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Choose a Good SSD for Video Editing</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/what-to-do-when-your-pc-overheats/</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>What to Do When Your PC Overheats</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-upgrade-your-wifi-without-replacing-everything/</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Upgrade Your Wi-Fi Setup Without Replacing Everything</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-clean-your-pc-case-ventilation/</loc>
     <lastmod>2026-07-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Clean Your PC Case Ventilation Properly</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/when-to-replace-a-monitor/</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>When It Is Time to Replace a Monitor</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-improve-laptop-battery-life/</loc>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Improve Laptop Battery Life Without Sacrificing Comfort</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/why-network-cables-still-matter/</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>Why Network Cables Still Matter in a Wireless World</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-choose-the-best-wifi-router/</loc>
     <lastmod>2026-07-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Choose the Best Wi-Fi Router for Your Home</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/when-to-replace-a-power-supply-instead-of-troubleshooting-it/</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>When to Replace a Power Supply Instead of Troubleshooting It</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-choose-a-monitor-arm-and-stand/</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Choose a Monitor Arm and Stand</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/the-difference-between-air-cooling-and-liquid-cooling/</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>The Difference Between Air Cooling and Liquid Cooling</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-debug-a-pc-that-randomly-reboots/</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Debug a PC That Randomly Reboots</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-build-a-budget-gaming-pc/</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Build a Budget Gaming PC That Still Feels Fast</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/signs-your-motherboard-is-failing/</loc>
     <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>Signs Your Motherboard May Be Failing</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-choose-the-right-pc-case/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Choose the Right PC Case</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-tell-if-your-cpu-cooler-is-working-well/</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Tell If Your CPU Cooler Is Working Well</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/what-to-look-for-in-a-midrange-monitor/</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>What to Look for in a Midrange Monitor</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-set-up-a-home-office-pc-for-productivity/</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Set Up a Home Office PC for Productivity</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/the-best-way-to-plan-a-pc-upgrade-cycle/</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>The Best Way to Plan a PC Upgrade Cycle</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/why-upgrading-storage-alone-doesnt-make-everything-faster/</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>Why Upgrading Storage Alone Does Not Make Everything Faster</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/why-ssd-health-monitoring-matters-more-than-you-think/</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>Why SSD Health Monitoring Matters More Than You Think</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/should-you-buy-an-ssd-or-hdd-for-game-storage/</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>Should You Buy an SSD or HDD for Game Storage</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/no-bootable-device-found-nvme/</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Fix 'No Bootable Device Found' After Installing a New NVMe SSD</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-reduce-pc-noise-without-sacrificing-cooling/</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Reduce PC Noise Without Sacrificing Cooling</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-choose-a-monitor-for-gaming-and-work/</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Choose a Monitor for Gaming and Work Without Overpaying</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/when-to-upgrade-your-gpu-vs-your-cpu/</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>When to Upgrade Your GPU Instead of Your CPU</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/ssd-vs-hdd-boot-speed/</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>SSD vs HDD Boot Speed: What Actually Changes in Real Use</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-upgrade-your-laptop-without-buying-a-new-one/</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Upgrade Your Laptop Without Buying a New One</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-clean-a-pc-without-damaging-components/</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Clean a PC Without Damaging the Components</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/why-case-airflow-matters-more-than-people-think/</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>Why Case Airflow Matters More Than People Think</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-test-a-psu-without-expensive-tools/</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Test a Power Supply Without Expensive Tools</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-choose-the-right-psu-for-your-build/</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Choose the Right PSU for Your Build</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-choose-an-ssd-for-laptop-vs-desktop/</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Choose an SSD for a Laptop or Desktop Without Overbuying</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/bios-settings-for-stable-overclock/</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>The BIOS Settings That Matter Most for a Stable Overclock</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/why-cooling-still-matters-in-2026/</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>Why CPU Cooling Still Matters More Than People Pretend</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-spot-a-failing-hard-drive-before-it-fails/</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Spot a Failing Hard Drive Before It Fails</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-keep-a-pc-running-well-for-years/</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Keep a PC Running Well for Years</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/why-your-pc-feels-slow-even-when-it-has-good-specs/</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>Why Your PC Feels Slow Even When It Has Good Specs</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/the-best-way-to-organize-your-game-library-on-an-ssd/</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>The Best Way to Organize Your Game Library on an SSD</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-read-a-psu-spec-sheet/</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Read a PSU Spec Sheet Without Getting Misled</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/what-to-check-first-when-a-pc-wont-boot/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>What to Check First When a PC Won't Boot</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-spot-a-good-used-gpu-deal/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Spot a Good Used GPU Deal</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-choose-a-motherboard-for-a-new-build/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Choose a Motherboard for a New PC Build Without Overpaying</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/why-ram-speed-matters-less-than-people-think/</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>Why RAM Speed Matters Less Than People Think</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-choose-the-right-case-fan-setup/</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Choose the Right Case Fan Setup</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-choose-the-right-cpu-cooler-for-your-build/</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Choose the Right CPU Cooler for Your Build</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-build-a-silent-pc/</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Build a Silent PC Without Sacrificing Performance</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/windows-11-setup-tips-that-make-a-pc-feel-faster/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>Windows 11 Setup Tips That Make a PC Feel Faster</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/what-actually-matters-in-a-gaming-pc/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>What Actually Matters in a Gaming PC Build</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-spot-a-bad-power-supply-before-you-buy-it/</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Spot a Bad Power Supply Before You Buy It</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-install-windows-from-a-usb/</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Install Windows from a USB Drive Without Making a Mess of It</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/the-best-way-to-upgrade-your-pc-without-replacing-everything/</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>The Best Way to Upgrade a PC Without Replacing Everything</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/biostuning-basics-for-stable-overnight-overclocking/</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>BIOS Tuning Basics for Stable Overnight Overclocking</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/why-your-pc-feels-slow-even-with-a-fast-cpu/</loc>
     <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>Why Your PC Feels Slow Even When the CPU Is Fast</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-diagnose-a-random-reboot/</loc>
     <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Diagnose a Random PC Reboot Without Losing Your Mind</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-choose-the-right-ssd-for-your-system/</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/og-default.png</image:loc>
+      <image:title>How to Choose the Right SSD for Your PC Without Paying for the Wrong Specs</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/authors/marcus-holt/</loc>

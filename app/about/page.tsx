@@ -5,13 +5,65 @@ export const metadata = {
     title: 'About Zyrox',
     description: 'Zyrox is an independent PC hardware publication focused on practical build advice, honest reviews, and real-world troubleshooting guides.',
     alternates: { canonical: '/about/' },
+    openGraph: {
+        title: 'About Zyrox — PC Hardware & Build Insights',
+        description: 'Zyrox is an independent PC hardware publication focused on practical build advice, honest reviews, and real-world troubleshooting guides.',
+        images: ['https://zyroxlab.com/images/og-default.png'],
+    },
 };
 
 export default function AboutPage() {
     const authors = getAllAuthors();
 
+    const aboutJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'AboutPage',
+        name: 'About Zyrox',
+        url: 'https://zyroxlab.com/about/',
+        description: 'Zyrox is an independent PC hardware publication focused on practical build advice, honest reviews, and real-world troubleshooting guides.',
+        mainEntity: {
+            '@type': 'Organization',
+            name: 'Zyrox',
+            url: 'https://zyroxlab.com',
+            logo: 'https://zyroxlab.com/logo.png',
+            publishingPrinciples: 'https://zyroxlab.com/about/#editorial-policy',
+            contactPoint: {
+                '@type': 'ContactPoint',
+                email: 'zyroxlabcom@gmail.com',
+                contactType: 'editorial inquiries',
+            },
+        },
+    };
+
+    const breadcrumbJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://zyroxlab.com',
+            },
+            {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'About',
+                item: 'https://zyroxlab.com/about/',
+            },
+        ],
+    };
+
     return (
         <main className="page-shell">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutJsonLd) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+            />
             <div className="container about-page">
 
                 <section className="about-section">
