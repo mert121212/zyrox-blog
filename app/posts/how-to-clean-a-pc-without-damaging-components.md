@@ -1,8 +1,6 @@
 ---
 title: How to Clean a PC Without Damaging the Components
-meta_description: >-
-  A careful guide to dust removal and maintenance that avoids damaging fans,
-  heatsinks, or delicate connectors.
+meta_description: "A careful guide to removing dust from fans, heatsinks, and connectors safely. Avoid damage with the right tools and cleaning techniques."
 date: 2026-07-08T00:00:00.000Z
 category: Maintenance
 tags:

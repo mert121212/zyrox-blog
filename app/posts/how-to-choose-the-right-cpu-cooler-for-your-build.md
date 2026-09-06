@@ -1,9 +1,6 @@
 ---
 title: How to Choose the Right CPU Cooler for Your Build
-meta_description: >-
-  A practical guide to selecting a CPU cooler based on thermal demands, case
-  compatibility, and noise tolerance. I have made nearly every cooler mistake
-  possible over the years.
+meta_description: "A practical guide to selecting a CPU cooler based on TDP demands, case clearance, noise tolerance, and budget. Avoid common mistakes."
 date: 2026-07-02T00:00:00.000Z
 category: Cooling
 tags:

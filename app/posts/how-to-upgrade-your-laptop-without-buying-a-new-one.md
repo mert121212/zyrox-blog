@@ -1,9 +1,6 @@
 ---
 title: How to Upgrade Your Laptop Without Buying a New One
-meta_description: >-
-  Learn which laptop upgrades are worth it and where the limits are when trying
-  to extend the life of a portable machine. Here is exactly what you need to
-  know to fix it.
+meta_description: "Learn which laptop upgrades are actually worth it — RAM, SSD, Wi-Fi card — and where the limits are before buying a new machine."
 date: 2026-07-08T00:00:00.000Z
 category: Upgrades
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "Best PSU for RTX 5080: How to Choose a Safe and Reliable Power Supply"
-meta_description: "Learn how to pick the best PSU for an RTX 5080 build with the right wattage, efficiency, and connector support. The RTX 5080 is a 320W part."
+meta_description: "Pick the best PSU for an RTX 5080 build with the right wattage, 80 Plus rating, and 12VHPWR connector support for this 320W GPU."
 date: 2026-08-03
 category: "Power"
 tags:

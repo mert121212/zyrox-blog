@@ -1,8 +1,6 @@
 ---
 title: How to Clean Your PC Case Ventilation Properly
 meta_description: >-
-  A simple cleaning routine can restore airflow, lower temperatures, and reduce
-  noise in a system that has been running for months.
 date: 2026-07-26T00:00:00.000Z
 category: Maintenance
 tags:

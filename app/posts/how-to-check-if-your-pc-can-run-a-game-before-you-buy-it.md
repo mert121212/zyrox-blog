@@ -1,9 +1,6 @@
 ---
 title: How to Check If Your PC Can Run a Game Before You Buy It
-meta_description: >-
-  Learn how to quickly and accurately check if your PC can run a specific game
-  without guessing, downloading third-party tools, or relying on confusing spec
-  sheets.
+meta_description: "Quickly check if your PC can run a specific game without guessing. Compare your specs to requirements using free built-in tools."
 date: 2026-08-07T00:00:00.000Z
 category: Gaming
 tags:

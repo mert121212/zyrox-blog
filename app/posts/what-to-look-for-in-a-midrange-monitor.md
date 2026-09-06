@@ -1,9 +1,6 @@
 ---
 title: What to Look for in a Midrange Monitor
-meta_description: >-
-  A practical guide to choosing a monitor that balances image quality, refresh
-  rate, and value without paying flagship prices. Here is my honest experience
-  and what you actually need.
+meta_description: "Choose a midrange monitor that balances image quality, refresh rate, and value without paying flagship prices. Practical buying guide."
 date: 2026-07-12T00:00:00.000Z
 category: Displays
 tags:

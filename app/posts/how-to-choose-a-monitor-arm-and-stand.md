@@ -1,8 +1,6 @@
 ---
 title: How to Choose a Monitor Arm and Stand
 meta_description: >-
-  Learn how to pick the right monitor mount for ergonomics, desk space, and
-  long-term flexibility. My desk used to be a mess of wasted space.
 date: 2026-07-20T00:00:00.000Z
 category: Displays
 tags:

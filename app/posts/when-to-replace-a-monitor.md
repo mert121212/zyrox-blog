@@ -1,8 +1,6 @@
 ---
 title: When It Is Time to Replace a Monitor
 meta_description: >-
-  A monitor can become the limiting factor in your setup long before the rest of
-  the hardware does. My previous monitor did not break.
 date: 2026-07-25T00:00:00.000Z
 category: Displays
 tags:

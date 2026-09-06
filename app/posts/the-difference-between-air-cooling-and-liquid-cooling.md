@@ -1,9 +1,6 @@
 ---
 title: The Difference Between Air Cooling and Liquid Cooling
-meta_description: >-
-  Understand the practical tradeoffs between air coolers and liquid cooling
-  systems before choosing one for your build. See the test results to understand
-  the real-world impact.
+meta_description: "Understand the real tradeoffs between air coolers and liquid cooling — performance, noise, maintenance, and cost for your PC build."
 date: 2026-07-19T00:00:00.000Z
 category: Cooling
 tags:

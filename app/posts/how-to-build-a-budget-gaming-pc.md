@@ -1,9 +1,6 @@
 ---
 title: How to Build a Budget Gaming PC That Still Feels Fast
-meta_description: >-
-  Learn how to target the right parts for a budget gaming build that delivers
-  strong value instead of weak compromises. Review the benchmark data to make an
-  informed decision.
+meta_description: "Learn how to build a budget gaming PC that delivers strong 1080p performance. Smart part choices that maximize value over hype."
 date: 2026-07-17T00:00:00.000Z
 category: Gaming
 tags:

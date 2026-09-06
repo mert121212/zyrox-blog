@@ -1,9 +1,6 @@
 ---
 title: How to Choose a Good SSD for Video Editing
 meta_description: >-
-  Understand what matters most for video editing storage, including throughput,
-  capacity, and endurance. Here is my honest experience and what you actually
-  need.
 date: 2026-07-29T00:00:00.000Z
 category: Storage
 tags:

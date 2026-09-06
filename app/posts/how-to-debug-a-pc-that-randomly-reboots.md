@@ -1,8 +1,6 @@
 ---
 title: How to Debug a PC That Randomly Reboots
 meta_description: >-
-  A practical checklist for identifying whether random restarts come from
-  overheating, unstable power, or software issues.
 date: 2026-07-18T00:00:00.000Z
 category: Troubleshooting
 tags:

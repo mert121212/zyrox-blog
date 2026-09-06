@@ -1,9 +1,6 @@
 ---
 title: Should You Buy an SSD or HDD for Game Storage
-meta_description: >-
-  A direct comparison of SSD and HDD storage for gamers who want faster load
-  times without overspending on capacity. Here is my honest experience and what
-  you actually need.
+meta_description: "Compare SSD and HDD storage for gaming. Faster load times vs more capacity — find the right balance for your game library and budget."
 date: 2026-07-09T00:00:00.000Z
 category: Gaming
 tags:

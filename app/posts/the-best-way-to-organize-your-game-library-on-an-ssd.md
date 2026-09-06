@@ -1,8 +1,6 @@
 ---
 title: The Best Way to Organize Your Game Library on an SSD
 meta_description: >-
-  A practical approach to keeping a game library tidy, fast, and easy to manage
-  across one or more drives. I have about 200 games in my Steam library.
 date: 2026-07-05T00:00:00.000Z
 category: Storage
 tags:

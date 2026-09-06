@@ -1,8 +1,6 @@
 ---
 title: How to Upgrade Your Wi-Fi Setup Without Replacing Everything
 meta_description: >-
-  Improve your home network with targeted upgrades such as placement, channels,
-  and a better access point instead of replacing your whole setup.
 date: 2026-07-27T00:00:00.000Z
 category: Networking
 tags:

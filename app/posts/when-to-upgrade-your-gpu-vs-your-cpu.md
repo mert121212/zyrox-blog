@@ -1,9 +1,6 @@
 ---
 title: When to Upgrade Your GPU Instead of Your CPU
-meta_description: >-
-  A direct guide to deciding whether a gaming or productivity system would
-  benefit more from a GPU upgrade or a CPU upgrade. Review the benchmark data to
-  make an informed decision.
+meta_description: "Decide whether your gaming or productivity system needs a GPU upgrade or a CPU upgrade first. A data-driven approach to smart upgrades."
 date: 2026-07-08T00:00:00.000Z
 category: Upgrades
 tags:

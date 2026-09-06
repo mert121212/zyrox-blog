@@ -1,8 +1,6 @@
 ---
 title: The BIOS Settings That Matter Most for a Stable Overclock
-meta_description: >-
-  Learn the BIOS settings that affect CPU voltage, memory stability, and safe
-  overclock tuning without guesswork.
+meta_description: "Learn the BIOS settings that affect CPU voltage, memory stability, and safe overclock tuning. Includes XMP, LLC, and thermal limit tips."
 date: 2026-07-07T00:00:00.000Z
 category: Overclocking
 tags:

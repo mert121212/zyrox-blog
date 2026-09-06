@@ -1,9 +1,6 @@
 ---
 title: How to Choose the Right PC Case
-meta_description: >-
-  A practical guide to case size, airflow, expansion options, and build quality
-  when choosing a home for your components. See the test results to understand
-  the real-world impact.
+meta_description: "A practical guide to PC case selection covering size, airflow, expansion options, and build quality for your next desktop build."
 date: 2026-07-15T00:00:00.000Z
 category: Cases
 tags:

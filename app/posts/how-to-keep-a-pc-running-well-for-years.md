@@ -1,8 +1,6 @@
 ---
 title: How to Keep a PC Running Well for Years
 meta_description: >-
-  A simple maintenance routine can preserve performance, reduce failures, and
-  extend the useful life of a desktop or laptop.
 date: 2026-07-06T00:00:00.000Z
 category: Maintenance
 tags:

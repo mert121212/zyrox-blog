@@ -1,9 +1,6 @@
 ---
 title: When to Replace a Power Supply Instead of Troubleshooting It
-meta_description: >-
-  Know when a failing PSU is better replaced than repaired or endlessly tested.
-  I spent three weeks troubleshooting a system that would randomly restart under
-  load.
+meta_description: "Know when a failing PSU is better replaced than endlessly tested. Warning signs that mean your power supply needs to go right now."
 date: 2026-07-21T00:00:00.000Z
 category: Power
 tags:

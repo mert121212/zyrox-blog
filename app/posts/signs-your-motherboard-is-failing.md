@@ -1,8 +1,6 @@
 ---
 title: Signs Your Motherboard May Be Failing
-meta_description: >-
-  Recognize early warning signs of motherboard trouble before a small issue
-  becomes a costly repair.
+meta_description: "Recognize early warning signs of motherboard failure, including USB dropouts, POST errors, random shutdowns, and capacitor damage indicators."
 date: 2026-07-16T00:00:00.000Z
 category: Troubleshooting
 tags:

@@ -1,8 +1,6 @@
 ---
 title: How to Choose a Motherboard for a New PC Build Without Overpaying
 meta_description: >-
-  Learn what matters most when selecting a motherboard for a new build, from
-  chipset and VRM quality to expansion and future-proofing.
 date: 2026-07-04T00:00:00.000Z
 category: Motherboards
 tags:

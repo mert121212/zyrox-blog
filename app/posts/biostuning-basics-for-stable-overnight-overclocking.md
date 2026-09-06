@@ -1,8 +1,6 @@
 ---
 title: BIOS Tuning Basics for Stable Overnight Overclocking
 meta_description: >-
-  A grounded guide to BIOS tuning that focuses on voltage, memory stability, and
-  temperature monitoring instead of risky shortcuts.
 date: 2026-06-29T00:00:00.000Z
 category: Overclocking
 tags:

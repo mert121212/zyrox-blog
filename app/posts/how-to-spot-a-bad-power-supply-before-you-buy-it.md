@@ -1,8 +1,6 @@
 ---
 title: How to Spot a Bad Power Supply Before You Buy It
 meta_description: >-
-  A practical checklist for evaluating power supplies by efficiency, protection
-  features, and build quality rather than brand hype. I've killed a GPU.
 date: 2026-06-30T00:00:00.000Z
 category: Power
 tags:

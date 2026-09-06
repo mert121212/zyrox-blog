@@ -1,9 +1,6 @@
 ---
 title: How to Build a Quiet Gaming Rig Without Giving Up Performance
 meta_description: >-
-  A practical guide to reducing noise in a gaming PC while keeping frame rates
-  and cooling performance strong. My last gaming PC sounded like a kitchen
-  appliance.
 date: 2026-07-31T00:00:00.000Z
 category: Gaming
 tags:

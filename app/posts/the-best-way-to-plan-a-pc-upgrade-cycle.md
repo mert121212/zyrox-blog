@@ -1,9 +1,6 @@
 ---
 title: The Best Way to Plan a PC Upgrade Cycle
-meta_description: >-
-  A simple upgrade plan helps you improve your system steadily instead of
-  overspending on parts that do not matter yet. Review the benchmark data to
-  make an informed decision.
+meta_description: "A simple PC upgrade plan helps you improve your system steadily instead of overspending on components that do not matter yet."
 date: 2026-07-10T00:00:00.000Z
 category: Upgrades
 tags:

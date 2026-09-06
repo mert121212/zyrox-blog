@@ -1,8 +1,6 @@
 ---
 title: How to Set Up a Home Office PC for Productivity
-meta_description: >-
-  Create a workspace that supports focus, comfort, and reliable performance for
-  work, study, and everyday computing.
+meta_description: "Create a home office workspace that supports focus and reliable performance. Covers hardware, peripherals, ergonomics, and software essentials."
 date: 2026-07-11T00:00:00.000Z
 category: Productivity
 tags:

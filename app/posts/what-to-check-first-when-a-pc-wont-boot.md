@@ -1,8 +1,6 @@
 ---
 title: What to Check First When a PC Won't Boot
-meta_description: >-
-  A clear troubleshooting guide for boot failures that focuses on the most
-  common causes before deeper diagnostics.
+meta_description: "A clear troubleshooting guide for PC boot failures, covering power, RAM, GPU, and BIOS checks before moving to deeper hardware diagnostics."
 date: 2026-07-04T00:00:00.000Z
 category: Troubleshooting
 tags:

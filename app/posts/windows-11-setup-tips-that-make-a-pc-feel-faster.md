@@ -1,9 +1,6 @@
 ---
 title: Windows 11 Setup Tips That Make a PC Feel Faster
-meta_description: >-
-  A focused guide to system settings and habits that improve perceived speed on
-  Windows 11 without invasive changes. Here is exactly what you need to know to
-  fix it.
+meta_description: "A focused guide to Windows 11 settings and habits that improve perceived speed without invasive changes or third-party tweaks."
 date: 2026-07-01T00:00:00.000Z
 category: Windows
 tags:

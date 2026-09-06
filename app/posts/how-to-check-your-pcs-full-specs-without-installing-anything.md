@@ -1,6 +1,6 @@
 ---
 title: "How to Check Your PC's Full Specs Without Installing Anything"
-meta_description: "Learn how to find your computer's exact processor, RAM, motherboard, graphics card, and storage details using only built-in Windows tools."
+meta_description: "Learn how to find your computer specs using built-in Windows tools. Check CPU, RAM, GPU, and storage details without downloading anything."
 date: 2026-08-13
 category: "Windows"
 tags:

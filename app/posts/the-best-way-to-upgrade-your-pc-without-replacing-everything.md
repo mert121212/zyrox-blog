@@ -1,9 +1,6 @@
 ---
 title: The Best Way to Upgrade a PC Without Replacing Everything
-meta_description: >-
-  Learn how to upgrade a PC intelligently by targeting the components that
-  actually improve speed, stability, and value. The best upgrade I ever made to
-  a PC cost $65.
+meta_description: "Upgrade your PC intelligently by targeting the components that actually improve speed, stability, and value without a full rebuild."
 date: 2026-06-29T00:00:00.000Z
 category: Upgrades
 tags:

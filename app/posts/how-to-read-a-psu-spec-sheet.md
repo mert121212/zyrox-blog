@@ -1,8 +1,6 @@
 ---
 title: How to Read a PSU Spec Sheet Without Getting Misled
 meta_description: >-
-  Learn how to read PSU wattage, 80 Plus ratings, ripple, protections, and
-  quality signs without falling for marketing noise.
 date: 2026-07-05T00:00:00.000Z
 category: Power Supply
 tags:

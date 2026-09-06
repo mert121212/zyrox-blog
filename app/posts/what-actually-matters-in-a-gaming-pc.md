@@ -1,9 +1,6 @@
 ---
 title: What Actually Matters in a Gaming PC Build
-meta_description: >-
-  Cut through the marketing and learn which gaming PC components actually affect
-  frame rates, smoothness, and upgrade value. Review the benchmark data to make
-  an informed decision.
+meta_description: "Cut through PC marketing and learn which components actually affect frame rates, smoothness, and long-term upgrade value in gaming."
 date: 2026-07-01T00:00:00.000Z
 category: Gaming
 tags:

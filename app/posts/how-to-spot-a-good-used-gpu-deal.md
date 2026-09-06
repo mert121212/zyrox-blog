@@ -1,8 +1,6 @@
 ---
 title: How to Spot a Good Used GPU Deal
-meta_description: >-
-  Use these practical checks to tell the difference between a smart used
-  graphics card purchase and a risky one.
+meta_description: "Use these practical checks to spot a good used GPU deal and avoid mining-worn cards, thermal damage, and misleading marketplace listings."
 date: 2026-07-04T00:00:00.000Z
 category: Buying Guides
 tags:

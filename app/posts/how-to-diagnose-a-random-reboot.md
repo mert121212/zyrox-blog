@@ -1,8 +1,6 @@
 ---
 title: How to Diagnose a Random PC Reboot Without Losing Your Mind
-meta_description: >-
-  A hands-on guide to finding the cause of random reboots, from overheating and
-  unstable power to driver and BIOS issues.
+meta_description: "A hands-on guide to finding the cause of random PC reboots, covering overheating, unstable power delivery, driver conflicts, and BIOS issues."
 date: 2026-06-28T00:00:00.000Z
 category: Troubleshooting
 tags:

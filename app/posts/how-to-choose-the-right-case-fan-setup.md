@@ -1,9 +1,6 @@
 ---
 title: How to Choose the Right Case Fan Setup
-meta_description: >-
-  Learn how to balance airflow, noise, and aesthetics when choosing intake and
-  exhaust fans for your PC case. See the test results to understand the
-  real-world impact.
+meta_description: "Learn how to balance airflow, noise, and aesthetics when choosing intake and exhaust fans for your PC case. Practical layout examples."
 date: 2026-07-03T00:00:00.000Z
 category: Cooling
 tags:

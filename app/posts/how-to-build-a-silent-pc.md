@@ -1,8 +1,6 @@
 ---
 title: How to Build a Silent PC Without Sacrificing Performance
 meta_description: >-
-  Learn how to cut noise in a modern PC build with airflow planning, fan tuning,
-  and component choices that still keep performance high.
 date: 2026-07-02T00:00:00.000Z
 category: Cooling
 tags:

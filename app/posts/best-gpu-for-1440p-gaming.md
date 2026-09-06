@@ -1,6 +1,6 @@
 ---
 title: "Best GPU for 1440p Gaming: What to Buy in 2026"
-meta_description: "Find the best GPU for 1440p gaming in 2026 with a practical guide to performance, value, and upgrade balance. 1440p is the baseline for high-refresh-rate gaming."
+meta_description: "Find the best GPU for 1440p gaming in 2026. A practical guide to performance tiers, price-to-FPS value, and smart upgrade decisions."
 date: 2026-08-06
 category: "Gaming"
 tags:

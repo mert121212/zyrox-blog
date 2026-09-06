@@ -1,9 +1,6 @@
 ---
 title: How to Reduce PC Noise Without Sacrificing Cooling
 meta_description: >-
-  A practical look at fan tuning, airflow planning, and component selection for
-  quieter builds that still stay cool. My desk sits about two feet from my PC
-  tower.
 date: 2026-07-09T00:00:00.000Z
 category: Cooling
 tags:

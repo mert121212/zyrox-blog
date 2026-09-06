@@ -1,9 +1,6 @@
 ---
 title: How to Spot a Failing Hard Drive Before It Fails
-meta_description: >-
-  A straightforward guide to warning signs, diagnostics, and backup habits that
-  help you catch hard drive issues early. Here is my honest experience and what
-  you actually need.
+meta_description: "Learn the warning signs of a failing hard drive, from SMART errors to unusual sounds, and how to back up before data loss happens."
 date: 2026-07-06T00:00:00.000Z
 category: Storage
 tags:

@@ -1,9 +1,6 @@
 ---
 title: Why Case Airflow Matters More Than People Think
-meta_description: >-
-  A detailed explanation of why case airflow shapes thermals, noise levels, and
-  long-term system stability. See the test results to understand the real-world
-  impact.
+meta_description: "Case airflow shapes your PC thermals, noise levels, and long-term stability. Learn why fan placement matters more than fan count."
 date: 2026-07-07T00:00:00.000Z
 category: Cooling
 tags:

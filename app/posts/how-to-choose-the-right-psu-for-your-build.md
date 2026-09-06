@@ -1,9 +1,6 @@
 ---
 title: How to Choose the Right PSU for Your Build
-meta_description: >-
-  Understand wattage, efficiency, connectors, and quality when selecting a power
-  supply that will be reliable for years. See the test results to understand the
-  real-world impact.
+meta_description: "Understand wattage, efficiency ratings, connectors, and protection features when selecting a PSU that will last through multiple builds."
 date: 2026-07-07T00:00:00.000Z
 category: Power
 tags:

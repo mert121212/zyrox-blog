@@ -1,8 +1,6 @@
 ---
 title: Why Your PC Feels Slow Even When the CPU Is Fast
 meta_description: >-
-  A practical breakdown of why modern PCs feel laggy, including storage
-  bottlenecks, thermal throttling, background services, and memory pressure.
 date: 2026-06-28T00:00:00.000Z
 category: Performance
 tags:

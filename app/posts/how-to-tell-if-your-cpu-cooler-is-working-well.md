@@ -1,9 +1,6 @@
 ---
 title: How to Tell If Your CPU Cooler Is Working Well
-meta_description: >-
-  Learn how to spot thermal issues, fan problems, and poor mounting that can
-  affect your CPU's long-term stability. See the test results to understand the
-  real-world impact.
+meta_description: "Spot thermal issues, fan problems, and poor cooler mounting that silently degrade your CPU performance and long-term stability."
 date: 2026-07-13T00:00:00.000Z
 category: Cooling
 tags:

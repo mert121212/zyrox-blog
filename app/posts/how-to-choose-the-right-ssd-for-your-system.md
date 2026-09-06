@@ -1,8 +1,6 @@
 ---
 title: How to Choose the Right SSD for Your PC Without Paying for the Wrong Specs
 meta_description: >-
-  A practical guide to choosing the right SSD for gaming, work, and general use
-  by focusing on interface, capacity, and endurance rather than hype.
 date: 2026-06-27T00:00:00.000Z
 category: Storage
 tags:

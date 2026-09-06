@@ -1,9 +1,6 @@
 ---
 title: What to Do When Your PC Overheats
-meta_description: >-
-  A practical checklist for identifying overheating causes and reducing heat
-  before it leads to instability or damage. See the test results to understand
-  the real-world impact.
+meta_description: "A practical checklist for identifying PC overheating causes and reducing temperatures before they lead to throttling or damage."
 date: 2026-07-28T00:00:00.000Z
 category: Cooling
 tags:

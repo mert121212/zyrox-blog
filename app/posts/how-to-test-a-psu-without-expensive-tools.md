@@ -1,9 +1,6 @@
 ---
 title: How to Test a Power Supply Without Expensive Tools
-meta_description: >-
-  A practical guide to evaluating a PSU using basic checks, visual inspection,
-  and a careful test approach. See the test results to understand the real-world
-  impact.
+meta_description: "A practical guide to testing a power supply with basic checks, visual inspection, and safe load testing without specialized equipment."
 date: 2026-07-07T00:00:00.000Z
 category: Power
 tags:

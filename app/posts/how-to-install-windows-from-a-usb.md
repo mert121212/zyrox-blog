@@ -1,9 +1,6 @@
 ---
 title: How to Install Windows from a USB Drive Without Making a Mess of It
-meta_description: >-
-  A practical guide to creating a Windows installer USB and installing the OS
-  cleanly without the usual setup headaches. Here is exactly what you need to
-  know to fix it.
+meta_description: "A practical guide to creating a bootable Windows USB installer and performing a clean OS installation without common setup mistakes."
 date: 2026-06-30T00:00:00.000Z
 category: Windows
 tags:
