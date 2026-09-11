@@ -6,7 +6,7 @@
         "prebuild": "node scripts/generate-static-files.mjs",
         "dev": "node scripts/generate-static-files.mjs && next dev",
         "build": "next build",
-        "postbuild": "node -e \"const fs=require('fs'); if(fs.existsSync('public/sitemap.xml')) fs.copyFileSync('public/sitemap.xml', 'out/sitemap.xml');\"",
+        "postbuild": "node scripts/post-build.mjs",
         "start": "next start",
         "lint": "next lint",
         "indexnow": "node scripts/indexnow.mjs",

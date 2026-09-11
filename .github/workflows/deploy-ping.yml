@@ -1,0 +1,31 @@
+name: CI & Search Engine Ping
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-and-ping:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site & generate feeds
+        run: npm run build
+
+      - name: Ping Search Engine Hubs (Google & Bing)
+        run: |
+          node scripts/ping-search-engines.mjs
+          node scripts/indexnow.mjs || true

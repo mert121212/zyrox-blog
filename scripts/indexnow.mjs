@@ -42,6 +42,10 @@ function getAllUrls() {
         '/stories/best-gpu-1440p/',
         '/stories/budget-gaming-pc/',
         '/stories/speed-up-windows-11/',
+        '/stories/best-cpu-cooler-7800x3d/',
+        '/stories/ssd-vs-hdd-2026/',
+        '/stories/pc-wont-boot/',
+        '/stories/choose-right-psu/',
     ];
 
     const urls = [

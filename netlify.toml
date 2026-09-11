@@ -29,6 +29,21 @@
     Content-Type = "application/rss+xml; charset=utf-8"
 
 [[headers]]
+  for = "/atom.xml"
+  [headers.values]
+    Content-Type = "application/atom+xml; charset=utf-8"
+
+[[headers]]
+  for = "/feed.atom"
+  [headers.values]
+    Content-Type = "application/atom+xml; charset=utf-8"
+
+[[headers]]
+  for = "/news-sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+
+[[headers]]
   for = "/robots.txt"
   [headers.values]
     Content-Type = "text/plain; charset=utf-8"

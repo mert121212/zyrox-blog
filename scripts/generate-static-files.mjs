@@ -79,6 +79,30 @@ const webStories = [
         imageUrl: `${baseUrl}/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg`,
         lastmod: '2026-08-08',
     },
+    {
+        path: '/stories/best-cpu-cooler-7800x3d/',
+        title: 'Best CPU Cooler for Ryzen 7 7800X3D',
+        imageUrl: `${baseUrl}/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg`,
+        lastmod: '2026-08-02',
+    },
+    {
+        path: '/stories/ssd-vs-hdd-2026/',
+        title: 'SSD vs HDD: Which Should You Buy in 2026?',
+        imageUrl: `${baseUrl}/images/posts/ssd-vs-hdd-which-should-you-buy-in-2026.jpg`,
+        lastmod: '2026-08-12',
+    },
+    {
+        path: '/stories/pc-wont-boot/',
+        title: 'What to Check First When a PC Won\'t Boot',
+        imageUrl: `${baseUrl}/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg`,
+        lastmod: '2026-07-04',
+    },
+    {
+        path: '/stories/choose-right-psu/',
+        title: 'How to Choose the Right PSU for Your Build',
+        imageUrl: `${baseUrl}/images/posts/how-to-choose-the-right-psu-for-your-build.jpg`,
+        lastmod: '2026-07-07',
+    },
 ];
 
 // ── sitemap.xml ───────────────────────────────────────────

@@ -58,7 +58,61 @@ const STORY_MAP: Record<string, string> = {
     'best-gpu-for-1440p-gaming': 'best-gpu-1440p',
     'how-to-build-a-budget-gaming-pc': 'budget-gaming-pc',
     'how-to-speed-up-a-slow-windows-11-pc-in-under-30-minutes': 'speed-up-windows-11',
+    'best-cpu-cooler-for-ryzen-7-7800x3d': 'best-cpu-cooler-7800x3d',
+    'ssd-vs-hdd-which-should-you-buy-in-2026': 'ssd-vs-hdd-2026',
+    'what-to-check-first-when-a-pc-wont-boot': 'pc-wont-boot',
+    'how-to-choose-the-right-psu-for-your-build': 'choose-right-psu',
 };
+
+// Google Knowledge Graph Entities for Entity-Based Discover Ranking
+const HARDWARE_ENTITIES: { name: string; sameAs: string; matchRegex: RegExp }[] = [
+    { name: 'NVIDIA GeForce', sameAs: 'https://en.wikipedia.org/wiki/GeForce', matchRegex: /\b(nvidia|geforce|rtx|gtx)\b/i },
+    { name: 'AMD Ryzen', sameAs: 'https://en.wikipedia.org/wiki/Ryzen', matchRegex: /\b(amd|ryzen|am4|am5|7800x3d|5800x3d)\b/i },
+    { name: 'Graphics Processing Unit (GPU)', sameAs: 'https://en.wikipedia.org/wiki/Graphics_processing_unit', matchRegex: /\b(gpu|graphics card|vram|1440p|rasterization|ray tracing)\b/i },
+    { name: 'Central Processing Unit (CPU)', sameAs: 'https://en.wikipedia.org/wiki/Central_processing_unit', matchRegex: /\b(cpu|processor|cores|threads|tdp|clock speed)\b/i },
+    { name: 'Solid-State Drive (SSD)', sameAs: 'https://en.wikipedia.org/wiki/Solid-state_drive', matchRegex: /\b(ssd|nvme|pcie 4\.0|pcie 5\.0|sata ssd|m\.2)\b/i },
+    { name: 'Hard Disk Drive (HDD)', sameAs: 'https://en.wikipedia.org/wiki/Hard_disk_drive', matchRegex: /\b(hdd|hard drive|spinning disk|seagate|western digital)\b/i },
+    { name: 'Power Supply Unit (PSU)', sameAs: 'https://en.wikipedia.org/wiki/Power_supply_unit_(computer)', matchRegex: /\b(psu|power supply|wattage|80 plus|atx 3\.0|12vhpwr)\b/i },
+    { name: 'Motherboard', sameAs: 'https://en.wikipedia.org/wiki/Motherboard', matchRegex: /\b(motherboard|chipset|vrm|b650|x670|z790|bios|cmos)\b/i },
+    { name: 'Computer Cooling', sameAs: 'https://en.wikipedia.org/wiki/Computer_cooling', matchRegex: /\b(cooler|aio|liquid cooling|heatpipe|thermal paste|thermals)\b/i },
+    { name: 'Windows 11', sameAs: 'https://en.wikipedia.org/wiki/Windows_11', matchRegex: /\b(windows 11|microsoft windows|operating system|task manager)\b/i },
+];
+
+function getRelevantEntities(text: string) {
+    return HARDWARE_ENTITIES.filter((entity) => entity.matchRegex.test(text)).map((entity) => ({
+        '@type': 'Thing',
+        name: entity.name,
+        sameAs: entity.sameAs,
+    }));
+}
+
+function extractKeyTakeaways(content: string, description: string): string[] {
+    const takeaways: string[] = [];
+    const bulletMatches = content.slice(0, 3000).match(/^[*-]\s+(.+)$/gm);
+    if (bulletMatches && bulletMatches.length >= 3) {
+        for (const b of bulletMatches.slice(0, 3)) {
+            const clean = b.replace(/^[*-]\s+/, '').replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').trim();
+            if (clean.length > 20 && clean.length < 160) {
+                takeaways.push(clean);
+            }
+        }
+    }
+    if (takeaways.length < 3) {
+        const sentences = description.split(/\.\s+/).filter((s) => s.trim().length > 15);
+        for (const s of sentences) {
+            if (takeaways.length < 3) takeaways.push(s.trim().replace(/\.$/, ''));
+        }
+    }
+    if (takeaways.length < 3) {
+        const headingMatches = content.match(/^##\s+(.+)$/gm);
+        if (headingMatches) {
+            for (const h of headingMatches.slice(0, 3 - takeaways.length)) {
+                takeaways.push(h.replace(/^##\s+/, '').trim());
+            }
+        }
+    }
+    return takeaways.slice(0, 3);
+}
 
 // Image SEO & LCP: Eager load primary hero images for fast LCP (Google Discover score), lazy load subsequent images
 renderer.image = function (href: string, title: string | null, text: string) {
@@ -196,6 +250,8 @@ export default function PostPage({ params }: { params: { slug: string } }) {
     const howToSchema = isHowTo ? buildHowToSchema(post.title, post.meta_description, howToSteps, readingTime) : null;
 
     const imageUrl = toAbsoluteImageUrl(post.image);
+    const entities = getRelevantEntities(`${post.title} ${post.meta_description} ${post.keywords.join(' ')}`);
+    const keyTakeaways = extractKeyTakeaways(post.content, post.meta_description);
 
     const jsonLd = {
         '@context': 'https://schema.org',
@@ -203,6 +259,12 @@ export default function PostPage({ params }: { params: { slug: string } }) {
         headline: post.title,
         description: post.meta_description,
         image: [imageUrl],
+        about: entities.slice(0, 3),
+        mentions: entities.slice(3, 6),
+        speakable: {
+            '@type': 'SpeakableSpecification',
+            cssSelector: ['.article-excerpt', '.key-takeaways-list'],
+        },
         author: author
             ? {
                 '@type': 'Person',
@@ -309,6 +371,20 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                                         </Link>
                                         <span className="byline-role"> · {author.role}</span>
                                     </div>
+                                </div>
+                            )}
+
+                            {keyTakeaways.length > 0 && (
+                                <div className="key-takeaways-box">
+                                    <div className="key-takeaways-header">
+                                        <span className="key-takeaways-icon">⚡</span>
+                                        <strong>Key Takeaways</strong>
+                                    </div>
+                                    <ul className="key-takeaways-list">
+                                        {keyTakeaways.map((item, idx) => (
+                                            <li key={idx}>{item}</li>
+                                        ))}
+                                    </ul>
                                 </div>
                             )}
 
