@@ -32,7 +32,18 @@ const posts = fs
     .filter((f) => f.endsWith('.md') && !f.includes('['))
     .map((fileName) => {
         const raw = fs.readFileSync(path.join(postsDir, fileName), 'utf8');
-        const { data } = matter(raw);
+        const { data, content } = matter(raw);
+
+        let img = data.image || data.featured_image || data.og_image;
+        if (!img) {
+            const match = content.match(/!\[.*?\]\((.*?)\)/);
+            if (match && match[1]) {
+                img = match[1].trim();
+            }
+        }
+        if (!img) img = '/images/og-default.png';
+        const imageUrl = img.startsWith('http') ? img : `${baseUrl}${img.startsWith('/') ? '' : '/'}${img}`;
+
         return {
             slug: fileName.replace(/\.md$/, ''),
             title: (data.title ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'),
@@ -40,6 +51,7 @@ const posts = fs
             date: normalizeDate(data.date),
             updated: normalizeDate(data.updated ?? data.date),
             tags: data.tags || [],
+            imageUrl,
         };
     })
     .sort((a, b) => (a.date < b.date ? 1 : -1));
@@ -88,7 +100,7 @@ const sitemapEntries = [
             changefreq: 'monthly',
             priority: '0.9',
             image: {
-                loc: `${baseUrl}/images/og-default.png`,
+                loc: p.imageUrl,
                 title: p.title,
             },
         }),
@@ -109,7 +121,7 @@ console.log('✓ public/sitemap.xml');
 
 // ── rss.xml ───────────────────────────────────────────────
 const rss = `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Zyrox</title>
     <link>${baseUrl}</link>
@@ -124,6 +136,8 @@ ${posts
       <guid>${baseUrl}/posts/${post.slug}/</guid>
       <description>${post.meta_description}</description>
       <pubDate>${new Date(post.date).toUTCString()}</pubDate>
+      <media:content url="${post.imageUrl}" medium="image" />
+      <enclosure url="${post.imageUrl}" type="image/jpeg" length="0" />
     </item>`,
         )
         .join('\n')}

@@ -88,6 +88,15 @@ const MidArticleAdInjector = dynamic(
     { ssr: false },
 );
 
+function toAbsoluteImageUrl(imagePath?: string): string {
+    if (!imagePath) return 'https://zyroxlab.com/images/og-default.png';
+    if (imagePath.startsWith('http://') || imagePath.startsWith('https://')) {
+        return imagePath;
+    }
+    const cleanPath = imagePath.startsWith('/') ? imagePath : `/${imagePath}`;
+    return `https://zyroxlab.com${cleanPath}`;
+}
+
 export async function generateStaticParams() {
     return getAllPosts().map((post) => ({ slug: post.slug }));
 }
@@ -97,6 +106,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
     if (!post) return {};
 
     const author = getAuthorBySlug(post.author);
+    const imageUrl = toAbsoluteImageUrl(post.image);
 
     return {
         title: post.title,
@@ -118,9 +128,9 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
             tags: post.tags,
             images: [
                 {
-                    url: 'https://zyroxlab.com/images/og-default.png',
+                    url: imageUrl,
                     width: 1200,
-                    height: 630,
+                    height: 675,
                     alt: post.title,
                 },
             ],
@@ -131,7 +141,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
             description: post.meta_description,
             site: '@zyrox',
             creator: '@zyrox',
-            images: ['https://zyroxlab.com/images/og-default.png'],
+            images: [imageUrl],
         },
         authors: author ? [{ name: author.name }] : undefined,
     };
@@ -169,12 +179,14 @@ export default function PostPage({ params }: { params: { slug: string } }) {
     const howToSteps = isHowTo ? extractHowToSteps(post.content) : [];
     const howToSchema = isHowTo ? buildHowToSchema(post.title, post.meta_description, howToSteps, readingTime) : null;
 
+    const imageUrl = toAbsoluteImageUrl(post.image);
+
     const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'Article',
         headline: post.title,
         description: post.meta_description,
-        image: 'https://zyroxlab.com/images/og-default.png',
+        image: [imageUrl],
         author: author
             ? {
                 '@type': 'Person',

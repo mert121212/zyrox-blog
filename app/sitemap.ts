@@ -56,12 +56,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
     ];
 
-    const postUrls: MetadataRoute.Sitemap = posts.map((post) => ({
-        url: `${baseUrl}/posts/${post.slug}/`,
-        lastModified: new Date(post.updated || post.date),
-        changeFrequency: 'monthly' as const,
-        priority: 0.9,
-    }));
+    const postUrls: MetadataRoute.Sitemap = posts.map((post) => {
+        const imgUrl = post.image.startsWith('http')
+            ? post.image
+            : `${baseUrl}${post.image.startsWith('/') ? '' : '/'}${post.image}`;
+        return {
+            url: `${baseUrl}/posts/${post.slug}/`,
+            lastModified: new Date(post.updated || post.date),
+            changeFrequency: 'monthly' as const,
+            priority: 0.9,
+            images: [imgUrl],
+        };
+    });
 
     const authorUrls: MetadataRoute.Sitemap = authors.map((author) => ({
         url: `${baseUrl}/authors/${author.slug}/`,

@@ -10,6 +10,23 @@ function normalizeDate(value: unknown): string {
     return 'Unknown date';
 }
 
+function extractPostImage(data: Record<string, any>, content: string): string {
+    if (typeof data.image === 'string' && data.image.trim()) {
+        return data.image.trim();
+    }
+    if (typeof data.featured_image === 'string' && data.featured_image.trim()) {
+        return data.featured_image.trim();
+    }
+    if (typeof data.og_image === 'string' && data.og_image.trim()) {
+        return data.og_image.trim();
+    }
+    const match = content.match(/!\[.*?\]\((.*?)\)/);
+    if (match && match[1] && match[1].trim()) {
+        return match[1].trim();
+    }
+    return '/images/og-default.png';
+}
+
 export type Post = {
     slug: string;
     title: string;
@@ -22,6 +39,7 @@ export type Post = {
     excerpt: string;
     content: string;
     author: string; // author slug
+    image: string; // Featured / OpenGraph / Discover image
 };
 
 export function getAllPosts(): Post[] {
@@ -46,6 +64,7 @@ export function getAllPosts(): Post[] {
                 excerpt: data.meta_description,
                 content,
                 author: data.author || 'marcus-holt',
+                image: extractPostImage(data, content),
             } as Post;
         })
         .sort((a, b) => (a.date < b.date ? 1 : -1));
@@ -70,6 +89,7 @@ export function getPostBySlug(slug: string): Post | null {
         excerpt: data.meta_description,
         content,
         author: data.author || 'marcus-holt',
+        image: extractPostImage(data, content),
     } as Post;
 }
 
