@@ -38,8 +38,15 @@ function getAllUrls() {
         .filter((f) => f.endsWith('.md') && !f.includes('['))
         .map((f) => f.replace(/\.md$/, ''));
 
+    const storyRoutes = [
+        '/stories/best-gpu-1440p/',
+        '/stories/budget-gaming-pc/',
+        '/stories/speed-up-windows-11/',
+    ];
+
     const urls = [
         ...staticRoutes.map((route) => `${BASE_URL}${route}`),
+        ...storyRoutes.map((route) => `${BASE_URL}${route}`),
         ...postSlugs.map((slug) => `${BASE_URL}/posts/${slug}/`),
         ...authorSlugs.map((slug) => `${BASE_URL}/authors/${slug}/`),
     ];

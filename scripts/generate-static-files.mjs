@@ -1,5 +1,5 @@
 /**
- * Generates static public/sitemap.xml and public/rss.xml
+ * Generates static public/sitemap.xml, public/news-sitemap.xml, public/rss.xml, and public/atom.xml
  * Run with: node scripts/generate-static-files.mjs
  * Called automatically via prebuild in package.json
  *
@@ -59,6 +59,28 @@ const posts = fs
 // ── Author slugs ──────────────────────────────────────────
 const authorSlugs = ['marcus-holt', 'sara-vance', 'daniel-osei', 'rachel-kim'];
 
+// ── Web Stories ───────────────────────────────────────────
+const webStories = [
+    {
+        path: '/stories/best-gpu-1440p/',
+        title: 'Best GPU for 1440p Gaming in 2026',
+        imageUrl: `${baseUrl}/images/posts/best-gpu-for-1440p-gaming.jpg`,
+        lastmod: '2026-08-06',
+    },
+    {
+        path: '/stories/budget-gaming-pc/',
+        title: 'How to Build a Budget Gaming PC That Still Feels Fast',
+        imageUrl: `${baseUrl}/images/posts/how-to-build-a-budget-gaming-pc.jpg`,
+        lastmod: '2026-07-17',
+    },
+    {
+        path: '/stories/speed-up-windows-11/',
+        title: 'Speed Up Windows 11 in Under 30 Minutes',
+        imageUrl: `${baseUrl}/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg`,
+        lastmod: '2026-08-08',
+    },
+];
+
 // ── sitemap.xml ───────────────────────────────────────────
 const staticRoutes = [
     { path: '/', lastmod: posts.length > 0 ? posts[0].date : '2026-06-27', priority: '1.0', freq: 'daily' },
@@ -92,6 +114,19 @@ const sitemapEntries = [
     ...staticRoutes.map((r) =>
         urlEntry({ loc: `${baseUrl}${r.path}`, lastmod: r.lastmod, changefreq: r.freq, priority: r.priority }),
     ),
+    // Web Stories (AMP Stories for Google Discover)
+    ...webStories.map((s) =>
+        urlEntry({
+            loc: `${baseUrl}${s.path}`,
+            lastmod: s.lastmod,
+            changefreq: 'monthly',
+            priority: '0.9',
+            image: {
+                loc: s.imageUrl,
+                title: s.title,
+            },
+        }),
+    ),
     // Posts (trailing slash!) with Google Image Sitemap metadata
     ...posts.map((p) =>
         urlEntry({
@@ -119,6 +154,37 @@ ${sitemapEntries.join('\n')}
 fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemap, 'utf8');
 console.log('✓ public/sitemap.xml');
 
+// ── news-sitemap.xml ───────────────────────────────────────
+// Google News & Discover: 15 freshest/recently updated articles
+const recentPosts = posts.slice(0, 15);
+const newsSitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+${recentPosts
+    .map(
+        (p) => `  <url>
+    <loc>${baseUrl}/posts/${p.slug}/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Zyrox</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>${new Date(p.date).toISOString()}</news:publication_date>
+      <news:title>${p.title}</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>${p.imageUrl}</image:loc>
+      <image:title>${p.title}</image:title>
+    </image:image>
+  </url>`,
+    )
+    .join('\n')}
+</urlset>
+`;
+fs.writeFileSync(path.join(publicDir, 'news-sitemap.xml'), newsSitemap, 'utf8');
+console.log('✓ public/news-sitemap.xml');
+
 // ── rss.xml ───────────────────────────────────────────────
 const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
@@ -127,10 +193,12 @@ const rss = `<?xml version="1.0" encoding="UTF-8"?>
     <link>${baseUrl}</link>
     <description>Practical PC hardware guides, build advice, and troubleshooting articles.</description>
     <atom:link href="${baseUrl}/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link rel="hub" href="https://pubsubhubbub.appspot.com/" />
+    <atom:link rel="hub" href="https://pubsubhubbub.superfeedr.com/" />
     <language>en</language>
 ${posts
-        .map(
-            (post) => `    <item>
+    .map(
+        (post) => `    <item>
       <title>${post.title}</title>
       <link>${baseUrl}/posts/${post.slug}/</link>
       <guid>${baseUrl}/posts/${post.slug}/</guid>
@@ -139,17 +207,46 @@ ${posts
       <media:content url="${post.imageUrl}" medium="image" />
       <enclosure url="${post.imageUrl}" type="image/jpeg" length="0" />
     </item>`,
-        )
-        .join('\n')}
+    )
+    .join('\n')}
   </channel>
 </rss>
 `;
 fs.writeFileSync(path.join(publicDir, 'rss.xml'), rss, 'utf8');
 console.log('✓ public/rss.xml');
 
+// ── atom.xml & feed.atom ──────────────────────────────────
+const atom = `<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Zyrox</title>
+  <subtitle>Practical PC hardware guides, build advice, and troubleshooting articles.</subtitle>
+  <link href="${baseUrl}/atom.xml" rel="self" type="application/atom+xml" />
+  <link href="${baseUrl}/" />
+  <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
+  <link rel="hub" href="https://pubsubhubbub.superfeedr.com/" />
+  <id>${baseUrl}/</id>
+  <updated>${new Date(posts.length > 0 ? posts[0].date : Date.now()).toISOString()}</updated>
+${posts
+    .map(
+        (post) => `  <entry>
+    <title>${post.title}</title>
+    <link href="${baseUrl}/posts/${post.slug}/" />
+    <id>${baseUrl}/posts/${post.slug}/</id>
+    <updated>${new Date(post.updated || post.date).toISOString()}</updated>
+    <summary>${post.meta_description}</summary>
+    <link rel="enclosure" type="image/jpeg" href="${post.imageUrl}" />
+  </entry>`,
+    )
+    .join('\n')}
+</feed>
+`;
+fs.writeFileSync(path.join(publicDir, 'atom.xml'), atom, 'utf8');
+fs.writeFileSync(path.join(publicDir, 'feed.atom'), atom, 'utf8');
+console.log('✓ public/atom.xml & public/feed.atom');
+
 // ── IndexNow Key ──────────────────────────────────────────
 const indexNowKey = '2B0eB64F21D54Fe8A6A9DD15C59FD067';
 fs.writeFileSync(path.join(publicDir, `${indexNowKey}.txt`), `${indexNowKey}\n`, 'utf8');
 console.log(`✓ public/${indexNowKey}.txt`);
 
-console.log(`\nGenerated ${posts.length} posts in sitemap/rss.`);
+console.log(`\nGenerated ${posts.length} posts + ${webStories.length} Web Stories in sitemap/news-sitemap/rss/atom.`);

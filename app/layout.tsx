@@ -40,6 +40,7 @@ export const metadata: Metadata = {
     alternates: {
         types: {
             'application/rss+xml': '/rss.xml',
+            'application/atom+xml': '/atom.xml',
         },
     },
     openGraph: {
@@ -98,6 +99,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
                 <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
                 <link rel="alternate" type="application/rss+xml" title="Zyrox RSS Feed" href="/rss.xml" />
+                <link rel="alternate" type="application/atom+xml" title="Zyrox Atom Feed" href="/atom.xml" />
+                <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
+                <link rel="hub" href="https://pubsubhubbub.superfeedr.com/" />
 
                 {/* Google Analytics — deferred until browser idle or 5s */}
                 <script

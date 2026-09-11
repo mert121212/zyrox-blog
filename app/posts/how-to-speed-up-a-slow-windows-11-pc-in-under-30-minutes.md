@@ -15,9 +15,10 @@ keywords:
   - "optimize Windows for gaming"
   - "fix laggy computer"
 author: rachel-kim
+image: "/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg)
 Look, I'm gonna be straight with you. I've worked on hundreds of slow [Windows 11](https://www.microsoft.com/windows/windows-11) machines at this point, and nine times out of ten the fix takes less than half an hour. Not exaggerating.
 
 The frustrating part? Most of these PCs aren't actually broken. They're just drowning in background junk — apps that auto-launch on boot, telemetry phoning home every few seconds, animations eating GPU cycles for no good reason. A brand new laptop from Best Buy can start feeling sluggish within six months of normal use. I've watched it happen to my own family's machines.

@@ -14,9 +14,10 @@ keywords:
   - "Ryzen 7 7800X3D cooling"
   - "best cooler for 7800X3D"
 author: daniel-osei
+image: "/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg)
 I keep seeing people on Reddit asking if they need a massive 360mm liquid cooler for the Ryzen 7 7800X3D. 
 
 Short answer: no. Not even close. 

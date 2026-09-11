@@ -15,9 +15,10 @@ keywords:
   - value
   - pc build
   - gaming
+image: "/images/posts/how-to-build-a-budget-gaming-pc.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/how-to-build-a-budget-gaming-pc.jpg)
 Budget gaming PCs have a terrible reputation, and it's mostly undeserved. I've personally built $600 systems that ran circles around prebuilts costing twice as much. The trick isn't finding the cheapest absolute parts — it's knowing exactly where to spend and where to ruthlessly cut corners. Get those two things right, and you end up with a machine that feels genuinely fast, not just "good for the price."
 
 I'm going to walk through two real build tiers — a $500 entry build and a $700 sweet-spot build. No theoretical nonsense, just actual parts you can buy right now, and honest FPS expectations. 

@@ -14,9 +14,10 @@ keywords:
   - "best graphics card for 1440p"
   - "GPU for 2K gaming"
 author: marcus-holt
+image: "/images/posts/best-gpu-for-1440p-gaming.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-gpu-for-1440p-gaming.jpg)
 1440p is the baseline for high-refresh-rate gaming right now. A 2560x1440 resolution gives you enough pixel density for a 27-inch monitor without hitting you with the massive performance tax that 4K demands. I've spent the last month benchmarking the current GPU stack across rasterized and ray-traced workloads to figure out exactly where the price-to-performance sweet spots are.
 
 Here is the current state of the market.

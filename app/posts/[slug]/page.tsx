@@ -54,9 +54,19 @@ renderer.heading = function (text: string, level: number, raw: string) {
     return `<h${level} id="${slug}">${text}</h${level}>\n`;
 };
 
-// Image SEO: Automatic lazy loading, async decoding, and descriptive alt fallback
+const STORY_MAP: Record<string, string> = {
+    'best-gpu-for-1440p-gaming': 'best-gpu-1440p',
+    'how-to-build-a-budget-gaming-pc': 'budget-gaming-pc',
+    'how-to-speed-up-a-slow-windows-11-pc-in-under-30-minutes': 'speed-up-windows-11',
+};
+
+// Image SEO & LCP: Eager load primary hero images for fast LCP (Google Discover score), lazy load subsequent images
 renderer.image = function (href: string, title: string | null, text: string) {
     const titleAttr = title ? ` title="${title}"` : '';
+    const isHero = href.includes('/images/posts/') || href.includes('default-hero') || (text && text.toLowerCase().includes('hero'));
+    if (isHero) {
+        return `<img src="${href}" alt="${text || 'Zyrox Hardware Guide'}"${titleAttr} fetchpriority="high" loading="eager" decoding="async" width="1200" height="675" />`;
+    }
     return `<img src="${href}" alt="${text || 'Zyrox Hardware Guide'}"${titleAttr} loading="lazy" decoding="async" />`;
 };
 
@@ -107,6 +117,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
 
     const author = getAuthorBySlug(post.author);
     const imageUrl = toAbsoluteImageUrl(post.image);
+    const storySlug = STORY_MAP[params.slug];
 
     return {
         title: post.title,
@@ -115,6 +126,11 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
         alternates: {
             canonical: `/posts/${params.slug}/`,
         },
+        other: storySlug
+            ? {
+                amphtml: `https://zyroxlab.com/stories/${storySlug}/`,
+            }
+            : undefined,
         openGraph: {
             title: post.title,
             description: post.meta_description,
@@ -261,6 +277,23 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                                 </span>
                                 <ReadingListToggle slug={params.slug} title={post.title} />
                             </div>
+                            {STORY_MAP[params.slug] && (
+                                <div className="web-story-banner">
+                                    <a
+                                        href={`/stories/${STORY_MAP[params.slug]}/`}
+                                        className="web-story-link"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        title="View interactive Google Web Story"
+                                    >
+                                        <span className="web-story-icon">⚡</span>
+                                        <span className="web-story-text">
+                                            <strong>Visual Story Available:</strong> Tap to view the full-screen interactive story
+                                        </span>
+                                        <span className="web-story-arrow">Open Story →</span>
+                                    </a>
+                                </div>
+                            )}
                             <h1>{post.title}</h1>
                             <p className="article-excerpt">{post.meta_description}</p>
 

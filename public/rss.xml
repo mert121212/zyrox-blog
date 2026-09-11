@@ -5,6 +5,8 @@
     <link>https://zyroxlab.com</link>
     <description>Practical PC hardware guides, build advice, and troubleshooting articles.</description>
     <atom:link href="https://zyroxlab.com/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link rel="hub" href="https://pubsubhubbub.appspot.com/" />
+    <atom:link rel="hub" href="https://pubsubhubbub.superfeedr.com/" />
     <language>en</language>
     <item>
       <title>How to Check Your PC's Full Specs Without Installing Anything</title>
@@ -21,8 +23,8 @@
       <guid>https://zyroxlab.com/posts/ssd-vs-hdd-which-should-you-buy-in-2026/</guid>
       <description>The complete 2026 guide to choosing between an SSD and an HDD for gaming, video editing, mass storage, and everyday PC use.</description>
       <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
-      <media:content url="https://zyroxlab.com/images/default-hero.jpg" medium="image" />
-      <enclosure url="https://zyroxlab.com/images/default-hero.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://zyroxlab.com/images/posts/ssd-vs-hdd-which-should-you-buy-in-2026.jpg" medium="image" />
+      <enclosure url="https://zyroxlab.com/images/posts/ssd-vs-hdd-which-should-you-buy-in-2026.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>How to Free Up Disk Space on Windows Without Deleting Your Files</title>
@@ -75,8 +77,8 @@
       <guid>https://zyroxlab.com/posts/how-to-speed-up-a-slow-windows-11-pc-in-under-30-minutes/</guid>
       <description>A practical, no-nonsense guide to speeding up a laggy Windows 11 computer by targeting the settings and background apps that actually cause slowdowns.</description>
       <pubDate>Sat, 08 Aug 2026 00:00:00 GMT</pubDate>
-      <media:content url="https://zyroxlab.com/images/default-hero.jpg" medium="image" />
-      <enclosure url="https://zyroxlab.com/images/default-hero.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://zyroxlab.com/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg" medium="image" />
+      <enclosure url="https://zyroxlab.com/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>How to Fix High CPU Usage on Windows</title>
@@ -111,8 +113,8 @@
       <guid>https://zyroxlab.com/posts/best-gpu-for-1440p-gaming/</guid>
       <description>Find the best GPU for 1440p gaming in 2026. A practical guide to performance tiers, price-to-FPS value, and smart upgrade decisions.</description>
       <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
-      <media:content url="https://zyroxlab.com/images/default-hero.jpg" medium="image" />
-      <enclosure url="https://zyroxlab.com/images/default-hero.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://zyroxlab.com/images/posts/best-gpu-for-1440p-gaming.jpg" medium="image" />
+      <enclosure url="https://zyroxlab.com/images/posts/best-gpu-for-1440p-gaming.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>What Is the Best Motherboard for Ryzen 7 7800X3D?</title>
@@ -147,8 +149,8 @@
       <guid>https://zyroxlab.com/posts/best-cpu-cooler-for-ryzen-7-7800x3d/</guid>
       <description>Compare the best CPU coolers for Ryzen 7 7800X3D with thermal benchmarks, noise levels, and real-world value analysis for 2026.</description>
       <pubDate>Sun, 02 Aug 2026 00:00:00 GMT</pubDate>
-      <media:content url="https://zyroxlab.com/images/default-hero.jpg" medium="image" />
-      <enclosure url="https://zyroxlab.com/images/default-hero.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://zyroxlab.com/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg" medium="image" />
+      <enclosure url="https://zyroxlab.com/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Best SSD for Gaming in 2026: What Actually Matters</title>
@@ -291,8 +293,8 @@
       <guid>https://zyroxlab.com/posts/how-to-build-a-budget-gaming-pc/</guid>
       <description>Learn how to build a budget gaming PC that delivers strong 1080p performance. Smart part choices that maximize value over hype.</description>
       <pubDate>Fri, 17 Jul 2026 00:00:00 GMT</pubDate>
-      <media:content url="https://zyroxlab.com/images/default-hero.jpg" medium="image" />
-      <enclosure url="https://zyroxlab.com/images/default-hero.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://zyroxlab.com/images/posts/how-to-build-a-budget-gaming-pc.jpg" medium="image" />
+      <enclosure url="https://zyroxlab.com/images/posts/how-to-build-a-budget-gaming-pc.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Signs Your Motherboard May Be Failing</title>
@@ -462,8 +464,8 @@
       <guid>https://zyroxlab.com/posts/how-to-choose-the-right-psu-for-your-build/</guid>
       <description>Understand wattage, efficiency ratings, connectors, and protection features when selecting a PSU that will last through multiple builds.</description>
       <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
-      <media:content url="https://zyroxlab.com/images/default-hero.jpg" medium="image" />
-      <enclosure url="https://zyroxlab.com/images/default-hero.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://zyroxlab.com/images/posts/how-to-choose-the-right-psu-for-your-build.jpg" medium="image" />
+      <enclosure url="https://zyroxlab.com/images/posts/how-to-choose-the-right-psu-for-your-build.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>How to Choose an SSD for a Laptop or Desktop Without Overbuying</title>
@@ -543,8 +545,8 @@
       <guid>https://zyroxlab.com/posts/what-to-check-first-when-a-pc-wont-boot/</guid>
       <description>A clear troubleshooting guide for PC boot failures, covering power, RAM, GPU, and BIOS checks before moving to deeper hardware diagnostics.</description>
       <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
-      <media:content url="https://zyroxlab.com/images/default-hero.jpg" medium="image" />
-      <enclosure url="https://zyroxlab.com/images/default-hero.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://zyroxlab.com/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg" medium="image" />
+      <enclosure url="https://zyroxlab.com/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>How to Spot a Good Used GPU Deal</title>

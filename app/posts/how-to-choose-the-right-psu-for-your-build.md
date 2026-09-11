@@ -15,9 +15,10 @@ keywords:
   - wattage
   - efficiency
   - power
+image: "/images/posts/how-to-choose-the-right-psu-for-your-build.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/how-to-choose-the-right-psu-for-your-build.jpg)
 The power supply is the most overlooked component in most PC builds, and it's also one of the most consequential. A poorly chosen PSU can cause random reboots, gradual component degradation, and silent voltage instability that only shows up under peak load. A well-chosen unit delivers clean, stable power across its rated range, keeps running for a decade, and never needs to be thought about again.
 
 I've helped diagnose a surprising number of builds where the PSU was the root cause of an issue that looked like a CPU, RAM, or GPU problem. Voltage sag under transient load, protection circuits that trip too aggressively, capacitors that age faster than they should — all of these trace back to choosing based on sticker wattage rather than actual electrical quality. This guide walks through everything you need to make a confident decision.

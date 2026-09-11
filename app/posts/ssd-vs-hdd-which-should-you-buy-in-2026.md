@@ -15,9 +15,10 @@ keywords:
   - "SSD for gaming"
   - "NVMe vs SATA vs HDD"
 author: sara-vance
+image: "/images/posts/ssd-vs-hdd-which-should-you-buy-in-2026.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/ssd-vs-hdd-which-should-you-buy-in-2026.jpg)
 Five years ago, picking storage for a build was a genuinely painful decision. I remember pricing out a 500 GB Samsung 860 EVO in 2018 and it cost as much as a 4 TB Seagate Barracuda. So everyone did the same thing — a small SSD for Windows and a big HDD for games and media. You didn't really have a choice.
 
 That math doesn't work anymore.

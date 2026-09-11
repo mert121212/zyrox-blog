@@ -15,9 +15,10 @@ keywords:
   - hardware
   - diagnostics
   - what
+image: "/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg)
 A PC that won't boot is one of those problems that can send you spiraling into worst-case scenarios. I've been there — staring at a black screen at midnight, assuming the motherboard is dead or the CPU is fried. Nine times out of ten, it's something far more mundane. A loose RAM stick. A PSU switch left in the off position. A BIOS setting from a failed overclock attempt.
 
 This guide walks through the diagnostic process in order — from the most common and fixable causes to the more serious ones. Work through it methodically and you'll resolve most boot failures without replacing a single component.
