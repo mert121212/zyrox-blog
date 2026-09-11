@@ -17,6 +17,7 @@ import {
 } from '@/lib/schema-helpers';
 import { PostTags } from '@/components/post-tags';
 import { injectContextualInternalLink } from '@/lib/internal-links';
+import { LabTrustBadge } from '@/components/lab-trust-badge';
 
 function slugifyHeading(raw: string): string {
     return (raw || '')
@@ -149,6 +150,14 @@ const AdBanner = dynamic(
 );
 const MidArticleAdInjector = dynamic(
     () => import('@/components/ad-banner').then((m) => ({ default: m.MidArticleAdInjector })),
+    { ssr: false },
+);
+const SocialShare = dynamic(
+    () => import('@/components/social-share').then((m) => ({ default: m.SocialShare })),
+    { ssr: false },
+);
+const NextArticleBar = dynamic(
+    () => import('@/components/next-article-bar').then((m) => ({ default: m.NextArticleBar })),
     { ssr: false },
 );
 
@@ -317,9 +326,15 @@ export default function PostPage({ params }: { params: { slug: string } }) {
         ],
     };
 
+    const related = allPosts.filter((p) => p.slug !== post.slug && p.category === post.category);
+    const nextPost = related.length > 0 ? related[0] : (allPosts.find((p) => p.slug !== post.slug) || allPosts[0]);
+
     return (
         <main className="article-content">
             <ReadingProgress />
+            {nextPost && (
+                <NextArticleBar nextPost={{ slug: nextPost.slug, title: nextPost.title, category: nextPost.category }} />
+            )}
             <div className="container">
                 <div className="article-layout">
                     <div className="article-main">
@@ -374,6 +389,8 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                                 </div>
                             )}
 
+                            <SocialShare title={post.title} url={`/posts/${params.slug}/`} />
+
                             {keyTakeaways.length > 0 && (
                                 <div className="key-takeaways-box">
                                     <div className="key-takeaways-header">
@@ -387,6 +404,8 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                                     </ul>
                                 </div>
                             )}
+
+                            <LabTrustBadge category={post.category} />
 
                             {/* Ad 1: top of article */}
                             <AdBanner />
@@ -421,6 +440,8 @@ export default function PostPage({ params }: { params: { slug: string } }) {
 
                             {/* SEO: Clickable tags for internal linking */}
                             <PostTags post={post} />
+
+                            <SocialShare title={post.title} url={`/posts/${params.slug}/`} />
 
                             <HelpfulVote slug={params.slug} />
 
