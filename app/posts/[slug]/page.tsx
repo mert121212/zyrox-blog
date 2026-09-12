@@ -68,14 +68,20 @@ const STORY_MAP: Record<string, string> = {
 // Google Knowledge Graph Entities for Entity-Based Discover Ranking
 const HARDWARE_ENTITIES: { name: string; sameAs: string; matchRegex: RegExp }[] = [
     { name: 'NVIDIA GeForce', sameAs: 'https://en.wikipedia.org/wiki/GeForce', matchRegex: /\b(nvidia|geforce|rtx|gtx)\b/i },
-    { name: 'AMD Ryzen', sameAs: 'https://en.wikipedia.org/wiki/Ryzen', matchRegex: /\b(amd|ryzen|am4|am5|7800x3d|5800x3d)\b/i },
+    { name: 'AMD Ryzen', sameAs: 'https://en.wikipedia.org/wiki/Ryzen', matchRegex: /\b(amd|ryzen|am4|am5|7800x3d|5800x3d|9800x3d)\b/i },
+    { name: 'Intel Core', sameAs: 'https://en.wikipedia.org/wiki/Intel_Core', matchRegex: /\b(intel|core i[3579]|13700k|14700k|14900k|lga1700|arrow lake)\b/i },
     { name: 'Graphics Processing Unit (GPU)', sameAs: 'https://en.wikipedia.org/wiki/Graphics_processing_unit', matchRegex: /\b(gpu|graphics card|vram|1440p|rasterization|ray tracing)\b/i },
     { name: 'Central Processing Unit (CPU)', sameAs: 'https://en.wikipedia.org/wiki/Central_processing_unit', matchRegex: /\b(cpu|processor|cores|threads|tdp|clock speed)\b/i },
+    { name: 'Random-Access Memory (RAM)', sameAs: 'https://en.wikipedia.org/wiki/Random-access_memory', matchRegex: /\b(ram|ddr4|ddr5|xmp|expo|cl30|cl36|memory timings)\b/i },
     { name: 'Solid-State Drive (SSD)', sameAs: 'https://en.wikipedia.org/wiki/Solid-state_drive', matchRegex: /\b(ssd|nvme|pcie 4\.0|pcie 5\.0|sata ssd|m\.2)\b/i },
     { name: 'Hard Disk Drive (HDD)', sameAs: 'https://en.wikipedia.org/wiki/Hard_disk_drive', matchRegex: /\b(hdd|hard drive|spinning disk|seagate|western digital)\b/i },
     { name: 'Power Supply Unit (PSU)', sameAs: 'https://en.wikipedia.org/wiki/Power_supply_unit_(computer)', matchRegex: /\b(psu|power supply|wattage|80 plus|atx 3\.0|12vhpwr)\b/i },
     { name: 'Motherboard', sameAs: 'https://en.wikipedia.org/wiki/Motherboard', matchRegex: /\b(motherboard|chipset|vrm|b650|x670|z790|bios|cmos)\b/i },
     { name: 'Computer Cooling', sameAs: 'https://en.wikipedia.org/wiki/Computer_cooling', matchRegex: /\b(cooler|aio|liquid cooling|heatpipe|thermal paste|thermals)\b/i },
+    { name: 'Computer Monitor & Display', sameAs: 'https://en.wikipedia.org/wiki/Computer_monitor', matchRegex: /\b(monitor|oled|ips|refresh rate|144hz|240hz|hdr|displayport|hdmi)\b/i },
+    { name: 'Personal Computer Hardware', sameAs: 'https://en.wikipedia.org/wiki/Personal_computer_hardware', matchRegex: /\b(pc build|pc hardware|custom pc|gaming pc|chassis)\b/i },
+    { name: 'Overclocking', sameAs: 'https://en.wikipedia.org/wiki/Overclocking', matchRegex: /\b(overclock|overclocking|undervolt|undervolting|pbo|curve optimizer)\b/i },
+    { name: 'Benchmark (Computing)', sameAs: 'https://en.wikipedia.org/wiki/Benchmark_(computing)', matchRegex: /\b(benchmark|benchmarks|cinebench|timespy|fps|framerate)\b/i },
     { name: 'Windows 11', sameAs: 'https://en.wikipedia.org/wiki/Windows_11', matchRegex: /\b(windows 11|microsoft windows|operating system|task manager)\b/i },
 ];
 
@@ -264,15 +270,27 @@ export default function PostPage({ params }: { params: { slug: string } }) {
 
     const jsonLd = {
         '@context': 'https://schema.org',
-        '@type': 'Article',
+        '@type': ['TechArticle', 'NewsArticle'],
         headline: post.title,
         description: post.meta_description,
-        image: [imageUrl],
-        about: entities.slice(0, 3),
-        mentions: entities.slice(3, 6),
+        image: [
+            imageUrl,
+            {
+                '@type': 'ImageObject',
+                url: imageUrl,
+                width: 1200,
+                height: 675,
+                caption: post.title,
+            },
+        ],
+        inLanguage: 'en-US',
+        isAccessibleForFree: 'true',
+        proficiencyLevel: 'Beginner to Advanced',
+        about: entities.slice(0, 4),
+        mentions: entities.slice(4, 10),
         speakable: {
             '@type': 'SpeakableSpecification',
-            cssSelector: ['.article-excerpt', '.key-takeaways-list'],
+            cssSelector: ['.article-excerpt', '.key-takeaways-list', '.lab-trust-badge'],
         },
         author: author
             ? {
@@ -286,6 +304,12 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                 '@type': 'Organization',
                 name: 'Zyrox',
             },
+        reviewedBy: {
+            '@type': 'Person',
+            name: author?.slug === 'marcus-holt' ? 'Sara Vance' : 'Marcus Holt',
+            jobTitle: author?.slug === 'marcus-holt' ? 'Storage & Display Editor' : 'Senior Hardware Editor',
+            url: author?.slug === 'marcus-holt' ? 'https://zyroxlab.com/authors/sara-vance/' : 'https://zyroxlab.com/authors/marcus-holt/',
+        },
         publisher: {
             '@type': 'Organization',
             name: 'Zyrox',
@@ -293,7 +317,11 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             logo: {
                 '@type': 'ImageObject',
                 url: 'https://zyroxlab.com/logo.png',
+                width: 512,
+                height: 512,
             },
+            publishingPrinciples: 'https://zyroxlab.com/about/#editorial-policy',
+            correctionsPolicy: 'https://zyroxlab.com/about/#corrections',
         },
         datePublished: post.date,
         dateModified: post.updated,
@@ -376,15 +404,23 @@ export default function PostPage({ params }: { params: { slug: string } }) {
 
                             {author && (
                                 <div className="article-author-byline">
-                                    <Link href={`/authors/${author.slug}/`} className="byline-avatar" aria-label={`View ${author.name}'s profile`}>
-                                        {author.avatar}
-                                    </Link>
-                                    <div>
-                                        <span className="byline-label">By </span>
-                                        <Link href={`/authors/${author.slug}/`} className="byline-name">
-                                            {author.name}
+                                    <div className="byline-author-info">
+                                        <Link href={`/authors/${author.slug}/`} className="byline-avatar" aria-label={`View ${author.name}'s profile`}>
+                                            {author.avatar}
                                         </Link>
-                                        <span className="byline-role"> · {author.role}</span>
+                                        <div>
+                                            <span className="byline-label">By </span>
+                                            <Link href={`/authors/${author.slug}/`} className="byline-name">
+                                                {author.name}
+                                            </Link>
+                                            <span className="byline-role"> · {author.role}</span>
+                                        </div>
+                                    </div>
+                                    <div className="byline-editorial-trust">
+                                        <span className="trust-pill">✓ Fact-Checked</span>
+                                        <span className="trust-reviewer">
+                                            Reviewed by <Link href={author.slug === 'marcus-holt' ? '/authors/sara-vance/' : '/authors/marcus-holt/'}>{author.slug === 'marcus-holt' ? 'Sara Vance' : 'Marcus Holt'}</Link> · <Link href="/about/#testing-methodology">Test Protocol</Link>
+                                        </span>
                                     </div>
                                 </div>
                             )}

@@ -27,6 +27,7 @@ export default function AboutPage() {
             url: 'https://zyroxlab.com',
             logo: 'https://zyroxlab.com/logo.png',
             publishingPrinciples: 'https://zyroxlab.com/about/#editorial-policy',
+            correctionsPolicy: 'https://zyroxlab.com/about/#corrections',
             contactPoint: {
                 '@type': 'ContactPoint',
                 email: 'zyroxlabcom@gmail.com',
@@ -117,6 +118,31 @@ export default function AboutPage() {
                     </p>
                     <p>
                         We do not accept payment for coverage, and our editorial decisions are not influenced by manufacturer relationships. Our only obligation is to the reader.
+                    </p>
+                </section>
+
+                <section id="testing-methodology" className="about-section">
+                    <h2>Hardware Lab Testing Protocol</h2>
+                    <p>
+                        All hardware evaluation at Zyrox follows standardized bench testing procedures in our controlled test environment:
+                    </p>
+                    <ul style={{ paddingLeft: '1.25rem', marginTop: '0.5rem', marginBottom: '1rem', color: 'var(--muted)', lineHeight: '1.7' }}>
+                        <li><strong>Standardized Ambient:</strong> All thermal and acoustic benchmarks are conducted in a temperature-controlled 21°C (±0.5°C) ambient room.</li>
+                        <li><strong>Clean OS Baseline:</strong> Benchmarks use a stripped, non-OEM Windows 11 installation with automated background processes, Xbox Game Bar, and telemetry deactivated.</li>
+                        <li><strong>Repetition & Noise Filtering:</strong> Every synthetic and gaming benchmark is executed a minimum of 3 times to ensure consistency, eliminating anomalous runs.</li>
+                        <li><strong>Independent Retail Units:</strong> Whenever possible, we purchase hardware through standard retail channels to guarantee our results match what readers buy off the shelf.</li>
+                    </ul>
+                </section>
+
+                <section id="corrections" className="about-section">
+                    <h2>Corrections & Fact-Checking Policy</h2>
+                    <p>
+                        Accuracy is foundational to technical hardware journalism. If an error, driver discrepancy, or outdated benchmark is identified in any of our guides:
+                    </p>
+                    <p>
+                        1. We investigate the discrepancy against current firmware and driver releases immediately.<br />
+                        2. A clear correction notice and updated timestamp are appended to the article.<br />
+                        3. Readers are encouraged to submit technical feedback directly to <a href="mailto:zyroxlabcom@gmail.com" className="post-link" style={{ display: 'inline', marginTop: 0 }}>zyroxlabcom@gmail.com</a>.
                     </p>
                 </section>
 
