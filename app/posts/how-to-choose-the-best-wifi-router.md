@@ -15,9 +15,10 @@ keywords:
   - home network
   - coverage
   - networking
+image: "/images/posts/how-to-build-a-budget-gaming-pc.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/how-to-build-a-budget-gaming-pc.jpg)
 When I moved into a two-story house a few years back, I made the classic mistake everyone makes: I plugged in the ISP's modem-router combo, waited for the lights to turn solid, and assumed that was the end of it. Six months later I was standing in my upstairs home office watching a video call freeze every ten minutes while my gaming PC downstairs struggled to hold a 40ms ping.
 
 That frustration sent me deep into router research, and what I found completely changed how I think about home networking.

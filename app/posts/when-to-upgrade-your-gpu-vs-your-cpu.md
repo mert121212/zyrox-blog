@@ -15,9 +15,10 @@ keywords:
   - upgrade
   - performance
   - upgrades
+image: "/images/posts/best-gpu-for-1440p-gaming.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-gpu-for-1440p-gaming.jpg)
 I have watched people spend money on the wrong upgrade more times than I can count. Someone buys a new CPU hoping for better gaming performance and gets a tiny 3 percent frame rate improvement. Someone else drops $400 on a new GPU for a system where the processor is genuinely the bottleneck, and gets similarly disappointing results. The frustration is real, and it is entirely avoidable.
 
 The key is learning how to read what your system is actually telling you before you spend a single dollar. Modern monitoring tools give you enough information to diagnose the problem correctly. 

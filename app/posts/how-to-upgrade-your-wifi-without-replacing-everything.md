@@ -15,9 +15,10 @@ keywords:
   - access point
   - home setup
   - upgrade
+image: "/images/posts/how-to-build-a-budget-gaming-pc.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/how-to-build-a-budget-gaming-pc.jpg)
 A few months ago I was ready to spend $300 on a new mesh Wi-Fi system. Speeds in my home office — two rooms and about 40 feet from the router — had dropped to something embarrassing: 18 Mbps down on a 600 Mbps fiber line. Before I pulled the trigger, I decided to spend a weekend actually diagnosing the problem instead of throwing hardware at it. Turns out I needed a $0 fix for half the problem and a $45 fix for the rest. This guide covers everything I tested and learned.
 
 ## Start Here: Is the Problem Actually Your Router?

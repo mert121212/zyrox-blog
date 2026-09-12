@@ -14,9 +14,10 @@ keywords:
   - "Windows update troubleshooting"
   - "Windows 11 update issues"
 author: rachel-kim
+image: "/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg)
 I've spent more hours than I'd like to admit staring at a Windows Update progress bar stuck at 0% or looping through a "Failure configuring Windows updates — Reverting changes" reboot cycle. It's one of those problems that feels simple on the surface but can spiral into a frustrating rabbit hole if you don't work through it methodically. 
 
 The good news is that after dealing with this on dozens of machines, I've landed on a reliable sequence that fixes the vast majority of Windows Update failures. This guide walks through every tool and technique I actually use, in the exact order I use them.

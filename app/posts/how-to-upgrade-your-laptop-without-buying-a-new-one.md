@@ -15,9 +15,10 @@ keywords:
   - ssd
   - ram
   - upgrades
+image: "/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg)
 There's a point with every laptop where it starts to feel sluggish — apps take forever to load, multitasking becomes painful, and the fans sound like a small turbine at idle. The instinct is to buy a new machine. But in most cases, the laptop isn't worn out. It's just outpaced by software, choked by heat, or running on hardware that was barely adequate to begin with. Three targeted upgrades can change that entirely: a faster SSD, more RAM, and a fresh application of thermal paste. I've done these on everything from a five-year-old ThinkPad T490 to a two-year-old ASUS Zephyrus G14, and the difference is consistently dramatic. Here's how to do all three correctly.
 
 ## The Three Upgrades That Actually Move the Needle

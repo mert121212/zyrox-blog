@@ -15,9 +15,10 @@ keywords:
   - system optimization
   - troubleshooting
   - your
+image: "/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg)
 I upgraded a friend's CPU a few years ago, moving from an aging Core i5 to a powerful Core i7. It was a straightforward swap on the same motherboard. In synthetic benchmarks, the performance gains were massive. But when he actually sat down to use the machine? It still felt incredibly slow. Browsers hesitated. Applications took too long to open. The entire desktop felt sluggish.
 
 The CPU wasn't the problem. The spinning mechanical hard drive was. 

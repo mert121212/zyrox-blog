@@ -15,9 +15,10 @@ keywords:
   - hardware failure
   - replacement
   - power
+image: "/images/posts/best-psu-for-rtx-5080.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-psu-for-rtx-5080.jpg)
 I spent three weeks troubleshooting a system that would randomly restart under load. I swapped RAM, reinstalled Windows, and reseated the GPU. Nothing worked. Then I finally pulled out a multimeter, ran a few tests, and discovered the 12V rail on the power supply was sagging from 12.0V to 11.3V under full GPU load. The PSU was a five-year-old unit from a brand I shouldn't have trusted in the first place. Three weeks of work, and the answer was a simple $90 Seasonic replacement.
 
 That experience changed how I look at PSU troubleshooting. The question isn't always how to diagnose the power supply. Sometimes the better question is whether you should even bother trying.

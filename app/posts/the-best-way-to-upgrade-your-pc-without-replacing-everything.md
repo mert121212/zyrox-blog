@@ -15,9 +15,10 @@ keywords:
   - ssd
   - ram
   - upgrades
+image: "/images/posts/how-to-build-a-budget-gaming-pc.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/how-to-build-a-budget-gaming-pc.jpg)
 The best upgrade I ever made to a PC cost $65. It was a Samsung 870 EVO replacing a spinning hard drive in a five-year-old machine. The system went from feeling sluggish and painful to use to snappy and responsive overnight. I didn't touch the CPU, the RAM, or the GPU. I just eliminated the single biggest bottleneck in that machine's daily experience.
 
 That's the core idea behind smart upgrading: find the weakest link, fix it specifically, and move on. You don't need a new system. You need a targeted intervention.

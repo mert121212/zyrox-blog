@@ -15,9 +15,10 @@ keywords:
   - cooling
   - troubleshooting
   - what
+image: "/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg)
 There is a specific kind of dread that comes with watching your PC stutter mid-game, lock up during a render, or shut itself off without warning. I have been there more times than I would like to admit, and almost every time the root cause turned out to be heat. Overheating is one of the most common and most preventable hardware problems out there. The good news is that with the right tools and a bit of patience, it is something you can usually fix yourself.
 
 This guide walks through the full process — from detecting overheating and diagnosing which component is responsible, to cleaning dust, replacing thermal paste, tuning fans, and deciding when it is finally time to upgrade the cooling hardware entirely.

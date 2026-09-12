@@ -15,9 +15,10 @@ keywords:
   - noise
   - performance
   - cooling
+image: "/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg)
 I've watched people spend $600 on a high-end CPU and then pair it with a cheap stock cooler because they assume "it comes in the box, it runs fine." It does run fine — until you actually push it. Under a heavy load, an [Intel](https://www.intel.com) Core i9-14900K on an inadequate cooler hits 100°C in under 30 seconds and immediately starts throttling. The CPU that was supposed to hit 6.0 GHz is now crawling at 4.2 GHz. You paid for performance you simply aren't getting.
 
 This isn't just an extreme overclocker problem. Thermal throttling happens on stock cooling, at stock settings, across a massive range of modern processors. Understanding why this happens, and why quality cooling is non-negotiable, is fundamental to getting the most out of your hardware.

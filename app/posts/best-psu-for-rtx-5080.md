@@ -14,9 +14,10 @@ keywords:
   - "PSU for RTX 5080"
   - "GPU power supply"
 author: daniel-osei
+image: "/images/posts/best-psu-for-rtx-5080.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-psu-for-rtx-5080.jpg)
 The RTX 5080 is a 320W part. On paper, that's noticeably lower than the 4090's massive 450W ceiling, so people assume they can get away with a budget 750W power supply. 
 
 Please don't do this.

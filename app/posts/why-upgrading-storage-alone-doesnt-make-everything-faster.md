@@ -15,9 +15,10 @@ keywords:
   - bottlenecks
   - upgrades
   - storage
+image: "/images/posts/best-ssd-for-gaming-2026.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-ssd-for-gaming-2026.jpg)
 A few years ago, I helped a friend upgrade his older desktop. It was one of those machines where everything felt like wading through mud. Booting took two full minutes, Chrome hesitated on every click, and he started leaving the PC on constantly just to avoid the agonizing startup. I told him to buy an SSD. We cloned his drive onto a 1TB Samsung 870 EVO, and suddenly it felt like a supercomputer. It booted in twelve seconds. Apps popped open instantly. He was thrilled.
 
 Six months later, he called me, completely frustrated. He bought a new game and the performance was terrible. It was choppy, stuttering, and basically unplayable. His theory? The SSD wasn't fast enough. Maybe he needed to throw more money at an expensive NVMe drive.

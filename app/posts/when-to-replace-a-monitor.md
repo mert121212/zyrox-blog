@@ -15,9 +15,10 @@ keywords:
   - upgrade
   - eye comfort
   - displays
+image: "/images/posts/best-monitor-for-work-and-gaming.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-monitor-for-work-and-gaming.jpg)
 My previous monitor did not break. It did not go dark or start displaying strange patterns. It just slowly, quietly became the worst part of my setup while everything else improved around it. The CPU was fast. The GPU handled 1440p with ease. But I was still staring at a dim, washed-out 1080p 60Hz panel from 2016, and every game, every document, every video looked worse than it should have.
 
 That is how monitor replacement usually works. It is not a catastrophic failure. It is a gradual realization that the display is holding everything else back. This guide helps you identify whether you are there — and what to do about it.

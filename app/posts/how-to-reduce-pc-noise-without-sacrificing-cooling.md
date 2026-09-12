@@ -15,9 +15,10 @@ keywords:
   - fan curves
   - build advice
   - reduce
+image: "/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg)
 My desk sits about two feet from my PC tower. For a long time that was fine — until I swapped in an RTX 4080 and suddenly the machine sounded like a small wind tunnel. Temperatures were great, but the noise was genuinely distracting during video calls and late-night sessions. I spent the next few weeks going through every practical method I could find to bring the noise down without letting thermals go sideways. This guide covers everything that worked, what didn't, and the exact numbers I measured along the way.
 
 ## Why PC Noise Matters More Than You Think

@@ -15,9 +15,10 @@ keywords:
   - ergonomics
   - pc setup
   - productivity
+image: "/images/posts/how-to-build-a-budget-gaming-pc.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/how-to-build-a-budget-gaming-pc.jpg)
 I spent the better part of two years working from a setup that was genuinely embarrassing. A hand-me-down gaming chair shoved against the wall, a monitor sitting flat on a stack of textbooks, a mechanical keyboard I chose because it looked cool rather than because it felt good to type on for eight hours. I got things done, but I ended the day with neck tension, eye strain, and a mild sense of dread about sitting back down the next morning.
 
 Then I actually rebuilt the setup properly — not by spending a fortune, but by being deliberate. The difference was immediate and stayed. This guide covers everything I changed and why, from the monitor position down to the cable clips.

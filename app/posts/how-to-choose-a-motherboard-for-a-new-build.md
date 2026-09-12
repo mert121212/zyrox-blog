@@ -15,9 +15,10 @@ keywords:
   - vrm
   - build advice
   - motherboards
+image: "/images/posts/best-motherboard-for-rtx-4070.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-motherboard-for-rtx-4070.jpg)
 The motherboard is the part most people spend the least time thinking about, and the one they most often regret getting wrong. When you're building a PC, the GPU and CPU get all the attention. The motherboard just sits there quietly in the background — but it determines what CPU you can run, how fast your RAM can go, how many drives you can install, and whether you can even update your BIOS without borrowing someone else's processor.
 
 I've built systems at every price tier, and I've made motherboard mistakes at most of them. Here is what I've learned the hard way.

@@ -15,9 +15,10 @@ keywords:
   - overheating
   - power issues
   - troubleshooting
+image: "/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg)
 Random reboots are one of the most frustrating things a PC can do. The system doesn't warn you, doesn't leave an obvious error on screen, and the problem might not repeat for hours — or it might happen three times in a row. I've dealt with this on my own machines more than once, and the most important lesson I've learned is this: don't guess. Every reboot leaves evidence somewhere, and with the right tools you can find it methodically rather than swapping parts blindly.
 
 This guide walks through the full diagnostic process from start to finish. By the end, you'll have a structured way to narrow down the cause without wasting your weekend or your money.

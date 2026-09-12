@@ -11,10 +11,7 @@ export default function robots(): MetadataRoute.Robots {
                 disallow: ['/api/', '/admin/', '/reading-list/'],
             },
         ],
-        sitemap: [
-            `${baseUrl}/sitemap.xml`,
-            `${baseUrl}/news-sitemap.xml`,
-        ],
+        sitemap: `${baseUrl}/sitemap.xml`,
         host: baseUrl,
     };
 }

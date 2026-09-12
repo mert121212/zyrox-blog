@@ -15,9 +15,10 @@ keywords:
   - testing
   - hardware
   - power
+image: "/images/posts/best-psu-for-rtx-5080.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-psu-for-rtx-5080.jpg)
 Last year I spent four days chasing a random reboot problem before I finally pointed the finger at the power supply. The system would run fine for hours, then cut out under load with no BSOD, no warning — just a hard reset. I tested the GPU, reseated RAM, checked thermals, and got nowhere. Swapping the PSU fixed it immediately. The thing that slowed me down was not knowing how to actually test a power supply with the tools I had on hand. This guide covers the full process from visual inspection to load testing, using nothing more expensive than a $15 multimeter.
 
 ## Why PSU Testing Gets Overlooked

@@ -14,9 +14,10 @@ keywords:
   - "AM5 motherboard"
   - "7800X3D motherboard"
 author: marcus-holt
+image: "/images/posts/best-motherboard-for-rtx-4070.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-motherboard-for-rtx-4070.jpg)
 I wasted a solid hour on my first Ryzen 7 7800X3D build because of something I should have checked before the CPU even arrived. The motherboard I ordered — an older X670E board that had been sitting in a retailer's warehouse for months — shipped with a BIOS version that predated 7800X3D support. I installed everything, pressed the power button, and got nothing. No POST, no beeps, just fans spinning and a blank screen. I spent 20 minutes reseating RAM, checking cables, and second-guessing myself before I finally thought to check the BIOS compatibility list. Sure enough, the board needed an update to recognize the 7800X3D, and I had no older AM5 CPU to boot it with.
 
 That experience turned a one-hour build into a three-hour ordeal. I ended up using a friend's spare Ryzen 5 7600 to flash the BIOS. But that should never be necessary if you know to check in advance.

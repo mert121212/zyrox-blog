@@ -15,9 +15,10 @@ keywords:
   - diagnostics
   - pc repair
   - troubleshooting
+image: "/images/posts/best-motherboard-for-rtx-4070.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-motherboard-for-rtx-4070.jpg)
 A failing motherboard is one of the most frustrating hardware problems you can deal with. Unlike a dead GPU or a bad RAM stick, motherboard failures rarely announce themselves cleanly. Instead, they masquerade as other problems — a Windows crash that looks like a software issue, a USB device that stops working and seems like a driver problem, or random reboots that point suspiciously at the power supply. The board itself is easy to overlook because it is the foundation everything else sits on.
 
 I have diagnosed motherboard failures across dozens of systems over the years, and the pattern I have learned is this: when symptoms appear across multiple unrelated subsystems at the same time, the motherboard is the common denominator. A single failing component causes one type of problem. A failing motherboard causes several at once. That overlap is your first real clue.

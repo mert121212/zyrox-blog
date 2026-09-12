@@ -15,9 +15,10 @@ keywords:
   - cpu
   - memory
   - settings
+image: "/images/posts/bios-settings-for-stable-overclock.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/bios-settings-for-stable-overclock.jpg)
 My very first overclock attempt ended in a frustrating three-hour debugging session. The mistake I made had nothing to do with voltages or frequencies. I changed six settings simultaneously — the CPU multiplier, LLC level, DRAM voltage, power limits, fan curve, and XMP profile — all in one go. I hit save, rebooted, and the system crashed under load within three minutes. 
 
 Because I had changed everything at once, I had absolutely no idea which setting was causing the instability. I had to clear the CMOS, start completely from scratch, and throw away all my progress.

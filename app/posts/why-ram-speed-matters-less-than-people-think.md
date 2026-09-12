@@ -15,9 +15,10 @@ keywords:
   - performance
   - hardware
   - speed
+image: "/images/posts/best-ram-for-ryzen-7000.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-ram-for-ryzen-7000.jpg)
 Every few months, I see someone in a PC building forum agonizing over whether they should buy a 6000MHz DDR5 RAM kit or spend an extra $80 on an 8000MHz kit. They are terrified of leaving performance on the table. They've seen the marketing slides that imply higher frequencies unlock massive framerates. The truth is much more boring than the marketing department wants you to believe—and understanding it will save you money without costing you real-world performance.
 
 I've tested a massive variety of RAM configurations over the years. The numbers simply do not justify the hype.

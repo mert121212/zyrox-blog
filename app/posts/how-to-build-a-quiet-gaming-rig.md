@@ -15,9 +15,10 @@ keywords:
   - cooling
   - noise
   - gaming
+image: "/images/posts/how-to-build-a-budget-gaming-pc.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/how-to-build-a-budget-gaming-pc.jpg)
 My last gaming PC literally sounded like a kitchen appliance. When I was just browsing the web, it was fine. But the moment I booted up a demanding game and the GPU fans spun up, the entire dynamic of the room changed. It got to the point where my wife gently suggested I game with headphones, and my dog would just get up and leave the room. 
 
 That was the exact motivation I needed to rebuild my rig with acoustics as a top priority. 

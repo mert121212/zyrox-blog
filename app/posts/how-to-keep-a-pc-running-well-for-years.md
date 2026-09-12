@@ -15,9 +15,10 @@ keywords:
   - dust
   - upgrades
   - maintenance
+image: "/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg)
 I have a desktop that I built six years ago. It still runs fast, stays cool, and has never had an unexpected failure. That isn't luck — it's the result of a incredibly boring maintenance routine that takes maybe two hours per year total. The machine has had thermal paste replaced once, its fans cleaned four times, two driver updates reverted after they caused problems, and one SSD health check that caught an early warning before it became a real issue.
 
 Most PC problems aren't random. They are predictable and preventable. Dust accumulates on a predictable schedule. Thermal paste dries out on a predictable timeline. SSDs degrade in a way you can monitor. Windows bloat builds up gradually. If you address these things before they become problems, the machine just keeps working. If you ignore them, you end up troubleshooting a crash at the worst possible time.

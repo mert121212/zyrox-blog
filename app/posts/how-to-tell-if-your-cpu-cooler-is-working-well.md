@@ -15,9 +15,10 @@ keywords:
   - cooling
   - benchmarking
   - tell
+image: "/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg)
 Most people assume their CPU cooler is fine until the system crashes, throttles hard under a benchmark, or starts sounding like a jet engine. By that point, you've already lost stability and potentially degraded your thermal paste faster than necessary. The truth is, a badly mounted or aging cooler shows signs well before any of that — you just need to know where to look.
 
 I've been testing coolers and diagnosing thermal problems across a wide range of builds for years. In this guide I'll walk you through exactly how to evaluate whether your CPU cooler is doing its job properly, using real data and the right tools. No guesswork required.

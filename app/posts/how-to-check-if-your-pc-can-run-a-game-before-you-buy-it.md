@@ -15,9 +15,10 @@ keywords:
   - hardware
   - troubleshooting
   - gaming
+image: "/images/posts/how-to-build-a-budget-gaming-pc.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/how-to-build-a-budget-gaming-pc.jpg)
 We've all done it. Steam sale hits, there's a game you've been eyeing for months, it's 60% off, and your finger is hovering over the Buy button. But somewhere in the back of your brain there's this nagging voice: "Can my laptop even *run* this?"
 
 I bought Elden Ring during a sale last year knowing full well my work laptop probably couldn't handle it. Told myself "it'll be fine, how demanding can it be?" Spoiler: it was a slideshow. Like, genuinely 12 frames per second at the lowest settings. I refunded it within an hour, but that whole process was annoying and completely avoidable.

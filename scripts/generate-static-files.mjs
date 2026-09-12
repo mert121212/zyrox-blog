@@ -1,5 +1,5 @@
 /**
- * Generates static public/sitemap.xml, public/news-sitemap.xml, public/rss.xml, and public/atom.xml
+ * Generates static public/sitemap.xml, public/rss.xml, and public/atom.xml
  * Run with: node scripts/generate-static-files.mjs
  * Called automatically via prebuild in package.json
  *
@@ -121,37 +121,6 @@ ${sitemapEntries.join('\n')}
 fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemap, 'utf8');
 console.log('✓ public/sitemap.xml');
 
-// ── news-sitemap.xml ───────────────────────────────────────
-// Google News & Discover: 15 freshest/recently updated articles
-const recentPosts = posts.slice(0, 15);
-const newsSitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-${recentPosts
-    .map(
-        (p) => `  <url>
-    <loc>${baseUrl}/posts/${p.slug}/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Zyrox</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>${new Date(p.date).toISOString()}</news:publication_date>
-      <news:title>${p.title}</news:title>
-    </news:news>
-    <image:image>
-      <image:loc>${p.imageUrl}</image:loc>
-      <image:title>${p.title}</image:title>
-    </image:image>
-  </url>`,
-    )
-    .join('\n')}
-</urlset>
-`;
-fs.writeFileSync(path.join(publicDir, 'news-sitemap.xml'), newsSitemap, 'utf8');
-console.log('✓ public/news-sitemap.xml');
-
 // ── rss.xml ───────────────────────────────────────────────
 const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
@@ -216,4 +185,4 @@ const indexNowKey = '8A0ADD438eA44836B3D590977FA78A2B';
 fs.writeFileSync(path.join(publicDir, `${indexNowKey}.txt`), `${indexNowKey}\n`, 'utf8');
 console.log(`✓ public/${indexNowKey}.txt`);
 
-console.log(`\nGenerated ${posts.length} posts in sitemap/news-sitemap/rss/atom.`);
+console.log(`\nGenerated ${posts.length} posts in sitemap/rss/atom.`);

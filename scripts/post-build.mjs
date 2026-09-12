@@ -16,7 +16,6 @@ const outDir = path.join(root, 'out');
 if (fs.existsSync(outDir)) {
     const filesToSync = [
         'sitemap.xml',
-        'news-sitemap.xml',
         'rss.xml',
         'atom.xml',
         'feed.atom',

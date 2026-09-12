@@ -16,9 +16,10 @@ keywords:
   - uefi
   - boot error
   - windows troubleshooting
+image: "/images/posts/best-ssd-for-gaming-2026.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-ssd-for-gaming-2026.jpg)
 Last Tuesday I spent three hours — three actual hours — staring at a "No Bootable Device Found" screen on a PC that had a perfectly good NVMe SSD sitting in it. The drive was installed. The BIOS could see it. Windows just refused to boot. I'd done this exact upgrade probably fifty times before without issue, and this time it just... didn't work.
 
 Turns out it was a CSM setting buried two menus deep in the BIOS. Took three hours to find a problem that took five seconds to fix. That's the thing with boot errors — they look terrifying but the actual cause is almost always something mundane.

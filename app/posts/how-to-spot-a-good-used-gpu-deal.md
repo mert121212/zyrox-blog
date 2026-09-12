@@ -15,9 +15,10 @@ keywords:
   - value
   - buying advice
   - buying guides
+image: "/images/posts/best-gpu-for-1440p-gaming.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-gpu-for-1440p-gaming.jpg)
 I've bought and tested dozens of used graphics cards over the past several years — some genuinely excellent value, a few complete disasters, and a handful that required careful inspection before I felt comfortable putting them in a build. The used GPU market in 2026 is better than it's been in years from a price standpoint, but it's also full of cards coming off cryptocurrency mining rigs, poorly described listings, and sellers who honestly don't know (or don't care) about the card's history.
 
 This guide will give you the exact process I use to evaluate a used GPU before handing over money: how to inspect it physically, what tools to run, how to price it correctly, and what patterns should make you walk away.

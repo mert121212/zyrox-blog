@@ -15,9 +15,10 @@ keywords:
   - "delete temporary files Windows"
   - "clean up PC storage"
 author: rachel-kim
+image: "/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg)
 Seeing that little C: drive bar turn red is a uniquely modern form of stress. I had a friend call me practically hyperventilating last week because she couldn't save a 2MB Word document — her 500GB SSD was just completely, utterly full. When a drive hits that 90% capacity mark, Windows loses its mind. Background updates fail, games refuse to patch, and the whole system starts stuttering because it's out of virtual memory space.
 
 The usual reaction is panic-deleting. You start hunting down old vacation photos to shove onto a thumb drive, or uninstalling games you actually wanted to play.

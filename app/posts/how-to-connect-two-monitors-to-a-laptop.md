@@ -15,9 +15,10 @@ keywords:
   - "how to hook up two monitors"
   - "docking station dual monitors"
 author: sara-vance
+image: "/images/posts/best-monitor-for-work-and-gaming.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-monitor-for-work-and-gaming.jpg)
 Once you go dual monitors, you don't go back. I've been running three screens — my laptop plus two externals — for about four years now and the idea of working on a single 14-inch display makes me physically uncomfortable at this point. One screen for writing, one for research, one for Slack and email. It's a game changer for productivity.
 
 But here's what nobody tells you: plugging in two external monitors to a laptop is weirdly complicated sometimes. It should be "just plug them in," but depending on what laptop you have, what ports it's got, and whether [Apple](https://www.apple.com) decided to be annoying that year, you might need adapters, a dock, or some clever workarounds.

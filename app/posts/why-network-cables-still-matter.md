@@ -15,9 +15,10 @@ keywords:
   - latency
   - home setup
   - networking
+image: "/images/posts/how-to-build-a-budget-gaming-pc.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/how-to-build-a-budget-gaming-pc.jpg)
 I used to think Wi-Fi 6 had finally closed the gap. My router was perfectly positioned, the signal was strong everywhere, and speed tests were pulling over 400 Mbps. Then I jumped into a competitive match in Valorant and lost a crucial round because my ping spiked to 180ms for three seconds. That was the exact day I finally ran an Ethernet cable.
 
 Wired networking might feel like old tech in an era of mesh systems and Wi-Fi 6E, but it absolutely isn't. Ethernet delivers something wireless fundamentally cannot guarantee: complete consistency. And that distinction matters far more than raw download speed.

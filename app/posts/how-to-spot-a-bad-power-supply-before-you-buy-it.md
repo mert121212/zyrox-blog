@@ -15,9 +15,10 @@ keywords:
   - hardware
   - buying guide
   - power
+image: "/images/posts/best-psu-for-rtx-5080.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-psu-for-rtx-5080.jpg)
 I've killed a GPU. Not through overclocking, not through a bad driver — through a cheap power supply that had no business being inside a PC. It was a white-label 650W unit I grabbed from an [Amazon](https://www.amazon.com) storefront that no longer exists, and it took a mid-range graphics card with it when it finally gave out. That experience changed how I approach every single PSU purchase. I now read spec sheets the way lawyers read contracts, and I want to walk you through that process in full detail.
 
 The PSU is the only component in your system that has the physical capacity to destroy everything else. A bad CPU cooler gives you thermal throttling. A bad RAM stick gives you BSODs. A bad power supply can fry your motherboard, your GPU, your storage drives, and anything else connected to it in a single event. So let's talk about how to identify the dangerous units before you hand over your money.

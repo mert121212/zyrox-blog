@@ -15,9 +15,10 @@ keywords:
   - power saving
   - portable computing
   - battery
+image: "/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg)
 I've been working from coffee shops and airport lounges for the better part of three years, and the one thing that changes the quality of a day more than any other is how long my laptop actually lasts. Not the spec-sheet number — the real-world number. The one where I've got a browser open, a couple of documents running, Spotify in the background, and no power outlet in sight.
 
 Over time I've learned that battery life isn't a fixed property of a laptop. It's a result of a dozen small decisions — some made once in Settings, some made every single day. This guide covers everything I've found that actually moves the needle.

@@ -15,9 +15,10 @@ keywords:
   - gaming
   - productivity
   - hardware
+image: "/images/posts/best-monitor-for-work-and-gaming.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-monitor-for-work-and-gaming.jpg)
 I spent three weeks researching monitors before I bought my last one, and I still almost made a mistake. The spec sheets are deliberately designed to confuse you. Manufacturers throw around numbers like "1ms response time" and "HDR" without explaining what those actually mean in daily use. 
 
 After going through this process more times than I'd like to admit — for my own desk, for a friend's editing workstation, for a home office that needed to double as a gaming display — I can tell you that most people overpay for features they don't need and completely ignore the features that would genuinely improve their experience.

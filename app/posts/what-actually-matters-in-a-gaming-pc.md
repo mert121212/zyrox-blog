@@ -15,9 +15,10 @@ keywords:
   - fps
   - build advice
   - gaming
+image: "/images/posts/how-to-build-a-budget-gaming-pc.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/how-to-build-a-budget-gaming-pc.jpg)
 Every year I watch people spend their entire PC budget on the wrong thing. They buy a $400 processor for a gaming rig that needs a $400 GPU upgrade. They run 16GB of RAM at half its rated speed and wonder why the system stutters. They debate NVMe vs. SATA SSD for game loading when the real problem is that the graphics card is three generations old.
 
 I've built gaming PCs at every price point and tracked performance data for years. What follows is what I've learned — stripped of marketing and anchored in real numbers.

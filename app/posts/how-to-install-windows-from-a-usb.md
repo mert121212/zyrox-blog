@@ -15,9 +15,10 @@ keywords:
   - setup
   - installation
   - install
+image: "/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg)
 Installing Windows from a USB drive is one of those tasks that should take thirty minutes but occasionally turns into a two-hour puzzle. The drive boots but the installer crashes. The installer loads but can't see the hard drive. The system ignores the USB entirely and boots straight to the old OS. 
 
 I've been through all of it. The root cause almost always comes down to one of three things: the USB wasn't prepared correctly, the BIOS boot mode doesn't match the installer format, or the partition table on the target drive is incompatible. This guide covers every step of the process from flash drive to working desktop, with enough detail to handle the edge cases that trip people up.

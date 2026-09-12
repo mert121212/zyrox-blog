@@ -15,9 +15,10 @@ keywords:
   - power supply
   - diagnostics
   - troubleshooting
+image: "/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg)
 There is a specific kind of frustration that comes from a PC that reboots randomly. It's not like a known error you can look up. It just restarts — sometimes in the middle of a game, sometimes during compilation, sometimes while you are watching YouTube — and then boots back up like nothing happened. No explanation. No apology. Just gone.
 
 I've been through this diagnostic process more times than I can count, on my own machines and helping others. The honest truth is that random reboots have a frustratingly wide set of possible causes: thermal shutdown, PSU failure, unstable drivers, RAM errors, overclock instability, corrupted system files, and more. The key is a systematic methodology that rules things out efficiently rather than throwing changes at the wall hoping something sticks.

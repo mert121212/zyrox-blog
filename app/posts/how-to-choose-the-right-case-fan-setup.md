@@ -15,9 +15,10 @@ keywords:
   - noise
   - pc build
   - cooling
+image: "/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg)
 The first time I built a PC, I bought the shiniest fans I could find, crammed them into every available mount, and figured more fans meant better cooling. After boot-up I noticed my GPU was hitting 84°C under load and the system sounded like a turboprop. I had created turbulence, not airflow. Fans were literally fighting each other, air pressure was all wrong, and hot air had nowhere efficient to go.
 
 That expensive lesson taught me that case fan setup isn't about filling every slot. It's about creating a coherent pressure environment, a clear path from cool intake to hot exhaust, and a noise profile you can actually live with day after day.

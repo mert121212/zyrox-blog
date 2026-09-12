@@ -15,9 +15,10 @@ keywords:
   - windows
   - bottlenecks
   - performance
+image: "/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg)
 I once helped troubleshoot a computer equipped with a Ryzen 7 5800X, 32GB of RAM, and an RTX 3070. On paper, it was an incredibly capable system, well above the average for gaming and creative work. In reality, it felt like wading through molasses. The desktop was choppy, applications hesitated before opening, and gaming sessions stuttered in ways that made absolutely no sense given the hardware.
 
 The cause wasn't the specs. The system drive was a dying SATA SSD that was silently failing. The CPU's thermal paste was dried to dust, causing it to overheat instantly. The Nvidia drivers hadn't been cleanly installed in two years, and the Task Manager startup tab was a graveyard of forgotten applications fighting for resources every time the PC booted.

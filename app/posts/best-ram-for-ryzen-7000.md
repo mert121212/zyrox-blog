@@ -14,9 +14,10 @@ keywords:
   - "DDR5 RAM for Ryzen"
   - "best memory for Ryzen 7000"
 author: marcus-holt
+image: "/images/posts/best-ram-for-ryzen-7000.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-ram-for-ryzen-7000.jpg)
 When [AMD](https://www.amd.com) launched the Ryzen 7000 series on the AM5 platform, they made one thing non-negotiable: DDR5. 
 
 Unlike the old transition from DDR3 to DDR4 — where some budget boards offered slots for both — AM5 is DDR5-only. Your old DDR4 kit stays behind, and your new build needs memory that can actually take advantage of the Zen 4 architecture.

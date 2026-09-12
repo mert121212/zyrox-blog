@@ -15,9 +15,10 @@ keywords:
   - setup
   - optimization
   - windows
+image: "/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg)
 When I set up a new [Windows 11](https://www.microsoft.com/windows/windows-11) machine, I spend the first thirty minutes going through a very specific checklist before I install a single game or application. I don't do this because I enjoy staring at settings menus. I do it because the out-of-the-box Windows 11 experience is genuinely not optimized for speed. [Microsoft](https://www.microsoft.com) ships the OS heavily weighted toward visual polish and background services that look great in marketing materials but quietly drag down the responsiveness of the system.
 
 The good news is that the biggest performance gains come from incredibly simple, completely reversible changes. You do not need to modify the registry or download sketchy "PC Optimizer" software. You just need to know what actually matters. Having done this on countless laptops and desktops, these are the tweaks that consistently make the biggest difference.

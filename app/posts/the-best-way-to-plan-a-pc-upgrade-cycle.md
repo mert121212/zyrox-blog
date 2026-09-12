@@ -15,9 +15,10 @@ keywords:
   - pc build
   - value
   - upgrades
+image: "/images/posts/how-to-build-a-budget-gaming-pc.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/how-to-build-a-budget-gaming-pc.jpg)
 I've built and upgraded more PCs than I can count at this point, and the single most common mistake I see is reactive upgrading. Someone gets frustrated with performance, panic-buys a new GPU, and then wonders why the system still feels slow. Or they spend $400 on a new CPU when the real bottleneck was 16GB of slow RAM. A planned upgrade cycle doesn't require predicting the future — it just requires a little discipline upfront.
 
 This guide walks through how to identify what actually needs upgrading, how long different components realistically last, and how to time purchases so you get the most out of every dollar.

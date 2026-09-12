@@ -15,9 +15,10 @@ keywords:
   - cleaning
   - pc maintenance
   - maintenance
+image: "/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg)
 I ignored my PC's ventilation for about eight months. I knew the fans were getting louder, and I noticed games weren't running quite as smoothly, but I kept putting off the cleaning. When I finally opened my Fractal Design Meshify C and pulled the front filter out, it was basically a solid grey mat of compressed dust. 
 
 After a proper cleaning session, my GPU dropped from 83°C under load down to 74°C, and my CPU dropped by about 6°C at idle. The system went from sounding like a jet engine to being near-silent again. That's when I started taking case ventilation cleaning seriously.

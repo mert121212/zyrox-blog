@@ -15,9 +15,10 @@ keywords:
   - 80 plus
   - build advice
   - read
+image: "/images/posts/best-psu-for-rtx-5080.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-psu-for-rtx-5080.jpg)
 I once helped a friend debug a system that would crash under load with no error, no blue screen, and no obvious cause. We swapped the GPU, reseated the RAM, reinstalled Windows, and ran memtest for hours. The culprit turned out to be a 750W power supply that couldn't actually deliver 750W continuously. Under a sustained gaming load that pulled about 650W, the PSU's real output sagged, its 12V rail dropped below the tolerance margin, and the system reset itself.
 
 The box said 750W. The spec sheet said 750W. It even had an 80 Plus Bronze badge. None of that told us the unit was built with cheap capacitors that couldn't hold voltage under thermal stress. That experience turned me into someone who reads PSU spec sheets carefully — and more importantly, knows what the numbers actually mean versus what the marketing wants you to believe.

@@ -15,9 +15,10 @@ keywords:
   - desk setup
   - accessories
   - displays
+image: "/images/posts/best-monitor-for-work-and-gaming.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-monitor-for-work-and-gaming.jpg)
 My desk used to be a mess of wasted space. The stock monitor stand ate up about eight inches of depth, cables draped everywhere, and no matter how I adjusted the screen, the height felt slightly wrong by the end of a long day. A monitor arm fixed all three of those problems in a single afternoon. 
 
 What I didn't expect was how much thought actually goes into choosing the right one. VESA compatibility, weight limits, desk mounting options — there's more to it than just picking the first arm on [Amazon](https://www.amazon.com).

@@ -14,9 +14,10 @@ keywords:
   - "motherboard for RTX 4070"
   - "GPU motherboard match"
 author: marcus-holt
+image: "/images/posts/best-motherboard-for-rtx-4070.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-motherboard-for-rtx-4070.jpg)
 The biggest mistake I see in custom PC builds right now is people overspending on their motherboard to "match" the tier of their GPU. Pairing an RTX 4070 with a $350 flagship Z790 board gives you exactly zero extra frames per second over a standard $150 B760 board. 
 
 The RTX 4070 uses a PCIe 4.0 x16 interface. That's it. The motherboard chipset dictates how many USB ports you have, how many M.2 drives you can plug in, and whether you can overclock your CPU. It does not bottleneck your graphics card.

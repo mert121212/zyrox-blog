@@ -15,9 +15,10 @@ keywords:
   - benchmarks
   - research
   - buying guides
+image: "/images/posts/how-to-build-a-budget-gaming-pc.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/how-to-build-a-budget-gaming-pc.jpg)
 I've been reading hardware reviews professionally for over a decade. In that time I've bought components based on reviews that turned out to be misleading — not because they lied outright, but because they omitted exactly the context that would have changed my decision. A CPU cooler that looked like a winner in one reviewer's setup turned out to be mediocre in my case configuration. A GPU that dominated gaming benchmarks on one publication's test bench underperformed in the workloads I actually cared about.
 
 After getting burned a few times, I stopped just reading conclusions and started studying how reviews are constructed. The result is a personal checklist I apply before trusting any piece of hardware advice. I want to share that checklist here in full — because knowing what good methodology looks like is the only reliable way to filter out the bad.

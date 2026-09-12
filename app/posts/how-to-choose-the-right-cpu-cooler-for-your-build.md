@@ -15,9 +15,10 @@ keywords:
   - thermals
   - build guide
   - choose
+image: "/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg)
 I have made nearly every cooler mistake possible over the years. I once bought a massive dual-tower cooler and then discovered it physically could not fit in the case I'd already ordered. I ran a Ryzen 9 5900X on the stock Wraith cooler during a long compile job and watched temperatures hit 95°C before the system throttled itself down mid-task. I've also overspent on a 360mm AIO for a processor that an $80 air cooler would have handled without breaking a sweat.
 
 So yeah, I've earned my opinions on this topic the hard way.

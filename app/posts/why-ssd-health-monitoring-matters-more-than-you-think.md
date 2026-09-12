@@ -15,9 +15,10 @@ keywords:
   - data backup
   - drive health
   - storage
+image: "/images/posts/best-ssd-for-gaming-2026.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-ssd-for-gaming-2026.jpg)
 I lost a drive without warning once. It wasn't even old — just over two years in. One morning it was working perfectly, and the next it wasn't recognized by the BIOS. The data was recoverable, but barely, and at significant cost and stress. The thing that frustrated me most wasn't the hardware failure; it was the realization that the warning signs had probably been flashing for weeks, and I simply hadn't been looking.
 
 That was the last time I ignored SSD health monitoring. Tracking your drive's health isn't about being paranoid; it's about making smart decisions about your backups before disaster strikes.

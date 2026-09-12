@@ -15,9 +15,10 @@ keywords:
   - storage
   - organization
   - best
+image: "/images/posts/best-ssd-for-gaming-2026.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-ssd-for-gaming-2026.jpg)
 I have about 200 games in my Steam library. Add Epic, GOG, and EA App titles on top of that and the number climbs even higher. For years I let those games pile up wherever the launcher defaulted, and eventually my 1TB SSD was constantly in the red. Load times got worse. Windows updates started failing because there was no room. I finally sat down and built a real system, and the difference was immediate. This is what I learned.
 
 ## How Much Space Do You Actually Need?

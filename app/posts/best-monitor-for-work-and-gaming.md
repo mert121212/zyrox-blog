@@ -14,9 +14,10 @@ keywords:
   - "best gaming monitor for work"
   - "dual use monitor"
 author: sara-vance
+image: "/images/posts/best-monitor-for-work-and-gaming.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-monitor-for-work-and-gaming.jpg)
 Finding a screen that actually works for both eight hours of spreadsheets and a late-night gaming session is surprisingly frustrating. My old setup was a total mess: I had a fast TN panel for games that made colors look totally washed out, sitting next to a slow 60Hz IPS panel for photo editing. Moving windows between them was jarring, and neither monitor felt quite right.
 
 You don't have to do that anymore. The arrival of high-refresh IPS panels at reasonable prices means we finally have monitors that handle both without making you compromise. But the marketing is still incredibly confusing, so let's break down what actually matters when you're buying a dual-use display.

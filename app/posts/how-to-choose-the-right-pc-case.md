@@ -15,9 +15,10 @@ keywords:
   - build quality
   - cable management
   - cases
+image: "/images/posts/how-to-build-a-budget-gaming-pc.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/how-to-build-a-budget-gaming-pc.jpg)
 I've built PCs in everything from a cramped $40 budget box to a full-tower behemoth that barely fit under my desk. After a while you stop caring about RGB strips and start caring about what actually makes the build process smoother and the final system easier to live with. 
 
 The case is where all your expensive hardware spends its entire life. Choose wrong and every upgrade, every cleaning session, every cable swap becomes slightly more painful. Choose right and you open the side panel once a year to blow out some dust and otherwise forget the case exists.

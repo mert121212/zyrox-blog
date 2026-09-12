@@ -15,9 +15,10 @@ keywords:
   - fan curves
   - noise
   - cooling
+image: "/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg)
 I've built a ton of PCs over the years, but everything changed for me the day I set up a workstation in my home office and realized I could clearly hear it from all the way across the room. It wasn't aggressively loud by gamer standards, but there was this constant, annoying background hiss that I simply couldn't tune out. 
 
 That experience threw me down the rabbit hole of silent PC building. The biggest lesson I learned? Silence and performance are not mutually exclusive. You don't have to give up frame rates to get a quiet room. You just have to build with intention.

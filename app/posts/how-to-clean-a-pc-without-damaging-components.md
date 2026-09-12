@@ -15,9 +15,10 @@ keywords:
   - dust
   - cooling
   - clean
+image: "/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg)
 I opened my PC case last spring after about eight months of not cleaning it and honestly felt a little embarrassed. The GPU heatsink looked like it was wearing a wool sweater. The case fans were caked in gray fuzz, and the front intake filter was so blocked I could barely see through it. Temperatures had been creeping up for weeks and I kept ignoring it, blaming the summer heat. The real culprit was sitting right there in plain sight.
 
 That cleaning session knocked my CPU idle temps down by about 9°C and my GPU load temps by nearly 12°C. No new hardware, no repaste, no case swap — just dust removal done properly. Since then I've been on a regular cleaning schedule and I haven't had a single thermal throttle event. The difference is real and it costs almost nothing to maintain.

@@ -38,10 +38,6 @@
   [headers.values]
     Content-Type = "application/atom+xml; charset=utf-8"
 
-[[headers]]
-  for = "/news-sitemap.xml"
-  [headers.values]
-    Content-Type = "application/xml; charset=utf-8"
 
 [[headers]]
   for = "/robots.txt"

@@ -15,9 +15,10 @@ keywords:
   - cpu cooler
   - thermals
   - cooling
+image: "/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg)
 I've built systems with both and tested them against each other at the same price points. The short version: the marketing around liquid cooling overstates its thermal advantage in most real-world scenarios, and air cooling is underrated by everyone except the people who've actually measured both. But there are legitimate situations where liquid cooling wins — and I'll be honest about those too.
 
 ## How Each System Works Mechanically

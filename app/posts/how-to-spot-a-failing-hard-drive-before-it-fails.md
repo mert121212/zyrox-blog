@@ -15,9 +15,10 @@ keywords:
   - diagnostics
   - storage
   - spot
+image: "/images/posts/ssd-vs-hdd-which-should-you-buy-in-2026.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/ssd-vs-hdd-which-should-you-buy-in-2026.jpg)
 The first time I lost data to a failing hard drive, I had ignored four separate warning signs over the course of three weeks. The boot times had gotten longer. A folder occasionally took five seconds to open instead of one. I heard a faint clicking sound once or twice that I dismissed as case vibration. Then one morning the drive simply did not appear in Windows Explorer. Three years of photography projects, documents, and project files — gone.
 
 The second time it happened, I caught it early. I had learned to read the signs. I ran diagnostics, identified the problem before it became catastrophic, cloned the drive to a new one, and never lost a single file. The difference between those two outcomes came down entirely to knowing what to look for.

@@ -15,9 +15,10 @@ keywords:
   - hardware
   - stability
   - tuning
+image: "/images/posts/bios-settings-for-stable-overclock.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/bios-settings-for-stable-overclock.jpg)
 Calling your overclock "stable" because it managed to survive a one-hour stress test is the most common rookie mistake I see on hardware forums. And trust me, I've made the same mistake myself. 
 
 You loop Cinebench for an hour, your temperatures look fine, the scores stay consistent, and you confidently boot back into Windows. Then at 3 a.m., six hours into a video render or a heavy Prime95 run, the system throws a BSOD or just silently resets. Your CPU was never truly stable. You simply hadn't stressed it long enough to expose its breaking point.

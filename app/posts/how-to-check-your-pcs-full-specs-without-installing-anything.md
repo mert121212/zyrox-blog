@@ -15,9 +15,10 @@ keywords:
   - "check motherboard model"
   - "system information Windows"
 author: rachel-kim
+image: "/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg)
 Whether you are trying to figure out if your laptop can run a new game, preparing to sell an old tower, or just asking a friend for troubleshooting advice, you have to know what is actually inside your computer.
 
 Honestly, it always surprises me how many people have no idea what processor they own. Whenever I help friends with PC issues, the conversation usually starts with me asking, "What CPU do you have?" and them staring blankly at the wall. 

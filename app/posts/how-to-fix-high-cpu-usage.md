@@ -14,9 +14,10 @@ keywords:
   - "high CPU usage Windows 11"
   - "CPU usage too high"
 author: rachel-kim
+image: "/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg)
 High CPU usage is one of those problems that creeps up on you. One day your PC is snappy and responsive, the next it sounds like a jet engine and every click takes two seconds to register. I've been down this road more times than I can count — both on my own machines and helping friends debug theirs — and the good news is that the fix is almost always findable if you work through it systematically.
 
 This guide covers everything from reading Task Manager like a pro to hunting down driver-level CPU hogs. Let's get into it.

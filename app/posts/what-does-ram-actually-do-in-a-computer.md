@@ -15,9 +15,10 @@ keywords:
   - "Random Access Memory explained"
   - "PC memory guide"
 author: marcus-holt
+image: "/images/posts/best-ram-for-ryzen-7000.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-ram-for-ryzen-7000.jpg)
 I get asked this question constantly — at family dinners, at barbecues, in DMs from friends who are laptop shopping. "How much RAM do I need?" And when I say "well, it depends on what you do with your computer," their eyes glaze over because they don't really know what RAM *is* in the first place.
 
 So let's fix that. No jargon, no CS degree required.

@@ -14,9 +14,10 @@ keywords:
   - "NVMe SSD gaming"
   - "SSD for PC gaming"
 author: sara-vance
+image: "/images/posts/best-ssd-for-gaming-2026.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-ssd-for-gaming-2026.jpg)
 I was browsing SSDs the other day, and the marketing has gotten totally out of hand. Sequential read speeds of 14,900 MB/s plastered across the box in huge font, benchmark graphs that look like they belong in a data center, and claims that imply your game will load before you even click the shortcut.
 
 It's mostly noise. The difference between a good PCIe 4.0 NVMe drive and a wildly expensive PCIe 5.0 drive is basically invisible when you're just playing games. The things that actually matter — capacity, how hot the drive gets, and the price tag — are what determine if you'll be happy with the drive two years from now.

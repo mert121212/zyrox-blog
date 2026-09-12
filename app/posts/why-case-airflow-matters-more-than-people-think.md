@@ -15,9 +15,10 @@ keywords:
   - cooling
   - build advice
   - matters
+image: "/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg"
 ---
 
-![Hero Image](/images/default-hero.jpg)
+![Hero Image](/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg)
 A few years ago, I built two identical systems. They had the same CPU, same GPU, same coolers, same RAM. One went into a Fractal Design Meshify C with a front mesh panel and three intake fans. The other went into a compact case with a solid steel front panel and a single rear exhaust fan. Same hardware, same room, completely different results.
 
 The CPU in the second build ran a massive 14 degrees hotter under sustained load. The GPU ran 11 degrees hotter. Fan noise was noticeably louder because the fans were screaming to compensate for the restricted airflow. The system didn't crash, but it was running in conditions that shorten component lifespan and invite thermal throttling. That experiment made airflow real for me. It is not just an enthusiast concern; it is the foundation of a healthy PC.
