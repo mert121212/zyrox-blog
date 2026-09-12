@@ -154,7 +154,10 @@ export function SearchAndFilter({ posts }: { posts: Post[] }) {
                         <div className="grid">
                             {visiblePosts.map((post) => (
                                 <article key={post.slug} className="post-card">
-                                    <div className="post-meta">{post.date}</div>
+                                    <div className="post-meta post-meta--row">
+                                        <span className="post-category-pill">{post.category}</span>
+                                        <span className="post-meta-date">{post.date}</span>
+                                    </div>
                                     <h3>{post.title}</h3>
                                     <p>{post.excerpt}</p>
                                     <div className="post-card-footer">
