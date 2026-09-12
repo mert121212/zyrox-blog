@@ -3,7 +3,6 @@ import dynamic from 'next/dynamic';
 import { getAllPosts } from '../lib/posts';
 import { SearchAndFilter } from '../components/search-and-filter';
 import { TopicDirectory } from '../components/topic-directory';
-import { WebStoriesCarousel } from '../components/web-stories-carousel';
 
 const AdBanner = dynamic(
     () => import('../components/ad-banner').then((m) => ({ default: m.AdBanner })),
@@ -56,8 +55,7 @@ export default function HomePage() {
                 <AdBanner />
             </div>
 
-            {/* Google Web Stories Carousel */}
-            <WebStoriesCarousel />
+
 
             {/* Featured Section */}
             <section className="section featured-section">

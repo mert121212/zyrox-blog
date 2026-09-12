@@ -59,51 +59,7 @@ const posts = fs
 // ── Author slugs ──────────────────────────────────────────
 const authorSlugs = ['marcus-holt', 'sara-vance', 'daniel-osei', 'rachel-kim'];
 
-// ── Web Stories ───────────────────────────────────────────
-const webStories = [
-    {
-        path: '/stories/best-gpu-1440p/',
-        title: 'Best GPU for 1440p Gaming in 2026',
-        imageUrl: `${baseUrl}/images/posts/best-gpu-for-1440p-gaming.jpg`,
-        lastmod: '2026-08-06',
-    },
-    {
-        path: '/stories/budget-gaming-pc/',
-        title: 'How to Build a Budget Gaming PC That Still Feels Fast',
-        imageUrl: `${baseUrl}/images/posts/how-to-build-a-budget-gaming-pc.jpg`,
-        lastmod: '2026-07-17',
-    },
-    {
-        path: '/stories/speed-up-windows-11/',
-        title: 'Speed Up Windows 11 in Under 30 Minutes',
-        imageUrl: `${baseUrl}/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg`,
-        lastmod: '2026-08-08',
-    },
-    {
-        path: '/stories/best-cpu-cooler-7800x3d/',
-        title: 'Best CPU Cooler for Ryzen 7 7800X3D',
-        imageUrl: `${baseUrl}/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg`,
-        lastmod: '2026-08-02',
-    },
-    {
-        path: '/stories/ssd-vs-hdd-2026/',
-        title: 'SSD vs HDD: Which Should You Buy in 2026?',
-        imageUrl: `${baseUrl}/images/posts/ssd-vs-hdd-which-should-you-buy-in-2026.jpg`,
-        lastmod: '2026-08-12',
-    },
-    {
-        path: '/stories/pc-wont-boot/',
-        title: 'What to Check First When a PC Won\'t Boot',
-        imageUrl: `${baseUrl}/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg`,
-        lastmod: '2026-07-04',
-    },
-    {
-        path: '/stories/choose-right-psu/',
-        title: 'How to Choose the Right PSU for Your Build',
-        imageUrl: `${baseUrl}/images/posts/how-to-choose-the-right-psu-for-your-build.jpg`,
-        lastmod: '2026-07-07',
-    },
-];
+
 
 // ── sitemap.xml ───────────────────────────────────────────
 const staticRoutes = [
@@ -137,19 +93,6 @@ const sitemapEntries = [
     // Static pages
     ...staticRoutes.map((r) =>
         urlEntry({ loc: `${baseUrl}${r.path}`, lastmod: r.lastmod, changefreq: r.freq, priority: r.priority }),
-    ),
-    // Web Stories (AMP Stories for Google Discover)
-    ...webStories.map((s) =>
-        urlEntry({
-            loc: `${baseUrl}${s.path}`,
-            lastmod: s.lastmod,
-            changefreq: 'monthly',
-            priority: '0.9',
-            image: {
-                loc: s.imageUrl,
-                title: s.title,
-            },
-        }),
     ),
     // Posts (trailing slash!) with Google Image Sitemap metadata
     ...posts.map((p) =>
@@ -273,4 +216,4 @@ const indexNowKey = '8A0ADD438eA44836B3D590977FA78A2B';
 fs.writeFileSync(path.join(publicDir, `${indexNowKey}.txt`), `${indexNowKey}\n`, 'utf8');
 console.log(`✓ public/${indexNowKey}.txt`);
 
-console.log(`\nGenerated ${posts.length} posts + ${webStories.length} Web Stories in sitemap/news-sitemap/rss/atom.`);
+console.log(`\nGenerated ${posts.length} posts in sitemap/news-sitemap/rss/atom.`);

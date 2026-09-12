@@ -17,7 +17,6 @@ import {
 } from '@/lib/schema-helpers';
 import { PostTags } from '@/components/post-tags';
 import { injectContextualInternalLink } from '@/lib/internal-links';
-import { LabTrustBadge } from '@/components/lab-trust-badge';
 
 function slugifyHeading(raw: string): string {
     return (raw || '')
@@ -55,15 +54,7 @@ renderer.heading = function (text: string, level: number, raw: string) {
     return `<h${level} id="${slug}">${text}</h${level}>\n`;
 };
 
-const STORY_MAP: Record<string, string> = {
-    'best-gpu-for-1440p-gaming': 'best-gpu-1440p',
-    'how-to-build-a-budget-gaming-pc': 'budget-gaming-pc',
-    'how-to-speed-up-a-slow-windows-11-pc-in-under-30-minutes': 'speed-up-windows-11',
-    'best-cpu-cooler-for-ryzen-7-7800x3d': 'best-cpu-cooler-7800x3d',
-    'ssd-vs-hdd-which-should-you-buy-in-2026': 'ssd-vs-hdd-2026',
-    'what-to-check-first-when-a-pc-wont-boot': 'pc-wont-boot',
-    'how-to-choose-the-right-psu-for-your-build': 'choose-right-psu',
-};
+
 
 // Google Knowledge Graph Entities for Entity-Based Discover Ranking
 const HARDWARE_ENTITIES: { name: string; sameAs: string; matchRegex: RegExp }[] = [
@@ -93,33 +84,7 @@ function getRelevantEntities(text: string) {
     }));
 }
 
-function extractKeyTakeaways(content: string, description: string): string[] {
-    const takeaways: string[] = [];
-    const bulletMatches = content.slice(0, 3000).match(/^[*-]\s+(.+)$/gm);
-    if (bulletMatches && bulletMatches.length >= 3) {
-        for (const b of bulletMatches.slice(0, 3)) {
-            const clean = b.replace(/^[*-]\s+/, '').replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').trim();
-            if (clean.length > 20 && clean.length < 160) {
-                takeaways.push(clean);
-            }
-        }
-    }
-    if (takeaways.length < 3) {
-        const sentences = description.split(/\.\s+/).filter((s) => s.trim().length > 15);
-        for (const s of sentences) {
-            if (takeaways.length < 3) takeaways.push(s.trim().replace(/\.$/, ''));
-        }
-    }
-    if (takeaways.length < 3) {
-        const headingMatches = content.match(/^##\s+(.+)$/gm);
-        if (headingMatches) {
-            for (const h of headingMatches.slice(0, 3 - takeaways.length)) {
-                takeaways.push(h.replace(/^##\s+/, '').trim());
-            }
-        }
-    }
-    return takeaways.slice(0, 3);
-}
+
 
 // Image SEO & LCP: Eager load primary hero images for fast LCP (Google Discover score), lazy load subsequent images
 renderer.image = function (href: string, title: string | null, text: string) {
@@ -186,8 +151,6 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
 
     const author = getAuthorBySlug(post.author);
     const imageUrl = toAbsoluteImageUrl(post.image);
-    const storySlug = STORY_MAP[params.slug];
-
     return {
         title: post.title,
         description: post.meta_description,
@@ -195,11 +158,6 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
         alternates: {
             canonical: `/posts/${params.slug}/`,
         },
-        other: storySlug
-            ? {
-                amphtml: `https://zyroxlab.com/stories/${storySlug}/`,
-            }
-            : undefined,
         openGraph: {
             title: post.title,
             description: post.meta_description,
@@ -266,7 +224,6 @@ export default function PostPage({ params }: { params: { slug: string } }) {
 
     const imageUrl = toAbsoluteImageUrl(post.image);
     const entities = getRelevantEntities(`${post.title} ${post.meta_description} ${post.keywords.join(' ')}`);
-    const keyTakeaways = extractKeyTakeaways(post.content, post.meta_description);
 
     const jsonLd = {
         '@context': 'https://schema.org',
@@ -290,7 +247,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
         mentions: entities.slice(4, 10),
         speakable: {
             '@type': 'SpeakableSpecification',
-            cssSelector: ['.article-excerpt', '.key-takeaways-list', '.lab-trust-badge'],
+            cssSelector: ['.article-excerpt'],
         },
         author: author
             ? {
@@ -382,23 +339,6 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                                 </span>
                                 <ReadingListToggle slug={params.slug} title={post.title} />
                             </div>
-                            {STORY_MAP[params.slug] && (
-                                <div className="web-story-banner">
-                                    <a
-                                        href={`/stories/${STORY_MAP[params.slug]}/`}
-                                        className="web-story-link"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        title="View interactive Google Web Story"
-                                    >
-                                        <span className="web-story-icon">⚡</span>
-                                        <span className="web-story-text">
-                                            <strong>Visual Story Available:</strong> Tap to view the full-screen interactive story
-                                        </span>
-                                        <span className="web-story-arrow">Open Story →</span>
-                                    </a>
-                                </div>
-                            )}
                             <h1>{post.title}</h1>
                             <p className="article-excerpt">{post.meta_description}</p>
 
@@ -426,22 +366,6 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                             )}
 
                             <SocialShare title={post.title} url={`/posts/${params.slug}/`} />
-
-                            {keyTakeaways.length > 0 && (
-                                <div className="key-takeaways-box">
-                                    <div className="key-takeaways-header">
-                                        <span className="key-takeaways-icon">⚡</span>
-                                        <strong>Key Takeaways</strong>
-                                    </div>
-                                    <ul className="key-takeaways-list">
-                                        {keyTakeaways.map((item, idx) => (
-                                            <li key={idx}>{item}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            )}
-
-                            <LabTrustBadge category={post.category} />
 
                             {/* Ad 1: top of article */}
                             <AdBanner />

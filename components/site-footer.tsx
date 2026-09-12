@@ -5,7 +5,6 @@ const currentYear = 2026;
 const footerLinks = {
     content: [
         { href: '/', label: 'Home' },
-        { href: '/stories/', label: '⚡ Visual Stories' },
         { href: '/about/', label: 'About' },
         { href: '/authors/', label: 'Authors' },
         { href: '/contact/', label: 'Contact' },

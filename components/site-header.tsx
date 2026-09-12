@@ -18,7 +18,6 @@ export function SiteHeader() {
                     Zyrox
                 </Link>
                 <nav aria-label="Primary navigation" className="site-header__nav">
-                    <Link href="/stories/" className="site-header__link site-header__link--stories">⚡ Stories</Link>
                     <Link href="/about/" className="site-header__link">About</Link>
                     <Link href="/contact/" className="site-header__link">Contact</Link>
                     <ReadingListBadge />

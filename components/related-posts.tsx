@@ -36,28 +36,13 @@ export function RelatedPosts({ currentPost, allPosts, limit = 4 }: RelatedPostsP
                         href={`/posts/${post.slug}/`}
                         className="related-post-card"
                     >
-                        {post.image && (
-                            <div className="related-post-thumb-wrap">
-                                <img
-                                    src={post.image}
-                                    alt={post.title}
-                                    loading="lazy"
-                                    decoding="async"
-                                    width={400}
-                                    height={225}
-                                    className="related-post-thumb"
-                                />
-                            </div>
-                        )}
-                        <div className="related-post-body">
-                            <div className="related-post-meta">
-                                <span>{post.date}</span>
-                                <span className="related-post-category">{post.category}</span>
-                            </div>
-                            <h3 className="related-post-title">{post.title}</h3>
-                            <p className="related-post-excerpt">{post.excerpt}</p>
-                            <span className="related-post-link">Read article →</span>
+                        <div className="related-post-meta">
+                            <span>{post.date}</span>
+                            <span className="related-post-category">{post.category}</span>
                         </div>
+                        <h3 className="related-post-title">{post.title}</h3>
+                        <p className="related-post-excerpt">{post.excerpt}</p>
+                        <span className="related-post-link">Read article →</span>
                     </Link>
                 ))}
             </div>

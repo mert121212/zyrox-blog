@@ -31,14 +31,6 @@ if (fs.existsSync(outDir)) {
             console.log(`✓ Synchronized ${file} to out/`);
         }
     }
-
-    // Ensure stories directory is fully copied
-    const srcStories = path.join(publicDir, 'stories');
-    const dstStories = path.join(outDir, 'stories');
-    if (fs.existsSync(srcStories)) {
-        fs.cpSync(srcStories, dstStories, { recursive: true });
-        console.log('✓ Synchronized stories/ directory to out/');
-    }
 }
 
 // 2. Ping Google & Search Engine Hubs
