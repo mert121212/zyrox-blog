@@ -20,7 +20,7 @@ if (fs.existsSync(outDir)) {
         'rss.xml',
         'atom.xml',
         'feed.atom',
-        '2B0eB64F21D54Fe8A6A9DD15C59FD067.txt',
+        '8A0ADD438eA44836B3D590977FA78A2B.txt',
     ];
 
     for (const file of filesToSync) {

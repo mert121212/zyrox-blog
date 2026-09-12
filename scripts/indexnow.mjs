@@ -16,7 +16,7 @@ const postsDir = path.join(root, 'app', 'posts');
 
 const HOST = 'zyroxlab.com';
 const BASE_URL = `https://${HOST}`;
-const API_KEY = '2B0eB64F21D54Fe8A6A9DD15C59FD067';
+const API_KEY = '8A0ADD438eA44836B3D590977FA78A2B';
 const KEY_LOCATION = `${BASE_URL}/${API_KEY}.txt`;
 
 // Gather URLs

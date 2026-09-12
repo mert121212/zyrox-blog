@@ -269,7 +269,7 @@ fs.writeFileSync(path.join(publicDir, 'feed.atom'), atom, 'utf8');
 console.log('✓ public/atom.xml & public/feed.atom');
 
 // ── IndexNow Key ──────────────────────────────────────────
-const indexNowKey = '2B0eB64F21D54Fe8A6A9DD15C59FD067';
+const indexNowKey = '8A0ADD438eA44836B3D590977FA78A2B';
 fs.writeFileSync(path.join(publicDir, `${indexNowKey}.txt`), `${indexNowKey}\n`, 'utf8');
 console.log(`✓ public/${indexNowKey}.txt`);
 
