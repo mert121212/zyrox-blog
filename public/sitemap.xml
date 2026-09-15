@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://zyroxlab.com/</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -41,6 +41,16 @@
     <lastmod>2026-06-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://zyroxlab.com/posts/why-high-end-pcs-stutter-windows-11-memory-integrity/</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zyroxlab.com/images/posts/why-high-end-pcs-stutter-windows-11-memory-integrity.jpg</image:loc>
+      <image:title>Why High-End Gaming PCs Keep Stuttering on Windows 11: The Default Security Feature Silently Killing Your 1% Lows</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zyroxlab.com/posts/how-to-check-your-pcs-full-specs-without-installing-anything/</loc>
