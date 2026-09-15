@@ -13,7 +13,7 @@
     <link href="https://zyroxlab.com/posts/why-high-end-pcs-stutter-windows-11-memory-integrity/" />
     <id>https://zyroxlab.com/posts/why-high-end-pcs-stutter-windows-11-memory-integrity/</id>
     <updated>2026-09-15T00:00:00.000Z</updated>
-    <summary>We spent 48 hours benchmarking an RTX 4080 Super and Ryzen 7800X3D rig to track down mysterious micro-stutters. The culprit wasn't drivers or thermals—it was Windows 11's default Core Isolation.</summary>
+    <summary>Your $2,000 gaming rig stutters every 15 seconds and you can't figure out why. We traced it to a Windows 11 default setting that tanks 1% lows while barely touching average FPS.</summary>
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/why-high-end-pcs-stutter-windows-11-memory-integrity.jpg" />
   </entry>
   <entry>
