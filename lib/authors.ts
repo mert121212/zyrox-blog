@@ -24,9 +24,7 @@ export const authors: Author[] = [
 Articles in this department are produced with a standard test methodology: identical memory timings, fresh Windows installations, current chipset drivers, and at least three runs per benchmark to filter out single-run noise. Where manufacturer claims do not match observed results, the difference is called out in the article.`,
         avatar: 'MH',
         expertise: ['CPUs', 'Motherboards', 'Memory', 'Overclocking', 'System Performance'],
-        social: {
-            twitter: 'https://twitter.com/zyrox',
-        },
+        social: {},
     },
     {
         slug: 'sara-vance',
@@ -39,9 +37,7 @@ Articles in this department are produced with a standard test methodology: ident
 Display reviews on Zyrox are produced using colorimeters and professional reference patterns; storage reviews use standardized workloads, sustained-write tests, and thermal logging. Recommendations are independent of manufacturer relationships.`,
         avatar: 'SV',
         expertise: ['SSDs', 'HDDs', 'Monitors', 'Displays', 'Ergonomics', 'Productivity'],
-        social: {
-            twitter: 'https://twitter.com/zyrox',
-        },
+        social: {},
     },
     {
         slug: 'daniel-osei',
@@ -54,9 +50,7 @@ Display reviews on Zyrox are produced using colorimeters and professional refere
 PSU coverage on Zyrox uses oscilloscope-based testing, transient load evaluation, and sustained thermals, not just the 80 PLUS rating printed on the side of the unit. CPU cooler reviews measure noise, temperature, and clearance against realistic chassis constraints.`,
         avatar: 'DO',
         expertise: ['CPU Cooling', 'Case Airflow', 'Power Supplies', 'Thermal Management', 'Build Reliability'],
-        social: {
-            twitter: 'https://twitter.com/zyrox',
-        },
+        social: {},
     },
     {
         slug: 'rachel-kim',
@@ -69,9 +63,7 @@ PSU coverage on Zyrox uses oscilloscope-based testing, transient load evaluation
 Coverage spans Windows performance, update problems, blue-screen errors, driver issues, laptop upgrade paths, and battery optimization. Recommendations are based on testing across multiple Windows builds and hardware configurations.`,
         avatar: 'RK',
         expertise: ['Windows', 'Troubleshooting', 'Laptops', 'Upgrade Planning', 'System Optimization'],
-        social: {
-            twitter: 'https://twitter.com/zyrox',
-        },
+        social: {},
     },
 ];
 

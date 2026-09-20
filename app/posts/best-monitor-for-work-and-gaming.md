@@ -48,6 +48,15 @@ Short answer: no, but the refresh rate still affects how a monitor feels for eve
 
 For a hybrid setup, target **144Hz or 165Hz**. It covers nearly every game genre well, makes your desktop feel incredibly snappy, and doesn't require a premium GPU to sustain. 240Hz only really matters if you're a hardcore competitive FPS player, which usually isn't the crowd shopping for a productivity hybrid anyway.
 
+## The "1ms Response Time" Marketing Trap: GtG vs MPRT
+
+You will see "1ms Response Time" printed on almost every gaming monitor box. It sounds straightforward, but manufacturers use two completely different metrics to make panels look faster than they are:
+
+- **GtG (Gray-to-Gray):** Measures the actual time it takes a pixel to transition between shades. Most quality IPS panels sit natively around 4–6ms GtG. To advertise "1ms GtG", brands enable an extreme pixel overdrive mode in the OSD. In the real world, max overdrive causes **inverse ghosting (overshoot)**—a distracting, bright halo behind moving objects that ruins both reading and gaming.
+- **MPRT (Moving Picture Response Time):** This is not pixel transition speed; it measures persistence via backlight strobing (black frame insertion). A monitor with a 6ms GtG panel can slap a "1ms MPRT" label on the box because the backlight rapidly blinks off between frames. Strobing cuts overall display brightness in half and usually cannot run simultaneously with FreeSync / G-Sync adaptive sync.
+
+For a balanced work and gaming setup, keep pixel overdrive at its medium/normal setting and prioritize true GtG clarity over advertised 1ms badges.
+
 ## Ignore the "HDR400" Sticker
 
 Most monitors in the $300–$600 range advertise "HDR" by supporting HDR400. This just means it hits 400 nits of peak brightness and has no local dimming. In practice, this produces washed-out HDR that often looks worse than a standard SDR image. 
@@ -86,6 +95,6 @@ The perfect hybrid monitor doesn't exist, but we are finally at a point where a 
 
 ## Related Guides
 
-- [Why Your PC Feels Slow Even When the CPU Is Fast](/posts/why-your-pc-feels-slow-even-with-a-fast-cpu/)
+- [Why Your PC Feels Slow Even When It Has Good Specs](/posts/why-your-pc-feels-slow-even-when-it-has-good-specs/)
 - [How to Choose the Right Case Fan Setup](/posts/how-to-choose-the-right-case-fan-setup/)
 - [How to Connect Two Monitors to a Laptop](/posts/how-to-connect-two-monitors-to-a-laptop/)

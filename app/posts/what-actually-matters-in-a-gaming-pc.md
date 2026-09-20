@@ -84,6 +84,6 @@ And ignoring VRAM is a growing problem. In 2026, 8GB of VRAM is marginal for 144
 
 ## Related Guides
 
-- [How to Build a Quiet Gaming Rig Without Giving Up Performance](/posts/how-to-build-a-quiet-gaming-rig/)
+- [How to Build a Silent PC or Quiet Gaming Rig Without Sacrificing Performance](/posts/how-to-build-a-silent-pc/)
 - [Should You Buy an SSD or HDD for Game Storage](/posts/should-you-buy-an-ssd-or-hdd-for-game-storage/)
 - [How to Check If Your PC Can Run a Game Before You Buy It](/posts/how-to-check-if-your-pc-can-run-a-game-before-you-buy-it/)

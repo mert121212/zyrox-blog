@@ -124,11 +124,6 @@ export default function HomePage() {
                 </div>
             </section>
 
-            {/* Ad: between archives and topics */}
-            <div className="container">
-                <AdBanner />
-            </div>
-
             {/* Topic Directory - 100% Crawlable Pillar Clusters */}
             <TopicDirectory posts={posts} />
         </main>

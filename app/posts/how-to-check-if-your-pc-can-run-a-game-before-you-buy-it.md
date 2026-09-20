@@ -90,6 +90,6 @@ The manual approach takes maybe three extra minutes and gives you a far more rel
 
 ## Related Guides
 
-- [How to Build a Quiet Gaming Rig Without Giving Up Performance](/posts/how-to-build-a-quiet-gaming-rig/)
+- [How to Build a Silent PC or Quiet Gaming Rig Without Sacrificing Performance](/posts/how-to-build-a-silent-pc/)
 - [What Actually Matters in a Gaming PC Build](/posts/what-actually-matters-in-a-gaming-pc/)
 - [Should You Buy an SSD or HDD for Game Storage](/posts/should-you-buy-an-ssd-or-hdd-for-game-storage/)

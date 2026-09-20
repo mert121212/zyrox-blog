@@ -19,18 +19,12 @@ export function injectMidArticleAds(html: string): string {
     // Need at least 4 paragraphs to inject anything
     if (totalParagraphs < 4) return html;
 
-    // Determine insertion points
+    // Determine insertion point: exactly 1 non-intrusive mid-article slot
     const insertAfter: number[] = [];
-
-    if (totalParagraphs >= 8) {
-        // Long article: insert after 3rd and 8th paragraph
-        insertAfter.push(3, 8);
-    } else if (totalParagraphs >= 5) {
-        // Medium article: insert after 3rd paragraph only
-        insertAfter.push(3);
+    if (totalParagraphs >= 6) {
+        insertAfter.push(4); // Natural reading break around middle of initial sections
     } else {
-        // Short article (4 paragraphs): insert after 2nd
-        insertAfter.push(2);
+        insertAfter.push(3);
     }
 
     // Insert from last to first to preserve indices

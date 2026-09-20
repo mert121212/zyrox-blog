@@ -19,73 +19,109 @@ image: "/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg"
 ---
 
 ![Hero Image](/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg)
-There is a specific kind of frustration that comes from a PC that reboots randomly. It's not like a known error you can look up. It just restarts — sometimes in the middle of a game, sometimes during compilation, sometimes while you are watching YouTube — and then boots back up like nothing happened. No explanation. No apology. Just gone.
 
-I've been through this diagnostic process more times than I can count, on my own machines and helping others. The honest truth is that random reboots have a frustratingly wide set of possible causes: thermal shutdown, PSU failure, unstable drivers, RAM errors, overclock instability, corrupted system files, and more. The key is a systematic methodology that rules things out efficiently rather than throwing changes at the wall hoping something sticks.
+A PC that restarts with zero warning is the most aggravating hardware problem on the planet. One second you're mid-round in *Counter-Strike* or rendering a Premiere sequence, and the next second your monitors click off, fans spin down for half a heartbeat, and the motherboard splash screen stares right back at you.
 
-## Step 1: Determine What Kind of Restart You Are Seeing
+No bluescreen. No error dialogue. Just an instantaneous reboot.
 
-Not all unexpected reboots are the same. Before you diagnose anything, identify which category you are dealing with. 
+When someone brings a rig like this to my bench, they've usually spent three days blindly reinstalling GPU drivers, running useless registry cleaners, and guessing. Don't guess. PCs don't reboot out of spite; silicon either trips an electrical protection circuit, hits a critical thermal ceiling, or encounters a kernel-level stop error so catastrophic that Windows can't even draw a crash screen.
 
-If you saw a blue flash before the restart, it was a Blue Screen of Death (BSOD), which usually points to software, drivers, or a hardware fault. If the machine just cut off with no screen transition at all, it was a hard shutdown, which is almost always a thermal protection trip or a PSU failure. 
+Here is the exact diagnostic sequence I use to track down the culprit.
 
-If the machine rebooted cleanly to a "Windows needs to restart" message, it was a scheduled or managed restart, likely from Windows Update. Check your Update History in Settings to rule this out first. It sounds obvious, but it eliminates a surprising number of "random" reboots.
+## Step 1: Decode Event ID 41 (The Bugcheck Code Secret)
 
-## Step 2: Filter Event Viewer for Critical Errors
+Almost everyone knows to open Windows Event Viewer (`Win + R` → `eventvwr.msc` → *Windows Logs* → *System*) and look for **Event ID 41: Kernel-Power**.
 
-Event Viewer is Windows' log of everything that happened on the system. After a random reboot, it often contains the exact error that triggered the restart.
+Most people stop there because the general description just says *"The system has rebooted without cleanly shutting down first."* That sounds useless, but it isn't. Click on the Event ID 41 entry, switch to the **Details** tab, and toggle the **XML View**. 
 
-Press Win + R, type `eventvwr.msc`, and hit Enter. In the left panel, expand Windows Logs and click System. On the right panel, click Filter Current Log, check Critical and Error, and click OK. Look for events timestamped right around the time of the reboot.
+Look directly at the `<Data Name="BugcheckCode">` parameter:
 
-You are looking for Event ID 41 (Kernel-Power). This is the signature of an unexpected shutdown. It means the system did not shut down cleanly. You might also see Event ID 1001, which contains crash dump information. If you find Event ID 41 with no preceding error events, the shutdown was abrupt (PSU or thermal). If you find driver errors or application crashes logged just before the reboot, those are your leads.
+### Scenario A: BugcheckCode is 0
+```xml
+<Data Name="BugcheckCode">0</Data>
+```
+If the code is strictly **0**, Windows had zero time to react. The CPU didn't panic; power was abruptly cut or the motherboard's emergency protection tripped before the kernel could execute an interrupt handler.
+- **Top suspects:** Power supply over-current protection (OCP), GPU transient power spikes, a failing wall circuit/UPS, or an emergency thermal shutdown (PROCHOT 105°C).
 
-## Step 3: Decode Blue Screen Stop Codes
+### Scenario B: BugcheckCode is NOT 0 (e.g., 292, 10, 59, 270)
+```xml
+<Data Name="BugcheckCode">292</Data> <!-- 292 in decimal = 0x00000124 in hex (WHEA) -->
+```
+If the number is anything other than 0, **the system actually blue-screened**, but Windows restarted so fast (or the monitor dropped signal) that you never saw it. 
+Convert that decimal number to hexadecimal using Windows Calculator in Programmer mode:
+- `292` decimal = `0x124` (**WHEA_UNCORRECTABLE_ERROR**): Hardware voltage fault, failing CPU core, or unstable RAM/Infinity Fabric.
+- `10` decimal = `0x0A` (**IRQL_NOT_LESS_OR_EQUAL**): Driver attempted to access an invalid paging address at an elevated interrupt level (almost always bad GPU or Wi-Fi driver).
+- `59` decimal = `0x3B` (**SYSTEM_SERVICE_EXCEPTION**): Corrupt system DLL or memory corruption.
 
-If the reboot was preceded by a BSOD, the stop code is your most specific diagnostic clue. If Windows flashes the screen too briefly to read it, check Event Viewer (Event ID 1001) or look for dump files in `C:\Windows\Minidump` using a tool like WhoCrashed.
+## Step 2: Disable Automatic Restart on System Failure
 
-Different stop codes mean different things. `IRQL_NOT_LESS_OR_EQUAL` usually means a driver is acting up, often the GPU or network driver. `MEMORY_MANAGEMENT` or `PAGE_FAULT_IN_NONPAGED_AREA` points strongly to RAM corruption or a bad driver allocating memory incorrectly. `WHEA_UNCORRECTABLE_ERROR` is a hardware-level error, meaning you should check RAM stability, CPU overclocks, and temperatures.
+If Windows is silently rebooting on bluescreens, force it to hold the stop screen:
 
-If you see `CRITICAL_PROCESS_DIED` or `KERNEL_SECURITY_CHECK_FAILURE`, a core Windows file crashed. Open an Administrator Command Prompt and run `sfc /scannow`. If that doesn't fix it, run `DISM /Online /Cleanup-Image /RestoreHealth`.
+1. Press `Win + R`, type `sysdm.cpl`, and hit Enter.
+2. Select the **Advanced** tab.
+3. Under **Startup and Recovery**, click **Settings**.
+4. Uncheck **Automatically restart**.
+5. Set *Write debugging information* to **Small memory dump (256 KB)**.
 
-## Step 4: Check Temperatures — Throttle vs Shutdown
+Now, instead of instantly looping into a reboot, Windows will stay on the blue screen with the exact stop code and offending `.sys` file clearly visible.
 
-There is an important distinction between thermal throttling and thermal shutdown.
+## Step 3: Parse Crash Dumps with WhoCrashed
 
-Thermal throttling happens when the CPU or GPU gets too hot (typically 95–100°C for modern CPUs) and reduces its clock speed to cool down. The system keeps running, just slower. You will not see a reboot from throttling alone.
+If the crash generated a dump file in `C:\Windows\Minidump`, install the free utility **WhoCrashed** and click **Analyze**. It automates Microsoft's WinDbg debugger and extracts the stack trace:
 
-Thermal shutdown happens when the temperature exceeds a critical threshold set in the BIOS, and the system performs an emergency power-off to protect the hardware. This looks exactly like someone yanked the power cord. 
+- If WhoCrashed blames `nvlddmkm.sys`, use **DDU (Display Driver Uninstaller)** in Windows Safe Mode to wipe your NVIDIA display drivers, then reinstall the clean studio or game-ready driver from scratch.
+- If it blames `amdkmdag.sys`, execute the same clean purge for AMD Radeon drivers.
+- If it blames `ntoskrnl.exe` or `hal.dll`, the OS kernel crashed. Don't blame Windows—95% of the time, `ntoskrnl.exe` faults happen because bad RAM or fluctuating Vcore corrupted data while the kernel was running.
 
-To check this, download HWiNFO64, run it in sensors-only mode, and let the system run under a heavy load like a game. Watch the CPU "Package" temp and the GPU temp. Most modern [Intel](https://www.intel.com) and [AMD](https://www.amd.com) CPUs should stay under 85°C, while modern GPUs should stay under 80-85°C. If your CPU hits a hard shutoff point (often 100–105°C), expect a shutdown. The fix is usually cleaning dust, replacing thermal paste, or improving case airflow.
+## Step 4: The 10-Millisecond PSU Trap (Transient Spikes)
 
-## Step 5: Evaluate PSU Failure vs Software Instability
+If your `BugcheckCode` was **0**, your PC cuts off specifically while launching heavy games, and Event Viewer shows no preceding driver warnings, **your power supply is the prime suspect**.
 
-PSU failure and software instability can look nearly identical from the outside. Both cause sudden, unexpected reboots. 
+Modern graphics cards (especially RTX 3080/3090, 4080/4090, and RX 7900 XTX) generate microsecond-level load transients that can peak at 180% to 220% of their rated TDP. A 750W or 850W power supply from 2018–2020 might have high-efficiency capacitors, but older analog supervisory ICs trip Over-Current Protection (OCP) the instant a 400W transient spike hits the 12V rail.
 
-Signs pointing to a PSU failure include reboots that happen specifically under high load (like gaming), a machine that cuts off hard with no warning, or a system that struggles to boot back up after a crash. If your PSU is old or heavily loaded, and Event Viewer only shows Event ID 41, I'd bet on the PSU.
+To isolate this:
+1. Open **MSI Afterburner**.
+2. Drag the **Power Limit** slider down to **70%** and click apply.
+3. Boot up the exact game or benchmark that caused the reboot.
+4. If the PC no longer reboots with the card capped at 70%, your power supply cannot handle the GPU's unfiltered transient loads. You need an ATX 3.0 / PCIe 5.0 certified PSU with dedicated 12V-2x6 power delivery.
 
-Software instability usually shows up as a BSOD with a specific stop code. The reboots might happen after a specific action, like waking from sleep or opening a certain app.
+## Step 5: Thermal Throttling vs. Hard Thermal Cutoff
 
-To test the PSU reliably, you really need to swap in a known-good unit. You can also run OCCT's PSU test for 15 minutes and monitor voltages with HWiNFO64 — the 12V rail should stay within 5% of 12V.
+A common misconception: *"My CPU is running hot, so it's rebooting."*
 
-## Step 6: Set Up HWiNFO64 for Post-Mortem Logging
+Modern CPUs from AMD and Intel **do not reboot when they thermal throttle**. At 90°C–95°C, the processor simply scales down core frequency, dropping from 5.4 GHz down to 3.8 GHz or lower to maintain thermal equilibrium. The machine will feel stuttery, but it will keep running.
 
-The problem with random reboots is that by the time you go looking for data, the machine has restarted and the memory is wiped. HWiNFO64's logging feature solves this by continuously writing sensor data to a CSV file.
+A reboot only occurs if the chip hits **Tjunction Max (105°C for Intel, 100°C–105°C for AMD)**, triggering PROCHOT (Processor Hot) hard shutoff to prevent silicon degradation.
 
-Open HWiNFO64 in Sensors-only mode, click the floppy disk icon to enable logging to a CSV file, and set the interval to 1–2 seconds. Leave it running in the background. After the next reboot, open the CSV file and look at the last timestamps before the crash. 
+To verify whether heat is pulling the plug:
+1. Download **HWiNFO64** and run in *Sensors-only* mode.
+2. Click the small **floppy disk icon** at the bottom right to enable continuous sensor logging to a CSV file. Set the polling rate to 1000ms (1 second).
+3. Put the system under load until it restarts.
+4. Reopen the CSV in Excel after rebooting and scroll to the final row before the crash. If CPU Package Temp shows 105°C on the final 3 rows, your cooler pump failed or your thermal paste has pumped out. If temps were sitting at 72°C right before the cutoff, temperature is 100% not your problem.
 
-A temperature that went from 80°C to 102°C in 10 seconds before the shutdown is thermal. A 12V rail that dropped from 12.1V to 11.1V under load is PSU. This data often tells you exactly what happened.
+## Step 6: Memory Instability & 4-DIMM DDR5 Headaches
 
-## Systematic Elimination 
+Memory errors are notoriously erratic. They rarely cause clean shutdowns; they cause random page faults that look like software crashes.
 
-Work through the possibilities in order. Check Windows Update history first. Monitor temps under load. Test your RAM overnight with MemTest86. Run SFC and DISM to check for corrupted files. If you have overclocks (even XMP on your RAM), revert them to stock and test. 
+If you are running DDR5:
+- **Are you running 4 RAM sticks?** The integrated memory controllers (IMC) on AMD Zen 4/5 and Intel 13th/14th Gen struggle severely with four double-sided DDR5 modules. Running 4 sticks at EXPO/XMP 6000 MT/s is a recipe for random reboots. Drop memory speed to 5200 MT/s or test with just 2 sticks in slots A2 and B2.
+- **Run MemTest86:** Flash **PassMark MemTest86** to a USB flash drive, boot from the USB in UEFI mode, and let it run at least 4 full passes. If you see even **one single error bit**, your memory subsystem is unstable. Bump SoC voltage slightly, loosen timings, or RMA the faulty kit.
 
-Don't skip straight to buying a new motherboard. Most of the time, the fix is finding the bad driver, the dusty heatsink, or the dying power supply. If you've tried all of this and are still stuck, it might be time to take it to a local repair shop for a comprehensive hardware diagnostic.
+## The Diagnostic Checklist
 
+Before you throw money at new components, follow this order of elimination:
+
+1. **Check Event Viewer ID 41:** Is BugcheckCode 0 (hardware power drop) or non-zero (kernel bluescreen)?
+2. **Disable Auto-Restart:** Catch the bluescreen stop code instead of letting Windows reboot silently.
+3. **Inspect WhoCrashed reports:** Isolate whether a specific display driver `.sys` file is crashing the stack.
+4. **Power Limit the GPU:** Drop power target to 70% in MSI Afterburner to rule out PSU transient trips.
+5. **Log HWiNFO64 sensors to CSV:** Check the exact temperature and 12V rail voltage on the final millisecond before failure.
+6. **Pass 4 rounds of MemTest86:** Ensure RAM timings and IMC voltages aren't dropping bits under load.
 
 ---
 
 ## Related Guides
 
 - [What to Check First When a PC Won't Boot](/posts/what-to-check-first-when-a-pc-wont-boot/)
-- [How to Debug a PC That Randomly Reboots](/posts/how-to-debug-a-pc-that-randomly-reboots/)
 - [Signs Your Motherboard May Be Failing](/posts/signs-your-motherboard-is-failing/)
+- [How to Speed Up a Slow Windows 11 PC](/posts/how-to-speed-up-a-slow-windows-11-pc/)

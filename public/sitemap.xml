@@ -209,7 +209,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://zyroxlab.com/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg</image:loc>
-      <image:title>Best CPU Cooler for Ryzen 7 7800X3D: Quiet and Efficient Picks</image:title>
+      <image:title>Best CPU Cooler for Ryzen 7 7800X3D: Tested on the Bench (2026)</image:title>
     </image:image>
   </url>
   <url>
@@ -220,16 +220,6 @@
     <image:image>
       <image:loc>https://zyroxlab.com/images/posts/best-ssd-for-gaming-2026.jpg</image:loc>
       <image:title>Best SSD for Gaming in 2026: What Actually Matters</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://zyroxlab.com/posts/how-to-build-a-quiet-gaming-rig/</loc>
-    <lastmod>2026-07-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://zyroxlab.com/images/posts/how-to-build-a-budget-gaming-pc.jpg</image:loc>
-      <image:title>How to Build a Quiet Gaming Rig Without Giving Up Performance</image:title>
     </image:image>
   </url>
   <url>
@@ -353,16 +343,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://zyroxlab.com/posts/how-to-debug-a-pc-that-randomly-reboots/</loc>
-    <lastmod>2026-07-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://zyroxlab.com/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg</image:loc>
-      <image:title>How to Debug a PC That Randomly Reboots</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://zyroxlab.com/posts/how-to-build-a-budget-gaming-pc/</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -483,16 +463,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://zyroxlab.com/posts/how-to-choose-a-monitor-for-gaming-and-work/</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://zyroxlab.com/images/posts/best-monitor-for-work-and-gaming.jpg</image:loc>
-      <image:title>How to Choose a Monitor for Gaming and Work Without Overpaying</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://zyroxlab.com/posts/when-to-upgrade-your-gpu-vs-your-cpu/</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -500,16 +470,6 @@
     <image:image>
       <image:loc>https://zyroxlab.com/images/posts/best-gpu-for-1440p-gaming.jpg</image:loc>
       <image:title>When to Upgrade Your GPU Instead of Your CPU</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://zyroxlab.com/posts/ssd-vs-hdd-boot-speed/</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://zyroxlab.com/images/posts/ssd-vs-hdd-which-should-you-buy-in-2026.jpg</image:loc>
-      <image:title>SSD vs HDD Boot Speed: What Actually Changes in Real Use</image:title>
     </image:image>
   </url>
   <url>
@@ -619,7 +579,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://zyroxlab.com/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg</image:loc>
-      <image:title>Why Your PC Feels Slow Even When It Has Good Specs</image:title>
+      <image:title>Why Your PC Feels Slow Even When It Has Good Specs (or Fast CPU)</image:title>
     </image:image>
   </url>
   <url>
@@ -709,7 +669,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://zyroxlab.com/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg</image:loc>
-      <image:title>How to Build a Silent PC Without Sacrificing Performance</image:title>
+      <image:title>How to Build a Silent PC or Quiet Gaming Rig Without Sacrificing Performance</image:title>
     </image:image>
   </url>
   <url>
@@ -770,16 +730,6 @@
     <image:image>
       <image:loc>https://zyroxlab.com/images/posts/bios-settings-for-stable-overclock.jpg</image:loc>
       <image:title>BIOS Tuning Basics for Stable Overnight Overclocking</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://zyroxlab.com/posts/why-your-pc-feels-slow-even-with-a-fast-cpu/</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://zyroxlab.com/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg</image:loc>
-      <image:title>Why Your PC Feels Slow Even When the CPU Is Fast</image:title>
     </image:image>
   </url>
   <url>

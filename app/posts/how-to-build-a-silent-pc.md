@@ -1,10 +1,11 @@
 ---
-title: How to Build a Silent PC Without Sacrificing Performance
-meta_description: >-
+title: How to Build a Silent PC or Quiet Gaming Rig Without Sacrificing Performance
+meta_description: "Learn how to build a whisper-quiet gaming rig or silent workstation without sacrificing FPS. Case dampening, custom fan curves, GPU undervolting, and decibel targets."
 date: 2026-07-02T00:00:00.000Z
 category: Cooling
 tags:
   - Silent PC
+  - Quiet Gaming Rig
   - Airflow
   - Fan Curves
   - Noise

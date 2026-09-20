@@ -367,9 +367,6 @@ export default function PostPage({ params }: { params: { slug: string } }) {
 
                             <SocialShare title={post.title} url={`/posts/${params.slug}/`} />
 
-                            {/* Ad 1: top of article */}
-                            <AdBanner />
-
                             <script
                                 type="application/ld+json"
                                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -412,9 +409,6 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                                     <AuthorCard author={author} variant="compact" />
                                 </div>
                             )}
-
-                            {/* Ad 4: after author box */}
-                            <AdBanner />
 
                             <Link href="/" className="post-link" style={{ display: 'inline-block', marginTop: '1.5rem' }}>
                                 ← Back to home

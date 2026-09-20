@@ -100,4 +100,3 @@ If you are on an ancient platform, like a 6th Gen [Intel](https://www.intel.com)
 
 - [How to Diagnose a Random PC Reboot Without Losing Your Mind](/posts/how-to-diagnose-a-random-reboot/)
 - [What to Check First When a PC Won't Boot](/posts/what-to-check-first-when-a-pc-wont-boot/)
-- [How to Debug a PC That Randomly Reboots](/posts/how-to-debug-a-pc-that-randomly-reboots/)

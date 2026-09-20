@@ -17,6 +17,58 @@
   from = "/tag/*"
   to = "/"
   status = 301
+
+# Content consolidation 301 redirects (eliminating keyword cannibalization)
+[[redirects]]
+  from = "/posts/how-to-debug-a-pc-that-randomly-reboots/*"
+  to = "/posts/how-to-diagnose-a-random-reboot/"
+  status = 301
+
+[[redirects]]
+  from = "/posts/how-to-debug-a-pc-that-randomly-reboots"
+  to = "/posts/how-to-diagnose-a-random-reboot/"
+  status = 301
+
+[[redirects]]
+  from = "/posts/ssd-vs-hdd-boot-speed/*"
+  to = "/posts/ssd-vs-hdd-which-should-you-buy-in-2026/"
+  status = 301
+
+[[redirects]]
+  from = "/posts/ssd-vs-hdd-boot-speed"
+  to = "/posts/ssd-vs-hdd-which-should-you-buy-in-2026/"
+  status = 301
+
+[[redirects]]
+  from = "/posts/how-to-build-a-quiet-gaming-rig/*"
+  to = "/posts/how-to-build-a-silent-pc/"
+  status = 301
+
+[[redirects]]
+  from = "/posts/how-to-build-a-quiet-gaming-rig"
+  to = "/posts/how-to-build-a-silent-pc/"
+  status = 301
+
+[[redirects]]
+  from = "/posts/why-your-pc-feels-slow-even-with-a-fast-cpu/*"
+  to = "/posts/why-your-pc-feels-slow-even-when-it-has-good-specs/"
+  status = 301
+
+[[redirects]]
+  from = "/posts/why-your-pc-feels-slow-even-with-a-fast-cpu"
+  to = "/posts/why-your-pc-feels-slow-even-when-it-has-good-specs/"
+  status = 301
+
+[[redirects]]
+  from = "/posts/how-to-choose-a-monitor-for-gaming-and-work/*"
+  to = "/posts/best-monitor-for-work-and-gaming/"
+  status = 301
+
+[[redirects]]
+  from = "/posts/how-to-choose-a-monitor-for-gaming-and-work"
+  to = "/posts/best-monitor-for-work-and-gaming/"
+  status = 301
+
 # Ensure sitemap and RSS are served with correct content types
 [[headers]]
   for = "/sitemap.xml"
