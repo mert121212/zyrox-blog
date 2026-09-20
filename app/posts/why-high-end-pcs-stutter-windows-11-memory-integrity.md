@@ -22,37 +22,31 @@ image: "/images/posts/why-high-end-pcs-stutter-windows-11-memory-integrity.jpg"
 
 ![High-End PC Stuttering on Windows 11 Investigation](/images/posts/why-high-end-pcs-stutter-windows-11-memory-integrity.jpg)
 
-I get some version of this email probably twice a week now. Last Tuesday it was from a guy named David:
+So a buddy of mine — well, more like a guy I know from a Discord server — drops me a DM last week. New AM5 build. 7800X3D, 4080 Super, 32 gigs of DDR5, the works. Spent like $2,400 on it. And the thing stutters in Cyberpunk every 15-20 seconds. He ran Memtest. Clean. Temps are fine. Drivers updated. He was ready to box the whole thing up and ship the GPU back.
 
-> *"Marcus, I just dropped $2,400 on a brand new AM5 build. Ryzen 7 7800X3D, RTX 4080 Super, 32 gigs of DDR5 in EXPO. My average FPS in Cyberpunk sits around 160. But every 15 to 20 seconds, the game just... hitches. Like the monitor freezes for a split second. Temps are fine, drivers are current, I ran Memtest, everything passes. I'm losing my mind."*
+I told him to check one setting. One toggle buried three menus deep inside Windows Security. Took maybe ten seconds.
 
-I knew exactly what it was before I finished reading the email. I've seen this so many times over the last year that I could probably diagnose it in my sleep at this point.
+Stuttering gone.
 
-David's PC wasn't broken. Nothing was overheating, nothing was failing, his PSU wasn't sagging under load. The problem was a Windows 11 security feature that Microsoft has been quietly turning on by default — and it absolutely wrecks frame-time consistency on gaming rigs while barely showing up in average FPS numbers.
-
-We're talking about **Memory Integrity**, also called HVCI, buried inside a menu called Core Isolation that most people have never opened.
-
-I pulled together a build that matched David's specs on our secondary test bench and spent two days logging frame times with CapFrameX. The results honestly ticked me off, because this is one of those things that should be common knowledge by now and it just... isn't.
+I've had this exact same conversation probably eight or nine times in the past few months alone and it's starting to annoy me that nobody's really talking about it properly. Tech outlets covered it when Windows 11 first shipped VBS and most of them said "eh, 3-4% FPS loss, not a big deal." Which, okay, average FPS? Sure. They weren't wrong about that number specifically. But that number doesn't tell you anything useful about stutter.
 
 ---
 
-## Your Average FPS Number Is Lying to You
+## The problem with average FPS as a metric
 
-Here's something that drives me crazy about how most people evaluate game performance. They look at one number. Average FPS. If it says 140, they think they're golden.
+Here's the thing and I've ranted about this before so I'll keep it short. Average FPS is a garbage metric for diagnosing stutter. Full stop.
 
-But that's not how your eyes work.
+Say you're getting 144 FPS on average. Sounds great right? But what if 59 of those 60 frames render in 7ms like they're supposed to, and then frame number 60 randomly takes 40ms because the CPU got pulled away to do something behind your back? Your FPS counter still reads 138 or whatever. Looks fine on paper. Feels like trash in your hands because your crosshair just teleported.
 
-Think about it this way. If 59 out of 60 frames render in about 7 milliseconds each — that's your nice 144 FPS cadence — but frame number 60 randomly takes 40 milliseconds because the CPU got yanked away to do something else, you feel it. Hard. Your crosshair jumps, your character lurches, the whole game feels like it skipped. And your FPS counter? Still says 138 or whatever. Looks totally fine.
+That one bad frame. That's micro-stutter. And that's what 1% lows and 0.1% lows measure — the absolute worst frames your PC spits out. The frames your eyes actually notice.
 
-That one bad frame is what competitive players mean when they talk about micro-stutter. And it's what 1% and 0.1% low metrics measure — the absolute worst frames your system produces. The ones that actually determine whether gameplay feels smooth or feels like garbage.
+## I ran benchmarks for two days straight. Got mad.
 
-Which brings us to what I found on the test bench.
+Look I don't usually get emotional about test results but this one got under my skin.
 
-## The Numbers That Made Me Angry
+Test setup: 7800X3D on an ASUS ROG Strix B650E-F, BIOS 3024. 32GB G.Skill Flare X5 DDR5-6000 at CL30. RTX 4080 Super FE, driver 560.94. Everything maxed at 1440p. CapFrameX running 10-minute loops, three runs per game, I averaged the results.
 
-Test rig: Ryzen 7 7800X3D on an ASUS ROG Strix B650E-F (BIOS 3024), 32GB G.Skill Flare X5 DDR5-6000 CL30, RTX 4080 Super Founders Edition running driver 560.94. 1440p, max settings in every game. CapFrameX recording for 10-minute loops, three runs per game, averaged.
-
-All I changed between runs was flipping one toggle in Windows Security. That's it. Same drivers, same background apps, same everything else.
+The only variable? A single toggle in Windows Security. Memory Integrity — on vs off. Same drivers both times. Same background apps. Same everything.
 
 | Game | Avg FPS (ON → OFF) | 1% Low (ON → OFF) | 0.1% Low (ON → OFF) |
 | :--- | :--- | :--- | :--- |
@@ -60,142 +54,132 @@ All I changed between runs was flipping one toggle in Windows Security. That's i
 | The Finals | 218 → 224 | **112 → 157** | **61 → 110** |
 | Counter-Strike 2 | 384 → 392 | **199 → 264** | **115 → 188** |
 
-Look at the average FPS column. Barely moves. 3-4% at most. If you just ran a quick benchmark and looked at the average, you'd conclude Memory Integrity does basically nothing to gaming performance. That's what most tech outlets reported when this feature first shipped and honestly it makes me want to pull my hair out, because they completely missed the point.
+Average FPS barely budges. 3-4%. You'd never notice.
 
-Now look at the 0.1% lows.
+But look at those 0.1% lows in The Finals. 61 to 110. That's not a rounding error. That is a completely different gameplay experience. At 61 FPS on a 240Hz panel you're getting visible judder during gunfights. At 110 you forget the framerate counter exists.
 
-In The Finals, the worst frames went from 61 FPS to 110 FPS. That's not a minor improvement. That's the difference between your game hitching hard enough to make you miss a shot and the game running so smoothly you forget the framerate counter exists.
+CS2 was the one that really bugged me though. 0.1% lows going from 115 to 188. On a 7800X3D. A chip AMD literally designed around gaming cache performance. And Windows is just... sitting on it. Throttling it with a security layer most gamers didn't ask for and don't know is running.
 
-CS2 was even worse — 0.1% lows jumped from 115 to 188. On a system with a 7800X3D. A chip specifically designed for gaming. And Windows was kneecapping it by default.
+## What Memory Integrity is and why it murders frame times
 
-## So What Is Memory Integrity Actually Doing?
+Okay so. Memory Integrity. Microsoft calls it HVCI internally — Hypervisor-Protected Code Integrity. It lives under a menu called Core Isolation which, let's be real, nobody has ever intentionally opened.
 
-Alright, I'll try to keep the technical stuff digestible because this rabbit hole goes deep.
+Here's my rough understanding of how it works. I'm simplifying a lot because the actual implementation goes deep into CPU virtualization stuff that I don't think most people care about.
 
-Normally, Windows runs its kernel — the core of the operating system — at the highest privilege level your CPU offers. Ring 0. Full access to everything. If a nasty piece of malware manages to sneak a corrupted driver into Ring 0, game over. It owns your machine.
+Windows normally runs its kernel at the highest CPU privilege level. Ring 0. Total access to everything on the machine. If malware somehow gets a bad driver loaded into Ring 0, you're done. It owns your system.
 
-Microsoft's answer to this was VBS — Virtualization-Based Security. Instead of letting Windows run directly on the hardware, they essentially created a tiny hypervisor that sits underneath Windows at an even higher privilege level. Think of it as a bouncer standing at the door of your CPU's VIP section.
+Microsoft's solution was to shove a tiny hypervisor *underneath* Windows at an even higher privilege level. So now there's something watching the kernel. Checking its homework, basically. Every time a kernel driver wants to run code or grab some memory, this hypervisor intercepts the call, checks if the driver is properly signed, makes sure the memory pages are legit, marks them read-only, and only then lets the request go through.
 
-Memory Integrity (the official name is HVCI, Hypervisor-Protected Code Integrity) is the bouncer's rulebook. Every time a kernel driver tries to run code or allocate memory, the hypervisor intercepts it, checks the digital signature, verifies the code page is legit, marks it read-only, and then lets it through.
+Security-wise that's clever. I'll give them that.
 
-From a security standpoint? Brilliant. Genuinely clever engineering.
+Gaming-wise it's a trainwreck. And here's why.
 
-From a gaming standpoint? Absolute disaster.
+Every single one of those interceptions is what's called a VM Exit. The CPU has to stop what it's doing, save its entire state, jump over to the hypervisor, do the signature check, jump back, reload state, and continue where it left off. One VM Exit costs you a few hundred clock cycles. Doesn't sound like much until you realize how often a game engine talks to the kernel.
 
-Every one of those interceptions is called a VM Exit. The CPU has to save everything it's doing, jump to the hypervisor context, do the check, jump back, restore state, and continue. A single VM Exit costs several hundred clock cycles. And a modern game engine hammers the kernel *thousands* of times per second — polling your mouse at 1000Hz, dispatching DirectX 12 draw calls, talking to anti-cheat services like EAC and BattlEye, managing VRAM allocations...
+Mouse polling at 1000Hz. DirectX 12 draw calls. Anti-cheat services phoning home. VRAM allocations. Thousands of kernel calls per second and every single one gets this interception treatment.
 
-Each of those calls gets intercepted. Each one adds a tiny delay. Most of the time it doesn't matter. But when a bunch of them stack up in the same millisecond — and they will, because game engines are bursty by nature — your GPU sits there twiddling its thumbs waiting for the next command buffer. Frame gets delayed. You see a hitch.
+Most of the time each individual delay is tiny enough that you wouldn't notice. But game engines are bursty — they don't spread their work evenly across time. Sometimes a bunch of kernel calls pile up in the same millisecond window and now your GPU's sitting idle waiting for the next command buffer because the CPU is stuck bouncing in and out of hypervisor checks. Frame comes in late. You feel a hitch. That's your stutter.
 
-That's your micro-stutter. That's what David was feeling every 15 seconds.
+## RGB software makes it way worse (not joking)
 
-## It Gets Worse If You Have RGB Software
+I almost didn't include this section because it sounds ridiculous. But I tested it and the numbers don't lie.
 
-I wish I was kidding about this one.
+A fast chip like the [7800X3D](/posts/best-cpu-cooler-for-ryzen-7-7800x3d/) can honestly power through the hypervisor overhead on its own. The 0.1% lows get worse but not catastrophically so. The problem explodes when you add the garbage that most gaming PC owners have running in the background.
 
-If the hypervisor overhead was the only problem, a modern high-IPC chip like the [7800X3D](/posts/best-cpu-cooler-for-ryzen-7-7800x3d/) would honestly muscle through most of it. You'd see worse 0.1% lows but maybe not terrible ones.
+iCUE. Armoury Crate. NZXT CAM. Razer Synapse. Maybe two or three of these at once.
 
-But here's what nobody talks about: most gaming PCs have two or three RGB/monitoring utilities running in the background. Corsair iCUE. ASUS Armoury Crate. NZXT CAM. Razer Synapse. Whatever came bundled with your motherboard.
+A lot of this software uses ancient kernel-mode drivers to talk to RGB controllers and hardware sensors. We're talking `inpoutx64.sys`, WinRing0 — stuff that was written during the Vista era when kernel security was basically an afterthought. These drivers poll your hardware constantly. Temps, fan RPM, LED states. Multiple reads per second, all hitting the kernel.
 
-A lot of these programs use ancient kernel-mode drivers to talk to the RGB controllers and hardware sensors on your motherboard. I'm talking about stuff based on `inpoutx64.sys` and WinRing0 — drivers that were written back when nobody worried about kernel security because Vista hadn't even shipped yet.
+With Memory Integrity on? Every one of those polling calls gets the full hypervisor shakedown. We measured DPC latency — basically how long the system forces other tasks to wait while it handles these background driver requests — and it went from around 48 microseconds to over 1,200. That's a 25x jump. At that level you're not just getting game stutter, you'll hear your USB audio crackle too.
 
-These drivers poll your hardware sensors aggressively. Temperature readings, fan speeds, LED states, all of it hitting the kernel multiple times per second. And with Memory Integrity active, every single one of those polling calls gets the full hypervisor interception treatment.
+Oh and the fun part. Microsoft's August update this year, KB5121003, was causing straight-up blue screens for people running certain RGB drivers with Memory Integrity active. The `inpoutx64.sys` thing got bad enough that game developers put out statements about it. So this isn't some weird edge case that only affects three people on Reddit.
 
-We tested this specifically. With Memory Integrity on and a popular RGB suite active, DPC latency — that's basically a measure of how long the system makes other tasks wait while handling background driver requests — went from around 48 microseconds to over 1,200 microseconds. That's a 25x increase. At that point you're not just getting micro-stutters in games, you'll get audio crackling too if you're on a USB DAC.
+## How to check if it's on
 
-The really fun part? Microsoft's August update this year (KB5121003) actually caused full-on system crashes for people running certain RGB drivers. The `inpoutx64.sys` conflict was bad enough that game developers had to issue public statements about it. This isn't some edge case — it's hitting a ton of people.
+Microsoft has been flipping this on by default for clean Windows 11 installs. A lot of prebuilt gaming PCs from NZXT, iBuyPower, CyberPowerPC ship with it already active. You might be running it right now without ever choosing to.
 
-## How to Check If You're Affected Right Now
-
-You might be running Memory Integrity without ever choosing to turn it on. Microsoft has been enabling it by default on clean Windows 11 installs, and a lot of prebuilt gaming PCs from companies like NZXT, iBuyPower, and CyberPowerPC ship with it active out of the box.
-
-Takes about ten seconds to check:
+Check takes ten seconds:
 
 1. Hit the Windows key
 2. Type **Core Isolation**
 3. Press Enter
-4. Look at the toggle under Memory Integrity
+4. Look at the Memory Integrity toggle
 
-If it says On, that's your culprit. Or at least a major contributing factor.
+If it's on, well, there you go.
 
-If you want to be thorough about it, open PowerShell as admin and run:
+You can also verify through PowerShell if you want to be thorough. Run this as admin:
 
 ```powershell
 Get-CimInstance -ClassName Win32_DeviceGuard -Namespace root\Microsoft\Windows\DeviceGuard | Select-Object SecurityServicesRunning
 ```
 
-If it returns `2`, HVCI is actively running.
+If it spits back `2`, HVCI is active.
 
-## Before You Turn It Off — Read This Part
+## Should you actually turn it off though?
 
-I know what you're thinking. "Cool, I'll just turn it off, thanks Marcus." And look, for a dedicated gaming PC? That's probably the right call. But I'd be doing you a disservice if I didn't explain what you're giving up.
+I don't want to be that guy who just says "turn it off lol" without context because Memory Integrity does provide real protection. It blocks rootkits, credential dumping stuff like Mimikatz, driver-level zero-days. Even if malware gets admin on your box it can't easily inject into the kernel with HVCI running. That matters.
 
-Memory Integrity is genuinely good security. It blocks entire categories of kernel-level exploits — rootkits, credential dumping tools like Mimikatz, zero-day driver attacks. Even if malware gets admin access on your machine, it can't easily inject code into the kernel with HVCI running. That matters.
+My take:
 
-Here's how I think about it:
+Keep it on if your gaming PC doubles as your work/banking machine, if you tend to download things from places you probably shouldn't be downloading from, or if you mostly play slower-paced games where frame time dips at 60 FPS aren't going to ruin your session.
 
-**Leave it on** if your gaming PC is also your banking/work/school computer, if you download stuff from sketchy sources (you know who you are), or if you play mostly chill single-player games where 0.1% lows at 60 FPS don't ruin your day.
+Turn it off if the machine is basically a dedicated gaming box. You use it for Steam, Discord, YouTube, maybe Spotify. Especially if you play competitive shooters on a high refresh panel where a 40ms frame spike means you miss the headshot. Turning this off doesn't touch Windows Defender, your firewall, SmartScreen, browser sandboxing — none of that changes. You're removing one specific kernel hardening layer that happens to conflict badly with real-time rendering workloads.
 
-**Turn it off** if this machine is a dedicated gaming rig that you use for Steam, Discord, YouTube, and not much else. Especially if you're playing competitive shooters on a 240Hz panel where every frame-time spike is the difference between hitting a headshot and whiffing it. Your antivirus, firewall, browser protections — all of that stays active regardless. You're not disabling Windows Defender. You're just removing one layer of kernel-level hardening that happens to have a nasty interaction with real-time rendering workloads.
+## Turning it off
 
-## How to Turn It Off (And What to Watch For After)
+1. Start menu, type **Core Isolation**, open it
+2. Flip **Memory Integrity** to Off
+3. It asks you to restart. Do it — the hypervisor can't unload while Windows is live
+4. After reboot go back and double-check it actually stayed off (sometimes it doesn't, had that happen twice)
 
-Pretty straightforward:
+Side note: if you ever turn it back on later, Windows might pop up a list of "Incompatible Drivers." That's actually useful info — those are the drivers that don't meet modern signing requirements and they're the same ones causing extra latency when Memory Integrity was active. Worth uninstalling whatever software dropped them there.
 
-1. Open Start, type **Core Isolation**, open it
-2. Flip the **Memory Integrity** toggle to Off
-3. It'll tell you to restart — do it, the hypervisor can't unload while Windows is running
-4. After restart, go back and verify it actually stayed off
-
-One thing worth noting: when you go to turn it back on someday (maybe you're selling the PC or repurposing it), Windows might show you a list of "Incompatible Drivers." That's actually super useful — it's telling you exactly which kernel drivers on your system don't meet modern code-signing standards. Those are the same drivers that were causing extra DPC latency when Memory Integrity was active. Consider uninstalling whatever software installed them.
-
-If the toggle is greyed out and says "This setting is managed by your administrator" — which happens on some enterprise and education Windows editions — you can check the registry:
+If the toggle is greyed out and says something about an administrator managing the setting — happens on some enterprise or education SKUs — check the registry at:
 
 ```
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity
 ```
 
-Look for a DWORD called `Enabled`. Set it to `0` to disable, `1` to enable.
+There's a DWORD called `Enabled`. Set it to `0`.
 
-## Three More Things That Stack With This Problem
+## Other stuff that stacks with this
 
-Memory Integrity was David's main issue, but while I had the test bench set up I checked a few other things that I know compound the problem:
+While I had the test bench going I poked at a few other things that compound the stutter problem. Not as dramatic as Memory Integrity but worth mentioning.
 
-**The Balanced power plan ramp-up lag.** This one bugs me. Windows defaults to the Balanced power plan, which aggressively parks CPU cores and drops clock speeds when it thinks you're idle. Problem is, "idle" in a game often means the CPU is waiting on the GPU for a frame — and Windows interprets that wait as "oh, this core isn't busy, let me downclock it." Then an explosion happens in-game, the engine needs all cores at full speed, and there's a 10-15ms delay while clocks ramp back up. One dropped frame, right there. Switch to High Performance or the AMD chipset driver's power plan. I go over the full cleanup process in our [Windows 11 speed guide](/posts/how-to-speed-up-a-slow-windows-11-pc-in-under-30-minutes/).
+**Power plan defaulting to Balanced.** This one is dumb. The Balanced plan aggressively parks cores and drops clocks when Windows thinks a core is idle. In a game, "idle" often just means the CPU is waiting on the GPU to finish a frame — and Windows reads that as "oh this core can downclock." Then a particle explosion happens and the engine suddenly needs full clock speed and there's a 10-15ms ramp delay. One dropped frame right there. Switch to High Performance or AMD's chipset power plan. More detail in our [Windows 11 speed guide](/posts/how-to-speed-up-a-slow-windows-11-pc-in-under-30-minutes/).
 
-**Game Bar silently recording in the background.** Even if you never touch the Game Bar, go to Settings > Gaming > Captures and make sure "Record what happened" is off. When it's on, Windows keeps a rolling video buffer going at all times during gameplay. That buffer eats VRAM and PCIe bandwidth that your game could be using. On a 4080 Super it's not dramatic, but on mid-range cards it's noticeable.
+**Game Bar's background recording.** Go to Settings > Gaming > Captures and make sure "Record what happened" is off. Even if you never touch Game Bar, when that's on it keeps a rolling video buffer running during gameplay. Eats VRAM and PCIe bandwidth. On a 4080 Super it's not huge but on a 4060 or something you'd notice it.
 
-**Windows Dynamic Lighting fighting your RGB software.** This is a newer one. Windows 11 added built-in RGB control under Settings > Personalization > Dynamic Lighting. If this is enabled at the same time as iCUE or Armoury Crate, they fight over the same USB HID endpoints. You get polling collisions that spike DPC latency. Pick one or the other and kill the duplicate.
+**Windows Dynamic Lighting fighting your RGB app.** Windows 11 added its own RGB control under Settings > Personalization > Dynamic Lighting. If this is active at the same time as iCUE or Armoury Crate they fight over the same USB HID endpoints and cause polling collisions that spike DPC latency. Pick one. Kill the other.
 
 ---
 
 ## FAQ
 
-**Does turning off Memory Integrity give me more average FPS?**
+**Does this give me more average FPS?**
 
-Barely. We're talking 2-4%, which is within run-to-run variance for most games. The improvement is almost entirely in frame-time consistency. Your 1% and 0.1% lows get dramatically better, which is what actually determines whether gameplay feels smooth. Average FPS is a nearly useless metric for diagnosing stutter.
+Like 2-4%. Barely. The whole benefit is in frame-time consistency. Your 1% and 0.1% lows improve dramatically which is what makes gameplay actually feel smooth vs feel janky. Average FPS as a metric is basically useless for stutter.
 
-**Am I going to get hacked if I disable this?**
+**Am I gonna get hacked?**
 
-No. Windows Defender, your firewall, SmartScreen, browser sandbox protections — none of that changes. You're removing one specific layer that protects against kernel-mode driver exploits. If you don't install random unsigned drivers from the internet, your practical risk is extremely low. Most people ran Windows 10 for years without this feature and survived just fine.
+No. Defender still runs. Firewall still runs. SmartScreen still runs. Browser sandboxing still works. You're removing one layer of kernel-mode driver protection. If you don't go installing random unsigned drivers from sketchy forums your real-world risk is minimal. Everybody ran Windows 10 for years without HVCI and we all survived.
 
-**Do I need to disable virtualization in BIOS too?**
+**Do I need to turn off virtualization in BIOS too?**
 
-Nope. Leave AMD-V or Intel VT-x enabled. You might need it for WSL, Android emulators, or Hyper-V down the road. Disabling Memory Integrity in Windows is enough — it stops the hypervisor from policing kernel memory, but doesn't disable the virtualization hardware itself.
+Nope. Leave AMD-V or Intel VT-x on. You might want it later for WSL or Android emulators or whatever. Turning off Memory Integrity in Windows is enough.
 
-**Will a Windows Update turn Memory Integrity back on?**
+**Will Windows Update flip it back on?**
 
-Monthly security patches usually leave your setting alone. But big annual feature updates — like going from 23H2 to 24H2 — have been known to reset it. Takes five seconds to check after a major update. Just search Core Isolation in Start and look at the toggle.
+Regular monthly patches usually leave it alone. But the big annual feature updates — like 23H2 to 24H2 — have been known to reset it. Takes five seconds to check after a major update. Just search Core Isolation and look at the toggle.
 
 ---
 
-## What Happened With David
+## What happened after
 
-I sent David the same instructions I just gave you. He turned off Memory Integrity, uninstalled two RGB utilities he'd forgotten were even running (his motherboard's LED sync tool and an old Corsair iCUE install from a keyboard he returned months ago), switched his power plan, and restarted.
+My Discord buddy turned off Memory Integrity, killed two RGB apps he forgot were even installed — some motherboard LED sync thing and an old iCUE install from a keyboard he'd already returned — and switched his power plan. Restarted.
 
-His average FPS in The Finals went from 218 to maybe 224. He probably wouldn't have noticed that.
+Average FPS in The Finals went from 218 to like 224. Whatever. He wouldn't have felt that.
 
-But the stuttering? Gone. Completely. His 0.1% lows went from hovering around 60 FPS — which on a 240Hz monitor feels awful — to sitting comfortably above 110. He played for four hours straight and didn't get a single hitch.
+But the stutter just stopped. His 0.1% lows went from hovering around 60 — which on 240Hz feels awful, like actually nauseating — to sitting above 110. He played for a few hours and didn't get a single hitch. Texted me the next day saying he was about to RMA the GPU before I told him to check that toggle.
 
-His exact words in the follow-up email: *"It feels like a different computer. I was about to RMA my GPU."*
-
-Yeah. I hear that a lot.
+I keep hearing variations of that same story and honestly at this point I think Microsoft needs to either pop up a warning during Windows setup for people selecting "gaming PC" as their use case, or just not enable it by default on consumer hardware. But I'm not holding my breath on that one.
