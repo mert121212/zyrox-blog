@@ -102,4 +102,4 @@ When you notice any of these signs, don't ignore them. Early replacement is alwa
 
 - [How to Clean a PC Without Damaging the Components](/posts/how-to-clean-a-pc-without-damaging-components/)
 - [The Difference Between Air Cooling and Liquid Cooling](/posts/the-difference-between-air-cooling-and-liquid-cooling/)
-- [How to Clean Your PC Case Ventilation Properly](/posts/how-to-clean-your-pc-case-ventilation/)
+- [How to Clean a PC and Case Ventilation Without Damaging Components](/posts/how-to-clean-a-pc-without-damaging-components/)

@@ -96,6 +96,8 @@ Do not attempt to unscrew the motherboard backplate from behind. To mount modern
 
 ## Related Guides
 
+- [What Is the Best Motherboard for Ryzen 7 7800X3D?](/posts/what-is-the-best-motherboard-for-ryzen-7-7800x3d/)
+- [Best RAM for Ryzen 7000: Speeds, Timings, and EXPO Explained](/posts/best-ram-for-ryzen-7000/)
+- [What Actually Matters in a Gaming PC Build](/posts/what-actually-matters-in-a-gaming-pc/)
 - [How to Choose the Right CPU Cooler for Your Build](/posts/how-to-choose-the-right-cpu-cooler-for-your-build/)
 - [How to Build a Silent PC or Quiet Gaming Rig Without Sacrificing Performance](/posts/how-to-build-a-silent-pc/)
-- [SSD vs HDD: Which Should You Buy in 2026?](/posts/ssd-vs-hdd-which-should-you-buy-in-2026/)

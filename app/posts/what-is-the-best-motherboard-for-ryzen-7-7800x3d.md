@@ -81,6 +81,8 @@ For a gaming-focused, value-conscious build, go with the ASRock B650E Taichi. Fo
 
 ## Related Guides
 
-- [How to Fix High CPU Usage on Windows](/posts/how-to-fix-high-cpu-usage/)
+- [Best CPU Cooler for Ryzen 7 7800X3D: Quiet and Efficient Picks](/posts/best-cpu-cooler-for-ryzen-7-7800x3d/)
+- [Best RAM for Ryzen 7000: Speeds, Timings, and EXPO Explained](/posts/best-ram-for-ryzen-7000/)
+- [What Actually Matters in a Gaming PC Build](/posts/what-actually-matters-in-a-gaming-pc/)
 - [Best Motherboard for RTX 4070: What Matters Most](/posts/best-motherboard-for-rtx-4070/)
-- [Why Your PC Feels Slow Even When It Has Good Specs](/posts/why-your-pc-feels-slow-even-when-it-has-good-specs/)
+- [BIOS Tuning Basics for Stable Overnight Overclocking](/posts/biostuning-basics-for-stable-overnight-overclocking/)

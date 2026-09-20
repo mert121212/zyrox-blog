@@ -100,6 +100,8 @@ Walk away if wattage is listed without specifying continuous or peak, or if ther
 
 ## Related Guides
 
-- [The BIOS Settings That Matter Most for a Stable Overclock](/posts/bios-settings-for-stable-overclock/)
-- [Signs Your Motherboard May Be Failing](/posts/signs-your-motherboard-is-failing/)
-- [How to Choose a Motherboard for a New PC Build Without Overpaying](/posts/how-to-choose-a-motherboard-for-a-new-build/)
+- [How to Choose the Right PSU for Your Build](/posts/how-to-choose-the-right-psu-for-your-build/)
+- [How to Spot a Bad Power Supply Before You Buy It](/posts/how-to-spot-a-bad-power-supply-before-you-buy-it/)
+- [How to Test a PC Power Supply Without Expensive Equipment](/posts/how-to-test-a-psu-without-expensive-tools/)
+- [When to Replace a Power Supply Instead of Troubleshooting It](/posts/when-to-replace-a-power-supply-instead-of-troubleshooting-it/)
+- [Best PSU for RTX 5080: Wattage Requirements and Top Picks](/posts/best-psu-for-rtx-5080/)

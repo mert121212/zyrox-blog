@@ -111,6 +111,8 @@ A 27-inch 1440p 165Hz IPS panel is the natural pairing. LG's 27GP850-B and the S
 
 ## Related Guides
 
-- [How to Set Up a Home Office PC for Productivity](/posts/how-to-set-up-a-home-office-pc-for-productivity/)
-- [How to Fix Windows Update Problems in 2026](/posts/how-to-fix-windows-update-problems-2026/)
-- [Best PSU for RTX 5080: How to Choose a Safe and Reliable Power Supply](/posts/best-psu-for-rtx-5080/)
+- [What Actually Matters in a Gaming PC Build](/posts/what-actually-matters-in-a-gaming-pc/)
+- [When to Upgrade Your GPU vs Your CPU](/posts/when-to-upgrade-your-gpu-vs-your-cpu/)
+- [How to Build a Budget Gaming PC That Still Feels Fast](/posts/how-to-build-a-budget-gaming-pc/)
+- [Best Motherboard for RTX 4070 Builds](/posts/best-motherboard-for-rtx-4070/)
+- [Best Monitor for Work and Gaming: What to Choose](/posts/best-monitor-for-work-and-gaming/)

@@ -97,6 +97,8 @@ Restart your PC and monitor the CPU for a few minutes. Hopefully, your jet engin
 
 ## Related Guides
 
-- [How to Check Your PC's Full Specs Without Installing Anything](/posts/how-to-check-your-pcs-full-specs-without-installing-anything/)
-- [How to Free Up Disk Space on Windows Without Deleting Your Files](/posts/how-to-free-up-disk-space-on-windows-without-deleting-your-files/)
+- [What to Do When Your PC Overheats](/posts/what-to-do-when-your-pc-overheats/)
+- [How to Diagnose a Random PC Reboot Without Losing Your Mind](/posts/how-to-diagnose-a-random-reboot/)
+- [Signs Your Motherboard Is Failing](/posts/signs-your-motherboard-is-failing/)
+- [Why Your PC Feels Slow Even When It Has Good Specs](/posts/why-your-pc-feels-slow-even-when-it-has-good-specs/)
 - [How to Fix Windows Update Problems in 2026](/posts/how-to-fix-windows-update-problems-2026/)

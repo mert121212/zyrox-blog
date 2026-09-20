@@ -98,5 +98,8 @@ If you are on an ancient platform, like a 6th Gen [Intel](https://www.intel.com)
 
 ## Related Guides
 
-- [How to Diagnose a Random PC Reboot Without Losing Your Mind](/posts/how-to-diagnose-a-random-reboot/)
 - [What to Check First When a PC Won't Boot](/posts/what-to-check-first-when-a-pc-wont-boot/)
+- [How to Diagnose a Random PC Reboot Without Losing Your Mind](/posts/how-to-diagnose-a-random-reboot/)
+- [What to Do When Your PC Overheats](/posts/what-to-do-when-your-pc-overheats/)
+- [How to Choose a Motherboard for a New Build](/posts/how-to-choose-a-motherboard-for-a-new-build/)
+- [When to Replace a Power Supply Instead of Troubleshooting It](/posts/when-to-replace-a-power-supply-instead-of-troubleshooting-it/)

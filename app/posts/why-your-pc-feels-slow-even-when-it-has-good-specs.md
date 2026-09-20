@@ -74,6 +74,8 @@ A clean reinstall of Windows 11 from a USB drive takes about twenty minutes on a
 
 ## Related Guides
 
-- [What Actually Matters in a Gaming PC Build](/posts/what-actually-matters-in-a-gaming-pc/)
-- [SSD vs HDD: Which Should You Buy in 2026?](/posts/ssd-vs-hdd-which-should-you-buy-in-2026/)
+- [How to Speed Up a Slow Windows 11 PC in Under 30 Minutes](/posts/how-to-speed-up-a-slow-windows-11-pc-in-under-30-minutes/)
+- [Why High-End PCs Stutter in Windows 11: Memory Integrity Explained](/posts/why-high-end-pcs-stutter-windows-11-memory-integrity/)
+- [How to Fix Windows Update Problems in 2026](/posts/how-to-fix-windows-update-problems-2026/)
+- [How to Fix High CPU Usage in Windows](/posts/how-to-fix-high-cpu-usage/)
 - [How to Diagnose a Random PC Reboot Without Losing Your Mind](/posts/how-to-diagnose-a-random-reboot/)

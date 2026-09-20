@@ -77,7 +77,7 @@
     <link href="https://zyroxlab.com/posts/how-to-speed-up-a-slow-windows-11-pc-in-under-30-minutes/" />
     <id>https://zyroxlab.com/posts/how-to-speed-up-a-slow-windows-11-pc-in-under-30-minutes/</id>
     <updated>2026-08-08T00:00:00.000Z</updated>
-    <summary>A practical, no-nonsense guide to speeding up a laggy Windows 11 computer by targeting the settings and background apps that actually cause slowdowns.</summary>
+    <summary>A practical, no-nonsense guide to speeding up a laggy Windows 11 computer. Covers startup app pruning, telemetry, visual effects, power plans, storage sense, and indexing fixes.</summary>
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg" />
   </entry>
   <entry>
@@ -97,11 +97,11 @@
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/how-to-build-a-budget-gaming-pc.jpg" />
   </entry>
   <entry>
-    <title>Best RAM for Ryzen 7000: Speed, Latency, and Capacity</title>
+    <title>Best RAM for Ryzen 7000: Speeds, Timings, EXPO, and Architecture Explained</title>
     <link href="https://zyroxlab.com/posts/best-ram-for-ryzen-7000/" />
     <id>https://zyroxlab.com/posts/best-ram-for-ryzen-7000/</id>
     <updated>2026-08-07T00:00:00.000Z</updated>
-    <summary>Choose the best RAM for Ryzen 7000 builds by focusing on DDR5 capacity, timing, and real-world performance in gaming and productivity.</summary>
+    <summary>The complete guide to choosing the best RAM for AMD Ryzen 7000 and 9000 AM5 processors. Covers 6000 CL30 sweet spot, UCLK 1:1 ratio, Memory Context Restore, and top kits.</summary>
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/best-ram-for-ryzen-7000.jpg" />
   </entry>
   <entry>
@@ -129,11 +129,11 @@
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg" />
   </entry>
   <entry>
-    <title>Best PSU for RTX 5080: How to Choose a Safe and Reliable Power Supply</title>
+    <title>Best PSU for RTX 5080: Wattage Requirements, ATX 3.1, and Top Picks</title>
     <link href="https://zyroxlab.com/posts/best-psu-for-rtx-5080/" />
     <id>https://zyroxlab.com/posts/best-psu-for-rtx-5080/</id>
     <updated>2026-08-03T00:00:00.000Z</updated>
-    <summary>Pick the best PSU for an RTX 5080 build with the right wattage, 80 Plus rating, and 12VHPWR connector support for this 320W GPU.</summary>
+    <summary>The definitive guide to choosing the best power supply for NVIDIA GeForce RTX 5080 builds. Covers ATX 3.1, native 12V-2x6 connectors, oscilloscope transient spikes, and 850W vs 1000W.</summary>
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/best-psu-for-rtx-5080.jpg" />
   </entry>
   <entry>
@@ -145,11 +145,11 @@
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg" />
   </entry>
   <entry>
-    <title>Best SSD for Gaming in 2026: What Actually Matters</title>
+    <title>Best SSD for Gaming in 2026: What Actually Matters (And What Doesn't)</title>
     <link href="https://zyroxlab.com/posts/best-ssd-for-gaming-2026/" />
     <id>https://zyroxlab.com/posts/best-ssd-for-gaming-2026/</id>
     <updated>2026-08-01T00:00:00.000Z</updated>
-    <summary>Find the best SSD for gaming in 2026 by focusing on speed, capacity, endurance, and value instead of inflated marketing claims.</summary>
+    <summary>The definitive guide to choosing the best gaming SSD in 2026. Real game load benchmarks, DirectStorage 1.2 testing, PCIe 4.0 vs 5.0, DRAM vs HMB, and top value picks.</summary>
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/best-ssd-for-gaming-2026.jpg" />
   </entry>
   <entry>
@@ -185,14 +185,6 @@
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/how-to-build-a-budget-gaming-pc.jpg" />
   </entry>
   <entry>
-    <title>How to Clean Your PC Case Ventilation Properly</title>
-    <link href="https://zyroxlab.com/posts/how-to-clean-your-pc-case-ventilation/" />
-    <id>https://zyroxlab.com/posts/how-to-clean-your-pc-case-ventilation/</id>
-    <updated>2026-07-26T00:00:00.000Z</updated>
-    <summary></summary>
-    <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg" />
-  </entry>
-  <entry>
     <title>When It Is Time to Replace a Monitor</title>
     <link href="https://zyroxlab.com/posts/when-to-replace-a-monitor/" />
     <id>https://zyroxlab.com/posts/when-to-replace-a-monitor/</id>
@@ -209,11 +201,11 @@
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg" />
   </entry>
   <entry>
-    <title>Why Network Cables Still Matter in a Wireless World</title>
+    <title>Why Network Cables Still Matter in a Wireless World (And When to Run One)</title>
     <link href="https://zyroxlab.com/posts/why-network-cables-still-matter/" />
     <id>https://zyroxlab.com/posts/why-network-cables-still-matter/</id>
     <updated>2026-07-23T00:00:00.000Z</updated>
-    <summary>Ethernet still beats Wi-Fi for gaming latency, file transfers, and connection stability. Learn when a wired connection is the smarter choice.</summary>
+    <summary>Why Ethernet still beats Wi-Fi 6 and Wi-Fi 7 for gaming latency, jitter, NAS transfers, and remote work. Cat6 vs Cat6a benchmarks, bufferbloat fixes, and drill-free wiring.</summary>
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/how-to-build-a-budget-gaming-pc.jpg" />
   </entry>
   <entry>
@@ -229,7 +221,7 @@
     <link href="https://zyroxlab.com/posts/when-to-replace-a-power-supply-instead-of-troubleshooting-it/" />
     <id>https://zyroxlab.com/posts/when-to-replace-a-power-supply-instead-of-troubleshooting-it/</id>
     <updated>2026-07-21T00:00:00.000Z</updated>
-    <summary>Know when a failing PSU is better replaced than endlessly tested. Warning signs that mean your power supply needs to go right now.</summary>
+    <summary>Know when an aging or failing PC power supply is better replaced than diagnosed. Covers capacitor degradation physics, ATX voltage tolerances, 5VSB failures, and safety warnings.</summary>
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/best-psu-for-rtx-5080.jpg" />
   </entry>
   <entry>
@@ -249,11 +241,11 @@
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg" />
   </entry>
   <entry>
-    <title>How to Build a Budget Gaming PC That Still Feels Fast</title>
+    <title>How to Build a Budget Gaming PC That Still Feels Fast (2026 Guide)</title>
     <link href="https://zyroxlab.com/posts/how-to-build-a-budget-gaming-pc/" />
     <id>https://zyroxlab.com/posts/how-to-build-a-budget-gaming-pc/</id>
     <updated>2026-07-17T00:00:00.000Z</updated>
-    <summary>Learn how to build a budget gaming PC that delivers strong 1080p performance. Smart part choices that maximize value over hype.</summary>
+    <summary>Step-by-step guide to building a high-FPS budget gaming PC under $600 and $800. Part lists, real 1080p benchmarks, used GPU tips, and where to never cut corners.</summary>
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/how-to-build-a-budget-gaming-pc.jpg" />
   </entry>
   <entry>
@@ -313,11 +305,11 @@
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/best-ssd-for-gaming-2026.jpg" />
   </entry>
   <entry>
-    <title>Why SSD Health Monitoring Matters More Than You Think</title>
+    <title>Why SSD Health Monitoring Matters More Than You Think (And How to Do It)</title>
     <link href="https://zyroxlab.com/posts/why-ssd-health-monitoring-matters-more-than-you-think/" />
     <id>https://zyroxlab.com/posts/why-ssd-health-monitoring-matters-more-than-you-think/</id>
     <updated>2026-07-09T00:00:00.000Z</updated>
-    <summary></summary>
+    <summary>Learn how to monitor SSD health using CrystalDiskInfo and S.M.A.R.T. data. Decodes critical NVMe error attributes, temperature thresholds, firmware bugs, and read-only failure modes.</summary>
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/best-ssd-for-gaming-2026.jpg" />
   </entry>
   <entry>
@@ -337,19 +329,11 @@
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/best-ssd-for-gaming-2026.jpg" />
   </entry>
   <entry>
-    <title>How to Reduce PC Noise Without Sacrificing Cooling</title>
-    <link href="https://zyroxlab.com/posts/how-to-reduce-pc-noise-without-sacrificing-cooling/" />
-    <id>https://zyroxlab.com/posts/how-to-reduce-pc-noise-without-sacrificing-cooling/</id>
-    <updated>2026-07-09T00:00:00.000Z</updated>
-    <summary></summary>
-    <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg" />
-  </entry>
-  <entry>
-    <title>When to Upgrade Your GPU Instead of Your CPU</title>
+    <title>When to Upgrade Your GPU vs. Your CPU: The Data-Driven Decision Guide</title>
     <link href="https://zyroxlab.com/posts/when-to-upgrade-your-gpu-vs-your-cpu/" />
     <id>https://zyroxlab.com/posts/when-to-upgrade-your-gpu-vs-your-cpu/</id>
     <updated>2026-07-08T00:00:00.000Z</updated>
-    <summary>Decide whether your gaming or productivity system needs a GPU upgrade or a CPU upgrade first. A data-driven approach to smart upgrades.</summary>
+    <summary>Stop guessing whether your PC needs a GPU or CPU upgrade. Real MSI Afterburner diagnostics, online bottleneck calculator debunking, resolution matrices, and drop-in AM4 upgrade paths.</summary>
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/best-gpu-for-1440p-gaming.jpg" />
   </entry>
   <entry>
@@ -361,19 +345,19 @@
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg" />
   </entry>
   <entry>
-    <title>How to Clean a PC Without Damaging the Components</title>
+    <title>How to Clean a PC and Case Ventilation Without Damaging Components</title>
     <link href="https://zyroxlab.com/posts/how-to-clean-a-pc-without-damaging-components/" />
     <id>https://zyroxlab.com/posts/how-to-clean-a-pc-without-damaging-components/</id>
     <updated>2026-07-08T00:00:00.000Z</updated>
-    <summary>A careful guide to removing dust from fans, heatsinks, and connectors safely. Avoid damage with the right tools and cleaning techniques.</summary>
+    <summary>A comprehensive, step-by-step guide to cleaning your PC case, fans, heatsinks, and dust filters safely. Prevent static damage, voltage spikes, and thermal throttling.</summary>
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg" />
   </entry>
   <entry>
-    <title>Why Case Airflow Matters More Than People Think</title>
+    <title>Why PC Cooling and Case Airflow Matter More Than People Think</title>
     <link href="https://zyroxlab.com/posts/why-case-airflow-matters-more-than-people-think/" />
     <id>https://zyroxlab.com/posts/why-case-airflow-matters-more-than-people-think/</id>
     <updated>2026-07-07T00:00:00.000Z</updated>
-    <summary>Case airflow shapes your PC thermals, noise levels, and long-term stability. Learn why fan placement matters more than fan count.</summary>
+    <summary>Case airflow and CPU cooling shape your PC's thermals, noise levels, and sustained performance. Learn why fan placement, cooler choice, and airflow design matter more than raw specs.</summary>
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg" />
   </entry>
   <entry>
@@ -393,28 +377,12 @@
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/how-to-choose-the-right-psu-for-your-build.jpg" />
   </entry>
   <entry>
-    <title>How to Choose an SSD for a Laptop or Desktop Without Overbuying</title>
-    <link href="https://zyroxlab.com/posts/how-to-choose-an-ssd-for-laptop-vs-desktop/" />
-    <id>https://zyroxlab.com/posts/how-to-choose-an-ssd-for-laptop-vs-desktop/</id>
-    <updated>2026-07-07T00:00:00.000Z</updated>
-    <summary>Compare SSD form factors, interfaces, and capacity planning for laptops vs desktops. Know the differences before buying the wrong drive.</summary>
-    <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/best-ssd-for-gaming-2026.jpg" />
-  </entry>
-  <entry>
     <title>The BIOS Settings That Matter Most for a Stable Overclock</title>
     <link href="https://zyroxlab.com/posts/bios-settings-for-stable-overclock/" />
     <id>https://zyroxlab.com/posts/bios-settings-for-stable-overclock/</id>
     <updated>2026-07-07T00:00:00.000Z</updated>
     <summary>Learn the BIOS settings that affect CPU voltage, memory stability, and safe overclock tuning. Includes XMP, LLC, and thermal limit tips.</summary>
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/bios-settings-for-stable-overclock.jpg" />
-  </entry>
-  <entry>
-    <title>Why CPU Cooling Still Matters More Than People Pretend</title>
-    <link href="https://zyroxlab.com/posts/why-cooling-still-matters-in-2026/" />
-    <id>https://zyroxlab.com/posts/why-cooling-still-matters-in-2026/</id>
-    <updated>2026-07-06T00:00:00.000Z</updated>
-    <summary>Modern CPUs push more power and heat than ever. Learn why cooling quality still shapes thermals, noise, and sustained performance.</summary>
-    <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg" />
   </entry>
   <entry>
     <title>How to Spot a Failing Hard Drive Before It Fails</title>
@@ -481,11 +449,11 @@
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/best-motherboard-for-rtx-4070.jpg" />
   </entry>
   <entry>
-    <title>Why RAM Speed Matters Less Than People Think</title>
+    <title>Why RAM Speed Matters Less Than People Think (And What to Buy Instead)</title>
     <link href="https://zyroxlab.com/posts/why-ram-speed-matters-less-than-people-think/" />
     <id>https://zyroxlab.com/posts/why-ram-speed-matters-less-than-people-think/</id>
     <updated>2026-07-03T00:00:00.000Z</updated>
-    <summary>RAM speed has less impact on real-world performance than capacity and latency. Learn where MHz actually matters and where it does not.</summary>
+    <summary>Why paying for 7200MHz+ DDR5 is a waste of money for gaming and productivity. Real DDR5 gaming benchmarks, 1% low frame times, 4-DIMM stability traps, and sweet-spot recommendations.</summary>
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/best-ram-for-ryzen-7000.jpg" />
   </entry>
   <entry>
@@ -509,16 +477,8 @@
     <link href="https://zyroxlab.com/posts/how-to-build-a-silent-pc/" />
     <id>https://zyroxlab.com/posts/how-to-build-a-silent-pc/</id>
     <updated>2026-07-02T00:00:00.000Z</updated>
-    <summary>Learn how to build a whisper-quiet gaming rig or silent workstation without sacrificing FPS. Case dampening, custom fan curves, GPU undervolting, and decibel targets.</summary>
+    <summary>A complete guide to building a whisper-quiet gaming PC and reducing system noise. Covers noise source rankings, custom BIOS fan curves (ASUS, MSI, Gigabyte), GPU undervolting, case dampening, and decibel targets.</summary>
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg" />
-  </entry>
-  <entry>
-    <title>Windows 11 Setup Tips That Make a PC Feel Faster</title>
-    <link href="https://zyroxlab.com/posts/windows-11-setup-tips-that-make-a-pc-feel-faster/" />
-    <id>https://zyroxlab.com/posts/windows-11-setup-tips-that-make-a-pc-feel-faster/</id>
-    <updated>2026-07-01T00:00:00.000Z</updated>
-    <summary>A focused guide to Windows 11 settings and habits that improve perceived speed without invasive changes or third-party tweaks.</summary>
-    <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg" />
   </entry>
   <entry>
     <title>What Actually Matters in a Gaming PC Build</title>
@@ -553,11 +513,11 @@
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/how-to-build-a-budget-gaming-pc.jpg" />
   </entry>
   <entry>
-    <title>BIOS Tuning Basics for Stable Overnight Overclocking</title>
+    <title>BIOS Tuning Basics for Stable Overnight Overclocking and Undervolting</title>
     <link href="https://zyroxlab.com/posts/biostuning-basics-for-stable-overnight-overclocking/" />
     <id>https://zyroxlab.com/posts/biostuning-basics-for-stable-overnight-overclocking/</id>
     <updated>2026-06-29T00:00:00.000Z</updated>
-    <summary></summary>
+    <summary>A master guide to BIOS tuning for true overnight CPU and RAM stability. Covers Load Line Calibration (LLC), AMD Curve Optimizer per-core tuning, WHEA Event 18 diagnostics, and stress testing.</summary>
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/bios-settings-for-stable-overclock.jpg" />
   </entry>
   <entry>
@@ -573,7 +533,7 @@
     <link href="https://zyroxlab.com/posts/how-to-choose-the-right-ssd-for-your-system/" />
     <id>https://zyroxlab.com/posts/how-to-choose-the-right-ssd-for-your-system/</id>
     <updated>2026-06-27T00:00:00.000Z</updated>
-    <summary></summary>
+    <summary>A complete guide to choosing the right SSD for desktops and laptops. Covers NVMe vs SATA, form factors, DRAM caching, NAND types, and laptop-specific pitfalls.</summary>
     <link rel="enclosure" type="image/jpeg" href="https://zyroxlab.com/images/posts/best-ssd-for-gaming-2026.jpg" />
   </entry>
 </feed>

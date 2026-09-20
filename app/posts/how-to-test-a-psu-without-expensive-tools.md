@@ -98,6 +98,8 @@ If you see burn marks on any connector, cable, or PCB surface, the unit is dead.
 
 ## Related Guides
 
-- [When to Replace a Power Supply Instead of Troubleshooting It](/posts/when-to-replace-a-power-supply-instead-of-troubleshooting-it/)
 - [How to Choose the Right PSU for Your Build](/posts/how-to-choose-the-right-psu-for-your-build/)
+- [How to Read a PSU Spec Sheet Without Getting Confused](/posts/how-to-read-a-psu-spec-sheet/)
 - [How to Spot a Bad Power Supply Before You Buy It](/posts/how-to-spot-a-bad-power-supply-before-you-buy-it/)
+- [When to Replace a Power Supply Instead of Troubleshooting It](/posts/when-to-replace-a-power-supply-instead-of-troubleshooting-it/)
+- [Best PSU for RTX 5080: Wattage Requirements and Top Picks](/posts/best-psu-for-rtx-5080/)

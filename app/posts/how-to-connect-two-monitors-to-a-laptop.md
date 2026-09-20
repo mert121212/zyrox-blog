@@ -120,6 +120,8 @@ Only with a DisplayLink adapter. A plain USB-A port doesn't carry video signals 
 
 ## Related Guides
 
-- [How to Spot a Good Used GPU Deal](/posts/how-to-spot-a-good-used-gpu-deal/)
-- [BIOS Tuning Basics for Stable Overnight Overclocking](/posts/biostuning-basics-for-stable-overnight-overclocking/)
 - [Best Monitor for Work and Gaming: What to Choose](/posts/best-monitor-for-work-and-gaming/)
+- [What to Look for in a Midrange Monitor](/posts/what-to-look-for-in-a-midrange-monitor/)
+- [How to Choose a Monitor Arm and Stand](/posts/how-to-choose-a-monitor-arm-and-stand/)
+- [When It Is Time to Replace a Monitor](/posts/when-to-replace-a-monitor/)
+- [Best GPU for 1440p Gaming in 2026](/posts/best-gpu-for-1440p-gaming-2026/)

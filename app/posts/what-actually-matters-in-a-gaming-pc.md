@@ -84,6 +84,8 @@ And ignoring VRAM is a growing problem. In 2026, 8GB of VRAM is marginal for 144
 
 ## Related Guides
 
-- [How to Build a Silent PC or Quiet Gaming Rig Without Sacrificing Performance](/posts/how-to-build-a-silent-pc/)
-- [Should You Buy an SSD or HDD for Game Storage](/posts/should-you-buy-an-ssd-or-hdd-for-game-storage/)
-- [How to Check If Your PC Can Run a Game Before You Buy It](/posts/how-to-check-if-your-pc-can-run-a-game-before-you-buy-it/)
+- [Best GPU for 1440p Gaming: What to Buy in 2026](/posts/best-gpu-for-1440p-gaming/)
+- [How to Build a Budget Gaming PC That Still Feels Fast](/posts/how-to-build-a-budget-gaming-pc/)
+- [When to Upgrade Your GPU vs Your CPU](/posts/when-to-upgrade-your-gpu-vs-your-cpu/)
+- [Best CPU Cooler for Ryzen 7 7800X3D: Quiet and Efficient Picks](/posts/best-cpu-cooler-for-ryzen-7-7800x3d/)
+- [What Is the Best Motherboard for Ryzen 7 7800X3D?](/posts/what-is-the-best-motherboard-for-ryzen-7-7800x3d/)

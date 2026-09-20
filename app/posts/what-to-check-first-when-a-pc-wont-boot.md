@@ -98,5 +98,8 @@ If the BIOS itself is corrupted from a failed update or power loss during an upd
 
 ## Related Guides
 
-- [Signs Your Motherboard May Be Failing](/posts/signs-your-motherboard-is-failing/)
+- [Signs Your Motherboard Is Failing](/posts/signs-your-motherboard-is-failing/)
 - [How to Diagnose a Random PC Reboot Without Losing Your Mind](/posts/how-to-diagnose-a-random-reboot/)
+- [What to Do When Your PC Overheats](/posts/what-to-do-when-your-pc-overheats/)
+- [When to Replace a Power Supply Instead of Troubleshooting It](/posts/when-to-replace-a-power-supply-instead-of-troubleshooting-it/)
+- [No Bootable Device Found (NVMe Fix Guide)](/posts/no-bootable-device-found-nvme/)

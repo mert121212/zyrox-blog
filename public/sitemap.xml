@@ -159,7 +159,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://zyroxlab.com/images/posts/best-ram-for-ryzen-7000.jpg</image:loc>
-      <image:title>Best RAM for Ryzen 7000: Speed, Latency, and Capacity</image:title>
+      <image:title>Best RAM for Ryzen 7000: Speeds, Timings, EXPO, and Architecture Explained</image:title>
     </image:image>
   </url>
   <url>
@@ -199,7 +199,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://zyroxlab.com/images/posts/best-psu-for-rtx-5080.jpg</image:loc>
-      <image:title>Best PSU for RTX 5080: How to Choose a Safe and Reliable Power Supply</image:title>
+      <image:title>Best PSU for RTX 5080: Wattage Requirements, ATX 3.1, and Top Picks</image:title>
     </image:image>
   </url>
   <url>
@@ -219,7 +219,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://zyroxlab.com/images/posts/best-ssd-for-gaming-2026.jpg</image:loc>
-      <image:title>Best SSD for Gaming in 2026: What Actually Matters</image:title>
+      <image:title>Best SSD for Gaming in 2026: What Actually Matters (And What Doesn't)</image:title>
     </image:image>
   </url>
   <url>
@@ -263,16 +263,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://zyroxlab.com/posts/how-to-clean-your-pc-case-ventilation/</loc>
-    <lastmod>2026-07-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://zyroxlab.com/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg</image:loc>
-      <image:title>How to Clean Your PC Case Ventilation Properly</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://zyroxlab.com/posts/when-to-replace-a-monitor/</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -299,7 +289,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://zyroxlab.com/images/posts/how-to-build-a-budget-gaming-pc.jpg</image:loc>
-      <image:title>Why Network Cables Still Matter in a Wireless World</image:title>
+      <image:title>Why Network Cables Still Matter in a Wireless World (And When to Run One)</image:title>
     </image:image>
   </url>
   <url>
@@ -349,7 +339,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://zyroxlab.com/images/posts/how-to-build-a-budget-gaming-pc.jpg</image:loc>
-      <image:title>How to Build a Budget Gaming PC That Still Feels Fast</image:title>
+      <image:title>How to Build a Budget Gaming PC That Still Feels Fast (2026 Guide)</image:title>
     </image:image>
   </url>
   <url>
@@ -429,7 +419,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://zyroxlab.com/images/posts/best-ssd-for-gaming-2026.jpg</image:loc>
-      <image:title>Why SSD Health Monitoring Matters More Than You Think</image:title>
+      <image:title>Why SSD Health Monitoring Matters More Than You Think (And How to Do It)</image:title>
     </image:image>
   </url>
   <url>
@@ -453,23 +443,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://zyroxlab.com/posts/how-to-reduce-pc-noise-without-sacrificing-cooling/</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://zyroxlab.com/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg</image:loc>
-      <image:title>How to Reduce PC Noise Without Sacrificing Cooling</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://zyroxlab.com/posts/when-to-upgrade-your-gpu-vs-your-cpu/</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://zyroxlab.com/images/posts/best-gpu-for-1440p-gaming.jpg</image:loc>
-      <image:title>When to Upgrade Your GPU Instead of Your CPU</image:title>
+      <image:title>When to Upgrade Your GPU vs. Your CPU: The Data-Driven Decision Guide</image:title>
     </image:image>
   </url>
   <url>
@@ -489,7 +469,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://zyroxlab.com/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg</image:loc>
-      <image:title>How to Clean a PC Without Damaging the Components</image:title>
+      <image:title>How to Clean a PC and Case Ventilation Without Damaging Components</image:title>
     </image:image>
   </url>
   <url>
@@ -499,7 +479,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://zyroxlab.com/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg</image:loc>
-      <image:title>Why Case Airflow Matters More Than People Think</image:title>
+      <image:title>Why PC Cooling and Case Airflow Matter More Than People Think</image:title>
     </image:image>
   </url>
   <url>
@@ -523,16 +503,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://zyroxlab.com/posts/how-to-choose-an-ssd-for-laptop-vs-desktop/</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://zyroxlab.com/images/posts/best-ssd-for-gaming-2026.jpg</image:loc>
-      <image:title>How to Choose an SSD for a Laptop or Desktop Without Overbuying</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://zyroxlab.com/posts/bios-settings-for-stable-overclock/</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -540,16 +510,6 @@
     <image:image>
       <image:loc>https://zyroxlab.com/images/posts/bios-settings-for-stable-overclock.jpg</image:loc>
       <image:title>The BIOS Settings That Matter Most for a Stable Overclock</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://zyroxlab.com/posts/why-cooling-still-matters-in-2026/</loc>
-    <lastmod>2026-07-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://zyroxlab.com/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg</image:loc>
-      <image:title>Why CPU Cooling Still Matters More Than People Pretend</image:title>
     </image:image>
   </url>
   <url>
@@ -639,7 +599,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://zyroxlab.com/images/posts/best-ram-for-ryzen-7000.jpg</image:loc>
-      <image:title>Why RAM Speed Matters Less Than People Think</image:title>
+      <image:title>Why RAM Speed Matters Less Than People Think (And What to Buy Instead)</image:title>
     </image:image>
   </url>
   <url>
@@ -670,16 +630,6 @@
     <image:image>
       <image:loc>https://zyroxlab.com/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg</image:loc>
       <image:title>How to Build a Silent PC or Quiet Gaming Rig Without Sacrificing Performance</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://zyroxlab.com/posts/windows-11-setup-tips-that-make-a-pc-feel-faster/</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://zyroxlab.com/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg</image:loc>
-      <image:title>Windows 11 Setup Tips That Make a PC Feel Faster</image:title>
     </image:image>
   </url>
   <url>
@@ -729,7 +679,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://zyroxlab.com/images/posts/bios-settings-for-stable-overclock.jpg</image:loc>
-      <image:title>BIOS Tuning Basics for Stable Overnight Overclocking</image:title>
+      <image:title>BIOS Tuning Basics for Stable Overnight Overclocking and Undervolting</image:title>
     </image:image>
   </url>
   <url>

@@ -20,6 +20,56 @@
 
 # Content consolidation 301 redirects (eliminating keyword cannibalization)
 [[redirects]]
+  from = "/posts/how-to-choose-an-ssd-for-laptop-vs-desktop/*"
+  to = "/posts/how-to-choose-the-right-ssd-for-your-system/"
+  status = 301
+
+[[redirects]]
+  from = "/posts/how-to-choose-an-ssd-for-laptop-vs-desktop"
+  to = "/posts/how-to-choose-the-right-ssd-for-your-system/"
+  status = 301
+
+[[redirects]]
+  from = "/posts/why-cooling-still-matters-in-2026/*"
+  to = "/posts/why-case-airflow-matters-more-than-people-think/"
+  status = 301
+
+[[redirects]]
+  from = "/posts/why-cooling-still-matters-in-2026"
+  to = "/posts/why-case-airflow-matters-more-than-people-think/"
+  status = 301
+
+[[redirects]]
+  from = "/posts/how-to-reduce-pc-noise-without-sacrificing-cooling/*"
+  to = "/posts/how-to-build-a-silent-pc/"
+  status = 301
+
+[[redirects]]
+  from = "/posts/how-to-reduce-pc-noise-without-sacrificing-cooling"
+  to = "/posts/how-to-build-a-silent-pc/"
+  status = 301
+
+[[redirects]]
+  from = "/posts/windows-11-setup-tips-that-make-a-pc-feel-faster/*"
+  to = "/posts/how-to-speed-up-a-slow-windows-11-pc-in-under-30-minutes/"
+  status = 301
+
+[[redirects]]
+  from = "/posts/windows-11-setup-tips-that-make-a-pc-feel-faster"
+  to = "/posts/how-to-speed-up-a-slow-windows-11-pc-in-under-30-minutes/"
+  status = 301
+
+[[redirects]]
+  from = "/posts/how-to-clean-your-pc-case-ventilation/*"
+  to = "/posts/how-to-clean-a-pc-without-damaging-components/"
+  status = 301
+
+[[redirects]]
+  from = "/posts/how-to-clean-your-pc-case-ventilation"
+  to = "/posts/how-to-clean-a-pc-without-damaging-components/"
+  status = 301
+
+[[redirects]]
   from = "/posts/how-to-debug-a-pc-that-randomly-reboots/*"
   to = "/posts/how-to-diagnose-a-random-reboot/"
   status = 301

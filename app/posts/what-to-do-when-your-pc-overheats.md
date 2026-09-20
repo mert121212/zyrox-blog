@@ -74,6 +74,8 @@ Sometimes cleaning and paste aren't enough. If you're running a stock Intel cool
 
 ## Related Guides
 
+- [How to Fix High CPU Usage in Windows](/posts/how-to-fix-high-cpu-usage/)
+- [How to Diagnose a Random PC Reboot Without Losing Your Mind](/posts/how-to-diagnose-a-random-reboot/)
+- [Signs Your Motherboard Is Failing](/posts/signs-your-motherboard-is-failing/)
 - [Why Case Airflow Matters More Than People Think](/posts/why-case-airflow-matters-more-than-people-think/)
-- [How to Choose the Right Case Fan Setup](/posts/how-to-choose-the-right-case-fan-setup/)
 - [The Difference Between Air Cooling and Liquid Cooling](/posts/the-difference-between-air-cooling-and-liquid-cooling/)

@@ -110,6 +110,8 @@ Don't guess on your power supply. Do the math, buy a quality unit, and your hard
 
 ## Related Guides
 
+- [How to Read a PSU Spec Sheet Without Getting Confused](/posts/how-to-read-a-psu-spec-sheet/)
 - [How to Spot a Bad Power Supply Before You Buy It](/posts/how-to-spot-a-bad-power-supply-before-you-buy-it/)
-- [How to Test a Power Supply Without Expensive Tools](/posts/how-to-test-a-psu-without-expensive-tools/)
+- [How to Test a PC Power Supply Without Expensive Equipment](/posts/how-to-test-a-psu-without-expensive-tools/)
 - [When to Replace a Power Supply Instead of Troubleshooting It](/posts/when-to-replace-a-power-supply-instead-of-troubleshooting-it/)
+- [Best PSU for RTX 5080: Wattage Requirements and Top Picks](/posts/best-psu-for-rtx-5080/)

@@ -123,5 +123,7 @@ Before you throw money at new components, follow this order of elimination:
 ## Related Guides
 
 - [What to Check First When a PC Won't Boot](/posts/what-to-check-first-when-a-pc-wont-boot/)
-- [Signs Your Motherboard May Be Failing](/posts/signs-your-motherboard-is-failing/)
-- [How to Speed Up a Slow Windows 11 PC](/posts/how-to-speed-up-a-slow-windows-11-pc/)
+- [Signs Your Motherboard Is Failing](/posts/signs-your-motherboard-is-failing/)
+- [What to Do When Your PC Overheats](/posts/what-to-do-when-your-pc-overheats/)
+- [How to Fix High CPU Usage on Windows](/posts/how-to-fix-high-cpu-usage/)
+- [When to Replace a Power Supply Instead of Troubleshooting It](/posts/when-to-replace-a-power-supply-instead-of-troubleshooting-it/)
