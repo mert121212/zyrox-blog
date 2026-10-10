@@ -40,6 +40,8 @@ export type Post = {
     content: string;
     author: string; // author slug
     image: string; // Featured / OpenGraph / Discover image
+    quick_verdict?: string;
+    key_takeaways?: string[];
 };
 
 export function getAllPosts(): Post[] {
@@ -65,6 +67,8 @@ export function getAllPosts(): Post[] {
                 content,
                 author: data.author || 'marcus-holt',
                 image: extractPostImage(data, content),
+                quick_verdict: data.quick_verdict || undefined,
+                key_takeaways: Array.isArray(data.key_takeaways) ? data.key_takeaways : undefined,
             } as Post;
         })
         .sort((a, b) => (a.date < b.date ? 1 : -1));
@@ -90,6 +94,8 @@ export function getPostBySlug(slug: string): Post | null {
         content,
         author: data.author || 'marcus-holt',
         image: extractPostImage(data, content),
+        quick_verdict: data.quick_verdict || undefined,
+        key_takeaways: Array.isArray(data.key_takeaways) ? data.key_takeaways : undefined,
     } as Post;
 }
 

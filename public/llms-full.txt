@@ -1,0 +1,373 @@
+# Zyrox - Full Technical Guides Directory
+
+> Complete catalog of technical PC hardware guides, testing data, and troubleshooting articles published on Zyrox (https://zyroxlab.com).
+
+## Performance
+
+### [Why High-End Gaming PCs Keep Stuttering on Windows 11: The Default Security Feature Silently Killing Your 1% Lows](https://zyroxlab.com/posts/why-high-end-pcs-stutter-windows-11-memory-integrity/)
+- Published: 2026-09-15
+- Summary: Your $2,000 gaming rig stutters every 15 seconds and you can't figure out why. We traced it to a Windows 11 default setting that tanks 1% lows while barely touching average FPS.
+- Topics: Windows 11, Gaming Performance, Micro-Stutter, Core Isolation, VBS, Troubleshooting
+
+### [Why Your PC Feels Slow Even When It Has Good Specs (or Fast CPU)](https://zyroxlab.com/posts/why-your-pc-feels-slow-even-when-it-has-good-specs/)
+- Published: 2026-07-05
+- Summary: Discover why a high-spec PC feels slow or stutters. Diagnose DPC latency, storage bottlenecks, RAM pagefile thrashing, thermal throttling, and background resource hogs.
+- Topics: PC Performance, Storage, Windows, Bottlenecks, CPU Optimization
+
+## Windows
+
+### [How to Check Your PC's Full Specs Without Installing Anything](https://zyroxlab.com/posts/how-to-check-your-pcs-full-specs-without-installing-anything/)
+- Published: 2026-08-13
+- Summary: Learn how to find your computer specs using built-in Windows tools. Check CPU, RAM, GPU, and storage details without downloading anything.
+- Topics: Hardware, System Specs, Windows 11, Troubleshooting
+
+### [How to Free Up Disk Space on Windows Without Deleting Your Files](https://zyroxlab.com/posts/how-to-free-up-disk-space-on-windows-without-deleting-your-files/)
+- Published: 2026-08-11
+- Summary: Running out of storage? Learn how to safely free up gigabytes of disk space on Windows 11 by clearing hidden caches, temp files, and system bloat.
+- Topics: Storage, Windows 11, Optimization, SSD
+
+### [How to Speed Up a Slow Windows 11 PC in Under 30 Minutes](https://zyroxlab.com/posts/how-to-speed-up-a-slow-windows-11-pc-in-under-30-minutes/)
+- Published: 2026-08-08
+- Summary: A practical, no-nonsense guide to speeding up a laggy Windows 11 computer. Covers startup app pruning, telemetry, visual effects, power plans, storage sense, and indexing fixes.
+- Topics: Windows 11, Performance, Optimization, Troubleshooting, PC Setup
+
+### [How to Fix High CPU Usage on Windows](https://zyroxlab.com/posts/how-to-fix-high-cpu-usage/)
+- Published: 2026-08-08
+- Summary: A practical guide to diagnosing and fixing high CPU usage on Windows with steps that target background apps, drivers, and system settings.
+- Topics: CPU, Windows, Performance, Troubleshooting
+
+### [How to Fix Windows Update Problems in 2026](https://zyroxlab.com/posts/how-to-fix-windows-update-problems-2026/)
+- Published: 2026-08-04
+- Summary: Follow a practical step-by-step guide to fix Windows update problems, from storage checks to reset tools and service troubleshooting.
+- Topics: Windows, Windows Update, Troubleshooting, System Repair
+
+### [How to Install Windows from a USB Drive Without Making a Mess of It](https://zyroxlab.com/posts/how-to-install-windows-from-a-usb/)
+- Published: 2026-06-30
+- Summary: A practical guide to creating a bootable Windows USB installer and performing a clean OS installation without common setup mistakes.
+- Topics: Windows, USB Installer, Setup, Installation
+
+## Storage
+
+### [SSD vs HDD: Which Should You Buy in 2026?](https://zyroxlab.com/posts/ssd-vs-hdd-which-should-you-buy-in-2026/)
+- Published: 2026-08-12
+- Summary: The complete 2026 guide to choosing between an SSD and an HDD for gaming, video editing, mass storage, and everyday PC use.
+- Topics: SSD, HDD, Hardware Comparison, Upgrades
+
+### [Best SSD for Gaming in 2026: What Actually Matters (And What Doesn't)](https://zyroxlab.com/posts/best-ssd-for-gaming-2026/)
+- Published: 2026-08-01
+- Summary: The definitive guide to choosing the best gaming SSD in 2026. Real game load benchmarks, DirectStorage 1.2 testing, PCIe 4.0 vs 5.0, DRAM vs HMB, and top value picks.
+- Topics: SSD, Gaming, NVMe, Storage, DirectStorage
+
+### [How to Choose a Good SSD for Video Editing](https://zyroxlab.com/posts/how-to-choose-a-good-ssd-for-video-editing/)
+- Published: 2026-07-29
+- Summary: 
+- Topics: SSD, Video Editing, Storage, Performance
+
+### [Why Upgrading Storage Alone Does Not Make Everything Faster](https://zyroxlab.com/posts/why-upgrading-storage-alone-doesnt-make-everything-faster/)
+- Published: 2026-07-09
+- Summary: Find out why an SSD upgrade alone won't fix every PC slowdown. Learn how CPU, RAM, and GPU bottlenecks limit real-world performance gains.
+- Topics: SSD, Performance, Bottlenecks, Upgrades
+
+### [Why SSD Health Monitoring Matters More Than You Think (And How to Do It)](https://zyroxlab.com/posts/why-ssd-health-monitoring-matters-more-than-you-think/)
+- Published: 2026-07-09
+- Summary: Learn how to monitor SSD health using CrystalDiskInfo and S.M.A.R.T. data. Decodes critical NVMe error attributes, temperature thresholds, firmware bugs, and read-only failure modes.
+- Topics: SSD, Monitoring, Data Backup, Drive Health, Storage, PC Maintenance
+
+### [How to Spot a Failing Hard Drive Before It Fails](https://zyroxlab.com/posts/how-to-spot-a-failing-hard-drive-before-it-fails/)
+- Published: 2026-07-06
+- Summary: Learn the warning signs of a failing hard drive, from SMART errors to unusual sounds, and how to back up before data loss happens.
+- Topics: Hard Drive, Backup, Diagnostics, Storage
+
+### [The Best Way to Organize Your Game Library on an SSD](https://zyroxlab.com/posts/the-best-way-to-organize-your-game-library-on-an-ssd/)
+- Published: 2026-07-05
+- Summary: 
+- Topics: Gaming, SSD, Storage, Organization
+
+### [How to Choose the Right SSD for Your PC Without Paying for the Wrong Specs](https://zyroxlab.com/posts/how-to-choose-the-right-ssd-for-your-system/)
+- Published: 2026-06-27
+- Summary: A complete guide to choosing the right SSD for desktops and laptops. Covers NVMe vs SATA, form factors, DRAM caching, NAND types, and laptop-specific pitfalls.
+- Topics: SSD, NVMe, Storage, Buyers Guide, Laptop, Desktop
+
+## Displays
+
+### [How to Connect Two Monitors to a Laptop](https://zyroxlab.com/posts/how-to-connect-two-monitors-to-a-laptop/)
+- Published: 2026-08-10
+- Summary: A complete guide to setting up dual external monitors on any Windows laptop or MacBook, explaining ports, hubs, and common display issues.
+- Topics: Monitors, Laptop Setup, Productivity, Hardware
+
+### [Best Monitor for Work and Gaming: What to Choose](https://zyroxlab.com/posts/best-monitor-for-work-and-gaming/)
+- Published: 2026-08-09
+- Summary: Pick the best monitor for work and gaming by balancing refresh rate, panel quality, resolution, and ergonomic value for everyday use.
+- Topics: Monitor, Gaming, Productivity, Display
+
+### [When It Is Time to Replace a Monitor](https://zyroxlab.com/posts/when-to-replace-a-monitor/)
+- Published: 2026-07-25
+- Summary: 
+- Topics: Monitor, Display Quality, Upgrade, Eye Comfort
+
+### [How to Choose a Monitor Arm and Stand](https://zyroxlab.com/posts/how-to-choose-a-monitor-arm-and-stand/)
+- Published: 2026-07-20
+- Summary: 
+- Topics: Monitor Arm, Ergonomics, Desk Setup, Accessories
+
+### [What to Look for in a Midrange Monitor](https://zyroxlab.com/posts/what-to-look-for-in-a-midrange-monitor/)
+- Published: 2026-07-12
+- Summary: Choose a midrange monitor that balances image quality, refresh rate, and value without paying flagship prices. Practical buying guide.
+- Topics: Monitor, Display, Refresh Rate, Buying Guide
+
+## Motherboards
+
+### [Best Motherboard for RTX 4070: What Matters Most](https://zyroxlab.com/posts/best-motherboard-for-rtx-4070/)
+- Published: 2026-08-10
+- Summary: Choose the best motherboard for an RTX 4070 build by focusing on PCIe bandwidth, VRM quality, connectivity, and upgrade flexibility.
+- Topics: Motherboard, RTX 4070, PC Build, GPU
+
+### [What Is the Best Motherboard for Ryzen 7 7800X3D?](https://zyroxlab.com/posts/what-is-the-best-motherboard-for-ryzen-7-7800x3d/)
+- Published: 2026-08-05
+- Summary: Find the best motherboard for Ryzen 7 7800X3D by comparing chipset features, VRM quality, connectivity options, and real-world gaming value.
+- Topics: Motherboard, Ryzen 7800X3D, AM5, PC Build
+
+### [How to Choose a Motherboard for a New PC Build Without Overpaying](https://zyroxlab.com/posts/how-to-choose-a-motherboard-for-a-new-build/)
+- Published: 2026-07-04
+- Summary: 
+- Topics: Motherboard, Chipset, VRM, Build Advice
+
+## Memory
+
+### [What Does RAM Actually Do in a Computer?](https://zyroxlab.com/posts/what-does-ram-actually-do-in-a-computer/)
+- Published: 2026-08-09
+- Summary: A clear, non-technical explanation of what RAM (Random Access Memory) actually does, why your computer needs it, and how much you really need.
+- Topics: RAM, Hardware Basics, PC Build, Memory
+
+### [Best RAM for Ryzen 7000: Speeds, Timings, EXPO, and Architecture Explained](https://zyroxlab.com/posts/best-ram-for-ryzen-7000/)
+- Published: 2026-08-07
+- Summary: The complete guide to choosing the best RAM for AMD Ryzen 7000 and 9000 AM5 processors. Covers 6000 CL30 sweet spot, UCLK 1:1 ratio, Memory Context Restore, and top kits.
+- Topics: RAM, Ryzen 7000, Memory, PC Build, AMD
+
+### [Why RAM Speed Matters Less Than People Think (And What to Buy Instead)](https://zyroxlab.com/posts/why-ram-speed-matters-less-than-people-think/)
+- Published: 2026-07-03
+- Summary: Why paying for 7200MHz+ DDR5 is a waste of money for gaming and productivity. Real DDR5 gaming benchmarks, 1% low frame times, 4-DIMM stability traps, and sweet-spot recommendations.
+- Topics: RAM, Memory, Performance, Hardware, PC Building
+
+## Gaming
+
+### [How to Check If Your PC Can Run a Game Before You Buy It](https://zyroxlab.com/posts/how-to-check-if-your-pc-can-run-a-game-before-you-buy-it/)
+- Published: 2026-08-07
+- Summary: Quickly check if your PC can run a specific game without guessing. Compare your specs to requirements using free built-in tools.
+- Topics: PC Gaming, System Requirements, Hardware, Troubleshooting
+
+### [Best GPU for 1440p Gaming: What to Buy in 2026](https://zyroxlab.com/posts/best-gpu-for-1440p-gaming/)
+- Published: 2026-08-06
+- Summary: Find the best GPU for 1440p gaming in 2026. A practical guide to performance tiers, price-to-FPS value, and smart upgrade decisions.
+- Topics: GPU, 1440p, Gaming, Graphics Card
+
+### [How to Build a Budget Gaming PC That Still Feels Fast (2026 Guide)](https://zyroxlab.com/posts/how-to-build-a-budget-gaming-pc/)
+- Published: 2026-07-17
+- Summary: Step-by-step guide to building a high-FPS budget gaming PC under $600 and $800. Part lists, real 1080p benchmarks, used GPU tips, and where to never cut corners.
+- Topics: Budget Gaming, Gaming PC, Value, PC Build, Hardware
+
+### [Should You Buy an SSD or HDD for Game Storage](https://zyroxlab.com/posts/should-you-buy-an-ssd-or-hdd-for-game-storage/)
+- Published: 2026-07-09
+- Summary: Compare SSD and HDD storage for gaming. Faster load times vs more capacity — find the right balance for your game library and budget.
+- Topics: Gaming, SSD, HDD, Storage
+
+### [What Actually Matters in a Gaming PC Build](https://zyroxlab.com/posts/what-actually-matters-in-a-gaming-pc/)
+- Published: 2026-07-01
+- Summary: Cut through PC marketing and learn which components actually affect frame rates, smoothness, and long-term upgrade value in gaming.
+- Topics: Gaming PC, GPU, FPS, Build Advice
+
+## Power
+
+### [Best PSU for RTX 5080: Wattage Requirements, ATX 3.1, and Top Picks](https://zyroxlab.com/posts/best-psu-for-rtx-5080/)
+- Published: 2026-08-03
+- Summary: The definitive guide to choosing the best power supply for NVIDIA GeForce RTX 5080 builds. Covers ATX 3.1, native 12V-2x6 connectors, oscilloscope transient spikes, and 850W vs 1000W.
+- Topics: PSU, RTX 5080, Power Supply, GPU, PC Hardware
+
+### [When to Replace a Power Supply Instead of Troubleshooting It](https://zyroxlab.com/posts/when-to-replace-a-power-supply-instead-of-troubleshooting-it/)
+- Published: 2026-07-21
+- Summary: Know when an aging or failing PC power supply is better replaced than diagnosed. Covers capacitor degradation physics, ATX voltage tolerances, 5VSB failures, and safety warnings.
+- Topics: PSU, Power Supply, Hardware Failure, Replacement, PC Maintenance
+
+### [How to Test a Power Supply Without Expensive Tools](https://zyroxlab.com/posts/how-to-test-a-psu-without-expensive-tools/)
+- Published: 2026-07-07
+- Summary: A practical guide to testing a power supply with basic checks, visual inspection, and safe load testing without specialized equipment.
+- Topics: PSU, Power Supply, Testing, Hardware
+
+### [How to Choose the Right PSU for Your Build](https://zyroxlab.com/posts/how-to-choose-the-right-psu-for-your-build/)
+- Published: 2026-07-07
+- Summary: Understand wattage, efficiency ratings, connectors, and protection features when selecting a PSU that will last through multiple builds.
+- Topics: PSU, Power Supply, Wattage, Efficiency
+
+### [How to Spot a Bad Power Supply Before You Buy It](https://zyroxlab.com/posts/how-to-spot-a-bad-power-supply-before-you-buy-it/)
+- Published: 2026-06-30
+- Summary: 
+- Topics: Power Supply, PSU, Hardware, Buying Guide
+
+## Cooling
+
+### [Best CPU Cooler for Ryzen 7 7800X3D: Tested on the Bench (2026)](https://zyroxlab.com/posts/best-cpu-cooler-for-ryzen-7-7800x3d/)
+- Published: 2026-08-02
+- Summary: We tested four top coolers on the AMD Ryzen 7 7800X3D. Real Cinebench R23 and gaming thermal numbers, noise levels, and why you do not need a 360mm AIO.
+- Topics: CPU Cooler, Ryzen 7800X3D, Thermals, Cooling, AM5
+
+### [What to Do When Your PC Overheats](https://zyroxlab.com/posts/what-to-do-when-your-pc-overheats/)
+- Published: 2026-07-28
+- Summary: A practical checklist for identifying PC overheating causes and reducing temperatures before they lead to throttling or damage.
+- Topics: Overheating, Thermals, Cooling, Troubleshooting
+
+### [The Difference Between Air Cooling and Liquid Cooling](https://zyroxlab.com/posts/the-difference-between-air-cooling-and-liquid-cooling/)
+- Published: 2026-07-19
+- Summary: Understand the real tradeoffs between air coolers and liquid cooling — performance, noise, maintenance, and cost for your PC build.
+- Topics: Air Cooling, Liquid Cooling, CPU Cooler, Thermals
+
+### [How to Tell If Your CPU Cooler Is Working Well](https://zyroxlab.com/posts/how-to-tell-if-your-cpu-cooler-is-working-well/)
+- Published: 2026-07-13
+- Summary: Spot thermal issues, fan problems, and poor cooler mounting that silently degrade your CPU performance and long-term stability.
+- Topics: CPU Cooler, Thermals, Cooling, Benchmarking
+
+### [Why PC Cooling and Case Airflow Matter More Than People Think](https://zyroxlab.com/posts/why-case-airflow-matters-more-than-people-think/)
+- Published: 2026-07-07
+- Summary: Case airflow and CPU cooling shape your PC's thermals, noise levels, and sustained performance. Learn why fan placement, cooler choice, and airflow design matter more than raw specs.
+- Topics: Airflow, Case, Cooling, CPU Cooler, Thermals, Build Advice
+
+### [How to Choose the Right Case Fan Setup](https://zyroxlab.com/posts/how-to-choose-the-right-case-fan-setup/)
+- Published: 2026-07-03
+- Summary: Learn how to balance airflow, noise, and aesthetics when choosing intake and exhaust fans for your PC case. Practical layout examples.
+- Topics: Case Fans, Airflow, Noise, PC Build
+
+### [How to Choose the Right CPU Cooler for Your Build](https://zyroxlab.com/posts/how-to-choose-the-right-cpu-cooler-for-your-build/)
+- Published: 2026-07-02
+- Summary: A practical guide to selecting a CPU cooler based on TDP demands, case clearance, noise tolerance, and budget. Avoid common mistakes.
+- Topics: CPU Cooler, Cooling, Thermals, Build Guide
+
+### [How to Build a Silent PC or Quiet Gaming Rig Without Sacrificing Performance](https://zyroxlab.com/posts/how-to-build-a-silent-pc/)
+- Published: 2026-07-02
+- Summary: A complete guide to building a whisper-quiet gaming PC and reducing system noise. Covers noise source rankings, custom BIOS fan curves (ASUS, MSI, Gigabyte), GPU undervolting, case dampening, and decibel targets.
+- Topics: Silent PC, Quiet Gaming Rig, Airflow, Fan Curves, Noise, PC Optimization
+
+## Buying Guides
+
+### [How to Spot Fake or Misleading Hardware Reviews](https://zyroxlab.com/posts/how-to-spot-fake-hardware-reviews/)
+- Published: 2026-07-30
+- Summary: Learn how to separate genuine hardware testing from marketing language, cherry-picked benchmarks, paid promotions, and weak comparisons.
+- Topics: Hardware Reviews, Buying Advice, Benchmarks, Research
+
+### [How to Spot a Good Used GPU Deal](https://zyroxlab.com/posts/how-to-spot-a-good-used-gpu-deal/)
+- Published: 2026-07-04
+- Summary: Use these practical checks to spot a good used GPU deal and avoid mining-worn cards, thermal damage, and misleading marketplace listings.
+- Topics: GPU, Used Hardware, Value, Buying Advice
+
+## Networking
+
+### [How to Upgrade Your Wi-Fi Setup Without Replacing Everything](https://zyroxlab.com/posts/how-to-upgrade-your-wifi-without-replacing-everything/)
+- Published: 2026-07-27
+- Summary: 
+- Topics: Wi-Fi, Networking, Access Point, Home Setup
+
+### [Why Network Cables Still Matter in a Wireless World (And When to Run One)](https://zyroxlab.com/posts/why-network-cables-still-matter/)
+- Published: 2026-07-23
+- Summary: Why Ethernet still beats Wi-Fi 6 and Wi-Fi 7 for gaming latency, jitter, NAS transfers, and remote work. Cat6 vs Cat6a benchmarks, bufferbloat fixes, and drill-free wiring.
+- Topics: Ethernet, Wired Network, Latency, Home Setup, Networking
+
+### [How to Choose the Best Wi-Fi Router for Your Home](https://zyroxlab.com/posts/how-to-choose-the-best-wifi-router/)
+- Published: 2026-07-22
+- Summary: Learn how to compare Wi-Fi coverage, speed tiers, and reliability features when choosing a router that matches your home layout and usage.
+- Topics: Wi-Fi, Router, Home Network, Coverage
+
+## Battery
+
+### [How to Improve Laptop Battery Life Without Sacrificing Comfort](https://zyroxlab.com/posts/how-to-improve-laptop-battery-life/)
+- Published: 2026-07-24
+- Summary: Small changes to settings and habits can extend laptop battery life significantly without making the machine feel slower or less usable.
+- Topics: Laptop, Battery Life, Power Saving, Portable Computing
+
+## Troubleshooting
+
+### [Signs Your Motherboard May Be Failing](https://zyroxlab.com/posts/signs-your-motherboard-is-failing/)
+- Published: 2026-07-16
+- Summary: Recognize early warning signs of motherboard failure, including USB dropouts, POST errors, random shutdowns, and capacitor damage indicators.
+- Topics: Motherboard, Hardware Failure, Diagnostics, PC Repair
+
+### [What to Check First When a PC Won't Boot](https://zyroxlab.com/posts/what-to-check-first-when-a-pc-wont-boot/)
+- Published: 2026-07-04
+- Summary: A clear troubleshooting guide for PC boot failures, covering power, RAM, GPU, and BIOS checks before moving to deeper hardware diagnostics.
+- Topics: Boot, Troubleshooting, Hardware, Diagnostics
+
+### [How to Diagnose a Random PC Reboot Without Losing Your Mind](https://zyroxlab.com/posts/how-to-diagnose-a-random-reboot/)
+- Published: 2026-06-28
+- Summary: A hands-on guide to finding the cause of random PC reboots, covering overheating, unstable power delivery, driver conflicts, and BIOS issues.
+- Topics: Random Reboots, Overheating, Power Supply, Diagnostics
+
+## Cases
+
+### [How to Choose the Right PC Case](https://zyroxlab.com/posts/how-to-choose-the-right-pc-case/)
+- Published: 2026-07-15
+- Summary: A practical guide to PC case selection covering size, airflow, expansion options, and build quality for your next desktop build.
+- Topics: PC Case, Airflow, Build Quality, Cable Management
+
+## Productivity
+
+### [How to Set Up a Home Office PC for Productivity](https://zyroxlab.com/posts/how-to-set-up-a-home-office-pc-for-productivity/)
+- Published: 2026-07-11
+- Summary: Create a home office workspace that supports focus and reliable performance. Covers hardware, peripherals, ergonomics, and software essentials.
+- Topics: Home Office, Workstation, Ergonomics, PC Setup
+
+## Upgrades
+
+### [The Best Way to Plan a PC Upgrade Cycle](https://zyroxlab.com/posts/the-best-way-to-plan-a-pc-upgrade-cycle/)
+- Published: 2026-07-10
+- Summary: A simple PC upgrade plan helps you improve your system steadily instead of overspending on components that do not matter yet.
+- Topics: Upgrade Planning, Budget, PC Build, Value
+
+### [When to Upgrade Your GPU vs. Your CPU: The Data-Driven Decision Guide](https://zyroxlab.com/posts/when-to-upgrade-your-gpu-vs-your-cpu/)
+- Published: 2026-07-08
+- Summary: Stop guessing whether your PC needs a GPU or CPU upgrade. Real MSI Afterburner diagnostics, online bottleneck calculator debunking, resolution matrices, and drop-in AM4 upgrade paths.
+- Topics: GPU, CPU, Upgrade, Performance, Gaming, Hardware
+
+### [How to Upgrade Your Laptop Without Buying a New One](https://zyroxlab.com/posts/how-to-upgrade-your-laptop-without-buying-a-new-one/)
+- Published: 2026-07-08
+- Summary: Learn which laptop upgrades are actually worth it — RAM, SSD, Wi-Fi card — and where the limits are before buying a new machine.
+- Topics: Laptop, Upgrade, SSD, RAM
+
+### [The Best Way to Upgrade a PC Without Replacing Everything](https://zyroxlab.com/posts/the-best-way-to-upgrade-your-pc-without-replacing-everything/)
+- Published: 2026-06-29
+- Summary: Upgrade your PC intelligently by targeting the components that actually improve speed, stability, and value without a full rebuild.
+- Topics: PC Upgrade, GPU, SSD, RAM
+
+## Hardware Troubleshooting
+
+### [How to Fix 'No Bootable Device Found' After Installing a New NVMe SSD](https://zyroxlab.com/posts/no-bootable-device-found-nvme/)
+- Published: 2026-07-09
+- Summary: Fix the No Bootable Device Found error after installing an NVMe SSD. Step-by-step BIOS, boot order, UEFI, and drive detection solutions.
+- Topics: NVMe SSD, BIOS, UEFI, Boot Error, Windows Troubleshooting
+
+## Maintenance
+
+### [How to Clean a PC and Case Ventilation Without Damaging Components](https://zyroxlab.com/posts/how-to-clean-a-pc-without-damaging-components/)
+- Published: 2026-07-08
+- Summary: A comprehensive, step-by-step guide to cleaning your PC case, fans, heatsinks, and dust filters safely. Prevent static damage, voltage spikes, and thermal throttling.
+- Topics: Cleaning, Maintenance, Dust, Cooling, Case Airflow
+
+### [How to Keep a PC Running Well for Years](https://zyroxlab.com/posts/how-to-keep-a-pc-running-well-for-years/)
+- Published: 2026-07-06
+- Summary: 
+- Topics: PC Maintenance, Longevity, Dust, Upgrades
+
+## Overclocking
+
+### [The BIOS Settings That Matter Most for a Stable Overclock](https://zyroxlab.com/posts/bios-settings-for-stable-overclock/)
+- Published: 2026-07-07
+- Summary: Learn the BIOS settings that affect CPU voltage, memory stability, and safe overclock tuning. Includes XMP, LLC, and thermal limit tips.
+- Topics: BIOS, Overclocking, CPU, Memory
+
+### [BIOS Tuning Basics for Stable Overnight Overclocking and Undervolting](https://zyroxlab.com/posts/biostuning-basics-for-stable-overnight-overclocking/)
+- Published: 2026-06-29
+- Summary: A master guide to BIOS tuning for true overnight CPU and RAM stability. Covers Load Line Calibration (LLC), AMD Curve Optimizer per-core tuning, WHEA Event 18 diagnostics, and stress testing.
+- Topics: BIOS, Overclocking, Hardware, Stability, Undervolting
+
+## Power Supply
+
+### [How to Read a PSU Spec Sheet Without Getting Misled](https://zyroxlab.com/posts/how-to-read-a-psu-spec-sheet/)
+- Published: 2026-07-05
+- Summary: 
+- Topics: PSU, Power Supply, 80 Plus, Build Advice

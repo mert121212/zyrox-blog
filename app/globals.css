@@ -2493,3 +2493,236 @@ ins.adsbygoogle[data-ad-status="unfilled"] {
     }
 }
 
+/* ─── GEO & AEO Quick Verdict / Executive Summary ─────────── */
+
+.quick-verdict-box {
+    margin: 1.5rem 0 2rem 0;
+    padding: 1.4rem;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.85));
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.quick-verdict-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #38bdf8, #818cf8);
+}
+
+.quick-verdict-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 0.9rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.quick-verdict-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-family: var(--font-space), sans-serif;
+    color: #e0f2fe;
+    font-size: 0.95rem;
+    letter-spacing: -0.01em;
+}
+
+.verdict-icon {
+    font-size: 1.1rem;
+}
+
+.quick-verdict-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.12);
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    padding: 0.2rem 0.6rem;
+    border-radius: 9999px;
+}
+
+.badge-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #38bdf8;
+    box-shadow: 0 0 8px #38bdf8;
+}
+
+.verdict-summary {
+    font-size: 1rem;
+    line-height: 1.65;
+    color: #f1f5f9;
+    margin-bottom: 1rem;
+}
+
+.verdict-summary strong {
+    color: #38bdf8;
+}
+
+.verdict-takeaways {
+    background: rgba(15, 23, 42, 0.65);
+    border-radius: 12px;
+    padding: 0.9rem 1.1rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.takeaways-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #94a3b8;
+    margin-bottom: 0.5rem;
+}
+
+.takeaways-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.takeaway-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #cbd5e1;
+}
+
+.takeaway-bullet {
+    color: #818cf8;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+/* ─── Hardware Affiliate / Product Card Styles ─────────────── */
+
+.hardware-pick-card {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: linear-gradient(145deg, rgba(16, 22, 44, 0.95), rgba(12, 17, 33, 0.98));
+    border: 1px solid rgba(96, 165, 250, 0.25);
+    box-shadow: 0 12px 35px -10px rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+
+.hardware-pick-card.featured-pick {
+    border-color: rgba(245, 158, 11, 0.5);
+    background: linear-gradient(145deg, rgba(30, 27, 20, 0.8), rgba(16, 22, 44, 0.98));
+}
+
+.pick-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 9999px;
+    background: linear-gradient(90deg, #f59e0b, #d97706);
+    color: #000;
+    margin-bottom: 0.75rem;
+}
+
+.pick-badge.value-badge {
+    background: linear-gradient(90deg, #10b981, #059669);
+    color: #fff;
+}
+
+.pick-badge.silent-badge {
+    background: linear-gradient(90deg, #6366f1, #4f46e5);
+    color: #fff;
+}
+
+.hardware-pick-card h3 {
+    margin-top: 0 !important;
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+.hardware-pick-specs {
+    margin: 0.75rem 0;
+    padding: 0.75rem 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    font-size: 0.875rem;
+    color: #94a3b8;
+}
+
+.hardware-buy-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+    align-items: center;
+}
+
+.buy-btn-amazon {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(180deg, #ff9900, #e68a00);
+    color: #111 !important;
+    font-weight: 700;
+    font-size: 0.875rem;
+    padding: 0.55rem 1.15rem;
+    border-radius: 8px;
+    text-decoration: none !important;
+    transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.buy-btn-amazon:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 153, 0, 0.4);
+}
+
+.buy-btn-newegg {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.08);
+    color: #e2e8f0 !important;
+    font-weight: 600;
+    font-size: 0.875rem;
+    padding: 0.55rem 1.15rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    text-decoration: none !important;
+    transition: background 150ms ease, border-color 150ms ease;
+}
+
+.buy-btn-newegg:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.affiliate-micro-note {
+    font-size: 0.72rem;
+    color: #64748b;
+    margin-top: 0.5rem;
+}
+
+

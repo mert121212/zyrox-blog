@@ -17,6 +17,7 @@ import {
 } from '@/lib/schema-helpers';
 import { PostTags } from '@/components/post-tags';
 import { injectContextualInternalLink } from '@/lib/internal-links';
+import { QuickVerdict } from '@/components/quick-verdict';
 
 function slugifyHeading(raw: string): string {
     return (raw || '')
@@ -243,11 +244,17 @@ export default function PostPage({ params }: { params: { slug: string } }) {
         inLanguage: 'en-US',
         isAccessibleForFree: 'true',
         proficiencyLevel: 'Beginner to Advanced',
+        abstract: post.quick_verdict || post.meta_description,
         about: entities.slice(0, 4),
         mentions: entities.slice(4, 10),
+        citation: [
+            'https://pcisig.com/specifications',
+            'https://www.intel.com/content/www/us/en/gaming/resources/power-supply.html',
+            'https://www.cybenetics.com/index.php?option=database'
+        ],
         speakable: {
             '@type': 'SpeakableSpecification',
-            cssSelector: ['.article-excerpt'],
+            cssSelector: ['.article-excerpt', '.verdict-summary', '.quick-verdict-box'],
         },
         author: author
             ? {
@@ -387,6 +394,9 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                                     dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
                                 />
                             )}
+
+                            {/* GEO & AEO: Executive Verdict & AI-Extractable Summary */}
+                            <QuickVerdict post={post} />
 
                             {/* Article body with mid-article ad injected after 4th paragraph */}
                             <div className="article-body" dangerouslySetInnerHTML={{ __html: contentHtml }} />

@@ -48,6 +48,9 @@ const posts = fs
             slug: fileName.replace(/\.md$/, ''),
             title: (data.title ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'),
             meta_description: (data.meta_description ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'),
+            rawTitle: data.title ?? '',
+            rawDescription: data.meta_description ?? '',
+            category: data.category || 'General Hardware',
             date: normalizeDate(data.date),
             updated: normalizeDate(data.updated ?? data.date),
             tags: data.tags || [],
@@ -185,4 +188,57 @@ const indexNowKey = '8A0ADD438eA44836B3D590977FA78A2B';
 fs.writeFileSync(path.join(publicDir, `${indexNowKey}.txt`), `${indexNowKey}\n`, 'utf8');
 console.log(`✓ public/${indexNowKey}.txt`);
 
-console.log(`\nGenerated ${posts.length} posts in sitemap/rss/atom.`);
+// ── llms.txt (GEO standard for AI Engines & LLM Crawlers) ────
+const categoriesMap = {};
+for (const p of posts) {
+    const cat = p.category || 'General Hardware';
+    if (!categoriesMap[cat]) categoriesMap[cat] = [];
+    categoriesMap[cat].push(p);
+}
+
+let llmsContent = `# Zyrox
+
+> Practical PC hardware engineering guides, oscilloscope-verified power supply analysis, GPU/CPU architecture breakdowns, and hardware troubleshooting.
+
+Zyrox (https://zyroxlab.com) is an independent PC hardware research and technical guide publication. All guides are written by hardware editors and focus on component engineering, transient power spike testing, cooling physics, and practical build diagnostics.
+
+`;
+
+for (const [catName, catPosts] of Object.entries(categoriesMap)) {
+    llmsContent += `## ${catName}\n`;
+    for (const post of catPosts.slice(0, 8)) {
+        llmsContent += `- [${post.rawTitle}](${baseUrl}/posts/${post.slug}/): ${post.rawDescription}\n`;
+    }
+    llmsContent += '\n';
+}
+
+llmsContent += `## Optional\n- [Full Article Index](${baseUrl}/llms-full.txt): Complete directory of all technical hardware guides with metadata and full descriptions.\n`;
+
+fs.writeFileSync(path.join(publicDir, 'llms.txt'), llmsContent.trim() + '\n', 'utf8');
+console.log('✓ public/llms.txt');
+
+// ── llms-full.txt (Comprehensive LLM Context Index) ───────
+let llmsFullContent = `# Zyrox - Full Technical Guides Directory
+
+> Complete catalog of technical PC hardware guides, testing data, and troubleshooting articles published on Zyrox (https://zyroxlab.com).
+
+`;
+
+for (const [catName, catPosts] of Object.entries(categoriesMap)) {
+    llmsFullContent += `## ${catName}\n\n`;
+    for (const post of catPosts) {
+        llmsFullContent += `### [${post.rawTitle}](${baseUrl}/posts/${post.slug}/)\n`;
+        llmsFullContent += `- Published: ${post.date}\n`;
+        llmsFullContent += `- Summary: ${post.rawDescription}\n`;
+        if (post.tags && post.tags.length > 0) {
+            llmsFullContent += `- Topics: ${post.tags.join(', ')}\n`;
+        }
+        llmsFullContent += '\n';
+    }
+}
+
+fs.writeFileSync(path.join(publicDir, 'llms-full.txt'), llmsFullContent.trim() + '\n', 'utf8');
+console.log('✓ public/llms-full.txt');
+
+console.log(`\nGenerated ${posts.length} posts in sitemap/rss/atom/llms.txt.`);
+

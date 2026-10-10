@@ -20,6 +20,8 @@ if (fs.existsSync(outDir)) {
         'atom.xml',
         'feed.atom',
         '8A0ADD438eA44836B3D590977FA78A2B.txt',
+        'llms.txt',
+        'llms-full.txt',
     ];
 
     for (const file of filesToSync) {
