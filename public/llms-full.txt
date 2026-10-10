@@ -4,9 +4,9 @@
 
 ## Gaming
 
-### [Ryzen 7 9800X3D vs 7800X3D: The Truth About the Inverted Cache and Real 1% Lows (Benchmarked)](https://zyroxlab.com/posts/ryzen-7-9800x3d-vs-7800x3d/)
+### [Ryzen 7 9800X3D vs 7800X3D: I Tested Both on the Same Bench (And Most People Shouldn't Upgrade)](https://zyroxlab.com/posts/ryzen-7-9800x3d-vs-7800x3d/)
 - Published: 2026-10-10
-- Summary: We spent 72 hours benchmarking the Ryzen 7 9800X3D against the 7800X3D. Real CapFrameX 1% low frame times, thermal telemetry, inverted cache physics, and whether upgrading is worth $479.
+- Summary: I spent three days testing the Ryzen 7 9800X3D against my daily 7800X3D. Real 1% low frame times, thermal paste realities, and why you probably shouldn't spend $479 if you already own AM5.
 - Topics: Ryzen 7 9800X3D, Ryzen 7 7800X3D, CPU, AMD, Gaming Benchmarks, AM5
 
 ### [How to Check If Your PC Can Run a Game Before You Buy It](https://zyroxlab.com/posts/how-to-check-if-your-pc-can-run-a-game-before-you-buy-it/)
