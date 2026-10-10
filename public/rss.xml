@@ -9,6 +9,15 @@
     <atom:link rel="hub" href="https://pubsubhubbub.superfeedr.com/" />
     <language>en</language>
     <item>
+      <title>Ryzen 7 9800X3D vs 7800X3D: The Truth About the Inverted Cache and Real 1% Lows (Benchmarked)</title>
+      <link>https://zyroxlab.com/posts/ryzen-7-9800x3d-vs-7800x3d/</link>
+      <guid>https://zyroxlab.com/posts/ryzen-7-9800x3d-vs-7800x3d/</guid>
+      <description>We spent 72 hours benchmarking the Ryzen 7 9800X3D against the 7800X3D. Real CapFrameX 1% low frame times, thermal telemetry, inverted cache physics, and whether upgrading is worth $479.</description>
+      <pubDate>Sat, 10 Oct 2026 00:00:00 GMT</pubDate>
+      <media:content url="https://zyroxlab.com/images/posts/ryzen-7-9800x3d-vs-7800x3d.jpg" medium="image" />
+      <enclosure url="https://zyroxlab.com/images/posts/ryzen-7-9800x3d-vs-7800x3d.jpg" type="image/jpeg" length="0" />
+    </item>
+    <item>
       <title>Why High-End Gaming PCs Keep Stuttering on Windows 11: The Default Security Feature Silently Killing Your 1% Lows</title>
       <link>https://zyroxlab.com/posts/why-high-end-pcs-stutter-windows-11-memory-integrity/</link>
       <guid>https://zyroxlab.com/posts/why-high-end-pcs-stutter-windows-11-memory-integrity/</guid>
