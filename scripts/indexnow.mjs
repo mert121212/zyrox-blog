@@ -29,6 +29,8 @@ function getAllUrls() {
         '/terms/',
         '/contact/',
         '/disclaimer/',
+        '/llms.txt',
+        '/llms-full.txt',
     ];
 
     const authorSlugs = ['marcus-holt', 'sara-vance', 'daniel-osei', 'rachel-kim'];
