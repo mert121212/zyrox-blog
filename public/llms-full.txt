@@ -4,9 +4,9 @@
 
 ## Gaming
 
-### [Ryzen 7 9800X3D vs 7800X3D: Silicon Architecture, Thermals, and Frametime Analysis](https://zyroxlab.com/posts/ryzen-7-9800x3d-vs-7800x3d/)
+### [Ryzen 7 9800X3D vs 7800X3D — What Actually Changed and Does It Matter](https://zyroxlab.com/posts/ryzen-7-9800x3d-vs-7800x3d/)
 - Published: 2026-10-10
-- Summary: Real-world testing between the Ryzen 7 9800X3D and 7800X3D across thermals, 1% low frametimes, and silicon packaging. Here is where the upgrade makes sense—and where it doesn't.
+- Summary: Testing the Ryzen 7 9800X3D against the 7800X3D with an air cooler, four games, and HWInfo64 thermal logs. The packaging changed more than you'd expect. The framerates didn't always follow.
 - Topics: Ryzen 7 9800X3D, Ryzen 7 7800X3D, CPU, AMD, Gaming Benchmarks, AM5
 
 ### [How to Check If Your PC Can Run a Game Before You Buy It](https://zyroxlab.com/posts/how-to-check-if-your-pc-can-run-a-game-before-you-buy-it/)
