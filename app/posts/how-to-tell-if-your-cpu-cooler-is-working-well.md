@@ -73,9 +73,11 @@ An excessive spread across identical performance cores means the cooler base is 
 
 If your cooler is badly mounted, you have to re-seat it. Power down, unplug the PC, and remove the cooler. 
 
-Use 90%+ isopropyl alcohol on a lint-free cloth or coffee filter to completely clean the old thermal paste off both the CPU and the cooler base. Apply a fresh rice-grain-sized dot of paste in the center (or an X pattern for massive chips like Intel's LGA1700). 
+Use 90%+ isopropyl alcohol on a lint-free microfiber cloth or coffee filter to completely clean the old thermal paste off both the CPU integrated heat spreader and the cooler base. 
 
-When remounting, tighten the screws in a cross pattern — top left, bottom right, top right, bottom left — tightening each one slightly before fully locking them down. This ensures perfectly even mounting pressure. 
+Apply fresh thermal paste suited for modern processor geometries: on modern elongated Intel LGA1700/1851 chips and AMD AM5 processors with offset CCD hotspots, avoid an outdated tiny center dot (which leaves corners and chiplet hot spots dry). Instead, apply a **5-dot pattern, an X-pattern, or manually spread a thin, uniform layer with an application spatula**.
+
+When remounting, tighten the screws in an alternating cross pattern (top-left, bottom-right, top-right, bottom-left) — turning each screw one or two turns at a time until finger-tight plus a quarter turn. This ensures perfectly even mounting pressure across the silicon. 
 
 ## Thermal Paste Aging: When to Replace It
 

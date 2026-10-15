@@ -89,7 +89,7 @@ If you are buying an Nvidia RTX 40-series or RTX 50-series graphics card, paying
 
 ## How to Read a PSU Spec Sheet
 
-Look closely at the +12V rail amperage. Your GPU, CPU, and most power-hungry components draw from this rail. A 650W unit should show at least 54A on the 12V rail (650W ÷ 12V = 54.2A). If it claims 650W but only has 45A on the 12V rail, it's underselling its output where it matters most.
+Look closely at the +12V rail amperage. Your GPU, CPU, and motherboard VRMs draw almost exclusively from this rail. A quality 650W unit should deliver virtually all of its continuous output on +12V — at least 54 Amps (54A × 12V = 648W). If a power supply advertises "650W" on the front label but only provides 45A (540W) on the +12V rail, the manufacturer is artificially inflating the rating by adding together minor 3.3V and 5V rails that modern systems barely use. That is a 500W unit masquerading as a 650W power supply.
 
 Also, check for protection features. OVP (Over Voltage), OCP (Over Current), OPP (Over Power), and SCP (Short Circuit) are absolute must-haves. Missing any of those is a major red flag.
 

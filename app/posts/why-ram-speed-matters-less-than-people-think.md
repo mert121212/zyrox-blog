@@ -79,14 +79,17 @@ When physical RAM fills up, the OS begins swapping pages to the SSD pagefile. Ev
 Memory marketing focuses exclusively on mega-transfers per second (MT/s or MHz). But frequency is only half the equation; the other half is **CAS Latency (CL)**.
 
 To calculate the actual first-word access latency in nanoseconds:
-$$\text{True Latency (ns)} = \left( \frac{\text{CAS Latency}}{\text{Frequency in MHz}} \right) \times 2000$$
+
+```text
+True Latency (ns) = (CAS Latency ÷ Memory Frequency in MHz) × 2,000
+```
 
 Compare these configurations:
-- **DDR4-3200 CL16:** $(16 / 3200) \times 2000 = \mathbf{10.0\text{ ns}}$
-- **DDR4-3600 CL18:** $(18 / 3600) \times 2000 = \mathbf{10.0\text{ ns}}$
-- **DDR5-5200 CL40:** $(40 / 5200) \times 2000 = \mathbf{15.38\text{ ns}}$
-- **DDR5-6000 CL30:** $(30 / 6000) \times 2000 = \mathbf{10.0\text{ ns}}$
-- **DDR5-7200 CL36:** $(36 / 7200) \times 2000 = \mathbf{10.0\text{ ns}}$
+- **DDR4-3200 CL16:** (16 ÷ 3200) × 2,000 = **10.0 ns**
+- **DDR4-3600 CL18:** (18 ÷ 3600) × 2,000 = **10.0 ns**
+- **DDR5-5200 CL40:** (40 ÷ 5200) × 2,000 = **15.38 ns**
+- **DDR5-6000 CL30:** (30 ÷ 6000) × 2,000 = **10.0 ns**
+- **DDR5-7200 CL36:** (36 ÷ 7200) × 2,000 = **10.0 ns**
 
 Notice that a DDR5-6000 CL30 kit and a DDR5-7200 CL36 kit share the exact same 10-nanosecond access latency. The 7200 kit offers higher theoretical sequential bandwidth, but in latency-sensitive gaming tasks, the processor waits the exact same amount of time for initial data response.
 

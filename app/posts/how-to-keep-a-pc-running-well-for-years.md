@@ -61,7 +61,7 @@ Feature updates (like the jump to Windows 11 24H2) should be deferred by at leas
 
 Thermal paste fills the microscopic air gaps between your CPU and the heatsink. Over time, it dries out and becomes less effective. If your CPU temperatures are noticeably higher than they were two years ago under the same workloads, or if you're hitting thermal throttling, it's time to replace it.
 
-Pre-applied stock pads usually last 2 to 4 years. Budget compounds last 3 to 5 years. Premium pastes like Noctua NT-H1 or Thermal Grizzly Kryonaut can last 5 to 8 years. Replacing thermal paste is straightforward on desktops but requires disassembly on laptops. Use 90%+ isopropyl alcohol to clean the old paste off before applying the new compound.
+Pre-applied stock pads usually last 2 to 3 years. High-viscosity compounds like **Arctic MX-6** or **Noctua NT-H2** resist pump-out and easily last 4 to 6 years, while phase-change materials like **Honeywell PTM7950** can last the entire operational lifetime of the device without degradation. Be cautious with thin enthusiast pastes (such as Thermal Grizzly Kryonaut); while excellent for short benchmarks, they degrade and pump out much faster when subjected to sustained 80°C+ daily operating loads. Replacing thermal paste is straightforward on desktops but requires careful disassembly on laptops. Use 90%+ isopropyl alcohol to thoroughly clean the old compound before applying a fresh 5-dot or thin spread pattern.
 
 ## SSD Health Monitoring Schedule
 

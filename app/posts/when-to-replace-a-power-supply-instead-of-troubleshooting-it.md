@@ -36,9 +36,9 @@ Here is the engineering reality of power supply wear, the hard warning signs tha
 
 Unlike solid-state processors or RAM, power supplies rely on physical wet chemical components: **aluminum electrolytic capacitors**.
 
-Capacitors act as internal reservoirs, filtering high-frequency AC switching ripple into flat, stable DC voltage. Over years of thermal exposure, the liquid electrolyte inside these capacitors gradually evaporates through the rubber end seals:
-
-$$\text{Lifespan} = \text{Base Hours} \times 2^{\frac{T_{\text{max}} - T_{\text{actual}}}{10}}$$
+```text
+Expected Lifespan = Base Rated Hours × 2^((T_max - T_actual) / 10)
+```
 
 According to the **Arrhenius chemical reaction rate law**, for every **10°C increase in internal operating temperature, capacitor lifespan is cut by exactly 50%**.
 

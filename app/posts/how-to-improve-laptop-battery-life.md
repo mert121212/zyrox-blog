@@ -27,7 +27,11 @@ Over time I've learned that battery life isn't a fixed property of a laptop. It'
 
 Before changing anything, you need to know what you're working with. Windows has a built-in command that generates a full battery report showing capacity history and usage patterns.
 
-Open the Start menu, search for Command Prompt, right-click it and choose Run as administrator. Type `powercfg /batteryreport` and hit Enter. Windows will save an HTML file to your System32 folder. Open it in your browser.
+Open the Start menu, search for Command Prompt (or Terminal), right-click it, and choose Run as administrator. Type:
+```cmd
+powercfg /batteryreport /output "%USERPROFILE%\Desktop\battery-report.html"
+```
+Press Enter. Windows will generate a clean HTML report directly on your desktop. Double-click it to open it in your browser.
 
 Look at Full Charge Capacity versus Design Capacity. If your battery was designed for 72,000 mWh but now only holds 51,000 mWh, you are working with about 70% of its original capacity. No amount of software tweaking will get that 30% back. If health is above 80%, optimization helps a lot. Below 70%, you should probably start looking for a replacement battery.
 

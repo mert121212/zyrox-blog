@@ -35,25 +35,32 @@ Look straight into the DisplayPort and HDMI ports with a light. The pins inside 
 
 Examine the power connector housing for burn marks, melting, or discoloration. Connector damage indicates serious power delivery issues, particularly on cards that use the 16-pin PCIe Gen 5 connector. Finally, look at the heatsink fins from the side to ensure they are straight and evenly spaced. 
 
-## Step 2: Detecting Mining Cards with GPU-Z
+## Step 2: Detecting Mining Cards and BIOS Flashes with GPU-Z
 
 GPU-Z is the most important software tool for used GPU evaluation. Download it, install it, and launch it with the card installed.
 
-Check the BIOS version string against TechPowerUp's database. If it's modified or doesn't match known retail versions, the card may have been flashed with a mining-optimized BIOS. You'll need to reflash it to stock for proper gaming performance. 
-
-In the Sensors tab, look closely at the Memory Errors or ECC Errors counter. This is critical. Any non-zero value here is a significant warning sign. Mining rigs put immense stress on GDDR6X and GDDR6 VRAM. Run the card for 15 minutes, and if this error counter climbs even slightly, the VRAM is permanently degraded.
+Check the BIOS version string against TechPowerUp's database. If it's modified or doesn't match known retail versions, the card may have been flashed with a mining-optimized BIOS. You'll need to reflash it to stock for proper gaming performance.
 
 Also, verify the Subvendor and PCB information in GPU-Z against the physical stickers on the card. A mismatch indicates modified or swapped components. Finally, check that the GPU correctly downclocks and reduces voltage at idle. If it's stuck at full frequency, you're likely looking at a driver issue or a lingering mining BIOS modification.
 
-## Step 3: Stress Testing Before You Buy
+Next, click the **small question mark (?) icon next to "Bus Interface"** in GPU-Z. This launches a lightweight rendering test that forces the GPU out of low-power PCIe power-saving mode. Verify that the card negotiates its full intended lane width (e.g., "PCIe x16 4.0 @ x16 4.0"). If it drops to x1, x4, or x8 under load, you likely have damaged PCB traces, oxidized golden PCIe fingers, or missing SMD capacitors.
+
+## Step 3: Stress Testing Before You Buy (Thermals & VRAM)
 
 If the seller won't let you test the card before buying, that's a massive red flag. Walk away.
 
-Download FurMark and run the 1080p preset (or 1440p for high-end cards) for 15 minutes. Watch the GPU temperature in the overlay. A healthy card will reach a stable plateau temperature. Mid-range cards (like the RTX 3060 or RX 6700 XT) should sit between 70–80°C. High-end cards (RTX 3080, RX 6800 XT) will run at 72–82°C. Modern RTX 40 and RX 7000 series cards usually sit between 68–80°C. 
+### 1. Thermal & Core Stress (FurMark / 3DMark)
+Download FurMark and run the 1080p preset (or 1440p for high-end cards) for 15 minutes. Watch the GPU temperature in the overlay. A healthy card will reach a stable plateau temperature:
+- Mid-range cards (like the RTX 3060 or RX 6700 XT) should sit between 68–78°C.
+- High-end cards (RTX 3080, RX 6800 XT) will run at 72–82°C. Modern RTX 40 and RX 7000 series cards usually sit between 65–75°C.
+- Pay attention to the **GPU Hotspot / Junction temperature** in HWiNFO64. The delta between core and hotspot should not exceed **15°C to 20°C**. A delta of 25°C+ (e.g., 68°C core but 105°C hotspot) indicates dried-out thermal paste or thermal pump-out requiring a repaste.
+- If any card climbs past 90°C core while fans scream at 100%, the cooler is failing or thermal pads are improperly mounted. Also watch closely for visual artifacts like bright twinkling dots, pink lines, or checkerboard textures.
 
-If any card climbs past 90°C while the fans are clearly screaming, the thermal paste is dried out or the cooler is failing. Also, watch closely for visual artifacts like random colored pixels or screen tearing unrelated to V-Sync. 
-
-For a better visual stress test, run Unigine Heaven on the Extreme preset for 10 minutes to spot rendering artifacts. And don't forget to run GPU-Z's built-in VRAM stress test (click the small icon next to "Memory Used") while keeping an eye on that Memory Errors counter.
+### 2. VRAM Integrity Testing (OCCT)
+Consumer GeForce and Radeon cards do not feature ECC error reporting in GPU-Z sensors. To verify that memory chips were not degraded by high-heat cryptocurrency mining:
+- Open **OCCT** and navigate to the **VRAM Test** tab.
+- Set memory usage to **80% or 90%** of total VRAM capacity and run for 10–15 minutes.
+- OCCT writes pseudorandom pattern buffers across all GDDR6/GDDR6X memory channels and verifies data integrity. If OCCT logs even a single error, one of the VRAM modules has failing solder balls or silicon degradation. Walk away immediately.
 
 ## Step 4: Pricing It Correctly
 

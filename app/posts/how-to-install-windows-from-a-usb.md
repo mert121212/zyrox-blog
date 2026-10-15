@@ -69,13 +69,27 @@ Then, simply select that Unallocated Space and click Next. Do not click New. Let
 
 (Warning: Only delete partitions on your target drive. Leave secondary data drives alone!)
 
-## Step 7: Product Keys and Activation
+## Step 7: Bypassing the "Let's Connect You to a Network" Trap (OOBE\BYPASSNRO)
+
+One of the most frustrating roadblocks on modern motherboards (especially AM5 and Intel 700/800 series) occurs at the initial setup screen: **Windows 11 requires an active internet connection to proceed, but the installer does not contain native drivers for your motherboard's Wi-Fi or 2.5GbE LAN chip.**
+
+If you get stuck on the "Let's connect you to a network" screen with a greyed-out "Next" button:
+1. Press **Shift + F10** on your keyboard (on some laptops, **Fn + Shift + F10**) to open Command Prompt.
+2. Type:
+   ```cmd
+   OOBE\BYPASSNRO
+   ```
+3. Press **Enter**. Your PC will automatically reboot.
+4. When you reach the network screen again, a new button will appear: **"I don't have internet"**. Click it, followed by **"Continue with limited setup"**.
+5. This allows you to create a local offline user account and reach the desktop, where you can then install your LAN and Wi-Fi drivers from a USB drive.
+
+## Step 8: Product Keys and Activation
 
 If you are upgrading a machine that already had an activated copy of Windows 10 or 11, you don't need a key. Click "I don't have a product key" during setup. Windows will automatically activate once you reach the desktop and connect to the internet by matching your hardware signature on Microsoft's servers.
 
 I highly recommend signing in with a Microsoft account after installation. It ties your digital license to your account, making it vastly easier to reactivate Windows if you ever replace your motherboard in the future.
 
-## Step 8: Post-Install Driver Order
+## Step 9: Post-Install Driver Order
 
 Once you hit the desktop, Windows Update will start pulling drivers automatically. But it's better to guide the process.
 

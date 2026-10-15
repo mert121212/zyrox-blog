@@ -75,13 +75,15 @@ Over Voltage Protection (OVP) and Short Circuit Protection (SCP) are common beca
 
 Missing OTP is a huge red flag. A PSU without thermal protection can literally continue operating while it overheats, degrading its capacitors and potentially starting a fire. Look for exact thresholds on the spec sheet, not just a "Yes" checkbox.
 
-## Japanese vs Chinese Capacitors
+## Capacitor Tiers: Japanese vs. Taiwanese vs. Budget Chinese
 
-Electrolytic capacitors dictate a PSU's longevity and ripple performance. 
+Electrolytic capacitors dictate a PSU's longevity, ESR (equivalent series resistance), and ripple suppression:
 
-Japanese capacitors (from Nippon Chemi-Con, Rubycon, Nichicon) are rated for 105°C, have low ESR, and are standard in Tier A units. Chinese capacitors (from Teapo, CapXon) are cheaper, often rated for only 85°C, and degrade much faster inside a warm case. 
+- **Tier 1 (Japanese 105°C):** Brands like Nippon Chemi-Con, Rubycon, and Nichicon are the industry benchmark. They use high-purity electrolytes rated for 105°C operation and over 5,000–10,000 hours of continuous load. They are standard in Tier A and Tier B power supplies.
+- **Tier 2 (Taiwanese 105°C):** Brands like Teapo and Taicon produce reliable 105°C-rated capacitors frequently used in solid mid-range and budget PSUs (like Corsair CX or be quiet! Pure Power).
+- **Tier 3 / Low-End (Chinese / 85°C Rated):** Generic brands (such as ChengX, Jun Fu, or 85°C-rated budget lines) degrade rapidly under the elevated ambient temperatures of a gaming PC chassis (40°C+), drying out their electrolyte fluid, causing excessive ripple voltage, and leading to premature failure.
 
-Quality manufacturers scream about "100% Japanese capacitors" on the box. Budget units use vague terms like "high-quality capacitors." If you can't find the brand, look up teardown reviews from JonnyGuru or Hardware Busters.
+Quality manufacturers proudly advertise "100% Japanese 105°C Capacitors" on the box. If a manufacturer uses vague marketing language like "industrial-grade high-quality capacitors" without naming the brand or temperature rating, check professional teardown reviews from Hardware Busters or TechPowerUp before buying.
 
 ## Transient Response Specification
 
