@@ -94,10 +94,11 @@ Your primary Windows partition (`C:`) needs breathing room. Windows uses free di
 
 ## 6. Configure Your Power Plan (2 Min)
 
-Windows 11 defaults to the "Balanced" power plan, which dynamically clocks down your CPU during low loads.
+Windows 11 defaults to the "Balanced" power plan, which dynamically balances clock speeds and sleep states.
 
-- **Laptops on Battery:** Keep on **Balanced** (or "Best power efficiency") to preserve battery runtimes.
-- **Desktops or Plugged-in Gaming Rigs:** Go to **Control Panel > Hardware and Sound > Power Options** and select **High Performance** (or Balanced with minimum processor state set appropriately). This prevents your CPU from cycling clock frequencies up and down during latency-sensitive tasks like gaming or real-time audio editing.
+- **Laptops on Battery:** Keep on **Balanced** (or "Best power efficiency" in Windows 11 Settings) to preserve battery runtimes.
+- **Modern AMD Ryzen Desktops (AM4 / AM5):** **Stick strictly to the default Balanced plan.** AMD's official chipset drivers hook directly into Windows 11's Balanced power profile to manage CPPC (Collaborative Processor Performance Control) and Core Parking. On dual-CCD X3D processors (like the 7900X3D and 7950X3D), forcing "High Performance" disables core parking, scattering game threads onto frequency cores instead of the 3D V-Cache CCD and causing micro-stuttering.
+- **Intel Desktop PCs:** In **Control Panel > Hardware and Sound > Power Options**, you can select **High Performance** (or configure the Power Mode in Windows 11 Settings to "Best performance"). This keeps CPU execution clocks at full readiness, preventing downclocking lag during latency-sensitive audio production or competitive gaming.
 
 ---
 

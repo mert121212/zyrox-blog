@@ -107,11 +107,11 @@ Go to catalog.update.microsoft.com, search for the KB number of the failing upda
 
 ## Understanding Common Error Codes
 
-Update error codes actually mean something. `0x80070057` is an invalid parameter, often pointing to a failing or completely full hard drive. Run a chkdsk and clear up some space. 
-
-`0x80248014` means the update metadata is out of sync, which is fixed by clearing the SoftwareDistribution folder in Step 4. 
-
-`0x80070103` means Windows is trying to install an incompatible driver version. You can just hide this specific update using Microsoft's "Show or hide updates" troubleshooter tool.
+Update error codes actually mean something specific:
+- `0x80070057` (**`ERROR_INVALID_PARAMETER`**): Often caused by corrupted registry entries under the component store or invalid update staging flags. Run `DISM /Online /Cleanup-Image /RestoreHealth` and reset the update cache in Step 4.
+- `0x80070070` (**`ERROR_DISK_FULL`**): Windows ran out of free space on your system partition (`C:`) or the hidden EFI/recovery partition. Free up at least 20–30 GB before retrying.
+- `0x80248014`: The Windows Update data store is out of sync or corrupted; resolved by resetting `SoftwareDistribution` and `catroot2`.
+- `0x80070103`: Windows is attempting to install a device driver that is already installed or has a lower rating than your current driver. This is harmless and can be ignored or hidden.
 
 ## The Update Stacking Problem
 

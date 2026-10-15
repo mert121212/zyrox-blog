@@ -51,9 +51,13 @@ Also, verify the interface and thermal profile. Most laptops built after 2018 us
 
 Most laptops ship with a mid-grade thermal interface material. After a few years of expanding and contracting with heat, that paste dries, cracks, and loses conductivity. Temperatures spike, the CPU throttles to stay safe, and your laptop crawls.
 
-To fix this, grab a tube of Thermal Grizzly Kryonaut, some 90%+ isopropyl alcohol, lint-free wipes, a plastic spudger, and a set of JIS screwdrivers. 
+To fix this, grab a quality high-viscosity compound or phase-change pad (such as **Honeywell PTM7950**, **Arctic MX-6**, or **Thermal Grizzly Kryonaut Extreme**—avoid thin pastes that pump out rapidly on direct dies), some 99% isopropyl alcohol, lint-free wipes, a plastic spudger, and a set of precision JIS/Phillips screwdrivers.
 
-Shut the laptop down completely, open the bottom panel, and disconnect the battery immediately to prevent shorts. Remove the heatsink by loosening the numbered screws in reverse order. Clean the old paste off the CPU die and heatsink with the alcohol until they are shiny. Apply a single pea-sized dot of new paste to the center of the CPU (and GPU if applicable). Lower the heatsink straight down and tighten the screws gradually in a cross pattern to ensure even pressure. Reconnect the battery, close it up, and watch your temperatures drop.
+Shut the laptop down completely, open the bottom panel, and **disconnect the battery immediately** before touching any screws to prevent catastrophic short circuits. Remove the heatsink assembly by loosening the numbered bracket screws in reverse order (e.g., 4, 3, 2, 1) to relieve spring tension evenly. Clean the old crusty paste off the bare silicon dies and copper vapor chamber with IPA until the mirror finish shines.
+
+> **Crucial Laptop Bare-Die Rule:** Laptops do **not** have an Integrated Heat Spreader (IHS); you are mounting directly onto raw, fragile silicon crystal dies. **Never use the desktop "pea-sized dot" method here.** A center dot leaves the edges and corners of the bare die unprotected, resulting in immediate thermal throttling or hotspots. Instead, manually spread a thin, uniform paper-like layer across 100% of the CPU and GPU silicon dies using a spatula (or cut a Honeywell PTM7950 phase change sheet to fit the exact die dimensions).
+
+Lower the heatsink straight down, tighten the numbered screws in sequential order (1, 2, 3, 4) in partial turns to apply flat, balanced clamping pressure, reconnect the battery, snap the chassis closed, and enjoy dramatically cooler temperatures.
 
 ## Real Performance Benchmarks: Before vs After
 

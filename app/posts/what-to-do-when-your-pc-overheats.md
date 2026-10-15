@@ -55,13 +55,26 @@ Shut down completely, unplug the PC, and move it to a well-ventilated area (outd
 
 When blowing out case fans, hold the fan blades still with a finger. If the blades spin freely from the compressed air, they can generate a voltage spike that can damage the fan controller. Finally, pull out any case intake filters, rinse them if they are foam, or tap them clean if they are metal mesh. Let them dry completely before reinserting. If temperatures improve significantly after this, dust was your problem. If not, move on to thermal paste.
 
-## Thermal Paste Replacement Guide
+## Thermal Paste Replacement: Modern Application Techniques
 
-Thermal paste fills microscopic air gaps between the CPU's metal lid and the cooler's base plate. Over time, it dries out, cracks, or pumps out of position, increasing thermal resistance dramatically. If your system is three years old, or if you're removing the cooler for any reason, replace the paste.
+Thermal paste fills microscopic air gaps between the CPU's metal integrated heat spreader (IHS) and the cooler's base plate. Over time, heat cycles cause paste to dry out, crack, or suffer from the "pump-out effect" (where micro-expansion forces paste out toward the edges), increasing thermal resistance.
 
-You'll need high-concentration isopropyl alcohol, lint-free cloths, and quality thermal paste like Thermal Grizzly Kryonaut or Arctic MX-6. Remove the cooler by unscrewing the mounting hardware slowly and evenly in a cross pattern. Clean the old paste off the CPU lid and cooler base plate using the alcohol and cloth until no discoloration remains. 
+You'll need 99% isopropyl alcohol, lint-free microfiber wipes or Kimwipes, and high-performance non-conductive paste (like Arctic MX-6, Noctua NT-H2, or Thermal Grizzly Kryonaut). Remove the cooler by backing out mounting screws in a cross pattern a few turns at a time to equalize tension. Clean both the CPU lid and cooler cold-plate until the metal shines mirror-clean.
 
-Apply a pea-sized dot of fresh paste in the center of the CPU. Don't spread it manually — the mounting pressure will do that for you. Remount the cooler evenly with firm finger pressure. You might see slightly elevated temps for the first hour as the paste seats itself, but after that, temperatures should be noticeably lower.
+> **Modern CPU IHS Geometry:** The old "pea-sized dot dead in the center" advice only worked well on older square, monolithic CPUs.
+> - **Intel LGA1700 (12th, 13th, 14th Gen):** Because the package is an elongated rectangle (45mm × 37.5mm), a single center dot leaves the top and bottom edges completely bare. Use a thin vertical line or a **5-dot pattern (a center dot with four smaller corner dots)**.
+> - **AMD AM5 (Ryzen 7000 & 9000):** The CPU compute dies (CCDs) are placed off-center in the lower-right quadrant, not under the middle. A 5-dot X-pattern or an even spatula spread ensures direct contact over the actual core silicon hotspots.
+
+Remount the cooler, alternating screw turns in an X-pattern until spring screws bottom out firmly. Do not overtighten beyond stop screws.
+
+## Diagnosing AIO Liquid Cooler Pump Failure
+
+If your CPU hits 95°C–100°C within 30 seconds of turning on the PC—even while sitting idle at the Windows desktop—**your thermal paste is not the culprit**. This sudden thermal spike is the hallmark symptom of an **AIO pump failure** or an airlock.
+
+To diagnose a liquid cooler:
+1. **The Tube Temperature Touch Test:** While the PC is on and running hot, carefully touch both rubber hoses leading into the radiator. In a functioning loop, fluid moves rapidly, so both tubes will feel lukewarm with a barely perceptible temperature difference (typically 1°C–3°C). **If one hose is scalding hot to the touch and the other hose is room temperature, coolant has stopped circulating.** The impeller is dead or jammed.
+2. **Pump Tachometer Check:** Check HWiNFO64 or your BIOS under the `AIO_PUMP` or `CPU_OPT` fan header. A working AIO pump spins between **2,000 RPM and 3,500 RPM**. If the sensor reads **0 RPM**, verify that the SATA power lead and motherboard tachometer header are fully seated. If power is supplied but RPM is 0, the pump motor is dead.
+3. **Loop Orientation (The Cavitation Trap):** Air always rises to the highest physical point in any closed liquid loop. If your radiator is installed on the floor of the case with the hoses pointing up toward the CPU, the pump block becomes the highest point. Air collects inside the pump housing, starving the ceramic bearings of lubrication, causing loud gurgling/whining noises, and preventing coolant from moving. The radiator tank or top must always be mounted physically higher than the CPU pump block.
 
 ## Fan Curve Tuning and Case Airflow
 
@@ -73,7 +86,7 @@ Good case airflow is just as critical. Clean your intake filters regularly. Ensu
 
 If your system is actively throttling during an important session, close non-essential apps, lower in-game graphics settings, and temporarily open the case side panel to let ambient air in. Pointing a desk fan at the open case helps too. These are just band-aids until you fix the root cause.
 
-Sometimes cleaning and paste aren't enough. If you're running a stock Intel cooler on a high-end chip, or if you've done all the maintenance and still hit 90°C+ under load, you need new hardware. The Noctua NH-D15 and be quiet! Dark Rock Pro 5 are gold standards for air cooling. For liquid, the Corsair H150i Elite and NZXT Kraken 360 handle the hottest CPUs comfortably. If your GPU is the problem and it's out of warranty, replacing its thermal pads and paste is a valid last resort before buying a new card.
+Sometimes cleaning and paste aren't enough. If you're running a stock Intel cooler on a high-end chip, or if you've done all the maintenance and still hit 90°C+ under load, you need new hardware. The Noctua NH-D15 G2 and Thermalright Peerless Assassin 120 / Phantom Spirit 120 are gold standards for air cooling value. For liquid, the Arctic Liquid Freezer III 360 and NZXT Kraken 360 handle the hottest CPUs comfortably. If your GPU is the problem and it's out of warranty, replacing its thermal pads and paste is a valid last resort before buying a new card.
 
 
 ---
