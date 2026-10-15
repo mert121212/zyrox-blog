@@ -52,17 +52,22 @@ I move 4 to 5 games to my HDD archive every month this way. It takes less than 1
 
 ## Epic, GOG Galaxy, and EA App Multi-Library Setup
 
-Steam isn't the only launcher you are managing. Epic's game moving process is still a bit rough — you basically have to uninstall and reinstall at the new location, which means re-downloading. I use the file system workaround (manually moving the folder, then pointing Epic to it) to avoid that.
-
-GOG Galaxy has a proper move feature. Right-click any game, go to Manage Installation, and click Move. It handles the transfer cleanly. I've moved Cyberpunk 2077 between drives twice without any issue.
-
-The EA App also supports moving games. Click the three-dot menu on any installed game, hit Move Game, and pick the destination. The app re-links the installation without a full redownload.
+Steam isn't the only launcher you are managing:
+- **Epic Games:** Still lacks a native "Move" button. To move an Epic game without redownloading 100GB: (1) Copy the game's folder to your new drive, (2) Uninstall the game in the Epic launcher, (3) Start installing the game to the new destination drive and pause/cancel the download at 2%, (4) Paste your copied files into the new directory, overwriting files, and (5) Click Resume/Install. Epic will verify the existing files in 2 minutes instead of redownloading.
+- **GOG Galaxy:** Has a built-in move tool. Right-click any game, go to **Manage Installation > Move Folder**, and pick your target drive.
+- **EA App:** Click the three dots on the game tile, select **Move Game**, and pick the new directory. The app relinks without redownloading.
 
 ## Junction Points and Symbolic Links for Game Saves
 
-Some games store save files inside the game's install folder rather than in Documents or the cloud. When you move those games to an HDD, the saves go with them. Windows symbolic links solve this elegantly.
+Some older games store save files inside their installation directory rather than in `Saved Games`, `Documents`, or the Steam Cloud. When you archive those games to a slower drive, the saves travel with them. Windows NTFS junctions and symlinks solve this elegantly:
 
-You can create a symlink that makes the game think its Saves folder is in the original location, while the actual files live on your fast SSD in a centralized backup-friendly spot. Open an Administrator Command Prompt and use `mklink /D` to create the link. The game reads and writes to the save folder exactly as before, completely unaware that the files actually live somewhere else. I use this for a handful of titles that don't support cloud saves natively.
+- **Directory Junction (`mklink /J`):** Best for local drives. Does not require running Command Prompt as Administrator:
+  ```cmd
+  mklink /J "D:\Games\Title\Saves" "C:\Users\YourName\Saved Games\Title"
+  ```
+- **Directory Symlink (`mklink /D`):** Works across network shares as well, but requires Command Prompt run as Administrator (or Windows Developer Mode enabled).
+
+The game reads and writes to the save folder exactly as before, completely unaware that the files actually live on a different physical drive.
 
 ## Controlling Launcher Cache Locations
 

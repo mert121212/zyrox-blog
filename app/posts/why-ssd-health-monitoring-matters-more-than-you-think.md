@@ -79,7 +79,7 @@ Follow this checklist to configure it properly:
 Many PC builders install an SSD and never update its firmware. That is a dangerous mistake.
 
 In late 2022 and 2023, high-profile firmware bugs severely damaged SSDs in the wild:
-- **The Samsung 980 Pro / 990 Pro Firmware Bug:** Early firmware versions contained a bug in the wear-leveling algorithm that rapidly wrote corrupted tracking tables. Drives dropped from 100% health to 60% health in a matter of weeks, and in severe cases permanently locked themselves into read-only mode. Samsung had to rush out emergency firmware updates (`3B2QGX7` and `1B2QJXD7`) to halt the degradation.
+- **The Samsung 980 Pro / 990 Pro Firmware Bug:** In late 2022 and early 2023, high-profile firmware bugs severely impacted Samsung SSDs. On the **980 Pro (2TB)**, firmware version `3B2QGXA7` contained a critical bug that caused drives to permanently lock themselves into read-only mode with 0% remaining health, requiring Samsung to issue emergency patch `5B2QGXA7`. On the **990 Pro**, initial release firmware `0B2QJXD7` triggered an erroneous rapid S.M.A.R.T. health percentage degradation loop, prompting the release of firmware `1B2QJXD7` to halt the artificial decay.
 - **Crucial & Western Digital Firmware Fixes:** Several PCIe 4.0 drives experienced BSOD crashes in Windows 11 under DirectStorage and modern standby until BIOS/firmware patches were deployed.
 
 Always install your drive manufacturer's management suite:

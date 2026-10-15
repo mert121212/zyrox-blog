@@ -59,15 +59,15 @@ The monstrous 14,000 MB/s sequential speeds on Gen 5 drives only activate when c
 
 ---
 
-## DirectStorage 1.2 and GPU Asset Decompression
+## DirectStorage and GPU Asset Decompression
 
-The conversation around gaming SSDs changed with the arrival of Microsoft **DirectStorage 1.2**.
+The conversation around gaming SSDs changed with the arrival of Microsoft **DirectStorage 1.1**, which introduced GPU-accelerated decompression (the subsequent 1.2 update added developer tools like Force Buffered IO for HDD fallback compatibility).
 
 Historically, when a game requested a texture, data traveled from the SSD into system RAM, was decompressed by the CPU, and was then sent over the PCIe bus to GPU VRAM. This created severe CPU overhead and texture pop-in during fast travel.
 
-DirectStorage bypasses the CPU entirely:
-- Compressed assets are streamed directly from your NVMe SSD over the PCIe bus directly into GPU memory.
-- The GPU's compute cores decompress textures in parallel in microseconds.
+DirectStorage dramatically reduces CPU overhead by offloading decompression to the GPU:
+- Compressed assets are streamed from your NVMe SSD over the PCIe bus into GPU memory with minimal CPU involvement.
+- The GPU's compute shaders decompress textures in parallel, freeing the CPU to handle game logic and physics instead of data unpacking.
 
 Titles like *Forspoken* and *Ratchet & Clank: Rift Apart* prove DirectStorage's power: load screens take **under 1.5 seconds**, and dimensional rift transitions occur without shader hitching. Any solid PCIe 4.0 NVMe SSD with read speeds over 5,000 MB/s delivers the maximum DirectStorage experience today.
 

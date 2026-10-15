@@ -37,7 +37,7 @@ More importantly, Windows feels incredibly responsive at idle. Old hard drives c
 
 This is the part that trips people up. A faster drive flat out cannot fix rendering or computational bottlenecks.
 
-Once a game's assets are loaded into memory, storage speed has essentially zero effect on your frame rate. The graphics card is doing the work. If you are getting 40 frames per second in Cyberpunk 2077, buying the fastest NVMe drive on the market will not increase your frame rate by a single frame. 
+Once a game's assets are loaded into memory, storage speed has essentially zero effect on your average frame rate. The graphics card is doing the rendering work. If you are getting 40 frames per second in Cyberpunk 2077 because your GPU is pegged at 100%, buying the fastest NVMe drive on the market will not increase your average frame rate by a single frame. *(Crucial nuance: moving from an HDD to an NVMe SSD dramatically stabilizes frame pacing and eliminates 1% low stutter during real-time asset streaming in titles like *Spider-Man* or *Alan Wake 2*, but it cannot lift the architectural rendering ceiling of a weak GPU.)*
 
 The same applies to video editing. When you export a 4K timeline in Premiere Pro, the bottleneck is your CPU or GPU encoding the video. Writing the final file to disk is so easy that even a basic SATA SSD can keep up effortlessly. An SSD gets the data into your RAM quickly; after that, it sits idle while the processor does the actual heavy lifting.
 

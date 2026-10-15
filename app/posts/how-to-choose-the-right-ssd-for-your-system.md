@@ -74,15 +74,15 @@ Before buying anything, you need to figure out which type your system supports. 
 
 ## DRAM vs DRAM-less: The Real-World Performance Difference
 
-This is where many budget drives fall short in ways the spec sheet doesn't clearly advertise. SSDs use one of three caching architectures to store the map of where your data physically lives (the Flash Translation Layer).
+This is where budget drives cut corners in ways spec sheets rarely highlight. SSDs must constantly track where your files physically reside on flash memory using a mapping table called the **Flash Translation Layer (FTL)**. The speed and location of this table dictates how quickly the drive handles random access:
 
-**DRAM-based:** The drive has a dedicated DRAM chip. It's incredibly fast. Drives like the Samsung 990 Pro use this, giving you consistent speeds (130-160 MB/s sustained random writes) and low latency even under heavy loads.
+**DRAM-based (Dedicated Cache):** The drive features dedicated onboard DDR4 or LPDDR4 memory (typically 1GB of DRAM per 1TB of storage). The entire FTL mapping table resides in instant-access memory. Drives like the Samsung 990 Pro or WD Black SN850X use this layout, delivering consistent low-latency response times, high sustained random 4K write speeds, and zero stutter during multitasking or heavy background file indexing.
 
-**DRAM-less with HMB (Host Memory Buffer):** The drive borrows a tiny bit of your system's RAM. Drives like the Kingston NV3 use this. It works decently for everyday tasks and gaming, but performance can stutter (dropping to 90-130 MB/s sustained random writes) when you hit it with heavy sustained transfers.
+**DRAM-less with HMB (Host Memory Buffer):** To cut costs, the SSD controller eliminates the onboard DRAM chip and instead utilizes the NVMe specification's Host Memory Buffer feature to borrow a tiny slice (typically 64MB) of your computer's system RAM over the PCIe bus. Drives like the WD Blue SN580, TeamGroup MP44L, or Lexar NM790 use HMB. For gaming, web browsing, and general PC use, HMB performs remarkably close to dedicated DRAM. However, during extreme sustained mixed workloads (like compiling massive codebases or scrubbing complex video timelines), latency can fluctuate when the HMB buffer exhausts.
 
-**DRAM-less without HMB:** The slowest configuration. The drive has to use its own slow NAND for the map. Performance tanks under sustained loads (40-80 MB/s). Just avoid these for primary drives.
+**DRAM-less without HMB:** The lowest tier, common in cheap SATA drives (or NVMe drives placed in external USB enclosures where HMB is stripped away). Because there is no DRAM and no host RAM access, the drive must constantly read and write its mapping table directly to flash memory. This causes massive write amplification, severe latency spikes, and system freezes during background file transfers. Avoid these for primary boot drives.
 
-For a gaming PC, DRAM-less with HMB is totally fine. For a workstation doing heavy file operations, spend the extra money on a DRAM-based drive.
+For a pure gaming PC or secondary storage, DRAM-less with HMB is completely sufficient and cost-effective. For a primary OS drive running heavy creative applications or workstation tasks, invest in a drive with dedicated onboard DRAM.
 
 ## QLC vs TLC vs MLC NAND: What the Cell Type Means for You
 
