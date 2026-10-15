@@ -64,11 +64,11 @@ Older ATX 2.x power supplies were engineered with strict OCP trip points set at 
 
 To solve transient instability, Intel and PCI-SIG established the **ATX 3.0 and ATX 3.1 power delivery specifications**:
 
-1. **200% Excursion Tolerance:** Any certified ATX 3.0/3.1 power supply must legally withstand transient spikes of **200% of its rated capacity for 100 microseconds** (e.g., a 1000W ATX 3.0 PSU must absorb a 2,000W spike without shutting down or allowing voltage to sag below 11.2V).
+1. **200% Excursion Tolerance:** Any certified ATX 3.0/3.1 power supply must legally withstand transient spikes of **200% of its rated capacity for 100 microseconds** (e.g., a 1000W ATX 3.0 PSU must absorb a 2,000W spike without shutting down or allowing voltage to sag below the -7% ATX floor of 11.20V on the PSU rail, or 11.04V at the GPU connector per PCIe CEM specifications).
 2. **Hold-Up Time:** Mandates sufficient bulk capacitor reserves to ride through AC line dropouts.
-3. **The 12V-2x6 Connector Update (ATX 3.1):** The initial 16-pin 12VHPWR connector suffered melting incidents when users failed to seat the plug with extreme force. The revised **12V-2x6** standard features:
-   - **1.5mm shorter sense pins:** If the connector is backed out by even 1mm, the sense pins break contact, and the power supply refuses to supply more than 150W, making thermal melting physically impossible.
-   - **Recessed conductor pins:** Ensures full electrical contact before current can flow.
+3. **The 12V-2x6 Connector Update (ATX 3.1 & PCIe CEM 5.1):** The initial 16-pin 12VHPWR connector suffered melting incidents when users failed to seat the plug with extreme force. The revised **12V-2x6** standard (stamped with an **"H++"** marking instead of the older "H+") features:
+   - **1.5mm recessed (shorter) sense pins:** Positioned 1.5mm deeper into the housing. If the connector is backed out by even 1mm, the sense pins break contact first, signaling the GPU to cut power draw or refuse to boot before thermal runaway can occur.
+   - **0.25mm longer power conductor terminals:** Ensures the 12 main 12V power pins establish solid, deep mechanical and electrical contact first before the sense loop can close.
 
 *Golden Rule:* Always ensure your new PSU explicitly advertises **ATX 3.0 or ATX 3.1 compliance with native PCIe 5.1 / 12V-2x6 support.**
 

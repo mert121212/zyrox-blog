@@ -111,7 +111,7 @@ Before discarding a modern, high-grade PSU that is only two years old, rule out 
 
 If your power supply is more than **6 to 7 years old**, has reached the end of its manufacturer warranty, and exhibits intermittent crashes, replacing it is not an expense — it is insurance.
 
-A modern, certified **Tier A or Tier B unit from the Cultists PSU Tier List** (such as a Corsair RM750e, Seasonic FOCUS GX-750, or MSI MAG A850GL) costs between $90 and $120. It includes modern ATX 3.0 excursion safety protections, an 80+ Gold efficiency platform, flat modular cables, and a fresh 10-year warranty. 
+A modern, certified **Tier A or Tier B unit from the SPL PSU Tier List or Cultists database** (such as a Corsair RM750e, Seasonic FOCUS GX-750, or MSI MAG A850GL) costs between $90 and $120. It includes modern ATX 3.0 excursion safety protections, an 80+ Gold efficiency platform, flat modular cables, and a fresh 10-year warranty. 
 
 Never gamble $1,500 worth of CPU, GPU, and SSD storage to save $100 on an aging power supply.
 

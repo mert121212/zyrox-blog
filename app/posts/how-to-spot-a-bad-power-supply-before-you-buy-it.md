@@ -60,7 +60,7 @@ The gold standard is Japanese capacitors from brands like Nippon Chemi-Con, Nich
 
 Most PSU brands don't manufacture their own units. They contract Original Equipment Manufacturers (OEMs). 
 
-Channel Well Technology (CWT) builds the legendary RMx and Shift platforms for Corsair. Seasonic manufactures their own class-leading Focus and Prime platforms (and supplies high-end platforms to ASUS ROG and Phanteks). FSP and Great Wall also produce dependable server and consumer units. However, white-label budget storefronts often contract lowest-bidder factories (like older Solytech, Leadman, or low-end Sirtec builds) that cut corners on internal filtering inductors and safety rectifiers. Always check the Cultists Network PSU Tier List to trace the true OEM platform beneath the brand sticker.
+Channel Well Technology (CWT) builds the legendary RMx and Shift platforms for Corsair. Seasonic manufactures their own class-leading Focus and Prime platforms (and supplies high-end platforms to ASUS ROG and Phanteks). FSP and Great Wall also produce dependable server and consumer units. However, white-label budget storefronts often contract lowest-bidder factories (like older Solytech, Leadman, or low-end Sirtec builds) that cut corners on internal filtering inductors and safety rectifiers. Always check the **SPL PSU Tier List** (or the legacy Cultists Network spreadsheet for older hardware) and **Hardware Busters** bench teardowns to trace the true OEM platform beneath the brand sticker.
 
 ## Real-World Comparison: Safe vs. Dangerous
 
@@ -78,7 +78,7 @@ I always search the review section for the words "fire," "smoke," or "burning sm
 
 ## Step-by-Step Buying Checklist and Brands to Avoid
 
-Calculate your wattage on PC Part Picker and add 20% headroom. Filter your store search for 80 Plus Gold units only. If the price is suspiciously low, avoid it. Identify the OEM platform and cross-reference it on the Cultists Network Tier List — aim for Tier B or higher. Check the spec sheet for OCP and OTP. Scan the Amazon reviews for burning smell reports. Always buy from a retailer with a solid return policy.
+Calculate your wattage on PC Part Picker and add 20% headroom. Filter your store search for 80 Plus Gold units only. If the price is suspiciously low, avoid it. Identify the OEM platform and cross-reference it on the **SPL PSU Tier List** (or Hardware Busters recommendation index) — aim for Tier B or higher. Check the spec sheet for OCP and OTP. Scan the Amazon reviews for burning smell reports. Always buy from a retailer with a solid return policy.
 
 As a general rule, actively avoid brands like APEVIA, Diablotek, Raidmax, and Logisys. They have documented histories of missing protections, catastrophic failures, and terrible OEM platforms. Stick to reliable lines from Seasonic, Corsair, EVGA, be quiet!, and FSP. Don't cheap out on the heart of your system.
 
