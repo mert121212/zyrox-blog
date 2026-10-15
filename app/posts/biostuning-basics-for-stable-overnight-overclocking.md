@@ -100,7 +100,7 @@ To identify which core failed:
 1. Open Windows **Event Viewer > Custom Views > Administrative Events**.
 2. Filter for Event ID: **18** (Source: `WHEA-Logger`).
 3. Click the event and check the **APIC ID** number.
-4. Divide the APIC ID by 2 to find the physical failing core (e.g., APIC ID 6 = Core 3).
+4. Divide the APIC ID by 2 (rounding down) to find the physical failing core (e.g., APIC ID 6 or 7 = Core 3). *(Tip: On dual-CCD processors like the Ryzen 9 7900X or 7950X, you can confirm your processor's exact APIC-to-Core mapping by generating a quick text report in CPU-Z under Tools > Save Report).*
 5. Return to BIOS, switch Curve Optimizer to **Per-Core**, and relax that specific core from -30 back to -20 while leaving stronger cores at -30.
 
 ---

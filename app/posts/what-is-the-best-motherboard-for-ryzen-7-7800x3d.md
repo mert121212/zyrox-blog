@@ -18,7 +18,7 @@ image: "/images/posts/best-motherboard-for-rtx-4070.jpg"
 quick_verdict: "Because the Ryzen 7 7800X3D features locked multipliers and draws only 55W-85W, spending $400+ on flagship X670E motherboards provides zero gaming uplift. A high-quality B650E or balanced X670E board like the Gigabyte X670E Aorus Master or ASRock B650E Taichi delivers native PCIe 5.0 GPU support, DDR5-6000 EXPO stability, and CPU-free BIOS flashback at substantial savings."
 key_takeaways:
   - "Overclocking Truth: 7800X3D multipliers are hardware-locked; extreme VRM overclocking phases yield zero extra FPS."
-  - "Memory Sweet Spot: DDR5-6000 CL30 at 1:1 FCLK delivers optimal latency and 4-10% higher frame rates than default JEDEC."
+  - "Memory Sweet Spot: DDR5-6000 CL30 at 1:1 UCLK:MCLK delivers optimal latency and 4-10% higher frame rates than default JEDEC."
   - "Crucial Feature: Always ensure the motherboard features CPU-free BIOS flashback (Q-Flash Plus) to prevent out-of-the-box boot failures."
   - "Top Recommendation: Gigabyte X670E Aorus Master for balanced I/O and Q-Flash Plus, or ASRock B650E Taichi for pure value."
 ---

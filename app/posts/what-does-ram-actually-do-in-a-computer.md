@@ -63,9 +63,9 @@ RAM is just temporary workspace. Having a bigger desk doesn't make you think fas
 
 At 8 GB, you are barely scraping by. It'll handle basic browsing, YouTube, email, and light Office stuff. But start opening tabs and throwing Spotify into the mix and you'll feel it struggle. I wouldn't buy a new PC with 8 GB today unless the budget is seriously tight.
 
-At 16 GB, you are in the sweet spot for most people. Handles multitasking without breaking a sweat. Dozens of Chrome tabs, gaming, Spotify in the background, a few apps open. For probably 80 percent of people reading this, 16 GB is the right answer.
+At 16 GB, you have the baseline for general computing, office multitasking, and esports games. It handles dozens of Chrome tabs, Spotify, and office suites comfortably without stuttering. 
 
-At 32 GB, you are in power user territory. You're editing 4K video in Premiere. You're working with huge Photoshop files. You're running virtual machines. You play modded Cities: Skylines and you know exactly what that does to memory usage. If any of that sounds like you, 32 GB makes a real difference.
+At 32 GB, you are in the modern sweet spot for dedicated gaming and creative workloads. Modern AAA games (*Hogwarts Legacy*, *Flight Simulator*, *Star Wars Jedi: Survivor*) routinely push total system memory consumption past 18 GB when running alongside Discord, Steam, and Windows background services. If you play demanding open-world games, edit 4K video, or run virtual machines, 32 GB prevents pagefile hitching and gives you genuine multi-year breathing room.
 
 At 64 GB and above, you are in a very niche space. Unless you're doing 3D rendering, compiling huge codebases, running local AI models, or doing scientific computing, this is overkill. Most of that RAM will just sit there unused.
 

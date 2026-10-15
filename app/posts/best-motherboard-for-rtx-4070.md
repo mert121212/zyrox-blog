@@ -15,10 +15,10 @@ keywords:
   - "GPU motherboard match"
 author: marcus-holt
 image: "/images/posts/best-motherboard-for-rtx-4070.jpg"
-quick_verdict: "Pairing an RTX 4070 with an expensive Z790 motherboard yields 0 extra frames per second over a standard B760 board. The GPU uses a standard PCIe 4.0 x16 interface. The MSI MAG B760 Tomahawk WiFi provides the ultimate balance of robust 16+1+1 phase VRMs, 4x M.2 slots, and Wi-Fi 6E without overspending."
+quick_verdict: "Pairing an RTX 4070 with an expensive Z790 motherboard yields 0 extra frames per second over a standard B760 board. The GPU uses a standard PCIe 4.0 x16 interface. The MSI MAG B760 Tomahawk WiFi provides the ultimate balance of robust 16+1+1 phase VRMs, 3x M.2 PCIe 4.0 slots, and Wi-Fi 6E without overspending."
 key_takeaways:
   - "PCIe Bandwidth: The RTX 4070 uses PCIe 4.0 x16; PCIe 5.0 motherboard slots provide zero performance gain today."
-  - "Top DDR5 Pick: MSI MAG B760 Tomahawk WiFi delivers 16+1+1 phase VRMs and 4x M.2 slots at mid-range pricing."
+  - "Top DDR5 Pick: MSI MAG B760 Tomahawk WiFi delivers 16+1+1 phase VRMs and 3x M.2 slots at mid-range pricing."
   - "Budget DDR4 Winner: ASUS TUF B760-Plus D4 lets you reuse existing 32GB DDR4 kits, saving $100+ on platform costs."
   - "When Z790 Matters: Only required if you intend to overclock unlocked Core i7/i9 K-series processors."
 ---
@@ -60,9 +60,9 @@ Because the RTX 4070 pairs equally well with Intel and AMD chips, choose your bo
   <span class="pick-badge">★ Best Intel DDR5 Pick</span>
   <h3>2. MSI MAG B760 Tomahawk WiFi (Intel LGA1700)</h3>
   <div class="hardware-pick-specs">
-    <strong>Key Specs:</strong> LGA 1700 / B760 | DDR5 Support | 16+1+1 Phase VRM | 4x M.2 PCIe 4.0 | Wi-Fi 6E & 2.5G LAN
+    <strong>Key Specs:</strong> LGA 1700 / B760 | DDR5 Support | 16+1+1 Phase VRM | 3x M.2 PCIe 4.0 | Wi-Fi 6E & 2.5G LAN
   </div>
-  <p>The gold standard for mainstream Intel builds (i5-13600K / i5-14400F). Overkill 16-phase VRM ensures ice-cold power delivery during extended gaming, while 4 onboard M.2 slots provide exceptional storage expansion.</p>
+  <p>The gold standard for mainstream Intel builds (i5-13600K / i5-14400F). Overkill 16-phase VRM ensures ice-cold power delivery during extended gaming, while 3 onboard M.2 slots provide excellent storage expansion.</p>
   <div class="hardware-buy-actions">
     <a href="https://www.amazon.com/s?k=MSI+MAG+B760+Tomahawk+WiFi&tag=zyrox0e-20" target="_blank" rel="nofollow sponsored noopener" class="buy-btn-amazon">Check Price on Amazon ↗</a>
     <a href="https://www.newegg.com/p/pl?d=MSI+MAG+B760+Tomahawk+WiFi" target="_blank" rel="nofollow sponsored noopener" class="buy-btn-newegg">View on Newegg ↗</a>
