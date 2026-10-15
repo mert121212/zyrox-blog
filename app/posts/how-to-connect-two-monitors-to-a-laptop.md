@@ -57,11 +57,15 @@ If your laptop is one of those modern ultrabooks — Dell XPS, HP Spectre, any t
 
 I use one of these on my daily driver. One single USB-C cable goes from my laptop to the dock, and the dock handles both monitors, my keyboard, mouse, ethernet, and it charges the laptop too. It's the "sit down, plug in one cable, everything works" setup.
 
-You can pick up a dual-HDMI USB-C hub for $40-$60. Plug it in, connect both monitors to it with HDMI cables, and you should be set.
+You can pick up a dual-HDMI USB-C hub for $40-$60. On a Windows laptop with DisplayPort Alt Mode, Windows uses **MST (Multi-Stream Transport)** to split that single USB-C video stream into two independent, extended desktops. Plug it in, connect both monitors via HDMI, and you're set.
 
-**But here's the MacBook headache.** If you have a base model M1, M2, or M3 MacBook — not the Pro, not the Max, just the regular one — Apple decided that your laptop can only drive *one* external display natively. Doesn't matter what hub you plug in. You connect two monitors and they just mirror each other. Same image on both screens. It's infuriating because there's no technical reason Apple couldn't allow it, they just... don't, on the base models.
+**The Crucial Mac Trap: MST vs. Thunderbolt:**
+If you plug that same $40 dual-HDMI USB-C hub into *any* MacBook, you will get a nasty surprise: both external monitors will mirror each other. macOS deliberately does not support DisplayPort MST. To get dual independent extended displays on a Mac without DisplayLink, you must use a genuine **Thunderbolt 3 or Thunderbolt 4 dock** (which carries two separate native DisplayPort tunnels).
 
-If that's your situation, you need Option 3.
+**Apple Silicon Base Chips (M1, M2 vs. M3):**
+- **Base M1 and M2 MacBooks (Air and 13" Pro):** Apple physically limited the internal display controller to two total screens. Since the laptop panel is one, you can only run *one* external display natively, even in clamshell mode. To get dual screens, you must use DisplayLink (Option 3).
+- **Base M3 MacBooks:** Apple introduced native dual external display support (macOS 14.4+), but **only in clamshell mode** (with the MacBook lid closed). If you open the laptop lid, one external display disconnects.
+- **M-Series Pro and Max chips (M1/M2/M3 Pro & Max):** Fully support dual or quad independent displays natively with the lid open.
 
 ---
 

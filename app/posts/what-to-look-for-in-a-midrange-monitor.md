@@ -45,33 +45,34 @@ VA (Vertical Alignment) panels have dramatically better contrast, often 3000:1 o
 
 For the $200 to $450 range, IPS is usually the better choice for most people because the smearing on VA panels can be genuinely annoying in fast-paced games, and the color consistency of IPS is better for mixed work-and-play use. If you primarily watch movies or play slower-paced RPGs, a good VA monitor is a worthwhile alternative.
 
-## Refresh Rates: 144Hz vs 165Hz vs 240Hz
+## Refresh Rates: 144Hz, 165Hz, and Modern 180Hz Panels
 
-Let's clear up the refresh rate confusion. The difference between 144Hz and 165Hz is essentially imperceptible. Do not choose one monitor over another just because it advertises 165Hz instead of 144Hz.
+Let's clear up the refresh rate confusion. The difference between 144Hz and 165Hz is essentially imperceptible in blind testing. 
 
-The jump to 240Hz is a real and meaningful difference — but only if your PC can actually generate 200+ frames per second. If you play Valorant, CS2, or Apex Legends on a highly capable system, 240Hz reduces perceived blur and provides a competitive edge. If you play story games or run at 80 to 120 FPS, 240Hz gives you absolutely nothing over 144Hz.
+In today's market, modern Fast IPS tooling has shifted the baseline: new budget and midrange panels now routinely ship with **180Hz native** at the same $200–$300 price point where 144Hz used to sit. 
 
-For most people in this market, 144Hz (or 165Hz) is the right target. 
+The jump to 240Hz is a real and meaningful difference—but only if your graphics card and CPU can consistently produce 200+ frames per second. If you play competitive esports like Valorant, CS2, or Apex Legends, 240Hz reduces frame latency and motion blur. But if you play demanding AAA single-player games where your frame rate sits between 75 and 120 FPS, a 240Hz panel offers zero visual benefit over a 165Hz or 180Hz display.
 
 ## Response Time and the HDR Marketing Mirage
 
-Response time specs are highly misleading. Most claim 1ms, but they measure it using MPRT (Moving Picture Response Time) by strobing the backlight, which drastically reduces brightness and isn't something most people actually use. What you want is a fast GtG (Gray-to-Gray) response time. A well-tuned IPS panel at 4ms GtG performs very well in practice. Rely on independent reviewers who measure actual pixel response, not the box specs.
+Response time specs are highly misleading. Most boxes claim "1ms", but they measure it using MPRT (Moving Picture Response Time) by rapidly strobing the backlight, which cuts display brightness in half, causes subtle flicker, and usually disables variable refresh rate (G-Sync/FreeSync). 
 
-As for HDR — let me be blunt. HDR400 certification in this price range is almost entirely a marketing label. True HDR requires high peak brightness (600+ nits) and local dimming. HDR400 only requires 400 nits and no local dimming. The result is that "HDR" on these monitors just looks mildly brighter and entirely washed out. Do not choose a monitor because of an HDR400 badge. Focus on the base panel quality first.
+What you want to examine is true **GtG (Gray-to-Gray) pixel transition time**. A quality modern Fast IPS panel achieving real-world 3.5ms to 5ms GtG delivers fluid motion with zero overshoot artifacts. Look for independent lab tests (like RTINGS or Monitors Unboxed) that test overshoot and fall times rather than trusting the manufacturer's packaging badge.
+
+As for HDR: let's be blunt. **VESA DisplayHDR 400** certification in this price range is almost entirely marketing fluff. True High Dynamic Range requires peak brightness above 600–1,000 nits and local dimming (Mini-LED or OLED). HDR400 displays are edge-lit with no local dimming zones; enabling HDR simply blasts the entire backlight at max power, washing out contrast. For sub-$400 monitors, keep HDR disabled in Windows and enjoy calibrated SDR colors.
 
 ## Standout Recommendations
 
-There are a few monitors that consistently deliver in this bracket.
+There are a few monitors that consistently deliver top value in this bracket:
 
-The LG 27GP850-B (around $280) is my most frequent recommendation. The Nano IPS panel has excellent color coverage, fast pixel response, and a stand with full tilt, swivel, and height adjustment. It's the safest bet for a 1440p gaming and work monitor.
-
-The Dell S2722DGM (around $220) is a great budget 1440p pick if you don't mind a VA panel. The contrast is excellent for dark games, even if the build quality isn't quite as premium as the LG.
-
-If you absolutely must stay around $200 and need high refresh rates for competitive gaming, the BenQ MOBIUZ EX2710S offers a fast 1080p IPS panel with surprisingly good built-in speakers.
+- **LG UltraGear 27GS85Q-B / 27GP850-B (Around $260–$290):** The definitive benchmark for 27-inch 1440p gaming. Fast Nano IPS technology delivers exceptional pixel response times, 180Hz refresh rate, 98% DCI-P3 wide color gamut, and an ergonomic stand with height, tilt, and pivot.
+- **Gigabyte M27Q (Rev 2.0) (Around $240–$270):** Features 170Hz 1440p Fast IPS with an integrated **hardware KVM switch** and USB-C port, making it the best overall pick if you share your monitor between a work laptop and a gaming desktop.
+- **Dell S2722DGM (Around $200–$230):** The budget contrast pick. Its curved VA panel provides deep 3000:1 contrast for immersive single-player games in dark rooms, though fast competitive shooters will notice mild dark-level ghosting compared to Fast IPS.
+- **AOC 24G4 (Under $150):** If your budget is strictly under $200 and you need a high-refresh monitor for competitive gaming, **stick to 24 inches for 1080p**. The AOC 24G4 delivers a genuine 180Hz Fast IPS panel with sharp 92 PPI density, avoiding the pixelated 82 PPI smear of 27-inch 1080p screens.
 
 ## Ergonomics Matter
 
-If you spend four or more hours a day at the screen, an ergonomic stand matters. Look for at least 100mm of height adjustment so you can align the screen center to eye level. Tilt and swivel are important, and VESA compatibility (100x100mm) is crucial if you ever want to mount it on a monitor arm later. Don't compromise your neck posture for a slightly cheaper display without a height-adjustable stand.
+If you spend four or more hours a day at the screen, an ergonomic stand matters. Look for at least 100mm to 130mm of height adjustment so you can align the top third of the screen to eye level. Tilt and swivel are essential, and **VESA compatibility (100x100mm)** is crucial if you ever want to mount the screen on an adjustable monitor arm later. Don't sacrifice neck posture for a slightly cheaper display with a fixed, wobbly plastic tilt-only stand.
 
 
 ---

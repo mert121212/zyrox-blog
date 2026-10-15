@@ -73,11 +73,11 @@ If your desk is thicker than 60mm (common with solid wood), check the arm's maxi
 
 ## Cable Management Makes or Breaks the Look
 
-Honestly, the difference between an arm with internal cable routing and one without is massive. Arms like the Ergotron LX and Fully Jarvis route your cables through the arm itself. Cables enter near the monitor and exit near the desk clamp, hiding everything in between. The result is a completely clean desk.
+Honestly, the difference between an arm with integrated cable routing channels and a bare-bones arm is massive. Arms like the Ergotron LX and Amazon Basics route cables through dedicated snap-fit channels under the lower and upper arms. Cables enter near the monitor and exit near the desk clamp, keeping cables neatly hidden.
 
-Arms without internal channels (like the Amazon Basics and HUANUO) require you to clip or zip-tie cables along the outside of the arm. It works, but it looks noticeably messier.
+Budget arms without integrated channels require you to zip-tie or clip cables along the outside of the metal, which looks visibly messier.
 
-A couple of practical tips: use right-angle cables where they exit the monitor to reduce tension, and always leave enough slack so the screen can tilt and rotate without pulling cables taut. And please use velcro ties instead of zip ties — velcro lets you adjust without cutting anything.
+A couple of practical tips: use right-angle DisplayPort/HDMI cables where they exit the monitor to reduce port strain, and always leave enough cable slack at the joints so the screen can tilt, rotate, and elevate without pulling cables taut. Use velcro ties instead of zip ties—velcro lets you swap or re-route cables without cutting anything.
 
 
 ---
