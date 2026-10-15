@@ -9,15 +9,6 @@
     <atom:link rel="hub" href="https://pubsubhubbub.superfeedr.com/" />
     <language>en</language>
     <item>
-      <title>Ryzen 7 9800X3D vs 7800X3D — What Actually Changed and Does It Matter</title>
-      <link>https://zyroxlab.com/posts/ryzen-7-9800x3d-vs-7800x3d/</link>
-      <guid>https://zyroxlab.com/posts/ryzen-7-9800x3d-vs-7800x3d/</guid>
-      <description>Testing the Ryzen 7 9800X3D against the 7800X3D with an air cooler, four games, and HWInfo64 thermal logs. The packaging changed more than you'd expect. The framerates didn't always follow.</description>
-      <pubDate>Sat, 10 Oct 2026 00:00:00 GMT</pubDate>
-      <media:content url="https://zyroxlab.com/images/posts/ryzen-7-9800x3d-vs-7800x3d.jpg" medium="image" />
-      <enclosure url="https://zyroxlab.com/images/posts/ryzen-7-9800x3d-vs-7800x3d.jpg" type="image/jpeg" length="0" />
-    </item>
-    <item>
       <title>Why High-End Gaming PCs Keep Stuttering on Windows 11: The Default Security Feature Silently Killing Your 1% Lows</title>
       <link>https://zyroxlab.com/posts/why-high-end-pcs-stutter-windows-11-memory-integrity/</link>
       <guid>https://zyroxlab.com/posts/why-high-end-pcs-stutter-windows-11-memory-integrity/</guid>

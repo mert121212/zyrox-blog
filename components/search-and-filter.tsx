@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import type { Post } from '@/lib/posts';
+import type { PostMeta } from '@/lib/posts';
 import { authors } from '@/lib/authors';
 
 type SortOption = 'newest' | 'oldest' | 'az';
@@ -23,7 +23,7 @@ const AUTHOR_AVATAR: Record<string, string> = Object.fromEntries(
     authors.map((a) => [a.slug, a.avatar]),
 );
 
-export function SearchAndFilter({ posts }: { posts: Post[] }) {
+export function SearchAndFilter({ posts }: { posts: PostMeta[] }) {
     // ── ALL hooks must be called unconditionally at the top ───
     const [query, setQuery] = useState('');
     const [activeTag, setActiveTag] = useState('All');

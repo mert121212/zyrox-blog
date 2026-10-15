@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import type { Post } from '@/lib/posts';
+import type { PostMeta } from '@/lib/posts';
 
 const TOPIC_GROUPS: { name: string; icon: string; match: (category: string) => boolean }[] = [
     {
@@ -34,7 +34,7 @@ const TOPIC_GROUPS: { name: string; icon: string; match: (category: string) => b
     },
 ];
 
-export function TopicDirectory({ posts }: { posts: Post[] }) {
+export function TopicDirectory({ posts }: { posts: PostMeta[] }) {
     const grouped = TOPIC_GROUPS.map((group) => {
         const groupPosts = posts.filter((p) => group.match(p.category));
         return {

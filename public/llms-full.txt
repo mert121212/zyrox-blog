@@ -2,38 +2,6 @@
 
 > Complete catalog of technical PC hardware guides, testing data, and troubleshooting articles published on Zyrox (https://zyroxlab.com).
 
-## Gaming
-
-### [Ryzen 7 9800X3D vs 7800X3D — What Actually Changed and Does It Matter](https://zyroxlab.com/posts/ryzen-7-9800x3d-vs-7800x3d/)
-- Published: 2026-10-10
-- Summary: Testing the Ryzen 7 9800X3D against the 7800X3D with an air cooler, four games, and HWInfo64 thermal logs. The packaging changed more than you'd expect. The framerates didn't always follow.
-- Topics: Ryzen 7 9800X3D, Ryzen 7 7800X3D, CPU, AMD, Gaming Benchmarks, AM5
-
-### [How to Check If Your PC Can Run a Game Before You Buy It](https://zyroxlab.com/posts/how-to-check-if-your-pc-can-run-a-game-before-you-buy-it/)
-- Published: 2026-08-07
-- Summary: Quickly check if your PC can run a specific game without guessing. Compare your specs to requirements using free built-in tools.
-- Topics: PC Gaming, System Requirements, Hardware, Troubleshooting
-
-### [Best GPU for 1440p Gaming: What to Buy in 2026](https://zyroxlab.com/posts/best-gpu-for-1440p-gaming/)
-- Published: 2026-08-06
-- Summary: Find the best GPU for 1440p gaming in 2026. A practical guide to performance tiers, price-to-FPS value, and smart upgrade decisions.
-- Topics: GPU, 1440p, Gaming, Graphics Card
-
-### [How to Build a Budget Gaming PC That Still Feels Fast (2026 Guide)](https://zyroxlab.com/posts/how-to-build-a-budget-gaming-pc/)
-- Published: 2026-07-17
-- Summary: Step-by-step guide to building a high-FPS budget gaming PC under $600 and $800. Part lists, real 1080p benchmarks, used GPU tips, and where to never cut corners.
-- Topics: Budget Gaming, Gaming PC, Value, PC Build, Hardware
-
-### [Should You Buy an SSD or HDD for Game Storage](https://zyroxlab.com/posts/should-you-buy-an-ssd-or-hdd-for-game-storage/)
-- Published: 2026-07-09
-- Summary: Compare SSD and HDD storage for gaming. Faster load times vs more capacity — find the right balance for your game library and budget.
-- Topics: Gaming, SSD, HDD, Storage
-
-### [What Actually Matters in a Gaming PC Build](https://zyroxlab.com/posts/what-actually-matters-in-a-gaming-pc/)
-- Published: 2026-07-01
-- Summary: Cut through PC marketing and learn which components actually affect frame rates, smoothness, and long-term upgrade value in gaming.
-- Topics: Gaming PC, GPU, FPS, Build Advice
-
 ## Performance
 
 ### [Why High-End Gaming PCs Keep Stuttering on Windows 11: The Default Security Feature Silently Killing Your 1% Lows](https://zyroxlab.com/posts/why-high-end-pcs-stutter-windows-11-memory-integrity/)
@@ -180,6 +148,33 @@
 - Published: 2026-07-03
 - Summary: Why paying for 7200MHz+ DDR5 is a waste of money for gaming and productivity. Real DDR5 gaming benchmarks, 1% low frame times, 4-DIMM stability traps, and sweet-spot recommendations.
 - Topics: RAM, Memory, Performance, Hardware, PC Building
+
+## Gaming
+
+### [How to Check If Your PC Can Run a Game Before You Buy It](https://zyroxlab.com/posts/how-to-check-if-your-pc-can-run-a-game-before-you-buy-it/)
+- Published: 2026-08-07
+- Summary: Quickly check if your PC can run a specific game without guessing. Compare your specs to requirements using free built-in tools.
+- Topics: PC Gaming, System Requirements, Hardware, Troubleshooting
+
+### [Best GPU for 1440p Gaming: What to Buy in 2026](https://zyroxlab.com/posts/best-gpu-for-1440p-gaming/)
+- Published: 2026-08-06
+- Summary: Find the best GPU for 1440p gaming in 2026. A practical guide to performance tiers, price-to-FPS value, and smart upgrade decisions.
+- Topics: GPU, 1440p, Gaming, Graphics Card
+
+### [How to Build a Budget Gaming PC That Still Feels Fast (2026 Guide)](https://zyroxlab.com/posts/how-to-build-a-budget-gaming-pc/)
+- Published: 2026-07-17
+- Summary: Step-by-step guide to building a high-FPS budget gaming PC under $600 and $800. Part lists, real 1080p benchmarks, used GPU tips, and where to never cut corners.
+- Topics: Budget Gaming, Gaming PC, Value, PC Build, Hardware
+
+### [Should You Buy an SSD or HDD for Game Storage](https://zyroxlab.com/posts/should-you-buy-an-ssd-or-hdd-for-game-storage/)
+- Published: 2026-07-09
+- Summary: Compare SSD and HDD storage for gaming. Faster load times vs more capacity — find the right balance for your game library and budget.
+- Topics: Gaming, SSD, HDD, Storage
+
+### [What Actually Matters in a Gaming PC Build](https://zyroxlab.com/posts/what-actually-matters-in-a-gaming-pc/)
+- Published: 2026-07-01
+- Summary: Cut through PC marketing and learn which components actually affect frame rates, smoothness, and long-term upgrade value in gaming.
+- Topics: Gaming PC, GPU, FPS, Build Advice
 
 ## Power
 

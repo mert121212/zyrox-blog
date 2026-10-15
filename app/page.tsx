@@ -16,6 +16,12 @@ export const metadata = {
 export default function HomePage() {
     const posts = getAllPosts();
 
+    // SEO FIX: Strip heavy `content` field before passing to client components.
+    // Without this, Next.js RSC payload embeds ALL 67 articles' full text into the
+    // homepage HTML (~690KB), causing Google to see massive duplicate content and
+    // refuse to index individual article pages ("Crawled - currently not indexed").
+    const postsWithoutContent = posts.map(({ content, ...rest }) => rest);
+
     const featuredSlugs = [
         'best-gpu-for-1440p-gaming',
         'best-cpu-cooler-for-ryzen-7-7800x3d',
@@ -120,12 +126,12 @@ export default function HomePage() {
                         <h2>Latest Guides & Tutorials</h2>
                         <p>Search, filter, and explore our complete database of hardware teardowns and fixes.</p>
                     </div>
-                    <SearchAndFilter posts={posts} />
+                    <SearchAndFilter posts={postsWithoutContent} />
                 </div>
             </section>
 
             {/* Topic Directory - 100% Crawlable Pillar Clusters */}
-            <TopicDirectory posts={posts} />
+            <TopicDirectory posts={postsWithoutContent} />
         </main>
     );
 }

@@ -44,6 +44,8 @@ export type Post = {
     key_takeaways?: string[];
 };
 
+export type PostMeta = Omit<Post, 'content'>;
+
 export function getAllPosts(): Post[] {
     const fileNames = fs.readdirSync(postsDirectory);
 
@@ -72,6 +74,10 @@ export function getAllPosts(): Post[] {
             } as Post;
         })
         .sort((a, b) => (a.date < b.date ? 1 : -1));
+}
+
+export function getAllPostsMeta(): PostMeta[] {
+    return getAllPosts().map(({ content, ...rest }) => rest);
 }
 
 export function getPostBySlug(slug: string): Post | null {
