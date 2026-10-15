@@ -54,8 +54,8 @@ Windows 11 is chatty. It constantly reports telemetry back to Microsoft, keeps i
 
 Two critical settings to configure:
 
-1. **Background App Permissions:** Open **Settings (`Win + I`) > Apps > Installed apps**. For apps you rarely use, click the three dots (`...`), select **Advanced options**, and change "Background apps permissions" to **Never**.
-2. **Telemetry & Diagnostics:** Open **Settings > Privacy & security > Diagnostics & feedback**. Turn off **"Send optional diagnostic data"** and disable **"Tailored experiences"**. You don't need Microsoft tracking your behavior to "improve" your experience.
+1. **Background App Permissions (Microsoft Store / UWP Apps):** Open **Settings (`Win + I`) > Apps > Installed apps**. For built-in Store apps you rarely use (like Weather, Maps, or Xbox services), click the three dots (`...`), select **Advanced options**, and change "Let this app run in background" to **Never**. *(Note: Traditional Win32 desktop programs like Steam or Discord don't have this toggle; their background activity is controlled via the Startup apps tab in Step 1).*
+2. **Telemetry & Diagnostics:** Open **Settings > Privacy & security > Diagnostics & feedback**. Turn off **"Send optional diagnostic data"** and disable **"Tailored experiences"**. You don't need Microsoft collecting your usage telemetry to serve targeted suggestions.
 
 ---
 
@@ -92,13 +92,13 @@ Your primary Windows partition (`C:`) needs breathing room. Windows uses free di
 
 ---
 
-## 6. Configure Your Power Plan (2 Min)
+## 6. Configure Your Power Mode (2 Min)
 
 Windows 11 defaults to the "Balanced" power plan, which dynamically balances clock speeds and sleep states.
 
 - **Laptops on Battery:** Keep on **Balanced** (or "Best power efficiency" in Windows 11 Settings) to preserve battery runtimes.
-- **Modern AMD Ryzen Desktops (AM4 / AM5):** **Stick strictly to the default Balanced plan.** AMD's official chipset drivers hook directly into Windows 11's Balanced power profile to manage CPPC (Collaborative Processor Performance Control) and Core Parking. On dual-CCD X3D processors (like the 7900X3D and 7950X3D), forcing "High Performance" disables core parking, scattering game threads onto frequency cores instead of the 3D V-Cache CCD and causing micro-stuttering.
-- **Intel Desktop PCs:** In **Control Panel > Hardware and Sound > Power Options**, you can select **High Performance** (or configure the Power Mode in Windows 11 Settings to "Best performance"). This keeps CPU execution clocks at full readiness, preventing downclocking lag during latency-sensitive audio production or competitive gaming.
+- **Modern AMD Ryzen Desktops (AM4 / AM5):** **Stick strictly to the default Balanced plan.** AMD's official chipset drivers hook directly into Windows 11's Balanced power profile to manage CPPC (Collaborative Processor Performance Control) and Core Parking. On dual-CCD X3D processors (like the 7900X3D and 7950X3D), forcing "High Performance" in Control Panel disables core parking, scattering game threads onto frequency cores instead of the 3D V-Cache CCD and causing severe micro-stuttering.
+- **Modern Intel Desktop PCs (12th–14th Gen & Core Ultra):** Keep Windows power plan on **Balanced**, and instead set **Settings > System > Power & battery > Power mode** to **"Best performance"**. This allows the Intel Thread Director to correctly distribute foreground tasks to P-cores and background tasks to E-cores without pinning all cores at max voltage during idle.
 
 ---
 

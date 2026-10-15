@@ -54,11 +54,11 @@ This usually happens when you are downloading large files, running compilers tha
 
 ## Step 5: Browser Tab CPU Usage
 
-Browsers are incredibly heavy on the CPU. Google Chrome runs a separate process for every single tab, which isolates crashes but uses a lot of resources. Firefox is a bit more memory efficient, while Edge (which is Chromium-based) has a great Efficiency Mode that actively throttles background tabs.
+Modern web browsers are multi-process applications that consume substantial CPU and RAM. Each tab, extension, and GPU canvas runs in an isolated process.
 
-If you use Chrome, the Hardware Acceleration setting can sometimes cause spikes depending on your GPU drivers. If Chrome's GPU process is maxing out, try disabling it in Chrome's system settings. 
-
-The easiest way to debug a browser is to expand its entry in Task Manager to see individual tabs. The culprit is almost always a site running autoplay video, heavy JavaScript, or a poorly optimized web app. Extensions like Grammarly or heavy ad blockers are also frequent offenders.
+- **Built-in Browser Task Managers:** Instead of guessing which tab is freezing your machine, press `Shift + Esc` inside Google Chrome or Microsoft Edge. This opens the browser's internal Task Manager, displaying the exact CPU percentage and memory footprint of every open tab, iframe, and extension in real time.
+- **Background Throttling:** Turn on **Memory Saver** in Chrome (`Settings > Performance`) or **Sleeping Tabs** in Edge. Both features automatically freeze inactive background tabs, preventing rogue JavaScript loops and video ads from burning CPU cycles while you work elsewhere.
+- **Hardware Acceleration:** If Chrome or Edge's GPU process is pegging your CPU at 100%, outdated GPU drivers may be failing hardware-accelerated video decoding. Either update your graphics drivers or temporarily disable hardware acceleration in browser settings while troubleshooting.
 
 ## Step 6: Malware Scans
 
@@ -78,11 +78,16 @@ In Task Manager, you might see "System Idle Process" sitting at 90–99% CPU usa
 
 System Idle Process represents the percentage of CPU time that is *not* being used. A high number means your CPU is mostly free and resting. If System Idle Process is low (like 10%), that means something else is consuming 90% of your CPU. That's when you need to investigate.
 
-## Step 9: Driver-Level CPU Usage
+## Step 9: Driver-Level CPU Spikes and "System Interrupts"
 
-Some of the hardest-to-find CPU spikes come from drivers running in kernel mode. In Task Manager, this shows up as "System" (the Windows kernel process) consuming elevated CPU.
+Some of the hardest-to-find CPU hogs come from kernel-mode driver errors. In Task Manager, this shows up as elevated CPU usage under **"System"** or **"System Interrupts"**:
 
-If it spikes during gaming, it's usually the GPU driver. Use Display Driver Uninstaller (DDU) to wipe it and reinstall. If it spikes during downloads, update your network driver. For general instability, check your motherboard vendor for chipset updates.
+- **Understanding System Interrupts:** System Interrupts is not a standard program; it represents hardware communication requests (Interrupt Requests and Deferred Procedure Calls - DPCs). If System Interrupts hovers above 3–5% CPU at idle, a faulty hardware driver or failing peripheral is misbehaving.
+- **Diagnosing with LatencyMon:** Download the free tool **LatencyMon** and click the green Start button. Let it run for 3 minutes. It monitors kernel latency and tells you the exact driver filename causing the spike:
+  - `nvlddmkm.sys`: Nvidia GPU driver (reinstall using Display Driver Uninstaller - DDU in Safe Mode).
+  - `dxgkrnl.sys`: DirectX graphics kernel (GPU driver or multi-monitor refresh rate mismatch).
+  - `ndis.sys` / `tcpip.sys`: Network adapter driver (update your Realtek/Intel LAN or Wi-Fi driver).
+  - `ACPI.sys`: Motherboard power management (update BIOS firmware and chipset drivers).
 
 ## Step 10: Background Service Cleanup
 

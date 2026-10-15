@@ -58,14 +58,20 @@ Open Settings (Windows Key + I) and go to System > Storage. Toggle **Storage Sen
 This one is sneaky. Every app you use — Discord, Spotify, Chrome, Adobe stuff — stores temporary cache files in a hidden folder called AppData to make things load faster. Over time, it gets out of control. Discord is the absolute worst offender, hoarding gigabytes of cached memes and videos from servers you haven't looked at in a year.
 
 Here's how to clear it safely:
-Press Windows Key + R to open the Run box.
-Type `%temp%` and hit Enter.
+1. Press `Win + R` to open the Run box, type `%temp%`, and hit Enter. This opens your user temp folder (`AppData\Local\Temp`). Press `Ctrl + A`, then `Shift + Delete`. If a prompt says a file is in use by an active program, check "Do this for all current items" and click **Skip**.
+2. Press `Win + R` again, type `temp`, and hit Enter. This opens the system-level temp cache (`C:\Windows\Temp`). Clear these files using the same method.
 
-A folder will open with hundreds (or thousands) of weirdly named files. Press Ctrl + A to select everything, then Shift + Delete to permanently trash them.
+## 4. Reclaim 15–30 GB from the Hibernation File (Desktop PCs)
 
-A warning is going to pop up saying some files are in use. That just means a program you have open right now needs that specific file. Check the box that says "Do this for all current items" and hit Skip. You can't delete files that are currently being used, and that's fine.
+If you are using a desktop PC (or a laptop where you never use the Hibernate feature), Windows reserves a massive hidden file on your root drive called `hiberfil.sys` to store RAM state. On modern PCs with 32 GB or 64 GB of RAM, this file silently occupies 15 to 30 GB of your C: drive.
 
-## 4. Find the Real Culprits with WizTree
+If you don't use Hibernate:
+1. Right-click the Start menu and select **Terminal (Admin)** or **Command Prompt (Admin)**.
+2. Type: `powercfg /hibernate off` and hit Enter.
+
+The 20+ GB `hiberfil.sys` file is deleted instantly, handing that storage back to your usable pool. *(Note: On laptops where you travel without a charger, keep hibernate enabled as explained in our battery guide).*
+
+## 5. Find the Real Culprits with WizTree
 
 If you did all that and your drive is still mysteriously full, you need a visual map. Clicking through folders manually to find large files is miserable.
 
