@@ -63,7 +63,7 @@ Negative pressure happens when you have more exhaust than intake. While it can s
 
 Front fans should be intakes, pulling fresh air into the case toward the CPU and GPU. Two 140mm or three 120mm fans work perfectly here. The rear fan, positioned behind the CPU cooler, must be an exhaust, blowing hot air out. 
 
-Top fans should also be exhaust, because hot air naturally rises. Installing intake fans on the top actively fights convection and ruins your airflow path. Bottom fans, if your case supports them, are great for intake, feeding fresh air directly into the GPU fans.
+Top fans should also be configured as exhaust. While builders often cite "heat rises," active fan pressure is what actually drives cooling—placing top exhausts directly above the CPU fin stack and motherboard VRMs allows warm air to evacuate immediately without circulating back across the motherboard. Bottom fans, if your case supports them, are great for intake, feeding fresh ambient air directly into the graphics card fans.
 
 One of the most common mistakes I see is builders installing all fans as exhaust, thinking it will pull all the hot air out. This creates severe negative pressure, sucks in dust from everywhere, and starves the components of fresh, cool air.
 

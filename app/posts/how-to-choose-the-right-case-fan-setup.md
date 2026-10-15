@@ -35,14 +35,14 @@ My recommendation for almost everyone: slight positive pressure with filtered in
 
 ## The Layout That Actually Works
 
-The most reliable airflow path for tower cases follows a simple front-to-back, bottom-to-top logic that mirrors natural convection. Heat rises, so exhausting from the top reinforces what physics is already doing for you.
+The most reliable airflow path for tower cases follows a front-to-back, bottom-to-top layout. Builders often cite "heat rises" (natural convection), but in reality, active case fans spinning at 800+ RPM generate forced convection that overpowers natural thermal buoyancy by orders of magnitude. The true reason this layout succeeds is fluid dynamics: it creates a clean, unidirectional airflow channel that ingests fresh ambient air from unheated zones (front/bottom) and expels it out the rear and top before heated GPU exhaust can recirculate back over the motherboard.
 
 For a standard mid-tower, here's what works:
-- **Front:** 2-3 intake fans pulling cool air into the case
-- **Rear:** 1 exhaust fan pushing hot air out behind the CPU area
-- **Top:** 1-2 exhaust fans (especially useful if you have a high-TDP chip or a top-mounted radiator)
+- **Front:** 2-3 intake fans pulling cool ambient air across storage and into the GPU/CPU zones.
+- **Rear:** 1 exhaust fan pulling hot air directly off the CPU cooler fin stack.
+- **Top:** 1-2 exhaust fans (especially over the rear VRMs or for a top-mounted AIO radiator).
 
-What you want to avoid: intake and exhaust on the same side, or exhaust from the front (which fights natural convection). I once saw a build where someone mounted top intake and rear exhaust — the top fans were pulling hot air from the GPU cooler right back down over it instead of letting it escape. Absolute disaster.
+What you want to avoid: intake and exhaust on the same panel, or mounting top intakes with rear exhaust, which forces hot air exhausted from the graphics card back down into the CPU socket area. Keep airflow moving continuously in one direction.
 
 ## 120mm vs 140mm: Bigger is (Usually) Quieter
 

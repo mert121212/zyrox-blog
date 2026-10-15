@@ -73,7 +73,7 @@ Go with air cooling if your budget is $50 to $100, if silence matters, if your c
 
 Go with an AIO if you're running a high-TDP chip like the i9-13900K or Ryzen 9 7950X, if aesthetics and a clean build matter to you, if your case is compact but has radiator mounts, or if you're overclocking aggressively and need sustained thermal headroom.
 
-For a Ryzen 7 7700X or Core i7-13700K at stock settings, the Noctua NH-D15 is the smarter choice every time. For a Ryzen 9 7950X or a heavily overclocked Core i9, the Arctic Liquid Freezer III 360 is worth the extra $30 and added complexity.
+For gaming-focused builds with processors like the Ryzen 7 7800X3D, Ryzen 7 7700X, or Core i5-13600K/14600K, a top dual-tower air cooler (like the Thermalright Phantom Spirit or Noctua NH-D15) is the smarter choice every time. For sustained 250W+ workstation rendering on a Core i7-13700K/14700K, Core i9, or Ryzen 9 7950X, a 360mm AIO like the Arctic Liquid Freezer III 360 is worth the investment for maximum thermal headroom and silence under prolonged load.
 
 
 ---

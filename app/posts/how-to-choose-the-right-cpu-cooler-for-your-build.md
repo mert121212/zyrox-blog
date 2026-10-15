@@ -33,7 +33,7 @@ Look up your CPU's actual sustained wattage (PPT for AMD, PL2 for Intel) and buy
 
 For entry-level chips (Ryzen 5 7600, Core i3-14100) drawing 65-88W, basically any aftermarket tower cooler will do the job.
 
-For mid-range chips (Ryzen 7 7700X, Core i5-14600K) pulling 105-125W, you want a quality 120-160mm tower cooler.
+For mid-range performance chips (Ryzen 7 7700X pulling up to 142W PPT, Core i5-14600K drawing up to 181W PL2), you want a quality dual-tower air cooler (like the Thermalright Phantom Spirit) or a 240mm AIO to avoid fan ramping.
 
 For high-end monsters (Ryzen 9 7950X, Core i9-14900K) that can pull 230-253W under sustained load, you need either a beefy dual-tower air cooler or a 280-360mm AIO.
 
