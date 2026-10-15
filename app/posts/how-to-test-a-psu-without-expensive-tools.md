@@ -31,9 +31,9 @@ The first test costs nothing and takes about five minutes. You're looking for ph
 
 Power off completely and unplug the PSU from the wall. Wait 30 seconds before opening your case. Look through the PSU fan grill with a flashlight. Check for heavy dust accumulation, which causes overheating, and look closely at the capacitors near the fan. 
 
-Inspect the external connectors, specifically the 24-pin ATX, the EPS CPU, and the PCIe power cables. Look for burn marks, melted plastic, or discolored pins. If you see melted plastic on a PCIe connector, it's a massive fire risk. Do not use that unit again. 
+Inspect the external connectors, specifically the 24-pin ATX, the EPS CPU, and the PCIe power cables. Look for burn marks, melted plastic, or discolored pins. If you see melted plastic on a PCIe or 12VHPWR connector, it's a severe hazard. Do not use that unit again.
 
-If you are inspecting a dead unit out of warranty and open it up, look for bulging capacitors. The tops should be perfectly flat; if they are domed or leaking fluid, the unit is failing. Look for brown scorch marks on the PCB. Visual inspection is definitive when you find damage, but a visually pristine PSU can still be failing internally.
+> **Life Safety Warning:** **NEVER open the metal casing of a power supply under any circumstances.** Internal high-voltage primary bulk capacitors can hold lethal electrical charges (400V to 450V) for hours or even days after being disconnected from the wall. Only inspect what is visible from the outside through the honeycomb mesh using a flashlight. If you see bulging or leaking capacitors through the grill, condemn the unit immediately.
 
 ## Method 2 — The Paper Clip Test
 

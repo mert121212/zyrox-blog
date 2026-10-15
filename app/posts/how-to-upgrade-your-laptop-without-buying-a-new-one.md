@@ -45,7 +45,7 @@ Buying the wrong SSD form factor is a surprisingly common mistake. The SSD needs
 
 Most 15-inch laptops and desktops use the 2280 form factor (22 mm wide, 80 mm long). Small ultrabooks sometimes use the shorter 2242 format, and ultra-compact devices like the [Microsoft](https://www.microsoft.com) Surface or Steam Deck use the tiny 2230 format. If you buy a 2280 drive for a 2230 slot, it physically won't fit. 
 
-Also, verify the interface. Most laptops built after 2018 use M.2 NVMe PCIe. Older budget models might use M.2 SATA, which uses the same physical connector but a different protocol. An NVMe drive in a SATA-only slot won't work. For 2280 slots, drives like the WD Black SN850X or Crucial T705 are fantastic. For smaller 2230 slots, the WD SN740 is a solid choice.
+Also, verify the interface and thermal profile. Most laptops built after 2018 use M.2 NVMe PCIe. **Never install a PCIe 5.0 drive (like the Crucial T705) in a laptop.** Gen 5 drives pull 11–14W, run blistering hot, and require massive desktop heatsinks; inside a sealed laptop bay, they will immediately thermal throttle and destroy battery life. Stick to cool-running, power-efficient, single-sided PCIe 4.0 drives like the **WD Black SN850X**, **Samsung 990 Pro (without heatsink)**, or **WD Blue SN580**. For compact 2230 handheld/ultrabook slots (like Steam Deck or Surface Pro), the **WD SN770M** or **Corsair MP600 Mini** are ideal choices.
 
 ## Thermal Repaste: The Underrated Performance Restorer
 

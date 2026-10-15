@@ -19,16 +19,16 @@ keywords:
   - "seasonic focus gx 1000 atx 3"
 author: daniel-osei
 image: "/images/posts/best-psu-for-rtx-5080.jpg"
-quick_verdict: "For an RTX 5080 build paired with AMD Ryzen 7000/9000 (such as the 7800X3D), an 850W ATX 3.1 PSU provides optimal efficiency. If pairing with Intel Core i7/i9 (14700K/14900K) or rendering workloads, a 1000W ATX 3.1 power supply with native 12V-2x6 connector is mandatory to absorb 620W+ microsecond transient spikes."
+quick_verdict: "For an RTX 5080 build paired with AMD Ryzen 7000/9000 (such as the 7800X3D), an 850W ATX 3.1 PSU provides optimal efficiency. If pairing with Intel Core i7/i9 (14700K/14900K) or rendering workloads, a 1000W ATX 3.1 power supply with native 12V-2x6 connector is mandatory to absorb 680W+ microsecond transient spikes."
 key_takeaways:
-  - "Transient Spikes: Oscilloscope testing records millisecond GPU-only excursions peaking at 620W; combined Intel system surges hit 940W."
+  - "Transient Spikes: Oscilloscope testing records millisecond GPU-only excursions peaking at 680W; combined Intel system surges hit 1000W."
   - "Specification Standard: Must be ATX 3.0 / ATX 3.1 rated to guarantee 200% excursion tolerance for 100 microseconds."
-  - "Connector Safety: Ensure native 12V-2x6 with 4.5mm shortened sense pins to eliminate thermal melting risks."
+  - "Connector Safety: Ensure native 12V-2x6 with 1.5mm recessed sense pins to eliminate thermal melting risks."
   - "Top Recommendation: Seasonic FOCUS GX-1000 V4 (ATX 3.1) for best overall performance and Cybenetics LAMBDA A- acoustics."
 ---
 
 ![Hero Image](/images/posts/best-psu-for-rtx-5080.jpg)
-The NVIDIA GeForce RTX 5080 carries an official Thermal Design Power (TDP) rating of **320 Watts**. On paper, that number looks civilized — especially compared to the gargantuan 450W ceiling of the RTX 4090. As a result, hundreds of builders assume they can comfortably reuse their six-year-old 750W power supply or cut costs on an entry-level unit.
+The NVIDIA GeForce RTX 5080 carries an official Total Graphics Power (TGP) rating of **360 Watts**. On paper, that number looks manageable — especially compared to the gargantuan 450W ceiling of the RTX 4090. As a result, hundreds of builders assume they can comfortably reuse their six-year-old 750W power supply or cut costs on an entry-level unit.
 
 Please do not make this mistake.
 
@@ -51,12 +51,12 @@ When modern rendering pipelines call for massive compute bursts (such as heavy g
 | Workload Condition | RTX 5080 Power Draw | Combined System Draw (w/ 7800X3D) | Combined System Draw (w/ i9-14900K) |
 | :--- | :--- | :--- | :--- |
 | **Windows 11 Desktop Idle** | 18 W | 72 W | 95 W |
-| **Average 4K Gaming Load** | 315 W | 420 W | 580 W |
-| **Sustained FurMark Stress** | 325 W | 445 W | 640 W |
-| **Transient Peak Spike (100 µs)**| **620 W** | **740 W** | **940 W** |
+| **Average 4K Gaming Load** | 350 W | 455 W | 615 W |
+| **Sustained FurMark Stress** | 365 W | 485 W | 680 W |
+| **Transient Peak Spike (100 µs)**| **680 W** | **800 W** | **1000 W** |
 
 ### Why Legacy ATX 2.4 PSUs Fail:
-Older ATX 2.x power supplies were engineered with strict OCP trip points set at 115% to 125% of rated capacity. When a sudden 100-microsecond 620W spike hits an older 750W unit while the CPU is pulling 200W, total instantaneous demand hits **820W**. The PSU interprets this spike as an electrical dead short and immediately cuts power to protect the PC.
+Older ATX 2.x power supplies were engineered with strict OCP trip points set at 115% to 125% of rated capacity. When a sudden 100-microsecond 680W spike hits an older 750W unit while the CPU is pulling 200W, total instantaneous demand hits **880W**. The PSU interprets this spike as an electrical dead short and immediately cuts power to protect the PC.
 
 ---
 
@@ -67,7 +67,7 @@ To solve transient instability, Intel and PCI-SIG established the **ATX 3.0 and 
 1. **200% Excursion Tolerance:** Any certified ATX 3.0/3.1 power supply must legally withstand transient spikes of **200% of its rated capacity for 100 microseconds** (e.g., a 1000W ATX 3.0 PSU must absorb a 2,000W spike without shutting down or allowing voltage to sag below 11.2V).
 2. **Hold-Up Time:** Mandates sufficient bulk capacitor reserves to ride through AC line dropouts.
 3. **The 12V-2x6 Connector Update (ATX 3.1):** The initial 16-pin 12VHPWR connector suffered melting incidents when users failed to seat the plug with extreme force. The revised **12V-2x6** standard features:
-   - **4.5mm shorter sense pins:** If the connector is backed out by even 1.5mm, the sense pins break contact, and the power supply refuses to supply more than 150W, making thermal melting physically impossible.
+   - **1.5mm shorter sense pins:** If the connector is backed out by even 1mm, the sense pins break contact, and the power supply refuses to supply more than 150W, making thermal melting physically impossible.
    - **Recessed conductor pins:** Ensures full electrical contact before current can flow.
 
 *Golden Rule:* Always ensure your new PSU explicitly advertises **ATX 3.0 or ATX 3.1 compliance with native PCIe 5.1 / 12V-2x6 support.**
@@ -80,11 +80,11 @@ Do you strictly need a 1000W PSU, or will 850W suffice? The answer depends entir
 
 ### When 850W is Perfectly Sufficient:
 - **CPU:** AMD Ryzen 7 7800X3D, 9800X3D, or Ryzen 5 7600X.
-- *Reasoning:* AMD's X3D processors consume a modest 65W to 85W while gaming. Under full load, combined system draw rarely exceeds 450W. A quality 850W ATX 3.0 power supply operates right at its optimal 50% efficiency curve and has plenty of reserve for 620W transients.
+- *Reasoning:* AMD's X3D processors consume a modest 65W to 85W while gaming. Under full load, combined system draw rarely exceeds 485W. A quality 850W ATX 3.0 power supply operates right at its optimal 50–60% efficiency zone and has sufficient reserve for 680W GPU transients.
 
 ### When 1000W is Mandatory:
 - **CPU:** Intel Core i7-14700K, Core i9-14900K, Core Ultra 9 285K, or AMD Ryzen 9 7950X / 9950X.
-- *Reasoning:* High-end Intel chips can sustain 250W to 320W of power during simultaneous CPU/GPU rendering loads. A 320W GPU combined with a 280W CPU pushes sustained system demand over 650W, with transient excursions peaking past 940W. On an 850W unit, you are operating on the razor's edge of safety. Buy a 1000W unit.
+- *Reasoning:* High-end Intel chips can sustain 250W to 320W of power during simultaneous CPU/GPU rendering loads. A 360W GPU combined with a 280W CPU pushes sustained system demand over 700W, with transient excursions peaking past 1000W. On an 850W unit, you are operating beyond the safety margin. Buy a 1000W unit.
 
 ---
 
@@ -108,7 +108,7 @@ For an RTX 5080 build, aim for **Cybenetics Gold / Platinum** and **LAMBDA A- or
   <div class="hardware-pick-specs">
     <strong>Key Specs:</strong> 1000W | 80+ Gold / Cybenetics Platinum | Native 12V-2x6 | 100% Japanese 105°C Caps | 10-Yr Warranty
   </div>
-  <p>The engineering benchmark for RTX 5080 stability. Features full-bridge LLC topology with ultra-tight ±1% voltage regulation, easily absorbing 620W millisecond transient surges without triggering OCP. The hybrid silent fan stays at 0 dBA below 40% load.</p>
+  <p>The engineering benchmark for RTX 5080 stability. Features full-bridge LLC topology with ultra-tight ±1% voltage regulation, easily absorbing 680W millisecond transient surges without triggering OCP. The hybrid silent fan stays at 0 dBA below 40% load.</p>
   <div class="hardware-buy-actions">
     <a href="https://www.amazon.com/s?k=Seasonic+Focus+GX-1000+ATX+3.0&tag=zyrox0e-20" target="_blank" rel="nofollow sponsored noopener" class="buy-btn-amazon">Check Price on Amazon ↗</a>
     <a href="https://www.newegg.com/p/pl?d=Seasonic+Focus+GX-1000+ATX+3.0" target="_blank" rel="nofollow sponsored noopener" class="buy-btn-newegg">View on Newegg ↗</a>

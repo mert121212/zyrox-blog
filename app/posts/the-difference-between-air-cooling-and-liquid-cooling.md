@@ -31,15 +31,19 @@ An AIO (All-In-One) liquid cooler replaces that heatsink with a fluid loop. A co
 
 This is where a lot of content gets misleading. People compare a $50 air cooler to a $120 AIO and declare liquid cooling the winner. Compare them at the same price and the picture changes.
 
-At the $60 tier, a quality dual-tower air cooler like the Arctic Freezer 34 eSports DUO performs at roughly the same level as a budget 240mm AIO. The air cooler wins on reliability because it avoids pump failure risk entirely.
+At the $35 to $50 tier, a modern high-performance dual-tower air cooler like the **Thermalright Phantom Spirit 120 SE** or Peerless Assassin 120 punches wildly above its price class, matching or outperforming many budget 240mm AIOs while eliminating pump failure risks entirely.
 
-At the $80 to $100 range, a quality 240mm AIO trades blows with a premium dual-tower air cooler. In sustained workloads lasting 10+ minutes, the AIO often pulls ahead by 3 to 5 degrees. In burst workloads, the difference is negligible because the air cooler's large fin mass absorbs the initial thermal spike effectively.
+At the $80 to $100 range, a quality 240mm AIO trades blows with a premium dual-tower air cooler. In burst workloads, a large fin stack absorbs heat spikes instantly. In sustained high-wattage loops, the liquid radiator's larger thermal mass gradually takes over.
 
-Above $150 is where AIOs win clearly. A 360mm AIO with good fans beats even the legendary Noctua NH-D15 in sustained high-TDP scenarios. On a Core i9-13900K or Ryzen 9 7950X running at full load for extended periods, a 360mm AIO keeps temperatures 8 to 12 degrees lower than the best air cooler. For chips with 170W+ TDP, that margin matters for sustained boost clock performance.
+Above $110 to $150 is where 360mm AIOs pull ahead decisively. On high-TDP flagship processors (like a Core i7-13700K/14700K or i9-14900K pulling 253W+ in all-core production), a 360mm AIO with a thick radiator (such as the Arctic Liquid Freezer III 360) sustains lower core temperatures than even the largest air coolers, preventing thermal throttling from clipping peak boost clocks.
 
-To put real numbers on it: I tested an [Intel](https://www.intel.com) Core i7-13700K at stock settings during sustained Cinebench R23 multicore runs. The budget Hyper 212 Evo hit about 85°C. The Arctic Freezer 34 eSports DUO sat at 78°C. The DeepCool AK620 dual tower hit 72°C. The Noctua NH-D15 managed 68°C. A 240mm Arctic Liquid Freezer III came in at 70°C. And the 360mm version of that same AIO pushed it down to 62°C. 
+To illustrate real-world thermal scaling on an [Intel](https://www.intel.com) Core i7-13700K running stock Intel power limits (253W PL2) during a looped Cinebench R23 multi-core stress test:
+- **Budget Single-Tower (e.g., Hyper 212):** Hits **100°C thermal throttle threshold** almost immediately, dropping all-core clocks to prevent overheating.
+- **Top-Tier Dual-Tower Air (Thermalright Phantom Spirit / Noctua NH-D15):** Stabilizes at **92°C to 95°C**, pulling roughly 240W–250W without hard thermal throttling.
+- **Quality 240mm AIO (Arctic Liquid Freezer III 240):** Runs around **88°C to 91°C**.
+- **High-Performance 360mm AIO (Arctic Liquid Freezer III 360):** Pulls the full 253W package power while holding steady at **81°C to 84°C**.
 
-The Noctua NH-D15 at $100 was actually cooler than the 240mm AIO at $90. That's a detail people miss constantly. You need a 360mm radiator to meaningfully beat a top-tier air cooler.
+In everyday gaming (where CPU power consumption drops to 65W–120W), all of these dual towers and AIOs run quietly in the comfortable **55°C to 68°C** window. But when heavy all-core rendering pushes 250W+, only a 360mm radiator provides true thermal breathing room.
 
 ## Reliability: This Is the Most Important Practical Difference
 

@@ -65,9 +65,9 @@ A used GPU is only a good deal when it is priced 25% to 35% below that eBay sold
 
 ## Generation Value Analysis: When Older Is Actually Smarter
 
-In 2026, older-generation GPUs often represent the smartest value. The RTX 3080 10GB and the RX 6800 XT are the absolute stars of the used market. Sitting around $180 to $240, they still deliver phenomenal 1440p performance and can handle 4K if you adjust some settings. 
+In 2026, older-generation GPUs often represent the smartest value if you know where the pricing floors sit. The **RX 6700 XT** and **RTX 3060 12GB** are the absolute stars of the sub-$250 market, typically trading between **$180 and $230** on eBay, offering reliable 1080p/1440p rasterization and generous VRAM pools.
 
-The RTX 3070 Ti is also a solid find for 1440p gaming if you can get it under $190. For modern architecture, the RTX 4070 and RX 7800 XT are fantastic used buys in the $300 to $420 range, offering great efficiency and modern upscaling tech. 
+Stepping up a tier, the **RTX 3070 and 3070 Ti** sit around **$260 to $300**, while the **RTX 3080 10GB** and **AMD RX 6800 XT 16GB** hover around **$350 to $420** — delivering roughly half the cost of current-gen equivalents while maintaining phenomenal 1440p high-refresh performance. For modern architecture with DLSS 3 Frame Generation or AV1 encoding, look for used **RTX 4070** or **RX 7800 XT** units in the **$420 to $480** bracket. 
 
 Just be careful with high-VRAM cards like the RTX 3090 and 3090 Ti. They were massively popular for mining, and their GDDR6X memory ran extremely hot. Always run thorough VRAM tests on these specific models.
 
@@ -85,9 +85,9 @@ When meeting a seller, use a public place with accessible power, like a coffee s
 
 ## Warranty Transfer Check
 
-This is the most overlooked step in buying used hardware. Some manufacturers, like ASUS (on specific ROG and TUF models) and Sapphire (on certain Nitro+ cards), have historically offered transferable warranties with proof of purchase.
+This is the most overlooked step in buying used hardware. Some manufacturers, like **ASUS** and **MSI**, track manufacturer warranties primarily by the serial number on the PCB barcode, meaning the remaining factory warranty often follows the physical hardware even without the original purchase invoice. In contrast, brands like **Sapphire**, **PowerColor**, and **Zotac** strictly require the original receipt from an authorized retailer and do not transfer warranty rights to second-hand buyers.
 
-Always ask the seller for the original receipt. Even if the card is out of warranty, the receipt confirms its age. If a seller claims a card is "only a year old" but can't produce a receipt, treat that claim with extreme skepticism. For brands where warranties don't transfer, knowing the card is out of warranty should directly lower the price you are willing to pay.
+Always ask the seller for the original invoice or receipt. Even if the card is technically out of warranty, the receipt confirms its true purchase date and age. If a seller claims a card was "bought brand new 6 months ago" but cannot produce an invoice or online order screenshot, treat that claim with extreme skepticism.
 
 
 ---

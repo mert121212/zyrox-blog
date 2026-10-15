@@ -102,25 +102,35 @@ Buying an SSD for a laptop is genuinely harder than buying one for a desktop. No
 
 On a desktop with a modern motherboard, you can buy a PCIe Gen 5 NVMe drive and hit 12,000+ MB/s sequential reads. On almost every current laptop, that same drive will run at Gen 4 or even Gen 3 speeds regardless. Most laptop CPUs — even current [AMD](https://www.amd.com) Ryzen mobile and [Intel](https://www.intel.com) 13th Gen chips — route the M.2 slot through PCIe Gen 4 at best. Many budget laptops are still capped at Gen 3. Buying a PCIe Gen 5 drive for a laptop is literally pointless — save that money and buy a well-regarded Gen 4 drive instead.
 
-### The Heat Problem in Laptops
+### The Single-Sided vs. Double-Sided PCB Clearance Trap
 
-High-performance NVMe drives generate heat. On a desktop with a dedicated M.2 heatsink and good case airflow, that heat dissipates easily. In a sealed laptop chassis with two tiny fans already working overtime, it can become a serious problem.
+This is one of the costliest mistakes laptop owners make when upgrading to 2TB or 4TB drives:
 
-When an SSD overheats, it enters thermal throttling — the drive deliberately slows itself down to reduce heat output. A PCIe Gen 4 drive that benchmarks at 7,000 MB/s on a desktop might sustain only 2,000 MB/s in a hot laptop during a large file transfer.
+Many laptops (especially thin-and-light ultrabooks, Lenovo ThinkPads, and Asus Zephyrus models) have tiny capacitors and soldered motherboard chips situated directly beneath the M.2 standoff. **They only physically accommodate single-sided M.2 SSDs** (where all NAND flash chips and the controller are soldered on the top face of the PCB).
 
-For laptops, I specifically recommend the **SK Hynix Platinum P41**. It consistently runs cooler than competitors thanks to its efficient 176-layer NAND architecture. The **Samsung 990 Pro** is great too, but it runs hotter under sustained load — fine in a well-ventilated gaming laptop, but it can throttle in a thin ultrabook. For budget laptop upgrades, the **WD Blue SN580** is my go-to. Gen 4, reasonable performance, low heat output, great price.
+If you purchase a high-capacity drive with components on both sides (double-sided PCB), screwing the drive down will cause it to bend violently or crush against surface components, shorting out your board. Always check whether your replacement drive is single-sided before buying for a laptop.
 
-## Five Drives Worth Considering
+### The Heat and Throttling Problem in Laptops
 
-**Samsung 870 EVO (SATA)** — The best SATA drive out there. It has DRAM, hits the max SATA speeds, and comes with a 5-year warranty. Perfect for upgrading older systems. Usually around $75-$90 for 1TB.
+High-performance NVMe drives generate intense localized heat on their controller die. On a desktop with a heavy metal motherboard heatsink and direct fan airflow, that heat dissipates easily. In a sealed 15mm laptop chassis with two tiny blower fans already saturated by CPU and GPU heat, an uncooled controller easily exceeds 80°C.
 
-**Crucial MX500 (SATA)** — The best budget SATA alternative. It's slightly cheaper than the Samsung, still has DRAM, and performs just as well in the real world. Expect to pay $60-$80 for 1TB.
+When an SSD overheats, it enters aggressive thermal throttling to prevent chip damage. A PCIe Gen 4 drive that advertises 7,000 MB/s on a test bench can drop down to 1,500–2,000 MB/s within 45 seconds of sustained heavy write loads.
 
-**Samsung 990 Pro (NVMe PCIe 4.0)** — The best all-around NVMe drive. It's fast, has DRAM, uses TLC NAND, and stays remarkably consistent under heavy workstation loads. A 1TB drive usually runs $90-$115.
+- **Best for cool laptop operation:** The **SK Hynix Platinum P41** (or Gold P31 for Gen 3) remains the gold standard in thermal and electrical power efficiency.
+- **Top budget laptop pick:** The **WD Blue SN580** (single-sided, exceptional idle power draw, runs cool without needing a chunky heatsink).
 
-**WD SN850X (NVMe PCIe 4.0)** — The best gaming-focused NVMe drive. It trades blows with the 990 Pro and features a predictive loading mode that can slightly reduce game load times. It's also fully validated for PS5 use. Price is similar at $90-$120 for 1TB.
+## Five Drives Worth Considering (And the NAND Lottery Warning)
 
-**Kingston NV3 (NVMe PCIe 4.0, Budget)** — The best value. It's DRAM-less (uses HMB) so it's not ideal for heavy video editing, but for a budget gaming build where you just want fast load times, it's hard to beat at $55-$75 for 1TB.
+**Samsung 990 Pro (NVMe PCIe 4.0 — Workstation King)** — The benchmark for demanding tasks. Equipped with in-house Pascal controller, dedicated LPDDR4 DRAM, and proven TLC NAND. Sustains high transfer rates without dropping off a cliff during massive video renders. (~$100–$120 for 1TB).
+
+**WD Black SN850X (NVMe PCIe 4.0 — Gaming Champion)** — The top gaming-focused drive. Features dedicated Game Mode 2.0 predictive loading and handles DirectStorage asset streaming with ease. Validated for PS5 expansion (needs heatsink version). (~$95–$120 for 1TB).
+
+**WD Blue SN580 or TeamGroup MP44L (NVMe PCIe 4.0 — Smart Budget Picks)** — The smartest value options. Both use efficient 4-channel controllers and Host Memory Buffer (HMB) with guaranteed TLC flash. They consistently maintain ~4,100 to 5,000 MB/s without thermal headaches. (~$60–$75 for 1TB).
+
+**The Warning on Ultra-Budget Drives (Kingston NV2 / NV3):**
+Beware of ultra-cheap drives like the Kingston NV2 and NV3. Manufacturers often use a **"hardware lottery"** on these lines, swapping controllers (Phison, Silicon Motion, or Maxio) and alternating between TLC and QLC NAND without changing the model name. While fine for light secondary storage, once their temporary pseudo-SLC cache fills up during a large 80GB game install, write speeds can crater to 60–100 MB/s — slower than an old mechanical hard drive.
+
+**Crucial MX500 or Samsung 870 EVO (2.5-Inch SATA)** — If you are reviving an older PC or laptop lacking an M.2 slot, these are the only two SATA drives worth your money. Both feature dedicated onboard DRAM and reliable endurance. (~$65–$80 for 1TB).
 
 ## How Much Storage Do You Actually Need?
 

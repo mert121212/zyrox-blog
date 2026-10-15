@@ -124,4 +124,4 @@ Only with a DisplayLink adapter. A plain USB-A port doesn't carry video signals 
 - [What to Look for in a Midrange Monitor](/posts/what-to-look-for-in-a-midrange-monitor/)
 - [How to Choose a Monitor Arm and Stand](/posts/how-to-choose-a-monitor-arm-and-stand/)
 - [When It Is Time to Replace a Monitor](/posts/when-to-replace-a-monitor/)
-- [Best GPU for 1440p Gaming in 2026](/posts/best-gpu-for-1440p-gaming-2026/)
+- [Best GPU for 1440p Gaming: What to Buy in 2026](/posts/best-gpu-for-1440p-gaming/)

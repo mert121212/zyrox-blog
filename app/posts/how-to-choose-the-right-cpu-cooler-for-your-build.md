@@ -53,27 +53,22 @@ This step gets skipped more often than any other and causes more returns than an
 
 **Cooler width vs. RAM clearance.** Big dual-tower coolers can overhang the first DIMM slot. If you have RAM with tall heatspreaders, you might have a conflict. Most cooler manufacturers list "RAM clearance height" in the specs.
 
-**Socket compatibility.** This one bites people all the time. A cooler that says "AM4" on the box doesn't necessarily work on AM5 — the sockets have similar hole patterns but different bracket hardware. Always check the manufacturer's compatibility page for your *specific* socket, not just the platform.
+**Socket compatibility and the AM5 Backplate Trap.** A cooler that says "AM4 compatible" might not fit AM5 out of the box. While AM4 and AM5 share the same 54x90mm mounting hole spacing, **AM5 features a permanent captive backplate integrated into the CPU socket**. If a cooler requires removing the stock motherboard backplate to install a custom bracket, it will physically not mount on AM5 without an updated manufacturer standoff kit. Always check for native AM5 standoff support.
 
-## The Coolers I Actually Use
+## The Coolers I Actually Use (And the $35 Value King)
 
-**Thermalright Peerless Assassin 120 SE (~$35-45)** — The most cost-effective dual-tower cooler on the market, full stop. At $40, it performs within 3°C of the legendary NH-D15 in most scenarios. The included fans are genuinely good. If someone tells me they have a $40 budget for a cooler and a decent CPU, this is what I tell them to buy. Every time.
+**Thermalright Phantom Spirit 120 SE (~$35–$40)** — The undisputed king of price-to-performance. It improves on the popular Peerless Assassin 120 by adding a 7th heatpipe. In standardized bench testing, it cools within 2°C–3°C of the $110 Noctua NH-D15 while costing a third of the price. The dual TL-C12B V2 fans are surprisingly quiet under 1000 RPM.
 
-**DeepCool AK620 (~$50-60)** — The cooler I put in most of my mid-range builds these days. Testing it on a Core i7-13700K showed average full-load temps of 75°C, essentially tied with coolers costing twice as much. Excellent build quality for the price.
+**Noctua NH-D15 G2 / chromax.black (~$110–$145)** — The benchmark for heirloom build quality and acoustic engineering. In my Ryzen 9 7950X workstation, it sustained 200W all-core loads at 82°C in a well-ventilated tower without intrusive pitch changes. Noctua's SecuFirm2+ mounting is the best in the industry, and their 6-year warranty and free future socket bracket upgrades make it a buy-it-for-life cooler.
 
-**Noctua NH-D15 (~$100)** — The benchmark against which every other air cooler is measured. In my Ryzen 9 7950X workstation, it sustained 200W all-core loads at 82°C in a well-ventilated tower without a single audible fan speed increase. The beige-and-brown color is... an acquired taste. The chromax.black edition fixes that.
+**Noctua NH-U12A (~$110)** — The compact heavyweight. If your case has strict 158mm height clearance or you run tall RGB RAM modules, this dual-fan single-tower cooler delivers 90% of the NH-D15's performance while staying completely clear of PCIe and memory slots.
 
-**Noctua NH-U12A (~$90)** — The single-tower sibling for cases where the NH-D15 is too tall or too wide. Uses two NF-A12x25 fans in push-pull and comes within 5-7°C of its bigger brother. If your case is a mid-tower with tight clearances, this is the one.
+**Arctic Liquid Freezer III 360 (~$100–$130)** — The AIO I recommend when liquid cooling genuinely makes sense. Unlike generic Asetek clones, Arctic uses a thicker 38mm radiator, an integrated VRM cooling fan that drops motherboard temperatures by 8°C–12°C, and native offset mounting brackets for AMD Ryzen CCD hot spots.
 
-**Arctic Liquid Freezer III 360 (~$100-130)** — The AIO I recommend when liquid cooling genuinely makes sense. 360mm radiator, integrated pump housing, runs everything from a single PWM header. On the 7950X with power limits removed, it holds roughly 6-8°C lower than the NH-D15 under sustained all-core loads. The pump is also noticeably quieter than competing AIOs from NZXT or Corsair.
+## Thermal Paste and Mounting: Two Critical Gotchas
 
-## Thermal Paste: Keep It Simple
-
-Use the dot method. Put a pea-sized dot of paste in the center of the CPU, mount the cooler straight down with even pressure, and tighten the screws in a cross pattern (top-left, bottom-right, top-right, bottom-left). The paste spreads naturally.
-
-Use a quality paste — Noctua NT-H1, Arctic MX-6, or Thermal Grizzly Kryonaut. They all perform within 1-2°C of each other. Don't use too much. A pea-sized dot is the right amount. More paste doesn't improve conductivity; it just increases the risk of overflow.
-
-And for the love of your hardware, do NOT twist the cooler once it makes contact with the CPU. Press straight down and tighten evenly.
+1. **The LGA1700 Contact Frame ($8 Miracle):** If you are cooling an Intel 13th or 14th Gen chip, the stock motherboard retention latch (ILM) exerts uneven pressure, bowing the long rectangular CPU heatspreader concave. Replacing the stock latch with a $7–$10 Thermalright or Thermal Grizzly contact frame drops full-load temperatures by **5°C to 10°C** before you even touch your fan curves.
+2. **AM5 Paste Placement:** Because Ryzen 7000/9000 compute dies (CCDs) are situated in the lower-right quadrant rather than dead center, a single tiny center dot can leave the hottest silicon starved of paste. Use an "X" pattern or a center pea with four tiny corner dots to guarantee complete edge-to-edge coverage under pressure. Tighten mounting screws in a cross pattern (top-left, bottom-right, top-right, bottom-left) until they bottom out.
 
 
 ---

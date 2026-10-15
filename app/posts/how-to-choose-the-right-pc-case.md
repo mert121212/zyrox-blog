@@ -55,42 +55,42 @@ I tested the same hardware in multiple configurations. A mesh front with a glass
 
 If you're running a high-TDP GPU north of 300W and you care about temperatures, a mesh front panel is the smart choice every time. Glass fronts are for builds where aesthetics trump thermals.
 
-## The Cases I'd Actually Buy
+## The Cases Worth Buying
 
-**Fractal Design Meshify C (~$85-100)** — Still the best value mesh mid-tower you can buy. The angular mesh front is visually distinctive and functionally excellent. GPU clearance hits 315mm with the drive cage installed (or 440mm with it removed, covering every consumer GPU). Cable management clearance is workable at about 22mm. For a budget-to-mid build, this is my default recommendation.
+**Fractal Pop Air / Meshify 2 Compact (~$80–$110)** — Fractal's modern high-airflow benchmarks. The Pop Air offers 405mm of GPU clearance with front fans installed, easily swallowing modern 3-fan graphics cards, along with pre-installed Aspect 12 fans and a clever hidden storage drawer. If you prefer premium build materials with removable top radiator brackets, the Meshify 2 Compact offers 345mm of clearance in a remarkably dense footprint.
 
-**Lian Li Lancool 216 (~$120-130)** — My current favorite for airflow. It ships with two 160mm reverse-blade fans on the front intake, which is unusual and clever — bigger fans spin slower and move the same air more quietly. In my testing, the Lancool 216 consistently produced lower GPU temperatures than cases running twin 120mm intakes at comparable noise levels. Front radiator support goes up to 360mm, GPU clearance extends to 435mm, and the cable management space is a generous 25-30mm.
+**Lian Li Lancool 216 (~$100–$115)** — The undisputed champion of out-of-the-box airflow. It ships with two 160mm custom intake fans and a 140mm rear exhaust. The larger 160mm fans push massive volumetric airflow at only 800–1,000 RPM, keeping GPU core and memory temperatures 4–6°C cooler than standard triple-120mm setups at equal noise levels. It supports up to 392mm GPUs and 360mm radiators on top.
 
-**NZXT H510 Flow (~$95-110)** — The best build *experience* of any mid-tower I've used. Cable routing is incredibly intuitive, the PSU shroud is clean, and the tempered glass goes on and off without any drama. The limitation is radiator support: 240mm maximum at the front. If you have a 360mm AIO, this isn't the case for you. But if you're running an air cooler or 240mm AIO and want a professional-looking result, it's hard to beat.
+**NZXT H6 Flow / H5 Flow (~$95–$115)** — The H6 Flow features a dual-chamber panoramic glass design with three angled 120mm front-corner intake fans directing fresh air straight across the GPU backplate. If you want a traditional mid-tower, the H5 Flow includes a dedicated bottom intake fan pointed directly at the GPU intake fans.
 
-**be quiet! Pure Base 500DX (~$110-125)** — The right case if noise is your priority. The front panel uses a layered construction — mesh for airflow backed by acoustic dampening material. Three pre-installed be quiet! fans out of the box. In my quiet build test (Ryzen 7 7700X, RTX 4070, Dark Rock Pro 5), it kept noise below 30 dBA at desktop loads while keeping the GPU under 75°C under gaming load.
+**be quiet! Pure Base 500DX / Shadow Base 800 (~$110–$160)** — The premier choice for low acoustic resonance. The front panel combines high-porosity mesh with internal acoustic baffling. It includes three 140mm Pure Wings 2 fans, vibration-dampened HDD cages, and thick steel side panels that prevent coil whine or air turbulence from buzzing into your room.
 
 ## Cable Management: The Underrated Feature
 
-A case with less than 20mm of clearance behind the motherboard tray is going to frustrate you. You'll be shoving cables through grommets and fighting to close the rear panel. The sweet spot is 25mm or more.
+A case with less than 20mm of clearance behind the motherboard tray is going to frustrate you. You'll be shoving thick 24-pin cables through grommets and fighting to close the rear panel. The sweet spot is 25mm to 30mm or more.
 
-But raw clearance isn't everything. Well-placed cable anchor points matter just as much. A case with 25mm of space and well-distributed velcro tie-down points is vastly better to work in than one with 30mm and no anchors. The Lancool 216 and Pure Base 500DX both nail this.
+Well-placed cable tie-down points matter just as much as depth. Cases like the Lancool 216 and Pure Base 500DX feature integrated velcro routing channels and dedicated tie points that keep front-panel I/O, SATA, and PCIe power cables separate and tidy.
 
 ## Front I/O: Don't Skip USB-C
 
 In 2026, a case without front USB-C is behind the times. You'll want at minimum:
-- Two USB-A 3.0 ports
-- One USB-C port
-- A 3.5mm audio jack
+- Two USB-A 3.0 ports (5 Gbps)
+- One USB-C port (10 Gbps or 20 Gbps Type-E internal header)
+- A unified 3.5mm audio/mic combo jack
 
-USB-C on the front panel requires a Type-C header on the motherboard. Most mid-range and high-end boards include this, but some budget boards don't. Cross-check your motherboard specs before assuming the front USB-C will work.
+*Note on Motherboards:* Front-panel Type-C requires a dedicated internal USB 3.2 Gen 2 (Type-E) header on your motherboard. While nearly all B650 and Z790/B760 boards include this, entry-level budget boards (such as A620 or H610) sometimes omit it. Verify your motherboard headers before purchasing.
 
 ## Dust Filters: Clean Them or Suffer
 
-Dust filters only work if you maintain them. In a typical home with hard floors and no pets, clean them every 5-7 weeks. With carpet and pets, bump that up to every 3-4 weeks. The bottom PSU filter collects debris the fastest because it sits closest to the floor.
+Dust filters only work if you maintain them. In a typical home with hard floors and no pets, clean them every 6–8 weeks. With carpet or shedding pets, inspect them every 3–4 weeks. The bottom PSU filter collects lint the fastest because it is suctioning air directly from the floor.
 
-Neglected filters are the sneakiest cause of gradual thermal degradation. Your temperatures creep up 3-5°C over a few months, and you don't notice until the system starts throttling during a heavy gaming session. Just set a calendar reminder and clean them regularly.
-
+Neglected filters are the sneakiest cause of gradual thermal degradation. Your temperatures creep up 3–5°C over a few months, forcing internal fans to spin louder to compensate. Just rinse or wipe them regularly to maintain peak airflow.
 
 ---
 
 ## Related Guides
 
-- [The Best Way to Plan a PC Upgrade Cycle](/posts/the-best-way-to-plan-a-pc-upgrade-cycle/)
+- [How to Choose the Right Case Fan Setup](/posts/how-to-choose-the-right-case-fan-setup/)
 - [Why PC Cooling and Case Airflow Matter More Than People Think](/posts/why-case-airflow-matters-more-than-people-think/)
-- [How to Connect Two Monitors to a Laptop](/posts/how-to-connect-two-monitors-to-a-laptop/)
+- [How to Build a Silent PC or Quiet Gaming Rig Without Sacrificing Performance](/posts/how-to-build-a-silent-pc/)
+- [How to Clean a PC and Case Ventilation Without Damaging Components](/posts/how-to-clean-a-pc-without-damaging-components/)

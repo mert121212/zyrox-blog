@@ -31,13 +31,26 @@ No POST means the system doesn't seem to do anything. Fans don't spin (or spin a
 
 No Display means the system started — fans spin and stay on, debug LEDs may progress normally — but the monitor shows "no signal." This means POST happened (or partially happened) but video output failed. These require completely different approaches.
 
-## Step 1: Power Delivery Check
+## The #1 Beginner Mistake: The Motherboard HDMI Trap
+
+Before touching a single internal cable, look at the back of your PC case:
+
+**Is your HDMI or DisplayPort cable plugged into the motherboard or the graphics card?**
+
+- If your processor ends in "F" or "KF" (like the Intel Core i5-12400F, 13600KF) or is an older Ryzen chip, **the CPU has no integrated graphics**. The HDMI/DP ports on your motherboard I/O shield are physically disabled.
+- Plugging your monitor into the motherboard will leave your screen permanently black with a "No Signal" message, even while the PC boots into Windows in the background.
+- **The Fix:** Plug your display cable into the horizontal ports on the dedicated graphics card situated further down the back of the case. Also, use your monitor's physical joystick to manually verify the input source is set to DisplayPort instead of Auto-Detect.
+
+## Step 1: Power Delivery and the Front Panel Jumper Test
 
 Start at the very beginning of the power chain. These checks take two minutes and catch a surprising number of failures.
 
-First, verify the wall outlet itself works by plugging something else into it. A tripped breaker is more common than you'd think, especially on desk strips after a power event. Check that the IEC power cable (the thick cable running from the wall to the PSU) is firmly seated at both ends. Check the rocker switch on the back of the PSU — it should be in the "I" position. This gets accidentally flipped when cable managing behind the desk.
-
-Now check the internal connections. Reseat the 24-pin ATX connector on the motherboard. Press the latch and push it firmly — a partially seated 24-pin can pass some power but not enough for stable POST. Then check the CPU power connector, the 8-pin (or 4+4 pin) plug in the top corner of the motherboard. This is the most commonly missed connection in new builds. A missing CPU power connector will prevent POST entirely.
+1. **The PSU Rocker Switch:** Check the rocker switch on the back of the power supply. The line (**"I"**) must be pressed down; the circle (**"O"**) is off.
+2. **The Front Panel Header (PWR_SW) Test:** Did you accidentally plug the case power switch into the wrong pins? The tiny 2-pin front panel connector (`POWER SW`) on the bottom-right corner of the motherboard (`JFP1`) is notoriously easy to misalign. 
+   - *Technician Trick:* Unplug the `POWER SW` lead, locate the two power switch pins on the motherboard header, and gently touch both pins simultaneously with the tip of a flathead metal screwdriver for one second. If the PC instantly powers on, your motherboard is fine—your case button or wire is loose or defective.
+3. **Internal Power Cables:** 
+   - Reseat the thick **24-pin ATX connector** on the right side of the motherboard until the plastic retention clip snaps over the latch.
+   - Reseat the **8-pin (or 4+4 pin) CPU EPS power cable** in the top-left corner of the board. A missing CPU EPS cable will spin fans but completely block POST.
 
 ## Step 2: POST Beep Codes
 
@@ -71,7 +84,7 @@ CPU LED staying on means the CPU wasn't detected or isn't properly seated. It al
 
 A CMOS clear resets the BIOS to factory defaults. This fixes failed overclocks, corrupted BIOS settings, and situations where a BIOS update went wrong.
 
-The most reliable method is the CMOS jumper on the motherboard, usually labeled CLRTC or JBAT1. Move the jumper from pins 1-2 to pins 2-3, wait 15 seconds, and move it back. Alternatively, pop out the round CR2032 battery, wait 60 seconds, and reinsert it. Some premium boards have a dedicated CLR_CMOS button on the rear I/O panel.
+The most reliable method is using the Clear CMOS jumper header on the motherboard, labeled **JBAT1** or **CLRTC**. On modern boards, this is almost always a 2-pin header: unplug the PC from the wall, touch a metal flathead screwdriver across both pins for 5 to 10 seconds to discharge the circuit, and release. (On older boards with a 3-pin header, move the plastic jumper cap from pins 1-2 to pins 2-3 for 15 seconds, then return it). Alternatively, remove the round CR2032 coin-cell battery for 5 minutes, or press the dedicated rear I/O Clear CMOS button if your board features one.
 
 After clearing CMOS, re-enter the BIOS and re-enable XMP/EXPO for your RAM speed, Secure Boot if needed for [Windows 11](https://www.microsoft.com/windows/windows-11), and verify the correct boot drive is selected.
 

@@ -31,7 +31,7 @@ Replacing a hard drive with an SSD is the single highest return upgrade you can 
 
 Adding more RAM is the second biggest bang for the buck. At 8 GB, [Windows 11](https://www.microsoft.com/windows/windows-11) with a browser and a game open stutters constantly, with the system desperately paging to disk. Moving to 16 GB or 32 GB is clean, reversible, and transformative for modern workflows. A 16 GB DDR4 kit runs $25 to $50.
 
-Upgrading from a stock CPU cooler is criminally underrated. Stock coolers can't sustain peak CPU performance under heavy load. When the CPU throttles to protect itself, you lose real FPS and rendering speed. A $30 to $60 air cooler like the Arctic Freezer 34 can keep temperatures 15 to 20 degrees lower, letting the CPU run at full boost clocks consistently.
+Upgrading from a stock CPU cooler is criminally underrated. Stock coolers can't sustain peak CPU performance under heavy load. When the CPU throttles to protect itself, you lose real FPS and rendering speed. A $35 dual-tower air cooler like the **Thermalright Peerless Assassin 120 SE** or **Phantom Spirit 120 SE** can keep temperatures 15 to 25 degrees lower, letting the CPU run at full boost clocks consistently without acoustic whining.
 
 A GPU upgrade has the highest absolute performance impact for gaming but also the highest cost. The critical step is confirming the GPU is actually the bottleneck before spending $300+. A GPU upgrade on a system where the CPU is the real limit is largely wasted money.
 

@@ -28,7 +28,7 @@ Every component on the spec sheet was powerful, but the real-world experience wa
 
 ## The Hidden Resource Vampires
 
-A clean [Windows 11](https://www.microsoft.com/windows/windows-11) installation uses about 2GB of RAM at idle. A system that has been heavily used for a year can easily idle at 6GB. This isn't because of one massive rogue application; it is death by a thousand cuts. 
+A clean [Windows 11](https://www.microsoft.com/windows/windows-11) installation idles around 3.5 to 4GB of RAM with default security services and DWM running. On a system that has been used for a year, background autostarts easily inflate that to 6GB to 8GB at idle. This isn't because of one massive rogue application; it is death by a thousand cuts. 
 
 Background processes like [Microsoft](https://www.microsoft.com) Teams, Discord, three different cloud sync tools (OneDrive, Google Drive, Dropbox), the Adobe Creative Cloud daemon, and various RGB lighting utilities all add up. None of them individually kill performance, but together they raise your baseline resource usage, leaving less CPU time and memory for the things you actually want to do.
 

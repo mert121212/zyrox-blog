@@ -61,7 +61,7 @@ If your CPU usage is pegged at 100 percent when the PC feels slow, you need a ne
 
 If you are upgrading from an old spinning hard drive, do not stress over whether you need a SATA SSD or an NVMe SSD. Just get an SSD. 
 
-The jump from an HDD to a basic SATA SSD (like a Crucial BX500 or Samsung 870 EVO) is a massive, night-and-day transformation. The jump from a SATA SSD to a blisteringly fast PCIe 4.0 NVMe drive (like a Samsung 980 Pro) is technically huge on paper, but in everyday web browsing and casual gaming, it is honestly hard to feel the difference. NVMe matters if you are moving massive 100GB video files daily. For everyone else, any SSD will solve your storage bottleneck instantly.
+The jump from an HDD to a quality SATA SSD (like a Crucial MX500 or Samsung 870 EVO) is a massive, night-and-day transformation. The jump from a SATA SSD to a blisteringly fast PCIe 4.0 NVMe drive (like a Samsung 990 Pro) is technically huge on paper, but in everyday web browsing and casual gaming, it is honestly hard to feel the difference. NVMe matters if you are moving massive 100GB video files daily or playing games with DirectStorage. For everyone else, any reliable TLC SSD will solve your storage bottleneck instantly.
 
 
 ---

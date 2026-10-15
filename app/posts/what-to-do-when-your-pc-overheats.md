@@ -39,7 +39,13 @@ CPU overheating is usually caused by dried-out thermal paste, an undersized cool
 
 GPU overheating tends to come from thick dust accumulation on the heatsink fins, an inadequate factory cooler, or a case that traps warm air around the graphics card. High-end cards produce enormous amounts of heat and need both good coolers and good case airflow to stay in range. A GPU that throttles will show as a sudden frame rate collapse and dropped clock speeds.
 
-As a general rule for safe operating ranges: most desktop CPUs should stay under 80°C under load. Hitting 85°C to 90°C is the caution zone, and anything over 95°C is dangerous. Laptops run a bit hotter, with 95°C+ being the danger zone. For GPUs, keeping it under 83°C is ideal, while 93°C+ is dangerous. The GPU Hot Spot can safely reach 95°C, but pushing past 105°C is trouble. If your readings fall in the caution or dangerous zones during normal load, something needs to change.
+### Modern Temperature Thresholds: What Is Actually "Too Hot"?
+
+Hardware architectures have changed drastically, and older rules of thumb no longer apply:
+- **AMD Ryzen 7000 & 9000 (AM5):** Designed by AMD to boost aggressively until reaching their thermal ceiling. Standard chips (like the 7600X, 7700X, 7950X) are engineered to run at **95°C TJMax** under full all-core loads without degradation. For 3D V-Cache chips (7800X3D, 9800X3D), the hard thermal ceiling is **89°C**.
+- **Intel 13th & 14th Gen K-Series:** Official TJMax is **100°C**. Under heavy multi-threaded rendering (Blender, Cinebench), running at 90°C to 98°C is normal for an i7 or i9. Throttling only begins at 100°C, and emergency PROCHOT shutdown occurs at 105°C.
+- **Mainstream 65W CPUs (Ryzen 5 5600, i5-12400):** Should comfortably stay between **65°C and 78°C** under load. Hitting 85°C+ on these chips indicates an improperly mounted cooler or dead fan.
+- **Graphics Cards (GPU Core & Hotspot):** GPU core temperatures should ideally stay below **80°C** (thermal throttling typically begins at 83°C–84°C). The **GPU Hotspot / Memory Junction** can safely reach **90°C to 100°C** on GDDR6X cards, but climbing past **105°C** signals thermal pad degradation or heatsink mounting issues.
 
 ## Step-by-Step Dust Cleaning Guide
 

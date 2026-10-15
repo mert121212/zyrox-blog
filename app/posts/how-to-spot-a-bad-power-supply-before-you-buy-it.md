@@ -1,6 +1,6 @@
 ---
 title: How to Spot a Bad Power Supply Before You Buy It
-meta_description: >-
+meta_description: "Learn how to spot dangerous and low-quality power supplies before buying. Covers 80 Plus vs Cybenetics, fake wattage ratings, missing protections, and OEM tier lists."
 date: 2026-06-30T00:00:00.000Z
 category: Power
 tags:
@@ -23,13 +23,14 @@ I've killed a GPU. Not through overclocking, not through a bad driver — throug
 
 The PSU is the only component in your system that has the physical capacity to destroy everything else. A bad CPU cooler gives you thermal throttling. A bad RAM stick gives you BSODs. A bad power supply can fry your motherboard, your GPU, your storage drives, and anything else connected to it in a single event. So let's talk about how to identify the dangerous units before you hand over your money.
 
-## Why the 80 Plus Certification Is Your First Filter
+## Why 80 Plus & Cybenetics Certifications Are Your First Filter
 
-The fastest quality filter you can apply to any PSU is checking for 80 Plus certification. This third-party program measures how efficiently a supply converts AC wall power into DC power. 
+The fastest quality filter you can apply to any PSU is checking for independent third-party efficiency and safety certification. 
 
-The tiers range from White (80% efficiency at 50% load) to Bronze (85%), Silver (89%), Gold (92%), Platinum (94%), and Titanium (96%). For most gaming desktops, 80 Plus Gold is the perfect sweet spot. It runs cool, it's priced fairly, and reputable OEMs make great Gold units. Platinum and Titanium are really only worth the money for home servers or rendering rigs running 24/7.
+- **80 Plus Certification:** Tiers range from Bronze (85% at 50% load) to Gold (90%), Platinum (92%), and Titanium (94%). However, be aware: 80 Plus testing is conducted at an artificial 23°C room temperature with only four load points, allowing cut-rate brands to "golden sample" their submissions.
+- **Cybenetics Certification (ETA & LAMBDA):** In 2026, Cybenetics is the gold standard. They test power supplies across over 1,400 load combinations, measure vampire standby power, verify power factor, and measure acoustic noise (LAMBDA A/A-).
 
-The massive red flag is a PSU with zero certification. Many Amazon listings shout about "gaming grade efficiency" but lack an 80 Plus badge. That means it either failed testing or was never submitted. I've seen uncertified "700W" units buckle under a 450W load. If it doesn't have an 80 Plus badge, don't buy it.
+The massive red flag is a PSU with zero certification. Many Amazon listings shout about "gaming grade efficiency" but lack an 80 Plus or Cybenetics badge. That means it either failed testing or was never submitted. I've seen uncertified "700W" units buckle and catch fire under a 450W load. If it doesn't have an 80 Plus or Cybenetics badge, do not buy it.
 
 ## Price-to-Wattage Red Flags
 
@@ -59,7 +60,7 @@ The gold standard is Japanese capacitors from brands like Nippon Chemi-Con, Nich
 
 Most PSU brands don't manufacture their own units. They contract Original Equipment Manufacturers (OEMs). 
 
-Seasonic builds phenomenal units for themselves and Corsair. Channel Well Technology (CWT) builds excellent platforms for be quiet!, Cooler Master, and Antec. Great Wall builds decent mid-tier platforms. However, OEMs like HEC, Compucase, and Sirtec often pump out mediocre or outright poor platforms for white-label storefront brands. A $90 Corsair built by Great Wall is materially worse than a $105 be quiet! built by CWT. Always check the Cultists Network PSU Tier List to trace the OEM platform.
+Channel Well Technology (CWT) builds the legendary RMx and Shift platforms for Corsair. Seasonic manufactures their own class-leading Focus and Prime platforms (and supplies high-end platforms to ASUS ROG and Phanteks). FSP and Great Wall also produce dependable server and consumer units. However, white-label budget storefronts often contract lowest-bidder factories (like older Solytech, Leadman, or low-end Sirtec builds) that cut corners on internal filtering inductors and safety rectifiers. Always check the Cultists Network PSU Tier List to trace the true OEM platform beneath the brand sticker.
 
 ## Real-World Comparison: Safe vs. Dangerous
 

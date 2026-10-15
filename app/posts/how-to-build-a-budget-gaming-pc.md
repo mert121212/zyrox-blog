@@ -48,8 +48,8 @@ This configuration targets fluid 1080p gameplay in modern AAA releases and massi
 | **Motherboard** | ASRock B660M Pro RS or MSI PRO B660M-A | ~$95 | Sturdy VRMs, dual M.2 NVMe slots, 4 RAM slots for expansion. |
 | **Graphics Card (GPU)**| AMD Radeon RX 7600 8GB | ~$240 | Crushes the RTX 3050 and GTX 1660 Super; delivers native 60+ FPS on High. |
 | **Memory (RAM)** | 16GB (2x8GB) Silicon Power DDR4-3200 CL16 | ~$36 | Dual-channel is mandatory; low latency CL16. |
-| **Storage (SSD)** | 1TB Kingston NV2 / TeamGroup MP33 NVMe | ~$55 | 2,500 MB/s speeds; ample room for OS + 6 modern games. |
-| **Power Supply (PSU)**| Corsair CX650 or Apevia Prestige 600W 80+ Gold | ~$60 | Tier-C or above reliability, plenty of headroom for future GPU upgrades. |
+| **Storage (SSD)** | 1TB TeamGroup MP44L or WD Blue SN580 Gen4 | ~$60 | Reliable TLC flash, 5,000 MB/s speeds; zero QLC component lottery. |
+| **Power Supply (PSU)**| Corsair CX650 or MSI MAG A650BN (80+ Bronze) | ~$60 | Proven Cultists Tier-C reliability, DC-to-DC topology, 5-yr warranty. |
 | **Case** | Montech AIR 100 ARGB (Includes 4 fans) | ~$59 | High-airflow mesh front, tempered glass, pre-installed case fans. |
 | **Total Build Cost** | | **~$660** | *(Drops to $550 with smart sales or used CPU/RAM)* |
 
@@ -71,7 +71,7 @@ If your budget can stretch by another $150 to $200, this tier upgrades your grap
 | **Graphics Card (GPU)**| NVIDIA GeForce RTX 4060 8GB | ~$295 | DLSS 3 Frame Generation, superior power efficiency (115W TDP). |
 | **Memory (RAM)** | 32GB (2x16GB) TeamGroup T-Create DDR4-3600 CL18 | ~$58 | 32GB completely eliminates memory paging stutters in 2026 titles. |
 | **Storage (SSD)** | 1TB WD_BLACK SN770 Gen4 NVMe | ~$72 | 5,150 MB/s DirectStorage performance with exceptional game loading. |
-| **Power Supply (PSU)**| Seasonic FOCUS GX-650 80+ Gold (Semi-modular) | ~$85 | 10-year warranty, silent semi-passive fan mode. |
+| **Power Supply (PSU)**| Seasonic FOCUS GX-650 80+ Gold (Fully Modular) | ~$85 | 10-year warranty, silent semi-passive fan mode, full modular cables. |
 | **Case** | Fractal Design Pop Air or Lian Li LANCOOL 205M | ~$75 | Superb acoustic dampening, dust filters, excellent cable routing. |
 | **Total Build Cost** | | **~$825** | *(Easily hits $750 with open-box GPUs or micro-center combos)* |
 

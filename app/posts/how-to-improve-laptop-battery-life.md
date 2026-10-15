@@ -96,6 +96,7 @@ Software optimization has limits. If your battery health report shows you are be
 
 ## Related Guides
 
-- [How to Choose a Motherboard for a New PC Build Without Overpaying](/posts/how-to-choose-a-motherboard-for-a-new-build/)
-- [How to Choose a Good SSD for Video Editing](/posts/how-to-choose-a-good-ssd-for-video-editing/)
-- [How to Upgrade Your Wi-Fi Setup Without Replacing Everything](/posts/how-to-upgrade-your-wifi-without-replacing-everything/)
+- [How to Upgrade Your Laptop Without Buying a New One](/posts/how-to-upgrade-your-laptop-without-buying-a-new-one/)
+- [How to Connect Two Monitors to a Laptop](/posts/how-to-connect-two-monitors-to-a-laptop/)
+- [How to Speed Up a Slow Windows 11 PC in Under 30 Minutes](/posts/how-to-speed-up-a-slow-windows-11-pc-in-under-30-minutes/)
+- [Why Your PC Feels Slow Even When It Has Good Specs](/posts/why-your-pc-feels-slow-even-when-it-has-good-specs/)

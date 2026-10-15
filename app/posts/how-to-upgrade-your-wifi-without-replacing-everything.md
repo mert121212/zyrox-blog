@@ -1,6 +1,6 @@
 ---
 title: How to Upgrade Your Wi-Fi Setup Without Replacing Everything
-meta_description: >-
+meta_description: "Learn how to speed up your home Wi-Fi without buying an expensive mesh system. Optimize router placement, channel congestion, MoCA adapters, and PCIe cards."
 date: 2026-07-27T00:00:00.000Z
 category: Networking
 tags:
@@ -79,11 +79,10 @@ Sometimes the router really is the problem. If your router is more than five yea
 
 In these cases, upgrading to a modern Wi-Fi 6 or 6E router will make a genuine difference. But if those scenarios don't apply to you, work through the placement and channel steps first — you might fix your entire network for free.
 
-
 ---
 
 ## Related Guides
 
-- [How to Choose the Right SSD for Your PC Without Paying for the Wrong Specs](/posts/how-to-choose-the-right-ssd-for-your-system/)
 - [How to Choose the Best Wi-Fi Router for Your Home](/posts/how-to-choose-the-best-wifi-router/)
 - [Why Network Cables Still Matter in a Wireless World](/posts/why-network-cables-still-matter/)
+- [How to Set Up a Home Office PC for Productivity](/posts/how-to-set-up-a-home-office-pc-for-productivity/)

@@ -39,11 +39,17 @@ USB port failure is a subtle early sign of degradation. It often starts small â€
 
 If the affected ports fail to recognize a keyboard in the BIOS before Windows even loads, it is definitively a hardware issue. When multiple ports in the same physical cluster stop working simultaneously, the shared controller chip for that cluster is dying. On a three-year-old board, losing a cluster of USB ports is a major red flag that the board is degrading broadly.
 
-## RAM Slot Failure: System Only Sees Some Sticks
+## RAM Slot Failure vs. Bent CPU Socket Pins
 
-If you have four sticks of RAM but Windows only reports half your capacity, your first instinct is a bad stick. But if you test all four sticks individually and they work perfectly, the RAM slots on the motherboard are at fault.
+If you install four sticks of RAM but Windows only detects half your capacity (or the PC refuses to POST with RAM in slots A1/A2), your first thought might be a dead memory stick or dead motherboard slot. 
 
-The physical contacts inside the slot can oxidize, or the memory traces between the slot and the CPU can fail. If your system boots fine with sticks in slots A2 and B2 but crashes immediately when you use A1 and B1, the board is the problem. Memory errors that are slot-specific rather than stick-specific mean the board needs to be replaced; reflowing slot contacts is not practical for most users.
+However, before you declare the motherboard dead, check this critical technician secret: **Bent socket pins and uneven CPU cooler mounting pressure.**
+
+On modern Land Grid Array sockets (Intel LGA1700 and AMD AM5), the motherboard socket contains over 1,700 spring-loaded pins that make direct physical contact with the CPU pads. **The CPU internal memory controller (IMC) communicates with RAM slots through these exact socket pins.**
+- If you overtighten one corner of your CPU cooler or tighten the bracket unevenly, the CPU can tilt slightly in the socket, breaking contact with an entire memory channel.
+- If even **one single socket pin** is bent by a fraction of a millimeter, slots A1 and A2 will fail to detect memory entirely.
+
+*Before replacing the board:* Remove your CPU cooler, take out the processor, and inspect the socket under direct light with your phone camera zoomed in. If any pin reflects light at a different angle, it is bent. If all pins are straight, reinstall the CPU and tighten the cooler screws in an alternating cross pattern until finger-tight plus a quarter turn. If two slots still refuse to read known-good RAM sticks, the motherboard's PCB traces or physical slot solder joints have failed.
 
 ## PCIe Slot Death
 

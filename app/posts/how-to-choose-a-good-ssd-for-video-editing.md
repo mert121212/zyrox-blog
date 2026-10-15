@@ -1,6 +1,6 @@
 ---
 title: How to Choose a Good SSD for Video Editing
-meta_description: >-
+meta_description: "Discover the best SSDs for video editing. Understand sustained write speeds, SLC cache exhaustion, DRAM vs DRAMless for 4K/8K timeline scrubbing, and drive separation."
 date: 2026-07-29T00:00:00.000Z
 category: Storage
 tags:
@@ -29,46 +29,43 @@ Three things make video editing different from other workloads.
 
 **Sustained sequential writes.** Every time you create proxies, render previews, or export your timeline, the drive absorbs tens of gigabytes in huge sequential writes. Gaming is mostly sequential *reads*. Office work is tiny random writes. Editing is the opposite — massive, relentless writes that don't stop.
 
-**SLC cache exhaustion.** This is the dirty secret of consumer NVMe drives. Most of them use a chunk of their NAND flash as a fast SLC cache, which gives you those impressive initial burst speeds of 5,000-7,000 MB/s. But that cache is limited. Once it fills up, the drive falls back to its native TLC or QLC speed, which on cheap drives can be as slow as 400-600 MB/s. For a quick game install, you'll never notice. For a 30-minute 4K ProRes export, you'll notice immediately.
+**SLC cache exhaustion.** This is the dirty secret of consumer NVMe drives. Most of them use a chunk of their NAND flash as a fast pseudo-SLC cache, which gives you those impressive initial burst speeds of 5,000–7,000 MB/s. But that cache is limited (typically 100GB to 250GB on a 2TB drive). Once it fills up during a massive render or file transfer, the drive drops to its native TLC or QLC write speed. On cheap QLC drives (like the Kingston NV2 or Crucial P3), speeds can crater to 100–250 MB/s — literally slower than an old SATA SSD or mechanical hard drive.
 
-**Post-cache sustained speed.** This is the number that actually matters for editing. The Samsung 990 Pro sustains around 3,400 MB/s even after the cache is exhausted. A budget QLC drive might drop to 600 MB/s. That difference means the difference between an export taking 4 minutes or 20 minutes.
+**Post-cache sustained speed.** This is the number that actually matters for editing. High-end TLC drives like the Samsung 990 Pro or WD Black SN850X sustain roughly 1,500–1,650 MB/s directly to the TLC NAND even after their dynamic SLC buffer is completely exhausted. That allows a 100GB ProRes export to finish in continuous fluid bursts, rather than stalling the NLE pipeline.
+
+**Onboard DRAM Cache vs. DRAMless (HMB).** For video editing, **never buy a DRAMless drive for your primary media or scratch disk**. Budget drives rely on Host Memory Buffer (HMB), borrowing a tiny 64MB slice of system RAM for mapping tables. When your timeline holds thousands of cut clips, audio tracks, and optical flow files, an SSD with a dedicated 1GB-per-1TB LPDDR4 DRAM cache keeps the flash translation layer (FTL) instantly accessible, preventing playback micro-stutters during timeline scrubbing.
 
 ## The Drives Worth Buying
 
-For most editing workstations, I keep recommending the **Samsung 990 Pro** (2TB). Its sustained write performance after cache exhaustion is basically the best in the PCIe 4.0 class. It runs cooler than most competitors, and Samsung's firmware quality is consistently solid. I've had zero issues across multiple workstations.
+For most editing workstations, the **Samsung 990 Pro** (2TB or 4TB) remains a benchmark recommendation. Its sustained write performance after cache exhaustion sits around 1,550 MB/s, its thermal throttling behavior is well-controlled under the motherboard's M.2 heatsink, and Samsung's in-house Pascal controller handles deep I/O queues without latency spikes.
 
-The **WD Black SN850X** trades blows with the Samsung and is absolutely worth choosing if you find it cheaper on a given day. Performance is nearly identical in real editing workflows.
+The **WD Black SN850X** trades blows with the Samsung, delivering comparable ~1,600 MB/s sustained post-cache write speeds. If you find the SN850X on sale, it is an equally capable workhorse for Premiere Pro and DaVinci Resolve.
 
-What about PCIe 5.0? The **Crucial T705** puts up insane sequential numbers (14,500 MB/s reads), but once the cache is exhausted, its sustained write speed is only marginally better than the Samsung. And it runs significantly hotter, requiring a proper heatsink. Unless you are regularly editing 6K or 8K RAW footage, PCIe 5.0 doesn't justify the price premium for editing work.
+What about PCIe 5.0? Drives like the **Crucial T705** put up eye-popping sequential numbers (up to 14,500 MB/s reads in synthetic tests), but once their SLC cache is exhausted, their direct-to-TLC write speeds hover around 1,800–2,000 MB/s — only a modest jump over top PCIe 4.0 drives. Furthermore, Gen 5 drives draw up to 11–14W and run hot enough to throttle without active cooling or a hefty heatsink. Unless you regularly ingest uncompressed 6K or 8K RAW cinema footage, PCIe 5.0 drives are generally not worth the price and thermal penalty for daily editing.
 
-## Separate Your Drives
+## Separate Your Drives: The 3-Drive Architecture
 
 This is the single biggest workflow improvement you can make, and most people skip it.
 
-When your OS, applications, project files, and DaVinci Resolve cache are all fighting for bandwidth on the same physical drive, everything slows down. Resolve's cache system is particularly aggressive — it writes gigabytes of data while you're simultaneously scrubbing through your timeline.
+When your OS, NLE software, raw source media, and DaVinci Resolve cache are all fighting for bandwidth on the same physical SSD, the controller's queues get jammed. Resolve's render cache is especially aggressive — it writes gigabytes of uncompressed scratch data while you're simultaneously scrubbing multi-angle camera feeds.
 
-My recommended setup is dead simple:
-- **Drive 1 (OS + apps):** A basic 500GB or 1TB NVMe. Doesn't need to be fast. A WD Blue SN580 is fine.
-- **Drive 2 (projects + media):** This is where the Samsung 990 Pro goes. 2TB minimum, 4TB if your budget allows.
-- **Drive 3 (archive):** A large SATA SSD or external HDD for finished projects and raw footage you're done editing.
-
-Point your Resolve or Premiere cache to Drive 2, and suddenly your timeline scrubbing gets noticeably smoother.
+The ideal professional editing storage setup:
+- **Drive 1 (OS + Applications):** A reliable 1TB NVMe drive (a solid DRAMless TLC drive like the WD Blue SN580 or TeamGroup MP44L is completely fine here, as OS duties are light).
+- **Drive 2 (Project Media & Assets):** A 2TB or 4TB high-speed TLC drive with DRAM (Samsung 990 Pro or WD Black SN850X). This drive exclusively reads your raw video footage and audio tracks.
+- **Drive 3 (Scratch Disk / Render Cache):** A dedicated 1TB or 2TB high-end NVMe drive assigned strictly to your NLE's cache folder, scratch disk, and proxy files. Separating the cache write-stream from the media read-stream prevents timeline dropped frames.
+- **Archive (Cold Storage):** A large external HDD array, NAS, or SATA SSD for archiving completed client projects.
 
 ## NVMe vs SATA: When Does It Actually Matter?
 
-For 1080p H.264 or H.265 editing? SATA is genuinely fine. A 550 MB/s SATA SSD handles those codecs comfortably.
+For 1080p H.264 or H.265 editing, SATA is genuinely fine. A 550 MB/s SATA SSD easily handles compressed 8-bit or 10-bit video streams.
 
-But the moment you step up to ProRes, RAW, or high-bitrate 4K, NVMe's sustained throughput becomes essential. More importantly, NVMe handles deep I/O queues far better than SATA. When Resolve is issuing simultaneous reads and writes across multiple video tracks, NVMe maintains much more consistent performance. SATA drives can briefly stall when I/O queues build up, and that shows up as dropped frames on your timeline.
-
-My rule of thumb: if you're a hobbyist editing 1080p YouTube videos, save money and use SATA. If you're working professionally or regularly touching anything above 4K H.264, NVMe is the correct answer.
+However, the moment you step up to 10-bit 4:2:2 ProRes, DNxHR, or uncompressed RAW footage, NVMe's sustained throughput becomes non-negotiable. More importantly, NVMe drives support 64,000 queues with 64,000 commands each (via PCIe lanes), whereas legacy SATA AHCI is limited to a single queue of 32 commands. When an editing suite reads multiple video tracks while rendering background audio waveforms, NVMe prevents the I/O pipeline from stalling.
 
 ## Don't Worry About TBW
 
-People obsess over TBW (Terabytes Written) ratings for editing drives, and it's almost always unnecessary anxiety.
+People often worry about TBW (Terabytes Written) ratings for editing drives, but in practice, modern high-end TLC drives outlast normal workstation lifecycles.
 
-A heavy editing workflow might write 100GB per working day (proxies, cache, exports, saves). At that pace, five days a week, you're writing about 26TB per year. A 2TB Samsung 990 Pro has a 1,200 TBW rating. At your pace, that drive would theoretically last over 46 years. 
-
-You will upgrade your entire workstation three or four times before TBW becomes a factor. Stop worrying about it. Just buy a quality drive from Samsung, WD, or Crucial and focus on getting your edits done.
+A heavy professional workflow might write 150GB per working day in scratch files, proxies, and exports. Across 250 working days a year, that totals approximately 37.5TB written annually. A 2TB Samsung 990 Pro is rated for 1,200 TBW. At that relentless pace, you would need over 30 years to hit the warranty endurance limit. Focus on sustained write speed, onboard DRAM, and effective M.2 cooling rather than obsessing over TBW.
 
 
 ---

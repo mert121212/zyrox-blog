@@ -1,6 +1,6 @@
 ---
 title: How to Read a PSU Spec Sheet Without Getting Misled
-meta_description: >-
+meta_description: "Learn how to read a PSU spec sheet. Understand continuous vs peak wattage, +12V rail amperage, voltage ripple thresholds, capacitor tiers, and Cybenetics ratings."
 date: 2026-07-05T00:00:00.000Z
 category: Power Supply
 tags:
@@ -45,21 +45,27 @@ However, budget units often allocate a disproportionately small amount of total 
 
 Voltage regulation describes how tightly the PSU holds its output voltage under varying load conditions. The ATX specification allows a ±5% variation. 
 
-A cheap Tier D PSU will hit the absolute edge of that 5% tolerance under load, which causes instability and stresses your motherboard's regulators. A Tier B or Tier C PSU usually stays within ±2–3%, which is totally adequate for most consumer builds. But a premium Tier A PSU stays within ±1% or even ±0.5% under dynamic load changes, providing perfect stability with minimal regulator stress. Look for the 12V regulation stat; that's the one that matters.
+A cheap Tier D PSU will hit the absolute edge of that 5% tolerance under load (dropping down to 11.4V), which causes instability and stresses your motherboard's VRM regulators. A Tier B or Tier C PSU usually stays within ±2–3%, which is totally adequate for mainstream builds. But a premium Tier A PSU stays within ±1% or even ±0.5% under dynamic load changes, providing rock-solid voltage stability.
 
 ## Ripple and Noise Specification
 
-Ripple is the AC fluctuation riding on top of the DC output voltage. The ATX specification sets maximum allowable ripple at 120mV on the 12V rail.
+Ripple is the residual AC fluctuation riding on top of the rectified DC output voltage. The official ATX specification sets the maximum allowable ripple limit at **120mV on the +12V rail** and 50mV on the 5V and 3.3V rails.
 
-A premium Tier A PSU will easily keep ripple below 80mV on the 12V rail. A Tier D budget PSU will often show ripple numbers hovering right at the 120mV limit. High ripple is terrible for your components — it causes coil whine, accelerates capacitor aging across your entire system, and leads to crashes. If a PSU doesn't list ripple values on its spec sheet, they are hiding it for a reason.
+- **Tier A Flagship PSUs:** Typically suppress 12V ripple down to **under 20mV to 25mV** under 100% load.
+- **Mid-Range / Budget Units:** Usually hover around 40mV to 60mV.
+- **Dangerous Units:** Float near or above the 120mV boundary. 
 
-## 80 Plus Efficiency Ratings
+High ripple damages delicate silicon over time, degrades overclock stability, and creates severe GPU inductor coil whine.
 
-The 80 Plus certification tests efficiency at 20%, 50%, and 100% load. Higher efficiency means less energy wasted as heat. 
+## Efficiency: 80 Plus vs. Cybenetics ETA
 
-80 Plus White is the minimum standard, hitting 80% efficiency across the board. Bronze hits 85% at 50% load, making it a common budget choice. Gold hits 90% at 50% load, which is the sweet spot for modern gaming builds. Platinum and Titanium hit 92% and 94% respectively, but are priced for premium workstation builds.
+The 80 Plus certification tests efficiency at 20%, 50%, and 100% load at room temperature (23°C). 80 Plus Bronze hits 85% at 50% load, while 80 Plus Gold requires 90%.
 
-The 50% load efficiency is the most relevant, because most desktop systems run at 30–60% of their rated load during gaming. Just remember: 80 Plus only measures efficiency, not quality. A PSU can pass Gold certification and still have terrible voltage regulation and cheap capacitors.
+However, **Cybenetics** has largely superseded 80 Plus in technical evaluations:
+- **Cybenetics ETA:** Tests real-world efficiency at an elevated 30°C+ ambient across over 1,400 load combinations, including 5VSB vampire power draw.
+- **Cybenetics LAMBDA:** Objectively measures acoustic fan noise inside an anechoic chamber (from Standard down to A++).
+
+Remember: efficiency certifications only measure how much power is lost as heat. A PSU can pass 80 Plus Gold and still have poor voltage regulation, missing protections, or terrible internal capacitors. Always check teardown reviews.
 
 ## Protection Features Checklist
 

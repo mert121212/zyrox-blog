@@ -34,7 +34,7 @@ The 7800X3D is one of the most power-efficient gaming processors AMD has ever en
 
 Even in a 30-minute looped Cinebench R23 all-core stress run, my test bench logged a maximum power draw of just **84.3W**. That is less power than an old Core i7-7700K pulled eight years ago.
 
-However, the 3D V-Cache layer does act as a thermal insulator over the silicon, meaning heat transfers into the integrated heat spreader (IHS) through a dense bottleneck. You don't need massive thermal dissipation capacity (wattage handling); you need a cooler with **rapid heatpipe transfer directly above the center-right CCD location**.
+However, the 3D V-Cache layer does act as a thermal insulator over the silicon, meaning heat transfers into the integrated heat spreader (IHS) through a dense bottleneck. You don't need massive thermal dissipation capacity (wattage handling); you need a cooler with **rapid heat transfer directly above the off-center CCD hotspot** (which is why coolers with AM5 offset mounting brackets, like Arctic and Noctua's -7mm offset, see an extra 2–4°C temperature drop).
 
 Here is how four distinct coolers performed on our standardized AM5 test bench (ambient temperature locked at 21.0°C).
 

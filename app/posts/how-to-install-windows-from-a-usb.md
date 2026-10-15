@@ -43,7 +43,7 @@ The critical rule is that your USB boot mode must match your target installation
 
 To get the machine to boot from the USB, you need to use the one-time boot menu right as the PC powers on.
 
-The key varies by manufacturer. For ASUS, it's usually F8. For MSI, Acer, Gigabyte, Dell, and Lenovo, it's often F12. For HP, it's Esc then F9. Tap the key rapidly before Windows loads. If you miss it, restart and try again.
+The key varies by manufacturer: for **ASUS**, it's usually **F8**; for **MSI**, it is **F11**; for **Gigabyte, Dell, and Lenovo**, it is typically **F12**; for **Acer**, it is **F12** (must be enabled in BIOS first); for **HP**, press **Esc** then **F9**. Tap the key rapidly before Windows loads. If you miss it, restart and try again.
 
 When the menu pops up, you might see your USB listed twice — once as a UEFI entry and once as a Legacy entry. Always select the UEFI entry for a modern Windows install.
 

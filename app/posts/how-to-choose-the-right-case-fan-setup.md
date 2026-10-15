@@ -62,7 +62,7 @@ After testing dozens of fans across many builds, these are the ones I actually t
 
 **Arctic P14 PWM PST** (~$10) — The value king. At ten bucks, it delivers about 80% of the performance of fans costing three times as much. The PST feature lets you daisy-chain multiple fans to a single header, which is brilliantly practical when your motherboard has limited fan connectors. Build quality isn't quite Noctua-tier, but at this price, who cares?
 
-**Corsair AF140 Elite** (~$30) — The best option if you care about RGB alongside performance. Clean lighting implementation, solid airflow numbers, above-average build quality. Lower static pressure makes it better for open intake positions than radiator duty.
+**Corsair iCUE AF140 RGB Elite** (~$35) — The best option if you want RGB lighting integrated into a high-performance fan. Features 8 addressable LEDs, AirGuide anti-vortex vanes, and fluid dynamic bearings. (If you prefer a stealth look with no lights, the standard non-RGB **AF140 Elite** offers the same quiet AirGuide performance without requiring the iCUE lighting controller).
 
 ## PWM Fans: Just Buy These
 

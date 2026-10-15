@@ -70,8 +70,7 @@ Different cases use different filter mechanisms, and handling them correctly pre
 5. Ground yourself by touching the bare metal of the PC chassis frame before touching any internal electronic components.
 
 ### Step 2: The Held-Blade Fan Technique
-> [!IMPORTANT]
-> **Never allow cooling fans to free-spin while blasting them with compressed air.** Forced high-speed rotation acts as an electrical generator (back-EMF), sending unregulated voltage back into the motherboard fan headers while causing bearing burnout.
+> **Critical Rule:** **Never allow cooling fans to free-spin while blasting them with compressed air.** Forced high-speed rotation acts as an electrical generator (back-EMF), sending unregulated voltage back into the motherboard fan headers while causing bearing burnout.
 
 - Use a finger or cotton swab to hold the fan blade firmly in place.
 - Direct short, controlled 1–2 second bursts of air across each blade and through the hub.

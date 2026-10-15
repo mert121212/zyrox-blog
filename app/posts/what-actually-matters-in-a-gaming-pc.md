@@ -53,13 +53,17 @@ In 2020, 16GB was comfortable for gaming. In 2026, that's shifting. Modern games
 
 The result is that a 16GB system doing "just gaming" with a few background apps frequently pushes 85 to 90 percent RAM utilization. At that level, Windows begins paging data to the storage drive, introducing latency and stuttering that no GPU upgrade will fix. A 32GB DDR5-6000 kit costs $70 to $100 in 2026. That is not an optional luxury — it is essential for a build that won't feel cramped within two years.
 
-## Why NVMe vs SATA SSD Barely Matters for Gaming
+## NVMe vs SATA SSD: Where It Matters (And Where It Doesn't)
 
-This is one of the most persistent misconceptions in PC building. A Gen 4 NVMe reads at around 7,400 MB/s versus 550 MB/s for a SATA SSD. That is a 13x difference on paper. In actual game loading, the difference is around 5 to 15 percent.
+A Gen 4 NVMe reads at around 7,000 MB/s versus 550 MB/s for a SATA SSD. That is a 12x difference on paper, but in traditional game loading screens, the difference is only 5 to 15 percent.
 
-Game loading involves many small random file reads, CPU decompression of compressed data, VRAM upload to the GPU, and shader compilation. None of these stages is bottlenecked by the gap between NVMe and SATA speeds. In real loading tests, a SATA SSD loads most games 5 to 10 seconds slower than NVMe. Noticeable, but not transformative.
+Why? Traditional game loading involves uncompressing files using the CPU, moving assets through system memory, and compiling shaders — none of which saturates a multi-gigabyte NVMe bus. In titles like *Cyberpunk 2077* or *Shadow of the Tomb Raider*, a SATA SSD loads within 2 to 4 seconds of an NVMe drive.
 
-If your system already has a SATA SSD, don't upgrade to NVMe for gaming performance. Upgrade if you want faster file transfers, or if you're building new and NVMe costs only marginally more.
+**However, the landscape is shifting with DirectStorage and Unreal Engine 5:**
+- In titles utilizing **DirectStorage with GPU Decompression** (such as *Ratchet & Clank: Rift Apart*), assets bypass the CPU and decompress directly into VRAM at 3–4 GB/s. A SATA drive will cause visible texture pop-in or micro-stutters during seamless world transitions.
+- Next-gen engines utilizing virtualized geometry (like Unreal Engine 5's Nanite) stream high-poly mesh clusters on the fly as you turn the camera. 
+
+*The bottom line:* For existing builds, a SATA SSD is still viable for secondary storage. But for any new gaming build, a mainstream PCIe 4.0 NVMe drive (like the WD Blue SN580 or TeamGroup MP44L) costs virtually the same as a SATA SSD and future-proofs you for DirectStorage titles.
 
 ## Why CPU Cooling Affects Sustained FPS
 

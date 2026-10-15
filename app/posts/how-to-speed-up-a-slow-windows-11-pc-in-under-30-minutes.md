@@ -42,8 +42,7 @@ I looked at my aunt's laptop last Thanksgiving. She had **nineteen** startup app
 
 We disabled everything except her antivirus and OneDrive. Boot time dropped to about 22 seconds.
 
-> [!NOTE]
-> Disabling an app here does **not** uninstall it. It just stops it from auto-launching in the background. You can still open Spotify or Discord whenever you want from the Start menu; it just won't sit there consuming your RAM and CPU cycles from the instant your machine powers on.
+> **Important Note:** Disabling an app here does **not** uninstall it. It just stops it from auto-launching in the background. You can still open Spotify or Discord whenever you want from the Start menu; it just won't sit there consuming your RAM and CPU cycles from the instant your machine powers on.
 
 Right-click every app you do not need launching on boot and select **Disable**.
 

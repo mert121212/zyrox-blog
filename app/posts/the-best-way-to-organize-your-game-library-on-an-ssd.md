@@ -1,6 +1,6 @@
 ---
 title: The Best Way to Organize Your Game Library on an SSD
-meta_description: >-
+meta_description: "Learn how to organize and manage a large game library across fast NVMe SSDs and secondary storage using Steam Storage Manager, symlinks, and launcher caches."
 date: 2026-07-05T00:00:00.000Z
 category: Storage
 tags:
@@ -23,11 +23,14 @@ I have about 200 games in my Steam library. Add Epic, GOG, and EA App titles on 
 
 ## How Much Space Do You Actually Need?
 
-Before diving into organization, let's get honest about capacity. Game install sizes have grown dramatically — a modern AAA title like Call of Duty can take up over 200GB by itself once you add updates and packs.
+Before diving into organization, let's get honest about capacity. Modern AAA titles have exploded in size — *Call of Duty* can easily occupy 180GB+, *Baldur's Gate 3* takes ~140GB, and *Star Wars Jedi: Survivor* clocks in at 130GB.
 
-A 500 GB drive holds roughly 8 to 12 AAA titles, which is incredibly tight and requires constant rotation. A 1 TB drive fits maybe 15 to 25 AAA games, which is workable if you are disciplined. At 2 TB, you can comfortably hold 35 to 55 large titles, which is the sweet spot for most serious gamers. A 4 TB drive is genuinely future-proof for collectors, holding 70 to 100 games without breaking a sweat.
+- **A 500 GB drive** (which yields ~465 GB usable, minus ~70 GB for Windows and staging) fits only **2 to 3 modern AAA games** before running dangerously low on space. It requires constant juggling and uninstalling.
+- **A 1 TB drive** holds roughly **5 to 8 large AAA games** alongside your operating system and apps. It is manageable if you are disciplined about uninstalling finished games.
+- **A 2 TB drive** holds **12 to 18 major titles** without breaking a sweat, providing the necessary breathing room to keep SSD write performance and wear leveling optimal.
+- **A 4 TB+ drive (or secondary drive)** is ideal for collectors who maintain active multiplayer rotations and mod-heavy single-player installs.
 
-My personal setup turned out to be a 2 TB NVMe SSD as the primary drive combined with a 4 TB HDD for archiving games I haven't touched in six months or more. That two-tier approach changed everything.
+My personal setup is a two-tier approach: a fast **2 TB Samsung 990 Pro NVMe SSD** for active daily games, paired with a high-capacity **4 TB secondary drive** for archiving installs I haven't touched in months. That division completely solved my storage anxiety.
 
 ## The Two-Tier System: Active vs. Inactive Games
 
@@ -71,11 +74,11 @@ Epic stores its cache in your AppData folder. You can't easily redirect it, but 
 
 A full SSD doesn't just run out of space — it performs noticeably worse. Most NVMe drives need at least 10 to 15 percent free space for optimal write speeds due to how NAND wear leveling works.
 
-I set a personal 15% free space rule. On a 1 TB SSD, that means I start moving games to the archive HDD once I drop below 150 GB free. I enable cloud saves everywhere possible so I can safely delete and reinstall without losing progress. I audit my drive with WinDirStat or TreeSize Free quarterly to find hidden space hogs — shader caches, Windows temp files, and old launcher installers are frequent offenders. I also turn on Storage Sense in Windows settings, which automatically clears temp files and empties the Recycle Bin.
+I set a personal 15% free space rule. On a 2 TB SSD, that means I start moving games to the archive drive once I drop below ~300 GB free. I enable cloud saves everywhere possible so I can safely delete and reinstall without losing progress. I audit my drive with WinDirStat or TreeSize Free quarterly to find hidden space hogs — shader caches, Windows temp files, and old launcher installers are frequent offenders. I also turn on Storage Sense in Windows settings, which automatically clears temp files and empties the Recycle Bin.
 
 ## My Actual Setup
 
-My primary drive is a 1 TB Samsung 990 Pro holding Windows, my current games, and all my launchers. The second drive is a 2 TB Seagate Barracuda holding inactive games, recordings, and DRM-free GOG installs. I keep an external 4 TB WD Elements drive for cold backups of save games and old screenshots.
+My primary drive is a **2 TB Samsung 990 Pro NVMe** holding Windows, my active game rotation, and launchers. My secondary drive is a **4 TB Seagate BarraCuda** holding inactive game archives, shadowplay recordings, and installer backups. I keep an external WD Elements drive for cold backups of local save games and screenshots.
 
 That combination has kept me organized for two years. The key isn't having the most space — it's using a system that makes maintenance automatic rather than something you have to actively think about every week.
 

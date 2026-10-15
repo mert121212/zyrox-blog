@@ -43,12 +43,26 @@ Plain B650 (no E suffix) lacks the guaranteed PCIe 5.0 x16 GPU slot. Some B650 b
 ## Top Motherboards Recommended for Ryzen 7 7800X3D
 
 <div class="hardware-pick-card featured-pick">
-  <span class="pick-badge">★ Best Balanced X670E Pick</span>
-  <h3>1. Gigabyte X670E Aorus Master</h3>
+  <span class="pick-badge">★ Undisputed Best Real-World Value</span>
+  <h3>1. MSI MAG B650 Tomahawk WiFi (~$190)</h3>
+  <div class="hardware-pick-specs">
+    <strong>Key Specs:</strong> AM5 / B650 | 14+2+1 Phase 80A SPS VRM | 3x M.2 PCIe 4.0 | Wi-Fi 6E & 2.5G LAN | Flash BIOS Button
+  </div>
+  <p>The definitive motherboard for 90% of 7800X3D owners. Since the 7800X3D draws only 55W–80W in games, the Tomahawk's heavy 14-phase heatsinks stay under 55°C. Delivers rock-solid DDR5-6000 EXPO memory stability at half the price of flagship X670E boards.</p>
+  <div class="hardware-buy-actions">
+    <a href="https://www.amazon.com/s?k=MSI+MAG+B650+Tomahawk+WiFi&tag=zyrox0e-20" target="_blank" rel="nofollow sponsored noopener" class="buy-btn-amazon">Check Price on Amazon ↗</a>
+    <a href="https://www.newegg.com/p/pl?d=MSI+MAG+B650+Tomahawk+WiFi" target="_blank" rel="nofollow sponsored noopener" class="buy-btn-newegg">View on Newegg ↗</a>
+  </div>
+  <div class="affiliate-micro-note">Includes integrated I/O shield, dedicated CPU-free Flash BIOS button, and pre-installed Wi-Fi 6E.</div>
+</div>
+
+<div class="hardware-pick-card">
+  <span class="pick-badge value-badge">★ Best Balanced PCIe 5.0 Pick</span>
+  <h3>2. Gigabyte X670E Aorus Master</h3>
   <div class="hardware-pick-specs">
     <strong>Key Specs:</strong> AM5 / X670E | DDR5 EXPO | 16+2+2 Phase VRM | 4x M.2 (2x PCIe 5.0) | Q-Flash Plus & Wi-Fi 6E
   </div>
-  <p>The definitive sweet spot for enthusiast AM5 builds. Features dedicated Q-Flash Plus button to update BIOS without a CPU, dual PCIe 5.0 M.2 slots, and premium ESS Sabre DAC audio.</p>
+  <p>For enthusiasts who demand guaranteed PCIe 5.0 x16 GPU bandwidth and 4x high-speed NVMe slots. Features dedicated Q-Flash Plus to update BIOS without a CPU, and premium ESS Sabre DAC audio.</p>
   <div class="hardware-buy-actions">
     <a href="https://www.amazon.com/s?k=Gigabyte+X670E+Aorus+Master&tag=zyrox0e-20" target="_blank" rel="nofollow sponsored noopener" class="buy-btn-amazon">Check Price on Amazon ↗</a>
     <a href="https://www.newegg.com/p/pl?d=Gigabyte+X670E+Aorus+Master" target="_blank" rel="nofollow sponsored noopener" class="buy-btn-newegg">View on Newegg ↗</a>
@@ -58,7 +72,7 @@ Plain B650 (no E suffix) lacks the guaranteed PCIe 5.0 x16 GPU slot. Some B650 b
 
 <div class="hardware-pick-card">
   <span class="pick-badge value-badge">★ Best Value B650E Winner</span>
-  <h3>2. ASRock B650E Taichi Lite / Steel Legend</h3>
+  <h3>3. ASRock B650E Taichi Lite / Steel Legend</h3>
   <div class="hardware-pick-specs">
     <strong>Key Specs:</strong> AM5 / B650E | PCIe 5.0 x16 GPU Slot | 24-Phase SPS VRM | Killer 2.5G LAN & Wi-Fi 6E
   </div>
@@ -71,7 +85,7 @@ Plain B650 (no E suffix) lacks the guaranteed PCIe 5.0 x16 GPU slot. Some B650 b
 
 <div class="hardware-pick-card">
   <span class="pick-badge silent-badge">★ Enthusiast Flagship Platform</span>
-  <h3>3. ASUS ROG Crosshair X670E Hero</h3>
+  <h3>4. ASUS ROG Crosshair X670E Hero</h3>
   <div class="hardware-pick-specs">
     <strong>Key Specs:</strong> AM5 / X670E | Dual USB4 40Gbps | 18+2 Phase VRM | 5x M.2 Slots | Polymo Lighting
   </div>
@@ -86,7 +100,7 @@ Plain B650 (no E suffix) lacks the guaranteed PCIe 5.0 x16 GPU slot. Some B650 b
 
 AMD's memory overclocking standard for DDR5 is called EXPO. It works identically to [Intel](https://www.intel.com)'s XMP — the RAM manufacturer pre-validates specific frequency and timing combinations, and your motherboard reads and applies them automatically when enabled.
 
-For the 7800X3D, memory speed is one of the few remaining performance levers since you cannot overclock the CPU core. Testing across multiple games consistently shows that DDR5-6000 CL30 delivers 4 to 10 percent better frame rates than the DDR5-4800 JEDEC default. The AMD-validated sweet spot is DDR5-6000, which sits at the 1:1 FCLK ratio where the memory controller divides evenly against the memory frequency. Going above DDR5-6400 yields diminishing returns and sometimes causes training failures.
+For the 7800X3D, memory speed is one of the few remaining performance levers since you cannot overclock the CPU core. Testing across multiple games consistently shows that DDR5-6000 CL30 delivers 4 to 10 percent better frame rates than the DDR5-4800 JEDEC default. The AMD-validated sweet spot is DDR5-6000, which sits at the **1:1 UCLK:MCLK ratio** (both memory and memory controller running at 3000 MHz) with the Infinity Fabric (FCLK) set to 2000 MHz. Pushing past 6000 MT/s forces the controller into a 1:2 divider, increasing memory latency and lowering gaming FPS.
 
 To enable it, enter your BIOS, navigate to the overclocking or tweaker section, select the EXPO profile, save, and reboot. The system may take slightly longer on the first boot while the memory controller trains. Verify in BIOS that the correct frequency is showing afterward.
 
@@ -96,7 +110,7 @@ This trips up new AM5 builders more than anything else. All four boards in this 
 
 ## Which Board Should You Choose?
 
-For a gaming-focused, value-conscious build, go with the ASRock B650E Taichi. For the best balance of features and price, the Gigabyte X670E Aorus Master is hard to beat. If you want effortless EXPO setup and dual PCIe 5.0 x16, the MSI MEG X670E ACE delivers. And if you're making a long-term platform investment where money is secondary, the ASUS ROG Crosshair X670E Hero is the most complete package available on AM5.
+For a gaming-focused, value-conscious build, go with the MSI MAG B650 Tomahawk WiFi. For the best balance of features and I/O, the Gigabyte X670E Aorus Master is hard to beat. If you want maximum connectivity with USB4 and five M.2 slots, the ASUS ROG Crosshair X670E Hero delivers. And for B650E with guaranteed PCIe 5.0 x16 at a lower cost, the ASRock B650E Taichi is the most compelling value proposition on AM5.
 
 
 ---

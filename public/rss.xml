@@ -183,7 +183,7 @@
       <title>How to Choose a Good SSD for Video Editing</title>
       <link>https://zyroxlab.com/posts/how-to-choose-a-good-ssd-for-video-editing/</link>
       <guid>https://zyroxlab.com/posts/how-to-choose-a-good-ssd-for-video-editing/</guid>
-      <description></description>
+      <description>Discover the best SSDs for video editing. Understand sustained write speeds, SLC cache exhaustion, DRAM vs DRAMless for 4K/8K timeline scrubbing, and drive separation.</description>
       <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
       <media:content url="https://zyroxlab.com/images/posts/best-ssd-for-gaming-2026.jpg" medium="image" />
       <enclosure url="https://zyroxlab.com/images/posts/best-ssd-for-gaming-2026.jpg" type="image/jpeg" length="0" />
@@ -201,7 +201,7 @@
       <title>How to Upgrade Your Wi-Fi Setup Without Replacing Everything</title>
       <link>https://zyroxlab.com/posts/how-to-upgrade-your-wifi-without-replacing-everything/</link>
       <guid>https://zyroxlab.com/posts/how-to-upgrade-your-wifi-without-replacing-everything/</guid>
-      <description></description>
+      <description>Learn how to speed up your home Wi-Fi without buying an expensive mesh system. Optimize router placement, channel congestion, MoCA adapters, and PCIe cards.</description>
       <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
       <media:content url="https://zyroxlab.com/images/posts/how-to-build-a-budget-gaming-pc.jpg" medium="image" />
       <enclosure url="https://zyroxlab.com/images/posts/how-to-build-a-budget-gaming-pc.jpg" type="image/jpeg" length="0" />
@@ -210,7 +210,7 @@
       <title>When It Is Time to Replace a Monitor</title>
       <link>https://zyroxlab.com/posts/when-to-replace-a-monitor/</link>
       <guid>https://zyroxlab.com/posts/when-to-replace-a-monitor/</guid>
-      <description></description>
+      <description>Learn the clear signs that it is time to replace your computer monitor, from backlight dimming and bleed to pixel death, burn-in, and refresh rate bottlenecks.</description>
       <pubDate>Sat, 25 Jul 2026 00:00:00 GMT</pubDate>
       <media:content url="https://zyroxlab.com/images/posts/best-monitor-for-work-and-gaming.jpg" medium="image" />
       <enclosure url="https://zyroxlab.com/images/posts/best-monitor-for-work-and-gaming.jpg" type="image/jpeg" length="0" />
@@ -255,7 +255,7 @@
       <title>How to Choose a Monitor Arm and Stand</title>
       <link>https://zyroxlab.com/posts/how-to-choose-a-monitor-arm-and-stand/</link>
       <guid>https://zyroxlab.com/posts/how-to-choose-a-monitor-arm-and-stand/</guid>
-      <description></description>
+      <description>Learn how to choose the right monitor arm. Understand VESA patterns, weight limits, gas spring vs mechanical tension, clamp vs grommet mounting, and cable routing.</description>
       <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
       <media:content url="https://zyroxlab.com/images/posts/best-monitor-for-work-and-gaming.jpg" medium="image" />
       <enclosure url="https://zyroxlab.com/images/posts/best-monitor-for-work-and-gaming.jpg" type="image/jpeg" length="0" />
@@ -426,7 +426,7 @@
       <title>The BIOS Settings That Matter Most for a Stable Overclock</title>
       <link>https://zyroxlab.com/posts/bios-settings-for-stable-overclock/</link>
       <guid>https://zyroxlab.com/posts/bios-settings-for-stable-overclock/</guid>
-      <description>Learn the BIOS settings that affect CPU voltage, memory stability, and safe overclock tuning. Includes XMP, LLC, and thermal limit tips.</description>
+      <description>Learn the BIOS settings that affect CPU voltage, memory stability, power limits, and safe overclock tuning. Includes XMP/EXPO, LLC, and thermal limit tips.</description>
       <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
       <media:content url="https://zyroxlab.com/images/posts/bios-settings-for-stable-overclock.jpg" medium="image" />
       <enclosure url="https://zyroxlab.com/images/posts/bios-settings-for-stable-overclock.jpg" type="image/jpeg" length="0" />
@@ -444,7 +444,7 @@
       <title>How to Keep a PC Running Well for Years</title>
       <link>https://zyroxlab.com/posts/how-to-keep-a-pc-running-well-for-years/</link>
       <guid>https://zyroxlab.com/posts/how-to-keep-a-pc-running-well-for-years/</guid>
-      <description></description>
+      <description>Learn how to keep your PC running fast and stable for years. A master maintenance schedule covering dust cleaning, thermal paste, driver staging, and 3-2-1 backups.</description>
       <pubDate>Mon, 06 Jul 2026 00:00:00 GMT</pubDate>
       <media:content url="https://zyroxlab.com/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg" medium="image" />
       <enclosure url="https://zyroxlab.com/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg" type="image/jpeg" length="0" />
@@ -462,7 +462,7 @@
       <title>The Best Way to Organize Your Game Library on an SSD</title>
       <link>https://zyroxlab.com/posts/the-best-way-to-organize-your-game-library-on-an-ssd/</link>
       <guid>https://zyroxlab.com/posts/the-best-way-to-organize-your-game-library-on-an-ssd/</guid>
-      <description></description>
+      <description>Learn how to organize and manage a large game library across fast NVMe SSDs and secondary storage using Steam Storage Manager, symlinks, and launcher caches.</description>
       <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
       <media:content url="https://zyroxlab.com/images/posts/best-ssd-for-gaming-2026.jpg" medium="image" />
       <enclosure url="https://zyroxlab.com/images/posts/best-ssd-for-gaming-2026.jpg" type="image/jpeg" length="0" />
@@ -471,7 +471,7 @@
       <title>How to Read a PSU Spec Sheet Without Getting Misled</title>
       <link>https://zyroxlab.com/posts/how-to-read-a-psu-spec-sheet/</link>
       <guid>https://zyroxlab.com/posts/how-to-read-a-psu-spec-sheet/</guid>
-      <description></description>
+      <description>Learn how to read a PSU spec sheet. Understand continuous vs peak wattage, +12V rail amperage, voltage ripple thresholds, capacitor tiers, and Cybenetics ratings.</description>
       <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
       <media:content url="https://zyroxlab.com/images/posts/best-psu-for-rtx-5080.jpg" medium="image" />
       <enclosure url="https://zyroxlab.com/images/posts/best-psu-for-rtx-5080.jpg" type="image/jpeg" length="0" />
@@ -498,7 +498,7 @@
       <title>How to Choose a Motherboard for a New PC Build Without Overpaying</title>
       <link>https://zyroxlab.com/posts/how-to-choose-a-motherboard-for-a-new-build/</link>
       <guid>https://zyroxlab.com/posts/how-to-choose-a-motherboard-for-a-new-build/</guid>
-      <description></description>
+      <description>Learn how to choose the right motherboard for your PC build without overpaying. Covers ATX vs mATX, AM5 vs LGA1700/1851 chipsets, VRM power stages, and BIOS Flashback.</description>
       <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
       <media:content url="https://zyroxlab.com/images/posts/best-motherboard-for-rtx-4070.jpg" medium="image" />
       <enclosure url="https://zyroxlab.com/images/posts/best-motherboard-for-rtx-4070.jpg" type="image/jpeg" length="0" />
@@ -552,7 +552,7 @@
       <title>How to Spot a Bad Power Supply Before You Buy It</title>
       <link>https://zyroxlab.com/posts/how-to-spot-a-bad-power-supply-before-you-buy-it/</link>
       <guid>https://zyroxlab.com/posts/how-to-spot-a-bad-power-supply-before-you-buy-it/</guid>
-      <description></description>
+      <description>Learn how to spot dangerous and low-quality power supplies before buying. Covers 80 Plus vs Cybenetics, fake wattage ratings, missing protections, and OEM tier lists.</description>
       <pubDate>Tue, 30 Jun 2026 00:00:00 GMT</pubDate>
       <media:content url="https://zyroxlab.com/images/posts/best-psu-for-rtx-5080.jpg" medium="image" />
       <enclosure url="https://zyroxlab.com/images/posts/best-psu-for-rtx-5080.jpg" type="image/jpeg" length="0" />

@@ -57,13 +57,31 @@ Wait a moment, then start them back up in reverse:
 
 Head back to Settings and try checking for updates again.
 
-## Step 4: Clear the SoftwareDistribution Folder
+## Step 4: Clear the SoftwareDistribution and Catroot2 Folders
 
-Windows stores downloaded update packages in `C:\Windows\SoftwareDistribution`. If this folder gets corrupted (from a power loss or disk error), update checks will fail silently or loop forever. 
+Windows stores downloaded update packages in `C:\Windows\SoftwareDistribution` and cryptographic signature catalogs in `C:\Windows\System32\catroot2`. If either folder contains corrupted hashes from an interrupted download or sudden reboot, Windows Update will loop forever or throw `0x80070002` errors.
 
-To fix this, open an Admin Command Prompt and stop the three services from Step 3 (`wuauserv`, `bits`, `cryptsvc`). Then open File Explorer, go to `C:\Windows\SoftwareDistribution`, and delete everything inside. Restart the three services in the command prompt. 
-
-Windows will recreate the folder automatically. Your next update check will take longer than usual because it has to re-download the catalog, but it usually clears the error.
+To perform a clean reset from an Admin Command Prompt:
+1. Stop all associated services:
+   ```cmd
+   net stop wuauserv
+   net stop cryptsvc
+   net stop bits
+   net stop msiserver
+   ```
+2. Safely rename the cache and signature folders (Windows will automatically create fresh, pristine ones upon restart):
+   ```cmd
+   ren C:\Windows\SoftwareDistribution SoftwareDistribution.old
+   ren C:\Windows\System32\catroot2 catroot2.old
+   ```
+3. Restart the services:
+   ```cmd
+   net start wuauserv
+   net start cryptsvc
+   net start bits
+   net start msiserver
+   ```
+4. Head back to Settings and check for updates. The first check will take 3–5 minutes as Windows rebuilds its local cryptographic catalog, but this fixes over 75% of persistent update hangs.
 
 ## Step 5: Verify TPM 2.0 and Secure Boot for Windows 11
 

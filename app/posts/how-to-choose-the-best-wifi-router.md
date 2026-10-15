@@ -51,11 +51,11 @@ Two-story coverage is harder than the square footage alone suggests because sign
 
 ## The Routers I'd Actually Recommend
 
-**ASUS RT-AX88U (~$200-250)** — This is what I personally use. The firmware is the most feature-rich in this price range. You get real QoS with per-category traffic shaping, a built-in VPN server, eight Gigabit LAN ports, and per-device bandwidth monitoring. I've been running mine for 18 months without a single reboot. The interface looks intimidating at first, but that depth is exactly why I chose it.
+**ASUS RT-AX88U Pro (~$220–$260)** — The benchmark prosumer router. The Pro revision features a 2.0 GHz quad-core processor and dual 2.5 Gbps Ethernet ports (one dedicated 2.5G WAN and one 2.5G LAN) alongside four Gigabit ports, ensuring it won't bottleneck multi-gigabit fiber connections. The ASUSWRT firmware provides robust QoS, native VPN Fusion (WireGuard / OpenVPN client support), and AiProtection security powered by Trend Micro without requiring a recurring monthly subscription.
 
-**TP-Link Archer AX90 (~$180-220)** — This surprised me. Its tri-band design is smart, the Tether app setup took under 10 minutes, and in a home under 2,000 square feet with minimal advanced needs, this is the easiest recommendation I can make. Excellent value.
+**TP-Link Archer AX90 / AXE75 (~$160–$200)** — Exceptional mid-range performance. The AXE75 unlocks the clean 6 GHz band for low-interference wireless gaming in dense apartments, while the Tether mobile app makes setup effortless in under ten minutes.
 
-**Eero Pro 6E (~$200/node)** — The cleanest setup experience I've ever used. The app is genuinely excellent and the network just works. The trade-off is control: advanced settings like custom DNS, granular QoS, or VLANs are either absent or buried deep. For setting up a reliable network at your parents' house or for a non-technical household, this is my default recommendation.
+**Eero Pro 6E (~$180–$220 per node)** — The cleanest whole-home mesh experience. It handles roaming handoffs seamlessly as you walk between floors. The trade-off is granular control: advanced features like custom VLANs, split SSIDs, and detailed QoS queues are locked down. For non-technical households that prioritize zero-maintenance reliability, it remains the gold standard.
 
 ## Single Router vs. Mesh: Keep It Simple
 
@@ -93,11 +93,10 @@ Your ISP's modem-router combo was engineered to a cost. It runs older chipsets, 
 
 If your ISP allows it, put their gateway into bridge mode and run a separate aftermarket router for all Wi-Fi duties. You'll get better hardware, better software, more frequent security patches, and features your ISP router will never offer.
 
-
 ---
 
 ## Related Guides
 
-- [How to Spot a Failing Hard Drive Before It Fails](/posts/how-to-spot-a-failing-hard-drive-before-it-fails/)
 - [Why Network Cables Still Matter in a Wireless World](/posts/why-network-cables-still-matter/)
 - [How to Upgrade Your Wi-Fi Setup Without Replacing Everything](/posts/how-to-upgrade-your-wifi-without-replacing-everything/)
+- [How to Set Up a Home Office PC for Productivity](/posts/how-to-set-up-a-home-office-pc-for-productivity/)

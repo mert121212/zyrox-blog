@@ -73,13 +73,13 @@ Intel's 13th and 14th Gen Core i7 and i9 processors are the hardest consumer chi
 
 AMD's Ryzen 7 7800X3D is an exception — it has a hard limit on power to protect its stacked cache, meaning an excellent 120W air cooler handles it beautifully.
 
-If you are on a budget with a 65W chip, a $25 Thermalright Assassin X 120 SE provides shocking value. For mainstream 125W gaming chips, mid-range dual-tower coolers like the $55 Thermalright Peerless Assassin or the DeepCool AK620 are perfect. For extreme 180W+ chips, the $100 Noctua NH-D15 remains the gold standard for air cooling.
+If you are on a budget with a 65W chip, a $20 Thermalright Assassin X 120 SE provides shocking value. For mainstream gaming chips, dual-tower coolers like the ~$36 **Thermalright Phantom Spirit 120 SE** (or Peerless Assassin) and the ~$55 DeepCool AK620 punch way above their weight. For premium builds, the $100+ Noctua NH-D15 remains the benchmark for air cooling acoustics.
 
 ## The Best Airflow Cases Right Now
 
-The Fractal Design Torrent is an airflow monster, shipping with two massive 180mm front intakes and three 140mm bottom intakes. For a more standard mid-tower, the Lian Li Lancool 216 is my go-to recommendation — two 160mm front fans that move incredible amounts of air quietly, all for around $100. The Cooler Master TD500 Mesh V2 is another solid budget option.
+The Fractal Design Torrent is an airflow monster, shipping with two massive 180mm front intakes and three 140mm bottom intakes. For a more standard mid-tower, the Lian Li Lancool 216 is my go-to recommendation — two 160mm front fans that move incredible amounts of air quietly, all for around $100. The Montech AIR 903 MAX and Phanteks XT Pro Ultra are also phenomenal value picks under $80.
 
-If you want to improve your current build without buying a new case, start by cleaning all your filters. Check that your fans are pointing the right way (the sticker label usually faces the direction air is pulled). Reroute cables behind the motherboard tray to clear the air path. And if you have empty fan mounts in the front, buy a couple of $15 fans and drop them in.
+If you want to improve your current build without buying a new case, start by cleaning all your filters. Check that your fans are pointing the right way: **air enters through the open blade side and exhausts out through the rear side with the plastic frame struts and motor sticker**. Reroute cables behind the motherboard tray to clear the air path. And if you have empty fan mounts in the front, buy a couple of $10 Arctic P12 or P14 PWM fans and drop them in.
 
 Don't skimp on cooling. It dictates the actual performance ceiling of the most expensive parts of your computer.
 

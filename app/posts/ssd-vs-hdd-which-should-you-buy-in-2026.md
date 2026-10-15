@@ -90,7 +90,7 @@ Do SSDs wear out faster than hard drives? In theory, flash memory has a limited 
 
 Can I put both an SSD and HDD in a laptop? Usually not anymore. Modern thin laptops have a single M.2 slot and nothing else. If your laptop only has one drive slot, make it an SSD.
 
-How hard is it to move Windows from an HDD to an SSD? Easier than you'd think. Free cloning tools like Macrium Reflect make a perfect copy of your existing drive onto the new SSD. Swap the drives, boot up, and Windows comes up exactly like before, just way faster. I've done this dozens of times and it works pretty much every time without a hitch.
+How hard is it to move Windows from an HDD to an SSD? Easier than you'd think. Free cloning tools like **Rescuezilla**, **Hasleo Disk Clone**, or drive vendor utilities (like Samsung Data Migration or Acronis for Western Digital/Crucial) create an exact block-level copy of your existing drive onto the new SSD. Swap the boot priority in BIOS, boot up, and Windows starts exactly as before, just ten times faster.
 
 Will an SSD make my games run at higher FPS? Nope, that's your GPU's job. An SSD won't give you more frames per second. What it will do is crush load times, eliminate that awful texture pop-in where everything looks blurry for a second, and reduce stuttering in games that stream assets from disk. Your average FPS stays the same, but the overall experience is dramatically smoother.
 

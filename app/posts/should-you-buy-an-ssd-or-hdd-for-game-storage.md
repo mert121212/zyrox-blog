@@ -27,9 +27,9 @@ The answer is both, if your budget allows. But the reasoning behind that matters
 
 Modern AAA games are enormous, and the problem is getting worse every year. Back in 2015, a 50 GB install felt massive. Today, titles routinely demand 150 GB. Cyberpunk 2077 with its expansions, [Microsoft](https://www.microsoft.com) Flight Simulator 2024, and Call of Duty: Warzone all casually eat over 120 GB. When you multiply that across a library of active games, you are looking at 1 to 2 TB just for the titles you play regularly.
 
-The gap in load times is staggering. I ran tests on a mid-range system comparing a fast NVMe SSD, a standard SATA SSD, and a 7200 RPM mechanical HDD. In Cyberpunk, the NVMe loaded Night City in 8 seconds; the HDD took 51 seconds. Loading into a Warzone match took 11 seconds on the NVMe and over a full minute on the HDD. 
+The gap in load times is staggering, but the bigger issue in 2026 is game engine architecture. Unreal Engine 5 games (like Black Myth: Wukong, Silent Hill 2, and Cyberpunk with Phantom Liberty) now list **an SSD as a mandatory minimum requirement**. They rely on Nanite virtualized geometry and continuous asset streaming; on an HDD, you don't just get longer load screens—you experience violent 0.1% low micro-stutters and missing invisible ground textures because the mechanical head cannot stream high-res assets in real time.
 
-This isn't just about waiting at a loading screen. In Warzone, loading from an HDD means you spawn into a match well after other players have already landed and grabbed weapons. In Flight Simulator, an HDD causes massive texture pop-in because the drive literally cannot stream world data fast enough to keep up with the plane. 
+In Cyberpunk 2077, an NVMe loads Night City in 7–8 seconds; an HDD takes 51 seconds and drops frames whenever you drive through dense districts. In competitive shooters like Warzone, loading from an HDD means your character spawns in after the countdown timer has already finished and enemies have grabbed floor loot.
 
 ## What DirectStorage Does — and What It Requires
 
@@ -63,7 +63,7 @@ Not every storage use case requires blistering speed. HDDs are perfect for netwo
 
 ## Best Drives for Gaming in 2026
 
-For your active NVMe tier, the Samsung 990 Pro is the benchmark leader, offering incredible random read performance for DirectStorage. However, the WD Black SN850X is my personal daily driver; it matches Samsung in real-world load times and usually costs slightly less. If you are on a strict budget, the Kingston NV3 delivers genuine NVMe speeds for a fraction of the price.
+For your active NVMe tier, the Samsung 990 Pro is the benchmark leader, offering incredible random read performance for DirectStorage. However, the WD Black SN850X is my personal daily driver; it matches Samsung in real-world load times and usually costs slightly less. If you are on a strict budget, the **WD Blue SN580** or **TeamGroup MP44L** delivers genuine PCIe 4.0 speeds with dependable TLC flash, avoiding the severe performance drops of QLC component swapping.
 
 For the archive HDD tier, the Seagate Barracuda 4TB (7200 RPM) is fast, reliable, and cheap. I have run these drives as secondary storage in multiple builds for years without a single failure. The WD Blue 4TB is slightly quieter, but make sure you grab the CMR version, as the SMR variants have notoriously slow write speeds for large file transfers.
 

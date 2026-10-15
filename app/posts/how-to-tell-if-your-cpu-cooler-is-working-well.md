@@ -63,7 +63,11 @@ You can spot this in HWiNFO64 in three ways. First, watch the CPU Core Clock sen
 
 One of the most reliable signs of a bad cooler mount is a massive variance in individual core temperatures. In HWiNFO64, expand the core temperature list. 
 
-Under a heavy load, all your cores should cluster within 5 to 8°C of each other. If you see Core 0 sitting at 72°C while Core 3 is cooking at 86°C, something is terribly wrong. A 14°C spread means the cooler base is not making even contact with the CPU heat spreader. It's usually caused by unevenly tightened mounting screws, warped hardware, or a terrible thermal paste application.
+Under a heavy multi-core load, cores of the same architecture should cluster within **5°C to 8°C** of each other:
+- **On Intel Hybrid CPUs (12th, 13th, 14th Gen):** Make sure you are comparing **P-Core to P-Core**. It is completely normal for P-Cores to run 15–20°C hotter than low-power E-Cores. But if P-Core 0 is at 74°C while P-Core 4 is cooking at 89°C, that 15°C spread points directly to mounting issues.
+- **On AMD Ryzen (AM4 / AM5):** All full cores should be within 6–8°C. On dual-CCD chips like the 7900X/7950X, CCD0 typically runs 4–6°C warmer than CCD1 due to higher factory boost clocks.
+
+An excessive spread across identical performance cores means the cooler base is not making flat, even contact with the CPU integrated heat spreader (IHS). It is usually caused by unevenly torqued mounting bracket screws, LGA1700 socket ILM bending, or incomplete thermal paste spreading over offset chiplets.
 
 ## Re-Seat Procedure: What to Do When Temps Are Suspicious
 

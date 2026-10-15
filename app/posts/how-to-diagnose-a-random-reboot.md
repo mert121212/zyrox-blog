@@ -91,7 +91,7 @@ A common misconception: *"My CPU is running hot, so it's rebooting."*
 
 Modern CPUs from AMD and Intel **do not reboot when they thermal throttle**. At 90°C–95°C, the processor simply scales down core frequency, dropping from 5.4 GHz down to 3.8 GHz or lower to maintain thermal equilibrium. The machine will feel stuttery, but it will keep running.
 
-A reboot only occurs if the chip hits **Tjunction Max (105°C for Intel, 100°C–105°C for AMD)**, triggering PROCHOT (Processor Hot) hard shutoff to prevent silicon degradation.
+A reboot only occurs if the chip hits **Tjunction Max (100°C for Intel 13th/14th Gen, 95°C for AMD Ryzen 7000/9000)**, triggering PROCHOT (Processor Hot) hard shutoff to prevent silicon degradation.
 
 To verify whether heat is pulling the plug:
 1. Download **HWiNFO64** and run in *Sensors-only* mode.

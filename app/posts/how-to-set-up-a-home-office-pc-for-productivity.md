@@ -55,7 +55,7 @@ For mice, the Logitech MX Master 3S is unbeatable. The smooth scroll wheel, thum
 
 ## Noise Reduction: Quiet Fans and SSD
 
-A noisy PC drains your focus. If you still boot from a mechanical HDD, replace it with an NVMe SSD like a Samsung 870 EVO or WD Black SN850X. HDDs click and whir all day; SSDs are completely silent. 
+A noisy PC drains your focus. If you still boot from a mechanical HDD, replace it with a silent SSD like a Samsung 990 EVO (NVMe) or Samsung 870 EVO (SATA). HDDs click and whir all day; solid-state drives are completely silent. 
 
 Swap out cheap case fans for Noctua NF-A12x25 or be quiet! Silent Wings 4 fans. They move air efficiently at low RPMs, keeping your system essentially inaudible during the workday.
 

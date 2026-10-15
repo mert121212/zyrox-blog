@@ -82,4 +82,4 @@ If you spend four or more hours a day at the screen, an ergonomic stand matters.
 - [How to Connect Two Monitors to a Laptop](/posts/how-to-connect-two-monitors-to-a-laptop/)
 - [How to Choose a Monitor Arm and Stand](/posts/how-to-choose-a-monitor-arm-and-stand/)
 - [When It Is Time to Replace a Monitor](/posts/when-to-replace-a-monitor/)
-- [Best GPU for 1440p Gaming in 2026](/posts/best-gpu-for-1440p-gaming-2026/)
+- [Best GPU for 1440p Gaming: What to Buy in 2026](/posts/best-gpu-for-1440p-gaming/)

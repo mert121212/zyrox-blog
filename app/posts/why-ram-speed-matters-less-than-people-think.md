@@ -34,7 +34,7 @@ Here is the real engineering breakdown of where memory speed matters, where it i
 
 ## Real-World Benchmarks: DDR5 Frequencies Compared
 
-To understand why paying for premium frequency is flawed, look at real test numbers. Below are benchmarks conducted using an Intel Core i7-1470K paired with an NVIDIA RTX 4080 across multiple memory configurations:
+To understand why paying for premium frequency is flawed, look at real test numbers. Below are benchmarks conducted using an Intel Core i7-14700K paired with an NVIDIA RTX 4080 across multiple memory configurations:
 
 | Configuration | 1080p Cyberpunk (Avg FPS) | 1080p Cyberpunk (1% Lows) | 1440p Avg FPS | 4K Avg FPS | 7-Zip Compression (MIPS) | Cost Premium |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |

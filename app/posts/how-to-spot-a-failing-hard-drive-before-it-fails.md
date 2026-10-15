@@ -97,9 +97,9 @@ Use Robocopy for resilient copying instead of standard drag-and-drop, which will
 
 ## When to Clone vs When to Back Up
 
-Clone the drive (using Macrium Reflect Free) when you want an exact working copy of the system, including the OS, so you can swap to a new drive without reinstalling everything. Do this as early as possible after suspecting failure.
+Clone the drive (using dedicated cloning tools like **Rescuezilla**, **Hasleo Disk Clone**, or drive vendor utilities like Samsung Data Migration) when you want an exact working block-level copy of the system, including the OS, so you can swap to a new drive without reinstalling everything. Do this as early as possible after suspecting failure.
 
-Back up files when you only need to preserve data and documents. If the drive is already showing bad sectors or read failures, cloning is highly risky because the clone might get stuck on corrupted data. In that case, prioritize a file-level backup.
+Back up files directly when you only need to preserve data and documents. If the drive is already showing severe bad sectors or read failures, block-level cloning is risky because the process can freeze indefinitely on damaged blocks. In that case, prioritize a file-level backup using `robocopy`.
 
 ## Recovery Options If It Is Already Failing
 

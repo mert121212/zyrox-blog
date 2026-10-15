@@ -24,47 +24,45 @@ key_takeaways:
 ---
 
 ![Hero Image](/images/posts/best-motherboard-for-rtx-4070.jpg)
-The biggest mistake I see in custom PC builds right now is people overspending on their motherboard to "match" the tier of their GPU. Pairing an RTX 4070 with a $350 flagship Z790 board gives you exactly zero extra frames per second over a standard $150 B760 board. 
+The biggest mistake I see in custom PC builds right now is people searching for a motherboard to "match" their GPU without considering their CPU platform. 
 
-The RTX 4070 uses a PCIe 4.0 x16 interface. That's it. The motherboard chipset dictates how many USB ports you have, how many M.2 drives you can plug in, and whether you can overclock your CPU. It does not bottleneck your graphics card.
+Here is the fundamental hardware truth: **Your graphics card does not care which motherboard socket you buy.** An RTX 4070 runs on a standard PCIe 4.0 x16 slot whether you plug it into an AMD AM5 motherboard or an Intel LGA1700 motherboard. The motherboard exists to power your **processor (CPU)** and connect your storage/memory.
 
-If you have a limited budget, every dollar you waste on a motherboard feature you'll never use is a dollar you should have spent on a better GPU, more storage, or a quieter cooler. 
+Pairing an RTX 4070 with a $400 flagship X670E or Z790 board yields exactly zero extra frames per second over a quality $150–$180 B650 or B760 board.
 
-Here is exactly what you need to look for, and four boards that actually make sense for a 4070 build.
+Here is the exact breakdown for both **AMD AM5 (Ryzen 7000/9000)** and **Intel LGA1700 (13th/14th Gen)** builders.
 
-## Why the 4070 Doesn't Care About Your Chipset
+## The Platform Decision: AMD B650 vs. Intel B760
 
-The RTX 4070 operates on PCIe 4.0 x16, which provides vastly more bandwidth than the card can realistically saturate in gaming. Even if you drop the card into an older PCIe 3.0 x16 slot, you only lose about 1-3% of your frame rate. 
+Because the RTX 4070 pairs equally well with Intel and AMD chips, choose your board based on your CPU:
 
-What this means is that the chipset — whether it's a premium Z790 or a mainstream B760 — has no meaningful impact on GPU performance. What the chipset *does* affect is the rest of the system:
-- How many NVMe M.2 slots you get.
-- If you can manually overclock your CPU.
-- How many high-speed USB ports are on the back.
-
-## Z790 vs B760: Stop Wasting Money
-
-Don't buy a Z790 board just because it's the "high-end" option. Use this logic instead:
-
-**Buy a Z790 board if:**
-- You bought an unlocked [Intel](https://www.intel.com) "K" CPU (like the i5-13600K or i7-14700K) and you actually plan to manually overclock it.
-- You absolutely need 4 or 5 fast NVMe M.2 slots for massive storage arrays.
-
-**Buy a B760 board if:**
-- You bought a locked CPU (like the i5-13400F or i7-14700F) which can't be overclocked anyway.
-- You have a "K" series CPU but have zero interest in spending your weekend tweaking voltages in the BIOS.
-- 3 M.2 slots is enough storage for you.
-
-For 90% of the RTX 4070 builds I put together, a B760 board is the right call. 
+- **Building with AMD Ryzen (7600, 7700X, 7800X3D):** Choose **AMD B650**. AM5 is a long-lived socket supported through 2027+, meaning you will be able to drop a future Zen 6 processor into this board without replacing your motherboard or RAM.
+- **Building with Intel (i5-13600K, i5-14600K, i5-13400F):** Choose **Intel B760** (or Z790 only if you plan to manually overclock unlocked K-series chips). Note that LGA1700 is a dead-end platform with no new CPU upgrade path beyond 14th Gen.
+- **Chipset Bandwidth:** Neither platform will bottleneck your GPU. The RTX 4070 operates on PCIe 4.0 x16, saturating only a fraction of total bus bandwidth in real-world 1440p gaming. 
 
 ## The Shortlist: Top Motherboards for RTX 4070 Builds
 
 <div class="hardware-pick-card featured-pick">
-  <span class="pick-badge">★ Best Overall DDR5 Pick</span>
-  <h3>1. MSI MAG B760 Tomahawk WiFi</h3>
+  <span class="pick-badge">★ Best AMD AM5 Pick (Future-Proof Zen 4/5/6)</span>
+  <h3>1. MSI MAG B650 Tomahawk WiFi (AMD AM5)</h3>
+  <div class="hardware-pick-specs">
+    <strong>Key Specs:</strong> Socket AM5 / B650 | DDR5 EXPO | 14+2+1 Phase 80A VRM | 3x M.2 Slots | Wi-Fi 6E & 2.5G LAN
+  </div>
+  <p>The definitive motherboard for pairing the RTX 4070 with Ryzen 5 7600X or Ryzen 7 7800X3D. With heavy aluminum heatsinks and a proven 14-phase power delivery, it handles high-tier gaming processors with ease and guarantees drop-in CPU upgradeability through 2027.</p>
+  <div class="hardware-buy-actions">
+    <a href="https://www.amazon.com/s?k=MSI+MAG+B650+Tomahawk+WiFi&tag=zyrox0e-20" target="_blank" rel="nofollow sponsored noopener" class="buy-btn-amazon">Check Price on Amazon ↗</a>
+    <a href="https://www.newegg.com/p/pl?d=MSI+MAG+B650+Tomahawk+WiFi" target="_blank" rel="nofollow sponsored noopener" class="buy-btn-newegg">View on Newegg ↗</a>
+  </div>
+  <div class="affiliate-micro-note">Native support for Ryzen 7000 and 9000 series with BIOS Flashback.</div>
+</div>
+
+<div class="hardware-pick-card">
+  <span class="pick-badge">★ Best Intel DDR5 Pick</span>
+  <h3>2. MSI MAG B760 Tomahawk WiFi (Intel LGA1700)</h3>
   <div class="hardware-pick-specs">
     <strong>Key Specs:</strong> LGA 1700 / B760 | DDR5 Support | 16+1+1 Phase VRM | 4x M.2 PCIe 4.0 | Wi-Fi 6E & 2.5G LAN
   </div>
-  <p>The gold standard for mainstream Intel builds. The overkill 16-phase VRM ensures ice-cold power delivery even under sustained gaming, while 4 onboard M.2 slots provide ample room for future SSD expansion.</p>
+  <p>The gold standard for mainstream Intel builds (i5-13600K / i5-14400F). Overkill 16-phase VRM ensures ice-cold power delivery during extended gaming, while 4 onboard M.2 slots provide exceptional storage expansion.</p>
   <div class="hardware-buy-actions">
     <a href="https://www.amazon.com/s?k=MSI+MAG+B760+Tomahawk+WiFi&tag=zyrox0e-20" target="_blank" rel="nofollow sponsored noopener" class="buy-btn-amazon">Check Price on Amazon ↗</a>
     <a href="https://www.newegg.com/p/pl?d=MSI+MAG+B760+Tomahawk+WiFi" target="_blank" rel="nofollow sponsored noopener" class="buy-btn-newegg">View on Newegg ↗</a>
@@ -74,7 +72,7 @@ For 90% of the RTX 4070 builds I put together, a B760 board is the right call.
 
 <div class="hardware-pick-card">
   <span class="pick-badge value-badge">★ Best Budget DDR4 Value</span>
-  <h3>2. ASUS TUF Gaming B760-Plus WiFi D4</h3>
+  <h3>3. ASUS TUF Gaming B760-Plus WiFi D4</h3>
   <div class="hardware-pick-specs">
     <strong>Key Specs:</strong> LGA 1700 / B760 | DDR4 Memory Support | 12+1 DrMOS VRM | 3x M.2 Slots | Wi-Fi 6
   </div>
@@ -87,7 +85,7 @@ For 90% of the RTX 4070 builds I put together, a B760 board is the right call.
 
 <div class="hardware-pick-card">
   <span class="pick-badge silent-badge">★ Best Overclocking Flagship</span>
-  <h3>3. Gigabyte Z790 Aorus Elite AX</h3>
+  <h3>4. Gigabyte Z790 Aorus Elite AX</h3>
   <div class="hardware-pick-specs">
     <strong>Key Specs:</strong> LGA 1700 / Z790 | DDR5 | 16+1+2 Twin Digital VRM | 4x PCIe 4.0 M.2 | PCIe 5.0 GPU Ready
   </div>
