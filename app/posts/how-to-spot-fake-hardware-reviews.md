@@ -1,6 +1,6 @@
 ---
 title: How to Spot Fake or Misleading Hardware Reviews
-meta_description: "Learn how to separate genuine hardware testing from marketing language, cherry-picked benchmarks, paid promotions, and weak comparisons."
+meta_description: "Don't buy bad hardware based on fake reviews: spot cherry-picked benchmark graphs, undisclosed sponsorships, and unrepeatable testing claims."
 date: 2026-07-30T00:00:00.000Z
 category: Buying Guides
 tags:
@@ -10,11 +10,10 @@ tags:
   - Research
 author: marcus-holt
 keywords:
-  - hardware reviews
-  - buying advice
-  - benchmarks
-  - research
-  - buying guides
+  - "how to spot fake tech reviews"
+  - "misleading pc hardware benchmarks"
+  - "identifying sponsored hardware review bias"
+  - "reliable pc hardware review channels"
 image: "/images/posts/how-to-build-a-budget-gaming-pc.jpg"
 ---
 

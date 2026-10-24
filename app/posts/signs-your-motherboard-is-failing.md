@@ -1,6 +1,6 @@
 ---
 title: Signs Your Motherboard May Be Failing
-meta_description: "Recognize early warning signs of motherboard failure, including USB dropouts, POST errors, random shutdowns, and capacitor damage indicators."
+meta_description: "Diagnose a dying motherboard before components fry: spot debug LED codes, bulging capacitors, random USB dropouts, and failing memory channels."
 date: 2026-07-16T00:00:00.000Z
 category: Troubleshooting
 tags:
@@ -10,11 +10,10 @@ tags:
   - PC Repair
 author: rachel-kim
 keywords:
-  - motherboard
-  - hardware failure
-  - diagnostics
-  - pc repair
-  - troubleshooting
+  - "how to know if motherboard is dying"
+  - "failing motherboard symptoms checklist"
+  - "debug led motherboard error codes"
+  - "usb disconnect reconnect loop motherboard"
 image: "/images/posts/best-motherboard-for-rtx-4070.jpg"
 ---
 

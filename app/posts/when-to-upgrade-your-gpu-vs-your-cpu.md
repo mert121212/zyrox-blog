@@ -1,6 +1,6 @@
 ---
 title: "When to Upgrade Your GPU vs. Your CPU: The Data-Driven Decision Guide"
-meta_description: "Stop guessing whether your PC needs a GPU or CPU upgrade. Real MSI Afterburner diagnostics, online bottleneck calculator debunking, resolution matrices, and drop-in AM4 upgrade paths."
+meta_description: "Should you upgrade GPU or CPU first? Read real MSI Afterburner usage data, debunk fake bottleneck calculators, and pick the best drop-in upgrade."
 date: 2026-07-08T00:00:00.000Z
 category: Upgrades
 tags:
@@ -12,13 +12,10 @@ tags:
   - Hardware
 author: marcus-holt
 keywords:
-  - gpu vs cpu upgrade
-  - should i upgrade gpu or cpu
-  - how to tell cpu bottleneck
-  - bottleneck calculator debunked
-  - msi afterburner gpu usage
-  - 1080p vs 1440p cpu bottleneck
-  - am4 drop in cpu upgrade
+  - "gpu vs cpu upgrade priority"
+  - "should i upgrade cpu or gpu first for gaming"
+  - "msi afterburner gpu usage bottleneck check"
+  - "am4 drop in cpu upgrade vs new graphics card"
 image: "/images/posts/best-gpu-for-1440p-gaming.jpg"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: The Best Way to Upgrade a PC Without Replacing Everything
-meta_description: "Upgrade your PC intelligently by targeting the components that actually improve speed, stability, and value without a full rebuild."
+meta_description: "Don't rebuild from scratch — target the one component that unlocks the biggest speed gain. RAM, SSD, and GPU upgrade order explained with real benchmarks."
 date: 2026-06-29T00:00:00.000Z
 category: Upgrades
 tags:
@@ -10,11 +10,11 @@ tags:
   - RAM
 author: marcus-holt
 keywords:
-  - pc upgrade
-  - gpu
-  - ssd
-  - ram
-  - upgrades
+  - "easiest pc upgrades for speed"
+  - "upgrade pc without new motherboard"
+  - "best single pc upgrade for performance"
+  - "pc upgrade order priority"
+  - "cheapest way to make pc faster"
 image: "/images/posts/how-to-build-a-budget-gaming-pc.jpg"
 ---
 

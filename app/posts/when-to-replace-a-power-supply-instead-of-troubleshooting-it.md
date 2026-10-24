@@ -1,6 +1,6 @@
 ---
 title: When to Replace a Power Supply Instead of Troubleshooting It
-meta_description: "Know when an aging or failing PC power supply is better replaced than diagnosed. Covers capacitor degradation physics, ATX voltage tolerances, 5VSB failures, and safety warnings."
+meta_description: "Know when an aging PSU is too dangerous to troubleshoot: spot capacitor degradation, burning smells, 5VSB rail failure, and sudden safety shutoffs."
 date: 2026-07-21T00:00:00.000Z
 category: Power
 tags:
@@ -11,13 +11,10 @@ tags:
   - PC Maintenance
 author: daniel-osei
 keywords:
-  - when to replace psu
-  - signs power supply is dying
-  - psu voltage sag 12v rail
-  - capacitor aging psu
-  - psu paper clip test
-  - 5vsb standby failure
-  - failing psu symptoms
+  - "when to replace pc power supply"
+  - "failing psu symptoms capacitor wear"
+  - "how long do computer power supplies last"
+  - "is old power supply dangerous for new gpu"
 image: "/images/posts/best-psu-for-rtx-5080.jpg"
 ---
 

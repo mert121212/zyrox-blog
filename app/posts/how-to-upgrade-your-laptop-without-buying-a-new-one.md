@@ -1,6 +1,6 @@
 ---
 title: How to Upgrade Your Laptop Without Buying a New One
-meta_description: "Learn which laptop upgrades are actually worth it — RAM, SSD, Wi-Fi card — and where the limits are before buying a new machine."
+meta_description: "Revive an old laptop without spending hundreds: check for upgradable RAM slots, clone to a fast NVMe SSD, and clean internal heatsinks easily."
 date: 2026-07-08T00:00:00.000Z
 category: Upgrades
 tags:
@@ -10,11 +10,10 @@ tags:
   - RAM
 author: rachel-kim
 keywords:
-  - laptop
-  - upgrade
-  - ssd
-  - ram
-  - upgrades
+  - "can i upgrade my laptop ram and ssd"
+  - "upgrade old laptop to make it faster"
+  - "check if laptop ram is soldered"
+  - "laptop ssd upgrade step by step guide"
 image: "/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: How to Read a PSU Spec Sheet Without Getting Misled
-meta_description: "Learn how to read a PSU spec sheet. Understand continuous vs peak wattage, +12V rail amperage, voltage ripple thresholds, capacitor tiers, and Cybenetics ratings."
+meta_description: "Don't get tricked by fake PSU wattage ratings: decode continuous vs peak power, inspect +12V rail amperage, voltage ripple, and capacitor tiers."
 date: 2026-07-05T00:00:00.000Z
 category: Power Supply
 tags:
@@ -10,11 +10,10 @@ tags:
   - Build Advice
 author: daniel-osei
 keywords:
-  - psu
-  - power supply
-  - 80 plus
-  - build advice
-  - read
+  - "how to read a psu spec sheet"
+  - "continuous vs peak wattage power supply"
+  - "12v rail amperage calculation"
+  - "psu voltage ripple and capacitor tiers"
 image: "/images/posts/best-psu-for-rtx-5080.jpg"
 ---
 

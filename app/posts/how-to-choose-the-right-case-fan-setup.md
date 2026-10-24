@@ -1,6 +1,6 @@
 ---
 title: How to Choose the Right Case Fan Setup
-meta_description: "Learn how to balance airflow, noise, and aesthetics when choosing intake and exhaust fans for your PC case. Practical layout examples."
+meta_description: "Optimize your PC case fan setup: balance intake vs exhaust, master positive air pressure to block dust, and quiet down aggressive fan curves."
 date: 2026-07-03T00:00:00.000Z
 category: Cooling
 tags:
@@ -10,11 +10,10 @@ tags:
   - PC Build
 author: daniel-osei
 keywords:
-  - case fans
-  - airflow
-  - noise
-  - pc build
-  - cooling
+  - "best pc case fan configuration"
+  - "positive vs negative air pressure pc"
+  - "how to set case fan curves for quiet cooling"
+  - "intake vs exhaust fan ratio guide"
 image: "/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg"
 ---
 

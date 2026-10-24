@@ -1,6 +1,6 @@
 ---
 title: The Best Way to Organize Your Game Library on an SSD
-meta_description: "Learn how to organize and manage a large game library across fast NVMe SSDs and secondary storage using Steam Storage Manager, symlinks, and launcher caches."
+meta_description: "Maximize storage speed without running out of space: how to organize Steam, Epic, and Xbox games across fast NVMe and secondary drives easily."
 date: 2026-07-05T00:00:00.000Z
 category: Storage
 tags:
@@ -10,11 +10,10 @@ tags:
   - Organization
 author: sara-vance
 keywords:
-  - gaming
-  - ssd
-  - storage
-  - organization
-  - best
+  - "how to organize game library multiple drives"
+  - "move steam games to second ssd"
+  - "best drive setup for gaming library"
+  - "ssd game storage management tips"
 image: "/images/posts/best-ssd-for-gaming-2026.jpg"
 ---
 

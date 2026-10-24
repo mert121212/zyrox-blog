@@ -1,6 +1,6 @@
 ---
 title: How to Tell If Your CPU Cooler Is Working Well
-meta_description: "Spot thermal issues, fan problems, and poor cooler mounting that silently degrade your CPU performance and long-term stability."
+meta_description: "Is your CPU cooler working properly? Check idle and load temps, spot bad mounting pressure, and test fan RPM curves before performance silently drops."
 date: 2026-07-13T00:00:00.000Z
 category: Cooling
 tags:
@@ -10,11 +10,11 @@ tags:
   - Benchmarking
 author: daniel-osei
 keywords:
-  - cpu cooler
-  - thermals
-  - cooling
-  - benchmarking
-  - tell
+  - "how to check cpu cooler performance"
+  - "cpu idle temperature too high"
+  - "is my cpu cooler mounted correctly"
+  - "cpu thermal paste dried out"
+  - "cpu cooler not working properly"
 image: "/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: How to Spot a Failing Hard Drive Before It Fails
-meta_description: "Learn the warning signs of a failing hard drive, from SMART errors to unusual sounds, and how to back up before data loss happens."
+meta_description: "Catch hard drive failure before your data is gone: listen for clicking noises, decode SMART bad sector errors, and back up before complete drive death."
 date: 2026-07-06T00:00:00.000Z
 category: Storage
 tags:
@@ -10,11 +10,10 @@ tags:
   - Storage
 author: sara-vance
 keywords:
-  - hard drive
-  - backup
-  - diagnostics
-  - storage
-  - spot
+  - "failing hard drive symptoms"
+  - "hard drive clicking noise fix"
+  - "check hdd bad sectors crystaldiskinfo"
+  - "signs external hard drive is dying"
 image: "/images/posts/ssd-vs-hdd-which-should-you-buy-in-2026.jpg"
 ---
 

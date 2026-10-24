@@ -1,6 +1,6 @@
 ---
 title: How to Choose the Right PC Case
-meta_description: "A practical guide to PC case selection covering size, airflow, expansion options, and build quality for your next desktop build."
+meta_description: "Choose the right PC case for your build: check GPU length clearance, radiator radiator support, front mesh airflow, and cable routing space."
 date: 2026-07-15T00:00:00.000Z
 category: Cases
 tags:
@@ -10,11 +10,10 @@ tags:
   - Cable Management
 author: daniel-osei
 keywords:
-  - pc case
-  - airflow
-  - build quality
-  - cable management
-  - cases
+  - "how to choose a pc case for building"
+  - "best airflow pc case buying guide"
+  - "mid tower vs micro atx case size"
+  - "gpu clearance and radiator support checklist"
 image: "/images/posts/how-to-build-a-budget-gaming-pc.jpg"
 ---
 

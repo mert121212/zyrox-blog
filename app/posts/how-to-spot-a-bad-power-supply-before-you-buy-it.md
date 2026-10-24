@@ -1,6 +1,6 @@
 ---
 title: How to Spot a Bad Power Supply Before You Buy It
-meta_description: "Learn how to spot dangerous and low-quality power supplies before buying. Covers 80 Plus vs Cybenetics, fake wattage ratings, missing protections, and OEM tier lists."
+meta_description: "Protect your components from exploding cheap PSUs: spot fake efficiency badges, missing OVP/OCP protections, and dangerous group-regulated designs."
 date: 2026-06-30T00:00:00.000Z
 category: Power
 tags:
@@ -10,11 +10,10 @@ tags:
   - Buying Guide
 author: daniel-osei
 keywords:
-  - power supply
-  - psu
-  - hardware
-  - buying guide
-  - power
+  - "how to spot a bad power supply"
+  - "dangerous cheap psu signs"
+  - "psu protections ovp ocp scp checklist"
+  - "cheap power supply red flags to avoid"
 image: "/images/posts/best-psu-for-rtx-5080.jpg"
 ---
 

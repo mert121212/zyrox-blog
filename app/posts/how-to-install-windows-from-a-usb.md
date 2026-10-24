@@ -1,6 +1,6 @@
 ---
 title: How to Install Windows from a USB Drive Without Making a Mess of It
-meta_description: "A practical guide to creating a bootable Windows USB installer and performing a clean OS installation without common setup mistakes."
+meta_description: "Install Windows 11 from USB in 2026: create a bootable drive with Rufus, configure BIOS boot order, and avoid the partitioning mistakes that brick installs."
 date: 2026-06-30T00:00:00.000Z
 category: Windows
 tags:
@@ -10,11 +10,11 @@ tags:
   - Installation
 author: rachel-kim
 keywords:
-  - windows
-  - usb installer
-  - setup
-  - installation
-  - install
+  - "install windows 11 from usb"
+  - "create bootable usb windows 11"
+  - "rufus windows installer guide"
+  - "clean install windows step by step"
+  - "windows usb boot bios settings"
 image: "/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg"
 ---
 

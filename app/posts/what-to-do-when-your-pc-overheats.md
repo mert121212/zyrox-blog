@@ -1,6 +1,6 @@
 ---
 title: What to Do When Your PC Overheats
-meta_description: "A practical checklist for identifying PC overheating causes and reducing temperatures before they lead to throttling or damage."
+meta_description: "PC overheating? Follow this step-by-step checklist to find the cause — from clogged fans and dried paste to GPU throttling — and fix it before hardware damage."
 date: 2026-07-28T00:00:00.000Z
 category: Cooling
 tags:
@@ -10,11 +10,11 @@ tags:
   - Troubleshooting
 author: daniel-osei
 keywords:
-  - overheating
-  - thermals
-  - cooling
-  - troubleshooting
-  - what
+  - "pc overheating fix"
+  - "cpu temperature too high"
+  - "how to cool down a hot pc"
+  - "pc shuts down from overheating"
+  - "gpu thermal throttling fix"
 image: "/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg"
 ---
 

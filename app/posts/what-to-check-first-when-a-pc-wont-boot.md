@@ -1,6 +1,6 @@
 ---
 title: What to Check First When a PC Won't Boot
-meta_description: "A clear troubleshooting guide for PC boot failures, covering power, RAM, GPU, and BIOS checks before moving to deeper hardware diagnostics."
+meta_description: "PC won't boot? Start here: a no-nonsense checklist covering power, RAM, GPU, and BIOS issues that fixes 90% of no-POST and black screen problems."
 date: 2026-07-04T00:00:00.000Z
 category: Troubleshooting
 tags:
@@ -10,11 +10,11 @@ tags:
   - Diagnostics
 author: rachel-kim
 keywords:
-  - boot
-  - troubleshooting
-  - hardware
-  - diagnostics
-  - what
+  - "pc won't turn on"
+  - "computer no display fix"
+  - "pc not booting troubleshooting"
+  - "no POST black screen fix"
+  - "pc power on but no display"
 image: "/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg"
 ---
 

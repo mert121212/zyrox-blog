@@ -1,6 +1,6 @@
 ---
 title: How to Choose the Right PSU for Your Build
-meta_description: "Understand wattage, efficiency ratings, connectors, and protection features when selecting a PSU that will last through multiple builds."
+meta_description: "Calculate the exact PSU wattage your gaming PC needs, choose between modular cable designs, and avoid overpaying for unnecessary capacity."
 date: 2026-07-07T00:00:00.000Z
 category: Power
 tags:
@@ -10,11 +10,10 @@ tags:
   - Efficiency
 author: daniel-osei
 keywords:
-  - psu
-  - power supply
-  - wattage
-  - efficiency
-  - power
+  - "how to choose power supply for gaming pc"
+  - "calculate psu wattage for new build"
+  - "modular vs non modular psu"
+  - "80 plus gold vs bronze power supply"
 image: "/images/posts/how-to-choose-the-right-psu-for-your-build.jpg"
 ---
 

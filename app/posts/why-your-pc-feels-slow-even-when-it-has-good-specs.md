@@ -1,6 +1,6 @@
 ---
 title: Why Your PC Feels Slow Even When It Has Good Specs (or Fast CPU)
-meta_description: "Discover why a high-spec PC feels slow or stutters. Diagnose DPC latency, storage bottlenecks, RAM pagefile thrashing, thermal throttling, and background resource hogs."
+meta_description: "High-spec PC feeling sluggish or stuttering? Diagnose hidden DPC latency spikes, RAM pagefile thrashing, thermal throttling, and driver conflicts."
 date: 2026-07-05T00:00:00.000Z
 category: Performance
 tags:
@@ -11,11 +11,10 @@ tags:
   - CPU Optimization
 author: rachel-kim
 keywords:
-  - pc performance
-  - storage
-  - windows
-  - bottlenecks
-  - performance
+  - "why is my fast pc running slow"
+  - "good specs but pc stutters windows 11"
+  - "fix high dpc latency audio stutter"
+  - "ram pagefile thrashing high end pc"
 image: "/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg"
 ---
 

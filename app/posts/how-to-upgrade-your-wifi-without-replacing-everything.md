@@ -1,6 +1,6 @@
 ---
 title: How to Upgrade Your Wi-Fi Setup Without Replacing Everything
-meta_description: "Learn how to speed up your home Wi-Fi without buying an expensive mesh system. Optimize router placement, channel congestion, MoCA adapters, and PCIe cards."
+meta_description: "Eliminate Wi-Fi dead zones on a budget: optimize 5GHz channels, reposition antennas, and add wired access points without buying an expensive router."
 date: 2026-07-27T00:00:00.000Z
 category: Networking
 tags:
@@ -10,11 +10,10 @@ tags:
   - Home Setup
 author: rachel-kim
 keywords:
-  - wi-fi
-  - networking
-  - access point
-  - home setup
-  - upgrade
+  - "how to improve wifi signal without new router"
+  - "eliminate wifi dead zones cheap"
+  - "best 5ghz wifi channel for congestion"
+  - "add access point to existing router"
 image: "/images/posts/how-to-build-a-budget-gaming-pc.jpg"
 ---
 

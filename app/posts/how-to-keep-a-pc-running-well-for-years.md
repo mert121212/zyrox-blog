@@ -1,6 +1,6 @@
 ---
 title: How to Keep a PC Running Well for Years
-meta_description: "Learn how to keep your PC running fast and stable for years. A master maintenance schedule covering dust cleaning, thermal paste, driver staging, and 3-2-1 backups."
+meta_description: "Keep your PC fast and reliable for 5+ years: maintenance calendar for thermal paste replacement, dust cleaning, driver staging, and backup routines."
 date: 2026-07-06T00:00:00.000Z
 category: Maintenance
 tags:
@@ -10,11 +10,10 @@ tags:
   - Upgrades
 author: rachel-kim
 keywords:
-  - pc maintenance
-  - longevity
-  - dust
-  - upgrades
-  - maintenance
+  - "pc maintenance checklist for longevity"
+  - "how often to change cpu thermal paste"
+  - "keep computer running like new years"
+  - "annual pc hardware maintenance schedule"
 image: "/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: The BIOS Settings That Matter Most for a Stable Overclock
-meta_description: "Learn the BIOS settings that affect CPU voltage, memory stability, power limits, and safe overclock tuning. Includes XMP/EXPO, LLC, and thermal limit tips."
+meta_description: "Master the BIOS settings that guarantee overclock stability: tune Load Line Calibration (LLC), lock safe Vcore voltages, and avoid CPU degradation."
 date: 2026-07-07T00:00:00.000Z
 category: Overclocking
 tags:
@@ -10,11 +10,10 @@ tags:
   - Memory
 author: marcus-holt
 keywords:
-  - bios
-  - overclocking
-  - cpu
-  - memory
-  - settings
+  - "best bios settings for cpu overclocking"
+  - "load line calibration llc levels explained"
+  - "cpu core voltage static vs offset override"
+  - "safe bios overclock settings guide"
 image: "/images/posts/bios-settings-for-stable-overclock.jpg"
 ---
 

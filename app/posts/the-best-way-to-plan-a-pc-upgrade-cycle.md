@@ -1,6 +1,6 @@
 ---
 title: The Best Way to Plan a PC Upgrade Cycle
-meta_description: "A simple PC upgrade plan helps you improve your system steadily instead of overspending on components that do not matter yet."
+meta_description: "Stop panic-buying PC parts. A simple upgrade timeline tells you when to replace your GPU, CPU, and RAM — and when waiting saves you hundreds."
 date: 2026-07-10T00:00:00.000Z
 category: Upgrades
 tags:
@@ -10,11 +10,11 @@ tags:
   - Value
 author: marcus-holt
 keywords:
-  - upgrade planning
-  - budget
-  - pc build
-  - value
-  - upgrades
+  - "when to upgrade pc parts"
+  - "how often to upgrade gpu"
+  - "pc component lifespan guide"
+  - "pc upgrade schedule plan"
+  - "how long does a gpu last"
 image: "/images/posts/how-to-build-a-budget-gaming-pc.jpg"
 ---
 

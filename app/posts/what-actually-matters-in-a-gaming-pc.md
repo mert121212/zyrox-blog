@@ -1,6 +1,6 @@
 ---
 title: What Actually Matters in a Gaming PC Build
-meta_description: "Cut through PC marketing and learn which components actually affect frame rates, smoothness, and long-term upgrade value in gaming."
+meta_description: "What actually moves the FPS needle in a gaming PC? GPU priority, RAM speed myths, storage impact on load times — and the parts you can safely cheap out on."
 date: 2026-07-01T00:00:00.000Z
 category: Gaming
 tags:
@@ -10,11 +10,11 @@ tags:
   - Build Advice
 author: marcus-holt
 keywords:
-  - gaming pc
-  - gpu
-  - fps
-  - build advice
-  - gaming
+  - "what makes a gaming pc fast"
+  - "most important pc component for gaming"
+  - "gpu vs cpu for gaming fps"
+  - "gaming pc buying priorities 2026"
+  - "where to spend money on a gaming pc"
 image: "/images/posts/how-to-build-a-budget-gaming-pc.jpg"
 ---
 

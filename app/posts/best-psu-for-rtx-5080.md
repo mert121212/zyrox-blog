@@ -1,6 +1,6 @@
 ---
 title: "Best PSU for RTX 5080: Wattage Requirements, ATX 3.1, and Top Picks"
-meta_description: "The definitive guide to choosing the best power supply for NVIDIA GeForce RTX 5080 builds. Covers ATX 3.1, native 12V-2x6 connectors, oscilloscope transient spikes, and 850W vs 1000W."
+meta_description: "Best PSU for RTX 5080 builds: ATX 3.1 vs 3.0 standards, native 12V-2x6 connectors, transient power spike data, and 850W vs 1000W recommendations."
 date: 2026-08-03T00:00:00.000Z
 category: "Power"
 tags:
@@ -12,11 +12,8 @@ tags:
 keywords:
   - "best psu for rtx 5080"
   - "rtx 5080 power supply requirements"
-  - "atx 3.1 psu 12v-2x6"
-  - "rtx 5080 transient power spikes"
-  - "850w vs 1000w rtx 5080"
-  - "12vhpwr cable safety"
-  - "seasonic focus gx 1000 atx 3"
+  - "atx 3.1 12v-2x6 power supply guide"
+  - "850w vs 1000w for rtx 5080"
 author: daniel-osei
 image: "/images/posts/best-psu-for-rtx-5080.jpg"
 quick_verdict: "For an RTX 5080 build paired with AMD Ryzen 7000/9000 (such as the 7800X3D), an 850W ATX 3.1 PSU provides optimal efficiency. If pairing with Intel Core i7/i9 (14700K/14900K) or rendering workloads, a 1000W ATX 3.1 power supply with native 12V-2x6 connector is mandatory to absorb 680W+ microsecond transient spikes."

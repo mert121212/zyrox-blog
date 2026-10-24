@@ -1,6 +1,6 @@
 ---
 title: "Why High-End Gaming PCs Keep Stuttering on Windows 11: The Default Security Feature Silently Killing Your 1% Lows"
-meta_description: "Your $2,000 gaming rig stutters every 15 seconds and you can't figure out why. We traced it to a Windows 11 default setting that tanks 1% lows while barely touching average FPS."
+meta_description: "High-end gaming PC stuttering every few seconds? Disable this default Windows 11 Memory Integrity security feature that tanks 1% low frame rates."
 date: 2026-09-15
 category: "Performance"
 tags:
@@ -11,11 +11,10 @@ tags:
   - "VBS"
   - "Troubleshooting"
 keywords:
-  - "windows 11 stutter in games"
-  - "memory integrity gaming performance"
-  - "core isolation vbs fps loss"
-  - "fix micro stutter windows 11"
-  - "7800x3d 1 percent lows"
+  - "windows 11 memory integrity gaming stutter"
+  - "core isolation hvci fps drop fix"
+  - "micro stutter windows 11 high end pc"
+  - "disable memory integrity improve gaming performance"
 author: marcus-holt
 image: "/images/posts/why-high-end-pcs-stutter-windows-11-memory-integrity.jpg"
 ---

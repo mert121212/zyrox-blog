@@ -1,6 +1,6 @@
 ---
 title: How to Clean a PC and Case Ventilation Without Damaging Components
-meta_description: "A comprehensive, step-by-step guide to cleaning your PC case, fans, heatsinks, and dust filters safely. Prevent static damage, voltage spikes, and thermal throttling."
+meta_description: "Clean dust from your PC fans and heatsinks safely: avoid static discharge, prevent fan bearing spin damage, and restore factory-cool temperatures."
 date: 2026-07-08T00:00:00.000Z
 category: Maintenance
 tags:
@@ -11,13 +11,10 @@ tags:
   - Case Airflow
 author: rachel-kim
 keywords:
-  - clean pc
-  - pc maintenance
-  - clean pc case ventilation
-  - dust filters
-  - clean gpu fans
-  - esd safety
-  - canned air pc cleaning
+  - "how to clean pc without damaging components"
+  - "safe way to clean dust from pc fans"
+  - "prevent static electricity cleaning computer"
+  - "compressed air pc cleaning best practices"
 image: "/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: How to Diagnose a Random PC Reboot Without Losing Your Mind
-meta_description: "A hands-on guide to finding the cause of random PC reboots, covering overheating, unstable power delivery, driver conflicts, and BIOS issues."
+meta_description: "PC restarts randomly with no blue screen? Isolate Kernel-Power Event 41 errors, test unstable RAM timings, and catch transient PSU power drops."
 date: 2026-06-28T00:00:00.000Z
 category: Troubleshooting
 tags:
@@ -10,11 +10,10 @@ tags:
   - Diagnostics
 author: rachel-kim
 keywords:
-  - random reboots
-  - overheating
-  - power supply
-  - diagnostics
-  - troubleshooting
+  - "pc randomly restarts while gaming"
+  - "fix kernel power event 41 random reboot"
+  - "diagnose random pc reboot without blue screen"
+  - "is psu or ram causing random shutdown"
 image: "/images/posts/what-to-check-first-when-a-pc-wont-boot.jpg"
 ---
 

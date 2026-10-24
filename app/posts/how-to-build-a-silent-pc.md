@@ -1,6 +1,6 @@
 ---
 title: How to Build a Silent PC or Quiet Gaming Rig Without Sacrificing Performance
-meta_description: "A complete guide to building a whisper-quiet gaming PC and reducing system noise. Covers noise source rankings, custom BIOS fan curves (ASUS, MSI, Gigabyte), GPU undervolting, case dampening, and decibel targets."
+meta_description: "Build a whisper-quiet gaming PC without losing FPS: rank noise sources, tune BIOS fan curves, undervolt hot GPUs, and eliminate coil whine."
 date: 2026-07-02T00:00:00.000Z
 category: Cooling
 tags:
@@ -12,14 +12,10 @@ tags:
   - PC Optimization
 author: daniel-osei
 keywords:
-  - silent pc
-  - quiet gaming rig
-  - pc noise reduction
-  - bios fan curves
-  - fan curve tuning
-  - msi afterburner fan curve
-  - case airflow
-  - noise dampening
+  - "how to build a silent pc"
+  - "quiet gaming pc build guide"
+  - "custom bios fan curves low noise"
+  - "gpu undervolting for quiet pc"
 image: "/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg"
 ---
 

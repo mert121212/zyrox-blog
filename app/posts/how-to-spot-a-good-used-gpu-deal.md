@@ -1,6 +1,6 @@
 ---
 title: How to Spot a Good Used GPU Deal
-meta_description: "Use these practical checks to spot a good used GPU deal and avoid mining-worn cards, thermal damage, and misleading marketplace listings."
+meta_description: "Score a great used GPU deal without getting scammed: test with FurMark, inspect thermal pads, check BIOS authenticity, and spot ex-mining cards."
 date: 2026-07-04T00:00:00.000Z
 category: Buying Guides
 tags:
@@ -10,11 +10,10 @@ tags:
   - Buying Advice
 author: marcus-holt
 keywords:
-  - gpu
-  - used hardware
-  - value
-  - buying advice
-  - buying guides
+  - "how to buy a used gpu safely"
+  - "test used graphics card before buying"
+  - "signs of mining gpu on used market"
+  - "used gpu stress test furmark checklist"
 image: "/images/posts/best-gpu-for-1440p-gaming.jpg"
 ---
 

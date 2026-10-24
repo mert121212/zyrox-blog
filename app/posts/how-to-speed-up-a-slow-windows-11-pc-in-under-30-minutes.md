@@ -1,6 +1,6 @@
 ---
 title: "How to Speed Up a Slow Windows 11 PC in Under 30 Minutes"
-meta_description: "A practical, no-nonsense guide to speeding up a laggy Windows 11 computer. Covers startup app pruning, telemetry, visual effects, power plans, storage sense, and indexing fixes."
+meta_description: "Speed up a laggy Windows 11 PC in 30 minutes: disable hidden telemetry, prune startup bloat, adjust power plans, and fix search indexing slowdowns."
 date: 2026-08-08T00:00:00.000Z
 category: "Windows"
 tags:
@@ -10,13 +10,10 @@ tags:
   - "Troubleshooting"
   - "PC Setup"
 keywords:
-  - "speed up Windows 11"
-  - "make PC faster"
-  - "Windows 11 running slow"
-  - "optimize Windows 11 for gaming"
-  - "windows 11 setup tips"
-  - "fix laggy computer"
-  - "windows search high disk usage"
+  - "speed up windows 11 in 30 minutes"
+  - "fix windows 11 lag and stutter"
+  - "disable telemetry and bloatware windows 11"
+  - "windows 11 background apps high disk usage"
 author: rachel-kim
 image: "/images/posts/how-to-speed-up-a-slow-windows-11-pc.jpg"
 ---

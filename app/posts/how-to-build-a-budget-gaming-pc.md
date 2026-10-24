@@ -1,6 +1,6 @@
 ---
 title: How to Build a Budget Gaming PC That Still Feels Fast (2026 Guide)
-meta_description: "Step-by-step guide to building a high-FPS budget gaming PC under $600 and $800. Part lists, real 1080p benchmarks, used GPU tips, and where to never cut corners."
+meta_description: "Build a 1080p high-FPS budget gaming PC under $600: verified part lists, real game benchmarks, smart used GPU buys, and parts where you must not cheap out."
 date: 2026-07-17T00:00:00.000Z
 category: Gaming
 tags:
@@ -11,13 +11,10 @@ tags:
   - Hardware
 author: marcus-holt
 keywords:
-  - budget gaming pc build 2026
-  - best 500 dollar gaming pc
-  - best 700 dollar gaming pc
-  - rx 7600 vs rtx 4060 budget
-  - budget pc build guide
-  - cheap 1080p 60fps pc
-  - used gpu buying guide
+  - "how to build budget gaming pc 600"
+  - "best budget gaming pc build 2026"
+  - "cheap 1080p gaming pc part list"
+  - "budget pc build where to save money"
 image: "/images/posts/how-to-build-a-budget-gaming-pc.jpg"
 quick_verdict: "A well-optimized $600 custom PC outperforms $1,000 big-box prebuilts. For pure 1080p high performance, pairing the Intel Core i5-12400F with an AMD Radeon RX 7600 (8GB) delivers 60+ FPS in Cyberpunk and 200+ FPS in esports. Stretching the budget to $750 unlocks the AMD Ryzen 5 5600 + NVIDIA RTX 4060 with DLSS 3 frame generation."
 key_takeaways:

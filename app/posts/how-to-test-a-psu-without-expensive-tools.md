@@ -1,6 +1,6 @@
 ---
 title: How to Test a Power Supply Without Expensive Tools
-meta_description: "A practical guide to testing a power supply with basic checks, visual inspection, and safe load testing without specialized equipment."
+meta_description: "Diagnose a dead PC at home: perform the PSU paperclip test safely, verify 12V/5V/3.3V pin voltages with a multimeter, and rule out power faults."
 date: 2026-07-07T00:00:00.000Z
 category: Power
 tags:
@@ -10,11 +10,10 @@ tags:
   - Hardware
 author: daniel-osei
 keywords:
-  - psu
-  - power supply
-  - testing
-  - hardware
-  - power
+  - "how to test pc power supply at home"
+  - "psu paperclip test guide"
+  - "test psu with multimeter voltages"
+  - "diagnose faulty power supply symptoms"
 image: "/images/posts/best-psu-for-rtx-5080.jpg"
 ---
 

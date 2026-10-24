@@ -1,6 +1,6 @@
 ---
 title: How to Check If Your PC Can Run a Game Before You Buy It
-meta_description: "Quickly check if your PC can run a specific game without guessing. Compare your specs to requirements using free built-in tools."
+meta_description: "Find out if your PC can actually run that game before purchasing: decode minimum vs recommended specs, check VRAM limits, and avoid stuttering."
 date: 2026-08-07T00:00:00.000Z
 category: Gaming
 tags:
@@ -10,11 +10,10 @@ tags:
   - Troubleshooting
 author: rachel-kim
 keywords:
-  - pc gaming
-  - system requirements
-  - hardware
-  - troubleshooting
-  - gaming
+  - "can my pc run this game check"
+  - "how to check pc specs against game requirements"
+  - "minimum vs recommended pc system requirements"
+  - "will my gpu run new games at 1080p"
 image: "/images/posts/how-to-build-a-budget-gaming-pc.jpg"
 ---
 

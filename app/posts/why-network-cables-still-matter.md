@@ -1,6 +1,6 @@
 ---
 title: Why Network Cables Still Matter in a Wireless World (And When to Run One)
-meta_description: "Why Ethernet still beats Wi-Fi 6 and Wi-Fi 7 for gaming latency, jitter, NAS transfers, and remote work. Cat6 vs Cat6a benchmarks, bufferbloat fixes, and drill-free wiring."
+meta_description: "Why wired Ethernet still crushes Wi-Fi 7 for competitive gaming: zero packet jitter, gigabit NAS speeds, and easy drill-free flat cable wiring tips."
 date: 2026-07-23T00:00:00.000Z
 category: Networking
 tags:
@@ -11,13 +11,10 @@ tags:
   - Networking
 author: sara-vance
 keywords:
-  - ethernet vs wifi
-  - why ethernet is better for gaming
-  - cat6 vs cat6a
-  - gaming latency packet loss
-  - bufferbloat fix
-  - moca adapter ethernet
-  - powerline adapter vs ethernet
+  - "ethernet vs wifi 7 gaming latency"
+  - "why ethernet cable is better for gaming"
+  - "cat6 vs cat6a ethernet cable difference"
+  - "drill free flat ethernet cable installation"
 image: "/images/posts/how-to-build-a-budget-gaming-pc.jpg"
 ---
 

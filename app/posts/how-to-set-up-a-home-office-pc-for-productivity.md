@@ -1,6 +1,6 @@
 ---
 title: How to Set Up a Home Office PC for Productivity
-meta_description: "Create a home office workspace that supports focus and reliable performance. Covers hardware, peripherals, ergonomics, and software essentials."
+meta_description: "Build the ultimate quiet home office PC: optimize dual-monitor layouts, prioritize fast RAM and SSDs for multitasking, and eliminate desk clutter."
 date: 2026-07-11T00:00:00.000Z
 category: Productivity
 tags:
@@ -10,11 +10,10 @@ tags:
   - PC Setup
 author: sara-vance
 keywords:
-  - home office
-  - workstation
-  - ergonomics
-  - pc setup
-  - productivity
+  - "home office pc build for productivity"
+  - "best dual monitor setup for work"
+  - "quiet workstation pc configuration"
+  - "ergonomic home office desk and pc setup"
 image: "/images/posts/how-to-build-a-budget-gaming-pc.jpg"
 ---
 

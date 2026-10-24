@@ -1,6 +1,6 @@
 ---
 title: BIOS Tuning Basics for Stable Overnight Overclocking and Undervolting
-meta_description: "A master guide to BIOS tuning for true overnight CPU and RAM stability. Covers Load Line Calibration (LLC), AMD Curve Optimizer per-core tuning, WHEA Event 18 diagnostics, and stress testing."
+meta_description: "Tune BIOS for 24/7 crash-free stability: AMD Curve Optimizer per-core undervolting, WHEA Event 18 diagnostics, and overnight Y-Cruncher testing."
 date: 2026-06-29T00:00:00.000Z
 category: Overclocking
 tags:
@@ -11,13 +11,10 @@ tags:
   - Undervolting
 author: marcus-holt
 keywords:
-  - bios overclocking stability
-  - pbo curve optimizer guide
-  - load line calibration llc
-  - whea event 18 fix
-  - overnight stress test prime95
-  - cpu undervolting bios
-  - testmem5 ram stability
+  - "bios tuning for 24-7 stability"
+  - "curve optimizer per core undervolt guide"
+  - "fix whea event 18 unstable overclock"
+  - "overnight stability stress test y-cruncher"
 image: "/images/posts/bios-settings-for-stable-overclock.jpg"
 ---
 

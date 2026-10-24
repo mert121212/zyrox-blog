@@ -1,6 +1,6 @@
 ---
 title: Why RAM Speed Matters Less Than People Think (And What to Buy Instead)
-meta_description: "Why paying for 7200MHz+ DDR5 is a waste of money for gaming and productivity. Real DDR5 gaming benchmarks, 1% low frame times, 4-DIMM stability traps, and sweet-spot recommendations."
+meta_description: "Why paying for 7200MHz+ DDR5 is a waste of money for gaming. Real benchmark comparisons, 1% low frame time impact, and the real memory sweet spots."
 date: 2026-07-03T00:00:00.000Z
 category: Memory
 tags:
@@ -11,13 +11,10 @@ tags:
   - PC Building
 author: marcus-holt
 keywords:
-  - ram speed gaming
-  - ddr5 sweet spot
-  - does ram speed matter
-  - ddr5 6000 vs 7200
-  - ram capacity vs speed
-  - amd expo sweet spot
-  - ram 1 percent lows
+  - "why ram speed matters less for gaming"
+  - "ddr5 6000 vs 7200 gaming benchmarks"
+  - "ram frequency vs latency fps difference"
+  - "does fast ram improve 1 percent lows"
 image: "/images/posts/best-ram-for-ryzen-7000.jpg"
 ---
 
