@@ -2,6 +2,7 @@
 title: "How to Choose the Right PSU for Your Build"
 meta_description: "Discover how to choose the right PSU for your build. Calculate wattage headroom, compare 80 Plus vs Cybenetics, and evaluate ATX 3.1 cables."
 date: 2026-07-07T00:00:00.000Z
+updated: 2026-10-28
 category: "Power"
 tags:
   - "PSU"

@@ -2,6 +2,7 @@
 title: "How to Build a Silent PC Without Losing Performance"
 meta_description: "Discover how to build a silent PC without losing gaming FPS: silence noisy GPU fans, tune custom BIOS PWM curves, and select whisper-quiet cooling."
 date: 2026-07-02T00:00:00.000Z
+updated: 2026-10-28
 category: "Cooling"
 tags:
   - "Silent PC"
@@ -111,22 +112,6 @@ Here are acoustic measurements recorded using a calibrated sound pressure meter 
 | **Full Optimization (GPU Undervolt + Hybrid PSU)** | **24.2 dBA** | **36.5 dBA** | Inaudible at desk distance; whisper-quiet under load |
 
 Mastering how to build a silent pc ensures your workstation delivers elite gaming framerates and heavy productivity without audible distraction.
-
-## Frequently Asked Questions
-
-### What is the most critical factor when learning how to build a silent pc?
-Prioritize fan diameter and custom PWM fan curves. Installing quality 140mm fans and locking them below 800 RPM provides abundant airflow while dropping system acoustics to near-inaudible levels.
-
-### Are liquid AIO coolers quieter than large air coolers?
-Often not. While liquid AIOs cool thermal spikes effectively, their mechanical water pumps run continuously at high RPM, producing a persistent high-pitched hum. High-end dual-tower air coolers lack water pumps, producing zero mechanical whine at idle.
-
-### How do I stop annoying coil whine in my PC?
-Coil whine stems from electromagnetic vibrations in graphics card and power supply inductors. You can minimize coil whine by capping extreme game menu framerates in your GPU control panel and undervolting your graphics card core voltage.
-
-### Do sound-dampened cases actually keep a gaming PC quiet?
-Sound-dampened cases absorb high-frequency motor whine well, but their restricted front intakes trap heat. For modern high-wattage components, high-airflow mesh cases often run quieter because fans can spin at much lower speeds to cool the hardware.
-
----
 
 ## Related Guides
 

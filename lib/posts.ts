@@ -42,6 +42,7 @@ export type Post = {
     image: string; // Featured / OpenGraph / Discover image
     quick_verdict?: string;
     key_takeaways?: string[];
+    hide_verdict?: boolean;
 };
 
 export type PostMeta = Omit<Post, 'content'>;
@@ -71,6 +72,7 @@ export function getAllPosts(): Post[] {
                 image: extractPostImage(data, content),
                 quick_verdict: data.quick_verdict || undefined,
                 key_takeaways: Array.isArray(data.key_takeaways) ? data.key_takeaways : undefined,
+                hide_verdict: data.hide_verdict === true,
             } as Post;
         })
         .sort((a, b) => (a.date < b.date ? 1 : -1));
@@ -102,6 +104,7 @@ export function getPostBySlug(slug: string): Post | null {
         image: extractPostImage(data, content),
         quick_verdict: data.quick_verdict || undefined,
         key_takeaways: Array.isArray(data.key_takeaways) ? data.key_takeaways : undefined,
+        hide_verdict: data.hide_verdict === true,
     } as Post;
 }
 

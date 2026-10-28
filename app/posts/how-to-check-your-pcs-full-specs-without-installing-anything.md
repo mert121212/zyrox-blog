@@ -2,6 +2,7 @@
 title: "How to Check PC Specs on Windows Without Extra Apps"
 meta_description: "Learn how to find your computer specs using built-in Windows tools. Check CPU, RAM, GPU, and storage details without downloading anything."
 date: 2026-08-13
+updated: 2026-10-28
 category: "Windows"
 tags:
   - "Hardware"

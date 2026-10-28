@@ -2,6 +2,7 @@
 title: "PC Randomly Restarts While Gaming: How to Diagnose & Fix"
 meta_description: "When your PC randomly restarts while gaming with no blue screen, isolate Kernel-Power Event 41 errors, transient PSU trips, and unstable RAM."
 date: 2026-06-28T00:00:00.000Z
+updated: 2026-10-28
 category: Troubleshooting
 tags:
   - Random Reboots
@@ -112,22 +113,6 @@ Before you throw money at new components when your **PC randomly restarts while 
 4. **Power Limit the GPU:** Drop power target to 70% in MSI Afterburner to rule out PSU transient trips.
 5. **Log HWiNFO64 sensors to CSV:** Check the exact temperature and 12V rail voltage on the final millisecond before failure.
 6. **Pass 4 rounds of MemTest86:** Ensure RAM timings and IMC voltages aren't dropping bits under load.
-
----
-
-## Frequently Asked Questions
-
-### Why does my PC restart when gaming but works fine for desktop use?
-Gaming stresses the GPU, CPU, and power supply simultaneously. Unlike desktop tasks that draw 50W to 100W, gaming can push total system draw above 500W–700W while generating rapid 200W transient spikes. If a power supply capacitor is failing or thermal protection on VRMs is tripping, the failure will only manifest during intense gaming workloads.
-
-### What does Kernel-Power Event ID 41 with BugcheckCode 0 mean?
-A BugcheckCode of 0 indicates that Windows experienced an instantaneous loss of electrical power with zero advance warning. The CPU stopped executing cycles before the operating system could generate a memory dump or display a blue screen. The most frequent causes are power supply over-current protection (OCP), loose 12V EPS cables, or an emergency thermal shutdown.
-
-### Can unstable RAM cause random reboots without a BSOD?
-**Yes.** While RAM instability typically triggers blue screen stop codes like `MEMORY_MANAGEMENT` or `IRQL_NOT_LESS_OR_EQUAL`, corrupted data in critical kernel memory can cause immediate system freezes followed by an instant hardware watchdog reset.
-
-### How can I tell if my power supply is causing random restarts?
-The most reliable test is downloading MSI Afterburner and reducing your GPU power limit to 70% or 75%. If heavy gaming runs stably with the power limit reduced, but immediately causes a reboot when restored to 100%, your power supply is tripping over-current protection during millisecond transient power spikes.
 
 ---
 

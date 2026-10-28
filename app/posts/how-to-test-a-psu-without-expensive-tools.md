@@ -2,6 +2,7 @@
 title: "How to Test a Power Supply Without Expensive Tools"
 meta_description: "Learn how to test a power supply without expensive tools. Perform the paper clip jumper test, verify multimeter pin voltages, and run load stress tests."
 date: 2026-07-07T00:00:00.000Z
+updated: 2026-10-28
 category: "Power"
 tags:
   - "PSU"
@@ -116,22 +117,6 @@ The definitive method to resolve ambiguous diagnostic symptoms is swapping the s
 Install the verified working unit and run the same combined CPU and GPU stress tests. If system instability disappears completely, your original power supply was the culprit.
 
 Mastering how to test a power supply gives you the confidence to pinpoint hardware failures quickly, saving time and money on unnecessary component replacements.
-
-## Frequently Asked Questions
-
-### What is the quickest way when learning how to test a power supply?
-The quickest initial test is the 24-pin paper clip jumper test, which shorts Pin 16 (Green PS_ON#) to Ground (Black) to verify that internal switching circuits can engage.
-
-### Why does my PSU fan not spin during the paper clip test?
-Many modern high-efficiency power supplies feature a semi-passive zero-RPM fan mode. When this feature is active, cooling fans remain stationary under zero load. Toggle the Eco/Hybrid switch to normal mode or check voltage output with a multimeter.
-
-### What is the safe voltage range for the +12V rail on a PC power supply?
-According to the Intel ATX specification, the +12V rail must remain within ±5% tolerance (between 11.40V and 12.60V). If your +12V rail sags below 11.40V under heavy gaming loads, replace the power supply immediately.
-
-### Can a failing power supply cause random game crashes without shutting down the PC?
-Yes. If internal filtering capacitors degrade, excessive electrical ripple voltage enters motherboard VRMs and graphics card silicon, triggering game crashes, driver timeouts, and blue screens that appear identical to software bugs.
-
----
 
 ## Related Guides
 

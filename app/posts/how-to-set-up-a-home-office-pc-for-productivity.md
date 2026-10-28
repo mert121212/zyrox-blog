@@ -2,6 +2,7 @@
 title: How to Set Up a Home Office PC for Productivity
 meta_description: "Build the ultimate quiet home office PC: optimize dual-monitor layouts, prioritize fast RAM and SSDs for multitasking, and eliminate desk clutter."
 date: 2026-07-11T00:00:00.000Z
+updated: 2026-10-28
 category: Productivity
 tags:
   - Home Office
@@ -87,22 +88,6 @@ Ambient lighting behind your monitor (bias lighting) drastically reduces eye str
 Before my overhaul, I used a 1080p TN monitor sitting on books, a loud clicky Razer keyboard, a cheap optical mouse, a slow HDD, and WiFi. I had awful neck pain and eye strain by 4 PM. 
 
 After upgrading to an Ergotron arm holding a 27" 1440p IPS display, a Keychron K8 Pro, an MX Master 3S, a fast NVMe SSD, wired ethernet, a UPS, quiet Noctua fans, and a BenQ ScreenBar, the change was staggering. The neck pain vanished. The eye strain disappeared. The room was quiet, and the machine felt infinitely faster. Building a dedicated home office PC for productivity was the best long-term investment I ever made in my career.
-
----
-
-## Frequently Asked Questions
-
-### What hardware specifications are ideal for a home office PC for productivity?
-For modern multitasking, browser tab loads, virtual meetings, and data analysis, aim for an Intel Core i5 (13th/14th Gen) or AMD Ryzen 5/7 (7000/9000 series), at least 32 GB of dual-channel DDR5 RAM, and a fast 1 TB PCIe 4.0 NVMe SSD. This eliminates lag when running dozens of applications concurrently.
-
-### Is an integrated graphics card enough for a home office workstation?
-Yes. Modern integrated GPUs (such as Intel UHD/Iris Xe or AMD Radeon 700M graphics) can easily power dual or triple 4K monitors at 60 Hz or 144 Hz via DisplayPort and HDMI. You only need a discrete graphics card if your workflow involves 3D rendering, video editing, local AI models, or gaming.
-
-### Why is a 27-inch 1440p monitor recommended over 1080p for office work?
-A 27-inch 1440p (2560x1440) monitor provides 77% more screen real estate than a standard 1080p display. This extra desktop space lets you position two full documents or spreadsheets side-by-side with crisp, legible text without requiring Windows scaling adjustments.
-
-### How do I make my home office PC whisper-quiet?
-To build a silent home office workstation, select a high-efficiency power supply with a zero-RPM fan mode, replace stock CPU coolers with an oversized air tower (like a Thermalright Peerless Assassin or Noctua NH-U12S) running custom low-RPM fan curves, and avoid mechanical hard drives in favor of silent NVMe solid state storage.
 
 ---
 

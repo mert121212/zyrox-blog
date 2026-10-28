@@ -66,7 +66,7 @@ const authorSlugs = ['marcus-holt', 'sara-vance', 'daniel-osei', 'rachel-kim'];
 
 // ── sitemap.xml ───────────────────────────────────────────
 const staticRoutes = [
-    { path: '/', lastmod: posts.length > 0 ? posts[0].date : '2026-06-27', priority: '1.0', freq: 'daily' },
+    { path: '/', lastmod: posts.length > 0 ? (posts[0].updated || posts[0].date) : '2026-06-27', priority: '1.0', freq: 'daily' },
     { path: '/about/', lastmod: '2026-06-27', priority: '0.8', freq: 'monthly' },
     { path: '/authors/', lastmod: '2026-06-27', priority: '0.8', freq: 'weekly' },
     { path: '/privacy-policy/', lastmod: '2026-06-27', priority: '0.3', freq: 'yearly' },

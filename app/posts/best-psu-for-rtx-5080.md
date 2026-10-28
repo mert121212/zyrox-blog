@@ -2,6 +2,7 @@
 title: "Best PSU for RTX 5080: ATX 3.1 Guide & Top Picks"
 meta_description: "Best PSU for RTX 5080 builds: ATX 3.1 vs 3.0 standards, native 12V-2x6 connectors, transient power spike data, and 850W vs 1000W recommendations."
 date: 2026-08-03T00:00:00.000Z
+updated: 2026-10-28
 category: "Power"
 tags:
   - "PSU"

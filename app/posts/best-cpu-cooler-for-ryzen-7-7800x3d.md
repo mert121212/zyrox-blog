@@ -2,6 +2,7 @@
 title: "Best CPU Cooler for Ryzen 7 7800X3D: Bench Tested"
 meta_description: "We tested four top coolers on the AMD Ryzen 7 7800X3D. Real Cinebench R23 and gaming thermal numbers, noise levels, and why you do not need a 360mm AIO."
 date: 2026-08-02
+updated: 2026-10-28
 category: "Cooling"
 tags:
   - "CPU Cooler"

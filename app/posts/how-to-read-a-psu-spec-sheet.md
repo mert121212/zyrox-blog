@@ -2,6 +2,7 @@
 title: "How to Read a PSU Spec Sheet Without Getting Misled"
 meta_description: "Don't get tricked by fake PSU wattage ratings: decode continuous vs peak power, inspect +12V rail amperage, voltage ripple, and capacitor tiers."
 date: 2026-07-05T00:00:00.000Z
+updated: 2026-10-28
 category: Power Supply
 tags:
   - PSU
@@ -98,22 +99,6 @@ Electrolytic capacitors determine a power supply's operational longevity, intern
 Modern graphics cards generate intense, microsecond electrical power spikes known as transient power excursions. The Intel ATX 3.0 and updated ATX 3.1 design guidelines mandate that compliant power supplies withstand instantaneous spikes reaching up to 200% of their rated wattage (for instance, surviving a 1500W transient spike on a 750W unit for 100 microseconds).
 
 When inspecting modern spec sheets, look for native ATX 3.1 compliance and dedicated PCIe 5.1 12V-2x6 power cables. This updated connector redesigns physical sense pins and shortens conductor terminals, preventing improper cable seating and eliminating the thermal melting hazards that plagued early 12VHPWR adapters.
-
-## Frequently Asked Questions
-
-### What should I check first when learning how to read a PSU spec sheet?
-The first specification to check is continuous wattage output at 40°C ambient, followed immediately by +12V rail amperage. Ensure that the +12V rail provides at least 90% of the total rated wattage on the box.
-
-### What is the difference between single rail and multi-rail 12V PSUs?
-A single +12V rail routes all available current through one shared circuit, making cable management simpler for power-hungry GPUs. A multi-rail design splits the +12V capacity into separate sub-circuits with dedicated Over Current Protection (OCP), adding safety against melted modular cables.
-
-### Is an 80 Plus Gold rating proof that a power supply is good?
-No. An 80 Plus Gold badge only indicates electrical efficiency from the wall outlet. It does not measure voltage ripple, capacitor build quality, thermal protection thresholds, or component lifespan.
-
-### Why does the ambient temperature rating on a PSU matter?
-Quality power supplies are rated to deliver 100% of their advertised continuous wattage at 40°C or 50°C internal case temperatures. Units rated only at room temperature (25°C) suffer temperature derating, losing up to 25% of their real output inside a warm gaming chassis.
-
----
 
 ## Related Guides
 

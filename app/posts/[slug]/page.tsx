@@ -396,7 +396,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                             )}
 
                             {/* GEO & AEO: Executive Verdict & AI-Extractable Summary */}
-                            <QuickVerdict post={post} />
+                            {!post.hide_verdict && <QuickVerdict post={post} />}
 
                             {/* Article body with mid-article ad injected after 4th paragraph */}
                             <div className="article-body" dangerouslySetInnerHTML={{ __html: contentHtml }} />

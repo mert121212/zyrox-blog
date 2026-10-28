@@ -2,6 +2,7 @@
 title: "How to Install Windows 11 from USB: Step-by-Step"
 meta_description: "Install Windows 11 from USB in 2026: create a bootable drive with Rufus, configure BIOS boot order, and avoid the partitioning mistakes that brick installs."
 date: 2026-06-30T00:00:00.000Z
+updated: 2026-10-28
 category: Windows
 tags:
   - Windows

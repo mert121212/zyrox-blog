@@ -2,6 +2,7 @@
 title: What to Check When a PC Won't Boot
 meta_description: "Troubleshoot what to check when a PC won't boot: resolve no-POST errors, black screens, memory seating issues, and motherboard debug LED codes."
 date: 2026-07-04T00:00:00.000Z
+updated: 2026-10-28
 category: Troubleshooting
 tags:
   - Boot

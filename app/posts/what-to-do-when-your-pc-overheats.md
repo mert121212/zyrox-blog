@@ -2,6 +2,7 @@
 title: What to Do When Your PC Overheats
 meta_description: "Learn what to do when your PC overheats: identify thermal throttling, clean heatsinks, repaste CPUs, tune fan curves, and diagnose AIO pump failures."
 date: 2026-07-28T00:00:00.000Z
+updated: 2026-10-28
 category: Cooling
 tags:
   - Overheating
@@ -16,6 +17,7 @@ keywords:
   - "how to cool down a hot pc"
   - "gpu thermal throttling fix"
 image: "/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg"
+hide_verdict: true
 ---
 
 ![Hero Image](/images/posts/best-cpu-cooler-for-ryzen-7-7800x3d.jpg)
@@ -113,26 +115,4 @@ Understanding what to do when your pc overheats helps you maintain healthy opera
 
 ---
 
-## Frequently Asked Questions
-
-### Is 85°C dangerous for a CPU while gaming?
-Modern processors can safely operate at 85°C during intense gaming loads. However, if your CPU regularly exceeds 90°C while gaming, improving case airflow or repasting your cooler is recommended.
-
-### How often should thermal paste be replaced?
-High-quality thermal paste typically lasts between three and five years. You only need to replace it sooner if you notice creeping thermal throttling or if you remove your CPU cooler.
-
-### Can high temperatures permanently damage a graphics card?
-Modern GPUs feature automatic thermal protection mechanisms that downclock or shut down before reaching destructive temperatures. However, sustained excessive heat degrades thermal pads and solder joints over long periods.
-
-### Why does my PC shut down suddenly while playing games?
-Sudden shutdowns without blue screen errors usually indicate the CPU or GPU reached emergency thermal cutoff limits, or the power supply tripped over-temperature protection under sustained heat.
-
----
-
-## Related Guides
-
-- [How to Fix High CPU Usage in Windows](/posts/how-to-fix-high-cpu-usage/)
-- [How to Diagnose a Random PC Reboot Without Losing Your Mind](/posts/how-to-diagnose-a-random-reboot/)
-- [Signs Your Motherboard Is Failing](/posts/signs-your-motherboard-is-failing/)
-- [Why Case Airflow Matters More Than People Think](/posts/why-case-airflow-matters-more-than-people-think/)
-- [The Difference Between Air Cooling and Liquid Cooling](/posts/the-difference-between-air-cooling-and-liquid-cooling/)
+**Further Reading:** [How to Fix High CPU Usage in Windows](/posts/how-to-fix-high-cpu-usage/) · [How to Diagnose a Random PC Reboot Without Losing Your Mind](/posts/how-to-diagnose-a-random-reboot/) · [Signs Your Motherboard Is Failing](/posts/signs-your-motherboard-is-failing/)

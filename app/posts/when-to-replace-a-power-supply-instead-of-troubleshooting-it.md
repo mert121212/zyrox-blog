@@ -2,6 +2,7 @@
 title: "When to Replace a Power Supply Instead of Troubleshooting It"
 meta_description: "Know when an aging PSU is too dangerous to troubleshoot: spot capacitor degradation, burning smells, 5VSB rail failure, and sudden safety shutoffs."
 date: 2026-07-21T00:00:00.000Z
+updated: 2026-10-28
 category: "Power"
 tags:
   - "PSU"
@@ -16,6 +17,7 @@ keywords:
   - "is old power supply dangerous for new gpu"
 author: "daniel-osei"
 image: "/images/posts/best-psu-for-rtx-5080.jpg"
+hide_verdict: true
 ---
 
 ![Hero Image](/images/posts/best-psu-for-rtx-5080.jpg)
@@ -87,26 +89,4 @@ Before discarding a modern power supply from top manufacturers like [Corsair](ht
 
 Deciding when to replace a power supply comes down to risk assessment. Modern ATX 3.0 and ATX 3.1 units feature upgraded 12V-2x6 connectors engineered to resist terminal thermal resistance. Investing $100 into a certified replacement protects thousands of dollars in connected computing hardware.
 
-## Frequently Asked Questions
-
-### How do I know when to replace a power supply instead of troubleshooting?
-Replace the power supply immediately if your +12V rail sags below 11.40V under gaming loads, if you smell burning plastic or fishy capacitor electrolyte, if modular cable pins show heat discoloration, or if the unit shuts down instantly during GPU power spikes.
-
-### How long does a quality computer power supply usually last?
-A high-tier power supply equipped with Japanese 105°C capacitors and backed by a 10-year manufacturer warranty typically lasts between 7 and 10 years under regular use. Budget power supplies featuring 85°C capacitors often degrade after 3 to 5 years.
-
-### Can an aging power supply damage my graphics card and motherboard?
-Yes. When internal filtering capacitors degrade, the power supply allows high electrical ripple voltage into connected components. Over time, persistent voltage spikes degrade motherboard VRMs, damage sensitive GPU silicon, and cause file system corruption on SSDs.
-
-### Is it safe to repair a faulty power supply at home?
-No. PC power supplies contain large industrial capacitors that store lethal 400V DC electrical charges even when completely unplugged. Opening a power supply casing poses severe electrocution and fire hazards. Always recycle and replace the entire unit.
-
----
-
-## Related Guides
-
-- [How to Choose the Right PSU for Your Build](/posts/how-to-choose-the-right-psu-for-your-build/)
-- [How to Read a PSU Spec Sheet Without Getting Confused](/posts/how-to-read-a-psu-spec-sheet/)
-- [How to Spot a Bad Power Supply Before You Buy It](/posts/how-to-spot-a-bad-power-supply-before-you-buy-it/)
-- [How to Test a PC Power Supply Without Expensive Equipment](/posts/how-to-test-a-psu-without-expensive-tools/)
-- [Best PSU for RTX 5080: Wattage Requirements and Top Picks](/posts/best-psu-for-rtx-5080/)
+**Further Reading:** [How to Choose the Right PSU for Your Build](/posts/how-to-choose-the-right-psu-for-your-build/) · [How to Read a PSU Spec Sheet Without Getting Confused](/posts/how-to-read-a-psu-spec-sheet/) · [How to Spot a Bad Power Supply Before You Buy It](/posts/how-to-spot-a-bad-power-supply-before-you-buy-it/)

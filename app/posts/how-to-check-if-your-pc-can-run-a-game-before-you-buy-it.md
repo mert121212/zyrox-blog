@@ -2,6 +2,7 @@
 title: How to Check If Your PC Can Run a Game Before You Buy It
 meta_description: "Find out if your PC can actually run that game before purchasing: decode minimum vs recommended specs, check VRAM limits, and avoid stuttering."
 date: 2026-08-07T00:00:00.000Z
+updated: 2026-10-28
 category: Gaming
 tags:
   - PC Gaming

@@ -2,6 +2,7 @@
 title: "How to Fix High CPU Usage on Windows (2026 Guide)"
 meta_description: "A practical guide to fix high CPU usage on Windows: troubleshoot runaway background processes, driver latency, TiWorker, and thermal throttling."
 date: 2026-08-08
+updated: 2026-10-28
 category: "Windows"
 tags:
   - "CPU"

@@ -2,6 +2,7 @@
 title: "How to Speed Up a Slow Windows 11 PC (Fast 2026 Guide)"
 meta_description: "Learn how to speed up a slow Windows 11 PC in 30 minutes: disable background telemetry, prune startup bloat, adjust power plans, and fix lag."
 date: 2026-08-08T00:00:00.000Z
+updated: 2026-10-28
 category: "Windows"
 tags:
   - "Windows 11"

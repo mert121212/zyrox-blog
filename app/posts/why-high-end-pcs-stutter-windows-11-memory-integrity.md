@@ -2,6 +2,7 @@
 title: "Windows 11 Memory Integrity Gaming Stutter: Complete Fix"
 meta_description: "Fix Windows 11 memory integrity gaming stutter: disable Core Isolation HVCI, eliminate 1% low frame drops, and solve DPC latency spikes."
 date: 2026-09-15
+updated: 2026-10-28
 category: "Performance"
 tags:
   - "Windows 11"

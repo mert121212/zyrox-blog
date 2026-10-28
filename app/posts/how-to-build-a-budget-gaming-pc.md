@@ -2,6 +2,7 @@
 title: How to Build a Budget Gaming PC That Runs Fast
 meta_description: "Learn how to build a budget gaming PC under $600 with tested part lists, real game benchmarks, and tips on where never to cut corners."
 date: 2026-07-17T00:00:00.000Z
+updated: 2026-10-28
 category: Gaming
 tags:
   - Budget Gaming

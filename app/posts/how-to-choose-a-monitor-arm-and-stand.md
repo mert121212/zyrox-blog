@@ -2,6 +2,7 @@
 title: "How to Choose a Monitor Arm and Stand for Your Desk"
 meta_description: "Learn how to choose a monitor arm for your desk: VESA pattern compatibility, gas spring vs mechanical tension, weight limits, and clean cable routing."
 date: 2026-07-20T00:00:00.000Z
+updated: 2026-10-28
 category: Displays
 tags:
   - Monitor Arm
@@ -102,22 +103,6 @@ Installing a monitor arm provides immediate postural benefits only when adjusted
 - **Upward Screen Angle:** Angle the monitor panel upward by 5 to 10 degrees to align with your natural sightline and prevent glare from overhead room lighting.
 
 Mastering how to choose a monitor arm gives you a clean, ergonomic workstation customized perfectly to your posture and workflow.
-
-## Frequently Asked Questions
-
-### How do I know how to choose a monitor arm that fits my screen?
-Confirm your monitor has standard 75x75mm or 100x100mm VESA screw holes on the rear panel. Next, weigh your monitor panel without its stock stand and ensure the bare panel weight sits comfortably within the arm's recommended weight capacity with at least 1-2 kg of headroom.
-
-### Can a monitor arm be attached to an IKEA desk?
-You can mount an arm to solid particleboard or plywood IKEA desks (like the Karlby or Bekant). However, avoid clamping heavy arms directly to hollow honeycomb desks (like the Linnmon or Lagkapten) without large steel reinforcement plates to prevent crushing the paper core.
-
-### Are gas spring monitor arms better than mechanical spring arms?
-Gas spring arms offer silky, floating motion at a low price, but their pressurized nitrogen cylinders gradually lose pressure after 3 to 5 years. Mechanical steel spring arms cost more upfront but last over a decade without degradation.
-
-### How much desk depth do I need for a monitor arm?
-A monitor arm requires a desk at least 24 inches (60 cm) deep. Desks measuring 30 inches (75 cm) or deeper provide optimal viewing distance, allowing you to position a 27-inch or 32-inch monitor at an ergonomic arm's-length distance without straining your eyes.
-
----
 
 ## Related Guides
 

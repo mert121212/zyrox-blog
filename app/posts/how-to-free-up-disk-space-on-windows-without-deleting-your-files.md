@@ -2,6 +2,7 @@
 title: "How to Free Up Disk Space on Windows 11"
 meta_description: "Running out of storage? Learn how to safely free up gigabytes of disk space on Windows 11 by clearing hidden caches, temp files, and system bloat."
 date: 2026-08-11
+updated: 2026-10-28
 category: "Windows"
 tags:
   - "Storage"
