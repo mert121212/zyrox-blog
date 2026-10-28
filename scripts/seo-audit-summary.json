@@ -1,0 +1,1063 @@
+{
+  "date": "2026-10-28T16:59:57.525Z",
+  "total": 66,
+  "avgScore": 95,
+  "passCount": 66,
+  "faqCount": 66,
+  "thinCount": 0,
+  "results": [
+    {
+      "file": "no-bootable-device-found-nvme.md",
+      "slug": "no-bootable-device-found-nvme",
+      "score": 93,
+      "pass": true,
+      "readability": 72,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1237,
+      "hasFaq": true,
+      "titleLength": 47,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 13 H2/H3 headings for 1237 words (avg 95 words/heading)"
+      ]
+    },
+    {
+      "file": "best-gpu-for-1440p-gaming.md",
+      "slug": "best-gpu-for-1440p-gaming",
+      "score": 94,
+      "pass": true,
+      "readability": 77,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1217,
+      "hasFaq": true,
+      "titleLength": 46,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 12 H2/H3 headings for 1217 words (avg 101 words/heading)"
+      ]
+    },
+    {
+      "file": "best-monitor-for-work-and-gaming.md",
+      "slug": "best-monitor-for-work-and-gaming",
+      "score": 94,
+      "pass": true,
+      "readability": 79,
+      "seo": 100,
+      "content": 96,
+      "wordCount": 1355,
+      "hasFaq": true,
+      "titleLength": 48,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 16 H2/H3 headings for 1355 words (avg 85 words/heading)"
+      ]
+    },
+    {
+      "file": "best-psu-for-rtx-5080.md",
+      "slug": "best-psu-for-rtx-5080",
+      "score": 94,
+      "pass": true,
+      "readability": 78,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1220,
+      "hasFaq": true,
+      "titleLength": 48,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 13 H2/H3 headings for 1220 words (avg 94 words/heading)"
+      ]
+    },
+    {
+      "file": "bios-settings-for-stable-overclock.md",
+      "slug": "bios-settings-for-stable-overclock",
+      "score": 94,
+      "pass": true,
+      "readability": 75,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1576,
+      "hasFaq": true,
+      "titleLength": 53,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 16 H2/H3 headings for 1576 words (avg 99 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-choose-the-right-psu-for-your-build.md",
+      "slug": "how-to-choose-the-right-psu-for-your-build",
+      "score": 94,
+      "pass": true,
+      "readability": 74,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1224,
+      "hasFaq": true,
+      "titleLength": 42,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 14 H2/H3 headings for 1224 words (avg 87 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-fix-windows-update-problems-2026.md",
+      "slug": "how-to-fix-windows-update-problems-2026",
+      "score": 94,
+      "pass": true,
+      "readability": 75,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1329,
+      "hasFaq": true,
+      "titleLength": 42,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 15 H2/H3 headings for 1329 words (avg 89 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-spot-fake-hardware-reviews.md",
+      "slug": "how-to-spot-fake-hardware-reviews",
+      "score": 94,
+      "pass": true,
+      "readability": 76,
+      "seo": 100,
+      "content": 96,
+      "wordCount": 1215,
+      "hasFaq": true,
+      "titleLength": 33,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 15 H2/H3 headings for 1215 words (avg 81 words/heading)"
+      ]
+    },
+    {
+      "file": "signs-your-motherboard-is-failing.md",
+      "slug": "signs-your-motherboard-is-failing",
+      "score": 94,
+      "pass": true,
+      "readability": 75,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1562,
+      "hasFaq": true,
+      "titleLength": 47,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 17 H2/H3 headings for 1562 words (avg 92 words/heading)"
+      ]
+    },
+    {
+      "file": "what-actually-matters-in-a-gaming-pc.md",
+      "slug": "what-actually-matters-in-a-gaming-pc",
+      "score": 94,
+      "pass": true,
+      "readability": 75,
+      "seo": 100,
+      "content": 98,
+      "wordCount": 1548,
+      "hasFaq": true,
+      "titleLength": 46,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 14 H2/H3 headings for 1548 words (avg 111 words/heading)"
+      ]
+    },
+    {
+      "file": "what-is-the-best-motherboard-for-ryzen-7-7800x3d.md",
+      "slug": "what-is-the-best-motherboard-for-ryzen-7-7800x3d",
+      "score": 94,
+      "pass": true,
+      "readability": 74,
+      "seo": 100,
+      "content": 98,
+      "wordCount": 1389,
+      "hasFaq": true,
+      "titleLength": 49,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 12 H2/H3 headings for 1389 words (avg 116 words/heading)"
+      ]
+    },
+    {
+      "file": "what-to-check-first-when-a-pc-wont-boot.md",
+      "slug": "what-to-check-first-when-a-pc-wont-boot",
+      "score": 94,
+      "pass": true,
+      "readability": 78,
+      "seo": 100,
+      "content": 96,
+      "wordCount": 1225,
+      "hasFaq": true,
+      "titleLength": 34,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 15 H2/H3 headings for 1225 words (avg 82 words/heading)"
+      ]
+    },
+    {
+      "file": "best-cpu-cooler-for-ryzen-7-7800x3d.md",
+      "slug": "best-cpu-cooler-for-ryzen-7-7800x3d",
+      "score": 95,
+      "pass": true,
+      "readability": 79,
+      "seo": 100,
+      "content": 99,
+      "wordCount": 1384,
+      "hasFaq": true,
+      "titleLength": 49,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 10 H2/H3 headings for 1384 words (avg 138 words/heading)"
+      ]
+    },
+    {
+      "file": "best-motherboard-for-rtx-4070.md",
+      "slug": "best-motherboard-for-rtx-4070",
+      "score": 95,
+      "pass": true,
+      "readability": 80,
+      "seo": 100,
+      "content": 98,
+      "wordCount": 1255,
+      "hasFaq": true,
+      "titleLength": 48,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 12 H2/H3 headings for 1255 words (avg 105 words/heading)"
+      ]
+    },
+    {
+      "file": "best-ram-for-ryzen-7000.md",
+      "slug": "best-ram-for-ryzen-7000",
+      "score": 95,
+      "pass": true,
+      "readability": 80,
+      "seo": 99,
+      "content": 98,
+      "wordCount": 1562,
+      "hasFaq": true,
+      "titleLength": 53,
+      "warningsCount": 2,
+      "topWarnings": [
+        "[FAIL] Keyword Density: \"best ram for ryzen 7000\" appears 3 times (1.0%)",
+        "[FAIL] Heading Frequency: 14 H2/H3 headings for 1562 words (avg 112 words/heading)"
+      ]
+    },
+    {
+      "file": "best-ssd-for-gaming-2026.md",
+      "slug": "best-ssd-for-gaming-2026",
+      "score": 95,
+      "pass": true,
+      "readability": 82,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1202,
+      "hasFaq": true,
+      "titleLength": 47,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 14 H2/H3 headings for 1202 words (avg 86 words/heading)"
+      ]
+    },
+    {
+      "file": "biostuning-basics-for-stable-overnight-overclocking.md",
+      "slug": "biostuning-basics-for-stable-overnight-overclocking",
+      "score": 95,
+      "pass": true,
+      "readability": 77,
+      "seo": 100,
+      "content": 98,
+      "wordCount": 1244,
+      "hasFaq": true,
+      "titleLength": 55,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 12 H2/H3 headings for 1244 words (avg 104 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-build-a-budget-gaming-pc.md",
+      "slug": "how-to-build-a-budget-gaming-pc",
+      "score": 95,
+      "pass": true,
+      "readability": 82,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1224,
+      "hasFaq": true,
+      "titleLength": 46,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 14 H2/H3 headings for 1224 words (avg 87 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-build-a-silent-pc.md",
+      "slug": "how-to-build-a-silent-pc",
+      "score": 95,
+      "pass": true,
+      "readability": 83,
+      "seo": 100,
+      "content": 96,
+      "wordCount": 1264,
+      "hasFaq": true,
+      "titleLength": 51,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 16 H2/H3 headings for 1264 words (avg 79 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-choose-a-good-ssd-for-video-editing.md",
+      "slug": "how-to-choose-a-good-ssd-for-video-editing",
+      "score": 95,
+      "pass": true,
+      "readability": 81,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1210,
+      "hasFaq": true,
+      "titleLength": 42,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 13 H2/H3 headings for 1210 words (avg 93 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-choose-a-monitor-arm-and-stand.md",
+      "slug": "how-to-choose-a-monitor-arm-and-stand",
+      "score": 95,
+      "pass": true,
+      "readability": 81,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1225,
+      "hasFaq": true,
+      "titleLength": 51,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 13 H2/H3 headings for 1225 words (avg 94 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-choose-a-motherboard-for-a-new-build.md",
+      "slug": "how-to-choose-a-motherboard-for-a-new-build",
+      "score": 95,
+      "pass": true,
+      "readability": 83,
+      "seo": 100,
+      "content": 96,
+      "wordCount": 1233,
+      "hasFaq": true,
+      "titleLength": 46,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 15 H2/H3 headings for 1233 words (avg 82 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-choose-the-best-wifi-router.md",
+      "slug": "how-to-choose-the-best-wifi-router",
+      "score": 95,
+      "pass": true,
+      "readability": 81,
+      "seo": 100,
+      "content": 98,
+      "wordCount": 1299,
+      "hasFaq": true,
+      "titleLength": 49,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 12 H2/H3 headings for 1299 words (avg 108 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-choose-the-right-case-fan-setup.md",
+      "slug": "how-to-choose-the-right-case-fan-setup",
+      "score": 95,
+      "pass": true,
+      "readability": 82,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1231,
+      "hasFaq": true,
+      "titleLength": 38,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 12 H2/H3 headings for 1231 words (avg 103 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-choose-the-right-cpu-cooler-for-your-build.md",
+      "slug": "how-to-choose-the-right-cpu-cooler-for-your-build",
+      "score": 95,
+      "pass": true,
+      "readability": 81,
+      "seo": 100,
+      "content": 98,
+      "wordCount": 1303,
+      "hasFaq": true,
+      "titleLength": 51,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 12 H2/H3 headings for 1303 words (avg 109 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-choose-the-right-pc-case.md",
+      "slug": "how-to-choose-the-right-pc-case",
+      "score": 95,
+      "pass": true,
+      "readability": 81,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1239,
+      "hasFaq": true,
+      "titleLength": 46,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 13 H2/H3 headings for 1239 words (avg 95 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-choose-the-right-ssd-for-your-system.md",
+      "slug": "how-to-choose-the-right-ssd-for-your-system",
+      "score": 95,
+      "pass": true,
+      "readability": 84,
+      "seo": 100,
+      "content": 96,
+      "wordCount": 1423,
+      "hasFaq": true,
+      "titleLength": 39,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 17 H2/H3 headings for 1423 words (avg 84 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-clean-a-pc-without-damaging-components.md",
+      "slug": "how-to-clean-a-pc-without-damaging-components",
+      "score": 95,
+      "pass": true,
+      "readability": 84,
+      "seo": 100,
+      "content": 96,
+      "wordCount": 1211,
+      "hasFaq": true,
+      "titleLength": 45,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 17 H2/H3 headings for 1211 words (avg 71 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-diagnose-a-random-reboot.md",
+      "slug": "how-to-diagnose-a-random-reboot",
+      "score": 95,
+      "pass": true,
+      "readability": 83,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1440,
+      "hasFaq": true,
+      "titleLength": 56,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 15 H2/H3 headings for 1440 words (avg 96 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-fix-high-cpu-usage.md",
+      "slug": "how-to-fix-high-cpu-usage",
+      "score": 95,
+      "pass": true,
+      "readability": 82,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1556,
+      "hasFaq": true,
+      "titleLength": 49,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 17 H2/H3 headings for 1556 words (avg 92 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-free-up-disk-space-on-windows-without-deleting-your-files.md",
+      "slug": "how-to-free-up-disk-space-on-windows-without-deleting-your-files",
+      "score": 95,
+      "pass": true,
+      "readability": 82,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1336,
+      "hasFaq": true,
+      "titleLength": 39,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 13 H2/H3 headings for 1336 words (avg 103 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-improve-laptop-battery-life.md",
+      "slug": "how-to-improve-laptop-battery-life",
+      "score": 95,
+      "pass": true,
+      "readability": 83,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1219,
+      "hasFaq": true,
+      "titleLength": 48,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 14 H2/H3 headings for 1219 words (avg 87 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-install-windows-from-a-usb.md",
+      "slug": "how-to-install-windows-from-a-usb",
+      "score": 95,
+      "pass": true,
+      "readability": 80,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1420,
+      "hasFaq": true,
+      "titleLength": 48,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 15 H2/H3 headings for 1420 words (avg 95 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-keep-a-pc-running-well-for-years.md",
+      "slug": "how-to-keep-a-pc-running-well-for-years",
+      "score": 95,
+      "pass": true,
+      "readability": 82,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1260,
+      "hasFaq": true,
+      "titleLength": 39,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 14 H2/H3 headings for 1260 words (avg 90 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-read-a-psu-spec-sheet.md",
+      "slug": "how-to-read-a-psu-spec-sheet",
+      "score": 95,
+      "pass": true,
+      "readability": 81,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1292,
+      "hasFaq": true,
+      "titleLength": 51,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 14 H2/H3 headings for 1292 words (avg 92 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-set-up-a-home-office-pc-for-productivity.md",
+      "slug": "how-to-set-up-a-home-office-pc-for-productivity",
+      "score": 95,
+      "pass": true,
+      "readability": 83,
+      "seo": 100,
+      "content": 96,
+      "wordCount": 1424,
+      "hasFaq": true,
+      "titleLength": 47,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 17 H2/H3 headings for 1424 words (avg 84 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-speed-up-a-slow-windows-11-pc-in-under-30-minutes.md",
+      "slug": "how-to-speed-up-a-slow-windows-11-pc-in-under-30-minutes",
+      "score": 95,
+      "pass": true,
+      "readability": 80,
+      "seo": 100,
+      "content": 98,
+      "wordCount": 1618,
+      "hasFaq": true,
+      "titleLength": 54,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 15 H2/H3 headings for 1618 words (avg 108 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-spot-a-bad-power-supply-before-you-buy-it.md",
+      "slug": "how-to-spot-a-bad-power-supply-before-you-buy-it",
+      "score": 95,
+      "pass": true,
+      "readability": 79,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1571,
+      "hasFaq": true,
+      "titleLength": 48,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 16 H2/H3 headings for 1571 words (avg 98 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-spot-a-failing-hard-drive-before-it-fails.md",
+      "slug": "how-to-spot-a-failing-hard-drive-before-it-fails",
+      "score": 95,
+      "pass": true,
+      "readability": 79,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1480,
+      "hasFaq": true,
+      "titleLength": 48,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 17 H2/H3 headings for 1480 words (avg 87 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-tell-if-your-cpu-cooler-is-working-well.md",
+      "slug": "how-to-tell-if-your-cpu-cooler-is-working-well",
+      "score": 95,
+      "pass": true,
+      "readability": 80,
+      "seo": 100,
+      "content": 98,
+      "wordCount": 1606,
+      "hasFaq": true,
+      "titleLength": 46,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 15 H2/H3 headings for 1606 words (avg 107 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-test-a-psu-without-expensive-tools.md",
+      "slug": "how-to-test-a-psu-without-expensive-tools",
+      "score": 95,
+      "pass": true,
+      "readability": 81,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1204,
+      "hasFaq": true,
+      "titleLength": 50,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 14 H2/H3 headings for 1204 words (avg 86 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-upgrade-your-wifi-without-replacing-everything.md",
+      "slug": "how-to-upgrade-your-wifi-without-replacing-everything",
+      "score": 95,
+      "pass": true,
+      "readability": 82,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1398,
+      "hasFaq": true,
+      "titleLength": 55,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 14 H2/H3 headings for 1398 words (avg 100 words/heading)"
+      ]
+    },
+    {
+      "file": "should-you-buy-an-ssd-or-hdd-for-game-storage.md",
+      "slug": "should-you-buy-an-ssd-or-hdd-for-game-storage",
+      "score": 95,
+      "pass": true,
+      "readability": 81,
+      "seo": 100,
+      "content": 98,
+      "wordCount": 1367,
+      "hasFaq": true,
+      "titleLength": 45,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 13 H2/H3 headings for 1367 words (avg 105 words/heading)"
+      ]
+    },
+    {
+      "file": "the-best-way-to-organize-your-game-library-on-an-ssd.md",
+      "slug": "the-best-way-to-organize-your-game-library-on-an-ssd",
+      "score": 95,
+      "pass": true,
+      "readability": 82,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1243,
+      "hasFaq": true,
+      "titleLength": 43,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 14 H2/H3 headings for 1243 words (avg 89 words/heading)"
+      ]
+    },
+    {
+      "file": "the-best-way-to-plan-a-pc-upgrade-cycle.md",
+      "slug": "the-best-way-to-plan-a-pc-upgrade-cycle",
+      "score": 95,
+      "pass": true,
+      "readability": 77,
+      "seo": 100,
+      "content": 98,
+      "wordCount": 1388,
+      "hasFaq": true,
+      "titleLength": 39,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 13 H2/H3 headings for 1388 words (avg 107 words/heading)"
+      ]
+    },
+    {
+      "file": "the-best-way-to-upgrade-your-pc-without-replacing-everything.md",
+      "slug": "the-best-way-to-upgrade-your-pc-without-replacing-everything",
+      "score": 95,
+      "pass": true,
+      "readability": 77,
+      "seo": 100,
+      "content": 98,
+      "wordCount": 1366,
+      "hasFaq": true,
+      "titleLength": 57,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 12 H2/H3 headings for 1366 words (avg 114 words/heading)"
+      ]
+    },
+    {
+      "file": "the-difference-between-air-cooling-and-liquid-cooling.md",
+      "slug": "the-difference-between-air-cooling-and-liquid-cooling",
+      "score": 95,
+      "pass": true,
+      "readability": 84,
+      "seo": 100,
+      "content": 96,
+      "wordCount": 1269,
+      "hasFaq": true,
+      "titleLength": 51,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 15 H2/H3 headings for 1269 words (avg 85 words/heading)"
+      ]
+    },
+    {
+      "file": "what-does-ram-actually-do-in-a-computer.md",
+      "slug": "what-does-ram-actually-do-in-a-computer",
+      "score": 95,
+      "pass": true,
+      "readability": 80,
+      "seo": 100,
+      "content": 98,
+      "wordCount": 1287,
+      "hasFaq": true,
+      "titleLength": 50,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 11 H2/H3 headings for 1287 words (avg 117 words/heading)"
+      ]
+    },
+    {
+      "file": "what-to-do-when-your-pc-overheats.md",
+      "slug": "what-to-do-when-your-pc-overheats",
+      "score": 95,
+      "pass": true,
+      "readability": 81,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1237,
+      "hasFaq": true,
+      "titleLength": 33,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 14 H2/H3 headings for 1237 words (avg 88 words/heading)"
+      ]
+    },
+    {
+      "file": "what-to-look-for-in-a-midrange-monitor.md",
+      "slug": "what-to-look-for-in-a-midrange-monitor",
+      "score": 95,
+      "pass": true,
+      "readability": 81,
+      "seo": 100,
+      "content": 96,
+      "wordCount": 1277,
+      "hasFaq": true,
+      "titleLength": 38,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 16 H2/H3 headings for 1277 words (avg 80 words/heading)"
+      ]
+    },
+    {
+      "file": "when-to-replace-a-monitor.md",
+      "slug": "when-to-replace-a-monitor",
+      "score": 95,
+      "pass": true,
+      "readability": 79,
+      "seo": 100,
+      "content": 98,
+      "wordCount": 1260,
+      "hasFaq": true,
+      "titleLength": 48,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 12 H2/H3 headings for 1260 words (avg 105 words/heading)"
+      ]
+    },
+    {
+      "file": "when-to-replace-a-power-supply-instead-of-troubleshooting-it.md",
+      "slug": "when-to-replace-a-power-supply-instead-of-troubleshooting-it",
+      "score": 95,
+      "pass": true,
+      "readability": 81,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1207,
+      "hasFaq": true,
+      "titleLength": 60,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 12 H2/H3 headings for 1207 words (avg 101 words/heading)"
+      ]
+    },
+    {
+      "file": "when-to-upgrade-your-gpu-vs-your-cpu.md",
+      "slug": "when-to-upgrade-your-gpu-vs-your-cpu",
+      "score": 95,
+      "pass": true,
+      "readability": 81,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1212,
+      "hasFaq": true,
+      "titleLength": 48,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 14 H2/H3 headings for 1212 words (avg 87 words/heading)"
+      ]
+    },
+    {
+      "file": "why-case-airflow-matters-more-than-people-think.md",
+      "slug": "why-case-airflow-matters-more-than-people-think",
+      "score": 95,
+      "pass": true,
+      "readability": 81,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1236,
+      "hasFaq": true,
+      "titleLength": 54,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 12 H2/H3 headings for 1236 words (avg 103 words/heading)"
+      ]
+    },
+    {
+      "file": "why-network-cables-still-matter.md",
+      "slug": "why-network-cables-still-matter",
+      "score": 95,
+      "pass": true,
+      "readability": 84,
+      "seo": 100,
+      "content": 96,
+      "wordCount": 1238,
+      "hasFaq": true,
+      "titleLength": 47,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 15 H2/H3 headings for 1238 words (avg 83 words/heading)"
+      ]
+    },
+    {
+      "file": "why-ssd-health-monitoring-matters-more-than-you-think.md",
+      "slug": "why-ssd-health-monitoring-matters-more-than-you-think",
+      "score": 95,
+      "pass": true,
+      "readability": 81,
+      "seo": 100,
+      "content": 96,
+      "wordCount": 1254,
+      "hasFaq": true,
+      "titleLength": 45,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 17 H2/H3 headings for 1254 words (avg 74 words/heading)"
+      ]
+    },
+    {
+      "file": "why-your-pc-feels-slow-even-when-it-has-good-specs.md",
+      "slug": "why-your-pc-feels-slow-even-when-it-has-good-specs",
+      "score": 95,
+      "pass": true,
+      "readability": 80,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1258,
+      "hasFaq": true,
+      "titleLength": 42,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 13 H2/H3 headings for 1258 words (avg 97 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-check-if-your-pc-can-run-a-game-before-you-buy-it.md",
+      "slug": "how-to-check-if-your-pc-can-run-a-game-before-you-buy-it",
+      "score": 96,
+      "pass": true,
+      "readability": 82,
+      "seo": 100,
+      "content": 98,
+      "wordCount": 1435,
+      "hasFaq": true,
+      "titleLength": 56,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 12 H2/H3 headings for 1435 words (avg 120 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-check-your-pcs-full-specs-without-installing-anything.md",
+      "slug": "how-to-check-your-pcs-full-specs-without-installing-anything",
+      "score": 96,
+      "pass": true,
+      "readability": 85,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1212,
+      "hasFaq": true,
+      "titleLength": 51,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 12 H2/H3 headings for 1212 words (avg 101 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-spot-a-good-used-gpu-deal.md",
+      "slug": "how-to-spot-a-good-used-gpu-deal",
+      "score": 96,
+      "pass": true,
+      "readability": 82,
+      "seo": 100,
+      "content": 98,
+      "wordCount": 1764,
+      "hasFaq": true,
+      "titleLength": 48,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 16 H2/H3 headings for 1764 words (avg 110 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-upgrade-your-laptop-without-buying-a-new-one.md",
+      "slug": "how-to-upgrade-your-laptop-without-buying-a-new-one",
+      "score": 96,
+      "pass": true,
+      "readability": 82,
+      "seo": 100,
+      "content": 98,
+      "wordCount": 1688,
+      "hasFaq": true,
+      "titleLength": 51,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 15 H2/H3 headings for 1688 words (avg 113 words/heading)"
+      ]
+    },
+    {
+      "file": "ssd-vs-hdd-which-should-you-buy-in-2026.md",
+      "slug": "ssd-vs-hdd-which-should-you-buy-in-2026",
+      "score": 96,
+      "pass": true,
+      "readability": 78,
+      "seo": 100,
+      "content": 100,
+      "wordCount": 1481,
+      "hasFaq": true,
+      "titleLength": 41,
+      "warningsCount": 0,
+      "topWarnings": []
+    },
+    {
+      "file": "why-high-end-pcs-stutter-windows-11-memory-integrity.md",
+      "slug": "why-high-end-pcs-stutter-windows-11-memory-integrity",
+      "score": 96,
+      "pass": true,
+      "readability": 84,
+      "seo": 96,
+      "content": 100,
+      "wordCount": 2317,
+      "hasFaq": true,
+      "titleLength": 56,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Keyword Density: \"windows 11 memory integrity gaming stutter\" appears 3 times (0.8%)"
+      ]
+    },
+    {
+      "file": "why-ram-speed-matters-less-than-people-think.md",
+      "slug": "why-ram-speed-matters-less-than-people-think",
+      "score": 96,
+      "pass": true,
+      "readability": 84,
+      "seo": 100,
+      "content": 97,
+      "wordCount": 1239,
+      "hasFaq": true,
+      "titleLength": 40,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 13 H2/H3 headings for 1239 words (avg 95 words/heading)"
+      ]
+    },
+    {
+      "file": "why-upgrading-storage-alone-doesnt-make-everything-faster.md",
+      "slug": "why-upgrading-storage-alone-doesnt-make-everything-faster",
+      "score": 96,
+      "pass": true,
+      "readability": 83,
+      "seo": 100,
+      "content": 99,
+      "wordCount": 1353,
+      "hasFaq": true,
+      "titleLength": 54,
+      "warningsCount": 1,
+      "topWarnings": [
+        "[FAIL] Heading Frequency: 11 H2/H3 headings for 1353 words (avg 123 words/heading)"
+      ]
+    },
+    {
+      "file": "how-to-connect-two-monitors-to-a-laptop.md",
+      "slug": "how-to-connect-two-monitors-to-a-laptop",
+      "score": 97,
+      "pass": true,
+      "readability": 86,
+      "seo": 100,
+      "content": 100,
+      "wordCount": 1443,
+      "hasFaq": true,
+      "titleLength": 50,
+      "warningsCount": 0,
+      "topWarnings": []
+    }
+  ]
+}

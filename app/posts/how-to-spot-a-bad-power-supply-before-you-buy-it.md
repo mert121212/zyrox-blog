@@ -18,9 +18,19 @@ image: "/images/posts/best-psu-for-rtx-5080.jpg"
 ---
 
 ![Hero Image](/images/posts/best-psu-for-rtx-5080.jpg)
-I've killed a GPU. Not through overclocking, not through a bad driver — through a cheap power supply that had no business being inside a PC. It was a white-label 650W unit I grabbed from an [Amazon](https://www.amazon.com) storefront that no longer exists, and it took a mid-range graphics card with it when it finally gave out. That experience changed how I approach every single PSU purchase. I now read spec sheets the way lawyers read contracts, and I want to walk you through that process in full detail.
+Learning **how to spot a bad power supply** before hitting "Buy" is the single most important insurance policy for your PC build. I learned this the hard way: I once destroyed an entire graphics card because of a white-label 650W unit from an [Amazon](https://www.amazon.com) storefront that disappeared three months later. Knowing **how to spot a bad power supply** prevents catastrophic hardware destruction, because the power supply unit (PSU) is the only component physically capable of killing every other part connected to it.
 
-The PSU is the only component in your system that has the physical capacity to destroy everything else. A bad CPU cooler gives you thermal throttling. A bad RAM stick gives you BSODs. A bad power supply can fry your motherboard, your GPU, your storage drives, and anything else connected to it in a single event. So let's talk about how to identify the dangerous units before you hand over your money.
+A bad CPU cooler causes thermal throttling; a bad stick of RAM throws blue screens. But a cut-rate power supply can dump raw voltage into your motherboard, GPU, and NVMe drives in a fraction of a second. Here is how to evaluate spec sheets, identify dangerous shortcuts, and spot fraudulent efficiency badges before handing over your cash.
+
+## Table of Contents
+- [Why 80 Plus & Cybenetics Certifications Are Your First Filter](#why-80-plus--cybenetics-certifications-are-your-first-filter)
+- [Price-to-Wattage Red Flags](#price-to-wattage-red-flags)
+- [Continuous Wattage vs. Peak Wattage](#continuous-wattage-vs-peak-wattage)
+- [Step-by-Step Buying Checklist](#step-by-step-buying-checklist-and-brands-to-avoid)
+- [Frequently Asked Questions](#frequently-asked-questions)
+- [Related Guides](#related-guides)
+
+---
 
 ## Why 80 Plus & Cybenetics Certifications Are Your First Filter
 
@@ -79,8 +89,25 @@ I always search the review section for the words "fire," "smoke," or "burning sm
 
 Calculate your wattage on PC Part Picker and add 20% headroom. Filter your store search for 80 Plus Gold units only. If the price is suspiciously low, avoid it. Identify the OEM platform and cross-reference it on the **SPL PSU Tier List** (or Hardware Busters recommendation index) — aim for Tier B or higher. Check the spec sheet for OCP and OTP. Scan the Amazon reviews for burning smell reports. Always buy from a retailer with a solid return policy.
 
-As a general rule, actively avoid brands like APEVIA, Diablotek, Raidmax, and Logisys. They have documented histories of missing protections, catastrophic failures, and terrible OEM platforms. Stick to reliable lines from Seasonic, Corsair, EVGA, be quiet!, and FSP. Don't cheap out on the heart of your system.
+If you are pairing your power supply with an Nvidia GeForce RTX 4000 or RTX 5000 series graphics card, ensure the unit complies with the **ATX 3.1 standard** and features a native 12V-2x6 cable. The revised 12V-2x6 connector features shortened sense pins and deeper power terminals, preventing the high-resistance thermal melting issues that plagued early 12VHPWR adapters. A modern ATX 3.1 power supply also guarantees 200% transient power spike handling for 100 microseconds, protecting against sudden gaming shutdowns.
 
+As a general rule, actively avoid brands with documented histories of missing protections, catastrophic failures, and terrible OEM platforms. Knowing **how to spot a bad power supply** gives you the confidence to invest in reliable models from Seasonic, Corsair, be quiet!, and FSP. Don't cheap out on the heart of your system.
+
+---
+
+## Frequently Asked Questions
+
+### Can a bad power supply destroy my GPU or motherboard?
+**Yes.** Unlike other PC components that fail quietly or cause software errors, a power supply converts lethal 120V/240V mains AC power into sensitive +12V, +5V, and +3.3V DC rails. If a cheap unit lacks Over Voltage Protection (OVP) or Over Current Protection (OCP), a component failure inside the PSU can send catastrophic voltage spikes straight through PCIe and EPS connectors, permanently frying VRMs, GPUs, and SSD storage.
+
+### What is the difference between peak wattage and continuous wattage?
+Continuous wattage is the true power output a PSU can maintain 24/7 at real-world operating temperatures (40°C to 50°C). Peak wattage is a theoretical marketing burst that the unit can sustain for only a few milliseconds before tripping protections or exploding. Shady manufacturers advertise peak wattage on the box to make a cheap 400W unit look like a 650W bargain.
+
+### Is an 80 Plus White or Bronze PSU safe to use?
+Basic 80 Plus White or Bronze certification indicates minimum electrical efficiency, but it does not guarantee high build quality or modern protection circuitry. While budget 80 Plus Bronze units from reputable brands like Corsair or Seasonic are safe for low-power office or budget gaming builds, avoid unbranded or ultra-cheap Bronze units on unfamiliar marketplaces.
+
+### How many years should a quality PC power supply last?
+A high-tier power supply with Japanese 105°C electrolytic capacitors and a fluid dynamic bearing fan should easily last between 7 and 12 years. Flagship models from top brands come backed by 10-year or 12-year manufacturer warranties, often surviving through three or four CPU and GPU upgrade cycles.
 
 ---
 

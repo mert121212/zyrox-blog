@@ -19,7 +19,6 @@ if (fs.existsSync(outDir)) {
         'rss.xml',
         'atom.xml',
         'feed.atom',
-        '8A0ADD438eA44836B3D590977FA78A2B.txt',
         'llms.txt',
         'llms-full.txt',
     ];

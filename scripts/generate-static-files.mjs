@@ -183,11 +183,6 @@ fs.writeFileSync(path.join(publicDir, 'atom.xml'), atom, 'utf8');
 fs.writeFileSync(path.join(publicDir, 'feed.atom'), atom, 'utf8');
 console.log('✓ public/atom.xml & public/feed.atom');
 
-// ── IndexNow Key ──────────────────────────────────────────
-const indexNowKey = '8A0ADD438eA44836B3D590977FA78A2B';
-fs.writeFileSync(path.join(publicDir, `${indexNowKey}.txt`), `${indexNowKey}\n`, 'utf8');
-console.log(`✓ public/${indexNowKey}.txt`);
-
 // ── llms.txt (GEO standard for AI Engines & LLM Crawlers) ────
 const categoriesMap = {};
 for (const p of posts) {
